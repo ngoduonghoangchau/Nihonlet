@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="NihonLet.API/NihonLet.API.csproj" />
+  <Project Path="Nihonlet.Application/Nihonlet.Application.csproj" />
+  <Project Path="Nihonlet.Domain/Nihonlet.Domain.csproj" />
+  <Project Path="Nihonlet.Infrastructure/Nihonlet.Infrastructure.csproj" />
+</Solution>
