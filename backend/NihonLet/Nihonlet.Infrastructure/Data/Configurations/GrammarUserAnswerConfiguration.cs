@@ -4,7 +4,8 @@ using Nihonlet.Domain.Entities;
 
 namespace Nihonlet.Infrastructure.Data.Configurations
 {
-    public class GrammarUserAnswerConfiguration : IEntityTypeConfiguration<GrammarUserAnswer>
+    public class GrammarUserAnswerConfiguration
+        : IEntityTypeConfiguration<GrammarUserAnswer>
     {
         public void Configure(EntityTypeBuilder<GrammarUserAnswer> builder)
         {
@@ -18,8 +19,7 @@ namespace Nihonlet.Infrastructure.Data.Configurations
             builder.Property(x => x.GrammarQuestionId)
                 .IsRequired();
 
-            builder.Property(x => x.UserAnswer)
-                .HasMaxLength(255)
+            builder.Property(x => x.SelectedOptionId)
                 .IsRequired();
 
             builder.Property(x => x.IsCorrect)

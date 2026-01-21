@@ -9,7 +9,7 @@ namespace Nihonlet.Domain.Entities
 
         public int GrammarQuestionId { get; private set; }
 
-        public string UserAnswer { get; private set; } = null!;
+        public int SelectedOptionId { get; private set; }
 
         public bool IsCorrect { get; private set; }
 
@@ -17,15 +17,11 @@ namespace Nihonlet.Domain.Entities
 
         private GrammarUserAnswer() { } // EF Core
 
-        public GrammarUserAnswer(
-            Guid userId,
-            int grammarQuestionId,
-            string userAnswer,
-            bool isCorrect)
+        public GrammarUserAnswer(Guid userId, int grammarQuestionId, int selectedOptionId, bool isCorrect)
         {
             UserId = userId;
             GrammarQuestionId = grammarQuestionId;
-            UserAnswer = userAnswer;
+            SelectedOptionId = selectedOptionId;
             IsCorrect = isCorrect;
             AnsweredAt = DateTime.UtcNow;
 

@@ -4,7 +4,8 @@ using Nihonlet.Domain.Entities;
 
 namespace Nihonlet.Infrastructure.Data.Configurations
 {
-    public class GrammarQuestionConfiguration : IEntityTypeConfiguration<GrammarQuestion>
+    public class GrammarQuestionConfiguration
+        : IEntityTypeConfiguration<GrammarQuestion>
     {
         public void Configure(EntityTypeBuilder<GrammarQuestion> builder)
         {
@@ -17,10 +18,6 @@ namespace Nihonlet.Infrastructure.Data.Configurations
 
             builder.Property(x => x.QuestionText)
                 .HasMaxLength(1000)
-                .IsRequired();
-
-            builder.Property(x => x.CorrectAnswer)
-                .HasMaxLength(255)
                 .IsRequired();
 
             builder.Property(x => x.Explanation)
@@ -39,6 +36,12 @@ namespace Nihonlet.Infrastructure.Data.Configurations
 
             builder.Property(x => x.LastModifiedBy)
                 .HasMaxLength(100);
+
+            // Aggregate: GrammarQuestion → Options
+            builder.HasMany(x => x.Options)
+                .WithOne()
+                .HasForeignKey(o => o.GrammarQuestionId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             builder.HasIndex(x => x.GrammarExerciseId);
         }

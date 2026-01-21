@@ -444,11 +444,6 @@ namespace Nihonlet.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("CorrectAnswer")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
                     b.Property<DateTimeOffset>("Created")
                         .HasColumnType("datetimeoffset");
 
@@ -483,6 +478,40 @@ namespace Nihonlet.Infrastructure.Migrations
                     b.ToTable("GrammarQuestions", (string)null);
                 });
 
+            modelBuilder.Entity("Nihonlet.Domain.Entities.GrammarQuestionOption", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<int>("GrammarQuestionId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsCorrect")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Label")
+                        .IsRequired()
+                        .HasMaxLength(1)
+                        .HasColumnType("nvarchar(1)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GrammarQuestionId");
+
+                    b.HasIndex("GrammarQuestionId", "Label")
+                        .IsUnique();
+
+                    b.ToTable("GrammarQuestionOptions", (string)null);
+                });
+
             modelBuilder.Entity("Nihonlet.Domain.Entities.GrammarUserAnswer", b =>
                 {
                     b.Property<int>("Id")
@@ -514,10 +543,8 @@ namespace Nihonlet.Infrastructure.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("UserAnswer")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
+                    b.Property<int>("SelectedOptionId")
+                        .HasColumnType("int");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
@@ -754,9 +781,23 @@ namespace Nihonlet.Infrastructure.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Nihonlet.Domain.Entities.GrammarQuestionOption", b =>
+                {
+                    b.HasOne("Nihonlet.Domain.Entities.GrammarQuestion", null)
+                        .WithMany("Options")
+                        .HasForeignKey("GrammarQuestionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("Nihonlet.Domain.Entities.FlashcardSet", b =>
                 {
                     b.Navigation("Flashcards");
+                });
+
+            modelBuilder.Entity("Nihonlet.Domain.Entities.GrammarQuestion", b =>
+                {
+                    b.Navigation("Options");
                 });
 #pragma warning restore 612, 618
         }

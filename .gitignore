@@ -87,3 +87,5 @@ Thumbs.db
 *.local.*
 
 # End of file
+/generate_codebase.js
+/project_codebase.md
