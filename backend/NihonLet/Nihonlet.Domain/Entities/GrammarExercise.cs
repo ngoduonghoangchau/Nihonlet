@@ -13,6 +13,9 @@ namespace Nihonlet.Domain.Entities
 
         public bool IsPremium { get; private set; }
 
+        private readonly List<GrammarQuestion> _questions = [];
+        public IReadOnlyCollection<GrammarQuestion> Questions => _questions.AsReadOnly();
+
         private GrammarExercise() { } // EF Core
 
         public GrammarExercise(string title, string level, bool isPremium)

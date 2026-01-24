@@ -71,7 +71,7 @@ const HomePage = () => {
             <a href="#reading" className="hover:text-pink-500 transition">
               ĐỌC HIỂU
             </a>
-            <a href="#grammar" className="hover:text-pink-500 transition">
+            <a href="/grammar" className="hover:text-pink-500 transition">
               NGỮ PHÁP
             </a>
           </div>

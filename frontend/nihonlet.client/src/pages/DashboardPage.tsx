@@ -16,7 +16,7 @@ import {
   Youtube,
   Instagram,
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 // --- DATA CẤU HÌNH CÁC TÍNH NĂNG ---
 const DASHBOARD_ITEMS = [
@@ -118,13 +118,13 @@ const Modal = ({ isOpen, onClose, title }: { isOpen: boolean; onClose: () => voi
 // --- COMPONENT TRANG DASHBOARD ---
 const DashboardPage = () => {
   const [modalInfo, setModalInfo] = useState<{ isOpen: boolean; title: string }>({ isOpen: false, title: "" });
+  const navigate = useNavigate();
 
   const handleCardClick = (item: (typeof DASHBOARD_ITEMS)[0]) => {
     if (item.isLocked) {
       setModalInfo({ isOpen: true, title: item.title });
-    } else {
-      // Logic chuyển trang (ở đây mình log ra console, thực tế dùng navigate)
-      console.log(`Navigating to ${item.path}`);
+    } else if (item.path) {
+      navigate(item.path);
     }
   };
 
