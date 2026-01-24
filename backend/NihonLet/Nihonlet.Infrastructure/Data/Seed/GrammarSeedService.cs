@@ -32,12 +32,12 @@ namespace Nihonlet.Infrastructure.Data.Seed
 
             //var files = Directory.GetFiles(seedPath, "*.json");
 
-            //var files = Directory.GetFiles(@"D:\LearnCode\Combination of stack technology\React + ASP.NET Web API\Nihonlet\backend\NihonLet\Nihonlet.Infrastructure\Data\Seed\SeedData\Grammar\Minna", "*.json");
+            var files = Directory.GetFiles(@"D:\LearnCode\Combination of stack technology\React + ASP.NET Web API\Nihonlet\backend\NihonLet\Nihonlet.Infrastructure\Data\Seed\SeedData\Grammar\Minna", "*.json");
 
-            var basePath = AppContext.BaseDirectory;
-            var seedPath = Path.Combine(basePath,
-                "SeedData", "Grammar", "Minna");
-            var files = Directory.GetFiles(seedPath, "*.json");
+            //var basePath = AppContext.BaseDirectory;
+            //var seedPath = Path.Combine(basePath,
+            //    "SeedData", "Grammar", "Minna");
+            //var files = Directory.GetFiles(seedPath, "*.json");
 
 
             foreach (var file in files)

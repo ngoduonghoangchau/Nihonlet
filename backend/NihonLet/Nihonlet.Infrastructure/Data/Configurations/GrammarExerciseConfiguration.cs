@@ -38,7 +38,10 @@ namespace Nihonlet.Infrastructure.Data.Configurations
                 .HasMaxLength(100);
 
             builder.HasIndex(x => x.Level);
+
+            // Unique constraint: mỗi Title + Level chỉ có 1 exercise
+            builder.HasIndex(x => new { x.Title, x.Level })
+                .IsUnique();
         }
     }
-
 }

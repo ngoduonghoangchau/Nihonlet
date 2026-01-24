@@ -171,7 +171,8 @@ namespace Nihonlet.Infrastructure.Migrations
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("Source");
 
                     b.Property<string>("ExampleSentence")
                         .HasMaxLength(1000)
@@ -249,6 +250,8 @@ namespace Nihonlet.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("FlashcardId");
 
                     b.HasIndex("UserId", "FlashcardId")
                         .IsUnique();
@@ -366,7 +369,8 @@ namespace Nihonlet.Infrastructure.Migrations
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("CreatedBy")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<int>("Duration")
                         .HasColumnType("int");
@@ -378,7 +382,8 @@ namespace Nihonlet.Infrastructure.Migrations
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("LastModifiedBy")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<DateTime>("PlayedAt")
                         .HasColumnType("datetime2");
@@ -391,7 +396,13 @@ namespace Nihonlet.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("GameSessions");
+                    b.HasIndex("GameId");
+
+                    b.HasIndex("UserId");
+
+                    b.HasIndex("UserId", "GameId");
+
+                    b.ToTable("GameSessions", (string)null);
                 });
 
             modelBuilder.Entity("Nihonlet.Domain.Entities.GrammarExercise", b =>
@@ -432,6 +443,9 @@ namespace Nihonlet.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("Level");
+
+                    b.HasIndex("Title", "Level")
+                        .IsUnique();
 
                     b.ToTable("GrammarExercises", (string)null);
                 });
@@ -550,6 +564,10 @@ namespace Nihonlet.Infrastructure.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("GrammarQuestionId");
+
+                    b.HasIndex("SelectedOptionId");
 
                     b.HasIndex("UserId", "GrammarQuestionId");
 
@@ -781,12 +799,54 @@ namespace Nihonlet.Infrastructure.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Nihonlet.Domain.Entities.FlashcardProgress", b =>
+                {
+                    b.HasOne("Nihonlet.Domain.Entities.Flashcard", null)
+                        .WithMany()
+                        .HasForeignKey("FlashcardId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Nihonlet.Domain.Entities.GameSession", b =>
+                {
+                    b.HasOne("Nihonlet.Domain.Entities.Game", null)
+                        .WithMany()
+                        .HasForeignKey("GameId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Nihonlet.Domain.Entities.GrammarQuestion", b =>
+                {
+                    b.HasOne("Nihonlet.Domain.Entities.GrammarExercise", null)
+                        .WithMany()
+                        .HasForeignKey("GrammarExerciseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("Nihonlet.Domain.Entities.GrammarQuestionOption", b =>
                 {
                     b.HasOne("Nihonlet.Domain.Entities.GrammarQuestion", null)
                         .WithMany("Options")
                         .HasForeignKey("GrammarQuestionId")
                         .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Nihonlet.Domain.Entities.GrammarUserAnswer", b =>
+                {
+                    b.HasOne("Nihonlet.Domain.Entities.GrammarQuestion", null)
+                        .WithMany()
+                        .HasForeignKey("GrammarQuestionId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Nihonlet.Domain.Entities.GrammarQuestionOption", null)
+                        .WithMany()
+                        .HasForeignKey("SelectedOptionId")
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
                 });
 

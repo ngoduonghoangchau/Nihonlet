@@ -33,18 +33,18 @@ namespace Nihonlet.Infrastructure.Data.Configurations
                 .HasMaxLength(50)
                 .IsRequired();
 
+            // Property "CreatedBy" của Flashcard là FlashcardSetSource (không phải audit field)
             builder.Property(x => x.CreatedBy)
+                .HasColumnName("Source")
                 .HasConversion<string>()
                 .IsRequired();
 
-            // Audit fields
+            // Audit fields từ BaseAuditableEntity
             builder.Property(x => x.Created)
                 .IsRequired();
 
-            builder.Property(x => x.CreatedBy)
-                .HasConversion<string>()
-                .IsRequired();
-
+            // Không cấu hình audit CreatedBy vì bị che bởi property CreatedBy của Flashcard
+            // Audit field LastModified
             builder.Property(x => x.LastModified)
                 .IsRequired();
 
@@ -52,6 +52,12 @@ namespace Nihonlet.Infrastructure.Data.Configurations
                 .HasMaxLength(100);
 
             builder.HasIndex(x => x.FlashcardSetId);
+
+            // FK constraint: Flashcard → FlashcardSet
+            builder.HasOne<FlashcardSet>()
+                .WithMany(s => s.Flashcards)
+                .HasForeignKey(x => x.FlashcardSetId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

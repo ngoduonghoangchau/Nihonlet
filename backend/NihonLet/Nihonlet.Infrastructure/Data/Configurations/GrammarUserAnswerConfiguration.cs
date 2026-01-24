@@ -45,6 +45,18 @@ namespace Nihonlet.Infrastructure.Data.Configurations
             builder.Ignore(x => x.DomainEvents);
 
             builder.HasIndex(x => new { x.UserId, x.GrammarQuestionId });
+
+            // FK constraint: GrammarUserAnswer → GrammarQuestion
+            builder.HasOne<GrammarQuestion>()
+                .WithMany()
+                .HasForeignKey(x => x.GrammarQuestionId)
+                .OnDelete(DeleteBehavior.Restrict); // Không xóa cascade vì cần giữ lịch sử
+
+            // FK constraint: GrammarUserAnswer → GrammarQuestionOption
+            builder.HasOne<GrammarQuestionOption>()
+                .WithMany()
+                .HasForeignKey(x => x.SelectedOptionId)
+                .OnDelete(DeleteBehavior.Restrict); // Không xóa cascade vì cần giữ lịch sử
         }
     }
 }
