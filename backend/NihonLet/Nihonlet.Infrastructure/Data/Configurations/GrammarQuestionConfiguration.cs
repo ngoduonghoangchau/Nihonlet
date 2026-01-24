@@ -43,6 +43,12 @@ namespace Nihonlet.Infrastructure.Data.Configurations
                 .HasForeignKey(o => o.GrammarQuestionId)
                 .OnDelete(DeleteBehavior.Cascade);
 
+            // FK constraint: GrammarQuestion → GrammarExercise
+            builder.HasOne<GrammarExercise>()
+                .WithMany()
+                .HasForeignKey(x => x.GrammarExerciseId)
+                .OnDelete(DeleteBehavior.Cascade);
+
             builder.HasIndex(x => x.GrammarExerciseId);
         }
     }

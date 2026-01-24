@@ -49,6 +49,12 @@ namespace Nihonlet.Infrastructure.Data.Configurations
             // Mỗi user – mỗi flashcard chỉ có 1 progress
             builder.HasIndex(x => new { x.UserId, x.FlashcardId })
                 .IsUnique();
+
+            // FK constraint: FlashcardProgress → Flashcard
+            builder.HasOne<Flashcard>()
+                .WithMany()
+                .HasForeignKey(x => x.FlashcardId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
