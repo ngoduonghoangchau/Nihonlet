@@ -79,7 +79,6 @@ namespace Nihonlet.Infrastructure.Data.Seed
         //     await _context.SaveChangesAsync();
         // }
 
-
     }
 
 }

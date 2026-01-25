@@ -4,15 +4,18 @@ using Microsoft.EntityFrameworkCore;
 using Nihonlet.Domain.Common;
 using Nihonlet.Domain.Entities;
 using Nihonlet.Infrastructure.Identity;
+using Nihonlet.Application.Common.Interfaces; 
 
 namespace Nihonlet.Infrastructure.Data
 {
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser, IdentityRole<Guid>, Guid>
+    // SỬA DÒNG NÀY: Thêm ", IApplicationDbContext" ở cuối
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser, IdentityRole<Guid>, Guid>, IApplicationDbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
 
+        // Các DbSet này đã khớp với IApplicationDbContext
         public DbSet<FlashcardSet> FlashcardSets => Set<FlashcardSet>();
         public DbSet<Flashcard> Flashcards => Set<Flashcard>();
         public DbSet<FlashcardProgress> FlashcardProgresses => Set<FlashcardProgress>();
@@ -30,10 +33,10 @@ namespace Nihonlet.Infrastructure.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-
             builder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
         }
 
+        // Hàm này cũng đã khớp với Interface
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
             ApplyAuditInformation();
