@@ -13,6 +13,12 @@ namespace Nihonlet.Infrastructure.Data.Configurations
 
             builder.HasKey(x => x.Id);
 
+            // --- QUAN TRỌNG: Cấu hình Backing Field cho IReadOnlyCollection ---
+            // Điều này cho phép EF Core nạp dữ liệu trực tiếp vào biến private _options
+            var navigation = builder.Metadata.FindNavigation(nameof(GrammarQuestion.Options));
+            navigation?.SetPropertyAccessMode(PropertyAccessMode.Field);
+            // ------------------------------------------------------------------
+
             builder.Property(x => x.GrammarExerciseId)
                 .IsRequired();
 
@@ -24,7 +30,7 @@ namespace Nihonlet.Infrastructure.Data.Configurations
                 .HasMaxLength(1000)
                 .IsRequired();
 
-            // Audit fields
+            // Audit fields (Kế thừa từ BaseAuditableEntity)
             builder.Property(x => x.Created)
                 .IsRequired();
 
@@ -38,14 +44,17 @@ namespace Nihonlet.Infrastructure.Data.Configurations
                 .HasMaxLength(100);
 
             // Aggregate: GrammarQuestion → Options
+            // Một câu hỏi có nhiều lựa chọn, xóa câu hỏi thì xóa luôn options
             builder.HasMany(x => x.Options)
                 .WithOne()
                 .HasForeignKey(o => o.GrammarQuestionId)
                 .OnDelete(DeleteBehavior.Cascade);
 
             // FK constraint: GrammarQuestion → GrammarExercise
+            // Nếu bạn có navigation property 'Questions' trong GrammarExercise, 
+            // nên map .WithMany(e => e.Questions) thay vì .WithMany()
             builder.HasOne<GrammarExercise>()
-                .WithMany()
+                .WithMany(e => e.Questions) // Khớp với _questions trong GrammarExercise
                 .HasForeignKey(x => x.GrammarExerciseId)
                 .OnDelete(DeleteBehavior.Cascade);
 

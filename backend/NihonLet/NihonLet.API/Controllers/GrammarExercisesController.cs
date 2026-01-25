@@ -1,64 +1,31 @@
-// d:\NihonletExe\Nihonlet\backend\NihonLet\Nihonlet.API\Controllers\GrammarExercisesController.cs
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Nihonlet.Domain.Entities;
-using Nihonlet.Infrastructure.Data;
+using Nihonlet.Application.Grammar.Commands;
+using Nihonlet.Application.Grammar.Queries;
+// FIX CHÍNH: Thêm dòng using này để Controller thấy được DTO
+using Nihonlet.Application.Grammar.Common; 
 
-namespace Nihonlet.API.Controllers
+namespace NihonLet.API.Controllers;
+
+[ApiController]
+[Route("api/[controller]")]
+public class GrammarExercisesController : ControllerBase
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class GrammarExercisesController : ControllerBase
+    private readonly IMediator _mediator;
+    public GrammarExercisesController(IMediator mediator) => _mediator = mediator;
+
+    [HttpGet("by-level/{level}")]
+    // Vẫn giữ ActionResult<T> để Swagger hiển thị Schema
+    public async Task<ActionResult<GrammarExerciseDto>> GetByLevel(string level)
     {
-        private readonly ApplicationDbContext _context;
+        var result = await _mediator.Send(new GetGrammarExerciseByLevelQuery(level));
+        return result != null ? Ok(result) : NotFound();
+    }
 
-        public GrammarExercisesController(ApplicationDbContext context)
-        {
-            _context = context;
-        }
-
-        [HttpGet("by-level/{level}")]
-        public async Task<IActionResult> GetByLevel(string level)
-        {
-            try
-            {
-                // Lấy bài tập theo Level, sử dụng Projection để tránh lỗi vòng lặp JSON và chỉ lấy dữ liệu cần thiết
-                // Sử dụng ToLower() để so sánh không phân biệt hoa thường (ví dụ: n5-1 và N5-1)
-                var exercise = await _context.GrammarExercises
-                    .AsNoTracking()
-                    .Where(e => e.Level.ToLower() == level.ToLower())
-                    .Select(e => new
-                    {
-                        e.Id,
-                        e.Level,
-                        e.Title,
-                        Questions = e.Questions.Select(q => new
-                        {
-                            q.Id,
-                            q.QuestionText,
-                            q.Explanation,
-                            Options = q.Options.Select(o => new
-                            {
-                                o.Id,
-                                o.Label,
-                                o.Content,
-                                o.IsCorrect
-                            }).OrderBy(o => o.Label).ToList()
-                        }).OrderBy(q => q.Id).ToList()
-                    })
-                    .FirstOrDefaultAsync();
-
-                if (exercise == null)
-                {
-                    return NotFound(new { message = $"Không tìm thấy bài tập cho level {level}" });
-                }
-
-                return Ok(exercise);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { message = "Lỗi server khi lấy bài tập", error = ex.Message });
-            }
-        }
+    [HttpPost("submit-answer")]
+    public async Task<ActionResult<SubmissionResult>> Submit(SubmitAnswerCommand command)
+    {
+        var result = await _mediator.Send(command);
+        return Ok(result);
     }
 }

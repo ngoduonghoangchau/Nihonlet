@@ -1,318 +1,130 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import { ArrowLeft, Check, X } from 'lucide-react';
+import { useParams, Link } from 'react-router-dom';
+import { ArrowLeft, Check, X, Loader2, Award } from 'lucide-react';
 
-// Định nghĩa cấu trúc cho một câu hỏi ngữ pháp
-// Định nghĩa các Entities
-export interface GrammarQuestionOption {
-  id: number;
-  label: string;
-  content: string;
-  isCorrect: boolean;
-}
+const GrammarExercisePage = () => {
+    const { topicId } = useParams();
+    const [exercise, setExercise] = useState<any>(null);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [selectedId, setSelectedId] = useState<number | null>(null);
+    const [result, setResult] = useState<any>(null);
+    const [loading, setLoading] = useState(true);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [score, setScore] = useState(0);
+    const [isFinished, setIsFinished] = useState(false);
 
-export interface GrammarQuestion {
-  id: number;
-  questionText: string;
-  explanation?: string;
-  options: GrammarQuestionOption[];
-}
+    useEffect(() => {
+        const load = async () => {
+            try {
+                const res = await fetch(`/api/GrammarExercises/by-level/${topicId}`);
+                if (res.ok) setExercise(await res.json());
+            } finally { setLoading(false); }
+        };
+        load();
+    }, [topicId]);
 
-export interface GrammarExercise {
-  id: number;
-  level: string;
-  title: string;
-  questions: GrammarQuestion[];
-}
-
-export interface GrammarUserAnswer {
-  questionId: number;
-  selectedOptionId: number;
-  isCorrect: boolean;
-}
-
-const GrammarExercisePage: React.FC = () => {
-  const { topicId } = useParams();
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [selectedOptionId, setSelectedOptionId] = useState<number | null>(null);
-  const [isAnswerChecked, setIsAnswerChecked] = useState(false);
-  const [userAnswers, setUserAnswers] = useState<GrammarUserAnswer[]>([]);
-  const [showResults, setShowResults] = useState(false);
-
-  const [exercise, setExercise] = useState<GrammarExercise | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [errorMsg, setErrorMsg] = useState<string | null>(null);
-
-  useEffect(() => {
-    const fetchExercise = async () => {
-      if (!topicId) return;
-      setLoading(true);
-      try {
-        // Gọi API để lấy dữ liệu từ Database
-        // Bỏ toUpperCase() để gửi đúng id từ URL, backend sẽ xử lý case-insensitive
-        const response = await fetch(`/api/grammarexercises/by-level/${topicId}`);
-        
-        const contentType = response.headers.get("content-type");
-        if (response.ok && contentType && contentType.includes("application/json")) {
-          const data = await response.json();
-          console.log("Fetched exercise data:", data); // Log dữ liệu để kiểm tra
-          setExercise(data);
-        } else {
-          console.error("Failed to fetch exercise:", response.status, response.statusText);
-          setErrorMsg(`Lỗi tải bài tập: ${response.status} ${response.statusText}`);
-          if (contentType && !contentType.includes("application/json")) {
-            console.error("Received HTML instead of JSON. Check API URL or Proxy configuration.");
-            setErrorMsg("Lỗi kết nối: Server trả về HTML thay vì JSON.");
-          }
-          setExercise(null);
-        }
-      } catch (error) {
-        console.error("Error fetching exercise:", error);
-        setErrorMsg("Lỗi kết nối đến Server.");
-        setExercise(null);
-      } finally {
-        setLoading(false);
-      }
+    const handleCheck = async () => {
+        if (selectedId === null) return;
+        setIsSubmitting(true);
+        try {
+            const res = await fetch('/api/GrammarExercises/submit-answer', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    questionId: exercise.questions[currentIndex].id,
+                    selectedOptionId: selectedId,
+                    userId: "3fa85f64-5717-4562-b3fc-2c963f66afa6" // Giả lập GUID
+                })
+            });
+            const data = await res.json();
+            setResult(data);
+            if (data.isCorrect) setScore(s => s + 1);
+        } finally { setIsSubmitting(false); }
     };
 
-    fetchExercise();
-  }, [topicId]);
+    if (loading) return <div className="h-screen flex items-center justify-center text-pink-500 font-bold">Đang tải bài tập...</div>;
+    if (!exercise) return <div className="p-10 text-center">Không tìm thấy dữ liệu.</div>;
 
-  if (loading) {
-    return <div className="min-h-screen flex items-center justify-center">Đang tải...</div>;
-  }
-
-  if (!exercise || !exercise.questions || exercise.questions.length === 0) {
-    return (
-      <div className="min-h-screen flex flex-col items-center justify-center text-gray-600 font-literata bg-[#FFF5F7]">
-        <div className="bg-white p-8 rounded-3xl shadow-xl text-center border border-pink-100 max-w-md mx-4">
-          <p className="text-xl font-bold mb-2 text-gray-800">Không tìm thấy bài tập</p>
-          <p className="text-gray-500 mb-4">Chủ đề: <span className="font-mono text-pink-600">{topicId}</span></p>
-          {errorMsg && <div className="bg-red-50 text-red-500 p-3 rounded-xl text-sm mb-6 text-left">{errorMsg}</div>}
-          <Link to="/grammar" className="inline-block px-6 py-3 bg-pink-500 text-white rounded-xl font-bold hover:bg-pink-600 transition shadow-lg shadow-pink-200">
-            Quay lại danh sách
-          </Link>
-        </div>
-      </div>
-    );
-  }
-
-  const currentQuestion = exercise.questions[currentQuestionIndex];
-  
-  // Tính điểm dựa trên danh sách câu trả lời
-  const score = userAnswers.filter(a => a.isCorrect).length;
-
-  const handleOptionSelect = (optionId: number) => {
-    if (isAnswerChecked) return; // Không cho chọn lại khi đã kiểm tra
-    setSelectedOptionId(optionId);
-  };
-
-  const handleCheckAnswer = () => {
-    if (selectedOptionId === null) return;
-    
-    const selectedOption = currentQuestion.options.find(o => o.id === selectedOptionId);
-    const isCorrect = selectedOption?.isCorrect || false;
-
-    setIsAnswerChecked(true);
-    
-    // Lưu kết quả trả lời
-    const newAnswer: GrammarUserAnswer = {
-      questionId: currentQuestion.id,
-      selectedOptionId: selectedOptionId,
-      isCorrect: isCorrect
-    };
-    
-    setUserAnswers([...userAnswers, newAnswer]);
-  };
-
-  const handleNextQuestion = () => {
-    if (currentQuestionIndex < exercise.questions.length - 1) {
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
-      setSelectedOptionId(null);
-      setIsAnswerChecked(false);
-    } else {
-      setShowResults(true);
-    }
-  };
-
-  const handleRestart = () => {
-    setCurrentQuestionIndex(0);
-    setSelectedOptionId(null);
-    setIsAnswerChecked(false);
-    setUserAnswers([]);
-    setShowResults(false);
-  };
-
-  // Màn hình kết quả
-  if (showResults) {
-    return (
-      <div className="min-h-screen bg-[#FFF5F7] flex items-center justify-center p-4 font-literata">
-      <div className="max-w-2xl w-full p-8 bg-white rounded-3xl shadow-xl text-center border border-pink-100">
-        <h2 className="text-3xl font-bold mb-4 text-gray-800">Kết quả bài tập</h2>
-        <div className="py-8">
-          <p className="text-xl mb-2">Bạn đã trả lời đúng</p>
-          <p className="text-5xl font-bold text-pink-600 mb-6">
-            {score} <span className="text-2xl text-gray-500">/ {exercise.questions.length}</span>
-          </p>
-          <p className="text-gray-600">
-            {score === exercise.questions.length ? 'Xuất sắc! Bạn đã nắm vững ngữ pháp này.' : 'Hãy cố gắng luyện tập thêm nhé!'}
-          </p>
-          
-          {/* Hiển thị chi tiết kết quả (Sử dụng GrammarUserAnswer) */}
-          <div className="mt-8 text-left max-h-60 overflow-y-auto border rounded-xl p-4 bg-gray-50">
-            <h4 className="font-bold text-gray-700 mb-3">Chi tiết bài làm:</h4>
-            <div className="space-y-2">
-              {userAnswers.map((answer, idx) => {
-                const question = exercise.questions.find(q => q.id === answer.questionId);
-                return (
-                  <div key={idx} className="flex items-center justify-between text-sm border-b border-gray-200 pb-2 last:border-0">
-                    <span className="text-gray-600 truncate max-w-[70%]">
-                      Câu {idx + 1}: {question?.questionText}
-                    </span>
-                    <span className={`font-bold ${answer.isCorrect ? 'text-green-600' : 'text-red-600'}`}>
-                      {answer.isCorrect ? 'Đúng' : 'Sai'}
-                    </span>
-                  </div>
-                );
-              })}
+    if (isFinished) return (
+        <div className="min-h-screen bg-[#FFF5F7] flex items-center justify-center p-4">
+            <div className="bg-white p-10 rounded-[40px] shadow-2xl text-center max-w-sm w-full border border-pink-50">
+                <div className="w-20 h-20 bg-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Award className="text-white" size={40} />
+                </div>
+                <h2 className="text-2xl font-bold mb-2">Hoàn thành!</h2>
+                <p className="text-gray-500 mb-6">Bạn đạt được {score}/{exercise.questions.length} câu đúng</p>
+                <button onClick={() => window.location.reload()} className="w-full py-3 bg-pink-500 text-white rounded-xl font-bold">Làm lại</button>
+                <Link to="/grammar" className="block mt-4 text-gray-400">Về danh sách</Link>
             </div>
-          </div>
         </div>
-        <button
-          onClick={handleRestart}
-          className="px-8 py-3 bg-pink-500 text-white rounded-xl hover:bg-pink-600 transition-colors font-bold font-lalezar shadow-lg shadow-pink-200"
-        >
-          Làm lại
-        </button>
-        <div className="mt-6">
-            <Link to="/grammar" className="text-gray-500 hover:text-pink-500 font-bold">
-                Quay lại Danh sách chủ đề
-            </Link>
-        </div>
-      </div>
-      </div>
     );
-  }
 
-  return (
-    <div className="min-h-screen bg-[#FFF5F7] p-6 font-literata">
-      <div className="max-w-2xl mx-auto mb-6">
-        <Link to="/grammar" className="inline-flex items-center text-gray-600 hover:text-pink-600 transition-colors font-bold">
-          <ArrowLeft className="mr-2" size={20} />
-          Quay lại Danh sách chủ đề
-        </Link>
-      </div>
+    const q = exercise.questions[currentIndex];
 
-    <div className="max-w-2xl mx-auto p-8 bg-white rounded-3xl shadow-xl border border-pink-100">
-      {/* Header & Progress */}
-      <div className="mb-6 flex justify-between items-center">
-        <h2 className="text-xl font-bold text-gray-800">{exercise.title}</h2>
-        <span className="text-sm text-gray-500 font-medium">
-          Câu {currentQuestionIndex + 1} / {exercise.questions.length}
-        </span>
-      </div>
+    return (
+        <div className="min-h-screen bg-[#FFF5F7] p-6 font-literata">
+            <div className="max-w-2xl mx-auto">
+                <div className="mb-8 flex items-center justify-between">
+                    <Link to="/grammar" className="flex items-center text-gray-600 font-bold hover:text-pink-600">
+                        <ArrowLeft className="mr-2" /> {exercise.title}
+                    </Link>
+                    <span className="text-sm font-bold text-pink-400">CÂU {currentIndex + 1} / {exercise.questions.length}</span>
+                </div>
 
-      <div className="mb-6 w-full bg-gray-200 rounded-full h-2.5">
-        <div 
-          className="bg-pink-500 h-2.5 rounded-full transition-all duration-300 ease-out" 
-          style={{ width: `${((currentQuestionIndex + 1) / exercise.questions.length) * 100}%` }}
-        ></div>
-      </div>
+                <div className="bg-white rounded-3xl p-8 shadow-xl shadow-pink-100/50 border border-pink-50">
+                    <h3 className="text-2xl font-bold text-gray-800 mb-8">{q.questionText}</h3>
+                    
+                    <div className="space-y-4">
+                        {q.options.map((opt: any) => {
+                            const isSelected = selectedId === opt.id;
+                            const isCorrect = result?.correctOptionId === opt.id;
+                            const isWrong = isSelected && result && !result.isCorrect;
 
-      {/* Question Section */}
-      <div className="mb-8">
-        <h3 className="text-2xl font-medium text-gray-900 mb-6 leading-relaxed">{currentQuestion.questionText}</h3>
-        
-        <div className="space-y-3">
-          {currentQuestion.options.map((option) => {
-            // Logic xác định style cho từng option dựa trên trạng thái đúng/sai
-            let optionClass = "w-full p-4 text-left border-2 rounded-xl transition-all duration-200 flex items-center ";
-            
-            const isSelected = selectedOptionId === option.id;
+                            let style = "border-gray-100 hover:border-pink-200 bg-white";
+                            if (isSelected) style = "border-pink-500 bg-pink-50 ring-1 ring-pink-500";
+                            if (result) {
+                                if (isCorrect) style = "border-green-500 bg-green-50 ring-1 ring-green-500";
+                                else if (isWrong) style = "border-red-500 bg-red-50 ring-1 ring-red-500";
+                                else style = "opacity-50 border-gray-100";
+                            }
 
-            if (isAnswerChecked) {
-              if (option.isCorrect) {
-                optionClass += "bg-green-50 border-green-500 text-green-800"; // Đáp án đúng
-              } else if (isSelected && !option.isCorrect) {
-                optionClass += "bg-red-50 border-red-500 text-red-800"; // Đáp án sai người dùng chọn
-              } else {
-                optionClass += "bg-gray-50 border-gray-200 opacity-50"; // Các đáp án khác
-              }
-            } else {
-              if (isSelected) {
-                optionClass += "bg-pink-50 border-pink-500 text-pink-800 shadow-sm"; // Đang chọn
-              } else {
-                optionClass += "bg-white border-gray-200 hover:bg-gray-50 hover:border-gray-300"; // Mặc định
-              }
-            }
+                            return (
+                                <button key={opt.id} disabled={!!result} onClick={() => setSelectedId(opt.id)}
+                                    className={`w-full p-4 text-left border-2 rounded-2xl transition-all flex items-center ${style}`}>
+                                    <span className={`w-8 h-8 flex items-center justify-center rounded-lg mr-4 font-bold ${isSelected ? 'bg-pink-500 text-white' : 'bg-gray-100 text-gray-400'}`}>
+                                        {opt.label}
+                                    </span>
+                                    <span className="text-lg font-medium text-gray-700">{opt.content}</span>
+                                    {result && isCorrect && <Check className="ml-auto text-green-500" />}
+                                    {result && isWrong && <X className="ml-auto text-red-500" />}
+                                </button>
+                            );
+                        })}
+                    </div>
 
-            return (
-              <button
-                key={option.id}
-                onClick={() => handleOptionSelect(option.id)}
-                disabled={isAnswerChecked}
-                className={optionClass}
-              >
-                <span className="w-8 h-8 flex items-center justify-center rounded-full bg-white border border-gray-300 mr-4 text-sm font-bold text-gray-600 shrink-0">
-                  {option.label}
-                </span>
-                <span className="text-lg">{option.content}</span>
-                
-                {/* Icon chỉ thị đúng sai */}
-                {isAnswerChecked && option.isCorrect && (
-                  <span className="ml-auto text-green-600 font-bold"><Check size={20} /></span>
-                )}
-                {isAnswerChecked && isSelected && !option.isCorrect && (
-                  <span className="ml-auto text-red-600 font-bold"><X size={20} /></span>
-                )}
-              </button>
-            );
-          })}
+                    {result && (
+                        <div className="mt-6 p-4 bg-blue-50 border border-blue-100 rounded-2xl animate-in fade-in slide-in-from-bottom-2">
+                            <p className="text-blue-700 text-sm"><strong>💡 Giải thích:</strong> {result.explanation}</p>
+                        </div>
+                    )}
+
+                    <div className="mt-10 flex justify-end">
+                        {!result ? (
+                            <button onClick={handleCheck} disabled={selectedId === null || isSubmitting}
+                                className="px-12 py-3 bg-pink-500 text-white rounded-2xl font-bold shadow-lg shadow-pink-200 disabled:bg-gray-200 flex items-center">
+                                {isSubmitting && <Loader2 className="animate-spin mr-2" />} Kiểm tra
+                            </button>
+                        ) : (
+                            <button onClick={() => currentIndex < exercise.questions.length - 1 ? (setCurrentIndex(c => c+1), setSelectedId(null), setResult(null)) : setIsFinished(true)}
+                                className="px-12 py-3 bg-gray-800 text-white rounded-2xl font-bold hover:bg-black">
+                                Tiếp theo
+                            </button>
+                        )}
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      {/* Explanation Section */}
-      {isAnswerChecked && currentQuestion.explanation && (
-        <div className="mb-6 p-4 bg-blue-50 border-l-4 border-blue-500 text-blue-800 rounded-r-xl animate-fade-in">
-          <p className="font-bold mb-1">Giải thích:</p>
-          <p>{currentQuestion.explanation}</p>
-        </div>
-      )}
-
-      {/* Action Buttons */}
-      <div className="flex justify-end pt-4 border-t border-gray-100">
-        {!isAnswerChecked ? (
-          <button
-            onClick={handleCheckAnswer}
-            disabled={selectedOptionId === null}
-            className={`px-8 py-2.5 rounded-md text-white font-medium transition-colors shadow-sm ${
-              selectedOptionId === null 
-                ? 'bg-gray-300 cursor-not-allowed' 
-                : 'bg-pink-500 hover:bg-pink-600 shadow-pink-200'
-            }`}
-          >
-            Kiểm tra
-          </button>
-        ) : (
-          <button
-            onClick={handleNextQuestion}
-            className="px-8 py-2.5 bg-pink-500 text-white rounded-xl hover:bg-pink-600 transition-colors font-medium shadow-lg shadow-pink-200 flex items-center"
-          >
-            {currentQuestionIndex < exercise.questions.length - 1 ? 'Câu tiếp theo' : 'Xem kết quả'}
-            <span className="ml-2">→</span>
-          </button>
-        )}
-      </div>
-    </div>
-    <style>{`
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(10px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fade-in { animation: fadeIn 0.5s ease-out forwards; }
-      `}</style>
-    </div>
-  );
+    );
 };
 
 export default GrammarExercisePage;

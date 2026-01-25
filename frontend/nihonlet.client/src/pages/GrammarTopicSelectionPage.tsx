@@ -2,10 +2,24 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Book, Star, Bookmark } from 'lucide-react';
 
+// Cập nhật lại danh sách TOPICS để truyền đúng LEVEL vào URL
 const TOPICS = [
-  { id: 'n5-1', title: 'Bài 1: Giới thiệu bản thân', description: 'Cấu trúc N1 wa N2 desu', level: 'N5', color: 'bg-green-100 text-green-600', icon: Star },
-  { id: 'n4', title: 'Ngữ pháp N4', description: 'Sơ cấp & Hội thoại hàng ngày', level: 'N4', color: 'bg-blue-100 text-blue-600', icon: Book },
-  { id: 'particles', title: 'Trợ từ (Particles)', description: 'Làm chủ Wa, Ga, Ni, De...', level: 'All', color: 'bg-purple-100 text-purple-600', icon: Bookmark },
+  { 
+    id: 'n5', 
+    title: 'Ngữ pháp N5', 
+    description: 'Trình độ sơ cấp cơ bản nhất (Bài mở đầu)', 
+    level: 'N5', // Đây là giá trị sẽ gửi lên API
+    color: 'bg-green-100 text-green-600', 
+    icon: Star 
+  },
+  { 
+    id: 'n4', 
+    title: 'Ngữ pháp N4', 
+    description: 'Sơ cấp & Hội thoại hàng ngày', 
+    level: 'N4', 
+    color: 'bg-blue-100 text-blue-600', 
+    icon: Book 
+  },
 ];
 
 const GrammarTopicSelectionPage = () => {
@@ -18,8 +32,8 @@ const GrammarTopicSelectionPage = () => {
             <ArrowLeft className="mr-2" size={20} />
             Quay lại Dashboard
           </Link>
-          <h1 className="text-4xl font-lalezar text-gray-800">Chủ đề Ngữ Pháp</h1>
-          <p className="text-gray-500 font-lemonada mt-2">Chọn cấp độ hoặc chủ đề bạn muốn ôn luyện hôm nay.</p>
+          <h1 className="text-4xl font-bold text-gray-800">Chủ đề Ngữ Pháp</h1>
+          <p className="text-gray-500 mt-2">Chọn cấp độ để bắt đầu bài kiểm tra năng lực.</p>
         </div>
 
         {/* Grid Topics */}
@@ -27,7 +41,8 @@ const GrammarTopicSelectionPage = () => {
           {TOPICS.map((topic, index) => (
             <Link 
               key={topic.id} 
-              to={`/grammar/exercise/${topic.id}`}
+              // SỬA TẠI ĐÂY: Sử dụng topic.level thay vì topic.id
+              to={`/grammar/exercise/${topic.level}`}
               className="bg-white p-6 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 border border-pink-50 hover:-translate-y-1 group block"
               style={{
                 animation: `fadeInUp 0.5s ease-out forwards ${index * 0.1}s`,
@@ -39,13 +54,13 @@ const GrammarTopicSelectionPage = () => {
                   <div className={`w-12 h-12 rounded-2xl ${topic.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-sm`}>
                     <topic.icon size={24} />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-800 font-lalezar mb-2 group-hover:text-pink-600 transition-colors">
+                  <h3 className="text-2xl font-bold text-gray-800 mb-2 group-hover:text-pink-600 transition-colors">
                     {topic.title}
                   </h3>
-                  <p className="text-gray-500 text-sm font-lemonada">{topic.description}</p>
+                  <p className="text-gray-500 text-sm">{topic.description}</p>
                 </div>
-                <span className="px-3 py-1 bg-gray-100 rounded-full text-xs font-bold text-gray-500 ml-2">
-                  {topic.level}
+                <span className="px-4 py-1 bg-pink-50 rounded-full text-xs font-bold text-pink-500 ml-2">
+                  JLPT {topic.level}
                 </span>
               </div>
             </Link>
