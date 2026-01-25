@@ -4,6 +4,9 @@ using Nihonlet.Application.Common.Interfaces;
 using Nihonlet.Infrastructure.Authentication;
 using Nihonlet.Infrastructure.Data.Seed;
 using Nihonlet.Infrastructure.Identity;
+using Nihonlet.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace Nihonlet.Infrastructure
 {
@@ -11,6 +14,13 @@ namespace Nihonlet.Infrastructure
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
+
+            services.AddDbContext<ApplicationDbContext>(options =>
+        options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"),
+            builder => builder.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
+
+            // ĐĂNG KÝ Ở ĐÂY LÀ CHUẨN NHẤT
+            services.AddScoped<IApplicationDbContext>(provider => provider.GetRequiredService<ApplicationDbContext>());
             services.Configure<JwtOptions>(configuration.GetSection("Jwt"));
 
             services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();

@@ -10,6 +10,9 @@ using Nihonlet.Infrastructure.Data;
 using Nihonlet.Infrastructure.Data.Seed;
 using Nihonlet.Infrastructure.Identity;
 using NihonLet.API.Middlewares;
+using Nihonlet.Application.Common.Interfaces;
+using Nihonlet.Application.Flashcards.Commands; // <-- THÊM DÒNG NÀY ĐỂ HẾT LỖI 2
+
 using System;
 using System.Text;
 
@@ -32,9 +35,27 @@ builder.Services.AddApplication();
 // =========================
 // Database (SQL Server)
 // =========================
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
+// XÓA BỎ TOÀN BỘ CỤM NÀY TRONG PROGRAM.CS VÌ NÓ ĐÃ CÓ TRONG AddInfrastructure
+/*
+builder.Services.AddDbContext<ApplicationDbContext>(...);
+builder.Services.AddScoped<IApplicationDbContext>(...);
+*/
+
+// CHỈ GIỮ LẠI DÒNG NÀY (Vì nó gọi vào hàm ở Bước 2)
+builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddApplication();
+
+// Đảm bảo MediatR trỏ đúng vào Assembly của Application
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(IApplicationDbContext).Assembly));
+
+builder.Services.AddCors(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), sql => sql.EnableRetryOnFailure());
+    options.AddPolicy("AllowReactApp", policy =>
+    {
+        policy.AllowAnyOrigin() // Hoặc .WithOrigins("http://localhost:3000")
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
 });
 
 // =========================
@@ -112,6 +133,8 @@ using (var scope = app.Services.CreateScope())
 }
 
 app.UseRouting();
+app.UseCors("AllowReactApp"); // <--- Phải nằm SAU UseRouting và TRƯỚC UseAuthentication
+
 app.UseHttpsRedirection();
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseAuthentication();
