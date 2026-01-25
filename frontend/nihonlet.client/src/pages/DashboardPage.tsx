@@ -16,7 +16,7 @@ import {
   Youtube,
   Instagram,
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 // --- DATA CẤU HÌNH CÁC TÍNH NĂNG ---
 const DASHBOARD_ITEMS = [
@@ -47,7 +47,7 @@ const DASHBOARD_ITEMS = [
     color: "from-green-400 to-emerald-500",
     shadow: "shadow-green-200",
     isLocked: false,
-    path: "/flashcard",
+    path: "/myflashcardlibrary",
   },
   {
     id: "ai",
@@ -117,14 +117,14 @@ const Modal = ({ isOpen, onClose, title }: { isOpen: boolean; onClose: () => voi
 
 // --- COMPONENT TRANG DASHBOARD ---
 const DashboardPage = () => {
+  const navigate = useNavigate(); // 2. Khởi tạo hàm điều hướng
   const [modalInfo, setModalInfo] = useState<{ isOpen: boolean; title: string }>({ isOpen: false, title: "" });
 
   const handleCardClick = (item: (typeof DASHBOARD_ITEMS)[0]) => {
     if (item.isLocked) {
       setModalInfo({ isOpen: true, title: item.title });
-    } else {
-      // Logic chuyển trang (ở đây mình log ra console, thực tế dùng navigate)
-      console.log(`Navigating to ${item.path}`);
+    } else if (item.path) { // 3. Kiểm tra nếu có đường dẫn
+      navigate(item.path); // 4. Thực hiện chuyển trang thực tế
     }
   };
 

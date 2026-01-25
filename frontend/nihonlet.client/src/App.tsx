@@ -2,6 +2,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import DashboardPage from "./pages/DashboardPage";
+import FlashcardApp from "./pages/Flashcard/FlashcardApp";
+import CreateFlashcardSet from "./pages/Flashcard/CreateFlashCardSet";
+// import FlashcardLearning from "./pages/Flashcard/FlashCardLearning";
+import MyFlashcardLibrary from "./pages/Flashcard/MyFlashcardLibrary";
+import FlashcardLearning from "./pages/Flashcard/FlashcardLearning";
+import MiniGamePage from "./pages/Minigame/MiniGamePage";
 
 function App() {
   return (
@@ -10,6 +16,11 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/flashcard" element={<FlashcardApp />} />
+        <Route path="/createflashcard" element={<CreateFlashcardSet />} />
+        <Route path="/flashcardlearning/:id" element={<FlashcardLearning />} />
+        <Route path="/myflashcardlibrary" element={<MyFlashcardLibrary />} />
+        <Route path="/minigame" element={<MiniGamePage />} />
       </Routes>
     </Router>
   );

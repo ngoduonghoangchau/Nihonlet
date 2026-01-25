@@ -103,12 +103,16 @@ const HomePage = () => {
               hóa.
             </p>
             <div className="flex space-x-4">
-              <button className="px-8 py-4 bg-pink-500 text-white rounded-2xl font-bold font-lalezar text-xl shadow-pink-300 shadow-xl hover:shadow-2xl hover:bg-pink-600 hover:-translate-y-1 transition-all flex items-center">
-                <Zap className="mr-2" /> Bắt đầu ngay
-              </button>
-              <button className="px-8 py-4 bg-white text-gray-800 border-2 border-gray-100 rounded-2xl font-bold font-lalezar text-xl hover:border-pink-300 hover:text-pink-500 transition-all">
-                Tìm hiểu thêm
-              </button>
+             {/* Thay đổi từ <button> sang <Link> */}
+              <Link 
+                to="/dashboard" 
+                className="px-8 py-4 bg-pink-500 text-white rounded-2xl font-bold font-lalezar text-xl shadow-pink-300 shadow-xl hover:shadow-2xl hover:bg-pink-600 hover:-translate-y-1 transition-all flex items-center inline-flex"
+                >
+                  <Zap className="mr-2" /> Bắt đầu ngay
+              </Link>
+                <button className="px-8 py-4 bg-white text-gray-800 border-2 border-gray-100 rounded-2xl font-bold font-lalezar text-xl hover:border-pink-300 hover:text-pink-500 transition-all">
+                  Tìm hiểu thêm
+                </button>
             </div>
           </div>
 
