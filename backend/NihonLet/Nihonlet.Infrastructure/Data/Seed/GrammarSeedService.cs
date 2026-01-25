@@ -55,7 +55,7 @@ namespace Nihonlet.Infrastructure.Data.Seed
             var basePath = AppContext.BaseDirectory;
             var seedPath = Path.Combine(basePath,
                 "SeedData", "Grammar", "Minna");
-            var files = Directory.GetFiles(seedPath, "*.json");
+            // var files = Directory.GetFiles(seedPath, "*.json");
 
 
             foreach (var file in files)
@@ -65,6 +65,8 @@ namespace Nihonlet.Infrastructure.Data.Seed
             }
 
             await _context.SaveChangesAsync();
+            // Logic seed dữ liệu tạm thời được bỏ qua để merge với nhánh dev
+            await Task.CompletedTask;
         }
 
     }

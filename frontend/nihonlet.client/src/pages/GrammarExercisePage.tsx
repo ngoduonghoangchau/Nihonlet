@@ -41,6 +41,7 @@ const GrammarExercisePage: React.FC = () => {
 
   const [exercise, setExercise] = useState<GrammarExercise | null>(null);
   const [loading, setLoading] = useState(true);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchExercise = async () => {
@@ -48,16 +49,26 @@ const GrammarExercisePage: React.FC = () => {
       setLoading(true);
       try {
         // Gọi API để lấy dữ liệu từ Database
-        const response = await fetch(`/api/grammarexercises/by-level/${topicId.toUpperCase()}`);
-        if (response.ok) {
+        // Bỏ toUpperCase() để gửi đúng id từ URL, backend sẽ xử lý case-insensitive
+        const response = await fetch(`/api/grammarexercises/by-level/${topicId}`);
+        
+        const contentType = response.headers.get("content-type");
+        if (response.ok && contentType && contentType.includes("application/json")) {
           const data = await response.json();
+          console.log("Fetched exercise data:", data); // Log dữ liệu để kiểm tra
           setExercise(data);
         } else {
-          console.error("Failed to fetch exercise");
+          console.error("Failed to fetch exercise:", response.status, response.statusText);
+          setErrorMsg(`Lỗi tải bài tập: ${response.status} ${response.statusText}`);
+          if (contentType && !contentType.includes("application/json")) {
+            console.error("Received HTML instead of JSON. Check API URL or Proxy configuration.");
+            setErrorMsg("Lỗi kết nối: Server trả về HTML thay vì JSON.");
+          }
           setExercise(null);
         }
       } catch (error) {
-        console.error(error);
+        console.error("Error fetching exercise:", error);
+        setErrorMsg("Lỗi kết nối đến Server.");
         setExercise(null);
       } finally {
         setLoading(false);
@@ -72,7 +83,18 @@ const GrammarExercisePage: React.FC = () => {
   }
 
   if (!exercise || !exercise.questions || exercise.questions.length === 0) {
-    return <div className="min-h-screen flex items-center justify-center">Không tìm thấy bài tập.</div>;
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center text-gray-600 font-literata bg-[#FFF5F7]">
+        <div className="bg-white p-8 rounded-3xl shadow-xl text-center border border-pink-100 max-w-md mx-4">
+          <p className="text-xl font-bold mb-2 text-gray-800">Không tìm thấy bài tập</p>
+          <p className="text-gray-500 mb-4">Chủ đề: <span className="font-mono text-pink-600">{topicId}</span></p>
+          {errorMsg && <div className="bg-red-50 text-red-500 p-3 rounded-xl text-sm mb-6 text-left">{errorMsg}</div>}
+          <Link to="/grammar" className="inline-block px-6 py-3 bg-pink-500 text-white rounded-xl font-bold hover:bg-pink-600 transition shadow-lg shadow-pink-200">
+            Quay lại danh sách
+          </Link>
+        </div>
+      </div>
+    );
   }
 
   const currentQuestion = exercise.questions[currentQuestionIndex];
@@ -184,7 +206,7 @@ const GrammarExercisePage: React.FC = () => {
     <div className="max-w-2xl mx-auto p-8 bg-white rounded-3xl shadow-xl border border-pink-100">
       {/* Header & Progress */}
       <div className="mb-6 flex justify-between items-center">
-        <h2 className="text-xl font-bold text-gray-800">Bài tập Ngữ pháp</h2>
+        <h2 className="text-xl font-bold text-gray-800">{exercise.title}</h2>
         <span className="text-sm text-gray-500 font-medium">
           Câu {currentQuestionIndex + 1} / {exercise.questions.length}
         </span>

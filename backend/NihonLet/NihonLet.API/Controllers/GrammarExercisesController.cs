@@ -18,20 +18,47 @@ namespace Nihonlet.API.Controllers
         }
 
         [HttpGet("by-level/{level}")]
-        public async Task<ActionResult<GrammarExercise>> GetByLevel(string level)
+        public async Task<IActionResult> GetByLevel(string level)
         {
-            // Lấy bài tập theo Level, bao gồm cả Questions và Options
-            var exercise = await _context.GrammarExercises
-                .Include(e => e.Questions)
-                .ThenInclude(q => q.Options)
-                .FirstOrDefaultAsync(e => e.Level == level);
-
-            if (exercise == null)
+            try
             {
-                return NotFound(new { message = $"Không tìm thấy bài tập cho level {level}" });
-            }
+                // Lấy bài tập theo Level, sử dụng Projection để tránh lỗi vòng lặp JSON và chỉ lấy dữ liệu cần thiết
+                // Sử dụng ToLower() để so sánh không phân biệt hoa thường (ví dụ: n5-1 và N5-1)
+                var exercise = await _context.GrammarExercises
+                    .AsNoTracking()
+                    .Where(e => e.Level.ToLower() == level.ToLower())
+                    .Select(e => new
+                    {
+                        e.Id,
+                        e.Level,
+                        e.Title,
+                        Questions = e.Questions.Select(q => new
+                        {
+                            q.Id,
+                            q.QuestionText,
+                            q.Explanation,
+                            Options = q.Options.Select(o => new
+                            {
+                                o.Id,
+                                o.Label,
+                                o.Content,
+                                o.IsCorrect
+                            }).OrderBy(o => o.Label).ToList()
+                        }).OrderBy(q => q.Id).ToList()
+                    })
+                    .FirstOrDefaultAsync();
 
-            return Ok(exercise);
+                if (exercise == null)
+                {
+                    return NotFound(new { message = $"Không tìm thấy bài tập cho level {level}" });
+                }
+
+                return Ok(exercise);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Lỗi server khi lấy bài tập", error = ex.Message });
+            }
         }
     }
 }

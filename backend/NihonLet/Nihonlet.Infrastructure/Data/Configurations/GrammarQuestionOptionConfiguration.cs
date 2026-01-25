@@ -31,6 +31,12 @@ namespace Nihonlet.Infrastructure.Data.Configurations
 
             builder.HasIndex(x => new { x.GrammarQuestionId, x.Label })
                 .IsUnique(); // Không có 2 option cùng label
+
+            // FK constraint: GrammarQuestionOption → GrammarQuestion
+            builder.HasOne<GrammarQuestion>()
+                .WithMany(q => q.Options)
+                .HasForeignKey(x => x.GrammarQuestionId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

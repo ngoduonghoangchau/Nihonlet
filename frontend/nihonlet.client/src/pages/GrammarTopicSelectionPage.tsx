@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowLeft, Book, Star, Bookmark } from 'lucide-react';
 
 const TOPICS = [
-  { id: 'n5', title: 'Ngữ pháp N5', description: 'Cơ bản cho người mới bắt đầu', level: 'N5', color: 'bg-green-100 text-green-600', icon: Star },
+  { id: 'n5-1', title: 'Bài 1: Giới thiệu bản thân', description: 'Cấu trúc N1 wa N2 desu', level: 'N5', color: 'bg-green-100 text-green-600', icon: Star },
   { id: 'n4', title: 'Ngữ pháp N4', description: 'Sơ cấp & Hội thoại hàng ngày', level: 'N4', color: 'bg-blue-100 text-blue-600', icon: Book },
   { id: 'particles', title: 'Trợ từ (Particles)', description: 'Làm chủ Wa, Ga, Ni, De...', level: 'All', color: 'bg-purple-100 text-purple-600', icon: Bookmark },
 ];

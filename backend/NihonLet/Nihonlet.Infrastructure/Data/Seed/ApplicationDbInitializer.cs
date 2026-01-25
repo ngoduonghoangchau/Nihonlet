@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿﻿using Microsoft.Extensions.DependencyInjection;
 
 namespace Nihonlet.Infrastructure.Data.Seed
 {
@@ -17,7 +17,8 @@ namespace Nihonlet.Infrastructure.Data.Seed
             var identitySeeder = scope.ServiceProvider
                 .GetRequiredService<IdentitySeedService>();
 
-            await grammarSeeder.SeedAsync();
+            // Tạm thời bỏ qua Seed từ file JSON để tránh lỗi đường dẫn cứng trong GrammarSeedService
+            // await grammarSeeder.SeedAsync();
             await identitySeeder.SeedAsync();
         }
     }
