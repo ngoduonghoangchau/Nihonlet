@@ -47,7 +47,7 @@ const DASHBOARD_ITEMS = [
     color: "from-green-400 to-emerald-500",
     shadow: "shadow-green-200",
     isLocked: false,
-    path: "/flashcard",
+    path: "/myflashcardlibrary",
   },
   {
     id: "ai",
@@ -86,27 +86,27 @@ const Modal = ({ isOpen, onClose, title }: { isOpen: boolean; onClose: () => voi
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
       {/* Backdrop Blur */}
-      <div className="absolute inset-0 bg-black/30 backdrop-blur-sm transition-opacity" onClick={onClose}></div>
+      <div className="absolute inset-0 transition-opacity bg-black/30 backdrop-blur-sm" onClick={onClose}></div>
 
       {/* Modal Content */}
-      <div className="bg-white rounded-3xl p-8 max-w-sm w-full relative z-10 shadow-2xl transform animate-bounce-in text-center font-literata">
+      <div className="relative z-10 w-full max-w-sm p-8 text-center transform bg-white shadow-2xl rounded-3xl animate-bounce-in font-literata">
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-2 bg-gray-100 rounded-full hover:bg-gray-200 transition"
+          className="absolute p-2 transition bg-gray-100 rounded-full top-4 right-4 hover:bg-gray-200"
         >
           <X size={20} className="text-gray-500" />
         </button>
 
-        <div className="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
+        <div className="flex items-center justify-center w-20 h-20 mx-auto mb-6 bg-yellow-100 rounded-full">
           <span className="text-4xl">🚧</span>
         </div>
 
-        <h3 className="text-2xl font-bold text-gray-800 mb-2 font-lalezar">{title}</h3>
-        <p className="text-gray-500 mb-6">Tính năng này đang được đội ngũ NihonLet xây dựng. Hãy quay lại sau nhé!</p>
+        <h3 className="mb-2 text-2xl font-bold text-gray-800 font-lalezar">{title}</h3>
+        <p className="mb-6 text-gray-500">Tính năng này đang được đội ngũ NihonLet xây dựng. Hãy quay lại sau nhé!</p>
 
         <button
           onClick={onClose}
-          className="w-full py-3 bg-pink-500 text-white rounded-xl font-bold font-lalezar hover:bg-pink-600 transition shadow-lg shadow-pink-200"
+          className="w-full py-3 font-bold text-white transition bg-pink-500 shadow-lg rounded-xl font-lalezar hover:bg-pink-600 shadow-pink-200"
         >
           Đã hiểu
         </button>
@@ -117,8 +117,8 @@ const Modal = ({ isOpen, onClose, title }: { isOpen: boolean; onClose: () => voi
 
 // --- COMPONENT TRANG DASHBOARD ---
 const DashboardPage = () => {
+  const navigate = useNavigate(); // 2. Khởi tạo hàm điều hướng
   const [modalInfo, setModalInfo] = useState<{ isOpen: boolean; title: string }>({ isOpen: false, title: "" });
-  const navigate = useNavigate();
 
   const handleCardClick = (item: (typeof DASHBOARD_ITEMS)[0]) => {
     if (item.isLocked) {
@@ -135,45 +135,45 @@ const DashboardPage = () => {
       <div className="absolute bottom-[-10%] right-[-10%] w-[400px] h-[400px] bg-blue-200 rounded-full blur-[100px] opacity-40 animate-pulse-slow delay-1000"></div>
 
       {/* --- HEADER KHU VỰC CÁ NHÂN --- */}
-      <header className="relative pt-10 pb-6 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6 z-10">
+      <header className="relative z-10 flex flex-col items-center justify-between gap-6 px-6 pt-10 pb-6 md:px-12 md:flex-row">
         <div className="text-center md:text-left animate-slide-down">
-          <h1 className="text-4xl font-lalezar text-gray-800">
+          <h1 className="text-4xl text-gray-800 font-lalezar">
             Konnichiwa, <span className="text-pink-500">Student-san!</span> 👋
           </h1>
-          <p className="text-gray-500 font-lemonada text-sm mt-1">Hôm nay bạn muốn học gì nào?</p>
+          <p className="mt-1 text-sm text-gray-500 font-lemonada">Hôm nay bạn muốn học gì nào?</p>
         </div>
 
         {/* Gamification Stats */}
-        <div className="flex gap-4 animate-slide-down delay-100">
-          <div className="flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm border border-orange-100">
+        <div className="flex gap-4 delay-100 animate-slide-down">
+          <div className="flex items-center gap-2 px-4 py-2 bg-white border border-orange-100 rounded-full shadow-sm">
             <Flame className="text-orange-500 fill-orange-500" size={20} />
-            <span className="font-bold text-orange-600 font-lalezar text-lg pt-1">12 Ngày</span>
+            <span className="pt-1 text-lg font-bold text-orange-600 font-lalezar">12 Ngày</span>
           </div>
-          <div className="flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm border border-yellow-100">
+          <div className="flex items-center gap-2 px-4 py-2 bg-white border border-yellow-100 rounded-full shadow-sm">
             <Trophy className="text-yellow-500 fill-yellow-500" size={20} />
-            <span className="font-bold text-yellow-600 font-lalezar text-lg pt-1">1500 XP</span>
+            <span className="pt-1 text-lg font-bold text-yellow-600 font-lalezar">1500 XP</span>
           </div>
         </div>
       </header>
 
       {/* --- SEARCH BAR --- */}
-      <div className="container mx-auto px-6 mb-10 relative z-10">
-        <div className="max-w-2xl mx-auto relative group animate-fade-in-up">
+      <div className="container relative z-10 px-6 mx-auto mb-10">
+        <div className="relative max-w-2xl mx-auto group animate-fade-in-up">
           <input
             type="text"
             placeholder="Tìm kiếm bài học, từ vựng, ngữ pháp..."
-            className="w-full py-4 pl-14 pr-6 bg-white rounded-2xl shadow-md border-2 border-transparent focus:border-pink-300 focus:shadow-pink-100 outline-none transition-all font-literata placeholder:text-gray-400 placeholder:italic"
+            className="w-full py-4 pr-6 transition-all bg-white border-2 border-transparent shadow-md outline-none pl-14 rounded-2xl focus:border-pink-300 focus:shadow-pink-100 font-literata placeholder:text-gray-400 placeholder:italic"
           />
           <Search
-            className="absolute left-5 top-1/2 transform -translate-y-1/2 text-gray-400 group-focus-within:text-pink-500 transition-colors"
+            className="absolute text-gray-400 transition-colors transform -translate-y-1/2 left-5 top-1/2 group-focus-within:text-pink-500"
             size={24}
           />
         </div>
       </div>
 
       {/* --- MAIN GRID --- */}
-      <main className="container mx-auto px-6 pb-20 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <main className="container relative z-10 px-6 pb-20 mx-auto">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {DASHBOARD_ITEMS.map((item, index) => (
             <div
               key={item.id}
@@ -198,7 +198,7 @@ const DashboardPage = () => {
                 </div>
 
                 {/* Arrow or Lock Icon */}
-                <div className="p-2 bg-gray-50 rounded-full group-hover:bg-gray-100 transition-colors">
+                <div className="p-2 transition-colors rounded-full bg-gray-50 group-hover:bg-gray-100">
                   {item.isLocked ? (
                     <Lock size={20} className="text-gray-400" />
                   ) : (
@@ -209,10 +209,10 @@ const DashboardPage = () => {
 
               {/* Text Content */}
               <div>
-                <h3 className="text-2xl font-bold text-gray-800 font-lalezar mb-1 group-hover:text-pink-600 transition-colors">
+                <h3 className="mb-1 text-2xl font-bold text-gray-800 transition-colors font-lalezar group-hover:text-pink-600">
                   {item.title}
                 </h3>
-                <p className="text-sm text-gray-500 font-lemonada font-light">{item.subtitle}</p>
+                <p className="text-sm font-light text-gray-500 font-lemonada">{item.subtitle}</p>
               </div>
 
               {/* Decorative Shape */}
@@ -223,30 +223,30 @@ const DashboardPage = () => {
       </main>
 
       {/* --- SOCIAL FOOTER (Floating) --- */}
-      <div className="fixed bottom-8 left-0 w-full flex justify-center pointer-events-none z-20">
-        <div className="flex gap-4 bg-white/80 backdrop-blur-md px-6 py-3 rounded-full shadow-lg pointer-events-auto animate-bounce-in delay-500 border border-white">
-          <span className="text-gray-600 font-lalezar text-lg pt-1 mr-2 hidden md:block">Kết nối với chúng tôi:</span>
+      <div className="fixed left-0 z-20 flex justify-center w-full pointer-events-none bottom-8">
+        <div className="flex gap-4 px-6 py-3 delay-500 border border-white rounded-full shadow-lg pointer-events-auto bg-white/80 backdrop-blur-md animate-bounce-in">
+          <span className="hidden pt-1 mr-2 text-lg text-gray-600 font-lalezar md:block">Kết nối với chúng tôi:</span>
           <a
             href="#"
-            className="p-2 bg-blue-100 rounded-full text-blue-600 hover:scale-125 transition-transform hover:shadow-md"
+            className="p-2 text-blue-600 transition-transform bg-blue-100 rounded-full hover:scale-125 hover:shadow-md"
           >
             <Facebook size={20} />
           </a>
           <a
             href="#"
-            className="p-2 bg-pink-100 rounded-full text-pink-600 hover:scale-125 transition-transform hover:shadow-md"
+            className="p-2 text-pink-600 transition-transform bg-pink-100 rounded-full hover:scale-125 hover:shadow-md"
           >
             <Instagram size={20} />
           </a>
           <a
             href="#"
-            className="p-2 bg-red-100 rounded-full text-red-600 hover:scale-125 transition-transform hover:shadow-md"
+            className="p-2 text-red-600 transition-transform bg-red-100 rounded-full hover:scale-125 hover:shadow-md"
           >
             <Youtube size={20} />
           </a>
           <a
             href="#"
-            className="p-2 bg-black/10 rounded-full text-black hover:scale-125 transition-transform hover:shadow-md"
+            className="p-2 text-black transition-transform rounded-full bg-black/10 hover:scale-125 hover:shadow-md"
           >
             {/* Tiktok SVG */}
             <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
