@@ -1,7 +1,11 @@
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 using NihonLet.Application.Common.Interfaces;
 using NihonLet.Infrastructure.Identity;
 using NihonLet.Infrastructure.Persistence;
@@ -51,6 +55,39 @@ public static class DependencyInjection
         })
         .AddEntityFrameworkStores<ApplicationDbContext>()
         .AddDefaultTokenProviders();
+        
+        // JWT Authentication
+        var jwtSecret = GetJwtSecret(configuration);
+        var key = Encoding.UTF8.GetBytes(jwtSecret);
+        
+        services.AddAuthentication(options =>
+        {
+            options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+        })
+        .AddJwtBearer(options =>
+        {
+            options.RequireHttpsMetadata = false; // Set true in production
+            options.SaveToken = true;
+            options.TokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(key),
+                ValidateIssuer = true,
+                ValidIssuer = "NihonLet",
+                ValidateAudience = true,
+                ValidAudience = "NihonLetApp",
+                ValidateLifetime = true,
+                ClockSkew = TimeSpan.Zero // Không cho phép chênh lệch thời gian
+            };
+        });
+        
+        // HttpContext accessor (for CurrentUserService)
+        services.AddHttpContextAccessor();
+        
+        // Identity Services
+        services.AddScoped<IIdentityService, IdentityService>();
+        services.AddScoped<ICurrentUserService, CurrentUserService>();
         
         // MongoDB Logging Services
         services.AddSingleton<Logging.MongoDbContext>();
