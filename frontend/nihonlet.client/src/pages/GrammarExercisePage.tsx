@@ -3,7 +3,8 @@ import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Check, X, Loader2, Award } from 'lucide-react';
 
 const GrammarExercisePage = () => {
-    const { topicId } = useParams();
+    // 1. Đổi topicId thành exerciseId cho đúng ý nghĩa (ID của bài tập)
+    const { exerciseId } = useParams(); 
     const [exercise, setExercise] = useState<any>(null);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [selectedId, setSelectedId] = useState<number | null>(null);
@@ -16,31 +17,55 @@ const GrammarExercisePage = () => {
     useEffect(() => {
         const load = async () => {
             try {
-                const res = await fetch(`/api/GrammarExercises/by-level/${topicId}`);
-                if (res.ok) setExercise(await res.json());
-            } finally { setLoading(false); }
+                // 2. Sửa URL: Gọi trực tiếp vào ID bài tập
+                const res = await fetch(`/api/GrammarExercises/${exerciseId}`);
+                if (res.ok) {
+                    setExercise(await res.json());
+                } else {
+                    console.error("Lỗi fetch bài tập:", res.status);
+                }
+            } catch (err) {
+                console.error("Lỗi kết nối:", err);
+            } finally {
+                setLoading(false);
+            }
         };
         load();
-    }, [topicId]);
+    }, [exerciseId]);
 
     const handleCheck = async () => {
-        if (selectedId === null) return;
-        setIsSubmitting(true);
-        try {
-            const res = await fetch('/api/GrammarExercises/submit-answer', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    questionId: exercise.questions[currentIndex].id,
-                    selectedOptionId: selectedId,
-                    userId: "3fa85f64-5717-4562-b3fc-2c963f66afa6" // Giả lập GUID
-                })
-            });
-            const data = await res.json();
-            setResult(data);
-            if (data.isCorrect) setScore(s => s + 1);
-        } finally { setIsSubmitting(false); }
-    };
+    if (selectedId === null) return;
+    setIsSubmitting(true);
+    try {
+        const res = await fetch('/api/GrammarExercises/submit-answer', {
+            method: 'POST',
+            headers: { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json' 
+            },
+            body: JSON.stringify({
+                questionId: exercise.questions[currentIndex].id,
+                selectedOptionId: selectedId,
+                userId: "3fa85f64-5717-4562-b3fc-2c963f66afa6" 
+            })
+        });
+
+        if (!res.ok) {
+            const errorText = await res.text();
+            console.error("Server Error:", errorText);
+            alert("Lỗi server khi gửi đáp án!");
+            return;
+        }
+
+        const data = await res.json();
+        setResult(data);
+        if (data.isCorrect) setScore(s => s + 1);
+    } catch (err) {
+        console.error("Network Error:", err);
+    } finally {
+        setIsSubmitting(false);
+    }
+};
 
     if (loading) return <div className="h-screen flex items-center justify-center text-pink-500 font-bold">Đang tải bài tập...</div>;
     if (!exercise) return <div className="p-10 text-center">Không tìm thấy dữ liệu.</div>;

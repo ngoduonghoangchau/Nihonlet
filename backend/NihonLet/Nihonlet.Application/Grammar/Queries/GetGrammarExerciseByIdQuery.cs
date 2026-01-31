@@ -5,21 +5,20 @@ using Nihonlet.Application.Grammar.Common;
 
 namespace Nihonlet.Application.Grammar.Queries;
 
-public record GetGrammarExerciseByLevelQuery(string Level) : IRequest<GrammarExerciseDto?>;
+public record GetGrammarExerciseByIdQuery(int Id) : IRequest<GrammarExerciseDto?>;
 
-public class GetGrammarExerciseByLevelHandler : IRequestHandler<GetGrammarExerciseByLevelQuery, GrammarExerciseDto?>
+public class GetGrammarExerciseByIdHandler : IRequestHandler<GetGrammarExerciseByIdQuery, GrammarExerciseDto?>
 {
     private readonly IApplicationDbContext _context;
+    public GetGrammarExerciseByIdHandler(IApplicationDbContext context) => _context = context;
 
-    public GetGrammarExerciseByLevelHandler(IApplicationDbContext context) => _context = context;
-
-    public async Task<GrammarExerciseDto?> Handle(GetGrammarExerciseByLevelQuery request, CancellationToken ct)
+    public async Task<GrammarExerciseDto?> Handle(GetGrammarExerciseByIdQuery request, CancellationToken ct)
     {
         var exercise = await _context.GrammarExercises
             .Include(x => x.Questions)
             .ThenInclude(x => x.Options)
             .AsNoTracking()
-            .FirstOrDefaultAsync(x => x.Level.ToLower() == request.Level.ToLower(), ct);
+            .FirstOrDefaultAsync(x => x.Id == request.Id, ct);
 
         if (exercise == null) return null;
 
@@ -28,9 +27,7 @@ public class GetGrammarExerciseByLevelHandler : IRequestHandler<GetGrammarExerci
             exercise.Title,
             exercise.Level,
             exercise.Questions.Select(q => new GrammarQuestionDto(
-                q.Id,
-                q.QuestionText,
-                q.Explanation,
+                q.Id, q.QuestionText, q.Explanation,
                 q.Options.Select(o => new GrammarOptionDto(o.Id, o.Label, o.Content)).ToList()
             )).ToList()
         );
