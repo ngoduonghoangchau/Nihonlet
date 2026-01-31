@@ -568,6 +568,75 @@ namespace NihonLet.Infrastructure.Migrations
                     b.ToTable("GameSessions", (string)null);
                 });
 
+            modelBuilder.Entity("NihonLet.Domain.Entities.Identity.RefreshToken", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedByIp")
+                        .HasMaxLength(45)
+                        .HasColumnType("nvarchar(45)");
+
+                    b.Property<string>("DeviceFingerprint")
+                        .IsRequired()
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("DeviceName")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime>("ExpiresAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("LastUsedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("ReplacedByTokenId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("RevokedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("RevokedReason")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<Guid>("TokenFamily")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("TokenHash")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasMaxLength(450)
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TokenFamily")
+                        .HasDatabaseName("IX_RefreshTokens_TokenFamily");
+
+                    b.HasIndex("TokenHash")
+                        .IsUnique()
+                        .HasDatabaseName("IX_RefreshTokens_TokenHash");
+
+                    b.HasIndex("UserId")
+                        .HasDatabaseName("IX_RefreshTokens_UserId");
+
+                    b.HasIndex("UserId", "DeviceFingerprint")
+                        .HasDatabaseName("IX_RefreshTokens_UserId_DeviceFingerprint");
+
+                    b.ToTable("RefreshTokens", (string)null);
+                });
+
             modelBuilder.Entity("NihonLet.Domain.Entities.Learning.GrammarTopic", b =>
                 {
                     b.Property<int>("TopicId")
@@ -855,6 +924,15 @@ namespace NihonLet.Infrastructure.Migrations
                     b.Navigation("Session");
                 });
 
+            modelBuilder.Entity("NihonLet.Domain.Entities.Identity.RefreshToken", b =>
+                {
+                    b.HasOne("NihonLet.Infrastructure.Identity.ApplicationUser", null)
+                        .WithMany("RefreshTokens")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("NihonLet.Domain.Entities.Learning.ReadingArticle", b =>
                 {
                     b.HasOne("NihonLet.Domain.Entities.Learning.ReadingCategory", "Category")
@@ -890,6 +968,11 @@ namespace NihonLet.Infrastructure.Migrations
             modelBuilder.Entity("NihonLet.Domain.Entities.Learning.ReadingCategory", b =>
                 {
                     b.Navigation("Articles");
+                });
+
+            modelBuilder.Entity("NihonLet.Infrastructure.Identity.ApplicationUser", b =>
+                {
+                    b.Navigation("RefreshTokens");
                 });
 #pragma warning restore 612, 618
         }

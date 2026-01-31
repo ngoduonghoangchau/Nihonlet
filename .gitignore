@@ -88,3 +88,5 @@ Thumbs.db
 # End of file
 /generate_codebase.js
 /project_codebase.md
+/backend/docs/*
+/backend/tests/*
