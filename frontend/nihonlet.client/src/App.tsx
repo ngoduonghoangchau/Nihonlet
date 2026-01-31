@@ -13,7 +13,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/grammar" element={<GrammarTopicSelectionPage />} />
-        <Route path="/grammar/exercise/:topicId" element={<GrammarExercisePage />} />
+        <Route path="/grammar/exercise/:exerciseId" element={<GrammarExercisePage />} />
       </Routes>
     </Router>
   );

@@ -1,3 +1,27 @@
 {
-
+  "Title": "N5 - Đề 01: Trợ từ cơ bản",
+  "Level": "N5",
+  "IsPremium": false,
+  "Questions": [
+    {
+      "QuestionText": "私___ 田中大輔です。",
+      "Explanation": "は (wa) dùng để chỉ chủ đề của câu.",
+      "Options": [
+        { "Label": "A", "Content": "は", "IsCorrect": true },
+        { "Label": "B", "Content": "を", "IsCorrect": false },
+        { "Label": "C", "Content": "が", "IsCorrect": false },
+        { "Label": "D", "Content": "に", "IsCorrect": false }
+      ]
+    },
+    {
+      "QuestionText": "朝ご飯___ 食べましたか。",
+      "Explanation": "を (wo) dùng để chỉ tân ngữ của hành động ăn.",
+      "Options": [
+        { "Label": "A", "Content": "に", "IsCorrect": false },
+        { "Label": "B", "Content": "を", "IsCorrect": true },
+        { "Label": "C", "Content": "が", "IsCorrect": false },
+        { "Label": "D", "Content": "は", "IsCorrect": false }
+      ]
+    }
+  ]
 }

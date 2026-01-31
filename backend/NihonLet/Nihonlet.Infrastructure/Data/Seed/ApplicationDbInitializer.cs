@@ -16,6 +16,9 @@ namespace Nihonlet.Infrastructure.Data.Seed
 
             var identitySeeder = scope.ServiceProvider
                 .GetRequiredService<IdentitySeedService>();
+            
+            // Kích hoạt Seed Grammar từ JSON
+            await grammarSeeder.SeedAsync();
 
             // Tạm thời bỏ qua Seed từ file JSON để tránh lỗi đường dẫn cứng trong GrammarSeedService
             // await grammarSeeder.SeedAsync();
