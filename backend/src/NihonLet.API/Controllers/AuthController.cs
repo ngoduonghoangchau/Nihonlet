@@ -150,6 +150,37 @@ public class AuthController : ControllerBase
     }
 
     /// <summary>
+    /// Đăng nhập bằng Google OAuth
+    /// </summary>
+    [HttpPost("google")]
+    [ProducesResponseType(typeof(ApiResponse<AuthResponseDto>), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status401Unauthorized)]
+    public async Task<IActionResult> GoogleLogin([FromBody] GoogleLoginRequest request)
+    {
+        var ipAddress = GetClientIpAddress();
+        var result = await _identityService.GoogleLoginAsync(request.IdToken, request.DeviceInfo, ipAddress);
+
+        if (!result.Success)
+        {
+            return Unauthorized(ApiResponse<AuthResponseDto>.FailResult(
+                string.Join(", ", result.Errors ?? ["Đăng nhập Google thất bại."]),
+                "GOOGLE_LOGIN_FAILED"));
+        }
+
+        SetRefreshTokenCookie(result.RefreshToken!);
+
+        var response = new AuthResponseDto
+        {
+            AccessToken = result.AccessToken!,
+            ExpiresAt = result.ExpiresAt!.Value,
+            User = result.User!
+        };
+
+        return Ok(ApiResponse<AuthResponseDto>.SuccessResult(response, "Đăng nhập Google thành công!"));
+    }
+
+    /// <summary>
     /// Đăng xuất (revoke refresh token hiện tại)
     /// </summary>
     [HttpPost("logout")]
@@ -247,10 +278,10 @@ public class AuthController : ControllerBase
         var cookieOptions = new CookieOptions
         {
             HttpOnly = true,                    // Không thể truy cập từ JavaScript
-            Secure = true,                      // Chỉ gửi qua HTTPS
-            SameSite = SameSiteMode.Strict,     // Chống CSRF
+            Secure = true,                      // PHẢI là true vì backend chạy HTTPS
+            SameSite = SameSiteMode.None,       // None để cho phép cross-origin
             Expires = DateTime.UtcNow.AddDays(RefreshTokenExpiryDays),
-            Path = "/api/auth"                  // Chỉ gửi cho auth endpoints
+            Path = "/"                          // Gửi cho tất cả endpoints
         };
 
         Response.Cookies.Append(RefreshTokenCookieName, refreshToken, cookieOptions);
@@ -264,9 +295,9 @@ public class AuthController : ControllerBase
         Response.Cookies.Delete(RefreshTokenCookieName, new CookieOptions
         {
             HttpOnly = true,
-            Secure = true,
-            SameSite = SameSiteMode.Strict,
-            Path = "/api/auth"
+            Secure = true,                      // PHẢI là true vì backend chạy HTTPS
+            SameSite = SameSiteMode.None,
+            Path = "/"
         });
     }
 

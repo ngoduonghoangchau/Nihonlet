@@ -24,6 +24,14 @@ public interface IIdentityService
     Task<AuthResult> LoginAsync(LoginRequest request, DeviceInfoDto deviceInfo, string? ipAddress);
 
     /// <summary>
+    /// Đăng nhập hoặc đăng ký bằng Google OAuth
+    /// </summary>
+    /// <param name="idToken">Google ID Token từ frontend</param>
+    /// <param name="deviceInfo">Thông tin thiết bị</param>
+    /// <param name="ipAddress">IP address của client</param>
+    Task<AuthResult> GoogleLoginAsync(string idToken, DeviceInfoDto deviceInfo, string? ipAddress);
+
+    /// <summary>
     /// Refresh access token bằng refresh token
     /// </summary>
     /// <param name="refreshToken">Refresh token hiện tại</param>
