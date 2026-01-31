@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* Khai báo Theme v4 */
+@theme {
+  --color-primary: #f04299;
+  --color-background-light: #fcf8fa;
+  --color-background-dark: #221019;
+  
+  --font-display: "Lexend", sans-serif;
+}
+
+/* SỬA LỖI ICON BỊ HIỆN THÀNH CHỮ */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer base {
+  body {
+    @apply antialiased bg-background-light dark:bg-background-dark text-[#1b0d14] dark:text-[#fcf8fa];
+  }
+}
+
+/* Giữ nguyên các phần sakura-bg cũ bên dưới */
+
+/* 3. CSS TÙY CHỈNH (SAKURA BG & RUBY) */
+.sakura-bg {
+  background-image: linear-gradient(rgba(248, 246, 247, 0.9), rgba(248, 246, 247, 0.9)), 
+    url(https://lh3.googleusercontent.com/aida-public/AB6AXuDUFgH7ZhLIcO2DD-Dm0g2naQV2_vavvVeh5gYtfDTHlU2O5SOGK63fPAi_YnpSBSoPYe4UJrIXoALqbZIR9asANF85eeMosiYSmBJb_jdPfUv6RrqVFKo88i7gXcmp-kCVs4W1KFUgmxkxXEPdr3T3f_btpCGsn--psjFAn0eEYcU0ubtVaYP-GXm7Xg7fXdlRtjN8FI97HN9KEGm1s3m9potZB35J7_tYFIF1HTcRg54sFle96Nja9e4oWBlddstnJicgK2Vy7A);
+  background-size: cover;
+  background-position: center;
+}
+
+.dark .sakura-bg {
+  background-image: linear-gradient(rgba(34, 16, 25, 0.95), rgba(34, 16, 25, 0.95)), 
+    url(https://lh3.googleusercontent.com/aida-public/AB6AXuAmUMIgx35F5iuAiK-QUfjo5peHjYdsLNbbDao0UFKTWcCEH-aUgtlboDnBcgg57iT8ODnvXWWNr1Hej1AVBL-m34XV4S1LOcyZ9Uwy3QlF4J2bjZ8qDiCB-k-JvweMgi4vL94RSCDcdS7p2oMRZr_JsNIfQy03UYcGs-aqh2MTdDhcyPQ04yNvMlgXZniQhN6xX6jxTyFmmYiMopCuNN8ZGZXcrgzZkTM8pQfim6-ZgTVw5oqE7saFyTNwCuU3yY5qc53cPXIctg);
+}
+
+ruby {
+  display: inline-flex;
+  flex-direction: column-reverse;
+  vertical-align: bottom;
+  align-items: center;
+}
+
+rt {
+  /* Trong v4, dùng biến CSS thay vì @apply nếu gặp lỗi unknown class trong file CSS */
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 0.6em;
+  line-height: 1;
+  margin-bottom: 2px;
+}

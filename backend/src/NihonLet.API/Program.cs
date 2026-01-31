@@ -15,9 +15,30 @@ public partial class Program
     {
         // Load .env file TRƯỚC KHI tạo builder
         // Điều này đảm bảo các biến môi trường có sẵn cho Configuration
-        DotNetEnv.Env.Load();
+        string FindEnvFile(string startDir, int maxUp = 6)
+        {
+            var dir = new DirectoryInfo(startDir);
+            for (int i = 0; i < maxUp && dir != null; i++)
+            {
+                var candidate = Path.Combine(dir.FullName, ".env");
+                if (File.Exists(candidate)) return candidate;
+                dir = dir.Parent;
+            }
+            return null;
+        }
+
+        var envPath = FindEnvFile(AppContext.BaseDirectory);
+        Console.WriteLine($".env found at: {envPath}");
+        DotNetEnv.Env.Load(envPath);
+
 
         var builder = WebApplication.CreateBuilder(args);
+
+        Console.WriteLine("CWD: " + Directory.GetCurrentDirectory());
+        Console.WriteLine("AppBase: " + AppContext.BaseDirectory);
+        Console.WriteLine("ENV SQL: '" + Environment.GetEnvironmentVariable("NIHONLET_SQL_CONNECTION") + "'");
+        Console.WriteLine("ENV JWT: '" + Environment.GetEnvironmentVariable("NIHONLET_JWT_SECRET") + "'");
+        Console.WriteLine("Config SQL: '" + builder.Configuration["NIHONLET_SQL_CONNECTION"] + "'");
 
         // Add layers
         builder.Services.AddApplication();

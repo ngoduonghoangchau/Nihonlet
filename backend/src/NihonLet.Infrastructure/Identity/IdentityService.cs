@@ -2,6 +2,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using Google.Apis.Auth;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -119,6 +120,107 @@ public class IdentityService : IIdentityService
 
         // Revoke existing tokens cho cùng device (single session per device)
         await RevokeTokensByFingerprintAsync(user.Id, validatedDevice.Fingerprint, "NewLogin");
+
+        // Generate tokens
+        var roles = await _userManager.GetRolesAsync(user);
+        var (accessToken, expiresAt) = GenerateAccessToken(user, roles);
+        var (rawRefreshToken, refreshTokenEntity) = CreateRefreshToken(user.Id, validatedDevice, ipAddress);
+
+        // Lưu refresh token vào DB
+        _dbContext.RefreshTokens.Add(refreshTokenEntity);
+        await _dbContext.SaveChangesAsync();
+
+        return AuthResult.SuccessResult(
+            accessToken,
+            rawRefreshToken,
+            expiresAt,
+            MapToDto(user, roles));
+    }
+
+    public async Task<AuthResult> GoogleLoginAsync(string idToken, DeviceInfoDto deviceInfo, string? ipAddress)
+    {
+        // Validate device info
+        var validatedDevice = DeviceInfoDto.ValidateAndSanitize(deviceInfo);
+        if (validatedDevice == null)
+        {
+            return AuthResult.FailResult("Device fingerprint không hợp lệ.");
+        }
+
+        // Verify Google ID token
+        GoogleJsonWebSignature.Payload payload;
+        try
+        {
+            var googleClientId = Environment.GetEnvironmentVariable("GOOGLE_CLIENT_ID")
+                                 ?? _configuration["Authentication:Google:ClientId"];
+            if (string.IsNullOrEmpty(googleClientId))
+            {
+                return AuthResult.FailResult("Google OAuth chưa được cấu hình.");
+            }
+
+            var settings = new GoogleJsonWebSignature.ValidationSettings
+            {
+                Audience = new[] { googleClientId }
+            };
+
+            payload = await GoogleJsonWebSignature.ValidateAsync(idToken, settings);
+        }
+        catch (InvalidJwtException)
+        {
+            return AuthResult.FailResult("Google token không hợp lệ hoặc đã hết hạn.");
+        }
+
+        // Find or create user
+        var user = await _userManager.FindByEmailAsync(payload.Email);
+        
+        if (user == null)
+        {
+            // Tạo user mới từ Google account
+            user = new ApplicationUser
+            {
+                UserName = payload.Email,
+                Email = payload.Email,
+                EmailConfirmed = payload.EmailVerified,
+                FullName = payload.Name ?? payload.Email.Split('@')[0],
+                AvatarUrl = payload.Picture,
+                CreatedAt = DateTime.UtcNow
+            };
+
+            // Tạo user không cần password (Google login)
+            var createResult = await _userManager.CreateAsync(user);
+            if (!createResult.Succeeded)
+            {
+                var errors = createResult.Errors.Select(e => e.Description).ToArray();
+                return AuthResult.FailResult(errors);
+            }
+
+            // Gán role User mặc định
+            await _userManager.AddToRoleAsync(user, Roles.User);
+        }
+        else
+        {
+            // Update user info from Google if needed
+            var needsUpdate = false;
+            
+            if (string.IsNullOrEmpty(user.AvatarUrl) && !string.IsNullOrEmpty(payload.Picture))
+            {
+                user.AvatarUrl = payload.Picture;
+                needsUpdate = true;
+            }
+            
+            if (!user.EmailConfirmed && payload.EmailVerified)
+            {
+                user.EmailConfirmed = true;
+                needsUpdate = true;
+            }
+            
+            if (needsUpdate)
+            {
+                await _userManager.UpdateAsync(user);
+            }
+        }
+
+        // Revoke existing tokens cho cùng device
+        await RevokeTokensByFingerprintAsync(user.Id, validatedDevice.Fingerprint, "GoogleLogin");
 
         // Generate tokens
         var roles = await _userManager.GetRolesAsync(user);
