@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/NihonLet.API/NihonLet.API.csproj" />
+    <Project Path="src/NihonLet.Application/NihonLet.Application.csproj" />
+    <Project Path="src/NihonLet.Domain/NihonLet.Domain.csproj" />
+    <Project Path="src/NihonLet.Infrastructure/NihonLet.Infrastructure.csproj" />
+  </Folder>
+</Solution>
