@@ -54,7 +54,7 @@ const Login: React.FC = () => {
                 <Brain className="text-primary" size={32} />
               </div>
               <h1 className="text-[#1b0d14] text-3xl font-bold leading-tight">おかえりなさい</h1>
-              <p className="text-[#9a4c73] text-base font-normal mt-2">Welcome back to your AI journey</p>
+              <p className="text-[#9a4c73] text-base font-normal mt-2">Welcome back to your journey</p>
             </div>
             
             <div className="px-8 py-6">
@@ -130,7 +130,7 @@ const Login: React.FC = () => {
             
             <div className="px-8 py-6 bg-gray-50 text-center border-t border-[#f3e7ed]">
               <p className="text-sm text-[#9a4c73]">
-                New to Sakura AI?{' '}
+                New to NihonLet ?{' '}
                 <Link className="text-primary font-bold hover:underline" to="/register">
                   Create an account
                 </Link>

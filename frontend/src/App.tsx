@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, BrowserRouter } from 'react-router-dom';
 import AuthInitializer from './components/AuthInitializer';
 import ProtectedRoute from './components/ProtectedRoute';
 
@@ -36,9 +36,13 @@ import ReadingResults from './pages/ReadingResults';
 import Pricing from './pages/Pricing';
 import PremiumCheckout from './pages/PremiumCheckout';
 
+// COMPONENT SCROLL TO TOP
+import ScrollToTop from './components/ScrollToTop';
+
 const App: React.FC = () => {
   return (
     <Router>
+      <ScrollToTop />
       <AuthInitializer>
         <Routes>
           {/* === PUBLIC ROUTES (No Auth Required) === */}

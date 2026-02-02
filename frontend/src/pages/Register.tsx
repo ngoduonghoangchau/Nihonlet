@@ -78,7 +78,7 @@ const Register: React.FC = () => {
               <FileEdit className="text-primary" size={30} />
             </div>
             <h1 className="text-[#1b0d14] text-[32px] font-bold leading-tight text-center">Create Your Account</h1>
-            <p className="text-[#64324d] text-base mt-2 text-center">Start your AI-guided Japanese journey today.</p>
+            <p className="text-[#64324d] text-base mt-2 text-center">Start your Japanese journey today.</p>
           </div>
 
           {/* Server Error Alert */}

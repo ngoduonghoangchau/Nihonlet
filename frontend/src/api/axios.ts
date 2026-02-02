@@ -5,7 +5,9 @@ import { getDeviceInfo } from "../utils/fingerprint";
 import type { ApiResponse, AuthResponseDto } from "../types/auth";
 
 // ===== API Base URL =====
-const API_BASE_URL = import.meta.env.VITE_API_URL;
+// const API_BASE_URL = import.meta.env.VITE_API_URL;
+const API_BASE_URL = 'http://localhost:5017/api';
+
 
 // ===== Axios Instance =====
 export const api = axios.create({
@@ -38,10 +40,18 @@ const processQueue = (error: AxiosError | null, token: string | null = null) => 
 api.interceptors.request.use(
   (config: InternalAxiosRequestConfig) => {
     const state = store.getState();
-    const token = state.auth.accessToken;
+    // Lấy token từ Redux
+    let token = state.auth.accessToken;
+
+    if (!token) {
+      token = localStorage.getItem('accessToken'); // Đảm bảo tên key này khớp với lúc bạn lưu khi Login
+    }
 
     if (token && config.headers) {
       config.headers.Authorization = `Bearer ${token}`;
+      // console.log("Token sent:", token); // Log ra để chắc chắn không còn null
+    } else {
+      console.warn("No token found in Redux or LocalStorage");
     }
 
     return config;
