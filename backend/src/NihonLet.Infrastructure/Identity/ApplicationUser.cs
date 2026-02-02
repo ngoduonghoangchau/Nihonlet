@@ -25,4 +25,7 @@ public class ApplicationUser : IdentityUser
 
     /// <summary>Danh sách refresh tokens (sessions) của user</summary>
     public virtual ICollection<RefreshToken> RefreshTokens { get; set; } = new List<RefreshToken>();
+    
+    public bool IsPremium { get; set; } = false; // Thuộc tính thực tế trong DB
+
 }

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace NihonLet.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class InitialFix : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -319,6 +319,35 @@ namespace NihonLet.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "RefreshTokens",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    UserId = table.Column<string>(type: "nvarchar(450)", maxLength: 450, nullable: false),
+                    TokenHash = table.Column<string>(type: "nvarchar(64)", maxLength: 64, nullable: false),
+                    TokenFamily = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    ExpiresAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    RevokedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    ReplacedByTokenId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    RevokedReason = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
+                    DeviceFingerprint = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: false),
+                    DeviceName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
+                    LastUsedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CreatedByIp = table.Column<string>(type: "nvarchar(45)", maxLength: 45, nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_RefreshTokens", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_RefreshTokens_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Cards",
                 columns: table => new
                 {
@@ -529,6 +558,27 @@ namespace NihonLet.Infrastructure.Migrations
                 column: "Level");
 
             migrationBuilder.CreateIndex(
+                name: "IX_RefreshTokens_TokenFamily",
+                table: "RefreshTokens",
+                column: "TokenFamily");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_RefreshTokens_TokenHash",
+                table: "RefreshTokens",
+                column: "TokenHash",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_RefreshTokens_UserId",
+                table: "RefreshTokens",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_RefreshTokens_UserId_DeviceFingerprint",
+                table: "RefreshTokens",
+                columns: new[] { "UserId", "DeviceFingerprint" });
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Transactions_OrderCode",
                 table: "Transactions",
                 column: "OrderCode");
@@ -612,6 +662,9 @@ namespace NihonLet.Infrastructure.Migrations
                 name: "ReadingArticles");
 
             migrationBuilder.DropTable(
+                name: "RefreshTokens");
+
+            migrationBuilder.DropTable(
                 name: "Transactions");
 
             migrationBuilder.DropTable(
@@ -627,9 +680,6 @@ namespace NihonLet.Infrastructure.Migrations
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
-                name: "AspNetUsers");
-
-            migrationBuilder.DropTable(
                 name: "Decks");
 
             migrationBuilder.DropTable(
@@ -637,6 +687,9 @@ namespace NihonLet.Infrastructure.Migrations
 
             migrationBuilder.DropTable(
                 name: "ReadingCategories");
+
+            migrationBuilder.DropTable(
+                name: "AspNetUsers");
 
             migrationBuilder.DropTable(
                 name: "SubscriptionPlans");

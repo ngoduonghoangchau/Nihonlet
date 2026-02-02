@@ -7,8 +7,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using NihonLet.Application.Common.Interfaces;
+using NihonLet.Domain.Interfaces; 
 using NihonLet.Infrastructure.Identity;
 using NihonLet.Infrastructure.Persistence;
+using NihonLet.Infrastructure.Persistence.Repositories; 
 
 namespace NihonLet.Infrastructure;
 
@@ -88,6 +90,9 @@ public static class DependencyInjection
         // Identity Services
         services.AddScoped<IIdentityService, IdentityService>();
         services.AddScoped<ICurrentUserService, CurrentUserService>();
+
+        // Flashcard Repositories - THÊM DÒNG NÀY Ở ĐÂY
+        services.AddScoped<IDeckRepository, DeckRepository>();
         
         // MongoDB Logging Services
         services.AddSingleton<Logging.MongoDbContext>();
