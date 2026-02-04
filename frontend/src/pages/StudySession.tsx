@@ -1,119 +1,240 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
-import { ChevronLeft, ChevronRight, RefreshCw, Settings, Timer, Box } from 'lucide-react';
+import { api } from '../api/axios';
+import { 
+  ChevronLeft, 
+  ChevronRight, 
+  RefreshCw, 
+  Loader2, 
+  ArrowLeft,
+  BookOpen
+} from 'lucide-react';
+
+interface CardDto {
+  cardId: number;
+  kanji?: string;
+  reading: string;
+  meaning: string;
+  exampleSentence?: string;
+  exampleTranslation?: string;
+}
+
+interface DeckDetailsDto {
+  deckId: number;
+  title: string;
+  description?: string;
+  cards: CardDto[];
+}
 
 const StudySession: React.FC = () => {
+  const { id } = useParams<{ id: string }>(); 
+  const navigate = useNavigate();
+
+  const [deck, setDeck] = useState<DeckDetailsDto | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
 
-  // Logic lật thẻ: Ngăn chặn sự kiện lan tỏa nếu nhấn vào nút bên trong thẻ
+useEffect(() => {
+  const fetchDeck = async () => {
+    try {
+      setLoading(true);
+      const response = await api.get(`/Decks/${id}`);
+      setDeck(response.data);
+      
+      // THÊM DÒNG NÀY: Để Dashboard cập nhật ngay lập tức về thẻ đầu tiên (ví dụ 10%)
+      if (response.data.cards.length > 0) {
+        const initialProgress = Math.round((1 / response.data.cards.length) * 100);
+        api.patch(`/Decks/${id}/mastery`, { masteryPercent: initialProgress });
+      }
+      
+    } catch (error) {
+      console.error("Lỗi khi tải bộ thẻ:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  if (id) fetchDeck();
+}, [id]);
+
+  // 2. Hàm cập nhật Mastery về Backend
+  const syncMastery = async (newIndex: number) => {
+    if (!deck) return;
+    const currentProgress = Math.round(((newIndex + 1) / deck.cards.length) * 100);
+    try {
+      await api.patch(`/Decks/${id}/mastery`, {
+        masteryPercent: currentProgress
+      });
+    } catch (error) {
+      console.error("Lỗi cập nhật Mastery:", error);
+    }
+  };
+
   const handleFlip = (e?: React.MouseEvent) => {
     if (e) e.stopPropagation();
     setIsFlipped(!isFlipped);
   };
 
+  const nextCard = () => {
+    if (deck && currentIndex < deck.cards.length - 1) {
+      const nextIndex = currentIndex + 1;
+      setIsFlipped(false);
+      setTimeout(() => {
+        setCurrentIndex(nextIndex);
+        syncMastery(nextIndex); // Cập nhật tiến độ khi qua thẻ mới
+      }, 150);
+    }
+  };
+
+  const prevCard = () => {
+    if (currentIndex > 0) {
+      setIsFlipped(false);
+      setTimeout(() => setCurrentIndex(prev => prev - 1), 150);
+    }
+  };
+
+  if (loading) return (
+    <div className="h-screen flex items-center justify-center bg-[#FCF8FA]">
+      <Loader2 className="animate-spin text-primary" size={48} />
+    </div>
+  );
+
+  if (!deck || deck.cards.length === 0) return (
+    <div className="h-screen flex flex-col items-center justify-center gap-4 text-center px-4">
+      <p className="text-[#9a4c73] font-bold text-lg">Bộ thẻ này hiện chưa có nội dung.</p>
+      <button onClick={() => navigate('/dashboard')} className="text-primary font-bold underline">Quay lại thư viện</button>
+    </div>
+  );
+
+  const currentCard = deck.cards[currentIndex];
+  const progress = ((currentIndex + 1) / deck.cards.length) * 100;
+
   return (
     <div className="bg-[#FCF8FA] min-h-screen flex flex-col font-display text-[#1b0d14]">
       <Header />
 
-      <main className="flex-1 flex flex-col items-center py-12 px-4 max-w-[1000px] mx-auto w-full">
+      <main className="flex-1 flex flex-col items-center py-8 px-4 max-w-[1000px] mx-auto w-full animate-fadeIn">
         
         {/* PROGRESS SECTION */}
-        <div className="w-full mb-12">
-          <div className="flex justify-between items-end mb-4">
+        <div className="w-full mb-8">
+          <button 
+            onClick={() => navigate('/dashboard')} 
+            className="flex items-center gap-2 text-[#9a4c73] hover:text-primary mb-6 transition-colors font-bold group"
+          >
+            <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" /> 
+            Back to Library
+          </button>
+          
+          <div className="flex justify-between items-end mb-3">
             <div>
-              <h2 className="text-3xl font-black tracking-tight mb-1">Daily Review</h2>
-              <p className="text-primary font-bold text-sm">JLPT N3 Vocabulary</p>
+              <div className="flex items-center gap-2 mb-1">
+                 <BookOpen size={18} className="text-primary" />
+                 <h2 className="text-2xl sm:text-3xl font-black tracking-tight">{deck.title}</h2>
+              </div>
+              <p className="text-[#9a4c73] font-medium text-xs sm:text-sm">Card {currentIndex + 1} of {deck.cards.length}</p>
             </div>
             <div className="text-right">
-              <p className="text-primary font-black text-sm mb-1 uppercase tracking-wider">65% Completed</p>
-              <p className="text-[#9a4c73] text-[10px] font-bold">Streak: 15 cards</p>
+              <p className="text-primary font-black text-xs sm:text-sm mb-1 uppercase tracking-wider">{Math.round(progress)}% Completed</p>
             </div>
           </div>
-          <div className="h-4 w-full bg-pink-100 rounded-full overflow-hidden">
+          <div className="h-3 w-full bg-pink-100 rounded-full overflow-hidden shadow-inner">
             <div 
-              className="h-full bg-primary rounded-full transition-all duration-700 ease-out shadow-[0_0_15px_rgba(244,63,94,0.3)]" 
-              style={{ width: '65%' }}
+              className="h-full bg-primary rounded-full transition-all duration-500 ease-out" 
+              style={{ width: `${progress}%` }}
             ></div>
           </div>
         </div>
 
         {/* FLASHCARD CONTAINER */}
-        <div className="flex items-center justify-center gap-6 w-full flex-1">
+        <div className="flex items-center justify-center gap-4 sm:gap-8 w-full flex-1">
           
-          <button className="size-12 rounded-full bg-white shadow-xl flex items-center justify-center text-gray-400 hover:text-primary transition-all active:scale-90 shrink-0">
+          <button 
+            disabled={currentIndex === 0}
+            onClick={prevCard}
+            className={`size-10 sm:size-12 rounded-full bg-white shadow-xl flex items-center justify-center transition-all active:scale-90 shrink-0 ${currentIndex === 0 ? 'opacity-20 cursor-not-allowed' : 'text-gray-400 hover:text-primary'}`}
+          >
             <ChevronLeft size={28} />
           </button>
 
-          {/* Logic 1: Perspective Container */}
-          <div className="w-full max-w-[650px] aspect-[4/3] perspective-1000">
-            {/* Logic 2: Transform-style-3d Wrapper */}
+          {/* 3D Flip Card */}
+          <div className="w-full max-w-[600px] aspect-[4/3] perspective-1000">
             <div 
               className={`relative w-full h-full transition-transform duration-700 transform-style-3d cursor-pointer ${isFlipped ? 'rotate-y-180' : ''}`}
               onClick={() => handleFlip()}
             >
               
-              {/* MẶT TRƯỚC (FRONT SIDE) */}
-              <div 
-                className="absolute inset-0 bg-white rounded-[40px] shadow-2xl border border-pink-50 flex flex-col items-center justify-center p-12 backface-hidden z-20"
-              >
-                <div className="flex-1 flex flex-col items-center justify-center">
-                  <p className="text-primary text-3xl font-medium mb-4">すばらしい</p>
-                  <h1 className="text-7xl md:text-8xl font-black tracking-tighter text-[#1b0d14]">素晴らしい</h1>
+              {/* MẶT TRƯỚC (Kanji & Reading) */}
+              <div className="absolute inset-0 bg-white rounded-[3rem] shadow-2xl border border-pink-50 flex flex-col items-center justify-center p-8 backface-hidden z-20">
+                <div className="flex-1 flex flex-col items-center justify-center text-center">
+                  <p className="text-primary text-xl sm:text-2xl font-medium mb-4">{currentCard.reading}</p>
+                  <h1 className="text-5xl sm:text-7xl font-black tracking-tighter text-[#1b0d14]">
+                    {currentCard.kanji || currentCard.reading}
+                  </h1>
                 </div>
-                
-                <button 
-                  onClick={handleFlip}
-                  className="mt-8 flex items-center gap-2 px-10 py-4 bg-primary text-white font-black rounded-3xl shadow-xl shadow-primary/30 hover:scale-105 active:scale-95 transition-all"
-                >
-                  <RefreshCw size={20} className="stroke-[3px]" />
-                  <span>Flip Card</span>
-                </button>
+                <div className="flex items-center gap-2 text-[#9a4c73]/40 font-bold text-[10px] uppercase tracking-widest">
+                  <RefreshCw size={14} /> Click to flip
+                </div>
               </div>
 
-              {/* MẶT SAU (BACK SIDE) */}
-              <div className="absolute inset-0 bg-white rounded-[40px] shadow-2xl border border-pink-50 flex flex-col items-center p-12 backface-hidden rotate-y-180 z-10 overflow-y-auto">
-
-                <div className="flex flex-col items-center mb-8">
-                  <span className="px-5 py-1.5 bg-pink-50 text-primary text-[10px] font-black uppercase tracking-[0.2em] rounded-full mb-6">Meaning</span>
-                  <h2 className="text-6xl font-black mb-2 text-[#1b0d14]">Wonderful</h2>
-                  <p className="text-[#9a4c73] text-xl font-medium">Splendid, magnificent</p>
+              {/* MẶT SAU (Meaning & Example - ĐÃ FIX KHOẢNG CÁCH) */}
+              <div className="absolute inset-0 bg-white rounded-[3rem] shadow-2xl border border-pink-50 flex flex-col items-center justify-center p-8 sm:p-12 backface-hidden rotate-y-180 z-10 overflow-y-auto">
+                
+                {/* Ý nghĩa */}
+                <div className="flex flex-col items-center mb-6">
+                  <span className="px-4 py-1 bg-pink-50 text-primary text-[10px] font-black uppercase tracking-[0.2em] rounded-full mb-3">
+                    Meaning
+                  </span>
+                  <h2 className="text-3xl sm:text-5xl font-black text-[#1b0d14] text-center leading-tight">
+                    {currentCard.meaning}
+                  </h2>
                 </div>
 
-                <div className="w-full border-t border-dashed border-pink-100 my-4" />
-
-                <div className="w-full flex flex-col items-center mt-6">
-                  <span className="px-5 py-1.5 bg-pink-50 text-primary text-[10px] font-black uppercase tracking-[0.2em] rounded-full mb-6">Example</span>
-                  <div className="w-full bg-[#F8F5F7] rounded-3xl p-8 flex flex-col items-center text-center">
-                    <p className="text-2xl font-black mb-2 text-[#1b0d14]">今日は素晴らしい天気です。</p>
-                    <p className="text-primary font-bold text-sm mb-4">Kyō wa subarashii tenki desu.</p>
-                    <p className="text-[#9a4c73] text-lg italic font-medium">"The weather is wonderful today."</p>
+                {/* Ví dụ (Nằm sát dưới Meaning) */}
+                {currentCard.exampleSentence && (
+                  <div className="w-full flex flex-col items-center">
+                    <span className="px-4 py-1 bg-pink-50 text-primary text-[10px] font-black uppercase tracking-[0.2em] rounded-full mb-3">
+                      Example
+                    </span>
+                    <div className="w-full bg-[#F8F5F7] rounded-[2rem] p-5 sm:p-6 flex flex-col items-center text-center">
+                      <p className="text-lg sm:text-xl font-black mb-1.5 text-[#1b0d14] leading-relaxed">
+                        {currentCard.exampleSentence}
+                      </p>
+                      <p className="text-[#9a4c73] text-sm sm:text-base italic font-medium">
+                        {currentCard.exampleTranslation}
+                      </p>
+                    </div>
                   </div>
-                </div>
+                )}
 
-                <button 
-                  onClick={handleFlip}
-                  className="mt-auto flex items-center gap-2 px-10 py-4 bg-primary text-white font-black rounded-3xl shadow-xl shadow-primary/30 hover:scale-105 active:scale-95 transition-all"
-                >
-                  <RefreshCw size={20} className="stroke-[3px]" />
-                  <span>Flip Card</span>
-                </button>
+                <div className="mt-6 flex items-center gap-2 text-[#9a4c73]/40 font-bold text-[10px] uppercase tracking-widest">
+                  <RefreshCw size={12} /> Click to flip back
+                </div>
               </div>
 
             </div>
           </div>
 
-          <button className="size-12 rounded-full bg-white shadow-xl flex items-center justify-center text-gray-400 hover:text-primary transition-all active:scale-90 shrink-0">
+          <button 
+            disabled={currentIndex === deck.cards.length - 1}
+            onClick={nextCard}
+            className={`size-10 sm:size-12 rounded-full bg-white shadow-xl flex items-center justify-center transition-all active:scale-90 shrink-0 ${currentIndex === deck.cards.length - 1 ? 'opacity-20 cursor-not-allowed' : 'text-gray-400 hover:text-primary'}`}
+          >
             <ChevronRight size={28} />
           </button>
         </div>
       </main>
 
-      {/* --- INLINE STYLES CHO HIỆU ỨNG 3D --- */}
       <style dangerouslySetInnerHTML={{ __html: `
         .perspective-1000 { perspective: 1000px; }
         .transform-style-3d { transform-style: preserve-3d; }
         .backface-hidden { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
         .rotate-y-180 { transform: rotateY(180deg); }
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn { animation: fadeIn 0.5s ease-out forwards; }
       `}} />
     </div>
   );

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useSelector } from 'react-redux'; // Thêm useSelector
+import { useSelector } from 'react-redux';
 import Header from '../components/Header';
 import { api } from '../api/axios'; 
-import type { RootState } from '../store'; // Import RootState
+import type { RootState } from '../store';
 import { 
   Layers, 
   Plus, 
@@ -13,10 +13,15 @@ import {
   Zap, 
   Loader2, 
   Trash2, 
-  Lock // Import thêm icon Lock
+  Lock 
 } from 'lucide-react';
 
-// Định nghĩa Interface khớp với DeckDto từ Backend
+const DECK_IMAGES = [
+  "https://images.unsplash.com/photo-1583409209821-aa5dcdc23872?w=600&auto=format&fit=crop",
+  "https://plus.unsplash.com/premium_photo-1690749740487-01bbb8e51e71?q=80&w=765&auto=format&fit=crop",
+  "https://plus.unsplash.com/premium_photo-1661878091370-4ccb8763756a?q=80&w=1632&auto=format&fit=crop"
+];
+
 interface DeckItem {
   deckId: number;
   title: string;
@@ -24,28 +29,34 @@ interface DeckItem {
   cardsCount: number;
   masteryPercent: number;
   isBulkCreated: boolean;
+  displayImage?: string; // Thêm trường này để lưu ảnh ngẫu nhiên
 }
 
 const Dashboard: React.FC = () => {
   const navigate = useNavigate();
   
-  // --- LẤY THÔNG TIN USER TỪ REDUX ---
   const { user } = useSelector((state: RootState) => state.auth);
   const isPremiumUser = user?.roles?.includes('Premium') || false;
 
   const [decks, setDecks] = useState<DeckItem[]>([]);
   const [loading, setLoading] = useState(true);
 
-  // --- LOGIC KIỂM TRA GIỚI HẠN ---
-  const DECK_LIMIT = 10; // Khớp với Business Rule domain
+  const DECK_LIMIT = 10;
   const isLimitReached = !isPremiumUser && decks.length >= DECK_LIMIT;
 
-  // --- HÀM GỌI API LẤY DANH SÁCH ---
+  // 2. Cập nhật hàm fetch để gán ảnh ngẫu nhiên ngay khi lấy data
   const fetchDecks = async () => {
     try {
       setLoading(true);
       const response = await api.get('/Flashcards/decks');
-      setDecks(response.data);
+      
+      // Map qua dữ liệu để chọn ngẫu nhiên 1 trong 3 ảnh
+      const processedDecks = response.data.map((deck: DeckItem) => ({
+        ...deck,
+        displayImage: DECK_IMAGES[Math.floor(Math.random() * DECK_IMAGES.length)]
+      }));
+
+      setDecks(processedDecks);
     } catch (error) {
       console.error("Lỗi lấy danh sách bộ thẻ:", error);
     } finally {
@@ -69,22 +80,12 @@ const Dashboard: React.FC = () => {
     fetchDecks();
   }, []);
 
-  // --- HÀM ĐIỀU HƯỚNG CÓ KIỂM TRA RULE ---
   const goToCreatePage = () => {
     if (isLimitReached) {
       alert("⚠️ Bạn đã đạt giới hạn 10 bộ thẻ cho tài khoản FREE. Vui lòng nâng cấp Premium để tiếp tục tạo không giới hạn!");
       return;
     }
     navigate('/create-flashcard');
-  };
-
-  const getDeckImage = (id: number) => {
-    const images = [
-        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?q=80&w=500&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=500&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=500&auto=format&fit=crop"
-    ];
-    return images[id % images.length];
   };
 
   return (
@@ -156,10 +157,15 @@ const Dashboard: React.FC = () => {
             ) : (
               <>
                 {decks.map((deck) => (
-                  <div key={deck.deckId} className="bg-white rounded-[2rem] border border-[#f3e7ed] overflow-hidden hover:shadow-xl transition-all group cursor-pointer flex flex-col relative">
+                  <div 
+                    key={deck.deckId}
+                    onClick={() => navigate(`/study-session/${deck.deckId}`)} 
+                    className="bg-white rounded-[2rem] border border-[#f3e7ed] overflow-hidden hover:shadow-xl transition-all group cursor-pointer flex flex-col relative"
+                  >
                     <div 
                         className="relative h-44 w-full bg-center bg-cover" 
-                        style={{ backgroundImage: `url(${getDeckImage(deck.deckId)})` }}
+                        // 3. SỬ DỤNG ẢNH ĐÃ GÁN NGẪU NHIÊN
+                        style={{ backgroundImage: `url(${deck.displayImage})` }}
                     >
                       <button 
                           onClick={(e) => handleDeleteDeck(deck.deckId, e)}

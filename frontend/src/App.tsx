@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import AuthInitializer from './components/AuthInitializer';
 import ProtectedRoute from './components/ProtectedRoute';
 
@@ -55,7 +55,7 @@ const App: React.FC = () => {
 
           {/* === FLASHCARDS === */}
           <Route path="/create-flashcard" element={<ProtectedRoute><CreateFlashcard /></ProtectedRoute>} />
-          <Route path="/study-session" element={<ProtectedRoute><StudySession /></ProtectedRoute>} />
+          <Route path="/study-session/:id" element={<ProtectedRoute><StudySession /></ProtectedRoute>} />
 
           {/* === GRAMMAR === */}
           <Route path="/grammar-library" element={<ProtectedRoute><GrammarLibrary /></ProtectedRoute>} />

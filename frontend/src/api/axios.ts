@@ -47,15 +47,15 @@ api.interceptors.request.use(
       token = localStorage.getItem('accessToken'); // Đảm bảo tên key này khớp với lúc bạn lưu khi Login
     }
 
-    if (token && config.headers) {
+    if (token) {
       config.headers.Authorization = `Bearer ${token}`;
-      // console.log("Token sent:", token); // Log ra để chắc chắn không còn null
     } else {
-      console.warn("No token found in Redux or LocalStorage");
+    // Xóa dòng throw Error, đổi thành log warn thôi
+    console.warn("No token available yet"); 
     }
-
-    return config;
+     return config;
   },
+  
   (error) => Promise.reject(error),
 );
 
