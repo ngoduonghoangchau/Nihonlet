@@ -46,4 +46,11 @@ public class DeckRepository : IDeckRepository
     {
         _context.Decks.Remove(deck);
     }
+
+    public async Task<Deck?> GetByIdWithCardsAsync(int deckId, string userId)
+{
+    return await _context.Decks
+        .Include(d => d.Cards) // Nạp danh sách thẻ
+        .FirstOrDefaultAsync(d => d.DeckId == deckId && d.UserId == userId);
+}
 }

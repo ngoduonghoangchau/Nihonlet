@@ -1,0 +1,1 @@
+public record UpdateMasteryRequest(int MasteryPercent);
