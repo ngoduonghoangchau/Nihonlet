@@ -69,9 +69,8 @@ const MinigameSelect: React.FC = () => {
   };
 
 const handleStartGame = async () => {
-  // Kiểm tra Rule GAME_002 (Tối thiểu 5 thẻ) ở Frontend
   if (totalCardsSelected < 5) {
-    alert("⚠️ Các bộ thẻ đã chọn chỉ có " + totalCardsSelected + " thẻ. Cần ít nhất 5 thẻ để bắt đầu!");
+    alert("⚠️ Cần ít nhất 5 thẻ để bắt đầu!");
     return;
   }
 
@@ -81,12 +80,12 @@ const handleStartGame = async () => {
       wordCount: wordCount === 'all' ? totalCardsSelected : parseInt(wordCount)
     };
     
-    // Gọi API xác thực luật chơi ở Backend
     const res = await api.post('/Gamification/start-matching', payload);
     
     if (res.status === 200) {
-      
-      navigate('/matchinggame1', { state: payload });
+      // Logic chuyển trang linh hoạt dựa trên selectedGame
+      const targetRoute = selectedGame === 'matching' ? '/matchinggame1' : '/rewritinggame';
+      navigate(targetRoute, { state: payload });
     }
   } catch (error: any) {
     alert(error.response?.data?.message || "Lỗi khởi tạo game");
