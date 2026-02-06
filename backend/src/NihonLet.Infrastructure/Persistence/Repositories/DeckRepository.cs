@@ -48,9 +48,17 @@ public class DeckRepository : IDeckRepository
     }
 
     public async Task<Deck?> GetByIdWithCardsAsync(int deckId, string userId)
-{
-    return await _context.Decks
-        .Include(d => d.Cards) // Nạp danh sách thẻ
-        .FirstOrDefaultAsync(d => d.DeckId == deckId && d.UserId == userId);
-}
+    {
+        return await _context.Decks
+            .Include(d => d.Cards) // Nạp danh sách thẻ
+            .FirstOrDefaultAsync(d => d.DeckId == deckId && d.UserId == userId);
+    }
+
+    public async Task<List<Deck>> GetDecksByIdsAsync(List<int> ids)
+    {
+        return await _context.Decks
+            .Include(d => d.Cards) 
+            .Where(d => ids.Contains(d.DeckId))
+            .ToListAsync();
+    }
 }

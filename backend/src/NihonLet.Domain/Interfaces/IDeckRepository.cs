@@ -12,5 +12,8 @@ public interface IDeckRepository
     void Delete(Deck deck);      
     //phục vụ cho việc lấy Deck cùng với các Cards của nó(study-session)    
     Task<Deck?> GetByIdWithCardsAsync(int deckId, string userId);
+    //lấy nhiều Deck cho game
+    Task<List<Deck>> GetDecksByIdsAsync(List<int> ids);
+
    
 }
