@@ -1,125 +1,203 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
+import { api } from '../api/axios'; 
+
 import { 
   Sparkles, 
   CheckCircle2, 
   Lightbulb, 
   Shuffle, 
-  Check 
+  Trophy,
+  RefreshCcw,
+  ArrowLeft,
+  Loader2
 } from 'lucide-react';
 
+interface CardTile {
+  id: string;
+  cardId: number;
+  text: string;
+  lang: "JAPANESE" | "VIETNAMESE";
+  status: "default" | "selected" | "matched";
+}
+
 const MatchingGame1: React.FC = () => {
-  // Dữ liệu mẫu cho các thẻ
-  const gameCards = [
-    { id: 1, text: "猫", lang: "JAPANESE", status: "matched" },
-    { id: 2, text: "Con mèo", lang: "VIETNAMESE", status: "matched" },
-    { id: 3, text: "食べる", lang: "JAPANESE", status: "selected" },
-    { id: 4, text: "Ăn", lang: "VIETNAMESE", status: "default" },
-    { id: 5, text: "水", lang: "JAPANESE", status: "default" },
-    { id: 6, text: "Nước", lang: "VIETNAMESE", status: "default" },
-    { id: 7, text: "学校", lang: "JAPANESE", status: "default" },
-    { id: 8, text: "Trường học", lang: "VIETNAMESE", status: "default" },
-    { id: 9, text: "犬", lang: "JAPANESE", status: "default" },
-    { id: 10, text: "Con chó", lang: "VIETNAMESE", status: "default" },
-    { id: 11, text: "先生", lang: "JAPANESE", status: "default" },
-    { id: 12, text: "Thầy giáo", lang: "VIETNAMESE", status: "default" },
-  ];
+  const location = useLocation();
+  const navigate = useNavigate();
+  const gameConfig = location.state as { selectedDeckIds: number[], wordCount: number };
+
+  const [tiles, setTiles] = useState<CardTile[]>([]);
+  const [firstSelection, setFirstSelection] = useState<CardTile | null>(null);
+  const [secondSelection, setSecondSelection] = useState<CardTile | null>(null);
+  const [score, setScore] = useState(0);
+  const [loading, setLoading] = useState(true);
+  const [isWon, setIsWon] = useState(false);
+
+  const initGame = useCallback(async () => {
+    if (!gameConfig) {
+      navigate('/minigameSelect');
+      return;
+    }
+    try {
+      setLoading(true);
+      const res = await api.post('/Gamification/get-cards', {
+        deckIds: gameConfig.selectedDeckIds,
+        limit: gameConfig.wordCount
+      });
+      const data = res.data;
+      let newTiles: CardTile[] = [];
+      data.forEach((card: any) => {
+        newTiles.push({
+          id: `jp-${card.cardId}`,
+          cardId: card.cardId,
+          text: card.kanji,
+          lang: "JAPANESE",
+          status: "default"
+        });
+        newTiles.push({
+          id: `vn-${card.cardId}`,
+          cardId: card.cardId,
+          text: card.meaning,
+          lang: "VIETNAMESE",
+          status: "default"
+        });
+      });
+      setTiles(newTiles.sort(() => Math.random() - 0.5));
+      setScore(0);
+      setIsWon(false);
+    } catch (error) {
+      console.error("Lỗi khởi tạo game:", error);
+    } finally {
+      setLoading(false);
+    }
+  }, [gameConfig, navigate]);
+
+  useEffect(() => { initGame(); }, [initGame]);
+
+  const handleCardClick = (tile: CardTile) => {
+    if (tile.status === "matched" || tile.status === "selected" || secondSelection) return;
+    setTiles(prev => prev.map(t => t.id === tile.id ? { ...t, status: "selected" } : t));
+    if (!firstSelection) {
+      setFirstSelection(tile);
+    } else {
+      setSecondSelection(tile);
+      checkMatch(firstSelection, tile);
+    }
+  };
+
+  const checkMatch = (card1: CardTile, card2: CardTile) => {
+    if (card1.cardId === card2.cardId) {
+      setTimeout(() => {
+        setTiles(prev => prev.map(t => t.cardId === card1.cardId ? { ...t, status: "matched" } : t));
+        setScore(s => s + 100);
+        setFirstSelection(null);
+        setSecondSelection(null);
+      }, 500);
+    } else {
+      setTimeout(() => {
+        setTiles(prev => prev.map(t => (t.id === card1.id || t.id === card2.id) ? { ...t, status: "default" } : t));
+        setFirstSelection(null);
+        setSecondSelection(null);
+      }, 1000);
+    }
+  };
+
+  useEffect(() => {
+    if (tiles.length > 0 && tiles.every(t => t.status === "matched")) {
+      handleGameWin();
+    }
+  }, [tiles]);
+
+  const handleGameWin = async () => {
+    const finalScore = score + 500;
+    const totalPairs = tiles.length / 2;
+    const uniqueCards = tiles.reduce((acc: any[], current) => {
+      if (current.lang === "JAPANESE") {
+        const pair = tiles.find(t => t.cardId === current.cardId && t.lang === "VIETNAMESE");
+        acc.push({ ja: current.text, vi: pair?.text || "" });
+      }
+      return acc;
+    }, []);
+
+    try {
+      await api.post('/Gamification/save-session', {
+        wordCount: gameConfig.wordCount,
+        selectedDecksJson: JSON.stringify(gameConfig.selectedDeckIds),
+        totalScore: finalScore,
+        accuracy: 100 
+      });
+    } catch (e) {
+      console.error("Lưu kết quả thất bại", e);
+    }
+
+    navigate('/matching-results', { 
+      state: { score: finalScore, pairsMatched: totalPairs, totalPairs: totalPairs, reviewData: uniqueCards, gameConfig: gameConfig } 
+    });
+  };
+
+  // --- LOGIC TÍNH TOÁN ĐÃ THÊM ---
+  const matchedCount = tiles.filter(t => t.status === "matched").length;
+  const progress = tiles.length > 0 ? (matchedCount / tiles.length) * 100 : 0;
+
+  if (loading) return (
+    <div className="min-h-screen flex items-center justify-center bg-[#fcf8fa]">
+      <Loader2 className="animate-spin text-primary" size={48} />
+    </div>
+  );
 
   return (
     <div className="bg-[#fcf8fa] min-h-screen text-[#1b0d14] font-display">
       <Header />
-      
-      <main className="max-w-[1200px] mx-auto px-4 py-8 animate-fadeIn">
-        {/* --- STATS SECTION --- */}
-        <div className="flex flex-wrap gap-4 mb-6 w-full">
-          <div className="flex min-w-[180px] flex-1 flex-col gap-2 rounded-2xl p-6 bg-white border border-[#f3e7ed] shadow-sm">
-            <div className="flex items-center gap-2 text-[#9a4c73]">
+      <main className="max-w-[1000px] mx-auto px-4 py-8 animate-fadeIn">
+        <button onClick={() => navigate(-1)} className="mb-6 flex items-center gap-2 text-[#9a4c73] font-bold hover:text-primary transition-colors">
+          <ArrowLeft size={20} /> Quit Game
+        </button>
+
+        <div className="grid grid-cols-2 gap-4 mb-6">
+          <div className="bg-white rounded-2xl p-6 border border-[#f3e7ed] shadow-sm">
+            <div className="flex items-center gap-2 text-[#9a4c73] mb-1">
               <Sparkles size={16} className="text-primary" />
-              <p className="text-sm font-bold uppercase tracking-wider">Total Score</p>
+              <p className="text-xs font-bold uppercase tracking-wider">Score</p>
             </div>
-            <p className="text-4xl font-black text-primary">1,250</p>
+            <p className="text-4xl font-black text-primary">{score}</p>
           </div>
-          <div className="flex min-w-[180px] flex-1 flex-col gap-2 rounded-2xl p-6 bg-white border border-[#f3e7ed] shadow-sm">
-            <div className="flex items-center gap-2 text-[#9a4c73]">
+          <div className="bg-white rounded-2xl p-6 border border-[#f3e7ed] shadow-sm">
+            <div className="flex items-center gap-2 text-[#9a4c73] mb-1">
               <CheckCircle2 size={16} className="text-primary" />
-              <p className="text-sm font-bold uppercase tracking-wider">Pairs Found</p>
+              <p className="text-xs font-bold uppercase tracking-wider">Matched</p>
             </div>
-            <p className="text-4xl font-black text-[#1b0d14]">6 / 12</p>
+            <p className="text-4xl font-black">{matchedCount / 2} / {tiles.length / 2}</p>
           </div>
         </div>
 
-        {/* --- PROGRESS SECTION --- */}
         <div className="bg-white rounded-2xl p-6 border border-[#f3e7ed] shadow-sm mb-8">
           <div className="flex justify-between items-end mb-3">
-            <div>
-              <p className="text-lg font-bold text-[#1b0d14]">Current Progress</p>
-              <p className="text-[#9a4c73] text-sm font-medium">Keep going! You're halfway there.</p>
-            </div>
-            <p className="text-primary font-black text-2xl">50%</p>
+            <p className="font-bold">Progress</p>
+            <p className="text-primary font-black">{Math.round(progress)}%</p>
           </div>
           <div className="rounded-full bg-[#f3e7ed] h-3.5 overflow-hidden">
-            <div 
-              className="h-full bg-primary transition-all duration-700 rounded-full" 
-              style={{ width: '50%' }}
-            ></div>
+            <div className="h-full bg-primary transition-all duration-500" style={{ width: `${progress}%` }}></div>
           </div>
         </div>
 
-        <div className="relative">
-          {/* --- SIDEBAR CONTROLS --- */}
-          <div className="absolute -left-20 top-0 hidden xl:flex flex-col gap-4">
-            <button className="size-14 rounded-full bg-white border border-[#f3e7ed] flex items-center justify-center text-[#9a4c73] hover:text-primary hover:border-primary transition-all shadow-md">
-              <Lightbulb size={24} />
-            </button>
-            <button className="size-14 rounded-full bg-white border border-[#f3e7ed] flex items-center justify-center text-[#9a4c73] hover:text-primary hover:border-primary transition-all shadow-md">
-              <Shuffle size={24} />
-            </button>
-          </div>
-
-          {/* --- GAME GRID --- */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
-            {gameCards.map((card) => {
-              // Xử lý các trạng thái của Card
-              const isMatched = card.status === "matched";
-              const isSelected = card.status === "selected";
-
-              return (
-                <div 
-                  key={card.id}
-                  className={`
-                    relative aspect-square rounded-[2rem] flex flex-col items-center justify-center p-6 text-center transition-all duration-300 cursor-pointer shadow-sm
-                    ${isMatched ? 'bg-gray-50/50 border-2 border-transparent opacity-40 grayscale pointer-events-none' : ''}
-                    ${isSelected ? 'bg-[#fef1f7] border-[3px] border-primary scale-105 shadow-xl' : 'bg-white border-2 border-transparent hover:border-primary/40 hover:-translate-y-1'}
-                    ${!isMatched && !isSelected ? 'hover:shadow-md' : ''}
-                  `}
-                >
-                  {/* Checkmark cho thẻ đã khớp */}
-                  {isMatched && (
-                    <div className="absolute top-4 right-4 text-gray-400">
-                      <CheckCircle2 size={24} fill="#f3e7ed" />
-                    </div>
-                  )}
-
-                  {/* Nội dung chữ */}
-                  <h3 className={`
-                    font-black tracking-tight mb-2
-                    ${card.text.length > 5 ? 'text-2xl' : 'text-4xl'}
-                    ${isSelected ? 'text-primary' : 'text-[#1b0d14]'}
-                  `}>
-                    {card.text}
-                  </h3>
-
-                  {/* Nhãn ngôn ngữ */}
-                  <span className={`
-                    text-[10px] font-black uppercase tracking-widest
-                    ${isSelected ? 'text-primary' : 'text-[#9a4c73] opacity-40'}
-                  `}>
-                    {isSelected ? 'SELECTED' : card.lang}
-                  </span>
-                </div>
-              );
-            })}
-          </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
+          {tiles.map((tile) => (
+            <div 
+              key={tile.id}
+              onClick={() => handleCardClick(tile)}
+              className={`
+                relative aspect-square rounded-[2rem] flex flex-col items-center justify-center p-4 text-center transition-all duration-300 cursor-pointer shadow-sm
+                ${tile.status === "matched" ? 'bg-gray-100 opacity-0 pointer-events-none scale-90' : 'bg-white border-2 border-[#f3e7ed]'}
+                ${tile.status === "selected" ? 'bg-[#fef1f7] border-primary scale-105 shadow-xl z-10' : 'hover:border-primary/40 hover:-translate-y-1'}
+              `}
+            >
+              <h3 className={`font-black mb-1 ${tile.text.length > 6 ? 'text-xl' : 'text-3xl'} ${tile.status === "selected" ? 'text-primary' : ''}`}>
+                {tile.text}
+              </h3>
+              <span className="text-[10px] font-black text-[#9a4c73]/40 uppercase tracking-widest">{tile.lang}</span>
+            </div>
+          ))}
         </div>
       </main>
     </div>

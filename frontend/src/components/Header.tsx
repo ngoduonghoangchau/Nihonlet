@@ -27,7 +27,7 @@ const Header: React.FC = () => {
               <Link className="px-1 py-4 text-sm font-medium text-[#9a4c73] hover:text-primary transition-colors" to="/dashboard">Home</Link>
               <Link className="px-1 py-4 text-sm font-bold border-b-2 border-primary text-primary transition-colors" to="/dashboard">Flashcards</Link>
               <Link className="px-1 py-4 text-sm font-medium text-[#9a4c73] hover:text-primary transition-colors" to="/grammar-library">Grammar</Link>
-              <Link className="px-1 py-4 text-sm font-medium text-[#9a4c73] hover:text-primary transition-colors" to="/minigame-hub">Games</Link>
+              <Link className="px-1 py-4 text-sm font-medium text-[#9a4c73] hover:text-primary transition-colors" to="/minigamehub">Games</Link>
             </nav>
           </div>
           

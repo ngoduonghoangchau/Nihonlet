@@ -1,8 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; 
 import Header from '../components/Header';
 import { Puzzle, ArrowRight, FileEdit } from 'lucide-react';
 
 const MinigameHub: React.FC = () => {
+  const navigate = useNavigate();
+
+  // 3. Hàm xử lý điều hướng (có thể truyền thêm state để trang sau biết game nào được chọn)
+  const handlePlayNow = (gameType: string) => {
+    navigate('/minigameSelect', { state: { selectedGame: gameType } });
+  };
+
   return (
     <div className="bg-background-light font-display text-[#1b0d14] transition-colors duration-300">
       <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden japanese-pattern">
@@ -35,7 +43,11 @@ const MinigameHub: React.FC = () => {
                     <h3 className="text-2xl font-black">Matching Game</h3>
                   </div>
                   <p className="text-[#9a4c73]/80 mb-8">Pair Japanese vocabulary with Vietnamese translations.</p>
-                  <button className="w-full bg-primary hover:bg-[#d83b8a] text-white py-4 rounded-2xl font-black text-lg shadow-lg shadow-primary/30 transition-all flex items-center justify-center gap-2 group/btn">
+                  
+                  <button 
+                    onClick={() => handlePlayNow('matching')}
+                    className="w-full bg-primary hover:bg-[#d83b8a] text-white py-4 rounded-2xl font-black text-lg shadow-lg shadow-primary/30 transition-all flex items-center justify-center gap-2 group/btn"
+                  >
                     Play Now <ArrowRight size={20} className="group-hover/btn:translate-x-1 transition-transform" />
                   </button>
                 </div>
@@ -55,7 +67,11 @@ const MinigameHub: React.FC = () => {
                     <h3 className="text-2xl font-black">Rewriting Game</h3>
                   </div>
                   <p className="text-[#9a4c73]/80 mb-8">Convert Kanji to Hiragana or Romaji proficiency.</p>
-                  <button className="w-full bg-[#1b0d14] text-white py-4 rounded-2xl font-black text-lg shadow-lg hover:opacity-90 transition-all flex items-center justify-center gap-2 group/btn">
+                  
+                  <button 
+                    onClick={() => handlePlayNow('rewriting')}
+                    className="w-full bg-[#1b0d14] text-white py-4 rounded-2xl font-black text-lg shadow-lg hover:opacity-90 transition-all flex items-center justify-center gap-2 group/btn"
+                  >
                     Play Now <ArrowRight size={20} className="group-hover/btn:translate-x-1 transition-transform" />
                   </button>
                 </div>

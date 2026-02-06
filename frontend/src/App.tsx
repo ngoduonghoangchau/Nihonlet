@@ -21,6 +21,7 @@ import QuizResults from './pages/QuizResults';
 import MinigameHub from './pages/MinigameHub';
 import MinigameSelect from './pages/MinigameSelect';
 import MatchingGame1 from './pages/MatchingGame1';
+import MatchingResults from './pages/MatchingResults';
 import MatchingGame2 from './pages/MatchingGame2';
 import RewritingGame from './pages/RewritingGame';
 import RewritingResults from './pages/RewritingResults';
@@ -66,6 +67,7 @@ const App: React.FC = () => {
           <Route path="/minigameHub" element={<ProtectedRoute><MinigameHub /></ProtectedRoute>} />
           <Route path="/minigameSelect" element={<ProtectedRoute><MinigameSelect /></ProtectedRoute>} />
           <Route path="/matchinggame1" element={<ProtectedRoute><MatchingGame1 /></ProtectedRoute>} />
+          <Route path="/matching-results" element={<ProtectedRoute><MatchingResults /></ProtectedRoute>} />
           <Route path="/matchinggame2" element={<ProtectedRoute><MatchingGame2 /></ProtectedRoute>} />
           <Route path="/rewritinggame" element={<ProtectedRoute><RewritingGame /></ProtectedRoute>} />
           <Route path="/rewriting-results" element={<ProtectedRoute><RewritingResults /></ProtectedRoute>} />
