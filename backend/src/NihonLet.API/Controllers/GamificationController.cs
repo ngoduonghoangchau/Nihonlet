@@ -38,4 +38,22 @@ public class GamificationController : ControllerBase
         var result = await _mediator.Send(query);
         return Ok(result);
     }
+
+        [HttpPost("start-rewriting")]
+    public async Task<IActionResult> StartRewriting([FromBody] List<int> deckIds)
+    {
+        try {
+            await _mediator.Send(new StartRewritingGameCommand(deckIds));
+            return Ok(new { Message = "Hợp lệ" });
+        } catch (Exception ex) {
+            return BadRequest(new { Message = ex.Message });
+        }
+    }
+
+        [HttpPost("save-rewriting")]
+    public async Task<IActionResult> SaveRewriting([FromBody] SaveSessionRequest request)
+    {
+        var id = await _mediator.Send(new SaveRewritingSessionCommand(request));
+        return Ok(new { Id = id, Message = "Lưu kết quả thành công" });
+    }
 }

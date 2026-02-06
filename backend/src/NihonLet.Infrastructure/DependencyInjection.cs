@@ -91,8 +91,8 @@ public static class DependencyInjection
         services.AddScoped<IIdentityService, IdentityService>();
         services.AddScoped<ICurrentUserService, CurrentUserService>();
 
-        // Flashcard Repositories - THÊM DÒNG NÀY Ở ĐÂY
         services.AddScoped<IDeckRepository, DeckRepository>();
+        services.AddScoped<IGameRepository, GameRepository>();
         
         // MongoDB Logging Services
         services.AddSingleton<Logging.MongoDbContext>();
