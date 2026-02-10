@@ -2,6 +2,8 @@ using MediatR;
 using NihonLet.Domain.Interfaces;
 using NihonLet.Application.Common.Interfaces;
 
+namespace NihonLet.Application.Features.Flashcards.Commands;
+
 public record UpdateDeckMasteryCommand(int DeckId, int MasteryPercent) : IRequest<bool>;
 
 public class UpdateDeckMasteryHandler : IRequestHandler<UpdateDeckMasteryCommand, bool>
@@ -17,25 +19,18 @@ public class UpdateDeckMasteryHandler : IRequestHandler<UpdateDeckMasteryCommand
 
     public async Task<bool> Handle(UpdateDeckMasteryCommand request, CancellationToken cancellationToken)
     {
+        // Clamp giá trị mastery trong khoảng hợp lệ [0..100]
+        var mastery = Math.Clamp(request.MasteryPercent, 0, 100);
+
         var userId = _currentUserService.UserId;
         var deck = await _deckRepository.GetByIdAsync(request.DeckId);
 
-        if (deck == null || deck.UserId != userId) return false;
+        if (deck == null || deck.UserId != userId) 
+            return false;
 
-        // Chỉ cập nhật nếu Mastery mới cao hơn Mastery cũ 
-        // if (request.MasteryPercent > deck.MasteryPercent)
-        // {
-        //     deck.MasteryPercent = request.MasteryPercent;
-        //     await _deckRepository.SaveChangesAsync();
-        // }
-
-        //thay đổi: luôn cập nhật MasteryPercent khi học thẻ 
-        deck.MasteryPercent = request.MasteryPercent;
-
-        // Lưu thay đổi vào DB
+        deck.MasteryPercent = mastery;
         await _deckRepository.SaveChangesAsync();
 
         return true;
-
     }
 }

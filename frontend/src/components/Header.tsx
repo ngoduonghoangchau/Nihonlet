@@ -1,11 +1,12 @@
 import React from 'react';
 import { Search, LogOut } from 'lucide-react';
-import { Link, useNavigate } from 'react-router-dom'; // Sử dụng Link để không bị load lại trang
-
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../hooks/useAuth';
 import logo from '../assets/logo.jpg'; 
 
 const Header: React.FC = () => {
   const navigate = useNavigate();
+  const { logout, isAuthenticated } = useAuth();
 
   return (
     <header className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[#f3e7ed]">
@@ -42,12 +43,16 @@ const Header: React.FC = () => {
             </div>
             <div className="h-6 w-[1px] bg-[#f3e7ed] mx-1"></div>
             <div className="flex items-center gap-3">
-               {/* Thay đổi avatar ở đây nếu có ảnh user */}
                <div className="size-8 rounded-full border border-primary/20 bg-[#f3e7ed]"></div>
-               <button className="flex items-center gap-1 text-[#9a4c73] hover:text-red-500 transition-colors text-sm font-bold">
-                 <LogOut size={18} />
-                 <span>logout</span>
-               </button>
+               {isAuthenticated && (
+                 <button
+                   onClick={async () => { await logout(); navigate('/login'); }}
+                   className="flex items-center gap-1 text-[#9a4c73] hover:text-red-500 transition-colors text-sm font-bold"
+                 >
+                   <LogOut size={18} />
+                   <span>Logout</span>
+                 </button>
+               )}
             </div>
           </div>
         </div>

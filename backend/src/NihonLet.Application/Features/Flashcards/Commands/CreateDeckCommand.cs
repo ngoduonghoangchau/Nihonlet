@@ -1,6 +1,8 @@
 using MediatR;
+using NihonLet.Application.Common.Exceptions;
 using NihonLet.Application.Common.Interfaces;
 using NihonLet.Application.Features.Flashcards.DTOs;
+using NihonLet.Domain.BusinessRules.Core;
 using NihonLet.Domain.BusinessRules.Flashcard;
 using NihonLet.Domain.Entities.Flashcard;
 using NihonLet.Domain.Interfaces;
@@ -22,31 +24,28 @@ public class CreateDeckCommandHandler : IRequestHandler<CreateDeckCommand, int>
 
     public async Task<int> Handle(CreateDeckCommand command, CancellationToken cancellationToken)
     {
-        var userId = _currentUserService.UserId;
-        if (string.IsNullOrEmpty(userId)) throw new UnauthorizedAccessException();
+        var userId = _currentUserService.UserId
+            ?? throw new UnauthorizedAccessException();
 
         var request = command.Request;
-        var isPremium = _currentUserService.IsPremium; // Lấy từ thực tế hệ thống
+        var isPremium = _currentUserService.IsPremium;
 
-        // RULE 1: Kiểm tra độ dài tiêu đề (NihonLet.Domain.BusinessRules.Flashcard)
-        var titleRule = new DeckTitleLengthRule(request.Title);
-        if (!titleRule.IsSatisfied()) throw new Exception(titleRule.ViolationMessage);
+        // Sử dụng BusinessRuleChecker để kiểm tra tất cả rules cùng lúc
+        var checker = new BusinessRuleChecker()
+            .AddRule(new DeckTitleLengthRule(request.Title));
 
-        // RULE 2: Kiểm tra Bulk Create (NihonLet.Domain.BusinessRules.Flashcard)
         if (request.IsBulkCreated)
-        {
-            var bulkRule = new BulkCreatePremiumOnlyRule(isPremium);
-            if (!bulkRule.IsSatisfied()) throw new Exception(bulkRule.ViolationMessage);
-        }
+            checker.AddRule(new BulkCreatePremiumOnlyRule(isPremium));
 
-        // RULE 3: Kiểm tra giới hạn 10 bộ thẻ cho người dùng FREE
         if (!isPremium)
         {
-            // Truy vấn Database thực tế để đếm số bộ thẻ đã có
-            int currentDeckCount = await _deckRepository.GetCountByUserIdAsync(userId);
-            var freeLimitRule = new FreeUserDeckLimitRule(currentDeckCount);
-            if (!freeLimitRule.IsSatisfied()) throw new Exception(freeLimitRule.ViolationMessage);
+            var currentDeckCount = await _deckRepository.GetCountByUserIdAsync(userId);
+            checker.AddRule(new FreeUserDeckLimitRule(currentDeckCount));
         }
+
+        var ruleResult = checker.Check();
+        if (!ruleResult.IsValid)
+            throw new BusinessRuleException(ruleResult.Violations);
 
         var deck = new Deck
         {
@@ -55,7 +54,8 @@ public class CreateDeckCommandHandler : IRequestHandler<CreateDeckCommand, int>
             Description = request.Description,
             IsBulkCreated = request.IsBulkCreated,
             CreatedAt = DateTime.UtcNow,
-            Cards = request.Cards.Select(c => new Card {
+            Cards = request.Cards.Select(c => new Card
+            {
                 Reading = c.Reading,
                 Kanji = c.Kanji,
                 Meaning = c.Meaning,

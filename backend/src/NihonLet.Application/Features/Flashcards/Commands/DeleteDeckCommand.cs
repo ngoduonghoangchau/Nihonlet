@@ -1,4 +1,5 @@
 using MediatR;
+using NihonLet.Application.Common.Exceptions;
 using NihonLet.Application.Common.Interfaces;
 using NihonLet.Domain.Interfaces;
 
@@ -19,15 +20,11 @@ public class DeleteDeckCommandHandler : IRequestHandler<DeleteDeckCommand>
 
     public async Task Handle(DeleteDeckCommand request, CancellationToken cancellationToken)
     {
-        var deck = await _deckRepository.GetByIdAsync(request.Id);
+        var deck = await _deckRepository.GetByIdAsync(request.Id)
+            ?? throw new NotFoundException(nameof(Domain.Entities.Flashcard.Deck), request.Id);
 
-        if (deck == null) throw new Exception("Không tìm thấy bộ thẻ.");
-
-        // KIỂM TRA THỰC TẾ: Chỉ chủ sở hữu mới được xóa
         if (deck.UserId != _currentUserService.UserId)
-        {
-            throw new UnauthorizedAccessException("Bạn không có quyền xóa bộ thẻ này.");
-        }
+            throw new ForbiddenException("Bạn không có quyền xóa bộ thẻ này.");
 
         _deckRepository.Delete(deck);
         await _deckRepository.SaveChangesAsync();

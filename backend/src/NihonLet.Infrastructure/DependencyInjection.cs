@@ -97,6 +97,7 @@ public static class DependencyInjection
         // MongoDB Logging Services
         services.AddSingleton<Logging.MongoDbContext>();
         services.AddScoped<ISystemLogger, Logging.SystemLogger>();
+        services.AddScoped<ISystemLogQueryService, Logging.SystemLogQueryService>();
         
         return services;
     }

@@ -1,5 +1,6 @@
 using MediatR;
-using NihonLet.Application.Features.Gamification.DTOs;
+using NihonLet.Application.Common.Exceptions;
+using NihonLet.Domain.BusinessRules.Core;
 using NihonLet.Domain.BusinessRules.Game;
 using NihonLet.Domain.Interfaces;
 
@@ -18,16 +19,16 @@ public class StartRewritingGameCommandHandler : IRequestHandler<StartRewritingGa
 
     public async Task<bool> Handle(StartRewritingGameCommand request, CancellationToken ct)
     {
-        // 1. Kiểm tra số lượng bộ thẻ chọn (Rule GAME_001)
-        var maxDecksRule = new MaxDecksPerGameRule(request.SelectedDeckIds.Count);
-        if (!maxDecksRule.IsSatisfied()) throw new Exception(maxDecksRule.ViolationMessage);
-
-        // 2. kiểm tra số lượng Card (Rule GAME_002)
         var decks = await _deckRepository.GetDecksByIdsAsync(request.SelectedDeckIds);
-        int totalCards = decks.Sum(d => d.Cards.Count);
+        var totalCards = decks.Sum(d => d.Cards.Count);
 
-        var minCardsRule = new MinimumCardsToPlayRule(totalCards);
-        if (!minCardsRule.IsSatisfied()) throw new Exception(minCardsRule.ViolationMessage);
+        var ruleResult = new BusinessRuleChecker()
+            .AddRule(new MaxDecksPerGameRule(request.SelectedDeckIds.Count))
+            .AddRule(new MinimumCardsToPlayRule(totalCards))
+            .Check();
+
+        if (!ruleResult.IsValid)
+            throw new BusinessRuleException(ruleResult.Violations);
 
         return true;
     }

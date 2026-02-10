@@ -28,17 +28,10 @@ public partial class Program
         }
 
         var envPath = FindEnvFile(AppContext.BaseDirectory);
-        Console.WriteLine($".env found at: {envPath}");
-        DotNetEnv.Env.Load(envPath);
-
+        if (envPath != null)
+            DotNetEnv.Env.Load(envPath);
 
         var builder = WebApplication.CreateBuilder(args);
-
-        Console.WriteLine("CWD: " + Directory.GetCurrentDirectory());
-        Console.WriteLine("AppBase: " + AppContext.BaseDirectory);
-        Console.WriteLine("ENV SQL: '" + Environment.GetEnvironmentVariable("NIHONLET_SQL_CONNECTION") + "'");
-        Console.WriteLine("ENV JWT: '" + Environment.GetEnvironmentVariable("NIHONLET_JWT_SECRET") + "'");
-        Console.WriteLine("Config SQL: '" + builder.Configuration["NIHONLET_SQL_CONNECTION"] + "'");
 
         // Add layers
         builder.Services.AddApplication();
@@ -143,6 +136,9 @@ public partial class Program
 
         // Global Exception Handler middleware
         app.UseExceptionHandler();
+
+        // API Request Logging: ghi mọi HTTP request vào MongoDB
+        app.UseApiRequestLogging();
 
         app.UseHttpsRedirection();
         app.UseCors("AllowFrontend");

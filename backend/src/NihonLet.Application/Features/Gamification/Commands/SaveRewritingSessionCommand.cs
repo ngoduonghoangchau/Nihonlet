@@ -1,10 +1,8 @@
-using System.Text.Json;
 using MediatR;
 using NihonLet.Application.Common.Interfaces;
 using NihonLet.Application.Features.Gamification.DTOs;
 using NihonLet.Domain.Entities.Gamification;
 using NihonLet.Domain.Interfaces;
-
 
 namespace NihonLet.Application.Features.Gamification.Commands;
 

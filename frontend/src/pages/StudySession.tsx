@@ -42,13 +42,6 @@ useEffect(() => {
       setLoading(true);
       const response = await api.get(`/Decks/${id}`);
       setDeck(response.data);
-      
-      // THÊM DÒNG NÀY: Để Dashboard cập nhật ngay lập tức về thẻ đầu tiên (ví dụ 10%)
-      if (response.data.cards.length > 0) {
-        const initialProgress = Math.round((1 / response.data.cards.length) * 100);
-        api.patch(`/Decks/${id}/mastery`, { masteryPercent: initialProgress });
-      }
-      
     } catch (error) {
       console.error("Lỗi khi tải bộ thẻ:", error);
     } finally {

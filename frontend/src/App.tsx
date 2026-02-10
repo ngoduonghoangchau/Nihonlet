@@ -36,6 +36,9 @@ import ReadingResults from './pages/ReadingResults';
 import Pricing from './pages/Pricing';
 import PremiumCheckout from './pages/PremiumCheckout';
 
+// 7. NHÓM ADMIN
+import AdminSystemStatus from './pages/AdminSystemStatus';
+
 // COMPONENT SCROLL TO TOP
 import ScrollToTop from './components/ScrollToTop';
 
@@ -80,6 +83,9 @@ const App: React.FC = () => {
           {/* === PREMIUM & PAYMENT === */}
           <Route path="/pricing" element={<ProtectedRoute><Pricing /></ProtectedRoute>} />
           <Route path="/premium-checkout" element={<ProtectedRoute><PremiumCheckout /></ProtectedRoute>} />
+
+          {/* === ADMIN === */}
+          <Route path="/admin/system-status" element={<ProtectedRoute><AdminSystemStatus /></ProtectedRoute>} />
 
           {/* === FALLBACK (404 - Redirect về Login nếu chưa auth, Dashboard nếu đã auth) === */}
           <Route path="*" element={<Navigate to="/dashboard" replace />} />

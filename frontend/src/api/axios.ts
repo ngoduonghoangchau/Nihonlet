@@ -5,8 +5,7 @@ import { getDeviceInfo } from "../utils/fingerprint";
 import type { ApiResponse, AuthResponseDto } from "../types/auth";
 
 // ===== API Base URL =====
-// const API_BASE_URL = import.meta.env.VITE_API_URL;
-const API_BASE_URL = 'http://localhost:5017/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5017/api';
 
 
 // ===== Axios Instance =====
@@ -39,23 +38,13 @@ const processQueue = (error: AxiosError | null, token: string | null = null) => 
 // ===== Request Interceptor: Attach Access Token =====
 api.interceptors.request.use(
   (config: InternalAxiosRequestConfig) => {
-    const state = store.getState();
-    // Lấy token từ Redux
-    let token = state.auth.accessToken;
-
-    if (!token) {
-      token = localStorage.getItem('accessToken'); // Đảm bảo tên key này khớp với lúc bạn lưu khi Login
-    }
+    const token = store.getState().auth.accessToken;
 
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
-    } else {
-    // Xóa dòng throw Error, đổi thành log warn thôi
-    console.warn("No token available yet"); 
     }
-     return config;
+    return config;
   },
-  
   (error) => Promise.reject(error),
 );
 

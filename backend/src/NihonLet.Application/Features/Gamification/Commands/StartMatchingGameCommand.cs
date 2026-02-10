@@ -1,5 +1,7 @@
 using MediatR;
+using NihonLet.Application.Common.Exceptions;
 using NihonLet.Application.Features.Gamification.DTOs;
+using NihonLet.Domain.BusinessRules.Core;
 using NihonLet.Domain.BusinessRules.Game;
 using NihonLet.Domain.Interfaces;
 
@@ -19,21 +21,17 @@ public class StartMatchingGameCommandHandler : IRequestHandler<StartMatchingGame
     public async Task<bool> Handle(StartMatchingGameCommand command, CancellationToken cancellationToken)
     {
         var request = command.Request;
-
-        // 1. RULE: Tối đa 3 bộ thẻ (GAME_001)
-        var maxDecksRule = new MaxDecksPerGameRule(request.SelectedDeckIds.Count);
-        if (!maxDecksRule.IsSatisfied())
-            throw new Exception(maxDecksRule.ViolationMessage);
-
-        // Lấy thông tin các bộ thẻ đã chọn từ DB để đếm tổng số card
         var selectedDecks = await _deckRepository.GetDecksByIdsAsync(request.SelectedDeckIds);
-        int totalCards = selectedDecks.Sum(d => d.Cards.Count);
+        var totalCards = selectedDecks.Sum(d => d.Cards.Count);
 
-        // 2. RULE: Tối thiểu 5 thẻ để chơi (GAME_002)
-        var minCardsRule = new MinimumCardsToPlayRule(totalCards);
-        if (!minCardsRule.IsSatisfied())
-            throw new Exception(minCardsRule.ViolationMessage);
+        var ruleResult = new BusinessRuleChecker()
+            .AddRule(new MaxDecksPerGameRule(request.SelectedDeckIds.Count))
+            .AddRule(new MinimumCardsToPlayRule(totalCards))
+            .Check();
 
-        return true; // Hợp lệ để bắt đầu game
+        if (!ruleResult.IsValid)
+            throw new BusinessRuleException(ruleResult.Violations);
+
+        return true;
     }
 }
