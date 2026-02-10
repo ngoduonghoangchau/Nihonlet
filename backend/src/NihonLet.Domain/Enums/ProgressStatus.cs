@@ -6,11 +6,11 @@ namespace NihonLet.Domain.Enums;
 public enum ProgressStatus
 {
     /// <summary>Chưa bắt đầu</summary>
-    NotStarted,
+    NotStarted = 0,
     
     /// <summary>Đang học</summary>
-    Learning,
+    Learning = 1,
     
     /// <summary>Đã hoàn thành</summary>
-    Completed
+    Completed = 2
 }
