@@ -9,6 +9,8 @@ using Microsoft.IdentityModel.Tokens;
 using NihonLet.Application.Common.Interfaces;
 using NihonLet.Infrastructure.Identity;
 using NihonLet.Infrastructure.Persistence;
+using NihonLet.Infrastructure.Persistence.Seed;
+using NihonLet.Infrastructure.Persistence.Repositories;
 
 namespace NihonLet.Infrastructure;
 
@@ -27,7 +29,7 @@ public static class DependencyInjection
             ?? configuration.GetConnectionString("DefaultConnection")
             ?? throw new InvalidOperationException(
                 "SQL Connection string not found. Set NIHONLET_SQL_CONNECTION env var or add ConnectionStrings:DefaultConnection to config.");
-        
+
         services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(connectionString, sqlOptions =>
             {
@@ -37,11 +39,11 @@ public static class DependencyInjection
                     maxRetryDelay: TimeSpan.FromSeconds(30),
                     errorNumbersToAdd: null);
             }));
-        
+
         // Register IApplicationDbContext
-        services.AddScoped<IApplicationDbContext>(provider => 
+        services.AddScoped<IApplicationDbContext>(provider =>
             provider.GetRequiredService<ApplicationDbContext>());
-        
+
         // Identity
         services.AddIdentity<ApplicationUser, IdentityRole>(options =>
         {
@@ -49,17 +51,17 @@ public static class DependencyInjection
             options.Password.RequireDigit = true;
             options.Password.RequireLowercase = true;
             options.Password.RequiredLength = 8;
-            
+
             // User settings
             options.User.RequireUniqueEmail = true;
         })
         .AddEntityFrameworkStores<ApplicationDbContext>()
         .AddDefaultTokenProviders();
-        
+
         // JWT Authentication
         var jwtSecret = GetJwtSecret(configuration);
         var key = Encoding.UTF8.GetBytes(jwtSecret);
-        
+
         services.AddAuthentication(options =>
         {
             options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -81,21 +83,28 @@ public static class DependencyInjection
                 ClockSkew = TimeSpan.Zero // Không cho phép chênh lệch thời gian
             };
         });
-        
+
         // HttpContext accessor (for CurrentUserService)
         services.AddHttpContextAccessor();
-        
+
         // Identity Services
         services.AddScoped<IIdentityService, IdentityService>();
         services.AddScoped<ICurrentUserService, CurrentUserService>();
-        
+
+        // Đăng ký Repository với đầy đủ kiểu dữ liệu
+        services.AddScoped<NihonLet.Application.Common.Interfaces.IGrammarRepository, NihonLet.Infrastructure.Persistence.Repositories.GrammarRepository>();
+        services.AddScoped<NihonLet.Application.Common.Interfaces.IAssessmentRepository, NihonLet.Infrastructure.Persistence.Repositories.AssessmentRepository>();
+
         // MongoDB Logging Services
         services.AddSingleton<Logging.MongoDbContext>();
         services.AddScoped<ISystemLogger, Logging.SystemLogger>();
-        
+
+        services.AddScoped<GrammarSeedService>();
+
+
         return services;
     }
-    
+
     /// <summary>
     /// Lấy chuỗi kết nối MongoDB từ environment variable
     /// </summary>
@@ -105,7 +114,7 @@ public static class DependencyInjection
             ?? configuration.GetConnectionString("MongoDbConnection")
             ?? "mongodb://localhost:27017";
     }
-    
+
     /// <summary>
     /// Lấy JWT Secret từ environment variable
     /// </summary>

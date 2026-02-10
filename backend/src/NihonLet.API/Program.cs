@@ -3,9 +3,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using NihonLet.API.Middlewares;
 using NihonLet.Application;
+using NihonLet.Application.Common.Interfaces;
 using NihonLet.Infrastructure;
 using NihonLet.Infrastructure.Identity;
 using NihonLet.Infrastructure.Persistence;
+using NihonLet.Infrastructure.Persistence.Seed; // Thêm using này
 
 namespace NihonLet.API;
 
@@ -13,8 +15,7 @@ public partial class Program
 {
     public static async Task Main(string[] args)
     {
-        // Load .env file TRƯỚC KHI tạo builder
-        // Điều này đảm bảo các biến môi trường có sẵn cho Configuration
+        // 1. Load .env file
         string FindEnvFile(string startDir, int maxUp = 6)
         {
             var dir = new DirectoryInfo(startDir);
@@ -34,31 +35,28 @@ public partial class Program
 
         var builder = WebApplication.CreateBuilder(args);
 
+        // Debug Logs
         Console.WriteLine("CWD: " + Directory.GetCurrentDirectory());
         Console.WriteLine("AppBase: " + AppContext.BaseDirectory);
         Console.WriteLine("ENV SQL: '" + Environment.GetEnvironmentVariable("NIHONLET_SQL_CONNECTION") + "'");
         Console.WriteLine("ENV JWT: '" + Environment.GetEnvironmentVariable("NIHONLET_JWT_SECRET") + "'");
-        Console.WriteLine("Config SQL: '" + builder.Configuration["NIHONLET_SQL_CONNECTION"] + "'");
 
-        // Add layers
+        // 2. Add layers
         builder.Services.AddApplication();
         builder.Services.AddInfrastructure(builder.Configuration);
 
-        // Add API services
-        builder.Services.AddControllers();
+        builder.Services.AddControllers()
+            .AddJsonOptions(options =>
+            {
+                // Chuyển Enum thành String trong JSON trả về
+                options.JsonSerializerOptions.Converters.Add(new System.Text.Json.Serialization.JsonStringEnumConverter());
+            });
         builder.Services.AddEndpointsApiExplorer();
 
-        // Swagger với JWT Authentication
+        // 3. Swagger với JWT
         builder.Services.AddSwaggerGen(options =>
         {
-            options.SwaggerDoc("v1", new OpenApiInfo
-            {
-                Title = "NihonLet API",
-                Version = "v1",
-                Description = "API cho ứng dụng học tiếng Nhật NihonLet"
-            });
-
-            // Thêm JWT Authentication vào Swagger
+            options.SwaggerDoc("v1", new OpenApiInfo { Title = "NihonLet API", Version = "v1" });
             options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
             {
                 Name = "Authorization",
@@ -66,30 +64,24 @@ public partial class Program
                 Scheme = "Bearer",
                 BearerFormat = "JWT",
                 In = ParameterLocation.Header,
-                Description = "Nhập JWT token vào đây. Ví dụ: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+                Description = "Nhập JWT token vào đây."
             });
-
             options.AddSecurityRequirement(new OpenApiSecurityRequirement
             {
                 {
                     new OpenApiSecurityScheme
                     {
-                        Reference = new OpenApiReference
-                        {
-                            Type = ReferenceType.SecurityScheme,
-                            Id = "Bearer"
-                        }
+                        Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "Bearer" }
                     },
                     Array.Empty<string>()
                 }
             });
         });
 
-        // Global Exception Handler
         builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
         builder.Services.AddProblemDetails();
 
-        // CORS
+        // 4. CORS
         builder.Services.AddCors(options =>
         {
             options.AddPolicy("AllowFrontend", policy =>
@@ -103,11 +95,12 @@ public partial class Program
 
         var app = builder.Build();
 
-        // Database migration & seeding (Development only)
+        // 5. Database Migration & Seeding (Chỉ chạy trong môi trường Development)
         if (app.Environment.IsDevelopment())
         {
             using var scope = app.Services.CreateScope();
             var services = scope.ServiceProvider;
+            var logger = services.GetRequiredService<ILogger<Program>>();
 
             try
             {
@@ -115,22 +108,36 @@ public partial class Program
                 var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
                 var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
                 var configuration = services.GetRequiredService<IConfiguration>();
-                var logger = services.GetRequiredService<ILogger<Program>>();
 
-                // Apply pending migrations
+                // A. Cập nhật Database
+                logger.LogInformation("--- NihonLet: Đang Migrate Database ---");
                 await context.Database.MigrateAsync();
 
-                // Seed data
+                // B. Seed Identity (Dữ liệu mặc định hệ thống)
+                logger.LogInformation("--- NihonLet: Đang Seed Identity Data ---");
                 await ApplicationDbContextSeed.SeedDefaultsAsync(context, userManager, roleManager, configuration, logger);
+
+                // C. SEED DỮ LIỆU NGỮ PHÁP (Cô lập hoàn toàn)
+                try
+                {
+                    logger.LogInformation("--- NihonLet: Đang kiểm tra và nạp Grammar JSON ---");
+                    var grammarSeeder = services.GetRequiredService<GrammarSeedService>();
+                    await grammarSeeder.SeedAsync();
+                    logger.LogInformation("--- NihonLet: Hoàn tất Seeding Grammar ---");
+                }
+                catch (Exception ex)
+                {
+                    // Nếu lỗi ở đây, chỉ log lại chứ không làm dừng cả App
+                    logger.LogError(ex, "!!! NihonLet: Lỗi nạp Grammar JSON nhưng server vẫn sẽ khởi động.");
+                }
             }
             catch (Exception ex)
             {
-                var logger = services.GetRequiredService<ILogger<Program>>();
-                logger.LogError(ex, "Lỗi khi migrate/seed database");
+                logger.LogError(ex, "!!! NihonLet: Lỗi nghiêm trọng khi khởi tạo Database Migrations.");
             }
         }
 
-        // Configure the HTTP request pipeline
+        // 6. Cấu hình Middleware Pipeline
         if (app.Environment.IsDevelopment())
         {
             app.UseSwagger();
@@ -139,11 +146,12 @@ public partial class Program
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "NihonLet API v1");
                 options.DocExpansion(Swashbuckle.AspNetCore.SwaggerUI.DocExpansion.None);
             });
+
+            // Tự động chuyển hướng từ trang chủ (/) sang Swagger UI
+            app.MapGet("/", () => Results.Redirect("/swagger/index.html"));
         }
 
-        // Global Exception Handler middleware
         app.UseExceptionHandler();
-
         app.UseHttpsRedirection();
         app.UseCors("AllowFrontend");
 
