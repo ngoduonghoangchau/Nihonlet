@@ -19,7 +19,7 @@ const Header: React.FC = () => {
             <nav className="hidden md:flex items-center gap-6">
               <a className="px-1 py-4 text-sm font-medium text-[#9a4c73] hover:text-primary transition-colors" href="#">Home</a>
               <a className="px-1 py-4 text-sm font-bold border-b-2 border-primary text-primary transition-colors" href="#">Flashcards</a>
-              <a className="px-1 py-4 text-sm font-medium text-[#9a4c73] hover:text-primary transition-colors" href="#">Grammar</a>
+              <a className="px-1 py-4 text-sm font-medium text-[#9a4c73] hover:text-primary transition-colors" href="/grammar-library">Grammar</a>
               <a className="px-1 py-4 text-sm font-medium text-[#9a4c73] hover:text-primary transition-colors" href="#">Games</a>
             </nav>
           </div>

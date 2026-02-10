@@ -55,7 +55,7 @@ const App: React.FC = () => {
 
           {/* === GRAMMAR === */}
           <Route path="/grammar-library" element={<ProtectedRoute><GrammarLibrary /></ProtectedRoute>} />
-          <Route path="/grammar-quiz" element={<ProtectedRoute><GrammarQuiz /></ProtectedRoute>} />
+          <Route path="/grammar-quiz/:topicId" element={<ProtectedRoute><GrammarQuiz /></ProtectedRoute>} />
           <Route path="/quiz-results" element={<ProtectedRoute><QuizResults /></ProtectedRoute>} />
 
           {/* === MINIGAMES === */}
