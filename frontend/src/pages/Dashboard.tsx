@@ -13,7 +13,9 @@ import {
   Zap, 
   Loader2, 
   Trash2, 
-  Lock 
+  Lock,
+  X,
+  AlertTriangle 
 } from 'lucide-react';
 
 const DECK_IMAGES = [
@@ -29,7 +31,7 @@ interface DeckItem {
   cardsCount: number;
   masteryPercent: number;
   isBulkCreated: boolean;
-  displayImage?: string; // Thêm trường này để lưu ảnh ngẫu nhiên
+  displayImage?: string; 
 }
 
 const Dashboard: React.FC = () => {
@@ -40,17 +42,21 @@ const Dashboard: React.FC = () => {
 
   const [decks, setDecks] = useState<DeckItem[]>([]);
   const [loading, setLoading] = useState(true);
+  
+  // STATE QUẢN LÝ MODAL
+  const [isLimitModalOpen, setIsLimitModalOpen] = useState(false);
+  const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
+  const [deckToDelete, setDeckToDelete] = useState<DeckItem | null>(null);
+  const [isDeleting, setIsDeleting] = useState(false);
 
   const DECK_LIMIT = 10;
   const isLimitReached = !isPremiumUser && decks.length >= DECK_LIMIT;
 
-  // 2. Cập nhật hàm fetch để gán ảnh ngẫu nhiên ngay khi lấy data
   const fetchDecks = async () => {
     try {
       setLoading(true);
       const response = await api.get('/Flashcards/decks');
       
-      // Map qua dữ liệu để chọn ngẫu nhiên 1 trong 3 ảnh
       const processedDecks = response.data.map((deck: DeckItem) => ({
         ...deck,
         displayImage: DECK_IMAGES[Math.floor(Math.random() * DECK_IMAGES.length)]
@@ -64,15 +70,27 @@ const Dashboard: React.FC = () => {
     }
   };
 
-  const handleDeleteDeck = async (id: number, e: React.MouseEvent) => {
+  // 1. MỞ MODAL XÁC NHẬN XÓA
+  const openDeleteModal = (deck: DeckItem, e: React.MouseEvent) => {
     e.stopPropagation(); 
-    if (window.confirm("Bạn có muốn xóa bộ thẻ này không?")) {
-      try {
-        await api.delete(`/Flashcards/decks/${id}`);
-        setDecks(prev => prev.filter(d => d.deckId !== id)); 
-      } catch (error) {
-        alert("Lỗi khi xóa bộ thẻ.");
-      }
+    setDeckToDelete(deck);
+    setIsDeleteModalOpen(true);
+  };
+
+  // 2. HÀM THỰC THI XÓA THẬT SỰ
+  const confirmDelete = async () => {
+    if (!deckToDelete) return;
+    
+    setIsDeleting(true);
+    try {
+      await api.delete(`/Flashcards/decks/${deckToDelete.deckId}`);
+      setDecks(prev => prev.filter(d => d.deckId !== deckToDelete.deckId)); 
+      setIsDeleteModalOpen(false);
+      setDeckToDelete(null);
+    } catch (error) {
+      console.error("Lỗi khi xóa bộ thẻ.");
+    } finally {
+      setIsDeleting(false);
     }
   };
 
@@ -82,14 +100,14 @@ const Dashboard: React.FC = () => {
 
   const goToCreatePage = () => {
     if (isLimitReached) {
-      alert("⚠️ Bạn đã đạt giới hạn 10 bộ thẻ cho tài khoản FREE. Vui lòng nâng cấp Premium để tiếp tục tạo không giới hạn!");
+      setIsLimitModalOpen(true);
       return;
     }
     navigate('/create-flashcard');
   };
 
   return (
-    <div className="bg-background-light font-display text-[#1b0d14] min-h-screen flex flex-col">
+    <div className="bg-background-light font-display text-[#1b0d14] min-h-screen flex flex-col relative">
       <Header />
       <div className="flex-1 flex max-w-7xl mx-auto w-full">
         {/* Sidebar */}
@@ -117,12 +135,7 @@ const Dashboard: React.FC = () => {
             
             <button 
                 onClick={goToCreatePage}
-                disabled={isLimitReached}
-                className={`flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold shadow-lg transition-all active:scale-95 ${
-                  isLimitReached 
-                  ? 'bg-gray-400 cursor-not-allowed' 
-                  : 'bg-primary text-white hover:opacity-90'
-                }`}
+                className={`flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold shadow-lg transition-all active:scale-95 bg-primary text-white hover:opacity-90`}
             >
               {isLimitReached ? <Lock size={20} /> : <Plus size={20} />}
               <span>{isLimitReached ? "Limit Reached" : "Create New Set"}</span>
@@ -164,11 +177,11 @@ const Dashboard: React.FC = () => {
                   >
                     <div 
                         className="relative h-44 w-full bg-center bg-cover" 
-                        // 3. SỬ DỤNG ẢNH ĐÃ GÁN NGẪU NHIÊN
                         style={{ backgroundImage: `url(${deck.displayImage})` }}
                     >
+                      {/* NÚT XÓA MỞ MODAL */}
                       <button 
-                          onClick={(e) => handleDeleteDeck(deck.deckId, e)}
+                          onClick={(e) => openDeleteModal(deck, e)}
                           className="absolute top-4 left-4 p-2.5 
                                     bg-white/90 text-primary         
                                     rounded-xl shadow-sm z-20
@@ -203,28 +216,28 @@ const Dashboard: React.FC = () => {
                   </div>
                 ))}
 
-                {/* ---  NÚT ADD MORE SETS --- */}
+                {/* Add More Sets */}
                 <div 
                     onClick={goToCreatePage}
                     className={`border-2 border-dashed rounded-[2rem] flex flex-col items-center justify-center p-10 gap-4 text-center group transition-all cursor-pointer min-h-[300px] 
                       ${isLimitReached 
-                        ? 'border-gray-200 bg-gray-50/50 cursor-not-allowed opacity-70' 
+                        ? 'border-gray-200 bg-gray-50/50 hover:border-primary/50' 
                         : 'border-[#f3e7ed] bg-[#fcf8fa]/50 hover:border-primary'}`}
                 >
                   <div className={`size-14 rounded-full flex items-center justify-center transition-all shadow-sm
                     ${isLimitReached 
-                      ? 'bg-gray-200 text-gray-400' 
+                      ? 'bg-gray-100 text-[#9a4c73]' 
                       : 'bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white'}`}
                   >
                     {isLimitReached ? <Lock size={28} /> : <Plus size={28} />}
                   </div>
                   <div>
-                    <h3 className={`font-bold text-lg ${isLimitReached ? 'text-gray-400' : 'text-[#1b0d14]'}`}>
-                      {isLimitReached ? 'Deck Limit Reached' : 'Add More Sets'}
+                    <h3 className={`font-bold text-lg ${isLimitReached ? 'text-[#9a4c73]' : 'text-[#1b0d14]'}`}>
+                      {isLimitReached ? 'Limit Reached' : 'Add More Sets'}
                     </h3>
                     <p className="text-[#9a4c73] text-sm mt-1 max-w-[200px] mx-auto">
                       {isLimitReached 
-                        ? 'Upgrade to Premium for unlimited decks' 
+                        ? 'Upgrade for more sets' 
                         : 'Tạo thêm bộ thẻ mới'}
                     </p>
                   </div>
@@ -234,6 +247,63 @@ const Dashboard: React.FC = () => {
           </div>
         </main>
       </div>
+
+      {/* MODAL 1: THÔNG BÁO GIỚI HẠN */}
+      {isLimitModalOpen && (
+        <div className="fixed inset-0 bg-[#1b0d14]/40 backdrop-blur-sm z-[100] flex items-center justify-center p-4 animate-fadeIn">
+          <div className="bg-white rounded-[2.5rem] p-8 md:p-10 max-w-md w-full shadow-2xl relative animate-scaleIn border border-[#f3e7ed]">
+            <button onClick={() => setIsLimitModalOpen(false)} className="absolute top-6 right-6 text-[#9a4c73] hover:text-primary transition-colors">
+              <X size={24} />
+            </button>
+            <div className="flex flex-col items-center text-center">
+              <div className="size-20 rounded-3xl bg-primary/10 flex items-center justify-center text-primary mb-6"><Lock size={40} /></div>
+              <h3 className="text-2xl font-black mb-4">Deck Limit Reached</h3>
+              <p className="text-[#9a4c73] font-medium leading-relaxed mb-8">⚠️ Bạn đã đạt giới hạn 10 bộ thẻ cho tài khoản FREE. Vui lòng nâng cấp Premium để tiếp tục tạo không giới hạn!</p>
+              <div className="flex flex-col gap-3 w-full">
+                <button onClick={() => navigate('/pricing')} className="w-full py-4 bg-primary text-white font-bold rounded-2xl shadow-lg shadow-primary/20 hover:brightness-110 active:scale-95 transition-all">Upgrade to Premium</button>
+                <button onClick={() => setIsLimitModalOpen(false)} className="w-full py-4 bg-[#f8f5f7] text-[#9a4c73] font-bold rounded-2xl hover:bg-[#f3e7ed] transition-all">Maybe later</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* MODAL 2: XÁC NHẬN XÓA BỘ THẺ (MỚI) */}
+      {isDeleteModalOpen && (
+        <div className="fixed inset-0 bg-[#1b0d14]/40 backdrop-blur-sm z-[100] flex items-center justify-center p-4 animate-fadeIn">
+          <div className="bg-white rounded-[2.5rem] p-8 md:p-10 max-w-md w-full shadow-2xl relative animate-scaleIn border border-[#f3e7ed]">
+            <div className="flex flex-col items-center text-center">
+              {/* Icon cảnh báo */}
+              <div className="size-20 rounded-3xl bg-red-50 flex items-center justify-center text-red-500 mb-6">
+                <AlertTriangle size={40} />
+              </div>
+
+              <h3 className="text-2xl font-black mb-2 text-[#1b0d14]">Delete this deck?</h3>
+              <p className="text-[#9a4c73] font-medium leading-relaxed mb-8 px-4">
+                Bạn có chắc chắn muốn xóa bộ thẻ <span className="text-primary font-bold">"{deckToDelete?.title}"</span>? Hành động này không thể hoàn tác.
+              </p>
+
+              <div className="flex flex-col gap-3 w-full">
+                <button 
+                  onClick={confirmDelete}
+                  disabled={isDeleting}
+                  className="w-full py-4 bg-red-500 text-white font-bold rounded-2xl shadow-lg shadow-red-200 hover:bg-red-600 active:scale-95 transition-all flex items-center justify-center gap-2"
+                >
+                  {isDeleting ? <Loader2 className="animate-spin" size={20} /> : <Trash2 size={20} />}
+                  Delete Permanently
+                </button>
+                <button 
+                  onClick={() => setIsDeleteModalOpen(false)}
+                  disabled={isDeleting}
+                  className="w-full py-4 bg-[#f8f5f7] text-[#9a4c73] font-bold rounded-2xl hover:bg-[#f3e7ed] transition-all"
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
