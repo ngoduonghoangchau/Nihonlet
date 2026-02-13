@@ -1,18 +1,18 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
-import { api } from '../api/axios'; 
-import Header from '../components/Header';
-import { 
-  ArrowLeft, 
-  Settings2, 
-  Layers, 
-  Search, 
-  PlayCircle, 
-  Loader2, 
-  AlertCircle, 
+import React, { useState, useEffect, useMemo } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+import { api } from "../api/axios";
+import Header from "../components/Header";
+import {
+  ArrowLeft,
+  Settings2,
+  Layers,
+  Search,
+  PlayCircle,
+  Loader2,
+  AlertCircle,
   ChevronDown,
-  CheckCircle2
-} from 'lucide-react';
+  CheckCircle2,
+} from "lucide-react";
 
 interface GameDeck {
   id: number;
@@ -24,9 +24,9 @@ interface GameDeck {
 const MinigameSelect: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  
+
   // Lấy loại game từ trang Hub truyền sang (mặc định là matching)
-  const selectedGame = location.state?.selectedGame || 'matching';
+  const selectedGame = location.state?.selectedGame || "matching";
 
   const [loading, setLoading] = useState(true);
   const [decks, setDecks] = useState<GameDeck[]>([]);
@@ -39,8 +39,8 @@ const MinigameSelect: React.FC = () => {
     const fetchDecks = async () => {
       try {
         setLoading(true);
-        const res = await api.get('/Gamification/available-decks');
-        setDecks(res.data);
+        const res = await api.get("/Gamification/available-decks");
+        setDecks(res.data.data);
       } catch (error) {
         console.error("Lỗi lấy bộ thẻ:", error);
       } finally {
@@ -55,60 +55,57 @@ const MinigameSelect: React.FC = () => {
 
   // 3. Tính tổng số thẻ đã chọn để kiểm tra Rule GAME_002
   const totalCardsSelected = useMemo(() => {
-    return decks
-      .filter(d => selectedSets.includes(d.id))
-      .reduce((sum, d) => sum + d.cardsCount, 0);
+    return decks.filter((d) => selectedSets.includes(d.id)).reduce((sum, d) => sum + d.cardsCount, 0);
   }, [selectedSets, decks]);
 
   const handleToggleSet = (id: number) => {
     if (selectedSets.includes(id)) {
-      setSelectedSets(prev => prev.filter(s => s !== id));
+      setSelectedSets((prev) => prev.filter((s) => s !== id));
     } else if (!isMaxReached) {
-      setSelectedSets(prev => [...prev, id]);
+      setSelectedSets((prev) => [...prev, id]);
     }
   };
 
-const handleStartGame = async () => {
-  if (totalCardsSelected < 5) {
-    alert("⚠️ Cần ít nhất 5 thẻ để bắt đầu!");
-    return;
-  }
-
-  try {
-    const payload = {
-      selectedDeckIds: selectedSets,
-      wordCount: wordCount === 'all' ? totalCardsSelected : parseInt(wordCount)
-    };
-    
-    const res = await api.post('/Gamification/start-matching', payload);
-    
-    if (res.status === 200) {
-      // Logic chuyển trang linh hoạt dựa trên selectedGame
-      const targetRoute = selectedGame === 'matching' ? '/matchinggame1' : '/rewritinggame';
-      navigate(targetRoute, { state: payload });
+  const handleStartGame = async () => {
+    if (totalCardsSelected < 5) {
+      alert("⚠️ Cần ít nhất 5 thẻ để bắt đầu!");
+      return;
     }
-  } catch (error: any) {
-    alert(error.response?.data?.message || "Lỗi khởi tạo game");
-  }
-};
+
+    try {
+      const payload = {
+        selectedDeckIds: selectedSets,
+        wordCount: wordCount === "all" ? totalCardsSelected : parseInt(wordCount),
+      };
+
+      const res = await api.post("/Gamification/start-matching", payload);
+
+      if (res.status === 200) {
+        // Logic chuyển trang linh hoạt dựa trên selectedGame
+        const targetRoute = selectedGame === "matching" ? "/matchinggame1" : "/rewritinggame";
+        navigate(targetRoute, { state: payload });
+      }
+    } catch (error: any) {
+      alert(error.response?.data?.message || "Lỗi khởi tạo game");
+    }
+  };
 
   return (
     <div className="bg-[#fcf8fa] min-h-screen flex flex-col font-display text-[#1b0d14]">
       <Header />
-      
+
       <main className="flex-grow flex flex-col items-center py-12 px-6">
         <div className="max-w-[900px] w-full animate-fadeIn">
-          
           {/* Back Button & Header */}
           <div className="flex flex-col gap-6 mb-8">
-            <button 
-              onClick={() => navigate('/minigameHub')} 
+            <button
+              onClick={() => navigate("/minigameHub")}
               className="flex items-center gap-2 text-[#9a4c73] hover:text-primary transition-colors w-fit group font-bold"
             >
               <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
               <span>Back to Minigame Hub</span>
             </button>
-            
+
             <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
               <div>
                 <h1 className="text-3xl md:text-4xl font-black tracking-tight flex items-center gap-3">
@@ -125,9 +122,9 @@ const handleStartGame = async () => {
                   <Settings2 className="text-primary" size={24} />
                   <div className="flex flex-col">
                     <span className="text-[10px] uppercase font-bold text-[#9a4c73]/50">Words</span>
-                    <select 
-                      value={wordCount} 
-                      onChange={e => setWordCount(e.target.value)} 
+                    <select
+                      value={wordCount}
+                      onChange={(e) => setWordCount(e.target.value)}
                       className="font-black text-primary outline-none bg-transparent cursor-pointer"
                     >
                       <option value="5">5 thẻ</option>
@@ -150,11 +147,10 @@ const handleStartGame = async () => {
 
           {/* Main Container */}
           <div className="bg-white border border-[#f3e7ed] rounded-[2.5rem] p-6 md:p-8 shadow-xl">
-            
             {/* Search Box */}
             <div className="relative mb-8">
               <Search size={20} className="absolute left-4 top-1/2 -translate-y-1/2 text-[#9a4c73]/30" />
-              <input 
+              <input
                 type="text"
                 placeholder="Tìm kiếm bộ thẻ của bạn..."
                 value={searchQuery}
@@ -171,49 +167,57 @@ const handleStartGame = async () => {
               </div>
             ) : (
               <div className="space-y-3 max-h-[450px] overflow-y-auto pr-2 custom-scrollbar">
-                {decks.filter(d => d.title.toLowerCase().includes(searchQuery.toLowerCase())).map(set => {
-                  const isSelected = selectedSets.includes(set.id);
-                  const isDisabled = isMaxReached && !isSelected;
+                {decks
+                  .filter((d) => d.title.toLowerCase().includes(searchQuery.toLowerCase()))
+                  .map((set) => {
+                    const isSelected = selectedSets.includes(set.id);
+                    const isDisabled = isMaxReached && !isSelected;
 
-                  return (
-                    <label 
-                      key={set.id} 
-                      className={`flex items-center p-5 rounded-[1.5rem] border-2 transition-all duration-300 relative
-                        ${isSelected 
-                          ? 'border-primary bg-primary/5 shadow-md scale-[1.01]' 
-                          : isDisabled 
-                            ? 'border-gray-50 opacity-40 grayscale-[0.6] cursor-not-allowed' 
-                            : 'border-[#f3e7ed] hover:border-primary/30 cursor-pointer bg-white'
+                    return (
+                      <label
+                        key={set.id}
+                        className={`flex items-center p-5 rounded-[1.5rem] border-2 transition-all duration-300 relative
+                        ${
+                          isSelected
+                            ? "border-primary bg-primary/5 shadow-md scale-[1.01]"
+                            : isDisabled
+                              ? "border-gray-50 opacity-40 grayscale-[0.6] cursor-not-allowed"
+                              : "border-[#f3e7ed] hover:border-primary/30 cursor-pointer bg-white"
                         }`}
-                    >
-                      <input 
-                        type="checkbox" 
-                        checked={isSelected} 
-                        onChange={() => handleToggleSet(set.id)}
-                        disabled={isDisabled}
-                        className="hidden" // Ẩn checkbox mặc định
-                      />
-                      
-                      {/* Custom Checkbox UI */}
-                      <div className={`size-6 rounded-lg border-2 flex items-center justify-center transition-colors
-                        ${isSelected ? 'bg-primary border-primary text-white' : 'border-[#f3e7ed] bg-white'}`}
                       >
-                        {isSelected && <CheckCircle2 size={16} />}
-                      </div>
+                        <input
+                          type="checkbox"
+                          checked={isSelected}
+                          onChange={() => handleToggleSet(set.id)}
+                          disabled={isDisabled}
+                          className="hidden" // Ẩn checkbox mặc định
+                        />
 
-                      <div className="ml-5 flex-1">
-                        <h3 className={`font-bold text-lg transition-colors ${isSelected ? 'text-primary' : 'text-[#1b0d14]'}`}>
-                          {set.title}
-                        </h3>
-                        <p className="text-sm text-[#9a4c73]/70">{set.cardsCount} thẻ từ vựng</p>
-                      </div>
+                        {/* Custom Checkbox UI */}
+                        <div
+                          className={`size-6 rounded-lg border-2 flex items-center justify-center transition-colors
+                        ${isSelected ? "bg-primary border-primary text-white" : "border-[#f3e7ed] bg-white"}`}
+                        >
+                          {isSelected && <CheckCircle2 size={16} />}
+                        </div>
 
-                      {isSelected && (
-                         <div className="bg-primary text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-tighter animate-fadeIn">Selected</div>
-                      )}
-                    </label>
-                  );
-                })}
+                        <div className="ml-5 flex-1">
+                          <h3
+                            className={`font-bold text-lg transition-colors ${isSelected ? "text-primary" : "text-[#1b0d14]"}`}
+                          >
+                            {set.title}
+                          </h3>
+                          <p className="text-sm text-[#9a4c73]/70">{set.cardsCount} thẻ từ vựng</p>
+                        </div>
+
+                        {isSelected && (
+                          <div className="bg-primary text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-tighter animate-fadeIn">
+                            Selected
+                          </div>
+                        )}
+                      </label>
+                    );
+                  })}
 
                 {decks.length === 0 && (
                   <div className="text-center py-10">
@@ -230,8 +234,8 @@ const handleStartGame = async () => {
                 <AlertCircle size={18} />
                 <span>Tổng cộng {totalCardsSelected} thẻ sẽ được sử dụng</span>
               </div>
-              
-              <button 
+
+              <button
                 onClick={handleStartGame}
                 disabled={selectedSets.length === 0}
                 className="w-full md:w-auto px-16 py-4 bg-primary text-white rounded-2xl font-black text-xl shadow-xl shadow-primary/20 hover:brightness-110 active:scale-95 disabled:grayscale disabled:opacity-50 transition-all flex items-center justify-center gap-3 group"
@@ -244,12 +248,16 @@ const handleStartGame = async () => {
         </div>
       </main>
 
-      <style dangerouslySetInnerHTML={{ __html: `
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
         .custom-scrollbar::-webkit-scrollbar { width: 6px; }
         .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
         .custom-scrollbar::-webkit-scrollbar-thumb { background-color: #f3e7ed; border-radius: 20px; }
         .custom-scrollbar::-webkit-scrollbar-thumb:hover { background-color: #e0d0d8; }
-      `}} />
+      `,
+        }}
+      />
     </div>
   );
 };
