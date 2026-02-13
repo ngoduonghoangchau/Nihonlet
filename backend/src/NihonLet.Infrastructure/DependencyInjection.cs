@@ -9,6 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 using NihonLet.Application.Common.Interfaces;
 using NihonLet.Domain.Interfaces;
 using NihonLet.Infrastructure.Identity;
+using NihonLet.Infrastructure.Logging;
 using NihonLet.Infrastructure.Persistence;
 using NihonLet.Infrastructure.Persistence.Seed;
 using NihonLet.Infrastructure.Persistence.Repositories;
@@ -100,12 +101,46 @@ public static class DependencyInjection
         services.AddScoped<IGameRepository, GameRepository>();
 
         // MongoDB Logging Services
-        services.AddSingleton<Logging.MongoDbContext>();
-        services.AddScoped<ISystemLogger, Logging.SystemLogger>();
-        services.AddScoped<ISystemLogQueryService, Logging.SystemLogQueryService>();
+        services.AddSingleton<MongoDbContext>();
+        services.AddSingleton<ISystemLogger, SystemLogger>();
+        services.AddScoped<ISystemLogQueryService, SystemLogQueryService>();
 
         services.AddScoped<GrammarSeedService>();
 
+        // Payment Services - toggle real PayOS vs mock
+        var payOsClientId = Environment.GetEnvironmentVariable("NIHONLET_PAYOS_CLIENT_ID");
+        var payOsApiKey = Environment.GetEnvironmentVariable("NIHONLET_PAYOS_API_KEY");
+        var payOsChecksumKey = Environment.GetEnvironmentVariable("NIHONLET_PAYOS_CHECKSUM_KEY");
+        var useMockPayOs = Environment.GetEnvironmentVariable("NIHONLET_PAYOS_USE_MOCK") == "true"
+            || configuration.GetValue<bool>("PayOS:UseMock");
+
+        var hasPayOsCredentials = !string.IsNullOrEmpty(payOsClientId)
+            && !string.IsNullOrEmpty(payOsApiKey)
+            && !string.IsNullOrEmpty(payOsChecksumKey);
+
+        if (useMockPayOs || !hasPayOsCredentials)
+        {
+            services.AddScoped<IPayOsService, Payment.MockPayOsService>();
+        }
+        else
+        {
+            services.Configure<Payment.PayOsSettings>(options =>
+            {
+                options.ClientId = payOsClientId!;
+                options.ApiKey = payOsApiKey!;
+                options.ChecksumKey = payOsChecksumKey!;
+                options.ReturnUrl = Environment.GetEnvironmentVariable("NIHONLET_PAYOS_RETURN_URL")
+                    ?? configuration["PayOS:ReturnUrl"]
+                    ?? "http://localhost:5173/premium-checkout";
+                options.CancelUrl = Environment.GetEnvironmentVariable("NIHONLET_PAYOS_CANCEL_URL")
+                    ?? configuration["PayOS:CancelUrl"]
+                    ?? "http://localhost:5173/pricing";
+            });
+            services.AddScoped<IPayOsService, Payment.PayOsService>();
+        }
+
+        // Background Services
+        services.AddHostedService<BackgroundServices.SubscriptionExpiryService>();
 
         return services;
     }

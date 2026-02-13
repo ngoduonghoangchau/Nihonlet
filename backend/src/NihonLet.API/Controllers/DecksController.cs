@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MediatR;
 using NihonLet.Application.Common.Models;
+using NihonLet.Application.Features.Flashcards.Commands;
 using NihonLet.Application.Features.Flashcards.DTOs;
 
 namespace NihonLet.API.Controllers;

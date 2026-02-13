@@ -35,6 +35,7 @@ import ReadingResults from './pages/ReadingResults';
 // 6. NHÓM THANH TOÁN (PREMIUM)
 import Pricing from './pages/Pricing';
 import PremiumCheckout from './pages/PremiumCheckout';
+import SubscriptionManagement from './pages/SubscriptionManagement';
 
 // 7. NHÓM ADMIN
 import AdminSystemStatus from './pages/AdminSystemStatus';
@@ -83,6 +84,7 @@ const App: React.FC = () => {
           {/* === PREMIUM & PAYMENT === */}
           <Route path="/pricing" element={<ProtectedRoute><Pricing /></ProtectedRoute>} />
           <Route path="/premium-checkout" element={<ProtectedRoute><PremiumCheckout /></ProtectedRoute>} />
+          <Route path="/subscription" element={<ProtectedRoute><SubscriptionManagement /></ProtectedRoute>} />
 
           {/* === ADMIN === */}
           <Route path="/admin/system-status" element={<ProtectedRoute><AdminSystemStatus /></ProtectedRoute>} />

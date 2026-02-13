@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using NihonLet.Domain.Constants;
+using NihonLet.Domain.Entities.Billing;
 using NihonLet.Infrastructure.Identity;
 
 namespace NihonLet.Infrastructure.Persistence;
@@ -13,7 +14,7 @@ namespace NihonLet.Infrastructure.Persistence;
 public static class ApplicationDbContextSeed
 {
     /// <summary>
-    /// Seed roles và admin user
+    /// Seed roles, admin user và subscription plans
     /// </summary>
     public static async Task SeedDefaultsAsync(
         ApplicationDbContext context,
@@ -27,6 +28,9 @@ public static class ApplicationDbContextSeed
 
         // Seed Admin User
         await SeedAdminUserAsync(userManager, configuration, logger);
+
+        // Seed Subscription Plans
+        await SeedSubscriptionPlansAsync(context, logger);
 
         await context.SaveChangesAsync();
     }
@@ -90,5 +94,32 @@ public static class ApplicationDbContextSeed
                     string.Join(", ", result.Errors.Select(e => e.Description)));
             }
         }
+    }
+
+    private static async Task SeedSubscriptionPlansAsync(ApplicationDbContext context, ILogger logger)
+    {
+        if (await context.SubscriptionPlans.AnyAsync())
+            return;
+
+        context.SubscriptionPlans.AddRange(
+            new SubscriptionPlan
+            {
+                PlanName = "Free",
+                Price = 0,
+                DurationDays = 0,
+                MaxDecks = AppConstants.FreeTier.MaxDecks,
+                AllowBulkCreate = false
+            },
+            new SubscriptionPlan
+            {
+                PlanName = "Premium",
+                Price = AppConstants.Payment.PremiumPrice,
+                DurationDays = AppConstants.Payment.PremiumDurationDays,
+                MaxDecks = -1,
+                AllowBulkCreate = true
+            }
+        );
+
+        logger.LogInformation("Đã seed SubscriptionPlans: Free + Premium");
     }
 }
