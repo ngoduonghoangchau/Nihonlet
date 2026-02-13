@@ -11,7 +11,8 @@ import {
   Trophy,
   RefreshCcw,
   ArrowLeft,
-  Loader2
+  Loader2,
+  XCircle 
 } from 'lucide-react';
 
 interface CardTile {
@@ -19,7 +20,7 @@ interface CardTile {
   cardId: number;
   text: string;
   lang: "JAPANESE" | "VIETNAMESE";
-  status: "default" | "selected" | "matched";
+  status: "default" | "selected" | "matched" | "correct" | "wrong"; // Thêm correct và wrong
 }
 
 const MatchingGame1: React.FC = () => {
@@ -32,7 +33,6 @@ const MatchingGame1: React.FC = () => {
   const [secondSelection, setSecondSelection] = useState<CardTile | null>(null);
   const [score, setScore] = useState(0);
   const [loading, setLoading] = useState(true);
-  const [isWon, setIsWon] = useState(false);
 
   const initGame = useCallback(async () => {
     if (!gameConfig) {
@@ -46,7 +46,7 @@ const MatchingGame1: React.FC = () => {
         limit: gameConfig.wordCount
       });
       const data = res.data;
-      let newTiles: CardTile[] = [];
+      const newTiles: CardTile[] = [];
       data.forEach((card: any) => {
         newTiles.push({
           id: `jp-${card.cardId}`,
@@ -65,7 +65,6 @@ const MatchingGame1: React.FC = () => {
       });
       setTiles(newTiles.sort(() => Math.random() - 0.5));
       setScore(0);
-      setIsWon(false);
     } catch (error) {
       console.error("Lỗi khởi tạo game:", error);
     } finally {
@@ -76,8 +75,11 @@ const MatchingGame1: React.FC = () => {
   useEffect(() => { initGame(); }, [initGame]);
 
   const handleCardClick = (tile: CardTile) => {
-    if (tile.status === "matched" || tile.status === "selected" || secondSelection) return;
+    // Không cho phép click nếu đang xử lý cặp thứ 2 hoặc thẻ đã matched/correct
+    if (tile.status === "matched" || tile.status === "selected" || tile.status === "correct" || secondSelection) return;
+
     setTiles(prev => prev.map(t => t.id === tile.id ? { ...t, status: "selected" } : t));
+
     if (!firstSelection) {
       setFirstSelection(tile);
     } else {
@@ -87,19 +89,27 @@ const MatchingGame1: React.FC = () => {
   };
 
   const checkMatch = (card1: CardTile, card2: CardTile) => {
+    const ids = [card1.id, card2.id];
+
     if (card1.cardId === card2.cardId) {
+      // --- ĐÚNG: TÔ XANH ---
+      setTiles(prev => prev.map(t => ids.includes(t.id) ? { ...t, status: "correct" } : t));
+      
       setTimeout(() => {
         setTiles(prev => prev.map(t => t.cardId === card1.cardId ? { ...t, status: "matched" } : t));
         setScore(s => s + 100);
         setFirstSelection(null);
         setSecondSelection(null);
-      }, 500);
+      }, 600); // Đợi 0.6s để người dùng thấy màu xanh
     } else {
+      // --- SAI: TÔ ĐỎ ---
+      setTiles(prev => prev.map(t => ids.includes(t.id) ? { ...t, status: "wrong" } : t));
+
       setTimeout(() => {
-        setTiles(prev => prev.map(t => (t.id === card1.id || t.id === card2.id) ? { ...t, status: "default" } : t));
+        setTiles(prev => prev.map(t => ids.includes(t.id) ? { ...t, status: "default" } : t));
         setFirstSelection(null);
         setSecondSelection(null);
-      }, 1000);
+      }, 1000); // Đợi 1s để người dùng thấy màu đỏ và ghi nhớ
     }
   };
 
@@ -136,7 +146,6 @@ const MatchingGame1: React.FC = () => {
     });
   };
 
-  // --- LOGIC TÍNH TOÁN ĐÃ THÊM ---
   const matchedCount = tiles.filter(t => t.status === "matched").length;
   const progress = tiles.length > 0 ? (matchedCount / tiles.length) * 100 : 0;
 
@@ -182,22 +191,49 @@ const MatchingGame1: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
-          {tiles.map((tile) => (
-            <div 
-              key={tile.id}
-              onClick={() => handleCardClick(tile)}
-              className={`
-                relative aspect-square rounded-[2rem] flex flex-col items-center justify-center p-4 text-center transition-all duration-300 cursor-pointer shadow-sm
-                ${tile.status === "matched" ? 'bg-gray-100 opacity-0 pointer-events-none scale-90' : 'bg-white border-2 border-[#f3e7ed]'}
-                ${tile.status === "selected" ? 'bg-[#fef1f7] border-primary scale-105 shadow-xl z-10' : 'hover:border-primary/40 hover:-translate-y-1'}
-              `}
-            >
-              <h3 className={`font-black mb-1 ${tile.text.length > 6 ? 'text-xl' : 'text-3xl'} ${tile.status === "selected" ? 'text-primary' : ''}`}>
-                {tile.text}
-              </h3>
-              <span className="text-[10px] font-black text-[#9a4c73]/40 uppercase tracking-widest">{tile.lang}</span>
-            </div>
-          ))}
+          {tiles.map((tile) => {
+            const isMatched = tile.status === "matched";
+            const isSelected = tile.status === "selected";
+            const isCorrect = tile.status === "correct";
+            const isWrong = tile.status === "wrong";
+
+            return (
+              <div 
+                key={tile.id}
+                onClick={() => handleCardClick(tile)}
+                className={`
+                  relative aspect-square rounded-[2rem] flex flex-col items-center justify-center p-4 text-center transition-all duration-300 cursor-pointer shadow-sm
+                  ${isMatched ? 'bg-gray-100 opacity-0 pointer-events-none scale-90' : 'bg-white border-2 border-[#f3e7ed]'}
+                  ${isSelected ? 'bg-[#fef1f7] border-primary scale-105 shadow-xl z-10' : 'hover:border-primary/40 hover:-translate-y-1'}
+                  ${isCorrect ? 'bg-green-50 border-green-500 scale-105 z-10 border-[3px]' : ''}
+                  ${isWrong ? 'bg-red-50 border-red-500 scale-105 z-10 border-[3px]' : ''}
+                `}
+              >
+                <h3 className={`
+                  font-black mb-1 transition-colors duration-300
+                  ${tile.text.length > 6 ? 'text-xl' : 'text-3xl'} 
+                  ${isSelected ? 'text-primary' : ''}
+                  ${isCorrect ? 'text-green-600' : ''}
+                  ${isWrong ? 'text-red-600' : ''}
+                `}>
+                  {tile.text}
+                </h3>
+                
+                <span className={`
+                  text-[10px] font-black uppercase tracking-widest transition-colors duration-300
+                  ${isSelected ? 'text-primary' : 'text-[#9a4c73]/40'}
+                  ${isCorrect ? 'text-green-500' : ''}
+                  ${isWrong ? 'text-red-500' : ''}
+                `}>
+                  {isCorrect ? "CORRECT" : isWrong ? "WRONG" : tile.lang}
+                </span>
+
+                {/* Thêm Icon phản hồi nhỏ */}
+                {isCorrect && <CheckCircle2 className="absolute top-4 right-4 text-green-500 animate-bounce" size={20} />}
+                {isWrong && <XCircle className="absolute top-4 right-4 text-red-500 animate-shake" size={20} />}
+              </div>
+            );
+          })}
         </div>
       </main>
     </div>
