@@ -14,7 +14,9 @@ import {
   AlertCircle,
   CheckCircle2,
   Lock,
-  ArrowLeft
+  ArrowLeft,
+  AlertTriangle, // Thêm icon cảnh báo
+  X
 } from 'lucide-react';
 
 interface CardItem {
@@ -40,6 +42,7 @@ const CreateFlashcard: React.FC = () => {
   const [isVerifying, setIsVerifying] = useState(true);
   const [isAccessLimitModalOpen, setIsAccessLimitModalOpen] = useState(false);
   const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false);
+  const [isNoCardsModalOpen, setIsNoCardsModalOpen] = useState(false); // Modal cho lỗi trống thẻ
   const [errors, setErrors] = useState<Record<string, string>>({});
 
   const [bulkCards, setBulkCards] = useState<CardItem[]>([]);
@@ -67,7 +70,7 @@ const CreateFlashcard: React.FC = () => {
     verifyAccess();
   }, [isPremiumUser, navigate]);
 
-  // 2. XỬ LÝ PARSE DỮ LIỆU BULK (GIỮ ĐỦ 4 TRƯỜNG)
+  // 2. XỬ LÝ PARSE DỮ LIỆU BULK
   useEffect(() => {
     if (!isPremiumUser || !bulkText.trim()) {
       setBulkCards([]);
@@ -80,7 +83,7 @@ const CreateFlashcard: React.FC = () => {
         reading: parts[0]?.trim() || '',
         kanji: parts[1]?.trim() || '',
         meaning: parts[2]?.trim() || '',
-        exampleSentence: parts[3]?.trim() || '', // Trường Example
+        exampleSentence: parts[3]?.trim() || '',
       };
     });
     setBulkCards(parsed);
@@ -140,7 +143,12 @@ const CreateFlashcard: React.FC = () => {
   const handleSaveDeck = async () => {
     const newErrors: Record<string, string> = {};
     if (title.trim().length < 3) newErrors.title = "Tên bộ thẻ phải từ 3 ký tự trở lên.";
-    if (allCards.length === 0) { alert("Vui lòng thêm ít nhất một thẻ."); return; }
+    
+    // THAY THẾ ALERT BẰNG MODAL
+    if (allCards.length === 0) { 
+      setIsNoCardsModalOpen(true); 
+      return; 
+    }
 
     allCards.forEach((card, index) => {
       if (!card.reading.trim()) newErrors[`${index}-reading`] = "Không được để trống.";
@@ -163,7 +171,7 @@ const CreateFlashcard: React.FC = () => {
           reading: c.reading.trim(),
           kanji: c.kanji?.trim() || null,
           meaning: c.meaning.trim(),
-          exampleSentence: c.exampleSentence?.trim() || null // Gửi kèm exampleSentence
+          exampleSentence: c.exampleSentence?.trim() || null
         }))
       };
 
@@ -173,6 +181,7 @@ const CreateFlashcard: React.FC = () => {
       }
     } catch (err: unknown) {
       const error = err as AxiosError<{ message?: string }>;
+      // Bạn có thể cân nhắc dùng Modal lỗi ở đây sau này nếu muốn
       alert(error.response?.data?.message || "Lỗi lưu bộ thẻ.");
     } finally {
       setIsSubmitting(false);
@@ -191,7 +200,7 @@ const CreateFlashcard: React.FC = () => {
     <div className="bg-[#fcf8fa] min-h-screen flex flex-col text-[#1b0d14] font-display relative">
       <Header />
       
-      <main className="flex-grow max-w-[1000px] w-full mx-auto px-6 py-10 space-y-12 animate-fadeIn">
+      <main className="flex-grow max-w-[1000px] w-full mx-auto px-6 py-10 animate-fadeIn space-y-12">
         <section>
           <nav className="flex items-center gap-2 text-xs font-bold text-primary mb-4 uppercase tracking-widest">
             <span className='cursor-pointer' onClick={() => navigate('/dashboard')}>Decks</span>
@@ -218,7 +227,7 @@ const CreateFlashcard: React.FC = () => {
             </div>
             <div className="flex flex-col gap-2">
               <label className="text-sm font-bold ml-1">Category / Tags</label>
-              <input className="w-full h-12 px-5 rounded-xl bg-[#f8f5f7] border-none outline-none" placeholder="Japanese, JLPT N5" />
+              <input className="w-full h-12 px-5 rounded-xl bg-[#f8f5f7] border-none focus:ring-2 focus:ring-primary/20 transition-all outline-none" placeholder="Japanese, JLPT N5" />
             </div>
           </div>
           <div className="flex flex-col gap-2">
@@ -270,7 +279,7 @@ const CreateFlashcard: React.FC = () => {
           </div>
         </section>
 
-        {/* Section 3: List Cards (ĐÃ GIỮ LẠI TRƯỜNG EXAMPLE) */}
+        {/* Section 3: List Cards */}
         <section className="space-y-6 pb-24">
           <h3 className="text-2xl font-black">Danh sách thẻ ({allCards.length})</h3>
           <div className="space-y-4">
@@ -351,15 +360,45 @@ const CreateFlashcard: React.FC = () => {
         </div>
       )}
 
-      {/* MODAL 2: TẠO THÀNH CÔNG TĨNH */}
+      {/* MODAL 2: THÀNH CÔNG */}
       {isSuccessModalOpen && (
         <div className="fixed inset-0 z-[200] flex items-center justify-center p-4">
           <div className="absolute inset-0 bg-[#1b0d14]/40 backdrop-blur-sm" />
           <div className="bg-white rounded-[2.5rem] p-10 max-w-sm w-full shadow-2xl relative text-center">
               <CheckCircle2 className="mx-auto text-green-500 mb-6" size={60} />
               <h3 className="text-2xl font-black mb-2 text-[#1b0d14]">Thành công!</h3>
-              <p className="text-[#9a4c73] mb-8 font-medium">Bộ thẻ của bạn đã được tạo và lưu trữ thành công vào thư viện.</p>
+              <p className="text-[#9a4c73] font-medium leading-relaxed mb-8">Bộ thẻ của bạn đã được tạo và lưu trữ thành công vào thư viện.</p>
               <button onClick={() => navigate('/dashboard')} className="w-full py-4 bg-primary text-white font-bold rounded-2xl shadow-lg">Về Dashboard</button>
+          </div>
+        </div>
+      )}
+
+      {/* MODAL 3: CẢNH BÁO TRỐNG THẺ (MỚI) */}
+      {isNoCardsModalOpen && (
+        <div className="fixed inset-0 z-[200] flex items-center justify-center p-4">
+          <div className="absolute inset-0 bg-[#1b0d14]/40 backdrop-blur-sm" />
+          <div className="bg-white rounded-[2.5rem] p-8 md:p-10 max-w-sm w-full shadow-2xl relative border border-[#f3e7ed] text-center z-10">
+            <button 
+              onClick={() => setIsNoCardsModalOpen(false)}
+              className="absolute top-6 right-6 text-[#9a4c73] hover:text-primary transition-colors"
+            >
+              <X size={24} />
+            </button>
+            <div className="flex flex-col items-center">
+              <div className="size-20 rounded-3xl bg-red-50 flex items-center justify-center text-red-500 mb-6">
+                <AlertTriangle size={40} />
+              </div>
+              <h3 className="text-2xl font-black mb-4 text-[#1b0d14]">Missing Content</h3>
+              <p className="text-[#9a4c73] font-medium leading-relaxed mb-8 px-4">
+                Vui lòng thêm ít nhất một thẻ để lưu bộ thẻ.
+              </p>
+              <button 
+                onClick={() => setIsNoCardsModalOpen(false)}
+                className="w-full py-4 bg-primary text-white font-bold rounded-2xl shadow-lg shadow-primary/20 hover:brightness-110 active:scale-95 transition-all"
+              >
+                Đã hiểu
+              </button>
+            </div>
           </div>
         </div>
       )}
