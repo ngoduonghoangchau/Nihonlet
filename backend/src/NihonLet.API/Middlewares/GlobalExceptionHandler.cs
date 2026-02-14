@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Diagnostics;
 using NihonLet.Application.Common.Exceptions;
 using NihonLet.Application.Common.Interfaces;
 using NihonLet.Application.Common.Models;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace NihonLet.API.Middlewares;
 
@@ -15,12 +16,13 @@ namespace NihonLet.API.Middlewares;
 public class GlobalExceptionHandler : IExceptionHandler
 {
     private readonly ILogger<GlobalExceptionHandler> _logger;
-    private readonly ISystemLogger _systemLogger;
-
-    public GlobalExceptionHandler(ILogger<GlobalExceptionHandler> logger, ISystemLogger systemLogger)
+    // private readonly ISystemLogger _systemLogger;
+    private readonly IServiceScopeFactory _scopeFactory;
+    public GlobalExceptionHandler(ILogger<GlobalExceptionHandler> logger, IServiceScopeFactory scopeFactory)
     {
         _logger = logger;
-        _systemLogger = systemLogger;
+        // _systemLogger = systemLogger;
+        _scopeFactory = scopeFactory;
     }
 
     public async ValueTask<bool> TryHandleAsync(
@@ -43,13 +45,18 @@ public class GlobalExceptionHandler : IExceptionHandler
 
         // Ghi lỗi vào MongoDB (fire-and-forget, không block response)
         var userId = httpContext.User?.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+        var path = httpContext.Request.Path.Value ?? "unknown";
         _ = Task.Run(async () =>
         {
             try
             {
+                // Tạo một scope mới cho background task
+                using var scope = _scopeFactory.CreateScope();
+                var systemLogger = scope.ServiceProvider.GetRequiredService<ISystemLogger>();
+
                 if (statusCode == HttpStatusCode.InternalServerError)
                 {
-                    await _systemLogger.LogErrorAsync(
+                    await systemLogger.LogErrorAsync(
                         $"Unhandled: {exception.Message}",
                         exception,
                         httpContext.Request.Path.Value ?? "unknown",
@@ -57,13 +64,17 @@ public class GlobalExceptionHandler : IExceptionHandler
                 }
                 else
                 {
-                    await _systemLogger.LogWarningAsync(
+                    await systemLogger.LogWarningAsync(
                         $"{exception.GetType().Name}: {exception.Message}",
                         httpContext.Request.Path.Value ?? "unknown",
                         userId);
                 }
             }
-            catch { /* Logging failure must not crash the app */ }
+            catch (Exception ex)
+            {
+                // Dùng logger của class để ghi lại nếu việc ghi log vào MongoDB thất bại
+                _logger.LogError(ex, "Failed to write log to MongoDB in background task");
+            }
         });
 
         httpContext.Response.StatusCode = (int)statusCode;

@@ -304,7 +304,7 @@ public class IdentityService : IIdentityService
                 $"Token reuse attack detected for user {storedToken.UserId}, family {storedToken.TokenFamily}",
                 "IdentityService.RefreshToken",
                 storedToken.UserId);
-            _ = _systemLogger.LogAuditAsync(storedToken.UserId, "TokenReuseDetected", "RefreshToken", storedToken.TokenFamily, newValue: $"IP={ipAddress}");
+            _ = _systemLogger.LogAuditAsync(storedToken.UserId, "TokenReuseDetected", "RefreshToken", storedToken.TokenFamily.ToString(), newValue: $"IP={ipAddress}");
             return AuthResult.FailResult("Phát hiện sử dụng lại token. Tất cả sessions đã bị thu hồi. Vui lòng đăng nhập lại.");
         }
 
@@ -317,7 +317,7 @@ public class IdentityService : IIdentityService
                 $"Fingerprint mismatch for user {storedToken.UserId}: expected={storedToken.DeviceFingerprint[..8]}..., got={validatedDevice.Fingerprint[..Math.Min(8, validatedDevice.Fingerprint.Length)]}...",
                 "IdentityService.RefreshToken",
                 storedToken.UserId);
-            _ = _systemLogger.LogAuditAsync(storedToken.UserId, "FingerprintMismatch", "RefreshToken", storedToken.TokenFamily, newValue: $"IP={ipAddress}");
+            _ = _systemLogger.LogAuditAsync(storedToken.UserId, "FingerprintMismatch", "RefreshToken", storedToken.TokenFamily.ToString(), newValue: $"IP={ipAddress}");
             return AuthResult.FailResult("Token không hợp lệ cho thiết bị này. Session đã bị thu hồi.");
         }
 
