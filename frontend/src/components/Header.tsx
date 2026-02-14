@@ -10,7 +10,7 @@ const Header: React.FC = () => {
             <a className="flex items-center gap-2 hover:opacity-80 transition-opacity" href="/">
               {/* THAY THẾ ĐOẠN NÀY BẰNG LOGO CỦA BẠN */}
               <img 
-                src="src/assets/logo.jpg" 
+                src="/src/assets/logo.jpg" 
                 alt="Sakura Learn Logo" 
                 className="h-9 w-auto rounded-lg object-contain"
               />
@@ -20,6 +20,7 @@ const Header: React.FC = () => {
               <a className="px-1 py-4 text-sm font-medium text-[#9a4c73] hover:text-primary transition-colors" href="#">Home</a>
               <a className="px-1 py-4 text-sm font-bold border-b-2 border-primary text-primary transition-colors" href="#">Flashcards</a>
               <a className="px-1 py-4 text-sm font-medium text-[#9a4c73] hover:text-primary transition-colors" href="/grammar-library">Grammar</a>
+              <a className="px-1 py-4 text-sm font-medium text-[#9a4c73] hover:text-primary transition-colors" href="/reading-level">Reading</a>
               <a className="px-1 py-4 text-sm font-medium text-[#9a4c73] hover:text-primary transition-colors" href="#">Games</a>
             </nav>
           </div>

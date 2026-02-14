@@ -67,10 +67,10 @@ const App: React.FC = () => {
           <Route path="/rewriting-results" element={<ProtectedRoute><RewritingResults /></ProtectedRoute>} />
 
           {/* === READING PRACTICE === */}
-          <Route path="/reading-topic" element={<ProtectedRoute><ReadingTopic /></ProtectedRoute>} />
+          <Route path="/reading-topics" element={<ProtectedRoute><ReadingTopic /></ProtectedRoute>} />
           <Route path="/reading-level" element={<ProtectedRoute><ReadingLevel /></ProtectedRoute>} />
           <Route path="/reading-list" element={<ProtectedRoute><ReadingList /></ProtectedRoute>} />
-          <Route path="/reading-exercise" element={<ProtectedRoute><ReadingExercise /></ProtectedRoute>} />
+          <Route path="/reading-exercise/:id" element={<ProtectedRoute><ReadingExercise /></ProtectedRoute>} />
           <Route path="/reading-result" element={<ProtectedRoute><ReadingResults /></ProtectedRoute>} />
 
           {/* === PREMIUM & PAYMENT === */}
