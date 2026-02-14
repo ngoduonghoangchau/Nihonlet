@@ -100,6 +100,7 @@ public static class DependencyInjection
         services.AddScoped<ISystemLogger, Logging.SystemLogger>();
 
         services.AddScoped<GrammarSeedService>();
+        services.AddScoped<ReadingSeedService>();
 
 
         return services;
