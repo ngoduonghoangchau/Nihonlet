@@ -46,9 +46,6 @@ const MatchingGame1: React.FC = () => {
         limit: gameConfig.wordCount
       });
 
-      // --- SỬA ĐOẠN NÀY ---
-      // Nếu Backend trả về dạng { data: [...] } thì lấy res.data.data, 
-      // nếu không thì lấy res.data
       const rawData = res.data.data || res.data;
 
       // Kiểm tra chắc chắn nó là mảng trước khi dùng forEach
