@@ -9,7 +9,10 @@ import {
   History, 
   Library,
   ChevronLeft,
-  Frown
+  Frown,
+  Trophy,
+  Target,
+  Award
 } from 'lucide-react';
 
 const QuizResults: React.FC = () => {
@@ -22,129 +25,162 @@ const QuizResults: React.FC = () => {
   // Tính toán phần trăm chính xác
   const accuracy = total > 0 ? Math.round((score / total) * 100) : 0;
 
-  // Logic hiển thị lời nhắn dựa trên kết quả tiếng Việt
+  // Logic hiển thị giao diện động dựa trên điểm số
   const getFeedback = () => {
     if (accuracy === 100) return { 
-        title: "Điểm tuyệt đối!", 
+        title: "Tuyệt đỉnh!", 
         desc: "Bạn đã hoàn toàn làm chủ kiến thức của chủ đề này!", 
-        icon: <PartyPopper className="text-primary" size={48} /> 
+        icon: <Trophy className="w-12 h-12 md:w-16 md:h-16 text-yellow-500" />,
+        color: "bg-yellow-50",
+        borderColor: "border-yellow-200",
+        textColor: "text-yellow-600",
+        barColor: "bg-yellow-500"
     };
     if (accuracy >= 80) return { 
         title: "Kết quả tuyệt vời!", 
         desc: "Bạn nắm vững kiến thức nền tảng rất tốt.", 
-        icon: <PartyPopper className="text-primary" size={48} /> 
+        icon: <PartyPopper className="w-12 h-12 md:w-16 md:h-16 text-emerald-500" />,
+        color: "bg-emerald-50",
+        borderColor: "border-emerald-200",
+        textColor: "text-emerald-600",
+        barColor: "bg-emerald-500"
     };
     if (accuracy >= 50) return { 
         title: "Cố gắng tốt!", 
         desc: "Bạn đang đi đúng hướng, hãy tiếp tục luyện tập nhé!", 
-        icon: <TrendingUp className="text-emerald-500" size={48} /> 
+        icon: <TrendingUp className="w-12 h-12 md:w-16 md:h-16 text-orange-500" />,
+        color: "bg-orange-50",
+        borderColor: "border-orange-200",
+        textColor: "text-orange-600",
+        barColor: "bg-orange-500"
     };
     return { 
-        title: "Hãy tiếp tục học nhé!", 
+        title: "Cần nỗ lực hơn!", 
         desc: "Hãy xem lại phần giải thích và thử lại để cải thiện điểm số.", 
-        icon: <Frown className="text-orange-500" size={48} /> 
+        icon: <Frown className="w-12 h-12 md:w-16 md:h-16 text-rose-500" />,
+        color: "bg-rose-50",
+        borderColor: "border-rose-200",
+        textColor: "text-rose-600",
+        barColor: "bg-rose-500"
     };
   };
 
   const feedback = getFeedback();
 
-  // Nếu không có dữ liệu, hiện thông báo lỗi
+  // Màn hình lỗi nếu không có dữ liệu
   if (!location.state) {
     return (
-      <div className="bg-background-light min-h-screen flex flex-col items-center justify-center p-6">
-        <Library size={64} className="text-gray-300 mb-4" />
-        <h2 className="text-xl font-bold text-[#1b0d14]">Không tìm thấy dữ liệu kết quả</h2>
-        <button onClick={() => navigate('/grammar-library')} className="mt-4 text-primary font-bold flex items-center gap-2">
-          <ChevronLeft size={20} /> Quay lại Thư viện
-        </button>
+      <div className="bg-[#FCF8FA] min-h-screen w-full flex flex-col items-center justify-center p-6 font-display overflow-hidden">
+        <div className="bg-white p-10 rounded-[2rem] shadow-xl border border-[#f3e7ed] text-center max-w-md w-full">
+            <Library className="w-16 h-16 text-gray-300 mx-auto mb-6" />
+            <h2 className="text-2xl font-black text-[#1b0d14] mb-2">Oops! Trống trơn...</h2>
+            <p className="text-[#9a4c73] mb-8 font-medium">Không tìm thấy dữ liệu kết quả bài làm của bạn.</p>
+            <button 
+                onClick={() => navigate('/grammar-library')} 
+                className="w-full bg-primary text-white py-4 rounded-2xl font-black shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center gap-2"
+            >
+            <ChevronLeft className="w-5 h-5" /> Quay lại Thư viện
+            </button>
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="bg-background-light min-h-screen">
-      <div className="layout-container flex h-full grow flex-col">
-        <Header />
-        <main className="flex flex-1 justify-center py-10 px-4 animate-fadeIn">
-          <div className="layout-content-container flex flex-col max-w-[800px] flex-1 gap-8">
+    // FIX: Thêm w-full và overflow-x-hidden để chặn mảng đen do tràn viền trên iPad
+    <div className="bg-[#FCF8FA] min-h-screen w-full overflow-x-hidden flex flex-col font-display">
+      <Header />
+      
+      {/* FIX: Thêm padding ngang (px-4 md:px-8) để thẻ không chạm sát mép màn hình iPad */}
+      <main className="flex-1 flex justify-center py-6 md:py-16 px-4 md:px-8 animate-in fade-in zoom-in-95 duration-500">
+        
+        {/* FIX: Nới rộng max-w trên iPad (md:max-w-[800px]) để hiển thị cân đối hơn */}
+        <div className="w-full max-w-[500px] md:max-w-[800px] lg:max-w-[900px] flex flex-col gap-6 md:gap-8">
+          
+          {/* --- HERO CARD --- */}
+          <div className={`relative bg-white rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-14 shadow-xl border-2 ${feedback.borderColor} text-center overflow-hidden flex flex-col items-center`}>
+            <div className={`absolute top-0 left-0 right-0 h-32 ${feedback.color} opacity-50`}></div>
             
-            {/* Thẻ Tiêu đề kết quả */}
-            <div className="relative bg-white rounded-2xl p-10 shadow-lg border border-[#f3e7ed] text-center overflow-hidden">
-              <div className="relative z-10 flex flex-col items-center gap-4">
-                <div className="w-20 h-20 bg-pink-50 rounded-full flex items-center justify-center mb-2 animate-bounce">
-                  {feedback.icon}
-                </div>
-                <h1 className="text-[#1b0d14] text-4xl font-bold">{feedback.title}</h1>
-                <p className="text-[#9a4c73] text-lg">{feedback.desc}</p>
+            <div className="relative z-10 flex flex-col items-center w-full">
+              <div className={`w-24 h-24 md:w-28 md:h-28 rounded-full bg-white shadow-lg border-4 ${feedback.borderColor} flex items-center justify-center mb-6 animate-bounce-short`}>
+                {feedback.icon}
               </div>
-            </div>
-
-            {/* Bảng Thống kê */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white p-6 rounded-xl border border-[#f3e7ed] shadow-sm flex flex-col items-center">
-                <span className="text-xs font-bold text-[#9a4c73] uppercase mb-1">Tổng điểm</span>
-                <p className="text-3xl font-bold text-[#1b0d14]">{score}/{total}</p>
-                <div className="w-full bg-[#f3e7ed] h-1.5 rounded-full mt-4 overflow-hidden">
-                  <div 
-                    className="bg-primary h-full transition-all duration-1000" 
-                    style={{ width: `${accuracy}%` }}
-                  ></div>
-                </div>
-              </div>
-              <div className="bg-white p-6 rounded-xl border border-[#f3e7ed] shadow-sm flex flex-col items-center">
-                <span className="text-xs font-bold text-[#9a4c73] uppercase mb-1">Độ chính xác</span>
-                <p className="text-3xl font-bold text-[#1b0d14]">{accuracy}%</p>
-                <div className={`flex items-center gap-1 mt-4 font-bold text-sm ${accuracy >= 80 ? 'text-emerald-500' : 'text-orange-500'}`}>
-                  {accuracy >= 80 ? <TrendingUp size={16} /> : null} 
-                  {accuracy === 100 ? 'Đã thành thạo!' : accuracy >= 50 ? 'Tiến bộ ổn định' : 'Cần xem lại bài'}
-                </div>
-              </div>
-            </div>
-
-            {/* Phần Gợi ý bước tiếp theo */}
-            <div className="bg-white rounded-2xl shadow-sm border border-[#f3e7ed] overflow-hidden">
-              <div className="p-6 border-b border-[#f3e7ed] flex items-center gap-2">
-                <BookOpen className="text-primary" size={24} />
-                <h3 className="font-bold text-lg text-[#1b0d14]">Gợi ý tiếp theo dành cho bạn</h3>
-              </div>
-              <div className="p-6 space-y-4">
-                  <div className="flex items-center justify-between p-4 bg-[#fcf8fa] border border-[#f3e7ed] rounded-xl hover:bg-gray-50 transition-colors">
-                    <div className="flex flex-col">
-                      <span className="font-bold text-[#1b0d14]">
-                        {accuracy === 100 ? 'Thử thách cấp độ tiếp theo' : 'Ôn tập lại chủ đề này'}
-                      </span>
-                      <span className="text-sm text-[#9a4c73]">
-                         Dựa trên tỉ lệ chính xác {accuracy}% của bạn
-                      </span>
-                    </div>
-                    <button 
-                      onClick={() => navigate('/grammar-library')}
-                      className="text-primary hover:text-[#d93a89] flex items-center gap-1 font-bold text-sm"
-                    >
-                      Khám phá <ExternalLink size={16} />
-                    </button>
-                  </div>
-              </div>
-            </div>
-
-            {/* Các nút Hành động */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button 
-                onClick={() => navigate(`/grammar-quiz/${topicId}`)}
-                className="flex-1 flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white rounded-xl font-bold hover:brightness-110 active:scale-95 transition-all shadow-md"
-              >
-                <History size={20} /> Làm lại bài Quiz
-              </button>
-              <button 
-                onClick={() => navigate('/grammar-library')}
-                className="flex-1 flex items-center justify-center gap-2 px-8 py-4 bg-white border-2 border-primary text-primary rounded-xl font-bold hover:bg-pink-50 active:scale-95 transition-all"
-              >
-                <Library size={20} /> Quay lại Thư viện
-              </button>
+              
+              <h1 className="text-[#1b0d14] text-3xl md:text-5xl font-black mb-3 tracking-tight break-words">
+                  {feedback.title}
+              </h1>
+              <p className="text-[#9a4c73] text-sm md:text-lg font-medium max-w-md mx-auto">
+                  {feedback.desc}
+              </p>
             </div>
           </div>
-        </main>
-      </div>
+
+          {/* --- STATS GRID --- */}
+          <div className="grid grid-cols-2 gap-4 md:gap-6">
+            <div className="bg-white p-6 md:p-10 rounded-[1.5rem] md:rounded-[2rem] border-2 border-[#f3e7ed] shadow-sm flex flex-col items-center justify-center text-center">
+              <div className="bg-blue-50 p-3 md:p-4 rounded-2xl mb-4 text-blue-500">
+                  <Target className="w-6 h-6 md:w-8 md:h-8" />
+              </div>
+              <span className="text-xs md:text-sm font-black text-[#9a4c73] uppercase tracking-widest mb-1 md:mb-2">Số câu đúng</span>
+              <div className="flex items-baseline gap-1">
+                  <span className="text-4xl md:text-6xl font-black text-[#1b0d14]">{score}</span>
+                  <span className="text-lg md:text-2xl font-bold text-gray-400">/{total}</span>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 md:p-10 rounded-[1.5rem] md:rounded-[2rem] border-2 border-[#f3e7ed] shadow-sm flex flex-col items-center justify-center text-center">
+              <div className={`${feedback.color} p-3 md:p-4 rounded-2xl mb-4 ${feedback.textColor}`}>
+                  <Award className="w-6 h-6 md:w-8 md:h-8" />
+              </div>
+              <span className="text-xs md:text-sm font-black text-[#9a4c73] uppercase tracking-widest mb-1 md:mb-2">Độ chính xác</span>
+              <p className={`text-4xl md:text-6xl font-black ${feedback.textColor}`}>{accuracy}%</p>
+            </div>
+          </div>
+
+          {/* --- GỢI Ý --- */}
+          <div className="bg-white rounded-[1.5rem] md:rounded-[2rem] shadow-sm border-2 border-[#f3e7ed] overflow-hidden">
+            <div className="p-5 md:p-6 border-b border-[#f3e7ed] flex items-center gap-3 bg-gray-50/50">
+              <BookOpen className="text-primary w-5 h-5 md:w-6 md:h-6" />
+              <h3 className="font-black text-base md:text-lg text-[#1b0d14] uppercase tracking-wide">Gợi ý cho bạn</h3>
+            </div>
+            <div className="p-5 md:p-8">
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-5 md:p-6 bg-[#fcf8fa] border-2 border-[#f3e7ed] rounded-2xl hover:border-primary/30 transition-colors">
+                  <div className="text-center sm:text-left">
+                    <h4 className="font-black text-[#1b0d14] text-lg md:text-xl mb-1 md:mb-2">
+                      {accuracy === 100 ? 'Chinh phục bài học mới' : 'Ôn tập lại chủ đề này'}
+                    </h4>
+                    <p className="text-xs md:text-sm font-medium text-[#9a4c73]">
+                       Dựa trên tỉ lệ chính xác {accuracy}% của bài vừa làm
+                    </p>
+                  </div>
+                  <button 
+                    onClick={() => navigate('/grammar-library')}
+                    className="w-full sm:w-auto text-primary bg-white border-2 border-[#f3e7ed] px-8 py-4 rounded-xl hover:text-white hover:bg-primary hover:border-primary flex items-center justify-center gap-2 font-bold text-sm md:text-base transition-all whitespace-nowrap"
+                  >
+                    Khám phá <ExternalLink className="w-4 h-4 md:w-5 md:h-5" />
+                  </button>
+                </div>
+            </div>
+          </div>
+
+          {/* --- BUTTONS --- */}
+          <div className="flex flex-col sm:flex-row gap-4 md:gap-6 mt-2">
+            <button 
+              onClick={() => navigate(`/grammar-quiz/${topicId}`)}
+              className="flex-1 flex items-center justify-center gap-2 px-8 py-4 md:py-6 bg-primary text-white rounded-2xl font-black text-base md:text-lg hover:brightness-110 active:scale-95 transition-all shadow-xl shadow-primary/20"
+            >
+              <History className="w-5 h-5 md:w-6 md:h-6" /> Làm lại bài
+            </button>
+            <button 
+              onClick={() => navigate('/grammar-library')}
+              className="flex-1 flex items-center justify-center gap-2 px-8 py-4 md:py-6 bg-white border-2 border-[#f3e7ed] text-gray-600 rounded-2xl font-black text-base md:text-lg hover:border-primary hover:text-primary active:scale-95 transition-all"
+            >
+              <Library className="w-5 h-5 md:w-6 md:h-6" /> Thư viện
+            </button>
+          </div>
+          
+        </div>
+      </main>
     </div>
   );
 };
