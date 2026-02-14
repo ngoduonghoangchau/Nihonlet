@@ -1,6 +1,6 @@
 import React from "react";
 import { Search, LogOut } from "lucide-react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
 import logo from "../assets/logo.jpg";
 
@@ -8,15 +8,21 @@ const Header: React.FC = () => {
   const navigate = useNavigate();
   const { logout, isAuthenticated } = useAuth();
 
-  return (
+  // Nếu isActive là true, sẽ hiện chữ đậm và thanh hồng ở dưới
+  const navLinkClass = ({ isActive }: { isActive: boolean }) =>
+    `px-1 py-4 text-sm transition-colors ${
+      isActive
+        ? "font-bold border-b-2 border-primary text-primary" // Class khi đang chọn
+        : "font-medium text-[#9a4c73] hover:text-primary"    // Class khi không chọn
+    }`;
+
+ return (
     <header className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[#f3e7ed]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center gap-8">
-            {/* 2. Dùng Link thay vì thẻ <a> để chuyển trang mượt mà */}
             <Link className="flex items-center gap-2 hover:opacity-80 transition-opacity" to="/dashboard">
               <img
-                // 3. SỬ DỤNG BIẾN LOGO ĐÃ IMPORT
                 src={logo}
                 alt="Sakura Learn Logo"
                 className="h-9 w-auto rounded-lg object-contain"
@@ -25,48 +31,25 @@ const Header: React.FC = () => {
             </Link>
 
             <nav className="hidden md:flex items-center gap-6">
-              <Link
-                className="px-1 py-4 text-sm font-medium text-[#9a4c73] hover:text-primary transition-colors"
-                to="/dashboard"
-              >
+              {/* Lưu ý: Nếu Home và Flashcards dùng chung 1 link /dashboard, 
+                  bạn nên cân nhắc đổi một trong hai sang link khác hoặc dùng logic so sánh pathname thủ công.
+                  Ở đây tôi giả định bạn sẽ có các route riêng biệt cho mỗi tab. */}
+              
+              <NavLink to="/home" className={navLinkClass}>
                 Home
-              </Link>
-              <Link
-                className="px-1 py-4 text-sm font-bold border-b-2 border-primary text-primary transition-colors"
-                to="/dashboard"
-              >
+              </NavLink>
+
+              <NavLink to="/dashboard" className={navLinkClass}>
                 Flashcards
-              </Link>
-              <Link
-                className="px-1 py-4 text-sm font-medium text-[#9a4c73] hover:text-primary transition-colors"
-                to="/grammar-library"
-              >
+              </NavLink>
+
+              <NavLink to="/grammar-library" className={navLinkClass}>
                 Grammar
-              </Link>
-              <Link
-                className="px-1 py-4 text-sm font-medium text-[#9a4c73] hover:text-primary transition-colors"
-                to="/minigamehub"
-              >
+              </NavLink>
+
+              <NavLink to="/minigamehub" className={navLinkClass}>
                 Games
-              </Link>
-              <a className="px-1 py-4 text-sm font-medium text-[#9a4c73] hover:text-primary transition-colors" href="#">
-                Home
-              </a>
-              <a
-                className="px-1 py-4 text-sm font-bold border-b-2 border-primary text-primary transition-colors"
-                href="#"
-              >
-                Flashcards
-              </a>
-              <a
-                className="px-1 py-4 text-sm font-medium text-[#9a4c73] hover:text-primary transition-colors"
-                href="/grammar-library"
-              >
-                Grammar
-              </a>
-              <a className="px-1 py-4 text-sm font-medium text-[#9a4c73] hover:text-primary transition-colors" href="#">
-                Games
-              </a>
+              </NavLink>
             </nav>
           </div>
 
