@@ -41,7 +41,12 @@ useEffect(() => {
     try {
       setLoading(true);
       const response = await api.get(`/Decks/${id}`);
-      setDeck(response.data);
+      
+      console.log("Dữ liệu Deck chi tiết:", response.data);
+
+      const data = response.data.data || response.data;
+      setDeck(data);
+      
     } catch (error) {
       console.error("Lỗi khi tải bộ thẻ:", error);
     } finally {
