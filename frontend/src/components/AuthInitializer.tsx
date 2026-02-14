@@ -24,27 +24,19 @@ const AuthInitializer: React.FC<AuthInitializerProps> = ({ children }) => {
       if (hasInitialized.current) return;
       hasInitialized.current = true;
 
-      console.log("🔐 AuthInitializer: Starting...", { 
+      console.log("AuthInitializer: Starting...", { 
         hasUser: !!user, 
         hasAccessToken: !!accessToken,
-        user: user?.email 
       });
 
-      // LUÔN thử refresh token khi app load (nếu có cookie)
       try {
         if (user && !accessToken) {
-          console.log("🔄 Attempting token refresh...");
           await performRefresh();
-          console.log("✅ Token refresh successful");
-        } else if (!user) {
-          console.log("ℹ️ No persisted user, skipping refresh");
         }
-      } catch (error) {
-        console.error("❌ Token refresh failed:", error);
-        // Nếu refresh fail, vẫn cho vào app (sẽ redirect về login)
+      } catch {
+        // If refresh fails, allow app to load (will redirect to login via ProtectedRoute)
       } finally {
         setIsInitialized(true);
-        console.log("🏁 AuthInitializer: Complete");
       }
     };
 

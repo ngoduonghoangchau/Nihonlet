@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 /* Khai báo Theme v4 */
 @theme {
@@ -10,7 +11,7 @@
 }
 
 /* SỬA LỖI ICON BỊ HIỆN THÀNH CHỮ */
-.material-symbols-outlined {
+.material-symbols-outlined {  
   font-family: 'Material Symbols Outlined';
   font-weight: normal;
   font-style: normal;

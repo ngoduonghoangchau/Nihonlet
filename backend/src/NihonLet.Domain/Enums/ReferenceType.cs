@@ -6,8 +6,8 @@ namespace NihonLet.Domain.Enums;
 public enum ReferenceType
 {
     /// <summary>Câu hỏi thuộc bài đọc hiểu</summary>
-    Reading,
+    Grammar = 0,
     
     /// <summary>Câu hỏi thuộc bài ngữ pháp</summary>
-    Grammar
+    Reading = 1
 }

@@ -50,13 +50,4 @@ public static class AppConstants
         public const int PremiumDurationDays = 30;
     }
     
-    /// <summary>
-    /// Role names
-    /// </summary>
-    public static class Roles
-    {
-        public const string Free = "Free";
-        public const string Premium = "Premium";
-        public const string Admin = "Admin";
-    }
 }

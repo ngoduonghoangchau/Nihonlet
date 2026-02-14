@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useAppSelector } from '../hooks/useRedux';
 import Header from '../components/Header';
 import { api } from '../api/axios'; 
-import type { RootState } from '../store';
 import { 
   Layers, 
   Plus, 
@@ -37,7 +36,7 @@ interface DeckItem {
 const Dashboard: React.FC = () => {
   const navigate = useNavigate();
   
-  const { user } = useSelector((state: RootState) => state.auth);
+  const { user } = useAppSelector((state) => state.auth);
   const isPremiumUser = user?.roles?.includes('Premium') || false;
 
   const [decks, setDecks] = useState<DeckItem[]>([]);
@@ -52,6 +51,7 @@ const Dashboard: React.FC = () => {
   const DECK_LIMIT = 10;
   const isLimitReached = !isPremiumUser && decks.length >= DECK_LIMIT;
 
+  // Assign a stable image per deck using deckId as seed
   const fetchDecks = async () => {
     try {
       setLoading(true);
@@ -59,7 +59,7 @@ const Dashboard: React.FC = () => {
       
       const processedDecks = response.data.map((deck: DeckItem) => ({
         ...deck,
-        displayImage: DECK_IMAGES[Math.floor(Math.random() * DECK_IMAGES.length)]
+        displayImage: DECK_IMAGES[deck.deckId % DECK_IMAGES.length]
       }));
 
       setDecks(processedDecks);

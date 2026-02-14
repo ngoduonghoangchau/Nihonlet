@@ -2,7 +2,14 @@ import { useCallback } from 'react';
 import { useAppDispatch, useAppSelector } from './useRedux';
 import { setCredentials, setLoading, setError, logout as logoutAction } from '../store/slices/authSlice';
 import * as authService from '../services/authService';
-import type { LoginDto, RegisterDto, User } from '../types/auth';
+import type { ApiResponse, AuthResponseDto, LoginDto, RegisterDto, User } from '../types/auth';
+
+/** Result returned from auth actions (login, register, googleLogin) */
+interface AuthResult {
+  success: boolean;
+  error?: string;
+  errors?: Record<string, string[]>;
+}
 
 export const useAuth = () => {
   const dispatch = useAppDispatch();
@@ -10,13 +17,19 @@ export const useAuth = () => {
     (state) => state.auth
   );
 
-  // ===== Login =====
-  const login = useCallback(
-    async (credentials: LoginDto) => {
+  /**
+   * Shared handler that wraps any auth service call with
+   * loading state, credential dispatch, and error handling.
+   */
+  const handleAuthAction = useCallback(
+    async (
+      action: () => Promise<ApiResponse<AuthResponseDto>>,
+      fallbackMessage: string,
+    ): Promise<AuthResult> => {
       dispatch(setLoading(true));
       dispatch(setError(null));
       try {
-        const response = await authService.login(credentials);
+        const response = await action();
         if (response.success && response.data) {
           dispatch(setCredentials({
             accessToken: response.data.accessToken,
@@ -24,11 +37,10 @@ export const useAuth = () => {
             user: response.data.user,
           }));
           return { success: true };
-        } else {
-          const errorMessage = response.message || 'Login failed';
-          dispatch(setError(errorMessage));
-          return { success: false, error: errorMessage, errors: response.errors };
         }
+        const errorMessage = response.message || fallbackMessage;
+        dispatch(setError(errorMessage));
+        return { success: false, error: errorMessage, errors: response.errors };
       } catch (err: unknown) {
         const errorMessage = getErrorMessage(err);
         dispatch(setError(errorMessage));
@@ -36,62 +48,27 @@ export const useAuth = () => {
       }
     },
     [dispatch]
+  );
+
+  // ===== Login =====
+  const login = useCallback(
+    (credentials: LoginDto) =>
+      handleAuthAction(() => authService.login(credentials), 'Login failed'),
+    [handleAuthAction]
   );
 
   // ===== Register =====
   const register = useCallback(
-    async (data: RegisterDto) => {
-      dispatch(setLoading(true));
-      dispatch(setError(null));
-      try {
-        const response = await authService.register(data);
-        if (response.success && response.data) {
-          dispatch(setCredentials({
-            accessToken: response.data.accessToken,
-            expiresAt: response.data.expiresAt,
-            user: response.data.user,
-          }));
-          return { success: true };
-        } else {
-          const errorMessage = response.message || 'Registration failed';
-          dispatch(setError(errorMessage));
-          return { success: false, error: errorMessage, errors: response.errors };
-        }
-      } catch (err: unknown) {
-        const errorMessage = getErrorMessage(err);
-        dispatch(setError(errorMessage));
-        return { success: false, error: errorMessage };
-      }
-    },
-    [dispatch]
+    (data: RegisterDto) =>
+      handleAuthAction(() => authService.register(data), 'Registration failed'),
+    [handleAuthAction]
   );
 
   // ===== Google Login =====
   const googleLogin = useCallback(
-    async (idToken: string) => {
-      dispatch(setLoading(true));
-      dispatch(setError(null));
-      try {
-        const response = await authService.googleLogin(idToken);
-        if (response.success && response.data) {
-          dispatch(setCredentials({
-            accessToken: response.data.accessToken,
-            expiresAt: response.data.expiresAt,
-            user: response.data.user,
-          }));
-          return { success: true };
-        } else {
-          const errorMessage = response.message || 'Google login failed';
-          dispatch(setError(errorMessage));
-          return { success: false, error: errorMessage };
-        }
-      } catch (err: unknown) {
-        const errorMessage = getErrorMessage(err);
-        dispatch(setError(errorMessage));
-        return { success: false, error: errorMessage };
-      }
-    },
-    [dispatch]
+    (idToken: string) =>
+      handleAuthAction(() => authService.googleLogin(idToken), 'Google login failed'),
+    [handleAuthAction]
   );
 
   // ===== Refresh Token =====

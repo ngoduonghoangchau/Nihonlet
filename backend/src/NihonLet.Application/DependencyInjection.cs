@@ -1,6 +1,8 @@
 using System.Reflection;
 using FluentValidation;
+using MediatR;
 using Microsoft.Extensions.DependencyInjection;
+using NihonLet.Application.Common.Behaviors;
 
 namespace NihonLet.Application;
 
@@ -13,9 +15,12 @@ public static class DependencyInjection
     {
         var assembly = Assembly.GetExecutingAssembly();
         
-        // MediatR
+        // MediatR + Pipeline Behaviors
         services.AddMediatR(cfg => 
             cfg.RegisterServicesFromAssembly(assembly));
+        
+        // LoggingBehavior: tự động ghi Audit Log + Application Log cho mọi Command/Query
+        services.AddTransient(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
         
         // FluentValidation
         services.AddValidatorsFromAssembly(assembly);

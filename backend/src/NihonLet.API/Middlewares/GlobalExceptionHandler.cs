@@ -3,20 +3,24 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Diagnostics;
 using NihonLet.Application.Common.Exceptions;
+using NihonLet.Application.Common.Interfaces;
 using NihonLet.Application.Common.Models;
 
 namespace NihonLet.API.Middlewares;
 
 /// <summary>
 /// Global exception handler để convert exceptions thành ApiResponse format
+/// và ghi lỗi vào MongoDB thông qua ISystemLogger.
 /// </summary>
 public class GlobalExceptionHandler : IExceptionHandler
 {
     private readonly ILogger<GlobalExceptionHandler> _logger;
+    private readonly ISystemLogger _systemLogger;
 
-    public GlobalExceptionHandler(ILogger<GlobalExceptionHandler> logger)
+    public GlobalExceptionHandler(ILogger<GlobalExceptionHandler> logger, ISystemLogger systemLogger)
     {
         _logger = logger;
+        _systemLogger = systemLogger;
     }
 
     public async ValueTask<bool> TryHandleAsync(
@@ -26,7 +30,7 @@ public class GlobalExceptionHandler : IExceptionHandler
     {
         var (statusCode, response) = MapExceptionToResponse(exception);
         
-        // Log exception
+        // Log exception qua built-in logger
         if (statusCode == HttpStatusCode.InternalServerError)
         {
             _logger.LogError(exception, "Unhandled exception occurred: {Message}", exception.Message);
@@ -36,6 +40,31 @@ public class GlobalExceptionHandler : IExceptionHandler
             _logger.LogWarning("Handled exception: {ExceptionType} - {Message}", 
                 exception.GetType().Name, exception.Message);
         }
+
+        // Ghi lỗi vào MongoDB (fire-and-forget, không block response)
+        var userId = httpContext.User?.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+        _ = Task.Run(async () =>
+        {
+            try
+            {
+                if (statusCode == HttpStatusCode.InternalServerError)
+                {
+                    await _systemLogger.LogErrorAsync(
+                        $"Unhandled: {exception.Message}",
+                        exception,
+                        httpContext.Request.Path.Value ?? "unknown",
+                        userId);
+                }
+                else
+                {
+                    await _systemLogger.LogWarningAsync(
+                        $"{exception.GetType().Name}: {exception.Message}",
+                        httpContext.Request.Path.Value ?? "unknown",
+                        userId);
+                }
+            }
+            catch { /* Logging failure must not crash the app */ }
+        });
 
         httpContext.Response.StatusCode = (int)statusCode;
         httpContext.Response.ContentType = "application/json; charset=utf-8";

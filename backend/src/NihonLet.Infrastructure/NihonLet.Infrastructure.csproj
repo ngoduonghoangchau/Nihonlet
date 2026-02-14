@@ -29,4 +29,10 @@
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <!-- Tự động copy mọi file .json trong thư mục Grammar ra Output -->
+    <None Update="Persistence\SeedData\Grammar\*.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>

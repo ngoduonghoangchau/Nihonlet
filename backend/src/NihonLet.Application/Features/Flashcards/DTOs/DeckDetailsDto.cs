@@ -1,12 +1,19 @@
-//này là cho chi tiết bộ thẻ
+namespace NihonLet.Application.Features.Flashcards.DTOs;
+
+/// <summary>
+/// DTO chi tiết bộ thẻ kèm danh sách từ vựng
+/// </summary>
 public class DeckDetailsDto
 {
     public int DeckId { get; set; }
     public string Title { get; set; } = null!;
     public string? Description { get; set; }
-    public List<CardDto> Cards { get; set; } = new();
+    public List<CardDto> Cards { get; set; } = [];
 }
 
+/// <summary>
+/// DTO thông tin một thẻ từ vựng
+/// </summary>
 public class CardDto
 {
     public int CardId { get; set; }

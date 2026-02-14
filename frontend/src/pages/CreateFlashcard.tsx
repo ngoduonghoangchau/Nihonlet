@@ -1,10 +1,9 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useAppSelector } from '../hooks/useRedux';
 import Header from '../components/Header';
 import { api } from '../api/axios'; 
 import { AxiosError } from 'axios';
-import type { RootState } from '../store';
 import { 
   Save, 
   Trash2, 
@@ -27,7 +26,7 @@ interface CardItem {
 
 const CreateFlashcard: React.FC = () => {
   const navigate = useNavigate();
-  const { user } = useSelector((state: RootState) => state.auth);
+  const { user } = useAppSelector((state) => state.auth);
   const isPremiumUser = user?.roles?.includes('Premium') || false;
 
   // --- STATE DỮ LIỆU ---

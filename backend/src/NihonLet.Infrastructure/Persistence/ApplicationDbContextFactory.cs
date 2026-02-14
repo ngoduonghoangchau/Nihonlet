@@ -5,7 +5,7 @@ using System.IO;
 
 namespace NihonLet.Infrastructure.Persistence;
 
-public class ApplicationDbContextFactory 
+public class ApplicationDbContextFactory
     : IDesignTimeDbContextFactory<ApplicationDbContext>
 {
     public ApplicationDbContext CreateDbContext(string[] args)

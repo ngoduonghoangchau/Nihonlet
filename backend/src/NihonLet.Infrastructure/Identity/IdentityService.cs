@@ -25,6 +25,7 @@ public class IdentityService : IIdentityService
     private readonly SignInManager<ApplicationUser> _signInManager;
     private readonly ApplicationDbContext _dbContext;
     private readonly IConfiguration _configuration;
+    private readonly ISystemLogger _systemLogger;
 
     // Token settings
     private const int AccessTokenExpiryMinutes = 15;
@@ -35,12 +36,14 @@ public class IdentityService : IIdentityService
         UserManager<ApplicationUser> userManager,
         SignInManager<ApplicationUser> signInManager,
         ApplicationDbContext dbContext,
-        IConfiguration configuration)
+        IConfiguration configuration,
+        ISystemLogger systemLogger)
     {
         _userManager = userManager;
         _signInManager = signInManager;
         _dbContext = dbContext;
         _configuration = configuration;
+        _systemLogger = systemLogger;
     }
 
     public async Task<AuthResult> RegisterAsync(RegisterRequest request, DeviceInfoDto deviceInfo, string? ipAddress)
@@ -86,6 +89,9 @@ public class IdentityService : IIdentityService
         _dbContext.RefreshTokens.Add(refreshTokenEntity);
         await _dbContext.SaveChangesAsync();
 
+        // Audit: đăng ký thành công
+        _ = _systemLogger.LogAuditAsync(user.Id, "Register", "User", user.Id, newValue: $"Email={request.Email}");
+
         return AuthResult.SuccessResult(
             accessToken,
             rawRefreshToken,
@@ -113,8 +119,10 @@ public class IdentityService : IIdentityService
         {
             if (result.IsLockedOut)
             {
+                _ = _systemLogger.LogWarningAsync($"Account locked: {request.Email}", "IdentityService.Login", user.Id);
                 return AuthResult.FailResult("Tài khoản đã bị khóa. Vui lòng thử lại sau.");
             }
+            _ = _systemLogger.LogAuditAsync(user.Id, "LoginFailed", "User", user.Id, newValue: $"IP={ipAddress}");
             return AuthResult.FailResult("Email hoặc mật khẩu không đúng.");
         }
 
@@ -129,6 +137,9 @@ public class IdentityService : IIdentityService
         // Lưu refresh token vào DB
         _dbContext.RefreshTokens.Add(refreshTokenEntity);
         await _dbContext.SaveChangesAsync();
+
+        // Audit: đăng nhập thành công
+        _ = _systemLogger.LogAuditAsync(user.Id, "Login", "User", user.Id, newValue: $"IP={ipAddress}, Device={validatedDevice.DeviceName}");
 
         return AuthResult.SuccessResult(
             accessToken,
@@ -231,6 +242,9 @@ public class IdentityService : IIdentityService
         _dbContext.RefreshTokens.Add(refreshTokenEntity);
         await _dbContext.SaveChangesAsync();
 
+        // Audit: Google login thành công
+        _ = _systemLogger.LogAuditAsync(user.Id, "GoogleLogin", "User", user.Id, newValue: $"Email={payload.Email}, IP={ipAddress}");
+
         return AuthResult.SuccessResult(
             accessToken,
             rawRefreshToken,
@@ -286,6 +300,11 @@ public class IdentityService : IIdentityService
 
             // REUSE ATTACK DETECTED! Revoke toàn bộ token family
             await RevokeTokenFamilyAsync(storedToken.TokenFamily, "ReuseDetected");
+            _ = _systemLogger.LogWarningAsync(
+                $"Token reuse attack detected for user {storedToken.UserId}, family {storedToken.TokenFamily}",
+                "IdentityService.RefreshToken",
+                storedToken.UserId);
+            _ = _systemLogger.LogAuditAsync(storedToken.UserId, "TokenReuseDetected", "RefreshToken", storedToken.TokenFamily, newValue: $"IP={ipAddress}");
             return AuthResult.FailResult("Phát hiện sử dụng lại token. Tất cả sessions đã bị thu hồi. Vui lòng đăng nhập lại.");
         }
 
@@ -294,6 +313,11 @@ public class IdentityService : IIdentityService
         {
             // Token bị sử dụng từ device khác - potential theft
             await RevokeTokenFamilyAsync(storedToken.TokenFamily, "FingerprintMismatch");
+            _ = _systemLogger.LogWarningAsync(
+                $"Fingerprint mismatch for user {storedToken.UserId}: expected={storedToken.DeviceFingerprint[..8]}..., got={validatedDevice.Fingerprint[..Math.Min(8, validatedDevice.Fingerprint.Length)]}...",
+                "IdentityService.RefreshToken",
+                storedToken.UserId);
+            _ = _systemLogger.LogAuditAsync(storedToken.UserId, "FingerprintMismatch", "RefreshToken", storedToken.TokenFamily, newValue: $"IP={ipAddress}");
             return AuthResult.FailResult("Token không hợp lệ cho thiết bị này. Session đã bị thu hồi.");
         }
 
@@ -347,6 +371,7 @@ public class IdentityService : IIdentityService
             token.RevokedAt = DateTime.UtcNow;
             token.RevokedReason = "Logout";
             await _dbContext.SaveChangesAsync();
+            _ = _systemLogger.LogAuditAsync(userId, "Logout", "RefreshToken", tokenId.Value.ToString());
             return true;
         }
         else
@@ -365,6 +390,7 @@ public class IdentityService : IIdentityService
             }
 
             await _dbContext.SaveChangesAsync();
+            _ = _systemLogger.LogAuditAsync(userId, "Logout", "RefreshToken", newValue: $"Revoked {activeTokens.Count} tokens");
             return true;
         }
     }
@@ -382,6 +408,7 @@ public class IdentityService : IIdentityService
         }
 
         await _dbContext.SaveChangesAsync();
+        _ = _systemLogger.LogAuditAsync(userId, "LogoutAll", "RefreshToken", newValue: $"Revoked {activeTokens.Count} tokens from all devices");
         return activeTokens.Count;
     }
 

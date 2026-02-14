@@ -21,13 +21,7 @@ public class BusinessRuleChecker
     /// </summary>
     public BusinessRuleResult Check()
     {
-        var violations = _rules
-            .Where(r => !r.IsSatisfied())
-            .Select(r => new BusinessRuleViolation(
-                r.RuleCode, 
-                r.Description, 
-                r.ViolationMessage))
-            .ToList();
+        var violations = GetViolations();
 
         return violations.Count == 0 
             ? BusinessRuleResult.Success() 

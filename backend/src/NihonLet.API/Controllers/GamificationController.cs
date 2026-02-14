@@ -1,11 +1,16 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MediatR;
-using NihonLet.Application.Features.Gamification.Queries; 
+using NihonLet.Application.Common.Models;
+using NihonLet.Application.Features.Gamification.Queries;
 using NihonLet.Application.Features.Gamification.Commands;
 using NihonLet.Application.Features.Gamification.DTOs;
 
+namespace NihonLet.API.Controllers;
 
+/// <summary>
+/// Endpoints cho Minigames (Matching, Rewriting)
+/// </summary>
 [Authorize]
 [ApiController]
 [Route("api/[controller]")]
@@ -18,42 +23,37 @@ public class GamificationController : ControllerBase
     [HttpGet("available-decks")]
     public async Task<IActionResult> GetAvailableDecks()
     {
-        return Ok(await _mediator.Send(new GetDecksForGameQuery()));
+        var result = await _mediator.Send(new GetDecksForGameQuery());
+        return Ok(ApiResponse<List<GameDeckDto>>.SuccessResult(result));
     }
 
     [HttpPost("start-matching")]
     public async Task<IActionResult> StartMatching([FromBody] GameStartRequest request)
     {
-        try {
-            await _mediator.Send(new StartMatchingGameCommand(request));
-            return Ok(new { Message = "Sẵn sàng bắt đầu!" });
-        } catch (Exception ex) {
-            return BadRequest(new { Message = ex.Message });
-        }
+        // Exceptions được GlobalExceptionHandler xử lý tập trung
+        await _mediator.Send(new StartMatchingGameCommand(request));
+        return Ok(ApiResponse.SuccessResult("Sẵn sàng bắt đầu!"));
     }
 
-    [HttpPost("get-cards")] 
+    [HttpPost("get-cards")]
     public async Task<IActionResult> GetCardsForGame([FromBody] GetCardsForGameQuery query)
     {
         var result = await _mediator.Send(query);
-        return Ok(result);
+        return Ok(ApiResponse<List<GameCardDto>>.SuccessResult(result));
     }
 
-        [HttpPost("start-rewriting")]
+    [HttpPost("start-rewriting")]
     public async Task<IActionResult> StartRewriting([FromBody] List<int> deckIds)
     {
-        try {
-            await _mediator.Send(new StartRewritingGameCommand(deckIds));
-            return Ok(new { Message = "Hợp lệ" });
-        } catch (Exception ex) {
-            return BadRequest(new { Message = ex.Message });
-        }
+        await _mediator.Send(new StartRewritingGameCommand(deckIds));
+        return Ok(ApiResponse.SuccessResult("Hợp lệ"));
     }
 
-        [HttpPost("save-rewriting")]
+    [HttpPost("save-rewriting")]
     public async Task<IActionResult> SaveRewriting([FromBody] SaveSessionRequest request)
     {
         var id = await _mediator.Send(new SaveRewritingSessionCommand(request));
-        return Ok(new { Id = id, Message = "Lưu kết quả thành công" });
+        return Ok(ApiResponse<object>.SuccessResult(
+            new { Id = id }, "Lưu kết quả thành công"));
     }
 }
