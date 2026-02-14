@@ -45,9 +45,21 @@ const MatchingGame1: React.FC = () => {
         deckIds: gameConfig.selectedDeckIds,
         limit: gameConfig.wordCount
       });
-      const data = res.data;
+
+      // --- SỬA ĐOẠN NÀY ---
+      // Nếu Backend trả về dạng { data: [...] } thì lấy res.data.data, 
+      // nếu không thì lấy res.data
+      const rawData = res.data.data || res.data;
+
+      // Kiểm tra chắc chắn nó là mảng trước khi dùng forEach
+      if (!Array.isArray(rawData)) {
+        console.error("Dữ liệu trả về không phải là mảng:", rawData);
+        setTiles([]);
+        return;
+      }
+
       const newTiles: CardTile[] = [];
-      data.forEach((card: any) => {
+      rawData.forEach((card: any) => {
         newTiles.push({
           id: `jp-${card.cardId}`,
           cardId: card.cardId,
@@ -63,6 +75,8 @@ const MatchingGame1: React.FC = () => {
           status: "default"
         });
       });
+      // --------------------
+
       setTiles(newTiles.sort(() => Math.random() - 0.5));
       setScore(0);
     } catch (error) {

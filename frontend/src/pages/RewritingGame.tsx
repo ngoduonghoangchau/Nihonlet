@@ -37,7 +37,7 @@ const RewritingGame: React.FC = () => {
   const [isSaving, setIsSaving] = useState(false);
 
   // 1. Khởi tạo Game và lấy dữ liệu từ Backend
-  const initGame = useCallback(async () => {
+const initGame = useCallback(async () => {
     if (!gameConfig) {
       navigate('/minigameSelect');
       return;
@@ -48,11 +48,16 @@ const RewritingGame: React.FC = () => {
         deckIds: gameConfig.selectedDeckIds,
         limit: gameConfig.wordCount
       });
-      setCards(res.data);
+      
+      // FIX: Đảm bảo lấy đúng mảng cards
+      const responseData = res.data.data || res.data;
+      const finalCards = Array.isArray(responseData) ? responseData : [];
+      
+      setCards(finalCards);
       setCurrentIndex(0);
       setScore(0);
       setCorrectCount(0);
-      setIsFinished(false);
+      // setIsFinished(false); // Nếu bạn dùng biến này hãy mở ra
       setFeedback(null);
       setInputValue('');
     } catch (error) {

@@ -17,11 +17,11 @@ import {
   AlertTriangle 
 } from 'lucide-react';
 
-const DECK_IMAGES = [
-  "https://images.unsplash.com/photo-1583409209821-aa5dcdc23872?w=600&auto=format&fit=crop",
-  "https://plus.unsplash.com/premium_photo-1690749740487-01bbb8e51e71?q=80&w=765&auto=format&fit=crop",
-  "https://plus.unsplash.com/premium_photo-1661878091370-4ccb8763756a?q=80&w=1632&auto=format&fit=crop"
-];
+// const DECK_IMAGES = [
+//   "https://images.unsplash.com/photo-1583409209821-aa5dcdc23872?w=600&auto=format&fit=crop",
+//   "https://plus.unsplash.com/premium_photo-1690749740487-01bbb8e51e71?q=80&w=765&auto=format&fit=crop",
+//   "https://plus.unsplash.com/premium_photo-1661878091370-4ccb8763756a?q=80&w=1632&auto=format&fit=crop"
+// ];
 
 interface DeckItem {
   deckId: number;
@@ -52,23 +52,52 @@ const Dashboard: React.FC = () => {
   const isLimitReached = !isPremiumUser && decks.length >= DECK_LIMIT;
 
   // Assign a stable image per deck using deckId as seed
-  const fetchDecks = async () => {
-    try {
-      setLoading(true);
-      const response = await api.get('/Flashcards/decks');
+// const fetchDecks = async () => {
+//     try {
+//       setLoading(true);
+//       const response = await api.get('/Flashcards/decks');
       
-      const processedDecks = response.data.map((deck: DeckItem) => ({
-        ...deck,
-        displayImage: DECK_IMAGES[deck.deckId % DECK_IMAGES.length]
-      }));
+//       // Kiểm tra: Nếu response.data.data tồn tại thì dùng nó, nếu không thì dùng response.data
+//       const rawData = response.data.data || response.data;
 
-      setDecks(processedDecks);
-    } catch (error) {
-      console.error("Lỗi lấy danh sách bộ thẻ:", error);
-    } finally {
-      setLoading(false);
-    }
-  };
+//       // Bảo vệ code: Nếu vẫn không phải mảng thì gán mảng rỗng
+//       const dataArray = Array.isArray(rawData) ? rawData : [];
+      
+//       const processedDecks = dataArray.map((deck: DeckItem) => ({
+//         ...deck,
+//         displayImage: DECK_IMAGES[deck.deckId % DECK_IMAGES.length]
+//       }));
+
+//       setDecks(processedDecks);
+//     } catch (error) {
+//       console.error("Lỗi lấy danh sách bộ thẻ:", error);
+//     } finally {
+//       setLoading(false);
+//     }
+//   };
+const fetchDecks = async () => {
+  try {
+    setLoading(true);
+    const response = await api.get('/Flashcards/decks');
+    
+    // Kiểm tra cấu trúc data (giả sử backend bọc trong .data)
+    const rawData = response.data.data || response.data;
+    const dataArray = Array.isArray(rawData) ? rawData : [];
+
+    const processedDecks = dataArray.map((deck: DeckItem) => ({
+      ...deck,
+      // Sử dụng dịch vụ Picsum với seed là deckId
+      // Mỗi deckId khác nhau sẽ ra 1 ảnh khác nhau, nhưng deckId cũ sẽ luôn ra ảnh cũ
+      displayImage: `https://picsum.photos/seed/${deck.deckId}/600/400`
+    }));
+
+    setDecks(processedDecks);
+  } catch (error) {
+    console.error("Lỗi lấy danh sách bộ thẻ:", error);
+  } finally {
+    setLoading(false);
+  }
+};
 
   // 1. MỞ MODAL XÁC NHẬN XÓA
   const openDeleteModal = (deck: DeckItem, e: React.MouseEvent) => {
