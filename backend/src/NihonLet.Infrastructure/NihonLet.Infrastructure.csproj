@@ -37,7 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
-  <None Update="Persistence\SeedData\Reading\reading.json">
+  <None Update="Persistence\SeedData\Reading\*.json">
     <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </None>
   </ItemGroup>
