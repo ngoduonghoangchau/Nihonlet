@@ -13,7 +13,7 @@ import {
   ChevronUp,
   HelpCircle,
   ChevronRight,
-  ChevronLeft, // Thêm icon cho phân trang
+  ChevronLeft,
   FileText
 } from 'lucide-react';
 
@@ -31,15 +31,25 @@ interface ReadingCategoryDto {
 }
 
 interface ReadingArticleDto {
-  articleId: number;
-  titleJp: string;
-  titleVi: string;
-  contentJp: string;
-  contentFurigana?: string;
-  level: string;
-  catId: number;
-  contentVi: string;
-  status: 'Unlocked' | 'Locked';
+  articleId?: number;
+  ArticleId?: number;
+  titleJp?: string;
+  TitleJp?: string;
+  titleVi?: string;
+  TitleVi?: string;
+  contentJp?: string;
+  ContentJp?: string;
+  contentFurigana?: string | any[];
+  ContentFurigana?: string | any[];
+  level?: string;
+  Level?: string;
+  catId?: number;
+  CatId?: number;
+  contentVi?: string;
+  ContentVi?: string;
+  status?: 'Unlocked' | 'Locked';
+  Status?: 'Unlocked' | 'Locked';
+  [key: string]: any; 
 }
 
 interface OptionDto {
@@ -67,10 +77,12 @@ const ReadingList: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
   const [expandedId, setExpandedId] = useState<number | null>(null);
+  
+  // STATE MỚI: Lưu trữ chi tiết bài đọc & câu hỏi khi xổ xuống
   const [questionsMap, setQuestionsMap] = useState<Record<number, QuestionDto[]>>({});
+  const [articleDetailsMap, setArticleDetailsMap] = useState<Record<number, ReadingArticleDto>>({});
   const [loadingQ, setLoadingQ] = useState<Record<number, boolean>>({});
   
-  // STATE MỚI: Trạng thái đóng/mở của bộ lọc chủ đề
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   // STATE PHÂN TRANG
@@ -93,7 +105,7 @@ const ReadingList: React.FC = () => {
     fetchCategories();
   }, []);
 
-  // 2. Fetch Articles
+  // 2. Fetch Articles (Lấy danh sách rút gọn)
   useEffect(() => {
     const fetchArticles = async () => {
       if (selectedCatId === undefined) return;
@@ -105,7 +117,7 @@ const ReadingList: React.FC = () => {
         }
         const response = await api.get('/Reading/articles', { params: articleParams });
         setArticles(response.data || []);
-        setCurrentPage(1); // Reset về trang 1 khi lấy dữ liệu mới
+        setCurrentPage(1); 
       } catch (error) {
         console.error("Lỗi khi tải danh sách bài đọc:", error);
       } finally {
@@ -123,50 +135,65 @@ const ReadingList: React.FC = () => {
       newParams.set('catId', catId.toString());
     }
     setExpandedId(null);
-    setIsFilterOpen(false); // Tự động đóng bộ lọc trên mobile sau khi chọn xong
-    setCurrentPage(1); // Reset về trang 1 khi đổi bộ lọc
+    setIsFilterOpen(false); 
+    setCurrentPage(1); 
     setSearchParams(newParams);
   };
 
-  // Render Furigana Tối ưu
-  const renderFurigana = (jsonString: string | undefined, fallback: string) => {
-    if (!jsonString) return <span>{fallback}</span>;
+  // --- RENDER FURIGANA ---
+  const renderFurigana = (furiData: any, fallbackJp: string) => {
+    if (!furiData) return <span>{fallbackJp || "Đang tải..."}</span>;
     try {
-      const parts = JSON.parse(jsonString);
+      const parts = typeof furiData === 'string' ? JSON.parse(furiData) : furiData;
+      if (!Array.isArray(parts)) return <span>{fallbackJp}</span>;
+
       return parts.map((part: any, index: number) => {
         if (typeof part === 'string') return <span key={index}>{part}</span>;
-        return (
-          <ruby key={index} className="mx-[1px]">
-            {part.k}
-            <rt className="font-bold text-primary opacity-90 tracking-tighter">{part.f}</rt>
-          </ruby>
-        );
+        if (part && part.k && part.f) {
+          return (
+            <ruby key={index} className="mx-[1px]">
+              {part.k}
+              <rt className="font-bold text-primary opacity-90 tracking-tighter">{part.f}</rt>
+            </ruby>
+          );
+        }
+        return null;
       });
     } catch (e) {
-      return <span>{fallback}</span>;
+      return <span>{fallbackJp}</span>;
     }
   };
 
+  // --- HÀM TOGGLE ---
   const toggleExpand = async (articleId: number) => {
     if (expandedId === articleId) {
       setExpandedId(null);
       return;
     }
     setExpandedId(articleId);
-    if (!questionsMap[articleId]) {
+
+    const needQuestions = !questionsMap[articleId];
+    const needDetails = !articleDetailsMap[articleId];
+
+    if (needQuestions || needDetails) {
       setLoadingQ(prev => ({ ...prev, [articleId]: true }));
       try {
-        const res = await api.get(`/Reading/articles/${articleId}/questions`);
-        setQuestionsMap(prev => ({ ...prev, [articleId]: res.data || [] }));
+        const [resQ, resDetail] = await Promise.all([
+          needQuestions ? api.get(`/Reading/articles/${articleId}/questions`) : Promise.resolve({ data: questionsMap[articleId] }),
+          needDetails ? api.get(`/Reading/articles/${articleId}`) : Promise.resolve({ data: articleDetailsMap[articleId] })
+        ]);
+
+        if (needQuestions) setQuestionsMap(prev => ({ ...prev, [articleId]: resQ.data || [] }));
+        if (needDetails) setArticleDetailsMap(prev => ({ ...prev, [articleId]: resDetail.data }));
+
       } catch (e) {
-        console.error(e);
+        console.error("Lỗi khi tải chi tiết bài đọc hoặc câu hỏi:", e);
       } finally {
         setLoadingQ(prev => ({ ...prev, [articleId]: false }));
       }
     }
   };
 
-  // Tính toán dữ liệu phân trang
   const indexOfLastArticle = currentPage * itemsPerPage;
   const indexOfFirstArticle = indexOfLastArticle - itemsPerPage;
   const currentArticles = articles.slice(indexOfFirstArticle, indexOfLastArticle);
@@ -177,7 +204,6 @@ const ReadingList: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // --- TRẠNG THÁI TRỐNG ---
   if (selectedCatId === undefined) {
     return (
       <div className="bg-[#FCF8FA] min-h-screen flex flex-col font-display text-[#1b0d14]">
@@ -201,13 +227,11 @@ const ReadingList: React.FC = () => {
     );
   }
 
-  // --- MÀN HÌNH CHÍNH ---
   return (
     <div className="bg-[#FCF8FA] min-h-screen flex flex-col font-display text-[#1b0d14]">
       <style>{`
         ruby { display: inline-flex; flex-direction: column-reverse; vertical-align: bottom; line-height: 2.2; }
         rt { display: block; line-height: 1; font-size: 0.55em; text-align: center; margin-bottom: 2px; transform: translateY(15%); }
-        /* Tùy chỉnh thanh cuộn cho Sidebar */
         .custom-scrollbar::-webkit-scrollbar { width: 4px; }
         .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
         .custom-scrollbar::-webkit-scrollbar-thumb { background: #f3e7ed; border-radius: 10px; }
@@ -218,7 +242,6 @@ const ReadingList: React.FC = () => {
 
       <main className="flex-grow max-w-[1200px] mx-auto px-4 md:px-6 py-8 md:py-12 w-full animate-in fade-in slide-in-from-bottom-4 duration-700">
         
-        {/* --- Tiêu đề & Breadcrumb --- */}
         <div className="mb-8 md:mb-12">
           <button 
             onClick={() => navigate(`/reading-topics?level=${currentLevel}`)}
@@ -236,20 +259,17 @@ const ReadingList: React.FC = () => {
               <ChevronRight size={12} />
               <span className="font-black text-primary">Danh sách bài đọc</span>
             </nav>
-            {/* GIẢM CỠ CHỮ TIÊU ĐỀ TRANG (text-3xl -> text-2xl, md:text-5xl -> md:text-4xl) */}
             <h2 className="text-2xl md:text-4xl font-black text-[#1b0d14] tracking-tight">
               {selectedCategory ? selectedCategory.nameVi : `Bài đọc ${currentLevel}`}
             </h2>
           </div>
         </div>
 
-        {/* --- Layout Chia Cột --- */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8">
           
-          {/* SIDEBAR: Bộ Lọc (ĐÃ ĐƯỢC GỘP LẠI) */}
+          {/* SIDEBAR BỘ LỌC CHỦ ĐỀ */}
           <aside className="lg:col-span-4 xl:col-span-3">
             <div className="bg-white rounded-[1.5rem] md:rounded-[2rem] shadow-sm p-4 md:p-6 border-2 border-[#f3e7ed] lg:sticky lg:top-24 z-10">
-              {/* Header có thể click trên mobile để mở/đóng */}
               <div 
                 onClick={() => setIsFilterOpen(!isFilterOpen)}
                 className="flex items-center justify-between cursor-pointer lg:cursor-default"
@@ -257,19 +277,16 @@ const ReadingList: React.FC = () => {
                 <h3 className="font-black text-sm md:text-base flex items-center gap-2 text-[#1b0d14] uppercase tracking-wider">
                   <Filter size={20} className="text-primary" /> Lọc chủ đề
                 </h3>
-                {/* Nút mũi tên chỉ hiện trên điện thoại */}
                 <button className="lg:hidden p-1.5 bg-[#fcf8fa] text-primary rounded-xl transition-transform">
                   {isFilterOpen ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
                 </button>
               </div>
 
-              {/* Danh sách chủ đề - Ẩn trên mobile, hiện trên PC */}
               <div className={`mt-4 ${isFilterOpen ? 'block' : 'hidden lg:block'} animate-in fade-in slide-in-from-top-2`}>
                 <ul className="space-y-2 max-h-[50vh] overflow-y-auto pr-2 custom-scrollbar">
                   {categories.map((t) => {
                     const categoryId = getCategoryId(t);
                     if (!categoryId) return null;
-                    
                     const isActive = selectedCatId === categoryId;
                     
                     return (
@@ -293,7 +310,7 @@ const ReadingList: React.FC = () => {
             </div>
           </aside>
 
-          {/* MAIN CONTENT: Danh sách bài tập */}
+          {/* MAIN CONTENT BÀI ĐỌC */}
           <div className="lg:col-span-8 xl:col-span-9">
             {loading ? (
               <div className="flex flex-col justify-center items-center py-20 bg-white rounded-[2rem] border-2 border-[#f3e7ed]">
@@ -308,22 +325,33 @@ const ReadingList: React.FC = () => {
               </div>
             ) : (
               <div className="space-y-4 md:space-y-6">
-                {currentArticles.map((article, idx) => {
-                  const isExpanded = expandedId === article.articleId;
-                  const questions = questionsMap[article.articleId] || [];
-                  const isLoadingQ = loadingQ[article.articleId];
+                {currentArticles.map((articleItem, idx) => {
+                  const aId = articleItem.articleId || articleItem.ArticleId || 0;
+                  const isExpanded = expandedId === aId;
+                  
+                  const article = isExpanded && articleDetailsMap[aId] ? articleDetailsMap[aId] : articleItem;
+
+                  const tJp = article.titleJp || article.TitleJp || "";
+                  const tVi = article.titleVi || article.TitleVi || "";
+                  const cJp = article.contentJp || article.ContentJp || article.contentJP || article.ContentJP || "";
+                  const cFuri = article.contentFurigana || article.ContentFurigana;
+                  const aLevel = article.level || article.Level || currentLevel;
+                  const aCatId = article.catId || article.CatId || selectedCatId;
+
+                  const questions = questionsMap[aId] || [];
+                  const isLoadingQ = loadingQ[aId];
                   const absoluteIndex = indexOfFirstArticle + idx + 1;
 
                   return (
                     <div 
-                      key={article.articleId} 
+                      key={aId} 
                       className={`group bg-white rounded-[1.5rem] md:rounded-[2rem] shadow-sm border-2 transition-all duration-300 ${
                         isExpanded ? 'border-primary shadow-lg shadow-primary/10' : 'border-[#f3e7ed] hover:border-primary/50'
                       }`}
                     >
                       {/* HEADER CARD */}
                       <div 
-                        onClick={() => toggleExpand(article.articleId)}
+                        onClick={() => toggleExpand(aId)}
                         className="p-4 md:p-6 flex items-start sm:items-center gap-3 md:gap-4 cursor-pointer relative"
                       >
                         <div className={`w-12 h-12 md:w-14 md:h-14 rounded-xl flex items-center justify-center shrink-0 font-black text-lg md:text-xl transition-colors ${
@@ -334,22 +362,21 @@ const ReadingList: React.FC = () => {
                         
                         <div className="flex-grow min-w-0 pr-2">
                           <div className="flex items-center gap-2 mb-1">
-                            <span className={`flex items-center text-[10px] md:text-xs font-black uppercase tracking-widest px-2 py-1 rounded-lg ${article.level === 'N5' ? 'bg-green-100 text-green-700' : 'bg-yellow-100 text-yellow-700'}`}>
-                              <Star size={12} className="mr-1 fill-current" /> {article.level}
+                            <span className={`flex items-center text-[10px] md:text-xs font-black uppercase tracking-widest px-2 py-1 rounded-lg ${aLevel === 'N5' ? 'bg-green-100 text-green-700' : 'bg-yellow-100 text-yellow-700'}`}>
+                              <Star size={12} className="mr-1 fill-current" /> {aLevel}
                             </span>
                           </div>
-                          {/* GIẢM CỠ CHỮ BÀI ĐỌC (text-lg -> text-base, md:text-2xl -> md:text-xl) */}
                           <h4 className={`text-base md:text-xl font-black transition-colors leading-tight mb-1 truncate md:whitespace-normal ${isExpanded ? 'text-primary' : 'text-[#1b0d14]'}`}>
-                            {article.titleJp}
+                            {tJp}
                           </h4>
-                          <p className="text-xs md:text-sm text-[#9a4c73] font-medium truncate">{article.titleVi}</p>
+                          <p className="text-xs md:text-sm text-[#9a4c73] font-medium truncate">{tVi}</p>
                         </div>
 
                         <div className="shrink-0 self-center flex items-center gap-2">
                           <button 
                             onClick={(e) => {
                               e.stopPropagation();
-                              navigate(`/reading-exercise/${article.articleId}`, { state: { catId: article.catId || selectedCatId } });
+                              navigate(`/reading-exercise/${aId}`, { state: { catId: aCatId } });
                             }}
                             className="flex items-center gap-1.5 md:gap-2 bg-primary text-white px-3 py-2 md:px-5 md:py-2.5 rounded-xl font-black text-[10px] md:text-sm shadow-md shadow-primary/20 hover:scale-105 active:scale-95 transition-all z-10"
                           >
@@ -368,24 +395,26 @@ const ReadingList: React.FC = () => {
                       {isExpanded && (
                         <div className="px-5 md:px-8 pb-6 md:pb-8 border-t-2 border-dashed border-[#f3e7ed] pt-6 animate-in fade-in slide-in-from-top-4 duration-500">
                           
-                          {/* Khung bài đọc */}
+                          {/* Khung bài đọc Xem trước (Chỉ tiếng Nhật) */}
                           <div className="mb-8 bg-[#fcf8fa] p-5 md:p-8 rounded-[1.5rem] border-2 border-[#f3e7ed] shadow-inner relative">
                             <h5 className="font-black text-sm uppercase tracking-widest text-primary mb-4 flex items-center gap-2">
                               <BookOpen size={18} /> Xem trước bài đọc
                             </h5>
                             
-                            <div className="text-lg md:text-2xl text-[#1b0d14] font-medium tracking-wide break-words text-justify md:text-left mb-6">
-                              {renderFurigana(article.contentFurigana, article.contentJp)}
-                            </div>
-                            
-                            <div className="border-t-2 border-dashed border-[#e7cfdb] pt-4 mt-4">
-                              <p className="text-[#9a4c73] text-sm md:text-base italic font-medium leading-relaxed">
-                                {article.contentVi}
-                              </p>
-                            </div>
+                            {isLoadingQ ? (
+                               <div className="flex justify-center py-6"><Loader2 className="animate-spin text-primary w-8 h-8" /></div>
+                            ) : (
+                               <div className="text-lg md:text-2xl text-[#1b0d14] font-medium tracking-wide break-words text-justify md:text-left">
+                                 {cJp === "" ? (
+                                   <span className="text-red-500 font-bold text-sm bg-red-50 p-2 rounded">⚠️ Lỗi: Không thể lấy nội dung bài đọc từ Server.</span>
+                                 ) : (
+                                   renderFurigana(cFuri, cJp)
+                                 )}
+                               </div>
+                            )}
                           </div>
 
-                          {/* Khung Câu hỏi */}
+                          {/* Khung Câu hỏi Xem trước */}
                           <div>
                             <h5 className="font-black text-sm uppercase tracking-widest text-[#1b0d14] mb-5 flex items-center gap-2">
                               <HelpCircle size={18} className="text-primary" /> Câu hỏi ({questions.length})
@@ -393,6 +422,8 @@ const ReadingList: React.FC = () => {
                             
                             {isLoadingQ ? (
                               <div className="flex justify-center py-6"><Loader2 className="animate-spin text-primary w-8 h-8" /></div>
+                            ) : questions.length === 0 ? (
+                               <p className="text-sm text-gray-500 italic">Chưa có câu hỏi cho bài đọc này.</p>
                             ) : (
                               <div className="grid grid-cols-1 gap-4">
                                 {questions.map((q, qIdx) => (
@@ -423,7 +454,7 @@ const ReadingList: React.FC = () => {
                           {/* Nút To - Chuyển sang thi chính thức */}
                           <div className="mt-8 flex justify-center md:justify-end">
                              <button 
-                               onClick={() => navigate(`/reading-exercise/${article.articleId}`, { state: { catId: article.catId || selectedCatId } })}
+                               onClick={() => navigate(`/reading-exercise/${aId}`, { state: { catId: aCatId } })}
                                className="w-full md:w-auto bg-primary hover:brightness-110 text-white px-8 py-4 md:py-5 rounded-2xl font-black shadow-xl shadow-primary/20 transition-all flex items-center justify-center gap-2 active:scale-95 text-base md:text-lg"
                              >
                                <PlayCircle className="w-6 h-6" /> Vào phòng thi chính thức

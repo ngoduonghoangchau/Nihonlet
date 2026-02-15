@@ -21,7 +21,8 @@ import {
   Camera,
   ArrowRight,
   ChevronRight,
-  Lightbulb
+  Lightbulb,
+  Briefcase
 } from 'lucide-react';
 
 interface ReadingCategoryDto {
@@ -69,13 +70,14 @@ const ReadingTopic: React.FC = () => {
     if (n.includes('school') || n.includes('education') || n.includes('trường') || n.includes('giáo dục')) return <GraduationCap className="w-8 h-8 md:w-10 md:h-10" />;
     if (n.includes('culture') || n.includes('festival') || n.includes('văn hóa') || n.includes('lễ hội')) return <Sparkles className="w-8 h-8 md:w-10 md:h-10" />;
     if (n.includes('shop') || n.includes('store') || n.includes('mua sắm')) return <ShoppingBag className="w-8 h-8 md:w-10 md:h-10" />;
-    if (n.includes('food') || n.includes('eat') || n.includes('ẩm thực') || n.includes('ăn')) return <Utensils className="w-8 h-8 md:w-10 md:h-10" />;
+    if (n.includes('food') || n.includes('eat') || n.includes('ẩm thực') || n.includes('ăn uống')) return <Utensils className="w-8 h-8 md:w-10 md:h-10" />;
     if (n.includes('health') || n.includes('body') || n.includes('sức khỏe')) return <HeartPulse className="w-8 h-8 md:w-10 md:h-10" />;
     if (n.includes('family') || n.includes('friend') || n.includes('gia đình') || n.includes('bạn bè')) return <Heart className="w-8 h-8 md:w-10 md:h-10" />;
     if (n.includes('news') || n.includes('tin tức')) return <Newspaper className="w-8 h-8 md:w-10 md:h-10" />;
     if (n.includes('transport') || n.includes('traffic') || n.includes('giao thông')) return <Train className="w-8 h-8 md:w-10 md:h-10" />;
     if (n.includes('weather') || n.includes('thời tiết')) return <CloudSun className="w-8 h-8 md:w-10 md:h-10" />;
     if (n.includes('hobby') || n.includes('sở thích')) return <Camera className="w-8 h-8 md:w-10 md:h-10" />;
+    if (n.includes('work') || n.includes('job') || n.includes('công việc') || n.includes('kỹ năng')) return <Briefcase className="w-8 h-8 md:w-10 md:h-10" />;
     return <BookOpen className="w-8 h-8 md:w-10 md:h-10" />;
   };
 
