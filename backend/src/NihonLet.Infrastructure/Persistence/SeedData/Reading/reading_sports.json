@@ -1,0 +1,1210 @@
+[
+  {
+    "NameVi": "Sở thích và Thể thao",
+    "NameJp": "趣味とスポーツ",
+    "Description": "Giới thiệu về sở thích cá nhân và các môn thể thao yêu thích.",
+    "IconUrl": "/icons/hobby.png",
+    "Articles": [
+      {
+        "Level": "N5",
+        "TitleJp": "私の趣味",
+        "TitleVi": "Sở thích của tôi",
+        "ContentJp": "私の趣味は写真を撮ることです。休みの日に公園で花の写真を撮ります。",
+        "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"の\", {\"k\":\"趣味\",\"f\":\"しゅみ\"}, \"は\", {\"k\":\"写真\",\"f\":\"しゃしん\"}, \"を\", {\"k\":\"撮\",\"f\":\"と\"}, \"ることです。\", {\"k\":\"休\",\"f\":\"やす\"}, \"みの\", {\"k\":\"日\",\"f\":\"ひ\"}, \"に\", {\"k\":\"公園\",\"f\":\"こうえん\"}, \"で\", {\"k\":\"花\",\"f\":\"はな\"}, \"の\", {\"k\":\"写真\",\"f\":\"しゃしん\"}, \"を\", {\"k\":\"撮\",\"f\":\"と\"}, \"ります。\"]",
+        "ContentVi": "Sở thích của tôi là chụp ảnh. Vào ngày nghỉ, tôi thường chụp ảnh hoa ở công viên.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "趣味は何ですか。",
+            "Explanation": "Dựa vào câu: 趣味は写真を撮ることです。",
+            "Options": [
+              { "Text": "本を読むこと", "IsCorrect": false },
+              { "Text": "写真を撮ること", "IsCorrect": true },
+              { "Text": "歌を歌うこと", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "どこで写真を撮りますか。",
+            "Explanation": "Dựa vào câu: 公園で花の写真を撮ります。",
+            "Options": [
+              { "Text": "公園", "IsCorrect": true },
+              { "Text": "家", "IsCorrect": false },
+              { "Text": "学校", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "テニスをしましょう",
+        "TitleVi": "Cùng chơi tennis nhé",
+        "ContentJp": "私はスポーツが好きです。特にテニスが大好きです。毎週土曜日に友達とします。",
+        "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"はスポーツが\", {\"k\":\"好\",\"f\":\"す\"}, \"きです。\", {\"k\":\"特\",\"f\":\"とく\"}, \"にテニスが\", {\"k\":\"大好\",\"f\":\"だいす\"}, \"きです。\", {\"k\":\"毎週土曜日\",\"f\":\"まいしゅうどようび\"}, \"に\", {\"k\":\"友達\",\"f\":\"ともだち\"}, \"とします。\"]",
+        "ContentVi": "Tôi thích thể thao. Đặc biệt là tôi rất thích tennis. Tôi chơi cùng bạn bè vào mỗi thứ Bảy hàng tuần.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "何のスポーツが一番好きですか。",
+            "Explanation": "Dựa vào câu: 特にテニスが大好きです (Đặc biệt là tennis).",
+            "Options": [
+              { "Text": "サッカー", "IsCorrect": false },
+              { "Text": "テニス", "IsCorrect": true },
+              { "Text": "水泳", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "いつテニスをしますか。",
+            "Explanation": "Dựa vào cụm: 毎週土曜日 (Mỗi thứ Bảy).",
+            "Options": [
+              { "Text": "毎日", "IsCorrect": false },
+              { "Text": "月曜日", "IsCorrect": false },
+              { "Text": "土曜日", "IsCorrect": true }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "音楽を聴くこと",
+        "TitleVi": "Việc nghe nhạc",
+        "ContentJp": "私は音楽を聴くことが好きです。日本の歌をよく聴きます。とてもおもしろいです。",
+        "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"音楽\",\"f\":\"おんがく\"}, \"を\", {\"k\":\"聴\",\"f\":\"き\"}, \"くことが\", {\"k\":\"好\",\"f\":\"す\"}, \"きです。\", {\"k\":\"日本\",\"f\":\"にほん\"}, \"の\", {\"k\":\"歌\",\"f\":\"うた\"}, \"をよく\", {\"k\":\"聴\",\"f\":\"き\"}, \"きます。とてもおもしろいです。\"]",
+        "ContentVi": "Tôi thích việc nghe nhạc. Tôi thường nghe các bài hát của Nhật Bản. Nó rất thú vị.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "何を聴きますか。",
+            "Explanation": "Dựa vào câu: 日本の歌をよく聴きます (Nghe bài hát Nhật).",
+            "Options": [
+              { "Text": "日本の歌", "IsCorrect": true },
+              { "Text": "ラジオのニュース", "IsCorrect": false },
+              { "Text": "先生の話", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "音楽はどうですか。",
+            "Explanation": "Dựa vào câu cuối: とてもおもしろいです (Rất thú vị).",
+            "Options": [
+              { "Text": "つまらないです", "IsCorrect": false },
+              { "Text": "おもしろいです", "IsCorrect": true },
+              { "Text": "難しいです", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "泳ぎが得意です",
+        "TitleVi": "Tôi giỏi bơi lội",
+        "ContentJp": "夏は海で泳ぎます。私は泳ぐことが得意です。でも、冬はあまり泳ぎません。",
+        "ContentFurigana": "[{\"k\":\"夏\",\"f\":\"なつ\"}, \"は\", {\"k\":\"海\",\"f\":\"うみ\"}, \"で\", {\"k\":\"泳\",\"f\":\"およ\"}, \"ぎます。\", {\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"泳\",\"f\":\"およ\"}, \"ぐことが\", {\"k\":\"得意\",\"f\":\"とくい\"}, \"です。でも、\", {\"k\":\"冬\",\"f\":\"ふゆ\"}, \"はあまり\", {\"k\":\"泳\",\"f\":\"およ\"}, \"ぎません。\"]",
+        "ContentVi": "Mùa hè tôi bơi ở biển. Tôi bơi rất giỏi. Thế nhưng, mùa đông thì tôi không bơi lắm.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "夏はどこで泳ぎますか。",
+            "Explanation": "Dựa vào câu: 夏は海で泳ぎます (Bơi ở biển).",
+            "Options": [
+              { "Text": "プール", "IsCorrect": false },
+              { "Text": "海", "IsCorrect": true },
+              { "Text": "川", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "冬もたくさん泳ぎますか。",
+            "Explanation": "Dựa vào câu: 冬はあまり泳ぎません (Mùa đông không bơi lắm).",
+            "Options": [
+              { "Text": "はい、泳ぎます", "IsCorrect": false },
+              { "Text": "いいえ、あまり泳ぎません", "IsCorrect": true },
+              { "Text": "毎日泳ぎます", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "映画が大好き",
+        "TitleVi": "Rất thích phim ảnh",
+        "ContentJp": "私は映画が大好きです。よく映画館へ行きます。家でDVDも見ます。",
+        "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"映画\",\"f\":\"えいが\"}, \"が\", {\"k\":\"大好\",\"f\":\"だいす\"}, \"きです。よく\", {\"k\":\"映画館\",\"f\":\"えいがかん\"}, \"へ\", {\"k\":\"行\",\"f\":\"い\"}, \"きます。\", {\"k\":\"家\",\"f\":\"いえ\"}, \"でDVDも\", {\"k\":\"見\",\"f\":\"み\"}, \"ます。\"]",
+        "ContentVi": "Tôi rất thích phim ảnh. Tôi thường xuyên đến rạp chiếu phim. Tôi cũng xem cả DVD ở nhà nữa.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "どこへ行きますか。",
+            "Explanation": "Dựa vào câu: よく映画館へ行きます (Đến rạp chiếu phim).",
+            "Options": [
+              { "Text": "映画館", "IsCorrect": true },
+              { "Text": "図書館", "IsCorrect": false },
+              { "Text": "美術館", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "家で何をしますか。",
+            "Explanation": "Dựa vào câu: 家でDVDも見ます。",
+            "Options": [
+              { "Text": "料理をします", "IsCorrect": false },
+              { "Text": "勉強をします", "IsCorrect": false },
+              { "Text": "DVDを見ます", "IsCorrect": true }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "料理は楽しい",
+        "TitleVi": "Nấu ăn thật vui",
+        "ContentJp": "私の趣味は料理を作ることです。日曜日に家族に美味しい料理を作ります。",
+        "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"の\", {\"k\":\"趣味\",\"f\":\"しゅみ\"}, \"は\", {\"k\":\"料理\",\"f\":\"りょうり\"}, \"を\", {\"k\":\"作\",\"f\":\"つく\"}, \"ることです。\", {\"k\":\"日曜日\",\"f\":\"にちようび\"}, \"に\", {\"k\":\"家族\",\"f\":\"かぞく\"}, \"に\", {\"k\":\"美味\",\"f\":\"おい\"}, \"しい\", {\"k\":\"料理\",\"f\":\"りょうり\"}, \"を\", {\"k\":\"作\",\"f\":\"つく\"}, \"ります。\"]",
+        "ContentVi": "Sở thích của tôi là nấu ăn. Vào Chủ nhật, tôi nấu những món ăn ngon cho gia đình mình.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "いつ料理を作りますか。",
+            "Explanation": "Dựa vào câu: 日曜日に...作ります。",
+            "Options": [
+              { "Text": "毎日", "IsCorrect": false },
+              { "Text": "金曜日", "IsCorrect": false },
+              { "Text": "日曜日", "IsCorrect": true }
+            ]
+          },
+          {
+            "QuestionText": "誰に料理を作りますか。",
+            "Explanation": "Dựa vào câu: 家族に美味しい料理を作ります (Nấu cho gia đình).",
+            "Options": [
+              { "Text": "家族", "IsCorrect": true },
+              { "Text": "友達", "IsCorrect": false },
+              { "Text": "先生", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "自転車に乗る",
+        "TitleVi": "Đạp xe đạp",
+        "ContentJp": "私は自転車に乗るのが好きです。毎朝、公園を走ります。とても気持ちがいいです。",
+        "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"自転車\",\"f\":\"じてんしゃ\"}, \"に\", {\"k\":\"乗\",\"f\":\"の\"}, \"るのが\", {\"k\":\"好\",\"f\":\"す\"}, \"きです。\", {\"k\":\"毎朝\",\"f\":\"まいあさ\"}, \"、\", {\"k\":\"公園\",\"f\":\"こうえん\"}, \"を\", {\"k\":\"走\",\"f\":\"はし\"}, \"ります。とても\", {\"k\":\"気持\",\"f\":\"きも\"}, \"ちがいいです。\"]",
+        "ContentVi": "Tôi thích việc đi xe đạp. Mỗi sáng, tôi đạp xe trong công viên. Cảm giác rất dễ chịu.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "何が好きですか。",
+            "Explanation": "Dựa vào câu: 私は自転車に乗るのが好きです (Tôi thích đi xe đạp).",
+            "Options": [
+              { "Text": "歩くこと", "IsCorrect": false },
+              { "Text": "自転車に乗ること", "IsCorrect": true },
+              { "Text": "泳ぐこと", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "いつ公園を走りますか。",
+            "Explanation": "Dựa vào câu: 毎朝、公園を走ります (Mỗi sáng chạy ở công viên).",
+            "Options": [
+              { "Text": "毎晩", "IsCorrect": false },
+              { "Text": "毎朝", "IsCorrect": true },
+              { "Text": "日曜日", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "絵を描くこと",
+        "TitleVi": "Việc vẽ tranh",
+        "ContentJp": "姉の趣味は絵を描くことです。時々、私の絵も描いてくれます。とても上手です。",
+        "ContentFurigana": "[{\"k\":\"姉\",\"f\":\"あね\"}, \"の\", {\"k\":\"趣味\",\"f\":\"しゅみ\"}, \"は\", {\"k\":\"絵\",\"f\":\"え\"}, \"を\", {\"k\":\"描\",\"f\":\"か\"}, \"くことです。\", {\"k\":\"時々\",\"f\":\"ときどき\"}, \"、\", {\"k\":\"私\",\"f\":\"わたし\"}, \"の\", {\"k\":\"絵\",\"f\":\"え\"}, \"も\", {\"k\":\"描\",\"f\":\"か\"}, \"いてくれます。とても\", {\"k\":\"上手\",\"f\":\"じょうず\"}, \"です。\"]",
+        "ContentVi": "Sở thích của chị gái tôi là vẽ tranh. Thỉnh thoảng chị ấy cũng vẽ tranh cho tôi. Chị ấy vẽ rất giỏi.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "絵を描くのは誰の趣味ですか。",
+            "Explanation": "Dựa vào câu: 姉の趣味は絵を描くことです (Sở thích của chị là vẽ tranh).",
+            "Options": [
+              { "Text": "私", "IsCorrect": false },
+              { "Text": "姉", "IsCorrect": true },
+              { "Text": "妹", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "姉の絵はどうですか。",
+            "Explanation": "Dựa vào câu: とても上手です (Rất giỏi).",
+            "Options": [
+              { "Text": "下手です", "IsCorrect": false },
+              { "Text": "普通です", "IsCorrect": false },
+              { "Text": "上手です", "IsCorrect": true }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "サッカーが好き",
+        "TitleVi": "Tôi thích bóng đá",
+        "ContentJp": "日曜日に友達とサッカーをします。私たちはサッカーが大好きです。終わった後で、一緒にご飯を食べます。",
+        "ContentFurigana": "[{\"k\":\"日曜日\",\"f\":\"にちようび\"}, \"に\", {\"k\":\"友達\",\"f\":\"ともだち\"}, \"とサッカーをします。\", {\"k\":\"私\",\"f\":\"わたし\"}, \"たちはサッカーが\", {\"k\":\"大好\",\"f\":\"だいす\"}, \"きです。\", {\"k\":\"終\",\"f\":\"お\"}, \"わった\", {\"k\":\"後\",\"f\":\"あと\"}, \"で、\", {\"k\":\"一緒\",\"f\":\"いっしょ\"}, \"にご\", {\"k\":\"飯\",\"f\":\"はん\"}, \"を\", {\"k\":\"食\",\"f\":\"た\"}, \"べます。\"]",
+        "ContentVi": "Vào Chủ nhật, tôi chơi bóng đá cùng bạn bè. Chúng tôi rất thích bóng đá. Sau khi kết thúc, chúng tôi ăn cơm cùng nhau.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "いつサッカーをしますか。",
+            "Explanation": "Dựa vào câu: 日曜日に友達とサッカーをします (Chơi bóng vào Chủ nhật).",
+            "Options": [
+              { "Text": "土曜日", "IsCorrect": false },
+              { "Text": "日曜日", "IsCorrect": true },
+              { "Text": "毎日", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "サッカーの終わった後で、何をしますか。",
+            "Explanation": "Dựa vào câu: 終わった後で、一緒にご飯を食べます (Ăn cơm cùng nhau).",
+            "Options": [
+              { "Text": "一緒にご飯を食べます", "IsCorrect": true },
+              { "Text": "すぐに家に帰ります", "IsCorrect": false },
+              { "Text": "映画を見ます", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "読書の時間",
+        "TitleVi": "Thời gian đọc sách",
+        "ContentJp": "夜、寝る前に本を読みます。日本の歴史の本が一番好きです。毎日少しずつ読みます。",
+        "ContentFurigana": "[{\"k\":\"夜\",\"f\":\"よる\"}, \"、\", {\"k\":\"寝\",\"f\":\"ね\"}, \"る\", {\"k\":\"前\",\"f\":\"まえ\"}, \"に\", {\"k\":\"本\",\"f\":\"ほん\"}, \"を\", {\"k\":\"読\",\"f\":\"よ\"}, \"みます。\", {\"k\":\"日本\",\"f\":\"にほん\"}, \"の\", {\"k\":\"歴史\",\"f\":\"れきし\"}, \"の\", {\"k\":\"本\",\"f\":\"ほん\"}, \"が\", {\"k\":\"一番好\",\"f\":\"いちばんす\"}, \"きです。\", {\"k\":\"毎日少\",\"f\":\"まいにちすこ\"}, \"しずつ\", {\"k\":\"読\",\"f\":\"よ\"}, \"みます。\"]",
+        "ContentVi": "Buổi tối, trước khi đi ngủ tôi thường đọc sách. Tôi thích sách lịch sử Nhật Bản nhất. Mỗi ngày tôi đọc từng chút một.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "いつ本を読みますか。",
+            "Explanation": "Dựa vào câu: 夜、寝る前に本を読みます (Trước khi ngủ).",
+            "Options": [
+              { "Text": "朝起きた時", "IsCorrect": false },
+              { "Text": "寝る前", "IsCorrect": true },
+              { "Text": "昼休み", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "どんな本が一番好きですか。",
+            "Explanation": "Dựa vào câu: 日本の歴史の本が一番好きです (Sách lịch sử).",
+            "Options": [
+              { "Text": "歴史の本", "IsCorrect": true },
+              { "Text": "科学の本", "IsCorrect": false },
+              { "Text": "料理の本", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "マラソン大会への挑戦",
+        "TitleVi": "Thử thách với đại hội Marathon",
+        "ContentJp": "来月開かれるマラソン大会に出るために、毎日走ることにしています。最後まで走りきれるかどうか心配ですが、一生懸命頑張ろうと思います。",
+        "ContentFurigana": "[{\"k\":\"来月開\",\"f\":\"らいげつひら\"}, \"かれるマラソン\", {\"k\":\"大会\",\"f\":\"たいかい\"}, \"に\", {\"k\":\"出\",\"f\":\"で\"}, \"るために、\", {\"k\":\"毎日走\",\"f\":\"まいにちはし\"}, \"ることにしています。\", {\"k\":\"最後\",\"f\":\"さいご\"}, \"まで\", {\"k\":\"走\",\"f\":\"はし\"}, \"りきれるかどうか\", {\"k\":\"心配\",\"f\":\"しんぱい\"}, \"ですが、\", {\"k\":\"一生懸命頑張\",\"f\":\"いっしょうけんめいがんば\"}, \"ろうと\", {\"k\":\"思\",\"f\":\"おも\"}, \"います。\"]",
+        "ContentVi": "Để tham gia đại hội Marathon được tổ chức vào tháng sau, tôi quyết định chạy bộ mỗi ngày. Dù lo lắng không biết có thể chạy hết quãng đường tới cuối cùng hay không, nhưng tôi dự định sẽ cố gắng hết sức.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "どうして毎日走っていますか。",
+            "Explanation": "Dựa vào mục đích: マラソン大会に出るために (Để tham gia đại hội marathon).",
+            "Options": [
+              { "Text": "走るのが嫌いだから", "IsCorrect": false },
+              { "Text": "大会に出る準備のため", "IsCorrect": true },
+              { "Text": "友達に言われたから", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "この人は今、どんな気持ちですか。",
+            "Explanation": "Dựa vào cụm: 走りきれるかどうか心配 (Lo lắng liệu có chạy hết nổi không).",
+            "Options": [
+              { "Text": "絶対に勝てる自信がある", "IsCorrect": false },
+              { "Text": "少し不安だが頑張りたい", "IsCorrect": true },
+              { "Text": "走りたくないと思っている", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "楽器を習う楽しみ",
+        "TitleVi": "Niềm vui học nhạc cụ",
+        "ContentJp": "子供の頃からピアノを習いたかったのですが、家が狭かったので習えませんでした。今は大人になったので、自分で電子ピアノを買って練習を始めました。",
+        "ContentFurigana": "[{\"k\":\"子供\",\"f\":\"こども\"}, \"の\", {\"k\":\"頃\",\"f\":\"ころ\"}, \"からピアノを\", {\"k\":\"習\",\"f\":\"なら\"}, \"いたかったのですが、\", {\"k\":\"家\",\"f\":\"いえ\"}, \"が\", {\"k\":\"狭\",\"f\":\"せま\"}, \"かったので\", {\"k\":\"習\",\"f\":\"なら\"}, \"えませんでした。\", {\"k\":\"今\",\"f\":\"いま\"}, \"は\", {\"k\":\"大人\",\"f\":\"おとな\"}, \"になったので、\", {\"k\":\"自分\",\"f\":\"じぶん\"}, \"で\", {\"k\":\"電子\",\"f\":\"でんし\"}, \"ピアノを\", {\"k\":\"買\",\"f\":\"か\"}, \"って\", {\"k\":\"練習\",\"f\":\"れんしゅう\"}, \"を\", {\"k\":\"始\",\"f\":\"はじ\"}, \"めました。\"]",
+        "ContentVi": "Từ hồi nhỏ tôi đã muốn học piano nhưng vì nhà hẹp nên không thể học được. Bây giờ đã trở thành người lớn, tôi tự mua một chiếc piano điện và bắt đầu luyện tập.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "どうして子供の時にピアノが習えませんでしたか。",
+            "Explanation": "Lý do: 家が狭かったので (Vì nhà hẹp).",
+            "Options": [
+              { "Text": "ピアノが嫌いだったから", "IsCorrect": false },
+              { "Text": "家が広くなかったから", "IsCorrect": true },
+              { "Text": "先生がいなかったから", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "今はどうしていますか。",
+            "Explanation": "Hành động hiện tại: 電子ピアノを買って練習を始めた (Mua piano điện và bắt đầu tập).",
+            "Options": [
+              { "Text": "まだ習いたいと思っています", "IsCorrect": false },
+              { "Text": "ピアノを売りました", "IsCorrect": false },
+              { "Text": "自分でピアノを練習しています", "IsCorrect": true }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "日本のプロ野球",
+        "TitleVi": "Bóng chày chuyên nghiệp Nhật Bản",
+        "ContentJp": "日本では野球が一番人気のあるスポーツです。仕事が早く終われば、テレビで試合を見ます。球場へ行くと、応援が賑やかでもっと楽しいです。",
+        "ContentFurigana": "[{\"k\":\"日本\",\"f\":\"にほん\"}, \"では\", {\"k\":\"野球\",\"f\":\"やきゅう\"}, \"が\", {\"k\":\"一番人気\",\"f\":\"いちばんにんき\"}, \"のあるスポーツです。\", {\"k\":\"仕事\",\"f\":\"しごと\"}, \"が\", {\"k\":\"早\",\"f\":\"はや\"}, \"く\", {\"k\":\"終\",\"f\":\"お\"}, \"われば、テレビで\", {\"k\":\"試合\",\"f\":\"しあい\"}, \"を\", {\"k\":\"見\",\"f\":\"み\"}, \"ます。\", {\"k\":\"球場\",\"f\":\"きゅうじょう\"}, \"へ\", {\"k\":\"行\",\"f\":\"い\"}, \"くと、\", {\"k\":\"応援\",\"f\":\"おうえん\"}, \"が\", {\"k\":\"賑\",\"f\":\"にぎ\"}, \"やかでもっと\", {\"k\":\"楽\",\"f\":\"たの\"}, \"しいです。\"]",
+        "ContentVi": "Ở Nhật Bản, bóng chày là môn thể thao được yêu thích nhất. Nếu công việc xong sớm, tôi sẽ xem các trận đấu trên tivi. Khi đến sân vận động, không khí cổ vũ rất náo nhiệt nên còn vui hơn nữa.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "いつ試合を見ますか。",
+            "Explanation": "Sử dụng câu điều kiện: 仕事が早く終われば (Nếu xong việc sớm).",
+            "Options": [
+              { "Text": "仕事が早く終わったとき", "IsCorrect": true },
+              { "Text": "仕事をしているとき", "IsCorrect": false },
+              { "Text": "朝早く起きたとき", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "球場へ行くのはどうして楽しいですか。",
+            "Explanation": "Lý do: 応援が賑やかだから (Vì sự cổ vũ náo nhiệt).",
+            "Options": [
+              { "Text": "静かだから", "IsCorrect": false },
+              { "Text": "応援が賑やかで楽しいから", "IsCorrect": true },
+              { "Text": "テレビが見られるから", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "キャンプの魅力",
+        "TitleVi": "Sức hút của cắm trại",
+        "ContentJp": "最近、キャンプに行く人が増えています。自然の中で料理を作ったり、星を見たりするのは、都会の生活では経験できないことです。",
+        "ContentFurigana": "[{\"k\":\"最近\",\"f\":\"さいきん\"}, \"、キャンプに\", {\"k\":\"行\",\"f\":\"い\"}, \"く\", {\"k\":\"人\",\"f\":\"ひと\"}, \"が\", {\"k\":\"増\",\"f\":\"ふ\"}, \"えています。\", {\"k\":\"自然\",\"f\":\"しぜん\"}, \"の\", {\"k\":\"中\",\"f\":\"なか\"}, \"で\", {\"k\":\"料理\",\"f\":\"りょうり\"}, \"を\", {\"k\":\"作\",\"f\":\"つく\"}, \"ったり、\", {\"k\":\"星\",\"f\":\"ほし\"}, \"を\", {\"k\":\"見\",\"f\":\"み\"}, \"たりするのは、\", {\"k\":\"都会\",\"f\":\"とかい\"}, \"の\", {\"k\":\"生活\",\"f\":\"せいかつ\"}, \"では\", {\"k\":\"経験\",\"f\":\"けいけん\"}, \"できないことです。\"]",
+        "ContentVi": "Gần đây, số người đi cắm trại đang tăng lên. Việc nấu ăn giữa thiên nhiên hay ngắm sao là những điều mà cuộc sống đô thị không thể trải nghiệm được.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "キャンプで何をしますか。",
+            "Explanation": "Các hoạt động liệt kê: 料理を作ったり、星を見たりする。",
+            "Options": [
+              { "Text": "仕事をします", "IsCorrect": false },
+              { "Text": "料理を作ったり星を見たりします", "IsCorrect": true },
+              { "Text": "デパートへ行きます", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "都会の生活とキャンプはどう違いますか。",
+            "Explanation": "Dựa vào cụm: 都会では経験できないこと (Những điều không thể trải nghiệm ở đô thị).",
+            "Options": [
+              { "Text": "都会のほうが自然が多い", "IsCorrect": false },
+              { "Text": "都会ではできない経験ができる", "IsCorrect": true },
+              { "Text": "どちらも同じです", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "アニメを見る趣味",
+        "TitleVi": "Sở thích xem Anime",
+        "ContentJp": "私は日本のアニメが好きで、日本語の勉強を始めました。最初は字幕がなければ分かりませんでしたが、今は少しずつ聞き取れるようになりました。",
+        "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"日本\",\"f\":\"にほん\"}, \"のアニメが\", {\"k\":\"好\",\"f\":\"す\"}, \"きで、\", {\"k\":\"日本語\",\"f\":\"にほんご\"}, \"の\", {\"k\":\"勉強\",\"f\":\"べんきょう\"}, \"を\", {\"k\":\"始\",\"f\":\"はじ\"}, \"めました。\", {\"k\":\"最初\",\"f\":\"さいしょ\"}, \"は\", {\"k\":\"字幕\",\"f\":\"じまく\"}, \"がなければ\", {\"k\":\"分\",\"f\":\"わ\"}, \"かりませんでしたが、\", {\"k\":\"今\",\"f\":\"いま\"}, \"は\", {\"k\":\"少\",\"f\":\"すこ\"}, \"しずつ\", {\"k\":\"聞\",\"f\":\"き\"}, \"き\", {\"k\":\"取\",\"f\":\"と\"}, \"れるようになりました。\"]",
+        "ContentVi": "Tôi thích anime Nhật Bản nên đã bắt đầu học tiếng Nhật. Lúc đầu nếu không có phụ đề thì tôi không hiểu gì cả, nhưng bây giờ tôi đã có thể nghe hiểu được từng chút một.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "どうして日本語を勉強していますか。",
+            "Explanation": "Nguyên nhân: アニメが好きだから (Vì thích anime).",
+            "Options": [
+              { "Text": "仕事で必要だから", "IsCorrect": false },
+              { "Text": "アニメが好きだから", "IsCorrect": true },
+              { "Text": "日本に行きたいから", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "今はアニメが分かりますか。",
+            "Explanation": "Trạng thái hiện tại: 少しずつ聞き取れるようになりました (Đã trở nên có thể nghe hiểu từng chút).",
+            "Options": [
+              { "Text": "字幕がなければ全然分かりません", "IsCorrect": false },
+              { "Text": "少しずつ聞き取れるようになりました", "IsCorrect": true },
+              { "Text": "もう勉強をやめました", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "一人で楽しむ趣味",
+        "TitleVi": "Sở thích tận hưởng một mình",
+        "ContentJp": "最近は「ソロ活」といって、一人で旅行や外食を楽しむ人が増えています。誰にも気を使わずに自分の好きなことができるのがいい点です。",
+        "ContentFurigana": "[{\"k\":\"最近\",\"f\":\"さいきん\"}, \"は「ソロ\", {\"k\":\"活\",\"f\":\"かつ\"}, \"」といって、\", {\"k\":\"一人\",\"f\":\"ひとり\"}, \"で\", {\"k\":\"旅行\",\"f\":\"りょこう\"}, \"や\", {\"k\":\"外食\",\"f\":\"がいしょく\"}, \"を\", {\"k\":\"楽\",\"f\":\"たの\"}, \"しむ\", {\"k\":\"人\",\"f\":\"ひと\"}, \"が\", {\"k\":\"増\",\"f\":\"ふ\"}, \"えています。\", {\"k\":\"誰\",\"f\":\"だれ\"}, \"にも\", {\"k\":\"気\",\"f\":\"き\"}, \"を\", {\"k\":\"使\",\"f\":\"つか\"}, \"わずに\", {\"k\":\"自分\",\"f\":\"じぶん\"}, \"の\", {\"k\":\"好\",\"f\":\"す\"}, \"きなことができるのがいい\", {\"k\":\"点\",\"f\":\"てん\"}, \"です。\"]",
+        "ContentVi": "Gần đây, những người tận hưởng việc đi du lịch hoặc đi ăn ngoài một mình, gọi là \"Sorokatsu\", đang tăng lên. Điểm tốt là bạn có thể làm những gì mình thích mà không cần phải lo lắng hay để ý đến bất kỳ ai.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "「ソロ活」とは何ですか。",
+            "Explanation": "Định nghĩa: 一人で好きなことを楽しむこと (Tận hưởng điều mình thích một mình).",
+            "Options": [
+              { "Text": "みんなで遊ぶこと", "IsCorrect": false },
+              { "Text": "一人で楽しむこと", "IsCorrect": true },
+              { "Text": "スポーツをすること", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "ソロ活のいいところは何ですか。",
+            "Explanation": "Ưu điểm: 誰にも気を使わずに好きなことができる (Làm điều mình thích mà không cần để ý ai).",
+            "Options": [
+              { "Text": "寂しいこと", "IsCorrect": false },
+              { "Text": "お金がかからないこと", "IsCorrect": false },
+              { "Text": "気を使わずに好きなことができること", "IsCorrect": true }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "スキーの思い出",
+        "TitleVi": "Kỷ niệm trượt tuyết",
+        "ContentJp": "冬になると、家族で山へスキーに行きます。最初はよく転びましたが、練習したら上手に滑れるようになりました。雪景色もとてもきれいです。",
+        "ContentFurigana": "[{\"k\":\"冬\",\"f\":\"ふゆ\"}, \"になると、\", {\"k\":\"家族\",\"f\":\"かぞく\"}, \"で\", {\"k\":\"山\",\"f\":\"やま\"}, \"へスキーに\", {\"k\":\"行\",\"f\":\"い\"}, \"きます。\", {\"k\":\"最初\",\"f\":\"さいしょ\"}, \"はよく\", {\"k\":\"転\",\"f\":\"ころ\"}, \"びましたが、\", {\"k\":\"練習\",\"f\":\"れんしゅう\"}, \"したら\", {\"k\":\"上手\",\"f\":\"じょうず\"}, \"に\", {\"k\":\"滑\",\"f\":\"すべ\"}, \"れるようになりました。\", {\"k\":\"雪景色\",\"f\":\"ゆきげしき\"}, \"もとてもきれいです。\"]",
+        "ContentVi": "Khi mùa đông đến, gia đình tôi đi lên núi trượt tuyết. Lúc đầu tôi ngã rất nhiều, nhưng sau khi luyện tập tôi đã có thể trượt giỏi. Cảnh tuyết cũng rất đẹp.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "誰とスキーに行きますか。",
+            "Explanation": "Dựa vào câu: 家族で山へスキーに行きます (Đi cùng gia đình).",
+            "Options": [
+              { "Text": "友達", "IsCorrect": false },
+              { "Text": "家族", "IsCorrect": true },
+              { "Text": "一人で", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "スキーはどうなりましたか。",
+            "Explanation": "Dựa vào câu: 練習したら上手に滑れるようになりました (Luyện tập xong thì trượt giỏi).",
+            "Options": [
+              { "Text": "ずっと下手です", "IsCorrect": false },
+              { "Text": "練習して上手になりました", "IsCorrect": true },
+              { "Text": "やめてしまいました", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "ヨガの習慣",
+        "TitleVi": "Thói quen tập Yoga",
+        "ContentJp": "健康のために、毎晩寝る前にヨガをしています。ヨガをすると、体が柔らかくなって、よく眠れるようになります。ストレスも減ります。",
+        "ContentFurigana": "[{\"k\":\"健康\",\"f\":\"けんこう\"}, \"のために、\", {\"k\":\"毎晩寝\",\"f\":\"まいばんね\"}, \"る\", {\"k\":\"前\",\"f\":\"まえ\"}, \"にヨガをしています。ヨガをすると、\", {\"k\":\"体\",\"f\":\"からだ\"}, \"が\", {\"k\":\"柔\",\"f\":\"やわ\"}, \"らかくなって、よく\", {\"k\":\"眠\",\"f\":\"ねむ\"}, \"れるようになります。ストレスも\", {\"k\":\"減\",\"f\":\"へ\"}, \"ります。\"]",
+        "ContentVi": "Vì sức khỏe, mỗi tối trước khi ngủ tôi đều tập yoga. Tập yoga giúp cơ thể dẻo dai hơn và dễ ngủ hơn. Căng thẳng cũng giảm bớt.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "なぜヨガをしていますか。",
+            "Explanation": "Dựa vào câu: 健康のために (Vì sức khỏe).",
+            "Options": [
+              { "Text": "痩せるため", "IsCorrect": false },
+              { "Text": "健康のため", "IsCorrect": true },
+              { "Text": "趣味がないから", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "ヨガをするとどうなりますか。",
+            "Explanation": "Dựa vào câu: よく眠れるようになります (Trở nên dễ ngủ).",
+            "Options": [
+              { "Text": "よく眠れるようになる", "IsCorrect": true },
+              { "Text": "眠れなくなる", "IsCorrect": false },
+              { "Text": "ストレスが増える", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "ガーデニング",
+        "TitleVi": "Làm vườn",
+        "ContentJp": "私の趣味は庭で花や野菜を育てることです。自分で育てたトマトは、スーパーで買うものより美味しく感じます。毎朝水をやるのが日課です。",
+        "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"の\", {\"k\":\"趣味\",\"f\":\"しゅみ\"}, \"は\", {\"k\":\"庭\",\"f\":\"にわ\"}, \"で\", {\"k\":\"花\",\"f\":\"はな\"}, \"や\", {\"k\":\"野菜\",\"f\":\"やさい\"}, \"を\", {\"k\":\"育\",\"f\":\"そだ\"}, \"てることです。\", {\"k\":\"自分\",\"f\":\"じぶん\"}, \"で\", {\"k\":\"育\",\"f\":\"そだ\"}, \"てたトマトは、スーパーで\", {\"k\":\"買\",\"f\":\"か\"}, \"うものより\", {\"k\":\"美味\",\"f\":\"おい\"}, \"しく\", {\"k\":\"感\",\"f\":\"かん\"}, \"じます。\", {\"k\":\"毎朝水\",\"f\":\"まいあさみず\"}, \"をやるのが\", {\"k\":\"日課\",\"f\":\"にっか\"}, \"です。\"]",
+        "ContentVi": "Sở thích của tôi là trồng hoa và rau trong vườn. Cà chua tự trồng có cảm giác ngon hơn loại mua ở siêu thị. Mỗi sáng tưới nước là công việc thường ngày của tôi.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "趣味は何ですか。",
+            "Explanation": "Dựa vào câu: 花や野菜を育てることです (Trồng hoa và rau).",
+            "Options": [
+              { "Text": "野菜を買うこと", "IsCorrect": false },
+              { "Text": "花や野菜を育てること", "IsCorrect": true },
+              { "Text": "スーパーへ行くこと", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "毎朝の日課は何ですか。",
+            "Explanation": "Dựa vào câu: 毎朝水をやるのが日課です (Mỗi sáng tưới nước là công việc thường ngày).",
+            "Options": [
+              { "Text": "水をやること", "IsCorrect": true },
+              { "Text": "トマトを食べること", "IsCorrect": false },
+              { "Text": "写真を撮ること", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "オンラインゲーム",
+        "TitleVi": "Game trực tuyến",
+        "ContentJp": "最近、オンラインで友達とゲームをするのが趣味です。チームで協力して勝った時はとても嬉しいです。でも、目が悪くならないように時間を決めて遊んでいます。",
+        "ContentFurigana": "[{\"k\":\"最近\",\"f\":\"さいきん\"}, \"、オンラインで\", {\"k\":\"友達\",\"f\":\"ともだち\"}, \"とゲームをするのが\", {\"k\":\"趣味\",\"f\":\"しゅみ\"}, \"です。チームで\", {\"k\":\"協力\",\"f\":\"きょうりょく\"}, \"して\", {\"k\":\"勝\",\"f\":\"か\"}, \"った\", {\"k\":\"時\",\"f\":\"とき\"}, \"はとても\", {\"k\":\"嬉\",\"f\":\"うれ\"}, \"しいです。でも、\", {\"k\":\"目\",\"f\":\"め\"}, \"が\", {\"k\":\"悪\",\"f\":\"わる\"}, \"くならないように\", {\"k\":\"時間\",\"f\":\"じかん\"}, \"を\", {\"k\":\"決\",\"f\":\"き\"}, \"めて\", {\"k\":\"遊\",\"f\":\"あそ\"}, \"んでいます。\"]",
+        "ContentVi": "Gần đây, sở thích của tôi là chơi game online với bạn bè. Khi cả đội hợp tác và giành chiến thắng, tôi cảm thấy rất vui. Nhưng tôi quy định thời gian chơi để mắt không bị kém đi.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "いつ嬉しいですか。",
+            "Explanation": "Dựa vào câu: チームで協力して勝った時はとても嬉しいです (Vui khi hợp tác và thắng).",
+            "Options": [
+              { "Text": "一人で遊ぶ時", "IsCorrect": false },
+              { "Text": "チームで勝った時", "IsCorrect": true },
+              { "Text": "新しいゲームを買った時", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "なぜ時間を決めて遊んでいますか。",
+            "Explanation": "Dựa vào câu: 目が悪くならないように (Để mắt không bị kém đi).",
+            "Options": [
+              { "Text": "お金がかかるから", "IsCorrect": false },
+              { "Text": "目が悪くならないようにするため", "IsCorrect": true },
+              { "Text": "忙しいから", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "ピアノの練習",
+        "TitleVi": "Luyện tập Piano",
+        "ContentJp": "私は毎日ピアノを弾きます。子供の時から習っています。難しい曲が弾けるようになると、とても嬉しいです。",
+        "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"毎日\",\"f\":\"まいにち\"}, \"ピアノを\", {\"k\":\"弾\",\"f\":\"ひ\"}, \"きます。\", {\"k\":\"子供\",\"f\":\"こども\"}, \"の\", {\"k\":\"時\",\"f\":\"とき\"}, \"から\", {\"k\":\"習\",\"f\":\"なら\"}, \"っています。\", {\"k\":\"難\",\"f\":\"むずか\"}, \"しい\", {\"k\":\"曲\",\"f\":\"きょく\"}, \"が\", {\"k\":\"弾\",\"f\":\"ひ\"}, \"けるようになると、とても\", {\"k\":\"嬉\",\"f\":\"うれ\"}, \"しいです。\"]",
+        "ContentVi": "Tôi chơi piano mỗi ngày. Tôi đã học từ khi còn nhỏ. Khi có thể đánh được một bản nhạc khó, tôi cảm thấy rất vui.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "いつピアノを弾きますか。",
+            "Explanation": "Dựa vào câu: 私は毎日ピアノを弾きます (Chơi piano mỗi ngày).",
+            "Options": [
+              { "Text": "毎日", "IsCorrect": true },
+              { "Text": "日曜日だけ", "IsCorrect": false },
+              { "Text": "子供の時だけ", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "どんな時に嬉しいですか。",
+            "Explanation": "Dựa vào câu: 難しい曲が弾けるようになると (Khi đánh được bản nhạc khó).",
+            "Options": [
+              { "Text": "先生に会った時", "IsCorrect": false },
+              { "Text": "難しい曲が弾けるようになった時", "IsCorrect": true },
+              { "Text": "簡単な曲を弾いた時", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "週末のダンス",
+        "TitleVi": "Khiêu vũ cuối tuần",
+        "ContentJp": "妹はダンスが好きです。日曜日にダンスの教室へ行きます。いつも楽しそうに踊っています。",
+        "ContentFurigana": "[{\"k\":\"妹\",\"f\":\"いもうと\"}, \"はダンスが\", {\"k\":\"好\",\"f\":\"す\"}, \"きです。\", {\"k\":\"日曜日\",\"f\":\"にちようび\"}, \"にダンスの\", {\"k\":\"教室\",\"f\":\"きょうしつ\"}, \"へ\", {\"k\":\"行\",\"f\":\"い\"}, \"きます。いつも\", {\"k\":\"楽\",\"f\":\"たの\"}, \"しそうに\", {\"k\":\"踊\",\"f\":\"おど\"}, \"っています。\"]",
+        "ContentVi": "Em gái tôi rất thích khiêu vũ. Vào Chủ nhật, em ấy đến lớp học nhảy. Em ấy luôn nhảy múa một cách rất vui vẻ.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "誰がダンスをしますか。",
+            "Explanation": "Dựa vào câu: 妹はダンスが好きです (Em gái thích nhảy).",
+            "Options": [
+              { "Text": "私", "IsCorrect": false },
+              { "Text": "妹", "IsCorrect": true },
+              { "Text": "友達", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "ダンスの教室はいつですか。",
+            "Explanation": "Dựa vào câu: 日曜日にダンスの教室へ行きます (Đến lớp vào Chủ nhật).",
+            "Options": [
+              { "Text": "日曜日", "IsCorrect": true },
+              { "Text": "毎日", "IsCorrect": false },
+              { "Text": "土曜日", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "山登り",
+        "TitleVi": "Leo núi",
+        "ContentJp": "父の趣味は山に登ることです。秋に家族と一緒に山へ行きます。山の空気はとてもきれいです。",
+        "ContentFurigana": "[{\"k\":\"父\",\"f\":\"ちち\"}, \"の\", {\"k\":\"趣味\",\"f\":\"しゅみ\"}, \"は\", {\"k\":\"山\",\"f\":\"やま\"}, \"に\", {\"k\":\"登\",\"f\":\"のぼ\"}, \"ることです。\", {\"k\":\"秋\",\"f\":\"あき\"}, \"に\", {\"k\":\"家族\",\"f\":\"かぞく\"}, \"と\", {\"k\":\"一緒\",\"f\":\"いっしょ\"}, \"に\", {\"k\":\"山\",\"f\":\"やま\"}, \"へ\", {\"k\":\"行\",\"f\":\"い\"}, \"きます。\", {\"k\":\"山\",\"f\":\"やま\"}, \"の\", {\"k\":\"空気\",\"f\":\"くうき\"}, \"はとてもきれいです。\"]",
+        "ContentVi": "Sở thích của bố tôi là leo núi. Vào mùa thu, tôi cùng gia đình đi lên núi. Không khí trên núi rất trong lành.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "父の趣味は何ですか。",
+            "Explanation": "Dựa vào câu: 父の趣味は山に登ることです (Sở thích là leo núi).",
+            "Options": [
+              { "Text": "海に行くこと", "IsCorrect": false },
+              { "Text": "山に登ること", "IsCorrect": true },
+              { "Text": "写真を撮ること", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "いつ山へ行きますか。",
+            "Explanation": "Thời điểm: 秋に (Vào mùa thu).",
+            "Options": [
+              { "Text": "春", "IsCorrect": false },
+              { "Text": "秋", "IsCorrect": true },
+              { "Text": "冬", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "歌を歌うこと",
+        "TitleVi": "Việc ca hát",
+        "ContentJp": "カラオケに行くのが大好きです。友達と一緒にアニメの歌をたくさん歌います。ストレスがなくなります。",
+        "ContentFurigana": "[\"カラオケに\", {\"k\":\"行\",\"f\":\"い\"}, \"くのが\", {\"k\":\"大好\",\"f\":\"だいす\"}, \"きです。\", {\"k\":\"友達\",\"f\":\"ともだち\"}, \"と\", {\"k\":\"一緒\",\"f\":\"いっしょ\"}, \"にアニメの\", {\"k\":\"歌\",\"f\":\"うた\"}, \"をたくさん\", {\"k\":\"歌\",\"f\":\"うた\"}, \"います。ストレスがなくなります。\"]",
+        "ContentVi": "Tôi rất thích đi hát karaoke. Tôi hát rất nhiều bài hát anime cùng với bạn bè. Căng thẳng sẽ biến mất.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "どこに行きますか。",
+            "Explanation": "Địa điểm: カラオケ (Karaoke).",
+            "Options": [
+              { "Text": "映画館", "IsCorrect": false },
+              { "Text": "カラオケ", "IsCorrect": true },
+              { "Text": "学校", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "何の歌を歌いますか。",
+            "Explanation": "Thể loại: アニメの歌 (Bài hát anime).",
+            "Options": [
+              { "Text": "英語の歌", "IsCorrect": false },
+              { "Text": "アニメの歌", "IsCorrect": true },
+              { "Text": "古い歌", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "お菓子作り",
+        "TitleVi": "Làm bánh kẹo",
+        "ContentJp": "週末にケーキやクッキーを作ります。自分で作ったお菓子はとても美味しいです。友達にもあげます。",
+        "ContentFurigana": "[{\"k\":\"週末\",\"f\":\"しゅうまつ\"}, \"にケーキやクッキーを\", {\"k\":\"作\",\"f\":\"つく\"}, \"ります。\", {\"k\":\"自分\",\"f\":\"じぶん\"}, \"で\", {\"k\":\"作\",\"f\":\"つく\"}, \"ったお\", {\"k\":\"菓子\",\"f\":\"かし\"}, \"はとても\", {\"k\":\"美味\",\"f\":\"おい\"}, \"しいです。\", {\"k\":\"友達\",\"f\":\"ともだち\"}, \"にもあげます。\"]",
+        "ContentVi": "Vào cuối tuần tôi làm bánh kem và bánh quy. Bánh kẹo tự mình làm rất ngon. Tôi cũng tặng cho cả bạn bè nữa.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "いつお菓子を作りますか。",
+            "Explanation": "Thời điểm: 週末に (Vào cuối tuần).",
+            "Options": [
+              { "Text": "毎日", "IsCorrect": false },
+              { "Text": "週末", "IsCorrect": true },
+              { "Text": "月曜日", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "作ったお菓子はどうしますか。",
+            "Explanation": "Dựa vào câu: 友達にもあげます (Tặng cho bạn bè).",
+            "Options": [
+              { "Text": "全部自分で食べます", "IsCorrect": false },
+              { "Text": "友達にもあげます", "IsCorrect": true },
+              { "Text": "お店で売ります", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "ジョギング",
+        "TitleVi": "Chạy bộ",
+        "ContentJp": "毎朝、家の近くを走ります。三十分ぐらいジョギングをすると、体が元気になります。",
+        "ContentFurigana": "[{\"k\":\"毎朝\",\"f\":\"まいあさ\"}, \"、\", {\"k\":\"家\",\"f\":\"いえ\"}, \"の\", {\"k\":\"近\",\"f\":\"ちか\"}, \"くを\", {\"k\":\"走\",\"f\":\"はし\"}, \"ります。\", {\"k\":\"三十分\",\"f\":\"さんじゅっぷん\"}, \"ぐらいジョギングをすると、\", {\"k\":\"体\",\"f\":\"からだ\"}, \"が\", {\"k\":\"元気\",\"f\":\"げんき\"}, \"になります。\"]",
+        "ContentVi": "Mỗi sáng, tôi chạy bộ ở gần nhà. Hễ chạy bộ khoảng 30 phút là cơ thể sẽ trở nên khỏe khoắn.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "どこを走りますか。",
+            "Explanation": "Địa điểm: 家の近く (Gần nhà).",
+            "Options": [
+              { "Text": "家の近く", "IsCorrect": true },
+              { "Text": "遠い公園", "IsCorrect": false },
+              { "Text": "学校", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "どのくらい走りますか。",
+            "Explanation": "Thời gian: 三十分ぐらい (Khoảng 30 phút).",
+            "Options": [
+              { "Text": "一時間ぐらい", "IsCorrect": false },
+              { "Text": "三十分ぐらい", "IsCorrect": true },
+              { "Text": "十分ぐらい", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "バドミントン",
+        "TitleVi": "Cầu lông",
+        "ContentJp": "放課後、学校の体育館でバドミントンをします。ラケットを振るのは難しいですが、面白いです。",
+        "ContentFurigana": "[{\"k\":\"放課後\",\"f\":\"ほうかご\"}, \"、\", {\"k\":\"学校\",\"f\":\"がっこう\"}, \"の\", {\"k\":\"体育館\",\"f\":\"たいいくかん\"}, \"でバドミントンをします。ラケットを\", {\"k\":\"振\",\"f\":\"ふ\"}, \"るのは\", {\"k\":\"難\",\"f\":\"むずか\"}, \"しいですが、\", {\"k\":\"面\",\"f\":\"おも\"}, \"白いです。\"]",
+        "ContentVi": "Sau giờ học, tôi chơi cầu lông ở phòng thể chất của trường. Việc vung vợt tuy khó nhưng rất thú vị.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "どこでバドミントンをしますか。",
+            "Explanation": "Địa điểm: 学校の体育館 (Phòng thể chất của trường).",
+            "Options": [
+              { "Text": "公園", "IsCorrect": false },
+              { "Text": "学校の体育館", "IsCorrect": true },
+              { "Text": "家の庭", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "バドミントンはどうですか。",
+            "Explanation": "Mô tả: 難しいですが、面白いです (Khó nhưng thú vị).",
+            "Options": [
+              { "Text": "簡単でつまらないです", "IsCorrect": false },
+              { "Text": "難しくてつまらないです", "IsCorrect": false },
+              { "Text": "難しいですが面白いです", "IsCorrect": true }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "外国語の勉強",
+        "TitleVi": "Học ngoại ngữ",
+        "ContentJp": "私の趣味は英語と日本語を勉強することです。外国の友達と話すのが夢です。毎日辞書を読んでいます。",
+        "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"の\", {\"k\":\"趣味\",\"f\":\"しゅみ\"}, \"は\", {\"k\":\"英語\",\"f\":\"えいご\"}, \"と\", {\"k\":\"日本語\",\"f\":\"にほんご\"}, \"を\", {\"k\":\"勉強\",\"f\":\"べんきょう\"}, \"することです。\", {\"k\":\"外国\",\"f\":\"がいこく\"}, \"の\", {\"k\":\"友達\",\"f\":\"ともだち\"}, \"と\", {\"k\":\"話\",\"f\":\"はな\"}, \"すのが\", {\"k\":\"夢\",\"f\":\"ゆめ\"}, \"です。\", {\"k\":\"毎日辞書\",\"f\":\"まいにちじしょ\"}, \"を\", {\"k\":\"読\",\"f\":\"よ\"}, \"んでいます。\"]",
+        "ContentVi": "Sở thích của tôi là học tiếng Anh và tiếng Nhật. Ước mơ của tôi là nói chuyện với những người bạn nước ngoài. Mỗi ngày tôi đều đọc từ điển.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "何語を勉強していますか。",
+            "Explanation": "Ngôn ngữ: 英語と日本語 (Tiếng Anh và tiếng Nhật).",
+            "Options": [
+              { "Text": "英語と中国語", "IsCorrect": false },
+              { "Text": "英語と日本語", "IsCorrect": true },
+              { "Text": "日本語だけ", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "毎日何を読みますか。",
+            "Explanation": "Dựa vào câu: 毎日辞書を読んでいます (Đọc từ điển mỗi ngày).",
+            "Options": [
+              { "Text": "漫画", "IsCorrect": false },
+              { "Text": "辞書", "IsCorrect": true },
+              { "Text": "新聞", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "釣り",
+        "TitleVi": "Câu cá",
+        "ContentJp": "夏休みに父と海へ釣りに行きました。大きい魚が釣れました。その日の晩ご飯は魚でした。",
+        "ContentFurigana": "[{\"k\":\"夏休\",\"f\":\"なつやす\"}, \"みに\", {\"k\":\"父\",\"f\":\"ちち\"}, \"と\", {\"k\":\"海\",\"f\":\"うみ\"}, \"へ\", {\"k\":\"釣\",\"f\":\"つ\"}, \"りに\", {\"k\":\"行\",\"f\":\"い\"}, \"きました。\", {\"k\":\"大\",\"f\":\"おお\"}, \"きい\", {\"k\":\"魚\",\"f\":\"さかな\"}, \"が\", {\"k\":\"釣\",\"f\":\"つ\"}, \"れました。その\", {\"k\":\"日\",\"f\":\"ひ\"}, \"の\", {\"k\":\"晩\",\"f\":\"ばん\"}, \"ご\", {\"k\":\"飯\",\"f\":\"はん\"}, \"は\", {\"k\":\"魚\",\"f\":\"さかな\"}, \"でした。\"]",
+        "ContentVi": "Vào kỳ nghỉ hè, tôi đã cùng bố đi ra biển câu cá. Tôi đã câu được một con cá lớn. Bữa tối ngày hôm đó là cá.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "誰と釣りに行きましたか。",
+            "Explanation": "Người đi cùng: 父 (Bố).",
+            "Options": [
+              { "Text": "友達", "IsCorrect": false },
+              { "Text": "父", "IsCorrect": true },
+              { "Text": "一人で", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "晩ご飯は何でしたか。",
+            "Explanation": "Dựa vào câu: その日の晩ご飯は魚でした (Bữa tối hôm đó là cá).",
+            "Options": [
+              { "Text": "肉", "IsCorrect": false },
+              { "Text": "魚", "IsCorrect": true },
+              { "Text": "野菜", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "コインを集める",
+        "TitleVi": "Sưu tập tiền xu",
+        "ContentJp": "私は古いコインを集めています。外国のお金もたくさんあります。見ているだけで楽しいです。",
+        "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"古\",\"f\":\"ふる\"}, \"いコインを\", {\"k\":\"集\",\"f\":\"あつ\"}, \"めています。\", {\"k\":\"外国\",\"f\":\"がいこく\"}, \"のお\", {\"k\":\"金\",\"f\":\"かね\"}, \"もたくさんあります。\", {\"k\":\"見\",\"f\":\"み\"}, \"ているだけで\", {\"k\":\"楽\",\"f\":\"たの\"}, \"しいです。\"]",
+        "ContentVi": "Tôi đang sưu tập những đồng xu cổ. Tôi cũng có rất nhiều tiền của nước ngoài. Chỉ nhìn chúng thôi cũng thấy vui rồi.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "何を集めていますか。",
+            "Explanation": "Sưu tập: 古いコイン (Đồng xu cổ).",
+            "Options": [
+              { "Text": "切手", "IsCorrect": false },
+              { "Text": "古いコイン", "IsCorrect": true },
+              { "Text": "外国の本", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "外国のお金はありますか。",
+            "Explanation": "Dựa vào câu: 外国のお金もたくさんあります (Có nhiều tiền nước ngoài).",
+            "Options": [
+              { "Text": "はい、たくさんあります", "IsCorrect": true },
+              { "Text": "いいえ、ありません", "IsCorrect": false },
+              { "Text": "少しだけあります", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "写真コンテスト",
+        "TitleVi": "Cuộc thi nhiếp ảnh",
+        "ContentJp": "趣味で撮った風景の写真をコンテストに出しました。賞をもらうことはできませんでしたが、良い経験になりました。これからも写真を撮り続けたいです。",
+        "ContentFurigana": "[{\"k\":\"趣味\",\"f\":\"しゅみ\"}, \"で\", {\"k\":\"撮\",\"f\":\"と\"}, \"った\", {\"k\":\"風景\",\"f\":\"ふうけい\"}, \"の\", {\"k\":\"写真\",\"f\":\"しゃしん\"}, \"をコンテストに\", {\"k\":\"出\",\"f\":\"だ\"}, \"しました。\", {\"k\":\"賞\",\"f\":\"しょう\"}, \"をもらうことはできませんでしたが、\", {\"k\":\"良\",\"f\":\"よ\"}, \"い\", {\"k\":\"経験\",\"f\":\"けいけん\"}, \"になりました。これからも\", {\"k\":\"写真\",\"f\":\"しゃしん\"}, \"を\", {\"k\":\"撮\",\"f\":\"と\"}, \"り\", {\"k\":\"続\",\"f\":\"つづ\"}, \"けたいです。\"]",
+        "ContentVi": "Tôi đã gửi bức ảnh phong cảnh mà tôi chụp theo sở thích đi dự thi. Mặc dù không thể nhận được giải thưởng, nhưng nó đã trở thành một kinh nghiệm tốt. Từ nay về sau tôi vẫn muốn tiếp tục chụp ảnh.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "どんな写真をコンテストに出しましたか。",
+            "Explanation": "Thể loại ảnh: 風景の写真 (Ảnh phong cảnh).",
+            "Options": [
+              { "Text": "家族の写真", "IsCorrect": false },
+              { "Text": "風景の写真", "IsCorrect": true },
+              { "Text": "動物の写真", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "コンテストの結果はどうでしたか。",
+            "Explanation": "Kết quả: 賞をもらうことはできませんでした (Không nhận được giải).",
+            "Options": [
+              { "Text": "一番になりました", "IsCorrect": false },
+              { "Text": "賞をもらいました", "IsCorrect": false },
+              { "Text": "賞はもらえませんでした", "IsCorrect": true }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "冬のスケート",
+        "TitleVi": "Trượt băng mùa đông",
+        "ContentJp": "子供の頃からスケートをやっています。氷の上を滑る時は鳥になったような気分になります。将来は選手になりたいです。",
+        "ContentFurigana": "[{\"k\":\"子供\",\"f\":\"こども\"}, \"の\", {\"k\":\"頃\",\"f\":\"ころ\"}, \"からスケートをやっています。\", {\"k\":\"氷\",\"f\":\"こおり\"}, \"の\", {\"k\":\"上\",\"f\":\"うえ\"}, \"を\", {\"k\":\"滑\",\"f\":\"すべ\"}, \"る\", {\"k\":\"時\",\"f\":\"とき\"}, \"は\", {\"k\":\"鳥\",\"f\":\"とり\"}, \"になったような\", {\"k\":\"気分\",\"f\":\"きぶん\"}, \"になります。\", {\"k\":\"将来\",\"f\":\"しょうらい\"}, \"は\", {\"k\":\"選手\",\"f\":\"せんしゅ\"}, \"になりたいです。\"]",
+        "ContentVi": "Tôi đã tập trượt băng từ khi còn nhỏ. Khi lướt trên mặt băng, tôi có cảm giác như mình trở thành một chú chim. Trong tương lai, tôi muốn trở thành một vận động viên.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "スケートを滑る時、どんな気分になりますか。",
+            "Explanation": "Cảm giác: 鳥になったような気分 (Cảm giác như trở thành chim).",
+            "Options": [
+              { "Text": "鳥になったような気分", "IsCorrect": true },
+              { "Text": "魚になったような気分", "IsCorrect": false },
+              { "Text": "怖くて泣きたい気分", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "この人の将来の夢は何ですか。",
+            "Explanation": "Ước mơ: 将来は選手になりたいです (Muốn trở thành vận động viên).",
+            "Options": [
+              { "Text": "鳥になること", "IsCorrect": false },
+              { "Text": "スケートの先生になること", "IsCorrect": false },
+              { "Text": "スケートの選手になること", "IsCorrect": true }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "ボルダリングの楽しさ",
+        "TitleVi": "Sự thú vị của Bouldering (leo núi trong nhà)",
+        "ContentJp": "最近、壁を登るボルダリングというスポーツが人気です。力だけでなく、どうやって登るか考える頭も必要なので、とても奥が深いです。",
+        "ContentFurigana": "[{\"k\":\"最近\",\"f\":\"さいきん\"}, \"、\", {\"k\":\"壁\",\"f\":\"かべ\"}, \"を\", {\"k\":\"登\",\"f\":\"のぼ\"}, \"るボルダリングというスポーツが\", {\"k\":\"人気\",\"f\":\"にんき\"}, \"です。\", {\"k\":\"力\",\"f\":\"ちから\"}, \"だけでなく、どうやって\", {\"k\":\"登\",\"f\":\"のぼ\"}, \"るか\", {\"k\":\"考\",\"f\":\"かんが\"}, \"える\", {\"k\":\"頭\",\"f\":\"あたま\"}, \"も\", {\"k\":\"必要\",\"f\":\"ひつよう\"}, \"なので、とても\", {\"k\":\"奥\",\"f\":\"おく\"}, \"が\", {\"k\":\"深\",\"f\":\"ふか\"}, \"いです。\"]",
+        "ContentVi": "Gần đây, môn thể thao leo tường gọi là Bouldering đang rất được ưa chuộng. Không chỉ cần sức mạnh mà còn cần cả đầu óc để suy nghĩ xem leo như thế nào, nên nó rất có chiều sâu.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "ボルダリングとはどんなスポーツですか。",
+            "Explanation": "Định nghĩa: 壁を登るスポーツ (Thể thao leo tường).",
+            "Options": [
+              { "Text": "壁を登るスポーツ", "IsCorrect": true },
+              { "Text": "山を走るスポーツ", "IsCorrect": false },
+              { "Text": "川を泳ぐスポーツ", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "ボルダリングには何が必要ですか。",
+            "Explanation": "Yếu tố cần thiết: 力と考える頭 (Sức mạnh và đầu óc suy nghĩ).",
+            "Options": [
+              { "Text": "力だけ", "IsCorrect": false },
+              { "Text": "力と考える頭", "IsCorrect": true },
+              { "Text": "強い道具だけ", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "手作りアクセサリー",
+        "TitleVi": "Phụ kiện thủ công",
+        "ContentJp": "週末にビーズを使ってアクセサリーを作っています。自分がデザインしたものをインターネットで売ることもあります。買ってくれた人が喜ぶと私も嬉しいです。",
+        "ContentFurigana": "[{\"k\":\"週末\",\"f\":\"しゅうまつ\"}, \"にビーズを\", {\"k\":\"使\",\"f\":\"つか\"}, \"ってアクセサリーを\", {\"k\":\"作\",\"f\":\"つく\"}, \"っています。\", {\"k\":\"自分\",\"f\":\"じぶん\"}, \"がデザインしたものをインターネットで\", {\"k\":\"売\",\"f\":\"う\"}, \"ることもあります。\", {\"k\":\"買\",\"f\":\"か\"}, \"ってくれた\", {\"k\":\"人\",\"f\":\"ひと\"}, \"が\", {\"k\":\"喜\",\"f\":\"よろこ\"}, \"ぶと\", {\"k\":\"私\",\"f\":\"わたし\"}, \"も\", {\"k\":\"嬉\",\"f\":\"うれ\"}, \"しいです。\"]",
+        "ContentVi": "Vào cuối tuần, tôi sử dụng hạt cườm để làm phụ kiện. Đôi khi tôi cũng bán những món đồ do chính mình thiết kế trên mạng. Khi người mua cảm thấy vui, tôi cũng thấy hạnh phúc.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "何を使ってアクセサリーを作っていますか。",
+            "Explanation": "Vật liệu: ビーズを使って (Dùng hạt cườm).",
+            "Options": [
+              { "Text": "花", "IsCorrect": false },
+              { "Text": "ビーズ", "IsCorrect": true },
+              { "Text": "お金", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "作ったアクセサリーはどうしますか。",
+            "Explanation": "Hành động: インターネットで売ることもある (Có khi bán trên mạng).",
+            "Options": [
+              { "Text": "全部自分で使う", "IsCorrect": false },
+              { "Text": "インターネットで売ることもある", "IsCorrect": true },
+              { "Text": "家族だけにあげる", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "旅行のブログを書く",
+        "TitleVi": "Viết blog du lịch",
+        "ContentJp": "旅行に行った後、必ずブログに感想や写真を載せています。それを見た人からコメントをもらうのが、私のモチベーションになっています。",
+        "ContentFurigana": "[{\"k\":\"旅行\",\"f\":\"りょこう\"}, \"に\", {\"k\":\"行\",\"f\":\"い\"}, \"った\", {\"k\":\"後\",\"f\":\"あと\"}, \"、\", {\"k\":\"必\",\"f\":\"かなら\"}, \"ずブログに\", {\"k\":\"感想\",\"f\":\"かんそう\"}, \"や\", {\"k\":\"写真\",\"f\":\"しゃしん\"}, \"を\", {\"k\":\"載\",\"f\":\"の\"}, \"せています。それを\", {\"k\":\"見\",\"f\":\"み\"}, \"た\", {\"k\":\"人\",\"f\":\"ひと\"}, \"からコメントをもらうのが、\", {\"k\":\"私\",\"f\":\"わたし\"}, \"のモチベーションになっています。\"]",
+        "ContentVi": "Sau khi đi du lịch, tôi chắc chắn sẽ đăng cảm nhận và ảnh lên blog. Việc nhận được bình luận từ những người xem blog chính là động lực của tôi.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "旅行の後に何をしますか。",
+            "Explanation": "Hành động: ブログに感想や写真を載せる (Đăng cảm nhận và ảnh lên blog).",
+            "Options": [
+              { "Text": "ブログに感想や写真を載せる", "IsCorrect": true },
+              { "Text": "友達に写真を送る", "IsCorrect": false },
+              { "Text": "すぐに次の旅行に行く", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "この人のモチベーションは何ですか。",
+            "Explanation": "Động lực: ブログを見た人からコメントをもらうこと (Nhận bình luận từ người xem).",
+            "Options": [
+              { "Text": "ブログを書くこと", "IsCorrect": false },
+              { "Text": "旅行に行くこと", "IsCorrect": false },
+              { "Text": "コメントをもらうこと", "IsCorrect": true }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "スポーツジムに通う",
+        "TitleVi": "Đi đến phòng gym",
+        "ContentJp": "運動不足を解消するために、仕事の帰りにジムに通い始めました。最初は疲れるだけでしたが、今は汗をかくのが気持ちいいと感じます。",
+        "ContentFurigana": "[{\"k\":\"運動不足\",\"f\":\"うんどうぶそく\"}, \"を\", {\"k\":\"解消\",\"f\":\"かいしょう\"}, \"するために、\", {\"k\":\"仕事\",\"f\":\"しごと\"}, \"の\", {\"k\":\"帰\",\"f\":\"かえ\"}, \"りにジムに\", {\"k\":\"通\",\"f\":\"かよ\"}, \"い\", {\"k\":\"始\",\"f\":\"はじ\"}, \"めました。\", {\"k\":\"最初\",\"f\":\"さいしょ\"}, \"は\", {\"k\":\"疲\",\"f\":\"つか\"}, \"れるだけでしたが、\", {\"k\":\"今\",\"f\":\"いま\"}, \"は\", {\"k\":\"汗\",\"f\":\"あせ\"}, \"をかくのが\", {\"k\":\"気持\",\"f\":\"きも\"}, \"ちいいと\", {\"k\":\"感\",\"f\":\"かん\"}, \"じます。\"]",
+        "ContentVi": "Để giải quyết tình trạng thiếu vận động, tôi đã bắt đầu đi đến phòng gym trên đường đi làm về. Ban đầu tôi chỉ thấy mệt mỏi, nhưng giờ tôi cảm thấy việc đổ mồ hôi rất sảng khoái.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "なぜジムに通い始めましたか。",
+            "Explanation": "Mục đích: 運動不足を解消するため (Để giải quyết việc thiếu vận động).",
+            "Options": [
+              { "Text": "友達に会うため", "IsCorrect": false },
+              { "Text": "運動不足を解消するため", "IsCorrect": true },
+              { "Text": "仕事が早く終わるから", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "今はジムについてどう感じていますか。",
+            "Explanation": "Cảm nhận hiện tại: 汗をかくのが気持ちいいと感じる (Đổ mồ hôi rất sảng khoái).",
+            "Options": [
+              { "Text": "疲れるだけだ", "IsCorrect": false },
+              { "Text": "汗をかくのが気持ちいい", "IsCorrect": true },
+              { "Text": "行くのが嫌だ", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "料理教室に通う",
+        "TitleVi": "Đi học lớp nấu ăn",
+        "ContentJp": "料理が苦手だったので、料理教室に通うことにしました。先生が丁寧に教えてくれるおかげで、和食も洋食も作れるようになりました。",
+        "ContentFurigana": "[{\"k\":\"料理\",\"f\":\"りょうり\"}, \"が\", {\"k\":\"苦手\",\"f\":\"にがて\"}, \"だったので、\", {\"k\":\"料理教室\",\"f\":\"りょうりきょうしつ\"}, \"に\", {\"k\":\"通\",\"f\":\"かよ\"}, \"うことにしました。\", {\"k\":\"先生\",\"f\":\"せんせい\"}, \"が\", {\"k\":\"丁寧\",\"f\":\"ていねい\"}, \"に\", {\"k\":\"教\",\"f\":\"おし\"}, \"えてくれるおかげで、\", {\"k\":\"和食\",\"f\":\"わしょく\"}, \"も\", {\"k\":\"洋食\",\"f\":\"ようしょく\"}, \"も\", {\"k\":\"作\",\"f\":\"つく\"}, \"れるようになりました。\"]",
+        "ContentVi": "Vì nấu ăn kém nên tôi quyết định đi học lớp nấu ăn. Nhờ giáo viên chỉ dạy tận tình, tôi đã có thể nấu được cả món Nhật lẫn món Âu.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "なぜ料理教室に通うことにしましたか。",
+            "Explanation": "Nguyên nhân: 料理が苦手だったから (Vì nấu ăn kém).",
+            "Options": [
+              { "Text": "和食が好きだったから", "IsCorrect": false },
+              { "Text": "料理が苦手だったから", "IsCorrect": true },
+              { "Text": "友達が通っていたから", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "今は何が作れるようになりましたか。",
+            "Explanation": "Kết quả: 和食も洋食も (Cả món Nhật và món Âu).",
+            "Options": [
+              { "Text": "和食だけ作れる", "IsCorrect": false },
+              { "Text": "和食も洋食も作れる", "IsCorrect": true },
+              { "Text": "お菓子が作れる", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "ペットの写真を撮る",
+        "TitleVi": "Chụp ảnh thú cưng",
+        "ContentJp": "飼っている猫の写真を撮るのが毎日の楽しみです。猫が寝ている顔や遊んでいる姿をスマートフォンで撮って、SNSにアップしています。",
+        "ContentFurigana": "[{\"k\":\"飼\",\"f\":\"か\"}, \"っている\", {\"k\":\"猫\",\"f\":\"ねこ\"}, \"の\", {\"k\":\"写真\",\"f\":\"しゃしん\"}, \"を\", {\"k\":\"撮\",\"f\":\"と\"}, \"るのが\", {\"k\":\"毎日\",\"f\":\"まいにち\"}, \"の\", {\"k\":\"楽\",\"f\":\"たの\"}, \"しみです。\", {\"k\":\"猫\",\"f\":\"ねこ\"}, \"が\", {\"k\":\"寝\",\"f\":\"ね\"}, \"ている\", {\"k\":\"顔\",\"f\":\"かお\"}, \"や\", {\"k\":\"遊\",\"f\":\"あそ\"}, \"んでいる\", {\"k\":\"姿\",\"f\":\"すがた\"}, \"をスマートフォンで\", {\"k\":\"撮\",\"f\":\"と\"}, \"って、SNSにアップしています。\"]",
+        "ContentVi": "Chụp ảnh chú mèo mình đang nuôi là niềm vui mỗi ngày của tôi. Tôi dùng điện thoại thông minh chụp lại khuôn mặt khi ngủ hay dáng vẻ khi chơi đùa của mèo rồi đăng lên mạng xã hội.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "誰の写真を撮っていますか。",
+            "Explanation": "Đối tượng chụp: 飼っている猫 (Con mèo đang nuôi).",
+            "Options": [
+              { "Text": "友達の犬", "IsCorrect": false },
+              { "Text": "飼っている猫", "IsCorrect": true },
+              { "Text": "自分の顔", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "撮った写真はどうしますか。",
+            "Explanation": "Hành động: SNSにアップしている (Đăng lên SNS).",
+            "Options": [
+              { "Text": "SNSにアップする", "IsCorrect": true },
+              { "Text": "アルバムに貼る", "IsCorrect": false },
+              { "Text": "部屋に飾る", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "週末のサイクリング",
+        "TitleVi": "Đạp xe cuối tuần",
+        "ContentJp": "休みの日は自転車で遠くまで出かけます。車では気づかないような美しい景色や、小さなお店を見つけることができるのがサイクリングの魅力です。",
+        "ContentFurigana": "[{\"k\":\"休\",\"f\":\"やす\"}, \"みの\", {\"k\":\"日\",\"f\":\"ひ\"}, \"は\", {\"k\":\"自転車\",\"f\":\"じてんしゃ\"}, \"で\", {\"k\":\"遠\",\"f\":\"とお\"}, \"くまで\", {\"k\":\"出\",\"f\":\"で\"}, \"かけます。\", {\"k\":\"車\",\"f\":\"くるま\"}, \"では\", {\"k\":\"気\",\"f\":\"き\"}, \"づかないような\", {\"k\":\"美\",\"f\":\"うつく\"}, \"しい\", {\"k\":\"景色\",\"f\":\"けしき\"}, \"や、\", {\"k\":\"小\",\"f\":\"ちい\"}, \"さなお\", {\"k\":\"店\",\"f\":\"みせ\"}, \"を\", {\"k\":\"見\",\"f\":\"み\"}, \"つけることができるのがサイクリングの\", {\"k\":\"魅力\",\"f\":\"みりょく\"}, \"です。\"]",
+        "ContentVi": "Vào ngày nghỉ, tôi đạp xe đi đến những nơi xa. Sức hút của đạp xe là việc có thể tìm thấy những cảnh đẹp hay những quán nhỏ mà đi ô tô sẽ không nhận ra.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "休みの日にはどうやって出かけますか。",
+            "Explanation": "Phương tiện: 自転車で (Bằng xe đạp).",
+            "Options": [
+              { "Text": "車で", "IsCorrect": false },
+              { "Text": "電車で", "IsCorrect": false },
+              { "Text": "自転車で", "IsCorrect": true }
+            ]
+          },
+          {
+            "QuestionText": "サイクリングの魅力は何ですか。",
+            "Explanation": "Sức hút: 美しい景色や小さなお店を見つけられること (Có thể tìm thấy cảnh đẹp và quán nhỏ).",
+            "Options": [
+              { "Text": "早く目的地に着けること", "IsCorrect": false },
+              { "Text": "美しい景色や小さなお店を見つけられること", "IsCorrect": true },
+              { "Text": "疲れないこと", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "卓球の試合",
+        "TitleVi": "Trận đấu bóng bàn",
+        "ContentJp": "学生時代から卓球を続けています。来週は市の大会があるので、毎日遅くまで練習しています。優勝できるように全力を尽くしたいです。",
+        "ContentFurigana": "[{\"k\":\"学生時代\",\"f\":\"がくせいじだい\"}, \"から\", {\"k\":\"卓球\",\"f\":\"たっきゅう\"}, \"を\", {\"k\":\"続\",\"f\":\"つづ\"}, \"けています。\", {\"k\":\"来週\",\"f\":\"らいしゅう\"}, \"は\", {\"k\":\"市\",\"f\":\"し\"}, \"の\", {\"k\":\"大会\",\"f\":\"たいかい\"}, \"があるので、\", {\"k\":\"毎日遅\",\"f\":\"まいにちおそ\"}, \"くまで\", {\"k\":\"練習\",\"f\":\"れんしゅう\"}, \"しています。\", {\"k\":\"優勝\",\"f\":\"ゆうしょう\"}, \"できるように\", {\"k\":\"全力\",\"f\":\"ぜんりょく\"}, \"を\", {\"k\":\"尽\",\"f\":\"つ\"}, \"くしたいです。\"]",
+        "ContentVi": "Tôi đã chơi bóng bàn từ thời còn đi học. Vì tuần sau có giải đấu của thành phố nên ngày nào tôi cũng tập luyện đến muộn. Tôi muốn dốc toàn lực để có thể giành chức vô địch.",
+        "AudioUrl": "",
+        "IsPremium": false,
+        "Questions": [
+          {
+            "QuestionText": "来週は何がありますか。",
+            "Explanation": "Sự kiện: 市の大会 (Giải đấu của thành phố).",
+            "Options": [
+              { "Text": "テスト", "IsCorrect": false },
+              { "Text": "市の卓球の大会", "IsCorrect": true },
+              { "Text": "学校の旅行", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "大会に向けてどんな気持ちですか。",
+            "Explanation": "Tâm trạng: 優勝できるように全力を尽くしたい (Dốc toàn lực để vô địch).",
+            "Options": [
+              { "Text": "負けてもいいと思っている", "IsCorrect": false },
+              { "Text": "優勝するために全力を尽くしたい", "IsCorrect": true },
+              { "Text": "練習したくない", "IsCorrect": false }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
