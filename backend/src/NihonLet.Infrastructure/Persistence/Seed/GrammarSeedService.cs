@@ -25,53 +25,57 @@ public class GrammarSeedService
 
         try
         {
-            var seedPath = Path.Combine(AppContext.BaseDirectory, "Persistence", "SeedData", "Grammar", "grammar.json");
-            if (!File.Exists(seedPath)) return;
+            var seedDir = Path.Combine(AppContext.BaseDirectory, "Persistence", "SeedData", "Grammar");
+            if (!Directory.Exists(seedDir)) return;
 
-            var json = await File.ReadAllTextAsync(seedPath);
-            var topicsDto = JsonSerializer.Deserialize<List<GrammarSeedDto>>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
-
-            if (topicsDto == null) return;
-
-            foreach (var tDto in topicsDto)
+            var files = Directory.GetFiles(seedDir, "*.json");
+            foreach (var file in files)
             {
-                // 2. Nạp GrammarTopic vào SQL
-                var topic = new GrammarTopic
-                {
-                    Title = tDto.Title,
-                    Level = Enum.Parse<JlptLevel>(tDto.Level),
-                    Description = tDto.Description,
-                    ExampleJson = JsonSerializer.Serialize(tDto.Examples) // Convert List sang string JSON
-                };
-                _context.GrammarTopics.Add(topic);
-                await _context.SaveChangesAsync(CancellationToken.None);
+                var json = await File.ReadAllTextAsync(file);
+                var topicsDto = JsonSerializer.Deserialize<List<GrammarSeedDto>>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
-                // 3. Nạp Questions & Options
-                foreach (var qDto in tDto.Questions)
+                if (topicsDto == null) continue;
+
+                foreach (var tDto in topicsDto)
                 {
-                    var question = new Question
+                    // 2. Nạp GrammarTopic vào SQL
+                    var topic = new GrammarTopic
                     {
-                        ReferenceId = topic.TopicId, // Lấy ID vừa sinh ra từ SQL
-                        ReferenceType = ReferenceType.Grammar,
-                        QuestionText = qDto.QuestionText,
-                        Explanation = qDto.Explanation,
-                        Points = qDto.Points
+                        Title = tDto.Title,
+                        Level = Enum.Parse<JlptLevel>(tDto.Level),
+                        Description = tDto.Description,
+                        ExampleJson = JsonSerializer.Serialize(tDto.Examples) // Convert List sang string JSON
                     };
-                    _context.Questions.Add(question);
+                    _context.GrammarTopics.Add(topic);
                     await _context.SaveChangesAsync(CancellationToken.None);
 
-                    foreach (var oDto in qDto.Options)
+                    // 3. Nạp Questions & Options
+                    foreach (var qDto in tDto.Questions)
                     {
-                        _context.Options.Add(new Option
+                        var question = new Question
                         {
-                            QuestionId = question.QuestionId,
-                            OptionText = oDto.OptionText ,
-                            IsCorrect = oDto.IsCorrect
-                        });
+                            ReferenceId = topic.TopicId, // Lấy ID vừa sinh ra từ SQL
+                            ReferenceType = ReferenceType.Grammar,
+                            QuestionText = qDto.QuestionText,
+                            Explanation = qDto.Explanation,
+                            Points = qDto.Points
+                        };
+                        _context.Questions.Add(question);
+                        await _context.SaveChangesAsync(CancellationToken.None);
+
+                        foreach (var oDto in qDto.Options)
+                        {
+                            _context.Options.Add(new Option
+                            {
+                                QuestionId = question.QuestionId,
+                                OptionText = oDto.OptionText,
+                                IsCorrect = oDto.IsCorrect
+                            });
+                        }
                     }
+                    // Ghi Log vào MongoDB mỗi khi nạp xong 1 bài học
+                    await _logger.LogInfoAsync($"Seeded Grammar Topic: {topic.Title}", "Seeder");
                 }
-                // Ghi Log vào MongoDB mỗi khi nạp xong 1 bài học
-                await _logger.LogInfoAsync($"Seeded Grammar Topic: {topic.Title}", "Seeder");
             }
 
             await _context.SaveChangesAsync(CancellationToken.None);

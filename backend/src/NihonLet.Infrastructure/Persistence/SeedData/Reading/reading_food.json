@@ -1,0 +1,1716 @@
+[
+    {
+        "NameVi": "Ăn uống và Nhà hàng",
+        "NameJp": "食べ物とレストラン",
+        "Description": "Các bài đọc về gọi món, khẩu vị thức ăn và thói quen ăn uống.",
+        "IconUrl": "/icons/food.png",
+        "Articles": [
+            {
+                "Level": "N5",
+                "TitleJp": "レストランで",
+                "TitleVi": "Tại nhà hàng",
+                "ContentJp": "私は友達とレストランへ行きました。私はカレーを食べました。友達はうどんを食べました。",
+                "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"友達\",\"f\":\"ともだち\"}, \"とレストランへ\", {\"k\":\"行\",\"f\":\"い\"}, \"きました。\", {\"k\":\"私\",\"f\":\"わたし\"}, \"はカレーを\", {\"k\":\"食\",\"f\":\"た\"}, \"べました。\", {\"k\":\"友達\",\"f\":\"ともだち\"}, \"はうどんを\", {\"k\":\"食\",\"f\":\"た\"}, \"べました。\"]",
+                "ContentVi": "Tôi đã đi đến nhà hàng cùng với bạn. Tôi đã ăn cà ri. Còn bạn tôi thì ăn mì udon.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "私は何を食べましたか。",
+                        "Explanation": "Dựa vào câu: 私はカレーを食べました。",
+                        "Options": [
+                            {
+                                "Text": "うどん",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "カレー",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "ラーメン",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "誰と行きましたか。",
+                        "Explanation": "Câu đầu tiên: 友達とレストランへ行きました。",
+                        "Options": [
+                            {
+                                "Text": "家族",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "一人で",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "友達",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "冷たい飲み物",
+                "TitleVi": "Đồ uống lạnh",
+                "ContentJp": "暑いですから、冷たいジュースが飲みたいです. 氷を入れてください. コーヒーも好きです。",
+                "ContentFurigana": "[{\"k\":\"暑\",\"f\":\"あつ\"}, \"いですから、\", {\"k\":\"冷\",\"f\":\"つめ\"}, \"たいジュースが\", {\"k\":\"飲\",\"f\":\"の\"}, \"みたいです。\", {\"k\":\"氷\",\"f\":\"こおり\"}, \"を\", {\"k\":\"入\",\"f\":\"い\"}, \"れてください。コーヒーも\", {\"k\":\"好\",\"f\":\"す\"}, \"きです。\"]",
+                "ContentVi": "Vì trời nóng nên tôi muốn uống nước trái cây lạnh. Làm ơn hãy cho thêm đá vào. Tôi cũng thích cà phê nữa.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "何を飲みますか。",
+                        "Explanation": "Dựa vào câu: 冷たいジュースが飲みたいです。",
+                        "Options": [
+                            {
+                                "Text": "お茶",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "お酒",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "ジュース",
+                                "IsCorrect": true
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "飲み物の中に何を入れますか。",
+                        "Explanation": "Yêu cầu: 氷を入れてください (Cho đá vào).",
+                        "Options": [
+                            {
+                                "Text": "氷",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "砂糖",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "塩",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "日本の料理",
+                "TitleVi": "Món ăn Nhật Bản",
+                "ContentJp": "寿司はとてもおいしいです。少し高いですが、大好きです。昨日、デパートで買いました。",
+                "ContentFurigana": "[{\"k\":\"寿司\",\"f\":\"すし\"}, \"はとてもおいしいです。\", {\"k\":\"少\",\"f\":\"すこ\"}, \"し\", {\"k\":\"高\",\"f\":\"たか\"}, \"いですが、\", {\"k\":\"大好\",\"f\":\"だいす\"}, \"きです。\", {\"k\":\"昨日\",\"f\":\"きのう\"}, \"、デパートで\", {\"k\":\"買\",\"f\":\"か\"}, \"いました。\"]",
+                "ContentVi": "Sushi rất là ngon. Tuy hơi đắt một chút nhưng tôi rất thích. Hôm qua tôi đã mua ở trung tâm thương mại.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "寿司はどうですか。",
+                        "Explanation": "Mô tả: おいしいですが、少し高いです (Ngon nhưng hơi đắt).",
+                        "Options": [
+                            {
+                                "Text": "安くて、まずいです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "おいしくて、高いです",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "辛いです",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "いつ買いましたか。",
+                        "Explanation": "Dựa vào câu: 昨日、買いました。",
+                        "Options": [
+                            {
+                                "Text": "今日",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "明日",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "昨日",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "朝ご飯",
+                "TitleVi": "Bữa sáng",
+                "ContentJp": "毎朝、パンと卵を食べます。そして牛乳を飲みます。時間はあまりありません。",
+                "ContentFurigana": "[{\"k\":\"毎朝\",\"f\":\"まいあさ\"}, \"、パンと\", {\"k\":\"卵\",\"f\":\"たまご\"}, \"を\", {\"k\":\"食\",\"f\":\"た\"}, \"べます。そして\", {\"k\":\"牛乳\",\"f\":\"ぎゅうにゅう\"}, \"を\", {\"k\":\"飲\",\"f\":\"の\"}, \"みます。\", {\"k\":\"時間\",\"f\":\"じかん\"}, \"はあまりありません。\"]",
+                "ContentVi": "Mỗi sáng tôi ăn bánh mì và trứng. Sau đó uống sữa. Tôi không có nhiều thời gian lắm.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "朝、何を食べますか。",
+                        "Explanation": "Liệt kê: パンと卵を食べます。",
+                        "Options": [
+                            {
+                                "Text": "魚とご飯",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "パンと卵",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "肉",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "時間はありますか。",
+                        "Explanation": "Dựa vào câu: 時間はあまりありません (Không có nhiều thời gian).",
+                        "Options": [
+                            {
+                                "Text": "たくさんあります",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "あまりありません",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "全然ありません",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "お弁当",
+                "TitleVi": "Cơm hộp (Obento)",
+                "ContentJp": "母は毎日お弁当を作ります. 肉と野菜がたくさん入っています。とてもきれいです。",
+                "ContentFurigana": "[{\"k\":\"母\",\"f\":\"はは\"}, \"は\", {\"k\":\"毎日\",\"f\":\"まいにち\"}, \"お\", {\"k\":\"弁当\",\"f\":\"べんとう\"}, \"を\", {\"k\":\"作\",\"f\":\"つく\"}, \"ります。\", {\"k\":\"肉\",\"f\":\"にく\"}, \"と\", {\"k\":\"野菜\",\"f\":\"やさい\"}, \"がたくさん\", {\"k\":\"入\",\"f\":\"はい\"}, \"っています。とてもきれいです。\"]",
+                "ContentVi": "Mẹ tôi làm cơm hộp mỗi ngày. Trong đó có rất nhiều thịt và rau. Trông rất đẹp mắt.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "誰がお弁当を作りますか。",
+                        "Explanation": "Câu đầu tiên: 母は毎日お弁当を作ります。",
+                        "Options": [
+                            {
+                                "Text": "父",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "母",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "私",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "お弁当の中に何がありますか。",
+                        "Explanation": "Thành phần: 肉と野菜 (Thịt và rau).",
+                        "Options": [
+                            {
+                                "Text": "肉と野菜",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "魚だけ",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "お菓子",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "果物が好きです",
+                "TitleVi": "Tôi thích trái cây",
+                "ContentJp": "私は果物が大好きです. りんごやみかんをよく食べます. 甘いものが好きですから。",
+                "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"果物\",\"f\":\"くだもの\"}, \"가\", {\"k\":\"大好\",\"f\":\"だいす\"}, \"きです。りんごやみかんをよく\", {\"k\":\"食\",\"f\":\"た\"}, \"べます。\", {\"k\":\"甘\",\"f\":\"あま\"}, \"いものが\", {\"k\":\"好\",\"f\":\"す\"}, \"きですから。\"]",
+                "ContentVi": "Tôi rất thích trái cây. Tôi thường ăn táo và quýt. Bởi vì tôi thích những đồ ngọt.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "何をよく食べますか。",
+                        "Explanation": "Dựa vào câu: りんごやみかんをよく食べます。",
+                        "Options": [
+                            {
+                                "Text": "肉",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "パン",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "りんご",
+                                "IsCorrect": true
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "どうして果物が好きですか。",
+                        "Explanation": "Lý do: 甘いものが好きですから (Vì thích đồ ngọt).",
+                        "Options": [
+                            {
+                                "Text": "甘いですから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "辛いですから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "安いですから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "ハンバーガーショップ",
+                "TitleVi": "Cửa hàng Hamburger",
+                "ContentJp": "私はハンバーガーが好きですから、時々一人で行きます。安くて速いです。飲み物はいつもコーラです。",
+                "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"はハンバーガーが\", {\"k\":\"好\",\"f\":\"す\"}, \"きですから、\", {\"k\":\"時々一人\",\"f\":\"ときどきひとり\"}, \"で\", {\"k\":\"行\",\"f\":\"い\"}, \"きます。\", {\"k\":\"安\",\"f\":\"やす\"}, \"くて\", {\"k\":\"速\",\"f\":\"はや\"}, \"いです。\", {\"k\":\"飲\",\"f\":\"の\"}, \"み\", {\"k\":\"物\",\"f\":\"もの\"}, \"はいつもコーラです。\"]",
+                "ContentVi": "Vì thích hamburger nên thỉnh thoảng tôi đi ăn một mình. Nó vừa rẻ vừa nhanh. Đồ uống của tôi luôn là coca.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どうしてハンバーガーを食べますか。",
+                        "Explanation": "Lý do: 安くて速い (Rẻ và nhanh).",
+                        "Options": [
+                            {
+                                "Text": "安くて速いから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "高いですから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "家 từ xaですから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "飲み物は何ですか。",
+                        "Explanation": "Đồ uống: コーラ (Coca).",
+                        "Options": [
+                            {
+                                "Text": "コーヒー",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "コーラ",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "お茶",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "土曜日の夜",
+                "TitleVi": "Tối thứ Bảy",
+                "ContentJp": "土曜日の夜は外で食べます。家族とイタリア料理のレストランへ行きます。ピザはとても大きいです。",
+                "ContentFurigana": "[{\"k\":\"土曜日\",\"f\":\"どようび\"}, \"の\", {\"k\":\"夜\",\"f\":\"よる\"}, \"は\", {\"k\":\"外\",\"f\":\"そと\"}, \"で\", {\"k\":\"食\",\"f\":\"た\"}, \"べます。\", {\"k\":\"家族\",\"f\":\"かぞく\"}, \"とイタリア\", {\"k\":\"料理\",\"f\":\"りょうり\"}, \"のレストランへ\", {\"k\":\"行\",\"f\":\"い\"}, \"きます。ピザはとても\", {\"k\":\"大\",\"f\":\"おお\"}, \"きいです。\"]",
+                "ContentVi": "Vào tối thứ Bảy tôi thường ăn ở ngoài. Tôi cùng gia đình đi đến nhà hàng đồ Ý. Pizza ở đó rất lớn.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どこで食べますか。",
+                        "Explanation": "Địa điểm: 外で (Ở ngoài/nhà hàng).",
+                        "Options": [
+                            {
+                                "Text": "家で",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "レストランで",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "学校で",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "ピザはどうですか。",
+                        "Explanation": "Mô tả: とても大きい (Rất lớn).",
+                        "Options": [
+                            {
+                                "Text": "小さいです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "あまりおいしくないです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "大きいです",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "スーパーで買い物",
+                "TitleVi": "Mua sắm ở siêu thị",
+                "ContentJp": "仕事の帰りにスーパーへ行きます。安い肉と卵を買います。時々お酒も飲みます。",
+                "ContentFurigana": "[{\"k\":\"仕事\",\"f\":\"しごと\"}, \"の\", {\"k\":\"帰\",\"f\":\"かえ\"}, \"りにスーパーへ\", {\"k\":\"行\",\"f\":\"い\"}, \"きます。\", {\"k\":\"安\",\"f\":\"やす\"}, \"い\", {\"k\":\"肉\",\"f\":\"にく\"}, \"と\", {\"k\":\"卵\",\"f\":\"たまご\"}, \"を\", {\"k\":\"買\",\"f\":\"か\"}, \"います。\", {\"k\":\"時々\",\"f\":\"ときどき\"}, \"お\", {\"k\":\"酒\",\"f\":\"さけ\"}, \"も\", {\"k\":\"飲\",\"f\":\"の\"}, \"みます。\"]",
+                "ContentVi": "Trên đường đi làm về tôi đi siêu thị. Tôi mua thịt rẻ và trứng. Thỉnh thoảng tôi cũng uống cả rượu.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "いつスーパーへ行きますか。",
+                        "Explanation": "Thời điểm: 仕事の帰り (Đường đi làm về).",
+                        "Options": [
+                            {
+                                "Text": "朝",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "仕事の前",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "仕事の帰り",
+                                "IsCorrect": true
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "何を買いますか。",
+                        "Explanation": "Mua: 肉と卵.",
+                        "Options": [
+                            {
+                                "Text": "肉と卵",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "魚だけ",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "野菜",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "静かな喫茶店",
+                "TitleVi": "Quán cà phê yên tĩnh",
+                "ContentJp": "駅の前に静かな喫茶店があります。そこで本を読みながらコーヒーを飲みます。とてもいいです。",
+                "ContentFurigana": "[\"駅の前に\", {\"k\":\"静\",\"f\":\"しず\"}, \"かな\", {\"k\":\"喫茶店\",\"f\":\"きっさてん\"}, \"があります。そこで\", {\"k\":\"本\",\"f\":\"ほん\"}, \"を\", {\"k\":\"読\",\"f\":\"よ\"}, \"みながらコーヒーを\", {\"k\":\"飲\",\"f\":\"の\"}, \"みます。とてもいいです。\"]",
+                "ContentVi": "Trước nhà ga có một quán cà phê yên tĩnh. Ở đó tôi vừa đọc sách vừa uống cà phê. Rất là tuyệt.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "喫茶店はどこにありますか。",
+                        "Explanation": "Địa điểm: 駅の前 (Trước nhà ga).",
+                        "Options": [
+                            {
+                                "Text": "駅の中",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "駅の前",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "学校の隣",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "喫茶店で何をしますか。",
+                        "Explanation": "Hoạt động: 本を読みながらコーヒーを飲む.",
+                        "Options": [
+                            {
+                                "Text": "仕事をします",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "友達を待ちます",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "本を読んでコーヒーを飲みます",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "おいしいケーキ",
+                "TitleVi": "Bánh ngọt ngon",
+                "ContentJp": "駅の近くに新しいケーキ屋ができました。私は昨日、いちごのケーキを買いました。とても甘くておいしかったです。",
+                "ContentFurigana": "[{\"k\":\"駅\",\"f\":\"えき\"}, \"の\", {\"k\":\"近\",\"f\":\"ちか\"}, \"くに\", {\"k\":\"新\",\"f\":\"あたら\"}, \"しいケーキ\", {\"k\":\"屋\",\"f\":\"や\"}, \"ができました。\", {\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"昨日\",\"f\":\"きのう\"}, \"、いちごのケーキを\", {\"k\":\"買\",\"f\":\"か\"}, \"いました。とても\", {\"k\":\"甘\",\"f\":\"あま\"}, \"くておいしかったです。\"]",
+                "ContentVi": "Một cửa hàng bánh ngọt mới đã mọc lên gần nhà ga. Hôm qua tôi đã mua một chiếc bánh dâu tây. Nó rất ngọt và ngon.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "いつケーキを買いましたか。",
+                        "Explanation": "Dựa vào câu: 私は昨日...買いました。",
+                        "Options": [
+                            {
+                                "Text": "今日",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "昨日",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "先週",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "ケーキはどうでしたか。",
+                        "Explanation": "Mô tả: 甘くておいしかったです (Ngọt và ngon).",
+                        "Options": [
+                            {
+                                "Text": "辛かったです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "甘くておいしかったです",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "パン屋で",
+                "TitleVi": "Tại tiệm bánh mì",
+                "ContentJp": "このパン屋は朝七時から開いています。私は毎朝、ここでサンドイッチを買います。コーヒーも安いです。",
+                "ContentFurigana": "[{\"k\":\"開\",\"f\":\"あ\"}, \"いています。\", {\"k\":\"毎朝\",\"f\":\"まいあさ\"}, \"、ここでサンドイッチを\", {\"k\":\"買\",\"f\":\"か\"}, \"います。\"]",
+                "ContentVi": "Tiệm bánh mì này mở cửa từ 7 giờ sáng. Mỗi sáng tôi đều mua bánh mì sandwich ở đây. Cà phê ở đó cũng rẻ nữa.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "パン屋は何時に開きますか。",
+                        "Explanation": "Thời gian mở cửa: 七時 (7 giờ).",
+                        "Options": [
+                            {
+                                "Text": "六時",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "七時",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "暑い日の飲み物",
+                "TitleVi": "Đồ uống ngày nóng",
+                "ContentJp": "今日はとても暑いです。冷たいお茶が飲みたいです。自動販売機で冷たいお茶を買いました。",
+                "ContentFurigana": "[{\"k\":\"今日\",\"f\":\"きょう\"}, \"はとても\", {\"k\":\"暑\",\"f\":\"あつ\"}, \"いです。\", {\"k\":\"冷\",\"f\":\"つめ\"}, \"たいお\", {\"k\":\"茶\",\"f\":\"ちゃ\"}, \"が\", {\"k\":\"飲\",\"f\":\"の\"}, \"みたいです。\", {\"k\":\"自動販売機\",\"f\":\"じどうはんばいき\"}, \"で...買いました。\"]",
+                "ContentVi": "Hôm nay trời rất nóng. Tôi muốn uống trà lạnh. Tôi đã mua trà lạnh ở máy bán hàng tự động.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どこでお茶を買いましたか。",
+                        "Explanation": "Địa điểm: 自動販売機 (Máy bán hàng tự động).",
+                        "Options": [
+                            {
+                                "Text": "デパート",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "自動販売機",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "野菜を食べましょう",
+                "TitleVi": "Hãy ăn rau nào",
+                "ContentJp": "私は毎日、野菜のサラダを食べます。トマトとレタスが大好きです。体によいです。",
+                "ContentFurigana": "[{\"k\":\"毎日\",\"f\":\"まいにち\"}, \"、\", {\"k\":\"野菜\",\"f\":\"やさい\"}, \"のサラダを\", {\"k\":\"食\",\"f\":\"た\"}, \"べます。\", {\"k\":\"大好\",\"f\":\"だいす\"}, \"きです。\", {\"k\":\"体\",\"f\":\"からだ\"}, \"によいです。\"]",
+                "ContentVi": "Mỗi ngày tôi đều ăn salad rau. Tôi rất thích cà chua và xà lách. Nó tốt cho cơ thể.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "野菜のサラダはどうですか。",
+                        "Explanation": "Lợi ích: 体によいです (Tốt cho cơ thể).",
+                        "Options": [
+                            {
+                                "Text": "体に悪いです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "体によいです",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "お弁当の卵焼き",
+                "TitleVi": "Trứng cuộn trong cơm hộp",
+                "ContentJp": "私のお弁当にはいつも卵焼きが入っています。甘い卵焼きが一番好きです。母が作ってくれます。",
+                "ContentFurigana": "[{\"k\":\"弁当\",\"f\":\"べんとう\"}, \"にはいつも\", {\"k\":\"卵焼\",\"f\":\"たまごや\"}, \"きが\", {\"k\":\"入\",\"f\":\"はい\"}, \"っています。\", {\"k\":\"甘\",\"f\":\"あま\"}, \"い\", {\"k\":\"卵焼\",\"f\":\"たまごや\"}, \"きが\", {\"k\":\"一番好\",\"f\":\"いちばんす\"}, \"きです。\"]",
+                "ContentVi": "Trong cơm hộp của tôi lúc nào cũng có trứng cuộn. Tôi thích nhất là trứng cuộn vị ngọt. Mẹ làm cho tôi đấy.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "誰が卵焼きを作りますか。",
+                        "Explanation": "Người làm: 母 (Mẹ).",
+                        "Options": [
+                            {
+                                "Text": "父",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "母",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "日本の定食",
+                "TitleVi": "Suất ăn định phần của Nhật (Teishoku)",
+                "ContentJp": "日本のレストランには「定食」があります。ご飯、味噌汁、おかずがセットになっています。栄養のバランスがいいです。",
+                "ContentFurigana": "[{\"k\":\"定食\",\"f\":\"ていしょく\"}, \"があります。\", {\"k\":\"飯\",\"f\":\"はん\"}, \"、\", {\"k\":\"味噌汁\",\"f\":\"みそしる\"}, \"、おかずがセットになっています。\", {\"k\":\"栄養\",\"f\":\"えいよう\"}, \"のバランスがいいです。\"]",
+                "ContentVi": "Ở các nhà hàng Nhật Bản có 'Teishoku'. Nó là một bộ gồm cơm, súp miso và thức ăn kèm. Sự cân bằng dinh dưỡng rất tốt.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "定食には何が入っていますか。",
+                        "Explanation": "Thành phần: ご飯、味噌汁、おかず (Cơm, súp miso, đồ ăn kèm).",
+                        "Options": [
+                            {
+                                "Text": "パンと牛乳",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "ご飯と味噌汁とおかず",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "お箸の使い方",
+                "TitleVi": "Cách sử dụng đũa",
+                "ContentJp": "日本ではお箸を使って食べます。お箸で食べ物を刺したり、お箸からお箸へ食べ物を渡したりしてはいけません。",
+                "ContentFurigana": "[{\"k\":\"箸\",\"f\":\"はし\"}, \"を\", {\"k\":\"使\",\"f\":\"つか\"}, \"って\", {\"k\":\"食\",\"f\":\"た\"}, \"べます。\", {\"k\":\"刺\",\"f\":\"さ\"2}, \"したり...\", {\"k\":\"渡\",\"f\":\"わた\"}, \"したりしてはいけません。\"]",
+                "ContentVi": "Ở Nhật, người ta dùng đũa để ăn. Không được dùng đũa để xiên thức ăn hoặc chuyền thức ăn từ đũa sang đũa.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "お箸でしてはいけないことは何ですか。",
+                        "Explanation": "Điều cấm: 食べ物を刺すこと (Xiên thức ăn).",
+                        "Options": [
+                            {
+                                "Text": "食べ物を刺すこと",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "ご飯を食べること",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "うどんとそば",
+                "TitleVi": "Mì Udon và mì Soba",
+                "ContentJp": "うどんは小麦粉から作られ、白くて太いです。そばはそば粉から作られ、茶色くて細いです。どちらも人気があります。",
+                "ContentFurigana": "[{\"k\":\"小麦粉\",\"f\":\"こむぎこ\"}, \"から\", {\"k\":\"作\",\"f\":\"つく\"}, \"られ、\", {\"k\":\"白\",\"f\":\"しろ\"}, \"くて\", {\"k\":\"太\",\"f\":\"ふと\"}, \"いです。\", {\"k\":\"粉\",\"f\":\"こ\"}, \"から\", {\"k\":\"作\",\"f\":\"つく\"}, \"られ、\", {\"k\":\"茶色\",\"f\":\"ちゃいろ\"}, \"くて\", {\"k\":\"細\",\"f\":\"ほそ\"}, \"いです。\"]",
+                "ContentVi": "Udon được làm từ bột mì, màu trắng và sợi to. Soba được làm từ bột kiều mạch, màu nâu và sợi nhỏ. Cả hai đều rất được yêu thích.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "そばの色は何色ですか。",
+                        "Explanation": "Màu sắc: 茶色 (Màu nâu).",
+                        "Options": [
+                            {
+                                "Text": "白色",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "茶色",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "納豆を食べる",
+                "TitleVi": "Ăn đậu nành lên men (Natto)",
+                "ContentJp": "納豆は匂いが強いですが、健康にとてもいいです。最初は嫌いでしたが、毎日食べているうちに好きになりました。",
+                "ContentFurigana": "[{\"k\":\"納豆\",\"f\":\"なっとう\"}, \"は\", {\"k\":\"匂\",\"f\":\"にお\"}, \"いが\", {\"k\":\"強\",\"f\":\"つよ\"}, \"いですが、\", {\"k\":\"健康\",\"f\":\"けんこう\"}, \"にとてもいいです。\"]",
+                "ContentVi": "Natto có mùi nồng nhưng rất tốt cho sức khỏe. Lúc đầu tôi ghét nó, nhưng trong lúc ăn hằng ngày thì tôi đã trở nên thích nó.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "この人は今、納豆が好きですか。",
+                        "Explanation": "Trạng thái hiện tại: 好きになりました (Đã trở nên thích).",
+                        "Options": [
+                            {
+                                "Text": "はい、好きです",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "いいえ、嫌いです",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "季節の果物狩り",
+                "TitleVi": "Hái trái cây theo mùa",
+                "ContentJp": "日本では季節によっていろいろな果物狩りが楽しめます。秋はぶどうやりんごがおいしいので、家族で行こうと思っています。",
+                "ContentFurigana": "[{\"k\":\"季節\",\"f\":\"きぜつ\"}, \"によっていろいろな\", {\"k\":\"果物狩\",\"f\":\"くだものが\"}, \"りが\", {\"k\":\"楽\",\"f\":\"たの\"}, \"しめます。\", {\"k\":\"秋\",\"f\":\"あき\"}, \"はぶどうやりんごがおいしいです。\"]",
+                "ContentVi": "Ở Nhật, tùy theo mùa mà bạn có thể tận hưởng việc đi hái nhiều loại trái cây khác nhau. Vào mùa thu, nho và táo rất ngon nên tôi định đi cùng gia đình.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "秋にはどんな果物が美味しいですか。",
+                        "Explanation": "Trái cây mùa thu: ぶどうやりんご (Nho và táo).",
+                        "Options": [
+                            {
+                                "Text": "スイカ",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "ぶどうとりんご",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "日本の居酒屋文化",
+                "TitleVi": "Văn hóa Izakaya của Nhật Bản",
+                "ContentJp": "日本の居酒屋は、飲み物だけでなく食べ物の種類 cũng nhiều. Giá rẻ và náo nhiệt nên nhiều người thường đi cùng đồng nghiệp sau giờ làm.",
+                "ContentFurigana": "[{\"k\":\"日本\",\"f\":\"にほん\"}, \"の\", {\"k\":\"居酒屋\",\"f\":\"いざかや\"}, \"は、\", {\"k\":\"飲\",\"f\":\"の\"}, \"み\", {\"k\":\"物\",\"f\":\"もの\"}, \"だけでなく\", {\"k\":\"食\",\"f\":\"た\"}, \"べ\", {\"k\":\"物\",\"f\":\"もの\"}, \"の\", {\"k\":\"種類\",\"f\":\"しゅるい\"}, \"も\", {\"k\":\"多\",\"f\":\"おお\"}, \"いです。\", {\"k\":\"値段\",\"f\":\"ねだん\"}, \"も\", {\"k\":\"安\",\"f\":\"やす\"}, \"いし、\", {\"k\":\"賑\",\"f\":\"にぎ\"}, \"やかなので、\", {\"k\":\"仕事\",\"f\":\"しごと\"}, \"の\", {\"k\":\"後\",\"f\":\"あと\"}, \"に\", {\"k\":\"同僚\",\"f\":\"どうりょう\"}, \"と\", {\"k\":\"行\",\"f\":\"い\"}, \"く\", {\"k\":\"人\",\"f\":\"ひと\"}, \"が\", {\"k\":\"多\",\"f\":\"おお\"}, \"いです。\"]",
+                "ContentVi": "Quán rượu Izakaya ở Nhật không chỉ đa dạng về đồ uống mà còn có rất nhiều loại thức ăn. Vì giá cả rẻ và không khí náo nhiệt nên nhiều người thường đi cùng đồng nghiệp sau giờ làm.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どうして居酒屋へ行く人が多いですか。",
+                        "Explanation": "Lý do: 値段も安いし、賑やかなので (Giá rẻ và náo nhiệt).",
+                        "Options": [
+                            {
+                                "Text": "静かに勉強ができるからです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "値段が安くて賑やかだからです",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "食べ物が一種類しかないからです",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "居酒屋에는 어떤 đặc điểm có?",
+                        "Explanation": "Đặc điểm: 食べ物の種類も多い (Thức ăn cũng rất đa dạng).",
+                        "Options": [
+                            {
+                                "Text": "飲み物しかありません",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "食べ物の種類がたくさんあります",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "とても高いです",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "健康的な日本料理",
+                "TitleVi": "Món ăn Nhật Bản tốt cho sức khỏe",
+                "ContentJp": "和食はユネスコ無形文化遺産に登録されました。油をあまり使わないし、野菜が多いので、体にいいと言われています。",
+                "ContentFurigana": "[{\"k\":\"和食\",\"f\":\"わしょく\"}, \"はユネスコ\", {\"k\":\"無形文化遺産\",\"f\":\"むけいぶんかいさん\"}, \"に\", {\"k\":\"登録\",\"f\":\"とうろく\"}, \"されました。\", {\"k\":\"油\",\"f\":\"あぶら\"}, \"をあまり\", {\"k\":\"使\",\"f\":\"つか\"}, \"わないし、\", {\"k\":\"野菜\",\"f\":\"やさい\"}, \"が\", {\"k\":\"多\",\"f\":\"おお\"}, \"いので、\", {\"k\":\"体\",\"f\":\"からだ\"}, \"にいいと\", {\"k\":\"言\",\"f\":\"い\"}, \"われています。\"]",
+                "ContentVi": "Washoku (món ăn Nhật) đã được đăng ký là Di sản văn hóa phi vật thể của UNESCO. Người ta nói rằng nó tốt cho cơ thể vì ít sử dụng dầu mỡ và có nhiều rau.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "和食について何と言われていますか。",
+                        "Explanation": "Được nói là: 体にいいと言われています (Tốt cho cơ thể).",
+                        "Options": [
+                            {
+                                "Text": "体に悪いと言われています",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "油をたくさん使うと言われています",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "健康にいいと言われています",
+                                "IsCorrect": true
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "どうして体にいいのですか。",
+                        "Explanation": "Lý do: 油をあまり使わないし、野菜が多いから (Ít dầu mỡ, nhiều rau).",
+                        "Options": [
+                            {
+                                "Text": "油を使わないし、野菜が多いから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "肉だけを食べるから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "味がとても濃いから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "注文を間違えた店",
+                "TitleVi": "Cửa hàng nhầm lẫn order",
+                "ContentJp": "注文した料理と違うものが運ばれてきましたが、美味しそうだったのでそのまま食べました。店員に謝られましたが、満足しました。",
+                "ContentFurigana": "[{\"k\":\"注文\",\"f\":\"ちゅうもん\"}, \"した\", {\"k\":\"料理\",\"f\":\"りょうり\"}, \"と\", {\"k\":\"違\",\"f\":\"ちが\"}, \"うものが\", {\"k\":\"運\",\"f\":\"はこ\"}, \"ばれてきましたが、\", {\"k\":\"美味\",\"f\":\"おい\"}, \"しそうだったのでそのまま\", {\"k\":\"食\",\"f\":\"た\"}, \"べました。\", {\"k\":\"店員\",\"f\":\"てんいん\"}, \"に\", {\"k\":\"謝\",\"f\":\"あやま\"}, \"られましたが、\", {\"k\":\"満足\",\"f\":\"まんぞく\"}, \"しました。\"]",
+                "ContentVi": "Một món ăn khác với món tôi đã gọi được mang ra, nhưng vì trông có vẻ ngon nên tôi đã ăn luôn. Nhân viên đã xin lỗi tôi, nhưng tôi cảm thấy rất hài lòng.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どうしてそのまま食べましたか。",
+                        "Explanation": "Cấu trúc dự đoán vẻ ngoài: 美味しそうだったので (Vì trông có vẻ ngon).",
+                        "Options": [
+                            {
+                                "Text": "自分が注文した料理だったから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "美味しそうに見えたから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "お腹が空いていなかったから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "店員は何をしましたか。",
+                        "Explanation": "Dùng bị động: 謝られました (Được/bị xin lỗi -> Nhân viên xin lỗi).",
+                        "Options": [
+                            {
+                                "Text": "謝りました",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "怒りました",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "一緒に食べました",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "アレルギーの確認",
+                "TitleVi": "Xác nhận dị ứng",
+                "ContentJp": "私は卵アレルギーがあるので、料理に卵が入っているかどうか店員に聞くようにしています。抜いてもらうことができる店も増えています。",
+                "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"卵\",\"f\":\"たまご\"}, \"アレルギーがあるので、\", {\"k\":\"料理\",\"f\":\"りょうり\"}, \"に\", {\"k\":\"卵\",\"f\":\"たまご\"}, \"が\", {\"k\":\"入\",\"f\":\"はい\"}, \"っているかどうか\", {\"k\":\"店員\",\"f\":\"てんいん\"}, \"に\", {\"k\":\"聞\",\"f\":\"き\"}, \"くようにしています。\", {\"k\":\"抜\",\"f\":\"ぬ\"}, \"いてもらうことができる\", {\"k\":\"店\",\"f\":\"みせ\"}, \"も\", {\"k\":\"増\",\"f\":\"ふ\"}, \"えています。\"]",
+                "ContentVi": "Vì tôi bị dị ứng trứng nên tôi luôn cố gắng hỏi nhân viên xem trong món ăn có trứng hay không. Số lượng các cửa hàng có thể bỏ (trứng) ra giúp khách cũng đang tăng lên.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "この人は店員に何を質問しますか。",
+                        "Explanation": "Câu hỏi: 卵が入っているかどうか (Có trứng hay không).",
+                        "Options": [
+                            {
+                                "Text": "卵はいくらですか",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "料理に卵が入っていますか",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "卵の料理はどれですか",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "最近の店はどうなっていますか。",
+                        "Explanation": "Dựa vào câu cuối: 抜いてもらうことができる店も増えている.",
+                        "Options": [
+                            {
+                                "Text": "卵を必ず入れます",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "アレルギーの人は入れません",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "特定の材料を入れないで作ってくれる店が増えています",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "郷土料理の魅力",
+                "TitleVi": "Sức hút của món ăn địa phương",
+                "ContentJp": "旅行に行ったら、その土地でしか食べられない郷土料理を食べるのが楽しみです。新鮮な材料が使われていて、とても珍しい味がします。",
+                "ContentFurigana": "[{\"k\":\"旅行\",\"f\":\"りょこう\"}, \"に\", {\"k\":\"行\",\"f\":\"い\"}, \"ったら、その\", {\"k\":\"土地\",\"f\":\"とち\"}, \"でしか\", {\"k\":\"食\",\"f\":\"た\"}, \"べられない\", {\"k\":\"郷土料理\",\"f\":\"きょうどりょうり\"}, \"を\", {\"k\":\"食\",\"f\":\"た\"}, \"べるのが\", {\"k\":\"楽\",\"f\":\"たの\"}, \"しみです。\", {\"k\":\"新鮮\",\"f\":\"しんせん\"}, \"な\", {\"k\":\"材料\",\"f\":\"ざいりょう\"}, \"が\", {\"k\":\"使\",\"f\":\"つか\"}, \"われていて、とても\", {\"k\":\"珍\",\"f\":\"めずら\"}, \"しい\", {\"k\":\"味\",\"f\":\"あじ\"}, \"がします。\"]",
+                "ContentVi": "Khi đi du lịch, niềm vui của tôi là ăn những món ăn địa phương mà chỉ nơi đó mới có. Vì sử dụng nguyên liệu tươi ngon nên món ăn có hương vị rất độc đáo.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "旅行の楽しみは何ですか。",
+                        "Explanation": "Niềm vui: その土地でしか食べられない料理を食べる (Ăn món chỉ nơi đó có).",
+                        "Options": [
+                            {
+                                "Text": "有名なレストランで働くこと",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "珍しい郷土料理を食べること",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "家で料理を作ること",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "料理の材料はどうですか。",
+                        "Explanation": "Mô tả: 新鮮な材料 (Nguyên liệu tươi ngon).",
+                        "Options": [
+                            {
+                                "Text": "新鮮です",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "古いです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "高いです",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "ラーメン屋の行列",
+                "TitleVi": "Hàng dài chờ đợi ở quán Ramen",
+                "ContentJp": "駅前にあるラーメン屋はいつも行列ができています。一時間も待たされますが、並んででも食べる価値があるほど美味しいです。",
+                "ContentFurigana": "[{\"k\":\"駅前\",\"f\":\"えきまえ\"}, \"にあるラーメン\", {\"k\":\"屋\",\"f\":\"や\"}, \"はいつも\", {\"k\":\"行列\",\"f\":\"ぎょうれつ\"}, \"ができています。\", {\"k\":\"一時間\",\"f\":\"いちじかん\"}, \"も\", {\"k\":\"待\",\"f\":\"ま\"}, \"たされますが、\", {\"k\":\"並\",\"f\":\"なら\"}, \"んででも\", {\"k\":\"食\",\"f\":\"た\"}, \"べる\", {\"k\":\"価値\",\"f\":\"かち\"}, \"があるほど\", {\"k\":\"美味\",\"f\":\"おい\"}, \"しいです。\"]",
+                "ContentVi": "Quán mì Ramen trước nhà ga lúc nào cũng có hàng dài người chờ đợi. Dù bị bắt chờ tận một tiếng đồng hồ nhưng nó ngon đến mức xứng đáng để xếp hàng ăn.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "ラーメンを食べるのにどのくらいかかりますか。",
+                        "Explanation": "Sử dụng bị động sai khiến: 一時間も待たされます (Bị bắt chờ 1 tiếng).",
+                        "Options": [
+                            {
+                                "Text": "五分だけです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "一時間ぐらい待ちます",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "待ち時間は全然ありません",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "この人はラーメンについてどう思っていますか。",
+                        "Explanation": "Đánh giá: 並んででも食べる価値がある (Đáng để xếp hàng ăn).",
+                        "Options": [
+                            {
+                                "Text": "待つのは嫌だから食べたくない",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "待ってもいいほど美味しい",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "あまり美味しくない",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "焼肉の食べ放題",
+                "TitleVi": "Buffet nướng ăn thỏa thích",
+                "ContentJp": "焼肉の食べ放題に行きました. 二千円で好きなだけ食べられるので、学生に人気があります。食べすぎてしまいました。",
+                "ContentFurigana": "[{\"k\":\"焼肉\",\"f\":\"やきにく\"}, \"の\", {\"k\":\"食\",\"f\":\"た\"}, \"べ\", {\"k\":\"放\",\"f\":\"ほう\"}, {\"k\":\"題\",\"f\":\"だい\"}, \"に\", {\"k\":\"行\",\"f\":\"い\"}, \"きました。\", {\"k\":\"二千円\",\"f\":\"にせんえん\"}, \"で\", {\"k\":\"好\",\"f\":\"す\"}, \"きなだけ\", {\"k\":\"食\",\"f\":\"た\"}, \"べられるので、\", {\"k\":\"学生\",\"f\":\"がくせい\"}, \"に\", {\"k\":\"人気\",\"f\":\"にんき\"}, \"があります。\", {\"k\":\"食\",\"f\":\"た\"}, \"べすぎてしまいました。\"]",
+                "ContentVi": "Tôi đã đi ăn buffet thịt nướng. Vì chỉ với 2000 yên mà có thể ăn bao nhiêu tùy thích nên nó rất phổ biến với sinh viên. Tôi đã lỡ ăn quá nhiều.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どうして学生に人気がありますか。",
+                        "Explanation": "Lý do: 好きなだけ食べられるから (Vì được ăn thỏa thích).",
+                        "Options": [
+                            {
+                                "Text": "肉が嫌いだから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "好きなだけ食べられるから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "とても高いから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "この人はどうなりましたか。",
+                        "Explanation": "Kết quả: 食べすぎてしまいました (Lỡ ăn quá nhiều).",
+                        "Options": [
+                            {
+                                "Text": "あまり食べませんでした",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "食べすぎてしまいました",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "お金を忘れました",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "スーパーの閉店前",
+                "TitleVi": "Trước giờ siêu thị đóng cửa",
+                "ContentJp": "夜の八時を過ぎると、お弁当が半額になります。それを買うために、仕事が遅くなった時はスーパーに寄ります。",
+                "ContentFurigana": "[{\"k\":\"夜\",\"f\":\"よる\"}, \"の\", {\"k\":\"八時\",\"f\":\"はちじ\"}, \"を\", {\"k\":\"過\",\"f\":\"す\"}, \"ぎると、お\", {\"k\":\"弁当\",\"f\":\"べんとう\"}, \"が\", {\"k\":\"半額\",\"f\":\"はんがく\"}, \"になります。それを\", {\"k\":\"買\",\"f\":\"か\"}, \"うために、\", {\"k\":\"仕事\",\"f\":\"しごと\"}, \"が\", {\"k\":\"遅\",\"f\":\"おそ\"}, \"くなった\", {\"k\":\"時\",\"f\":\"とき\"}, \"はスーパーに\", {\"k\":\"寄\",\"f\":\"よ\"}, \"ります。\"]",
+                "ContentVi": "Sau 8 giờ tối, cơm hộp sẽ được giảm giá nửa giá. Để mua chúng, mỗi khi làm việc muộn tôi thường ghé qua siêu thị.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "お弁当はいつ安くなりますか。",
+                        "Explanation": "Thời điểm: 八時を過ぎると (Sau 8 giờ).",
+                        "Options": [
+                            {
+                                "Text": "朝早く",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "お昼の時",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "八時を過ぎてから",
+                                "IsCorrect": true
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "どうしてお店に寄りますか。",
+                        "Explanation": "Mục đích: 半額のお弁当を買うため (Để mua cơm hộp giảm nửa giá).",
+                        "Options": [
+                            {
+                                "Text": "半額のお弁当を買うため",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "友達に会うため",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "仕事を休憩するため",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "自炊を続ける理由",
+                "TitleVi": "Lý do tiếp tục tự nấu ăn",
+                "ContentJp": "外食は便利ですがお金がかかります. 節約のために自炊をしていますが、最近は料理の腕が上がって楽しくなりました。",
+                "ContentFurigana": "[{\"k\":\"外食\",\"f\":\"がいしょく\"}, \"は\", {\"k\":\"便利\",\"f\":\"べんり\"}, \"ですがお\", {\"k\":\"金\",\"f\":\"かね\"}, \"がかかります。\", {\"k\":\"節約\",\"f\":\"せつやく\"}, \"のために\", {\"k\":\"自炊\",\"f\":\"じすい\"}, \"をしていますが、\", {\"k\":\"最近\",\"f\":\"さいきん\"}, \"は\", {\"k\":\"料理\",\"f\":\"りょうり\"}, \"の\", {\"k\":\"腕\",\"f\":\"うで\"}, \"が\", {\"k\":\"上\",\"f\":\"あ\"}, \"がって\", {\"k\":\"楽\",\"f\":\"たの\"}, \"しくなりました。\"]",
+                "ContentVi": "Ăn ngoài thì tiện lợi nhưng tốn kém. Tôi đang tự nấu ăn để tiết kiệm, nhưng gần đây tay nghề nấu nướng nâng cao nên tôi cảm thấy rất vui.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どうして自炊をしていますか。",
+                        "Explanation": "Lý do: 節約のため (Để tiết kiệm).",
+                        "Options": [
+                            {
+                                "Text": "外食が好きだから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "節約するため",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "暇だから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "最近の様子はどうですか。",
+                        "Explanation": "Tình trạng: 料理の腕が上がった (Tay nghề nấu ăn đã tăng lên).",
+                        "Options": [
+                            {
+                                "Text": "料理が下手になりました",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "自炊が嫌いになりました",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "料理が上手になって楽しくなりました",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "和菓子と抹茶",
+                "TitleVi": "Bánh ngọt truyền thống và Matcha",
+                "ContentJp": "和菓子は見た目がとても美しくて、季節を感じることができます。苦い抹茶と一緒に食べると、甘さが引き立ってとても美味しいです。",
+                "ContentFurigana": "[{\"k\":\"和菓子\",\"f\":\"わがし\"}, \"は\", {\"k\":\"見\",\"f\":\"み\"}, \"た\", {\"k\":\"目\",\"f\":\"め\"}, \"がとても\", {\"k\":\"美\",\"f\":\"うつく\"}, \"しくて、\", {\"k\":\"季節\",\"f\":\"きせつ\"}, \"を\", {\"k\":\"感\",\"f\":\"かん\"}, \"じることができます。\", {\"k\":\"苦\",\"f\":\"にが\"}, \"い\", {\"k\":\"抹茶\",\"f\":\"まっちゃ\"}, \"と\", {\"k\":\"一緒\",\"f\":\"いっしょ\"}, \"に\", {\"k\":\"食\",\"f\":\"た\"}, \"べると、\", {\"k\":\"甘\",\"f\":\"あま\"}, \"さが\", {\"k\":\"引\",\"f\":\"ひ\"}, \"き\", {\"k\":\"立\",\"f\":\"た\"}, \"ってとても\", {\"k\":\"美味\",\"f\":\"おい\"}, \"しいです。\"]",
+                "ContentVi": "Bánh ngọt truyền thống Nhật Bản có vẻ ngoài rất đẹp và giúp ta cảm nhận được bốn mùa. Khi ăn cùng với Matcha đắng, vị ngọt của bánh sẽ nổi bật lên và rất ngon.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "和菓子はどうして美しいですか。",
+                        "Explanation": "Đặc điểm: 季節を感じることができる (Cảm nhận được mùa/vẻ đẹp theo mùa).",
+                        "Options": [
+                            {
+                                "Text": "季節を感じることができるからです",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "安くて大きいからです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "機械で作るからです",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "どうして抹茶と一緒に食べますか。",
+                        "Explanation": "Lý do: 甘さが引き立つから (Để làm nổi bật vị ngọt).",
+                        "Options": [
+                            {
+                                "Text": "抹茶が甘いからです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "お腹が空くからです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "甘さが引き立って美味しいからです",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "ピザ屋で",
+                "TitleVi": "Tại quán Pizza",
+                "ContentJp": "私は昨日、新しいピザ屋へ行きました。ピザとコーラを注文しました。ピザはとても大きくて、美味しかったです。また行きたいです。",
+                "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"昨日\",\"f\":\"きのう\"}, \"、\", {\"k\":\"新\",\"f\":\"あたら\"}, \"しいピザ\", {\"k\":\"屋\",\"f\":\"や\"}, \"へ\", {\"k\":\"行\",\"f\":\"い\"}, \"きました。ピザとコーラを\", {\"k\":\"注文\",\"f\":\"ちゅうもん\"}, \"しました。ピザはとても\", {\"k\":\"大\",\"f\":\"おお\"}, \"きくて、\", {\"k\":\"美味\",\"f\":\"おい\"}, \"しかったです。また\", {\"k\":\"行\",\"f\":\"い\"}, \"きたいです。\"]",
+                "ContentVi": "Hôm qua tôi đã đi đến một quán pizza mới. Tôi đã gọi pizza và coca. Pizza rất to và ngon. Tôi muốn đi lại lần nữa.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "何を注文しましたか。",
+                        "Explanation": "Dựa vào câu: ピザとコーラを注文しました。",
+                        "Options": [
+                            {
+                                "Text": "ピザとコーヒー",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "ピザとコーラ",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "パスタとコーラ",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "ピザはどうでしたか。",
+                        "Explanation": "Dựa vào câu: とても大きくて、美味しかったです。",
+                        "Options": [
+                            {
+                                "Text": "小さくて美味しかった",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "大きくてまずかった",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "大きくて美味しかった",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "くだもの",
+                "TitleVi": "Trái cây",
+                "ContentJp": "私は果物が大好きです。夏はスイカを食べます。冬はみかんをたくさん食べます。甘い果物は体にいいです。",
+                "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"果物\",\"f\":\"くだもの\"}, \"が\", {\"k\":\"大好\",\"f\":\"だいす\"}, \"きです。\", {\"k\":\"夏\",\"f\":\"なつ\"}, \"はスイカを\", {\"k\":\"食\",\"f\":\"た\"}, \"べます。\", {\"k\":\"冬\",\"f\":\"ふゆ\"}, \"はみかんをたくさん\", {\"k\":\"食\",\"f\":\"た\"}, \"べます。\", {\"k\":\"甘\",\"f\":\"あま\"}, \"い\", {\"k\":\"果物\",\"f\":\"くだもの\"}, \"は\", {\"k\":\"体\",\"f\":\"からだ\"}, \"にいいです。\"]",
+                "ContentVi": "Tôi rất thích trái cây. Mùa hè tôi ăn dưa hấu. Mùa đông tôi ăn rất nhiều quýt. Trái cây ngọt rất tốt cho cơ thể.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "夏に何を食べますか。",
+                        "Explanation": "Dựa vào câu: 夏はスイカを食べます。",
+                        "Options": [
+                            {
+                                "Text": "みかん",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "スイカ",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "りんご",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "甘い果物はどうですか。",
+                        "Explanation": "Dựa vào câu cuối: 甘い果物は体にいいです。",
+                        "Options": [
+                            {
+                                "Text": "体に悪いです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "体にいいです",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "パン屋",
+                "TitleVi": "Tiệm bánh mì",
+                "ContentJp": "家の近くに小さいパン屋があります。毎朝、美味しいパンを買いに行きます。私は卵のパンが一番好きです。",
+                "ContentFurigana": "[{\"k\":\"家\",\"f\":\"いえ\"}, \"の\", {\"k\":\"近\",\"f\":\"ちか\"}, \"くに\", {\"k\":\"小\",\"f\":\"ちい\"}, \"さいパン\", {\"k\":\"屋\",\"f\":\"や\"}, \"があります。\", {\"k\":\"毎朝\",\"f\":\"まいあさ\"}, \"、\", {\"k\":\"美味\",\"f\":\"おい\"}, \"しいパンを\", {\"k\":\"買\",\"f\":\"か\"}, \"いに\", {\"k\":\"行\",\"f\":\"い\"}, \"きます。\", {\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"卵\",\"f\":\"たまご\"}, \"のパンが\", {\"k\":\"一番好\",\"f\":\"いちばんす\"}, \"きです。\"]",
+                "ContentVi": "Gần nhà tôi có một tiệm bánh mì nhỏ. Mỗi sáng tôi đều đi mua bánh mì ngon. Tôi thích bánh mì trứng nhất.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "何のパンが一番好きですか。",
+                        "Explanation": "Dựa vào câu: 私は卵のパンが一番好きです。",
+                        "Options": [
+                            {
+                                "Text": "肉のパン",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "卵のパン",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "甘いパン",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "私はいつパンを買いに行きますか。",
+                        "Explanation": "Dựa vào câu: 毎朝、美味しいパンを買いに行きます。",
+                        "Options": [
+                            {
+                                "Text": "毎晩",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "毎朝",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "日曜日",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "お茶",
+                "TitleVi": "Trà",
+                "ContentJp": "日本人はよくお茶を飲みます。熱いお茶も冷たいお茶も好きです。私は毎日、仕事の後に冷たいお茶を飲みます。",
+                "ContentFurigana": "[{\"k\":\"日本人\",\"f\":\"にほんじん\"}, \"はよくお\", {\"k\":\"茶\",\"f\":\"ちゃ\"}, \"を\", {\"k\":\"飲\",\"f\":\"の\"}, \"みます。\", {\"k\":\"熱\",\"f\":\"あつ\"}, \"いお\", {\"k\":\"茶\",\"f\":\"ちゃ\"}, \"も\", {\"k\":\"冷\",\"f\":\"つめ\"}, \"たいお\", {\"k\":\"茶\",\"f\":\"ちゃ\"}, \"も\", {\"k\":\"好\",\"f\":\"す\"}, \"きです。\", {\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"毎日\",\"f\":\"まいにち\"}, \"、\", {\"k\":\"仕事\",\"f\":\"しごと\"}, \"の\", {\"k\":\"後\",\"f\":\"あと\"}, \"に\", {\"k\":\"冷\",\"f\":\"つめ\"}, \"たいお\", {\"k\":\"茶\",\"f\":\"ちゃ\"}, \"を\", {\"k\":\"飲\",\"f\":\"の\"}, \"みます。\"]",
+                "ContentVi": "Người Nhật thường hay uống trà. Họ thích cả trà nóng và trà lạnh. Mỗi ngày sau khi làm việc, tôi đều uống trà lạnh.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "いつ冷たいお茶を飲みますか。",
+                        "Explanation": "Thời điểm: 毎日、仕事の後に (Mỗi ngày, sau khi làm việc).",
+                        "Options": [
+                            {
+                                "Text": "仕事の前",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "朝起きた時",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "仕事の後",
+                                "IsCorrect": true
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "日本人はどんなお茶が好きですか。",
+                        "Explanation": "Dựa vào câu: 熱いお茶も冷たいお茶も好きです。",
+                        "Options": [
+                            {
+                                "Text": "熱いお茶だけ好きです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "冷たいお茶だけ好きです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "熱いお茶も冷たいお茶も好きです",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "魚料理",
+                "TitleVi": "Món cá",
+                "ContentJp": "日本の魚は新鮮で美味しいです。私は刺身が大好きです。でも、私の弟は魚があまり好きではありません。",
+                "ContentFurigana": "[{\"k\":\"日本\",\"f\":\"にほん\"}, \"の\", {\"k\":\"魚\",\"f\":\"さかな\"}, \"は\", {\"k\":\"新鮮\",\"f\":\"しんせん\"}, \"で\", {\"k\":\"美味\",\"f\":\"おい\"}, \"しいです。\", {\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"刺身\",\"f\":\"さしみ\"}, \"が\", {\"k\":\"大好\",\"f\":\"だいす\"}, \"きです。でも、\", {\"k\":\"私\",\"f\":\"わたし\"}, \"の\", {\"k\":\"弟\",\"f\":\"おとうと\"}, \"は\", {\"k\":\"魚\",\"f\":\"さかな\"}, \"があまり\", {\"k\":\"好\",\"f\":\"す\"}, \"きではありません。\"]",
+                "ContentVi": "Cá ở Nhật rất tươi và ngon. Tôi rất thích sashimi. Nhưng em trai tôi thì không thích cá lắm.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "弟はどうですか。",
+                        "Explanation": "Dựa vào câu: 弟は魚があまり好きではありません。",
+                        "Options": [
+                            {
+                                "Text": "刺身が大好きだ",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "魚があまり好きではない",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "料理が上手だ",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "私は何が大好きですか。",
+                        "Explanation": "Dựa vào câu: 私は刺身が大好きです。",
+                        "Options": [
+                            {
+                                "Text": "肉",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "刺身",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "野菜",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "日本のコンビニ弁当",
+                "TitleVi": "Cơm hộp cửa hàng tiện lợi Nhật Bản",
+                "ContentJp": "日本のコンビニでは、いろいろな種類のお弁当が売られています。季節によってメニューが変わるので、毎日買っても飽きません。温めてもらうこともできるので、とても便利です。",
+                "ContentFurigana": "[{\"k\":\"日本\",\"f\":\"にほん\"}, \"のコンビニでは、いろいろな\", {\"k\":\"種類\",\"f\":\"しゅるい\"}, \"のお\", {\"k\":\"弁当\",\"f\":\"べんとう\"}, \"が\", {\"k\":\"売\",\"f\":\"う\"}, \"られています。\", {\"k\":\"季節\",\"f\":\"きせつ\"}, \"によってメニューが\", {\"k\":\"変\",\"f\":\"か\"}, \"わるので、\", {\"k\":\"毎日買\",\"f\":\"まいにちか\"}, \"っても\", {\"k\":\"飽\",\"f\":\"あ\"}, \"きません。\", {\"k\":\"温\",\"f\":\"あたた\"}, \"めてもらうこともできるので、とても\", {\"k\":\"便利\",\"f\":\"べんり\"}, \"です。\"]",
+                "ContentVi": "Ở các cửa hàng tiện lợi Nhật Bản có bán rất nhiều loại cơm hộp. Vì thực đơn thay đổi theo mùa nên dù mua mỗi ngày cũng không thấy chán. Vì có thể nhờ hâm nóng lại nên rất tiện lợi.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どうして毎日買っても飽きませんか。",
+                        "Explanation": "Lý do: 季節によってメニューが変わるから (Vì thực đơn thay đổi theo mùa).",
+                        "Options": [
+                            {
+                                "Text": "値段がとても安いから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "季節によってメニューが変わるから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "自分でお弁当を作るから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "コンビニ弁当はどうして便利ですか。",
+                        "Explanation": "Sự tiện lợi: 温めてもらうこともできるから (Vì có thể được hâm nóng).",
+                        "Options": [
+                            {
+                                "Text": "温めてもらうことができるから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "家まで配達してくれるから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "回転寿司",
+                "TitleVi": "Sushi băng chuyền",
+                "ContentJp": "回転寿司は、皿の色によって値段が違います。好きなものを自由に取って食べられるのが魅力です。最近では、魚以外のデザートやラーメンも人気があります。",
+                "ContentFurigana": "[{\"k\":\"回転寿司\",\"f\":\"かいてんずし\"}, \"は、\", {\"k\":\"皿\",\"f\":\"さら\"}, \"の\", {\"k\":\"色\",\"f\":\"いろ\"}, \"によって\", {\"k\":\"値段\",\"f\":\"ねだん\"}, \"が\", {\"k\":\"違\",\"f\":\"ちが\"}, \"います。\", {\"k\":\"好\",\"f\":\"す\"}, \"きなものを\", {\"k\":\"自由\",\"f\":\"じゆう\"}, \"に\", {\"k\":\"取\",\"f\":\"と\"}, \"って\", {\"k\":\"食\",\"f\":\"た\"}, \"べられるのが\", {\"k\":\"魅力\",\"f\":\"みりょく\"}, \"です。\", {\"k\":\"最近\",\"f\":\"さいきん\"}, \"では、\", {\"k\":\"魚以外\",\"f\":\"さかないがい\"}, \"のデザートやラーメンも\", {\"k\":\"人気\",\"f\":\"にんき\"}, \"があります。\"]",
+                "ContentVi": "Sushi băng chuyền có giá khác nhau tùy theo màu sắc của đĩa. Sức hút của nó là bạn có thể tự do lấy và ăn những gì mình thích. Gần đây, ngoài cá ra thì các món tráng miệng và mì ramen cũng rất được ưa chuộng.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "値段は何で決まりますか。",
+                        "Explanation": "Yếu tố quyết định giá: 皿の色 (Màu của chiếc đĩa).",
+                        "Options": [
+                            {
+                                "Text": "食べる時間",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "魚の種類",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "皿の色",
+                                "IsCorrect": true
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "最近、回転寿司では魚以外にどんなものが人気ですか。",
+                        "Explanation": "Dựa vào câu: 最近では、魚以外のデザートやラーメンも人気があります。",
+                        "Options": [
+                            {
+                                "Text": "肉や野菜",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "デザートやラーメン",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "パンやコーヒー",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "自動販売機",
+                "TitleVi": "Máy bán hàng tự động",
+                "ContentJp": "日本の自動販売機には、温かい飲み物と冷たい飲み物の両方があります。冬でも外で温かいコーヒーが買えるのは、日本らしい風景です。最近では、スープやだしを売っている機械もあります。",
+                "ContentFurigana": "[{\"k\":\"日本\",\"f\":\"にほん\"}, \"の\", {\"k\":\"自動販売機\",\"f\":\"じどうはんばいき\"}, \"には、\", {\"k\":\"温\",\"f\":\"あたた\"}, \"かい\", {\"k\":\"飲\",\"f\":\"の\"}, \"み\", {\"k\":\"物\",\"f\":\"もの\"}, \"と\", {\"k\":\"冷\",\"f\":\"つめ\"}, \"たい\", {\"k\":\"飲\",\"f\":\"の\"}, \"み\", {\"k\":\"物\",\"f\":\"もの\"}, \"の\", {\"k\":\"両方\",\"f\":\"りょうほう\"}, \"があります。\", {\"k\":\"冬\",\"f\":\"ふゆ\"}, \"でも\", {\"k\":\"外\",\"f\":\"そと\"}, \"で\", {\"k\":\"温\",\"f\":\"あたた\"}, \"かいコーヒーが\", {\"k\":\"買\",\"f\":\"か\"}, \"えるのは、\", {\"k\":\"日本\",\"f\":\"にほん\"}, \"らしい\", {\"k\":\"風景\",\"f\":\"ふうけい\"}, \"です。\", {\"k\":\"最近\",\"f\":\"さいきん\"}, \"では、スープやだしを\", {\"k\":\"売\",\"f\":\"う\"}, \"っている\", {\"k\":\"機械\",\"f\":\"きかい\"}, \"もあります。\"]",
+                "ContentVi": "Các máy bán hàng tự động ở Nhật có cả đồ uống nóng và lạnh. Việc có thể mua cà phê nóng ở ngoài trời ngay cả trong mùa đông là một khung cảnh rất đặc trưng của Nhật Bản. Gần đây, còn có những chiếc máy bán cả súp và nước dùng dashi.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "自動販売機の特徴は何ですか。",
+                        "Explanation": "Đặc trưng: 温かい飲み物も売っている (Có bán cả đồ uống nóng).",
+                        "Options": [
+                            {
+                                "Text": "飲み物が無料であること",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "家の中にしかないこと",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "温かい飲み物も売っていること",
+                                "IsCorrect": true
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "最近の自動販売機では何を売っている機械もありますか。",
+                        "Explanation": "Dựa vào câu: 最近では、スープやだしを売っている機械もあります。",
+                        "Options": [
+                            {
+                                "Text": "お弁当",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "スープやだし",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "本や雑誌",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "おにぎりの歴史",
+                "TitleVi": "Lịch sử của cơm nắm",
+                "ContentJp": "おにぎりは、古くから日本人に愛されてきました。持ち運びが簡単なので、昔は武士が戦場へ持って行きました。現在では、ツナマヨネーズなどの洋風の具も非常に人気があります。",
+                "ContentFurigana": "[{\"k\":\"古\",\"f\":\"ふる\"}, \"くから\", {\"k\":\"日本人\",\"f\":\"にほんじん\"}, \"に\", {\"k\":\"愛\",\"f\":\"あい\"}, \"されてきました。\", {\"k\":\"持\",\"f\":\"も\"}, \"ち\", {\"k\":\"運\",\"f\":\"はこ\"}, \"びが\", {\"k\":\"簡単\",\"f\":\"かんたん\"}, \"なので、\", {\"k\":\"昔\",\"f\":\"むかし\"}, \"は\", {\"k\":\"武士\",\"f\":\"ぶし\"}, \"が\", {\"k\":\"戦場\",\"f\":\"せんじょう\"}, \"へ\", {\"k\":\"持\",\"f\":\"も\"}, \"って\", {\"k\":\"行\",\"f\":\"い\"}, \"きました。\", {\"k\":\"現在\",\"f\":\"げんざい\"}, \"では、ツナマヨネーズなどの\", {\"k\":\"洋風\",\"f\":\"ようふう\"}, \"の\", {\"k\":\"具\",\"f\":\"ぐ\"}, \"も\", {\"k\":\"非常\",\"f\":\"ひじょう\"}, \"に\", {\"k\":\"人気\",\"f\":\"にんき\"}, \"があります。\"]",
+                "ContentVi": "Cơm nắm đã được người Nhật yêu thích từ thời xa xưa. Vì dễ dàng mang theo nên ngày xưa các võ sĩ thường mang ra chiến trường. Ngày nay, các loại nhân mang phong cách phương Tây như cá ngừ mayonnaise cũng rất được ưa chuộng.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "昔、どうして武士はおにぎりを持って行きましたか。",
+                        "Explanation": "Lý do: 持ち運びが簡単だから (Vì dễ dàng mang theo).",
+                        "Options": [
+                            {
+                                "Text": "ツナマヨネーズが入っていたから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "持ち運びが簡単だったから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "とても重かったから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "現在、どんなおにぎりの具が人気ですか。",
+                        "Explanation": "Dựa vào câu: ツナマヨネーズなどの洋風の具も非常に人気があります。",
+                        "Options": [
+                            {
+                                "Text": "昔の具だけ",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "洋風の具",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "野菜の具",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "食事のマナー",
+                "TitleVi": "Quy tắc ăn uống",
+                "ContentJp": "日本では、食べる前に「いただきます」、食べた後に「ごちそうさま」と言います。これは、食べ物を作った人や、材料となった命への感謝の気持ちを表しています。この習慣は、子供の頃から厳しく教えられます。",
+                "ContentFurigana": "[{\"k\":\"日本\",\"f\":\"にほん\"}, \"では、\", {\"k\":\"食\",\"f\":\"た\"}, \"べる\", {\"k\":\"前\",\"f\":\"まえ\"}, \"に「いただきます」、\", {\"k\":\"食\",\"f\":\"た\"}, \"べた\", {\"k\":\"後\",\"f\":\"あと\"}, \"に「ごちそうさま」と\", {\"k\":\"言\",\"f\":\"い\"}, \"います。これは、\", {\"k\":\"食\",\"f\":\"た\"}, \"べ\", {\"k\":\"物\",\"f\":\"もの\"}, \"を\", {\"k\":\"作\",\"f\":\"つく\"}, \"った\", {\"k\":\"人\",\"f\":\"ひと\"}, \"や、\", {\"k\":\"材料\",\"f\":\"ざいりょう\"}, \"となった\", {\"k\":\"命\",\"f\":\"いのち\"}, \"への\", {\"k\":\"感謝\",\"f\":\"かんしゃ\"}, \"の\", {\"k\":\"気持\",\"f\":\"きも\"}, \"ちを\", {\"k\":\"表\",\"f\":\"あらわ\"}, \"しています。この\", {\"k\":\"習慣\",\"f\":\"しゅうかん\"}, \"は、\", {\"k\":\"子供\",\"f\":\"こども\"}, \"の\", {\"k\":\"頃\",\"f\":\"ころ\"}, \"から\", {\"k\":\"厳\",\"f\":\"きび\"}, \"しく\", {\"k\":\"教\",\"f\":\"おし\"}, \"えられます。\"]",
+                "ContentVi": "Ở Nhật, trước khi ăn sẽ nói 'Itadakimasu', sau khi ăn xong sẽ nói 'Gochisousama'. Điều này thể hiện lòng biết ơn đối với người làm ra thức ăn và những sinh mệnh đã trở thành nguyên liệu. Thói quen này được dạy dỗ nghiêm khắc từ khi còn nhỏ.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どうして挨拶をしますか。",
+                        "Explanation": "Mục đích: 感謝の気持ちを表すため (Để thể hiện lòng biết ơn).",
+                        "Options": [
+                            {
+                                "Text": "お腹が空いていることを知らせるため",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "感謝の気持ちを表すため",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "早く食べたいから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "この習慣はいつから教えられますか。",
+                        "Explanation": "Dựa vào câu cuối: 子供の頃から (Từ khi còn nhỏ).",
+                        "Options": [
+                            {
+                                "Text": "子供の頃から",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "大人になってから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

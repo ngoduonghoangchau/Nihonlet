@@ -1,0 +1,4686 @@
+[
+    {
+  "title": "N4 - Bộ 21: Sự hối tiếc và lỡ làm gì đó (V-てしまいました)",
+  "level": "N4",
+  "description": "Diễn tả tâm trạng hối tiếc, hối hận hoặc đáng tiếc khi lỡ làm điều gì đó ngoài ý muốn, hoặc một sự cố không may xảy ra.",
+  "isPremium": false,
+  "examples": [
+    "時計を壊してしまいました。(Tôi đã lỡ làm hỏng chiếc đồng hồ mất rồi.)",
+    "どこかで財布をなくしてしまいました。(Tôi đã lỡ làm mất ví ở đâu đó mất rồi.)",
+    "全部お金を使ってしまいました。(Tôi đã lỡ tiêu hết sạch tiền mất rồi.)"
+  ],
+  "questions": [
+    {
+      "questionText": "大切な書類を家に ___ しまいました。",
+      "explanation": "Diễn tả sự hối tiếc vì 'lỡ quên' (忘れます) tài liệu quan trọng ở nhà.",
+      "points": 5,
+      "options": [
+        { "optionText": "忘れて", "isCorrect": true },
+        { "optionText": "忘れ", "isCorrect": false },
+        { "optionText": "忘れられ", "isCorrect": false },
+        { "optionText": "忘れた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "道で転んで（ころんで）、ズボンが ___ しまいました。",
+      "explanation": "Sự cố ngoài ý muốn: quần 'bị bẩn' (汚れます) do ngã.",
+      "points": 5,
+      "options": [
+        { "optionText": "汚れて", "isCorrect": true },
+        { "optionText": "汚して", "isCorrect": false },
+        { "optionText": "汚れ", "isCorrect": false },
+        { "optionText": "汚し", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "パスポートをどこかに ___ しまいました。どうしましょう。",
+      "explanation": "Tâm trạng hoảng hốt khi 'lỡ đánh mất' (なくします) hộ chiếu.",
+      "points": 5,
+      "options": [
+        { "optionText": "なくし", "isCorrect": false },
+        { "optionText": "なくして", "isCorrect": true },
+        { "optionText": "なくさなて", "isCorrect": false },
+        { "optionText": "なくて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "雨に降られて、服が ___ しまいました。",
+      "explanation": "Sự việc đáng tiếc: quần áo 'bị ướt' (濡れます) do mưa.",
+      "points": 5,
+      "options": [
+        { "optionText": "濡れて", "isCorrect": true },
+        { "optionText": "濡れ", "isCorrect": false },
+        { "optionText": "濡らし", "isCorrect": false },
+        { "optionText": "濡れられ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "昨日、飲み会で遅くまで ___ しまいました。",
+      "explanation": "Hối tiếc vì 'lỡ uống' (飲みます) quá nhiều/quá muộn.",
+      "points": 5,
+      "options": [
+        { "optionText": "飲んで", "isCorrect": true },
+        { "optionText": "飲み", "isCorrect": false },
+        { "optionText": "飲みて", "isCorrect": false },
+        { "optionText": "飲んだ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "寝坊して、バスに ___ しまいました。",
+      "explanation": "Lỡ chuyến xe buýt (乗り遅れます).",
+      "points": 5,
+      "options": [
+        { "optionText": "乗り遅れて", "isCorrect": true },
+        { "optionText": "乗り遅れ", "isCorrect": false },
+        { "optionText": "遅れて", "isCorrect": false },
+        { "optionText": "遅れ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あ、コップを ___ しまいました。すみません。",
+      "explanation": "Lỡ làm vỡ (割ります) cái cốc.",
+      "points": 5,
+      "options": [
+        { "optionText": "割って", "isCorrect": true },
+        { "optionText": "割れて", "isCorrect": false },
+        { "optionText": "割り", "isCorrect": false },
+        { "optionText": "割らて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "パソコンが ___ しまいました。仕事ができません。",
+      "explanation": "Máy tính 'bị hỏng' (壊れます) - một sự cố ngoài ý muốn.",
+      "points": 5,
+      "options": [
+        { "optionText": "壊れて", "isCorrect": true },
+        { "optionText": "壊して", "isCorrect": false },
+        { "optionText": "壊れ", "isCorrect": false },
+        { "optionText": "壊し", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "鍵を部屋の中に ___ しまいました。",
+      "explanation": "Lỡ để quên (置きます) chìa khóa trong phòng.",
+      "points": 5,
+      "options": [
+        { "optionText": "置いて", "isCorrect": true },
+        { "optionText": "置き", "isCorrect": false },
+        { "optionText": "置いての", "isCorrect": false },
+        { "optionText": "置いた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "食べすぎたので、おなかが ___ しまいました。",
+      "explanation": "Kết quả không tốt: 'đau bụng' (壊します - bụng bị hỏng/đau).",
+      "points": 5,
+      "options": [
+        { "optionText": "壊して", "isCorrect": true },
+        { "optionText": "壊れて", "isCorrect": false },
+        { "optionText": "壊し", "isCorrect": false },
+        { "optionText": "壊した", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "彼女との約束の時間に ___ しまいました。",
+      "explanation": "Lỡ bị muộn (遅れます) giờ hẹn.",
+      "points": 5,
+      "options": [
+        { "optionText": "遅れて", "isCorrect": true },
+        { "optionText": "遅れ", "isCorrect": false },
+        { "optionText": "遅らせて", "isCorrect": false },
+        { "optionText": "遅く", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "スーパーに傘を ___ しまいました。",
+      "explanation": "Lỡ để quên (忘れます) ô ở siêu thị.",
+      "points": 5,
+      "options": [
+        { "optionText": "忘れて", "isCorrect": true },
+        { "optionText": "忘れ", "isCorrect": false },
+        { "optionText": "忘れられ", "isCorrect": false },
+        { "optionText": "忘れた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ダイエット中なのに、甘い物を ___ しまいました。",
+      "explanation": "Hối hận vì 'lỡ ăn' (食べます) đồ ngọt dù đang giảm cân.",
+      "points": 5,
+      "options": [
+        { "optionText": "食べて", "isCorrect": true },
+        { "optionText": "食べ", "isCorrect": false },
+        { "optionText": "食べられ", "isCorrect": false },
+        { "optionText": "食べって", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "秘密の話を誰かに ___ しまいました。",
+      "explanation": "Lỡ lời nói ra (話します/言います) bí mật cho ai đó.",
+      "points": 5,
+      "options": [
+        { "optionText": "話して", "isCorrect": true },
+        { "optionText": "話し", "isCorrect": false },
+        { "optionText": "話す", "isCorrect": false },
+        { "optionText": "話した", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "道が分からなくなって、 ___ しまいました。",
+      "explanation": "Bị lạc đường (迷います - まよいます).",
+      "points": 5,
+      "options": [
+        { "optionText": "迷って", "isCorrect": true },
+        { "optionText": "迷い", "isCorrect": false },
+        { "optionText": "迷わて", "isCorrect": false },
+        { "optionText": "迷いて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "間違えて、反対の電車に ___ しまいました。",
+      "explanation": "Lỡ leo nhầm (乗ります) tàu đi hướng ngược lại.",
+      "points": 5,
+      "options": [
+        { "optionText": "乗って", "isCorrect": true },
+        { "optionText": "乗り", "isCorrect": false },
+        { "optionText": "乗られ", "isCorrect": false },
+        { "optionText": "乗りて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "昨日、携帯電話を水の中に ___ しまいました。",
+      "explanation": "Sự cố đáng tiếc: 'lỡ làm rơi' (落とします - おとします).",
+      "points": 5,
+      "options": [
+        { "optionText": "落として", "isCorrect": true },
+        { "optionText": "落ちて", "isCorrect": false },
+        { "optionText": "落とし", "isCorrect": false },
+        { "optionText": "落ち", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "急いでいたので、宿題を ___ しまいました。",
+      "explanation": "Lỡ quên (忘れます) làm bài tập.",
+      "points": 5,
+      "options": [
+        { "optionText": "忘れて", "isCorrect": true },
+        { "optionText": "忘れ", "isCorrect": false },
+        { "optionText": "忘れられ", "isCorrect": false },
+        { "optionText": "忘れた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "会議で自分の意見がうまく ___ しまいました。",
+      "explanation": "Nghĩa nhấn mạnh hành động: lỡ 'không nói được' (言えなくなって).",
+      "points": 5,
+      "options": [
+        { "optionText": "言えなくて", "isCorrect": true },
+        { "optionText": "言え", "isCorrect": false },
+        { "optionText": "言い", "isCorrect": false },
+        { "optionText": "言わなくて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あまりにも悲しくて、 ___ しまいました。",
+      "explanation": "Hành động bộc phát ngoài ý muốn: 'lỡ khóc' (泣きます).",
+      "points": 5,
+      "options": [
+        { "optionText": "泣いて", "isCorrect": true },
+        { "optionText": "泣き", "isCorrect": false },
+        { "optionText": "泣かて", "isCorrect": false },
+        { "optionText": "泣いた", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N4 - Bộ 22: Trạng thái có chủ ý (Tha động từ V-てあります)",
+  "level": "N4",
+  "description": "Diễn tả trạng thái của sự vật là kết quả của một hành động có mục đích, chủ ý của ai đó. Luôn đi với Tha động từ và thường dùng trợ từ 'が'.",
+  "isPremium": false,
+  "examples": [
+    "机の上に本が並べてあります。(Trên bàn, sách đã được sắp xếp sẵn - có chủ ý của ai đó.)",
+    "壁にカレンダーが掛けてあります。(Trên tường có treo một tờ lịch - ai đó đã treo lên để dùng.)",
+    "誕生日のプレゼントはもう買ってあります。(Quà sinh nhật đã được mua sẵn rồi.)"
+  ],
+  "questions": [
+    {
+      "questionText": "壁に地図 ___ 貼ってあります。",
+      "explanation": "Trong cấu trúc V-te arimasu, đối tượng nhận tác động thường đi với trợ từ 'が' để nhấn mạnh trạng thái hiện tại.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "部屋の隅に机が ___ あります。",
+      "explanation": "Chọn tha động từ '置く' (đặt, để) chia thể Te để chỉ trạng thái có chủ ý.",
+      "points": 5,
+      "options": [
+        { "optionText": "置いて", "isCorrect": true },
+        { "optionText": "置き", "isCorrect": false },
+        { "optionText": "置いての", "isCorrect": false },
+        { "optionText": "置いた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "パーティーの準備はもう ___ あります。",
+      "explanation": "Tha động từ 'する' chia thể Te thành 'して' để chỉ việc chuẩn bị đã được thực hiện xong.",
+      "points": 5,
+      "options": [
+        { "optionText": "し", "isCorrect": false },
+        { "optionText": "して", "isCorrect": true },
+        { "optionText": "した", "isCorrect": false },
+        { "optionText": "しられ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "窓が ___ あります。寒いですね。",
+      "explanation": "Sử dụng tha động từ '開ける' (mở) chia thể Te. 'Cửa được mở sẵn (có mục đích/do ai đó làm)'.",
+      "points": 5,
+      "options": [
+        { "optionText": "開いて", "isCorrect": false },
+        { "optionText": "開けて", "isCorrect": true },
+        { "optionText": "開き", "isCorrect": false },
+        { "optionText": "開けられ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "名前が ___ ありますから、誰のか分かります。",
+      "explanation": "Trạng thái 'Tên đã được viết sẵn'. Tha động từ '書く' -> '書いて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "書いて", "isCorrect": true },
+        { "optionText": "書きて", "isCorrect": false },
+        { "optionText": "書き", "isCorrect": false },
+        { "optionText": "書かて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "冷蔵庫にビールが ___ ありますよ。飲んでください。",
+      "explanation": "Trạng thái 'Bia đã được để sẵn (để làm lạnh)'. Tha động từ '入れる' -> '入れて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "入りて", "isCorrect": false },
+        { "optionText": "入って", "isCorrect": false },
+        { "optionText": "入れて", "isCorrect": true },
+        { "optionText": "入れられ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "予定表はどこですか。\n--- 壁に ___ ありますよ。",
+      "explanation": "Tờ lịch/lịch trình được 'dán' sẵn. Tha động từ '貼る' -> '貼って'.",
+      "points": 5,
+      "options": [
+        { "optionText": "貼って", "isCorrect": true },
+        { "optionText": "貼り", "isCorrect": false },
+        { "optionText": "貼られて", "isCorrect": false },
+        { "optionText": "貼られ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "お土産はもう ___ ありますから、大丈夫です。",
+      "explanation": "Trạng thái 'Quà đã được mua sẵn'. Tha động từ '買う' -> '買って'.",
+      "points": 5,
+      "options": [
+        { "optionText": "買い", "isCorrect": false },
+        { "optionText": "買って", "isCorrect": true },
+        { "optionText": "買わて", "isCorrect": false },
+        { "optionText": "買いて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "交番に地図が ___ あります。",
+      "explanation": "Bản đồ được treo sẵn ở đồn cảnh sát. Tha động từ '掛ける' -> '掛けて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "掛けて", "isCorrect": true },
+        { "optionText": "掛かって", "isCorrect": false },
+        { "optionText": "掛け", "isCorrect": false },
+        { "optionText": "掛けられ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "晩ご飯のおかずは ___ ありますか。",
+      "explanation": "Tha động từ '作る' (nấu/làm) chia thể Te chỉ trạng thái thức ăn đã nấu xong chưa.",
+      "points": 5,
+      "options": [
+        { "optionText": "作って", "isCorrect": true },
+        { "optionText": "作り", "isCorrect": false },
+        { "optionText": "作らて", "isCorrect": false },
+        { "optionText": "できて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ホテルの予約は ___ ありますか。",
+      "explanation": "Tha động từ 'する' (làm/thực hiện việc đặt chỗ).",
+      "points": 5,
+      "options": [
+        { "optionText": "して", "isCorrect": true },
+        { "optionText": "し", "isCorrect": false },
+        { "optionText": "しられ", "isCorrect": false },
+        { "optionText": "されて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ノートの表紙（ひょうし）に名前が ___ あります。",
+      "explanation": "Tên được viết sẵn trên bìa vở. Tha động từ '書く' -> '書いて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "書いて", "isCorrect": true },
+        { "optionText": "書きて", "isCorrect": false },
+        { "optionText": "書かて", "isCorrect": false },
+        { "optionText": "書いてし", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "辞書は本棚に ___ あります。",
+      "explanation": "Từ điển được xếp sẵn trên giá sách. Tha động từ '並べる' -> '並べて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "並んで", "isCorrect": false },
+        { "optionText": "並べて", "isCorrect": true },
+        { "optionText": "並べ", "isCorrect": false },
+        { "optionText": "並べられ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "切符はもう ___ あります。",
+      "explanation": "Vé đã được chuẩn bị sẵn (có mục đích).",
+      "points": 5,
+      "options": [
+        { "optionText": "用意して", "isCorrect": true },
+        { "optionText": "用意し", "isCorrect": false },
+        { "optionText": "用意されて", "isCorrect": false },
+        { "optionText": "用意あり", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "窓が ___ あります。泥棒（どろぼう）が入ったのかもしれません。",
+      "explanation": "Nhấn mạnh trạng thái do ai đó tác động (làm vỡ). Tha động từ '割る' -> '割って'.",
+      "points": 5,
+      "options": [
+        { "optionText": "割れて", "isCorrect": false },
+        { "optionText": "割って", "isCorrect": true },
+        { "optionText": "割り", "isCorrect": false },
+        { "optionText": "割らて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "会議室の電気は ___ ありますか。",
+      "explanation": "Tha động từ '消す' (tắt) chia thể Te chỉ trạng thái điện đã được ai đó tắt chưa.",
+      "points": 5,
+      "options": [
+        { "optionText": "消えて", "isCorrect": false },
+        { "optionText": "消して", "isCorrect": true },
+        { "optionText": "消し", "isCorrect": false },
+        { "optionText": "消せて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "お風呂に水が ___ ありますか。",
+      "explanation": "Tha động từ 'ためる' (tích nước/xả nước vào bồn) -> 'ためて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "たまって", "isCorrect": false },
+        { "optionText": "ためて", "isCorrect": true },
+        { "optionText": "ため", "isCorrect": false },
+        { "optionText": "たまりて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "玄関（げんかん）に靴が ___ あります。",
+      "explanation": "Giày được xếp sẵn ở lối vào. Tha động từ '並べる' -> '並べて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "並んで", "isCorrect": false },
+        { "optionText": "並べて", "isCorrect": true },
+        { "optionText": "並べ", "isCorrect": false },
+        { "optionText": "並びて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ハサミは引き出しに ___ あります。",
+      "explanation": "Kéo được cất sẵn trong ngăn kéo. Tha động từ 'しまう' -> 'しまって'.",
+      "points": 5,
+      "options": [
+        { "optionText": "しまって", "isCorrect": true },
+        { "optionText": "しまい", "isCorrect": false },
+        { "optionText": "しまわて", "isCorrect": false },
+        { "optionText": "しまわれ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "レポートはもう ___ あります。",
+      "explanation": "Báo cáo đã được viết xong sẵn. Tha động từ 'まとめる' -> 'まとめて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "まとめて", "isCorrect": true },
+        { "optionText": "まとまりて", "isCorrect": false },
+        { "optionText": "まとめ", "isCorrect": false },
+        { "optionText": "まとまれ", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N4 - Bộ 23: Vị trí của sự vật có chủ ý (N1 は N2 に Vて あります)",
+  "level": "N4",
+  "description": "Dùng để diễn tả vị trí của một vật thể nào đó sau khi đã được ai đó tác động có mục đích và hiện trạng đó vẫn đang duy trì.",
+  "isPremium": false,
+  "examples": [
+    "かびんは机の真ん中に置いてあります。(Bình hoa được đặt ở chính giữa bàn.)",
+    "お金は引き出しの中にしまってあります。(Tiền được cất ở trong ngăn kéo.)",
+    "ポスターは駅の壁に貼ってあります。(Poster được dán trên tường của nhà ga.)",
+    "道具はあそこの箱に入れてあります。(Dụng cụ được để sẵn ở trong chiếc hộp kia.)"
+  ],
+  "questions": [
+    {
+      "questionText": "カレンダーは壁 ___ かけてあります。",
+      "explanation": "Dùng trợ từ 'に' để chỉ vị trí (bức tường) nơi vật thể đang tọa lạc.",
+      "points": 5,
+      "options": [
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": true },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "辞書は本棚（ほんだな）の右側（みぎがわ）に ___ あります。",
+      "explanation": "Tha động từ '並べる' (sắp xếp) chia thể Te thành '並べて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "並んで", "isCorrect": false },
+        { "optionText": "並べて", "isCorrect": true },
+        { "optionText": "並び", "isCorrect": false },
+        { "optionText": "並ばて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "名前はレポートの右上に ___ あります。",
+      "explanation": "Tha động từ '書く' chia thể Te thành '書いて' để chỉ tên đã được ghi sẵn ở góc trên bên phải.",
+      "points": 5,
+      "options": [
+        { "optionText": "書いて", "isCorrect": true },
+        { "optionText": "書きて", "isCorrect": false },
+        { "optionText": "書かて", "isCorrect": false },
+        { "optionText": "書いてし", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ハサミは引き出しの奥に ___ あります。",
+      "explanation": "Tha động từ 'しまう' (cất đi) chia thể Te thành 'しまって'.",
+      "points": 5,
+      "options": [
+        { "optionText": "しまって", "isCorrect": true },
+        { "optionText": "しまい", "isCorrect": false },
+        { "optionText": "しまわれ", "isCorrect": false },
+        { "optionText": "しまわて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "予定表 ___ 冷蔵庫のドアに貼ってあります。",
+      "explanation": "Trong cấu trúc này, N1 đóng vai trò là chủ đề nên đi với trợ từ 'は'.",
+      "points": 5,
+      "options": [
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "は", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "車はあそこの駐車場に ___ あります。",
+      "explanation": "Tha động từ '止める' (đỗ xe) chia thể Te thành '止めて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "止まって", "isCorrect": false },
+        { "optionText": "止めて", "isCorrect": true },
+        { "optionText": "止まり", "isCorrect": false },
+        { "optionText": "止められ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "お土産は机の上に ___ あります。どうぞ。",
+      "explanation": "Tha động từ '置く' (đặt, để) chia thể Te thành '置いて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "置いて", "isCorrect": true },
+        { "optionText": "置きて", "isCorrect": false },
+        { "optionText": "置かて", "isCorrect": false },
+        { "optionText": "置き", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ビールは冷蔵庫の中に ___ ありますよ。",
+      "explanation": "Tha động từ '冷やす' (làm lạnh) chia thể Te thành '冷やして'.",
+      "points": 5,
+      "options": [
+        { "optionText": "冷えて", "isCorrect": false },
+        { "optionText": "冷やして", "isCorrect": true },
+        { "optionText": "冷やし", "isCorrect": false },
+        { "optionText": "冷やされ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "予習のメモはノートに ___ あります。",
+      "explanation": "Tha động từ '書く' chia thể Te thành '書いて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "書いて", "isCorrect": true },
+        { "optionText": "書きて", "isCorrect": false },
+        { "optionText": "書いてし", "isCorrect": false },
+        { "optionText": "書いての", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "写真はアルバムに ___ あります。",
+      "explanation": "Tha động từ '貼る' (dán/dính) chia thể Te thành '貼って'.",
+      "points": 5,
+      "options": [
+        { "optionText": "貼り", "isCorrect": false },
+        { "optionText": "貼って", "isCorrect": true },
+        { "optionText": "貼られ", "isCorrect": false },
+        { "optionText": "貼られて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "切符は財布の中に ___ あります。",
+      "explanation": "Tha động từ '入れる' (cho vào) chia thể Te thành '入れて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "入れて", "isCorrect": true },
+        { "optionText": "入って", "isCorrect": false },
+        { "optionText": "入り", "isCorrect": false },
+        { "optionText": "入れられ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "地図は駅の入り口に ___ あります。",
+      "explanation": "Tha động từ '掲示する' hoặc '貼る'. Ở đây dùng '貼って'.",
+      "points": 5,
+      "options": [
+        { "optionText": "貼って", "isCorrect": true },
+        { "optionText": "貼り", "isCorrect": false },
+        { "optionText": "貼られ", "isCorrect": false },
+        { "optionText": "貼られて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "会議の資料は受付に ___ あります。",
+      "explanation": "Tha động từ '預ける' (gửi/giao phó) chia thể Te thành '預けて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "預かって", "isCorrect": false },
+        { "optionText": "預けて", "isCorrect": true },
+        { "optionText": "預け", "isCorrect": false },
+        { "optionText": "預けられ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "花瓶は棚の上に ___ あります。",
+      "explanation": "Tha động từ '飾る' (trang trí) chia thể Te thành '飾って'.",
+      "points": 5,
+      "options": [
+        { "optionText": "飾って", "isCorrect": true },
+        { "optionText": "飾り", "isCorrect": false },
+        { "optionText": "飾られ", "isCorrect": false },
+        { "optionText": "飾られて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "掃除用具はロッカーの中に ___ あります。",
+      "explanation": "Tha động từ 'まとめる' hoặc 'しまう'. Ở đây dùng 'しまって'.",
+      "points": 5,
+      "options": [
+        { "optionText": "しまって", "isCorrect": true },
+        { "optionText": "しまい", "isCorrect": false },
+        { "optionText": "しまわれ", "isCorrect": false },
+        { "optionText": "しまわて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "大切な書類は金庫（きんこ）に ___ あります。",
+      "explanation": "Tha động từ '入れる' (cho vào) chia thể Te thành '入れて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "入れて", "isCorrect": true },
+        { "optionText": "入って", "isCorrect": false },
+        { "optionText": "入れられ", "isCorrect": false },
+        { "optionText": "入れ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "電気は ___ あります。暗いですね。",
+      "explanation": "Tha động từ '消す' (tắt) chia thể Te thành '消して'.",
+      "points": 5,
+      "options": [
+        { "optionText": "消えて", "isCorrect": false },
+        { "optionText": "消して", "isCorrect": true },
+        { "optionText": "消し", "isCorrect": false },
+        { "optionText": "消せ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ペンはカバンの中に ___ あります。",
+      "explanation": "Tha động từ '刺す' hoặc '入れる'. Ở đây dùng '入れて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "入れて", "isCorrect": true },
+        { "optionText": "入って", "isCorrect": false },
+        { "optionText": "入れ", "isCorrect": false },
+        { "optionText": "入る", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "鍵は管理人に ___ あります。",
+      "explanation": "Tha động từ '預ける' (gửi/giao cho) chia thể Te thành '預けて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "預けて", "isCorrect": true },
+        { "optionText": "預かって", "isCorrect": false },
+        { "optionText": "預けられ", "isCorrect": false },
+        { "optionText": "預け", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ゴミはゴミ箱の中に ___ あります。",
+      "explanation": "Tha động từ '捨てる' (vứt) chia thể Te thành '捨てて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "捨てて", "isCorrect": true },
+        { "optionText": "捨て", "isCorrect": false },
+        { "optionText": "捨てられ", "isCorrect": false },
+        { "optionText": "捨てって", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N4 - Bộ 24: Chuẩn bị sẵn, làm trước (V-ておきます)",
+  "level": "N4",
+  "description": "Diễn tả việc thực hiện một hành động trước để chuẩn bị cho một sự kiện hoặc mục đích nào đó trong tương lai.",
+  "isPremium": false,
+  "examples": [
+    "映画を見に行く前に、切符を買っておきましょう。(Trước khi đi xem phim, chúng mình hãy mua vé trước nhé.)",
+    "旅行の前に、何を準備しておいたらいいですか。(Trước khi đi du lịch, tôi nên chuẩn bị trước cái gì thì tốt?)",
+    "試験の前に、復習しておいたほうがいいです。(Trước kỳ thi, bạn nên ôn tập trước thì tốt hơn.)"
+  ],
+  "questions": [
+    {
+      "questionText": "明日お客さんが来ますから、部屋を ___ おきます。",
+      "explanation": "Dùng để chuẩn bị cho sự kiện 'khách đến'. 'Dọn dẹp' (掃除します) bỏ 'ます' thêm 'ておきます'.",
+      "points": 5,
+      "options": [
+        { "optionText": "掃除し", "isCorrect": false },
+        { "optionText": "掃除して", "isCorrect": true },
+        { "optionText": "掃除した", "isCorrect": false },
+        { "optionText": "掃除する", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "旅行の前に、ホテルの予約を ___ おきました。",
+      "explanation": "Hành động chuẩn bị đã thực hiện xong trong quá khứ. 'Đặt trước' (予約します) -> '予約しておいた'.",
+      "points": 5,
+      "options": [
+        { "optionText": "して", "isCorrect": true },
+        { "optionText": "し", "isCorrect": false },
+        { "optionText": "した", "isCorrect": false },
+        { "optionText": "されて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "パーティーのために、飲み物をたくさん ___ おきましょう。",
+      "explanation": "Lời rủ rê cùng chuẩn bị (mua sẵn). '買う' -> '買って'.",
+      "points": 5,
+      "options": [
+        { "optionText": "買い", "isCorrect": false },
+        { "optionText": "買って", "isCorrect": true },
+        { "optionText": "買わて", "isCorrect": false },
+        { "optionText": "買いて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "レポートを書く前に、資料を ___ おかなければなりません。",
+      "explanation": "Phải chuẩn bị sẵn (thu thập) tài liệu trước khi viết. '集めます' -> '集めて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "集め", "isCorrect": false },
+        { "optionText": "集めて", "isCorrect": true },
+        { "optionText": "集まて", "isCorrect": false },
+        { "optionText": "集められ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "授業の前に、新しい漢字を ___ おいてください。",
+      "explanation": "Yêu cầu học sinh chuẩn bị bài trước (tra cứu). '調べます' -> '調べて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "調べて", "isCorrect": true },
+        { "optionText": "調べ", "isCorrect": false },
+        { "optionText": "調べられ", "isCorrect": false },
+        { "optionText": "調べた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "明日までに、この本を ___ おいたほうがいいですよ。",
+      "explanation": "Lời khuyên nên làm trước (đọc xong). '読む' -> '読んだ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "読んで", "isCorrect": true },
+        { "optionText": "読みて", "isCorrect": false },
+        { "optionText": "読み", "isCorrect": false },
+        { "optionText": "読んだ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "お弁当を作るために、昨日の夜から準備を ___ おきました。",
+      "explanation": "Đã chuẩn bị từ tối qua. 'する' -> 'して'.",
+      "points": 5,
+      "options": [
+        { "optionText": "し", "isCorrect": false },
+        { "optionText": "して", "isCorrect": true },
+        { "optionText": "した", "isCorrect": false },
+        { "optionText": "しられ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "会議の前に、この資料を ___ おいてください。",
+      "explanation": "Yêu cầu chuẩn bị tài liệu (copy sẵn). 'コピーします' -> 'コピーして'.",
+      "points": 5,
+      "options": [
+        { "optionText": "コピーし", "isCorrect": false },
+        { "optionText": "コピーして", "isCorrect": true },
+        { "optionText": "コピーしられ", "isCorrect": false },
+        { "optionText": "コピーした", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: どこへ行くんですか。\nB: 銀行へお金を ___ おきに行くんです。",
+      "explanation": "Đi để chuẩn bị sẵn (rút tiền). '下ろします' -> '下ろして'.",
+      "points": 5,
+      "options": [
+        { "optionText": "下ろし", "isCorrect": false },
+        { "optionText": "下ろして", "isCorrect": true },
+        { "optionText": "下ろした", "isCorrect": false },
+        { "optionText": "下ろしられ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ご飯を食べる前に、手を ___ おきましょう。",
+      "explanation": "Làm sạch tay trước khi ăn. '洗います' -> '洗って'.",
+      "points": 5,
+      "options": [
+        { "optionText": "洗い", "isCorrect": false },
+        { "optionText": "洗って", "isCorrect": true },
+        { "optionText": "洗いて", "isCorrect": false },
+        { "optionText": "洗わて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "試験が始まるまでに、名前を ___ おいてください。",
+      "explanation": "Viết tên sẵn trước khi bắt đầu. '書きます' -> '書いて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "書き", "isCorrect": false },
+        { "optionText": "書いて", "isCorrect": true },
+        { "optionText": "書かて", "isCorrect": false },
+        { "optionText": "書いてし", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "キャンプに行く前に、地図を ___ おいたほうがいいですね。",
+      "explanation": "Nên xem trước bản đồ. '見ます' -> '見て'.",
+      "points": 5,
+      "options": [
+        { "optionText": "見", "isCorrect": false },
+        { "optionText": "見て", "isCorrect": true },
+        { "optionText": "見られ", "isCorrect": false },
+        { "optionText": "見せ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "美味しい料理を作るために、いい肉を ___ おきました。",
+      "explanation": "Đã mua sẵn thịt ngon. '買う' -> '買って'.",
+      "points": 5,
+      "options": [
+        { "optionText": "買わて", "isCorrect": false },
+        { "optionText": "買い", "isCorrect": false },
+        { "optionText": "買って", "isCorrect": true },
+        { "optionText": "買いて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "デートの前に、レストランを ___ おきました。",
+      "explanation": "Đã đặt sẵn nhà hàng. '予約します' -> '予約して'.",
+      "points": 5,
+      "options": [
+        { "optionText": "予約して", "isCorrect": true },
+        { "optionText": "予約し", "isCorrect": false },
+        { "optionText": "予約された", "isCorrect": false },
+        { "optionText": "予約しられ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "引越しの前に、荷物を ___ おきましょう。",
+      "explanation": "Hãy gom đồ/đóng gói đồ trước. 'まとめます' -> 'まとめて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "まとめ", "isCorrect": false },
+        { "optionText": "まとめて", "isCorrect": true },
+        { "optionText": "まとまりて", "isCorrect": false },
+        { "optionText": "まとめられ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あしたは早く起きますから、もう ___ おきます。",
+      "explanation": "Sẽ đi ngủ trước (để mai dậy sớm). '寝ます' -> '寝て'.",
+      "points": 5,
+      "options": [
+        { "optionText": "寝て", "isCorrect": true },
+        { "optionText": "寝", "isCorrect": false },
+        { "optionText": "寝られ", "isCorrect": false },
+        { "optionText": "寝し", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "忘れないように、メモを ___ おきます。",
+      "explanation": "Ghi chú sẵn để không quên. '取ります' -> '取って'.",
+      "points": 5,
+      "options": [
+        { "optionText": "取り", "isCorrect": false },
+        { "optionText": "取って", "isCorrect": true },
+        { "optionText": "取らて", "isCorrect": false },
+        { "optionText": "取りて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "暑くなる前に、エアコンを ___ おきました。",
+      "explanation": "Đã lắp sẵn điều hòa trước khi trời nóng. 'つけます' hoặc '修理します'. Ở đây dùng 'つけます' (bật/lắp).",
+      "points": 5,
+      "options": [
+        { "optionText": "つけ", "isCorrect": false },
+        { "optionText": "つけて", "isCorrect": true },
+        { "optionText": "つけられ", "isCorrect": false },
+        { "optionText": "つけって", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "お客さんが来る前に、お茶を ___ おきましょう。",
+      "explanation": "Pha sẵn trà trước khi khách đến. 'いれます' -> 'いれて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "いれ", "isCorrect": false },
+        { "optionText": "いれて", "isCorrect": true },
+        { "optionText": "いられ", "isCorrect": false },
+        { "optionText": "いりて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "台風が来ますから、窓を ___ おいてください。",
+      "explanation": "Hãy đóng sẵn cửa sổ (chuẩn bị cho bão). '閉めます' -> '閉めて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "閉め", "isCorrect": false },
+        { "optionText": "閉めて", "isCorrect": true },
+        { "optionText": "閉められ", "isCorrect": false },
+        { "optionText": "閉まて", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N4 - Bộ 25: Giữ nguyên trạng thái (V-ておきます)",
+  "level": "N4",
+  "description": "Diễn tả việc giữ nguyên một trạng thái nào đó, không thay đổi hoặc không tác động thêm vào, thường vì mục đích sẽ sử dụng tiếp sau đó.",
+  "isPremium": false,
+  "examples": [
+    "まだ使っていますから、そのままにしておいてください。(Vì vẫn còn đang dùng nên hãy cứ để nguyên như thế.)",
+    "暑いですから、窓を開けておきましょう。(Vì nóng nên chúng ta cứ để mở cửa sổ nhé.)",
+    "明日も使いますから、道具を片付けないでおいてください。(Mai cũng dùng nên đừng dọn dẹp dụng cụ, cứ để nguyên đó.)"
+  ],
+  "questions": [
+    {
+      "questionText": "A: テレビを消しましょうか。\nB: いいえ、まだ見ていますから、 ___ おいてください。",
+      "explanation": "Khi muốn yêu cầu giữ nguyên trạng thái đang bật tivi, ta dùng 'つけて' (bật) + 'おいてください'.",
+      "points": 5,
+      "options": [
+        { "optionText": "つけて", "isCorrect": true },
+        { "optionText": "消して", "isCorrect": false },
+        { "optionText": "つけ", "isCorrect": false },
+        { "optionText": "消さない", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "道具は片付けますか。\n--- いいえ、また使いますから、そのままに ___ おいてください。",
+      "explanation": "Cấu trúc phổ biến 'そのままにしておいてください' nghĩa là hãy cứ để nguyên như thế.",
+      "points": 5,
+      "options": [
+        { "optionText": "し", "isCorrect": false },
+        { "optionText": "して", "isCorrect": true },
+        { "optionText": "した", "isCorrect": false },
+        { "optionText": "しないで", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "部屋が暑いですね。窓を ___ おきましょう。",
+      "explanation": "Quyết định giữ nguyên trạng thái mở cửa sổ cho mát. '開けます' -> '開けて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "開いて", "isCorrect": false },
+        { "optionText": "開けて", "isCorrect": true },
+        { "optionText": "開け", "isCorrect": false },
+        { "optionText": "閉めて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "料理がまだ残っていますから、机を ___ おいてください。",
+      "explanation": "Vì thức ăn còn nên đừng dọn bàn, cứ để nguyên trạng thái hiện tại. '片付けないで' (đừng dọn) + 'おいてください'.",
+      "points": 5,
+      "options": [
+        { "optionText": "片付けて", "isCorrect": false },
+        { "optionText": "片付けないで", "isCorrect": true },
+        { "optionText": "片付け", "isCorrect": false },
+        { "optionText": "片付けなくて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: 窓を閉めましょうか。\nB: いいえ、空気を入れ替えたいので、 ___ おいてください。",
+      "explanation": "Muốn thay đổi không khí nên yêu cầu giữ nguyên trạng thái mở cửa (開けます).",
+      "points": 5,
+      "options": [
+        { "optionText": "開けて", "isCorrect": true },
+        { "optionText": "閉めて", "isCorrect": false },
+        { "optionText": "開け", "isCorrect": false },
+        { "optionText": "開かないで", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ハサミは元の所に ___ おいてくださいね。",
+      "explanation": "Yêu cầu sau khi dùng xong thì để nó lại trạng thái/vị trí cũ. '戻します' -> '戻して'.",
+      "points": 5,
+      "options": [
+        { "optionText": "戻りて", "isCorrect": false },
+        { "optionText": "戻して", "isCorrect": true },
+        { "optionText": "戻って", "isCorrect": false },
+        { "optionText": "戻らて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "暗いですよ。電気を ___ おきましょうか。",
+      "explanation": "Đề nghị giữ nguyên trạng thái bật điện. 'つけます' -> 'つけて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "消して", "isCorrect": false },
+        { "optionText": "つけて", "isCorrect": true },
+        { "optionText": "つき", "isCorrect": false },
+        { "optionText": "つけ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "まだ会議をしていますから、このままに ___ おいてください。",
+      "explanation": "Đang họp nên hãy cứ để nguyên như hiện tại (không được vào/không dọn dẹp).",
+      "points": 5,
+      "options": [
+        { "optionText": "して", "isCorrect": true },
+        { "optionText": "し", "isCorrect": false },
+        { "optionText": "した", "isCorrect": false },
+        { "optionText": "しないで", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "すぐ戻りますから、荷物をここに ___ おいてもいいですか。",
+      "explanation": "Xin phép để nguyên hành lý ở đây một lát vì sẽ quay lại ngay. '置きます' -> '置いて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "置き", "isCorrect": false },
+        { "optionText": "置いて", "isCorrect": true },
+        { "optionText": "置かて", "isCorrect": false },
+        { "optionText": "置いてし", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "危ないですから、ストーブを ___ おかないでください。",
+      "explanation": "Vì nguy hiểm nên đừng để nguyên trạng thái máy sưởi đang bật. 'つけたまま' -> dùng 'つけて' + 'おかないで'.",
+      "points": 5,
+      "options": [
+        { "optionText": "消して", "isCorrect": false },
+        { "optionText": "つけて", "isCorrect": true },
+        { "optionText": "つき", "isCorrect": false },
+        { "optionText": "つけ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "料理が熱いですから、少し ___ おきましょう。",
+      "explanation": "Vì đồ ăn nóng nên cứ để nguyên cho nguội bớt. '冷まします' -> '冷まして' hoặc '置いて'. Ở đây dùng '置いて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "置いて", "isCorrect": true },
+        { "optionText": "置かて", "isCorrect": false },
+        { "optionText": "置き", "isCorrect": false },
+        { "optionText": "食べて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: 辞書を片付けましょうか。\nB: いいえ、明日も使いますから、 ___ おいてください。",
+      "explanation": "Yêu cầu giữ nguyên hiện trạng (không dọn dẹp). '出しておいて' (cứ để nó ở ngoài).",
+      "points": 5,
+      "options": [
+        { "optionText": "出して", "isCorrect": true },
+        { "optionText": "しまって", "isCorrect": false },
+        { "optionText": "出し", "isCorrect": false },
+        { "optionText": "出さないで", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この花はきれいですから、庭に ___ おきましょう。",
+      "explanation": "Cứ để nguyên nó nở trong vườn (không hái). '咲かせて' (để cho nở) + 'おきましょう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "咲かせ", "isCorrect": false },
+        { "optionText": "咲かせて", "isCorrect": true },
+        { "optionText": "咲いて", "isCorrect": false },
+        { "optionText": "咲き", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "大切な書類ですから、カバンの中に ___ おいてください。",
+      "explanation": "Yêu cầu giữ tài liệu luôn ở trong cặp cho an toàn. '入れて' + 'おいてください'.",
+      "points": 5,
+      "options": [
+        { "optionText": "入って", "isCorrect": false },
+        { "optionText": "入れて", "isCorrect": true },
+        { "optionText": "入れ", "isCorrect": false },
+        { "optionText": "入らて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: ドアを閉めましたか。\nB: いいえ、 ___ おきました。",
+      "explanation": "Cứ để mở như vậy. '開けておきました'.",
+      "points": 5,
+      "options": [
+        { "optionText": "開いて", "isCorrect": false },
+        { "optionText": "開けて", "isCorrect": true },
+        { "optionText": "開け", "isCorrect": false },
+        { "optionText": "開かなて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "名前は消さないで、そのままに ___ おいてください。",
+      "explanation": "Đừng xóa tên, cứ để nguyên trạng thái đó.",
+      "points": 5,
+      "options": [
+        { "optionText": "し", "isCorrect": false },
+        { "optionText": "して", "isCorrect": true },
+        { "optionText": "した", "isCorrect": false },
+        { "optionText": "しないで", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "夜は危ないですから、電気を ___ おきましょう。",
+      "explanation": "Để nguyên đèn bật cho an toàn. 'つけて' + 'おきましょう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "つけて", "isCorrect": true },
+        { "optionText": "つき", "isCorrect": false },
+        { "optionText": "消して", "isCorrect": false },
+        { "optionText": "つけ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "お風呂の水は ___ おいてください。後で洗濯に使います。",
+      "explanation": "Để nguyên nước trong bồn (không xả) để lát giặt đồ. '溜めて' (tích lại) hoặc '捨てないで' (đừng vứt). Ở đây dùng '捨てないで'.",
+      "points": 5,
+      "options": [
+        { "optionText": "捨てて", "isCorrect": false },
+        { "optionText": "捨てないで", "isCorrect": true },
+        { "optionText": "捨て", "isCorrect": false },
+        { "optionText": "捨てなくて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "子供が寝ていますから、そのままに ___ おいてください。",
+      "explanation": "Trẻ đang ngủ nên hãy cứ để nguyên trạng thái hiện tại.",
+      "points": 5,
+      "options": [
+        { "optionText": "し", "isCorrect": false },
+        { "optionText": "して", "isCorrect": true },
+        { "optionText": "した", "isCorrect": false },
+        { "optionText": "しないで", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: 掃除機をしまいましょうか。\nB: いいえ、また後で使いますから、そこに ___ おいてください。",
+      "explanation": "Vì lát dùng tiếp nên cứ để nó ở đó (không cất). '置いて' + 'おいてください'.",
+      "points": 5,
+      "options": [
+        { "optionText": "置いて", "isCorrect": true },
+        { "optionText": "置き", "isCorrect": false },
+        { "optionText": "置いてし", "isCorrect": false },
+        { "optionText": "置いての", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N4 - Bộ 26: Hoàn nguyên vị trí (V-ておきます)",
+  "level": "N4",
+  "description": "Diễn tả việc đưa sự vật trở lại vị trí hoặc trạng thái ban đầu sau khi đã sử dụng xong để chuẩn bị cho lần dùng tiếp theo.",
+  "isPremium": false,
+  "examples": [
+    "使ったら、元の所に戻しておいてください。(Sau khi dùng xong, hãy để lại vị trí ban đầu.)",
+    "ハサミを使ったら、引き出しにしまっておいてください。(Dùng kéo xong hãy cất lại vào ngăn kéo.)",
+    "辞書を読んだら、本棚に返しておいてください。(Đọc xong từ điển hãy để lại lên giá sách.)"
+  ],
+  "questions": [
+    {
+      "questionText": "ハサミを使ったら、元の所へ ___ おいてください。",
+      "explanation": "Hành động 'trả lại/đưa về' (戻します) chia thể Te để yêu cầu hoàn nguyên vị trí.",
+      "points": 5,
+      "options": [
+        { "optionText": "戻して", "isCorrect": true },
+        { "optionText": "戻りて", "isCorrect": false },
+        { "optionText": "戻り", "isCorrect": false },
+        { "optionText": "戻らて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "辞書を使い終わったら、本棚に ___ おいてくださいね。",
+      "explanation": "Hành động 'để lại/trả lại' (返します) vào giá sách.",
+      "points": 5,
+      "options": [
+        { "optionText": "返し", "isCorrect": false },
+        { "optionText": "返して", "isCorrect": true },
+        { "optionText": "帰りて", "isCorrect": false },
+        { "optionText": "返した", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "コップを洗ったら、棚に ___ おいてください。",
+      "explanation": "Hành động 'sắp xếp/để lại' (並べます) sau khi rửa xong.",
+      "points": 5,
+      "options": [
+        { "optionText": "並べて", "isCorrect": true },
+        { "optionText": "並んで", "isCorrect": false },
+        { "optionText": "並べ", "isCorrect": false },
+        { "optionText": "並びて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "道具を使ったら、箱の中に ___ おきましょう。",
+      "explanation": "Lời rủ rê 'cất vào' (しまいます) hộp sau khi dùng.",
+      "points": 5,
+      "options": [
+        { "optionText": "しまい", "isCorrect": false },
+        { "optionText": "しまって", "isCorrect": true },
+        { "optionText": "しまわれ", "isCorrect": false },
+        { "optionText": "しまわて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "椅子を使ったら、元の場所へ ___ おいてください。",
+      "explanation": "Hành động 'đưa về/trả về' (戻します) vị trí cũ.",
+      "points": 5,
+      "options": [
+        { "optionText": "戻して", "isCorrect": true },
+        { "optionText": "戻りて", "isCorrect": false },
+        { "optionText": "戻り", "isCorrect": false },
+        { "optionText": "戻って", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ノートを使い終わったら、カバンの中に ___ おきます。",
+      "explanation": "Tự bản thân sẽ 'cho vào' (入れます) cặp sau khi dùng xong.",
+      "points": 5,
+      "options": [
+        { "optionText": "入れ", "isCorrect": false },
+        { "optionText": "入れて", "isCorrect": true },
+        { "optionText": "入りて", "isCorrect": false },
+        { "optionText": "入れられ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "おもちゃで遊んだら、ちゃんと ___ おいてください。",
+      "explanation": "Yêu cầu 'dọn dẹp' (片付けます) đồ chơi sau khi chơi xong.",
+      "points": 5,
+      "options": [
+        { "optionText": "片付けて", "isCorrect": true },
+        { "optionText": "片付け", "isCorrect": false },
+        { "optionText": "片付きて", "isCorrect": false },
+        { "optionText": "片付けられ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "地図を見終わったら、元の所に ___ おいてください。",
+      "explanation": "Hành động 'dán lại/để lại' (貼ります/戻します). Ở đây dùng '戻して'.",
+      "points": 5,
+      "options": [
+        { "optionText": "戻して", "isCorrect": true },
+        { "optionText": "戻りて", "isCorrect": false },
+        { "optionText": "戻り", "isCorrect": false },
+        { "optionText": "戻らて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ペンを使い終わったら、キャップを ___ おいてください。",
+      "explanation": "Đóng nắp bút lại (làm về trạng thái ban đầu). '閉めます' -> '閉めて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "閉め", "isCorrect": false },
+        { "optionText": "閉めて", "isCorrect": true },
+        { "optionText": "閉まりて", "isCorrect": false },
+        { "optionText": "閉められ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "資料を読み終わったら、受付へ ___ おいてください。",
+      "explanation": "Yêu cầu 'trả lại' (返します) tài liệu cho quầy lễ tân.",
+      "points": 5,
+      "options": [
+        { "optionText": "返し", "isCorrect": false },
+        { "optionText": "返して", "isCorrect": true },
+        { "optionText": "返って", "isCorrect": false },
+        { "optionText": "帰りて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "自転車を使ったら、駐輪場（ちゅうりんじょう）に ___ おいてください。",
+      "explanation": "Đưa xe đạp về lại bãi đỗ. '戻して' hoặc '止めて'. Ở đây dùng '戻して'.",
+      "points": 5,
+      "options": [
+        { "optionText": "戻して", "isCorrect": true },
+        { "optionText": "戻りて", "isCorrect": false },
+        { "optionText": "止まりて", "isCorrect": false },
+        { "optionText": "戻り", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "DVDを見終わったら、ケースの中に ___ おきましょう。",
+      "explanation": "Hành động 'cất vào' (入れます) vỏ đĩa.",
+      "points": 5,
+      "options": [
+        { "optionText": "入れて", "isCorrect": true },
+        { "optionText": "入れ", "isCorrect": false },
+        { "optionText": "入って", "isCorrect": false },
+        { "optionText": "入れられ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "会議が終わったら、マイクを元の所に ___ おいてください。",
+      "explanation": "Trình bày hoàn cảnh (xong họp) để yêu cầu hoàn nguyên vị trí míc.",
+      "points": 5,
+      "options": [
+        { "optionText": "戻して", "isCorrect": true },
+        { "optionText": "戻りて", "isCorrect": false },
+        { "optionText": "戻し", "isCorrect": false },
+        { "optionText": "戻られ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "本を読み終わったら、元の所に ___ おきます。",
+      "explanation": "Hành động 'để lại/trả lại' (置きます) vị trí cũ.",
+      "points": 5,
+      "options": [
+        { "optionText": "置いて", "isCorrect": true },
+        { "optionText": "置き", "isCorrect": false },
+        { "optionText": "置かて", "isCorrect": false },
+        { "optionText": "置きて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "鏡（かがみ）を使ったら、引き出しに ___ おいてください。",
+      "explanation": "Hành động 'cất đi' (しまいます).",
+      "points": 5,
+      "options": [
+        { "optionText": "しまって", "isCorrect": true },
+        { "optionText": "しまい", "isCorrect": false },
+        { "optionText": "しまわれ", "isCorrect": false },
+        { "optionText": "しまわて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "傘を使ったら、乾かしてから傘立てに ___ おきましょう。",
+      "explanation": "Hành động 'cắm vào/để vào' (入れます/立てます). Ở đây dùng '入れて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "入れて", "isCorrect": true },
+        { "optionText": "入れ", "isCorrect": false },
+        { "optionText": "入りて", "isCorrect": false },
+        { "optionText": "入れられ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "パソコンを使い終わったら、電源を ___ おいてください。",
+      "explanation": "Tắt nguồn (đưa về trạng thái ban đầu). '切ります' -> '切って'.",
+      "points": 5,
+      "options": [
+        { "optionText": "切って", "isCorrect": true },
+        { "optionText": "切り", "isCorrect": false },
+        { "optionText": "切れ", "isCorrect": false },
+        { "optionText": "切られ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "塩や砂糖を使ったら、元の所に ___ おいてくださいね。",
+      "explanation": "Hoàn nguyên vị trí các lọ gia vị. '戻します' -> '戻して'.",
+      "points": 5,
+      "options": [
+        { "optionText": "戻して", "isCorrect": true },
+        { "optionText": "戻りて", "isCorrect": false },
+        { "optionText": "戻り", "isCorrect": false },
+        { "optionText": "戻って", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "共有のタオルを使ったら、元の場所に ___ おきましょう。",
+      "explanation": "Treo lại khăn về chỗ cũ. '掛けて' (treo) + 'おきましょう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "掛けて", "isCorrect": true },
+        { "optionText": "掛かって", "isCorrect": false },
+        { "optionText": "掛け", "isCorrect": false },
+        { "optionText": "掛けられ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "スリッパを履き終わったら、きれいに ___ おいてください。",
+      "explanation": "Xếp lại dép lê ngăn nắp. '並べます' -> '並べて'.",
+      "points": 5,
+      "options": [
+        { "optionText": "並べて", "isCorrect": true },
+        { "optionText": "並んで", "isCorrect": false },
+        { "optionText": "並べ", "isCorrect": false },
+        { "optionText": "並びて", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N4 - Bộ 27: Hành động vẫn đang tiếp diễn (まだ V-ています)",
+  "level": "N4",
+  "description": "Diễn tả một hành động hoặc trạng thái đã bắt đầu trong quá khứ và vẫn còn đang tiếp tục duy trì ở thời điểm hiện tại.",
+  "isPremium": false,
+  "examples": [
+    "まだ雨が降っています。(Trời vẫn còn đang mưa.)",
+    "まだ勉強しています。(Vẫn còn đang học.)",
+    "もう11時ですが、父はまだ働いています。(Đã 11 giờ rồi nhưng bố tôi vẫn còn đang làm việc.)"
+  ],
+  "questions": [
+    {
+      "questionText": "A: 昼ご飯を食べに行きませんか。\nB: すみません、仕事が ___ いますから、後で行きます。",
+      "explanation": "Vì công việc 'vẫn còn đang làm' nên chưa đi ăn được. 'して' (làm) + 'います'.",
+      "points": 5,
+      "options": [
+        { "optionText": "して", "isCorrect": true },
+        { "optionText": "し", "isCorrect": false },
+        { "optionText": "した", "isCorrect": false },
+        { "optionText": "する", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "もう夜の12時ですが、隣の部屋の電気が ___ います。",
+      "explanation": "Trạng thái đèn 'vẫn đang bật'. 'ついて' (bật/sáng) + 'います'.",
+      "points": 5,
+      "options": [
+        { "optionText": "つけて", "isCorrect": false },
+        { "optionText": "ついて", "isCorrect": true },
+        { "optionText": "つき", "isCorrect": false },
+        { "optionText": "つきて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "子供たちは ___ いますから、静かにしてください。",
+      "explanation": "Vì lũ trẻ 'vẫn đang ngủ' nên hãy giữ yên lặng. '寝て' (ngủ) + 'います'.",
+      "points": 5,
+      "options": [
+        { "optionText": "寝て", "isCorrect": true },
+        { "optionText": "寝", "isCorrect": false },
+        { "optionText": "寝られ", "isCorrect": false },
+        { "optionText": "寝てし", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: 荷物はもう届きましたか。\nB: いいえ、まだ ___ います。",
+      "explanation": "Chưa đến, 'vẫn đang chờ'. '待って' (chờ) + 'います'.",
+      "points": 5,
+      "options": [
+        { "optionText": "待って", "isCorrect": true },
+        { "optionText": "待ち", "isCorrect": false },
+        { "optionText": "待たて", "isCorrect": false },
+        { "optionText": "待たれ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "外はまだ ___ いますか。傘を貸しましょうか。",
+      "explanation": "Hỏi xem trời 'vẫn còn đang mưa' không. '降って' (rơi/mưa) + 'います'.",
+      "points": 5,
+      "options": [
+        { "optionText": "降りて", "isCorrect": false },
+        { "optionText": "降って", "isCorrect": true },
+        { "optionText": "降り", "isCorrect": false },
+        { "optionText": "降らて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "弟は大学を卒業しましたが、まだ父の会社で ___ います。",
+      "explanation": "Diễn tả một trạng thái nghề nghiệp kéo dài: 'vẫn đang làm việc'. '働いて' (làm việc) + 'います'.",
+      "points": 5,
+      "options": [
+        { "optionText": "働き", "isCorrect": false },
+        { "optionText": "働いて", "isCorrect": true },
+        { "optionText": "働かて", "isCorrect": false },
+        { "optionText": "働いた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あの二人は 30分も ___ います。何を話しているんでしょうか。",
+      "explanation": "Đã 30 phút rồi mà 'vẫn đang nói chuyện'. '話して' (nói chuyện) + 'います'.",
+      "points": 5,
+      "options": [
+        { "optionText": "話して", "isCorrect": true },
+        { "optionText": "話し", "isCorrect": false },
+        { "optionText": "話しいて", "isCorrect": false },
+        { "optionText": "話す", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "お湯がまだ ___ いますから、カップラーメンが作れません。",
+      "explanation": "Nước 'vẫn đang đun/sôi'. '沸いて' (sôi) + 'います'.",
+      "points": 5,
+      "options": [
+        { "optionText": "沸かし", "isCorrect": false },
+        { "optionText": "沸いて", "isCorrect": true },
+        { "optionText": "沸き", "isCorrect": false },
+        { "optionText": "沸かして", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "田中さんはまだ ___ います。いつ来るか分かりません。",
+      "explanation": "Anh Tanaka 'vẫn đang chuẩn bị'. '準備して' + 'います'.",
+      "points": 5,
+      "options": [
+        { "optionText": "準備し", "isCorrect": false },
+        { "optionText": "準備して", "isCorrect": true },
+        { "optionText": "準備した", "isCorrect": false },
+        { "optionText": "準備すて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: 窓を閉めましょうか。\nB: いいえ、掃除を ___ いますから、開けておいてください。",
+      "explanation": "Vì 'vẫn đang dọn dẹp' nên hãy cứ để mở. 'して' (làm) + 'います'.",
+      "points": 5,
+      "options": [
+        { "optionText": "して", "isCorrect": true },
+        { "optionText": "し", "isCorrect": false },
+        { "optionText": "した", "isCorrect": false },
+        { "optionText": "しないで", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "3時間もパソコンを ___ います。少し休みましょう。",
+      "explanation": "'Vẫn đang sử dụng' máy tính suốt 3 tiếng rồi. '使って' (dùng) + 'います'.",
+      "points": 5,
+      "options": [
+        { "optionText": "使い", "isCorrect": false },
+        { "optionText": "使って", "isCorrect": true },
+        { "optionText": "使わて", "isCorrect": false },
+        { "optionText": "使いて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "田中さんは ___ いますか。\n--- はい、あちらの部屋にいます。",
+      "explanation": "Hỏi xem 'vẫn đang có mặt/vẫn đang ở đây' không. '起きて' hoặc 'いて'. Ở đây dùng '起きて' (đang thức/đang dậy).",
+      "points": 5,
+      "options": [
+        { "optionText": "起き", "isCorrect": false },
+        { "optionText": "起きて", "isCorrect": true },
+        { "optionText": "起らて", "isCorrect": false },
+        { "optionText": "起きた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "会議はまだ ___ います。1時間ぐらいかかるそうです。",
+      "explanation": "Cuộc họp 'vẫn đang tiếp tục'. '続いて' (tiếp tục) + 'います'.",
+      "points": 5,
+      "options": [
+        { "optionText": "続け", "isCorrect": false },
+        { "optionText": "続いて", "isCorrect": true },
+        { "optionText": "続けて", "isCorrect": false },
+        { "optionText": "続きて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "バスがまだ ___ います。急ぎましょう！",
+      "explanation": "Xe buýt 'vẫn đang đỗ/dừng'. '止まって' (dừng) + 'います'.",
+      "points": 5,
+      "options": [
+        { "optionText": "止めて", "isCorrect": false },
+        { "optionText": "止まって", "isCorrect": true },
+        { "optionText": "止まり", "isCorrect": false },
+        { "optionText": "止まて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "まだ漢字を ___ いますから、テストを回収しないでください。",
+      "explanation": "'Vẫn đang viết' chữ Hán. '書いて' (viết) + 'います'.",
+      "points": 5,
+      "options": [
+        { "optionText": "書き", "isCorrect": false },
+        { "optionText": "書いて", "isCorrect": true },
+        { "optionText": "書かて", "isCorrect": false },
+        { "optionText": "書いた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あの店にはまだ人がたくさん ___ いますね。人気がありますね。",
+      "explanation": "'Vẫn đang xếp hàng'. '並んで' (xếp hàng) + 'います'.",
+      "points": 5,
+      "options": [
+        { "optionText": "並んで", "isCorrect": true },
+        { "optionText": "並べて", "isCorrect": false },
+        { "optionText": "並び", "isCorrect": false },
+        { "optionText": "並ばて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "映画はまだ ___ います。あと10分で終わります。",
+      "explanation": "Phim 'vẫn đang chiếu/chạy'. 'やって' (làm/chiếu) + 'います'.",
+      "points": 5,
+      "options": [
+        { "optionText": "やり", "isCorrect": false },
+        { "optionText": "やって", "isCorrect": true },
+        { "optionText": "やられ", "isCorrect": false },
+        { "optionText": "やった", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "さっきからずっと電話を ___ いますね。誰と話しているんですか。",
+      "explanation": "'Vẫn đang gọi điện' suốt từ nãy. 'かけて' (gọi) + 'います'.",
+      "points": 5,
+      "options": [
+        { "optionText": "かけ", "isCorrect": false },
+        { "optionText": "かけて", "isCorrect": true },
+        { "optionText": "かかって", "isCorrect": false },
+        { "optionText": "かけた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "お腹が空きましたが、お店がまだ ___ います。",
+      "explanation": "Bụng đói nhưng quán 'vẫn đang đóng cửa'. '閉まって' (đóng) + 'います'.",
+      "points": 5,
+      "options": [
+        { "optionText": "閉めて", "isCorrect": false },
+        { "optionText": "閉まって", "isCorrect": true },
+        { "optionText": "閉まり", "isCorrect": false },
+        { "optionText": "閉まて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "父はもう65歳ですが、まだテニスを ___ います。",
+      "explanation": "Bố 65 tuổi rồi nhưng 'vẫn đang chơi' tennis. '楽しんで' hoặc 'して'. Ở đây dùng '楽しんで' (thưởng thức/vui chơi).",
+      "points": 5,
+      "options": [
+        { "optionText": "楽しんで", "isCorrect": true },
+        { "optionText": "楽しみ", "isCorrect": false },
+        { "optionText": "楽しに", "isCorrect": false },
+        { "optionText": "楽しんて", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N4 - Bộ 28: Diễn tả dự định (V-ようと思っています)",
+  "level": "N4",
+  "description": "Dùng để bày tỏ một dự định đã được hình thành trong tâm trí người nói từ trước và hiện tại vẫn đang tiếp tục giữ ý định đó.",
+  "isPremium": false,
+  "examples": [
+    "明日から、日記を書き続けようと思っています。(Tôi dự định sẽ viết nhật ký từ ngày mai.)",
+    "お金があったら、家と車を買おうと思っています。(Nếu có tiền, tôi dự định sẽ mua nhà và xe ô tô.)",
+    "一年後、N3の試験を受けようと思っています。(Tôi dự định một năm sau sẽ thi N3.)"
+  ],
+  "questions": [
+    {
+      "questionText": "仕事が休みの日、家族と旅行に ___ と思っています。",
+      "explanation": "Động từ nhóm 1 '行く' chuyển sang thể ý định là '行こう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "行こう", "isCorrect": true },
+        { "optionText": "行きます", "isCorrect": false },
+        { "optionText": "行く", "isCorrect": false },
+        { "optionText": "行け", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "将来、自分の会社を ___ と思っています。",
+      "explanation": "Động từ nhóm 3 '作る' chuyển sang thể ý định là '作ろう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "作る", "isCorrect": false },
+        { "optionText": "作ろう", "isCorrect": true },
+        { "optionText": "作って", "isCorrect": false },
+        { "optionText": "作れ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "大学を卒業したら、すぐ ___ と思っています。",
+      "explanation": "Động từ nhóm 3 '結婚する' chuyển sang thể ý định là '結婚しよう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "結婚しよ", "isCorrect": false },
+        { "optionText": "結婚しよう", "isCorrect": true },
+        { "optionText": "結婚する", "isCorrect": false },
+        { "optionText": "結婚しろ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "今夜は疲れたので、早く ___ と思っています。",
+      "explanation": "Động từ nhóm 2 '寝る' chuyển sang thể ý định bằng cách bỏ 'る' thêm 'よう' thành '寝よう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "寝よう", "isCorrect": true },
+        { "optionText": "寝ろ", "isCorrect": false },
+        { "optionText": "寝る", "isCorrect": false },
+        { "optionText": "寝ましょう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本語が上手になりたいので、毎日漢字を ___ と思っています。",
+      "explanation": "Động từ nhóm 2 '覚える' chuyển sang thể ý định là '覚えよう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "覚える", "isCorrect": false },
+        { "optionText": "覚えよう", "isCorrect": true },
+        { "optionText": "覚えろ", "isCorrect": false },
+        { "optionText": "覚えろう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "夏休みに富士山に ___ と思っています。",
+      "explanation": "Động từ nhóm 1 '登る' (kết thúc bằng cột u) chuyển sang cột o + u thành '登ろう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "登ろう", "isCorrect": true },
+        { "optionText": "登りよう", "isCorrect": false },
+        { "optionText": "登る", "isCorrect": false },
+        { "optionText": "登れ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "明日、友達が来るので掃除を ___ と思っています。",
+      "explanation": "Động từ nhóm 3 'する' chuyển sang thể ý định là 'しよう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "する", "isCorrect": false },
+        { "optionText": "しよう", "isCorrect": true },
+        { "optionText": "しよ", "isCorrect": false },
+        { "optionText": "しましょう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "お腹が空いたので、何か ___ と思っています。",
+      "explanation": "Động từ nhóm 2 '食べる' chuyển sang thể ý định là '食べよう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "食べろう", "isCorrect": false },
+        { "optionText": "食べよう", "isCorrect": true },
+        { "optionText": "食べる", "isCorrect": false },
+        { "optionText": "食べましょう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "来週、日本へ ___ と思っています。",
+      "explanation": "Động từ nhóm 3 '来る' chuyển sang thể ý định đặc biệt là '来よう' (こよう).",
+      "points": 5,
+      "options": [
+        { "optionText": "きよう", "isCorrect": false },
+        { "optionText": "来よう", "isCorrect": true },
+        { "optionText": "くるよう", "isCorrect": false },
+        { "optionText": "こよ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "新しい車を ___ ために、貯金をしようと思っています。",
+      "explanation": "Động từ nhóm 1 '買う' chuyển sang thể ý định là '買おう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "買う", "isCorrect": false },
+        { "optionText": "買おう", "isCorrect": true },
+        { "optionText": "買わよう", "isCorrect": false },
+        { "optionText": "買え", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "喉が渇いたので、冷たいビールを ___ と思っています。",
+      "explanation": "Động từ nhóm 1 '飲む' chuyển sang thể ý định là '飲もう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "飲もう", "isCorrect": true },
+        { "optionText": "飲みよう", "isCorrect": false },
+        { "optionText": "飲も", "isCorrect": false },
+        { "optionText": "飲め", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "週末は家でゆっくり ___ と思っています。",
+      "explanation": "Động từ nhóm 2 '休む' chuyển sang thể ý định là '休もう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "休もう", "isCorrect": true },
+        { "optionText": "休みよう", "isCorrect": false },
+        { "optionText": "休む", "isCorrect": false },
+        { "optionText": "休め", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "レポートは今日中に ___ と思っています。",
+      "explanation": "Động từ nhóm 1 '出す' chuyển sang thể ý định là '出そう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "出そう", "isCorrect": true },
+        { "optionText": "出しよう", "isCorrect": false },
+        { "optionText": "出す", "isCorrect": false },
+        { "optionText": "出せ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本語で手紙を ___ と思っています。",
+      "explanation": "Động từ nhóm 1 '書く' chuyển sang thể ý định là '書こう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "書く", "isCorrect": false },
+        { "optionText": "書こう", "isCorrect": true },
+        { "optionText": "書きよう", "isCorrect": false },
+        { "optionText": "書け", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "来年から日本で ___ と思っています。",
+      "explanation": "Động từ nhóm 1 '働く' chuyển sang thể ý định là '働こう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "働く", "isCorrect": false },
+        { "optionText": "働こう", "isCorrect": true },
+        { "optionText": "働きよう", "isCorrect": false },
+        { "optionText": "働け", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あのお店で美味しい料理を ___ と思っています。",
+      "explanation": "Động từ nhóm 2 '食べる' chuyển sang thể ý định là '食べよう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "食べる", "isCorrect": false },
+        { "optionText": "食べよう", "isCorrect": true },
+        { "optionText": "食べろう", "isCorrect": false },
+        { "optionText": "食べましょう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この問題について、先生に ___ と思っています。",
+      "explanation": "Động từ nhóm 1 '聞く' chuyển sang thể ý định là '聞こう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "聞きよう", "isCorrect": false },
+        { "optionText": "聞こう", "isCorrect": true },
+        { "optionText": "聞く", "isCorrect": false },
+        { "optionText": "聞け", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "新しい仕事について ___ と思っています。",
+      "explanation": "Động từ nhóm 1 '探す' chuyển sang thể ý định là '探そう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "探す", "isCorrect": false },
+        { "optionText": "探そう", "isCorrect": true },
+        { "optionText": "探しゆ", "isCorrect": false },
+        { "optionText": "探せ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "明日、母に電話を ___ と思っています。",
+      "explanation": "Động từ nhóm 2 'かける' chuyển sang thể ý định là 'かけよう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "かけよう", "isCorrect": true },
+        { "optionText": "かけろう", "isCorrect": false },
+        { "optionText": "かける", "isCorrect": false },
+        { "optionText": "かけましょう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "今度の試験、一生懸命 ___ と思っています。",
+      "explanation": "Động từ nhóm 1 '頑張る' chuyển sang thể ý định là '頑張ろう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "頑張る", "isCorrect": false },
+        { "optionText": "頑張ろう", "isCorrect": true },
+        { "optionText": "頑張りよう", "isCorrect": false },
+        { "optionText": "頑張れ", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N4 - Bộ 29: Thể Ý chí (意向形 - Ishi-kei)",
+  "level": "N4",
+  "description": "Luyện tập cách chia và sử dụng Thể Ý chí để đưa ra lời mời, đề nghị hoặc diễn tả ý định bộc phát tại thời điểm nói.",
+  "isPremium": false,
+  "examples": [
+    "もう12時ですね。昼ご飯を食べよう。(Đã 12 giờ rồi nhỉ. Ăn trưa thôi nào!)",
+    "暑いですね。ビールを飲みに行こう。(Nóng quá nhỉ. Đi uống bia thôi!)",
+    "ちょっと休みましょう。コーヒーを飲もう。(Nghỉ một chút đi. Uống cà phê thôi!)"
+  ],
+  "questions": [
+    {
+      "questionText": "ちょっと疲れましたね。あそこのベンチで ___ 。",
+      "explanation": "Lời mời cùng nghỉ ngơi. Nhóm 2: '休みます' (bỏ ます) -> '休もう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "休もう", "isCorrect": true },
+        { "optionText": "休みよう", "isCorrect": false },
+        { "optionText": "休め", "isCorrect": false },
+        { "optionText": "休もうか", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "もう遅いから、早く ___ 。",
+      "explanation": "Đề nghị cùng về. Nhóm 1: '帰ります' (cột i -> cột o + u) -> '帰ろう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "帰りよう", "isCorrect": false },
+        { "optionText": "帰ろう", "isCorrect": true },
+        { "optionText": "帰れ", "isCorrect": false },
+        { "optionText": "帰ろうか", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "喉が渇きましたね。何か冷たい物を ___ 。",
+      "explanation": "Lời rủ rê cùng uống. Nhóm 1: '飲みます' -> '飲もう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "飲もう", "isCorrect": true },
+        { "optionText": "飲みよう", "isCorrect": false },
+        { "optionText": "飲め", "isCorrect": false },
+        { "optionText": "飲みましょう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "明日も早いから、今日はもう ___ 。",
+      "explanation": "Đề nghị cùng đi ngủ. Nhóm 2: '寝ます' (bỏ ます + よう) -> '寝よう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "寝ろ", "isCorrect": false },
+        { "optionText": "寝よう", "isCorrect": true },
+        { "optionText": "寝ろう", "isCorrect": false },
+        { "optionText": "寝ましょう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "来週のパーティー、みんなで何を ___ か。",
+      "explanation": "Hỏi ý kiến cùng làm gì. Nhóm 3: 'します' -> 'しよう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "しよ", "isCorrect": false },
+        { "optionText": "しよう", "isCorrect": true },
+        { "optionText": "すよう", "isCorrect": false },
+        { "optionText": "しろ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "天気がいいですね。散歩に ___ 。",
+      "explanation": "Lời mời đi dạo. Nhóm 1: '行きます' -> '行こう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "行こう", "isCorrect": true },
+        { "optionText": "行きよう", "isCorrect": false },
+        { "optionText": "行け", "isCorrect": false },
+        { "optionText": "行きましょう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "分からないことがあったら、先生に ___ 。",
+      "explanation": "Đề nghị cùng hỏi/nghe. Nhóm 1: '聞きます' -> '聞こう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "聞こう", "isCorrect": true },
+        { "optionText": "聞きよう", "isCorrect": false },
+        { "optionText": "聞け", "isCorrect": false },
+        { "optionText": "聞こうか", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "重そうですね。手伝って ___ か。",
+      "explanation": "Đề nghị giúp đỡ (Tôi giúp bạn nhé?). 'あげます' -> 'あげよう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "あげよう", "isCorrect": true },
+        { "optionText": "あげろ", "isCorrect": false },
+        { "optionText": "あげましょう", "isCorrect": false },
+        { "optionText": "あげようか", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "時間がないから、タクシーを ___ 。",
+      "explanation": "Đề nghị gọi taxi. Nhóm 1: '呼びます' -> '呼ぼう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "呼びよう", "isCorrect": false },
+        { "optionText": "呼ぼう", "isCorrect": true },
+        { "optionText": "呼べ", "isCorrect": false },
+        { "optionText": "呼びましょう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "漢字が難しいですね。一緒に ___ 。",
+      "explanation": "Mời cùng học. Nhóm 3: '勉強します' -> '勉強しよう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "勉強しよう", "isCorrect": true },
+        { "optionText": "勉強しよ", "isCorrect": false },
+        { "optionText": "勉強しろ", "isCorrect": false },
+        { "optionText": "勉強しましょう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あ、バスが来た！ ___ ！",
+      "explanation": "Kêu gọi cùng chạy. Nhóm 1: '走ります' -> '走ろう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "走ろう", "isCorrect": true },
+        { "optionText": "走りよう", "isCorrect": false },
+        { "optionText": "走れ", "isCorrect": false },
+        { "optionText": "走りましょう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日曜日はどこかへ ___ か。",
+      "explanation": "Mời mọc (Hay là đi đâu đó không?). Nhóm 2: '出かけます' -> '出かけよう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "出かけよう", "isCorrect": true },
+        { "optionText": "出かけろ", "isCorrect": false },
+        { "optionText": "出かけろう", "isCorrect": false },
+        { "optionText": "出かけましょう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "お腹が空きましたね。何か ___ 。",
+      "explanation": "Đề nghị cùng ăn. Nhóm 2: '食べます' -> '食べよう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "食べろう", "isCorrect": false },
+        { "optionText": "食べよう", "isCorrect": true },
+        { "optionText": "食べれ", "isCorrect": false },
+        { "optionText": "食べましょう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "これから会議を ___ 。",
+      "explanation": "Đề nghị bắt đầu họp. Nhóm 3: '始めます' -> '始めよう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "始めよう", "isCorrect": true },
+        { "optionText": "始めろ", "isCorrect": false },
+        { "optionText": "始めろう", "isCorrect": false },
+        { "optionText": "始めましょう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "明日また ___ 。",
+      "explanation": "Hẹn gặp lại (Hãy cùng gặp lại). Nhóm 1: '会います' -> '会おう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "会おう", "isCorrect": true },
+        { "optionText": "会いよう", "isCorrect": false },
+        { "optionText": "会え", "isCorrect": false },
+        { "optionText": "会いましょう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "今日は僕が ___ か。",
+      "explanation": "Đề nghị (Để tôi trả tiền nhé?). Nhóm 1: '払います' -> '払おう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "払おう", "isCorrect": true },
+        { "optionText": "払いよう", "isCorrect": false },
+        { "optionText": "払え", "isCorrect": false },
+        { "optionText": "払おうか", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "レポート、一緒に ___ 。",
+      "explanation": "Mời cùng viết. Nhóm 1: '書きます' -> '書こう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "書こう", "isCorrect": true },
+        { "optionText": "書きよう", "isCorrect": false },
+        { "optionText": "書け", "isCorrect": false },
+        { "optionText": "書きましょう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "今度の週末、映画を ___ か。",
+      "explanation": "Mời cùng xem phim. Nhóm 2: '見ます' -> '見よう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "見よう", "isCorrect": true },
+        { "optionText": "見ろ", "isCorrect": false },
+        { "optionText": "見ろう", "isCorrect": false },
+        { "optionText": "見ましょう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "駅まで ___ か。",
+      "explanation": "Mời cùng đi bộ. Nhóm 1: '歩きます' -> '歩こう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "歩こう", "isCorrect": true },
+        { "optionText": "歩きよう", "isCorrect": false },
+        { "optionText": "歩け", "isCorrect": false },
+        { "optionText": "歩きましょう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ちょっと待って。地図を ___ 。",
+      "explanation": "Đề nghị kiểm tra (Để tớ tra bản đồ đã). Nhóm 1: '調べます' -> '調べよう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "調べよう", "isCorrect": true },
+        { "optionText": "調べろ", "isCorrect": false },
+        { "optionText": "調べろう", "isCorrect": false },
+        { "optionText": "調べましょう", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N4 - Bộ 30: Theo kế hoạch (V-る/Nの よていです)",
+  "level": "N4",
+  "description": "Diễn tả một kế hoạch hoặc dự định đã được ấn định chính thức, có thời gian cụ thể và độ chắc chắn rất cao (khoảng 90-100%).",
+  "isPremium": false,
+  "examples": [
+    "来週の火曜日に出張の予定です。(Theo kế hoạch, thứ Ba tuần sau tôi sẽ đi công tác.)",
+    "9時に飛行機に乗る予定です。(Theo kế hoạch, tôi sẽ lên máy bay lúc 9 giờ.)",
+    "会議は3時まで続く予定です。(Cuộc họp dự kiến sẽ kéo dài đến 3 giờ.)"
+  ],
+  "questions": [
+    {
+      "questionText": "明日の午前中、会議 ___ 予定です。",
+      "explanation": "Khi N (danh từ) đi với '予定', ta phải dùng trợ từ 'の'.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "の", "isCorrect": true },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "来月、日本へ ___ 予定です。",
+      "explanation": "Trước '予定です' phải là động từ thể từ điển (V-ru). '行く' -> '行く予定です'.",
+      "points": 5,
+      "options": [
+        { "optionText": "行く", "isCorrect": true },
+        { "optionText": "行って", "isCorrect": false },
+        { "optionText": "行こう", "isCorrect": false },
+        { "optionText": "行った", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "午後は社長に ___ 予定になっています。",
+      "explanation": "Dùng thể từ điển của '会います' là '会う'. Cụm '予定になっています' nhấn mạnh kế hoạch đã được sắp đặt.",
+      "points": 5,
+      "options": [
+        { "optionText": "会い", "isCorrect": false },
+        { "optionText": "会って", "isCorrect": false },
+        { "optionText": "会う", "isCorrect": true },
+        { "optionText": "会おう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "新しい飛行機は 10時に ___ 予定です。",
+      "explanation": "Theo lịch trình máy bay 'đến'. '到着する' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "到着する", "isCorrect": true },
+        { "optionText": "到着した", "isCorrect": false },
+        { "optionText": "到着しよう", "isCorrect": false },
+        { "optionText": "到着して", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "夏休みは 1週間 ___ 予定です。",
+      "explanation": "Kỳ nghỉ 'nghỉ'. '休む' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "休み", "isCorrect": false },
+        { "optionText": "休む", "isCorrect": true },
+        { "optionText": "休んで", "isCorrect": false },
+        { "optionText": "休もう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "明日は ___ の予定です。仕事はありません。",
+      "explanation": "N (danh từ) + の + 予定. '休み' (ngày nghỉ) là danh từ.",
+      "points": 5,
+      "options": [
+        { "optionText": "休む", "isCorrect": false },
+        { "optionText": "休み", "isCorrect": true },
+        { "optionText": "休んで", "isCorrect": false },
+        { "optionText": "休もう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "飛行機は 11時半に ___ 予定です。",
+      "explanation": "Máy bay 'cất cánh/xuất phát'. '出発する' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "出発し", "isCorrect": false },
+        { "optionText": "出発する", "isCorrect": true },
+        { "optionText": "出発して", "isCorrect": false },
+        { "optionText": "出発しよう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "今夜のパーティーに、田中さんも ___ 予定です。",
+      "explanation": "Kế hoạch là anh Tanaka sẽ 'đến'. '来る' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "来よう", "isCorrect": false },
+        { "optionText": "来る", "isCorrect": true },
+        { "optionText": "来て", "isCorrect": false },
+        { "optionText": "来ます", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "来週の月曜日は ___ の予定です。",
+      "explanation": "N + の + 予定. '健康診断' (khám sức khỏe) là danh từ.",
+      "points": 5,
+      "options": [
+        { "optionText": "健康診断", "isCorrect": true },
+        { "optionText": "健康診断する", "isCorrect": false },
+        { "optionText": "健康診断し", "isCorrect": false },
+        { "optionText": "健康診断した", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "今度の土曜日に引っ越しを ___ 予定です。",
+      "explanation": "'する' (V-ru) bổ nghĩa cho '予定'.",
+      "points": 5,
+      "options": [
+        { "optionText": "し", "isCorrect": false },
+        { "optionText": "する", "isCorrect": true },
+        { "optionText": "して", "isCorrect": false },
+        { "optionText": "しよう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "試験の結果は 10日後に ___ 予定です。",
+      "explanation": "Kết quả sẽ 'biết/có'. '分かる' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "分かり", "isCorrect": false },
+        { "optionText": "分かる", "isCorrect": true },
+        { "optionText": "分かって", "isCorrect": false },
+        { "optionText": "分かろう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "今日の午後は工場 ___ 見学の予定です。",
+      "explanation": "N + の + 予定. '工場見学' là một cụm danh từ nên dùng 'の'.",
+      "points": 5,
+      "options": [
+        { "optionText": "の", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "新しい店は 来週の金曜日に ___ 予定です。",
+      "explanation": "Cửa hàng 'mở cửa'. 'オープンする' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "オープンする", "isCorrect": true },
+        { "optionText": "オープンし", "isCorrect": false },
+        { "optionText": "オープンして", "isCorrect": false },
+        { "optionText": "オープンした", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "明日の運動会は 雨なら ___ 予定です。",
+      "explanation": "Nếu mưa thì sẽ 'hủy'. '中止' (danh từ) + の + 予定.",
+      "points": 5,
+      "options": [
+        { "optionText": "中止", "isCorrect": true },
+        { "optionText": "中止する", "isCorrect": false },
+        { "optionText": "中止して", "isCorrect": false },
+        { "optionText": "中止した", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "来年の4月に大学を ___ 予定です。",
+      "explanation": "Kế hoạch 'nhập học'. '入学する' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "入学し", "isCorrect": false },
+        { "optionText": "入学する", "isCorrect": true },
+        { "optionText": "入学して", "isCorrect": false },
+        { "optionText": "入学しよう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "晩ご飯は 7時からレストランで ___ 予定です。",
+      "explanation": "Kế hoạch 'ăn'. '食べる' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "食べて", "isCorrect": false },
+        { "optionText": "食べる", "isCorrect": true },
+        { "optionText": "食べよう", "isCorrect": false },
+        { "optionText": "食べた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "明日の朝は 6時に ___ 予定です。",
+      "explanation": "Kế hoạch 'thức dậy'. '起きる' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "起きる", "isCorrect": true },
+        { "optionText": "起き", "isCorrect": false },
+        { "optionText": "起きて", "isCorrect": false },
+        { "optionText": "起きた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "部長は 3時ごろ戻る ___ です。",
+      "explanation": "Theo kế hoạch/lịch trình thì trưởng phòng sẽ quay lại.",
+      "points": 5,
+      "options": [
+        { "optionText": "予定", "isCorrect": true },
+        { "optionText": "つもり", "isCorrect": false },
+        { "optionText": "はず", "isCorrect": false },
+        { "optionText": "こと", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "レポートは 今週の金曜日までに ___ 予定です。",
+      "explanation": "Kế hoạch 'nộp'. '出す' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "出して", "isCorrect": false },
+        { "optionText": "出す", "isCorrect": true },
+        { "optionText": "出そう", "isCorrect": false },
+        { "optionText": "出した", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "明日の午後は 友達と ___ 予定です。",
+      "explanation": "Kế hoạch 'gặp'. '会う' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "会い", "isCorrect": false },
+        { "optionText": "会って", "isCorrect": false },
+        { "optionText": "会う", "isCorrect": true },
+        { "optionText": "会った", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N4 - Bộ 31: Vẫn chưa làm... (まだ V-ていません)",
+  "level": "N4",
+  "description": "Diễn tả một hành động hoặc sự việc chưa xảy ra hoặc chưa hoàn thành tính đến thời điểm hiện tại.",
+  "isPremium": false,
+  "examples": [
+    "まだ食べていません。(Vẫn chưa ăn.)",
+    "まだ勉強していません。(Vẫn chưa học bài.)",
+    "もう遅いですが、息子はまだ帰ってきていません。(Đã muộn rồi nhưng con trai vẫn chưa về.)"
+  ],
+  "questions": [
+    {
+      "questionText": "A: 昼ご飯を食べに行きませんか。\nB: すみません、私はまだ ___ いません。",
+      "explanation": "Câu trả lời 'vẫn chưa ăn'. '食べて' (ăn) + 'いません'.",
+      "points": 5,
+      "options": [
+        { "optionText": "食べて", "isCorrect": true },
+        { "optionText": "食べ", "isCorrect": false },
+        { "optionText": "食べた", "isCorrect": false },
+        { "optionText": "食べる", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: レポートはもう出しましたか。\nB: いいえ、まだ ___ いません。",
+      "explanation": "Câu trả lời 'vẫn chưa viết'. '書いて' (viết) + 'いません'.",
+      "points": 5,
+      "options": [
+        { "optionText": "書き", "isCorrect": false },
+        { "optionText": "書いて", "isCorrect": true },
+        { "optionText": "書かて", "isCorrect": false },
+        { "optionText": "書いてし", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "もう10時ですが、子供はまだ ___ いません。",
+      "explanation": "Đã 10 giờ nhưng đứa trẻ 'vẫn chưa thức dậy'. '起きて' (dậy) + 'いません'.",
+      "points": 5,
+      "options": [
+        { "optionText": "起きて", "isCorrect": true },
+        { "optionText": "起き", "isCorrect": false },
+        { "optionText": "起らて", "isCorrect": false },
+        { "optionText": "起きた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: 田中さんはもう来ましたか。\nB: いいえ、まだ ___ いません。",
+      "explanation": "Hỏi về sự xuất hiện: 'vẫn chưa đến'. '来て' (đến) + 'いません'.",
+      "points": 5,
+      "options": [
+        { "optionText": "来", "isCorrect": false },
+        { "optionText": "来て", "isCorrect": true },
+        { "optionText": "きいて", "isCorrect": false },
+        { "optionText": "こて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "銀行へ行きましたが、まだ ___ いませんでした。",
+      "explanation": "Hành động trong quá khứ: khi đến thì ngân hàng 'vẫn chưa mở cửa'. '開いて' (mở) + 'いませんでした'.",
+      "points": 5,
+      "options": [
+        { "optionText": "開けて", "isCorrect": false },
+        { "optionText": "開いて", "isCorrect": true },
+        { "optionText": "開き", "isCorrect": false },
+        { "optionText": "開かて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この本はまだ ___ いませんから、内容（ないよう）が分かりません。",
+      "explanation": "'Vẫn chưa đọc' nên không biết nội dung. '読んで' (đọc) + 'いません'.",
+      "points": 5,
+      "options": [
+        { "optionText": "読み", "isCorrect": false },
+        { "optionText": "読んで", "isCorrect": true },
+        { "optionText": "読まて", "isCorrect": false },
+        { "optionText": "読んだ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: 漢字の宿題は終わりましたか。\nB: いいえ、まだ ___ いません。",
+      "explanation": "'Vẫn chưa học/làm bài'. '勉強して' + 'いません'.",
+      "points": 5,
+      "options": [
+        { "optionText": "勉強し", "isCorrect": false },
+        { "optionText": "勉強して", "isCorrect": true },
+        { "optionText": "勉強した", "isCorrect": false },
+        { "optionText": "勉強すて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "結婚して5年になりますが、子供はまだ ___ いません。",
+      "explanation": "Trạng thái 'vẫn chưa có' con. 'いて' (có - dùng cho người/động vật) + 'いません'.",
+      "points": 5,
+      "options": [
+        { "optionText": "いて", "isCorrect": true },
+        { "optionText": "い", "isCorrect": false },
+        { "optionText": "あり", "isCorrect": false },
+        { "optionText": "あって", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: 明日の準備はできましたか。\nB: いいえ、まだ ___ いません。",
+      "explanation": "'Vẫn chưa chuẩn bị'. '準備して' + 'いません'.",
+      "points": 5,
+      "options": [
+        { "optionText": "準備して", "isCorrect": true },
+        { "optionText": "準備し", "isCorrect": false },
+        { "optionText": "準備した", "isCorrect": false },
+        { "optionText": "準備する", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "バス停（ばしてい）で30分待っていますが、バスはまだ ___ いません。",
+      "explanation": "Đợi 30 phút rồi mà xe buýt 'vẫn chưa tới'. '来て' + 'いません'.",
+      "points": 5,
+      "options": [
+        { "optionText": "来て", "isCorrect": true },
+        { "optionText": "来", "isCorrect": false },
+        { "optionText": "きてい", "isCorrect": false },
+        { "optionText": "きって", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: そのニュースはもう聞きましたか。\nB: いいえ、まだ ___ いません。",
+      "explanation": "'Vẫn chưa nghe/biết'. '聞いて' + 'いません'.",
+      "points": 5,
+      "options": [
+        { "optionText": "聞き", "isCorrect": false },
+        { "optionText": "聞いて", "isCorrect": true },
+        { "optionText": "聞かて", "isCorrect": false },
+        { "optionText": "聞いた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本へ来て1年ですが、まだ日本語が上手に ___ いません。",
+      "explanation": "Trạng thái 'vẫn chưa trở nên' giỏi. 'なって' + 'いません'.",
+      "points": 5,
+      "options": [
+        { "optionText": "なって", "isCorrect": true },
+        { "optionText": "なり", "isCorrect": false },
+        { "optionText": "ならて", "isCorrect": false },
+        { "optionText": "なった", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: お金はもう払いましたか。\nB: いいえ、まだ ___ いません。",
+      "explanation": "'Vẫn chưa trả tiền'. '払って' + 'いません'.",
+      "points": 5,
+      "options": [
+        { "optionText": "払い", "isCorrect": false },
+        { "optionText": "払って", "isCorrect": true },
+        { "optionText": "払わて", "isCorrect": false },
+        { "optionText": "払いた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "会議（かいぎ）はまだ ___ いません。あと20分かかります。",
+      "explanation": "Cuộc họp 'vẫn chưa kết thúc'. '終わって' + 'いません'.",
+      "points": 5,
+      "options": [
+        { "optionText": "終わり", "isCorrect": false },
+        { "optionText": "終わって", "isCorrect": true },
+        { "optionText": "終わらて", "isCorrect": false },
+        { "optionText": "終わった", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "外はまだ暗いです。太陽（たいよう）がまだ ___ いませんから。",
+      "explanation": "Mặt trời 'vẫn chưa mọc'. '出て' + 'いません'.",
+      "points": 5,
+      "options": [
+        { "optionText": "出", "isCorrect": false },
+        { "optionText": "出て", "isCorrect": true },
+        { "optionText": "だして", "isCorrect": false },
+        { "optionText": "出られ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: 掃除（そうじ）は終わりましたか。\nB: いいえ、まだ ___ いません。",
+      "explanation": "'Vẫn chưa làm/chưa xong'. 'して' + 'いません'.",
+      "points": 5,
+      "options": [
+        { "optionText": "し", "isCorrect": false },
+        { "optionText": "して", "isCorrect": true },
+        { "optionText": "した", "isCorrect": false },
+        { "optionText": "しられ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この料理はまだ ___ いません。もう少し待ってください。",
+      "explanation": "Món ăn 'vẫn chưa làm xong/chưa được'. 'できて' + 'いません'.",
+      "points": 5,
+      "options": [
+        { "optionText": "できて", "isCorrect": true },
+        { "optionText": "でき", "isCorrect": false },
+        { "optionText": "できられ", "isCorrect": false },
+        { "optionText": "できた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: 田中さんに連絡（れんらく）しましたか。\nB: いいえ、まだ ___ いません。",
+      "explanation": "'Vẫn chưa liên lạc'. 'して' + 'いません'.",
+      "points": 5,
+      "options": [
+        { "optionText": "して", "isCorrect": true },
+        { "optionText": "し", "isCorrect": false },
+        { "optionText": "した", "isCorrect": false },
+        { "optionText": "する", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "将来のことは、まだ ___ いません。",
+      "explanation": "'Vẫn chưa quyết định'. '決めて' + 'いません'.",
+      "points": 5,
+      "options": [
+        { "optionText": "決まり", "isCorrect": false },
+        { "optionText": "決めて", "isCorrect": true },
+        { "optionText": "決められ", "isCorrect": false },
+        { "optionText": "決めた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: 窓を閉めてもいいですか。\nB: すみません、まだタバコを ___ いませんから、開けておいてください。",
+      "explanation": "'Vẫn chưa hút xong'. '吸って' + 'いません'.",
+      "points": 5,
+      "options": [
+        { "optionText": "吸い", "isCorrect": false },
+        { "optionText": "吸って", "isCorrect": true },
+        { "optionText": "吸わて", "isCorrect": false },
+        { "optionText": "吸いた", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N4 - Bộ 32: Dự định cá nhân (V-る/V-nai つもりです)",
+  "level": "N4",
+  "description": "Diễn tả ý hướng hoặc dự định cụ thể của người nói. Thường dùng cho các kế hoạch cá nhân với độ chắc chắn cao (khoảng 70-80%).",
+  "isPremium": false,
+  "examples": [
+    " sang năm, tôi dự định đi Nhật. (来年、日本へ行くつもりです。)",
+    "Tuần này, tôi dự định về quê cùng bạn. (今週、友達とふるさとへ帰るつもりです。)",
+    "Tôi dự định sẽ không kết hôn. (結婚しないつもりです。)"
+  ],
+  "questions": [
+    {
+      "questionText": "将来、医者に ___ つもりです。",
+      "explanation": "Dự định 'trở thành' bác sĩ. Trước 'tsumori' dùng thể từ điển. 'なる' -> 'なるつもり'.",
+      "points": 5,
+      "options": [
+        { "optionText": "なる", "isCorrect": true },
+        { "optionText": "なり", "isCorrect": false },
+        { "optionText": "なって", "isCorrect": false },
+        { "optionText": "なろう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "会社が遠いですから、来月引っ越しを ___ つもりです。",
+      "explanation": "Dự định 'chuyển nhà'. 'する' -> 'するつもり'.",
+      "points": 5,
+      "options": [
+        { "optionText": "し", "isCorrect": false },
+        { "optionText": "する", "isCorrect": true },
+        { "optionText": "しよう", "isCorrect": false },
+        { "optionText": "した", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "お酒を飲みましたから、今日は車を ___ つもりです。",
+      "explanation": "Dự định 'không lái xe' vì đã uống rượu. Dùng thể Nai + つもり. '運転しない' -> '運転しないつもり'.",
+      "points": 5,
+      "options": [
+        { "optionText": "運転する", "isCorrect": false },
+        { "optionText": "運転しなくて", "isCorrect": false },
+        { "optionText": "運転しない", "isCorrect": true },
+        { "optionText": "運転しなかった", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "夏休みはどこも ___ つもりです。家でゆっくり休みたいです。",
+      "explanation": "Dự định 'không đi đâu'. Dùng thể Nai + つもり. '行かない' -> '行かないつもり'.",
+      "points": 5,
+      "options": [
+        { "optionText": "行く", "isCorrect": false },
+        { "optionText": "行かない", "isCorrect": true },
+        { "optionText": "行かなかった", "isCorrect": false },
+        { "optionText": "行こう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "今夜は忙しいので、パーティーに ___ つもりです。",
+      "explanation": "Dự định 'không tham gia/đi'. '行かない' -> '行かないつもり'.",
+      "points": 5,
+      "options": [
+        { "optionText": "行く", "isCorrect": false },
+        { "optionText": "行かない", "isCorrect": true },
+        { "optionText": "行こう", "isCorrect": false },
+        { "optionText": "行きて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本へ行ったら、たくさん漢字を ___ つもりです。",
+      "explanation": "Dự định 'học' (benkyou suru). Dùng thể từ điển.",
+      "points": 5,
+      "options": [
+        { "optionText": "勉強し", "isCorrect": false },
+        { "optionText": "勉強する", "isCorrect": true },
+        { "optionText": "勉強しよう", "isCorrect": false },
+        { "optionText": "勉強した", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "たばこは体に悪いですから、明日から ___ つもりです。",
+      "explanation": "Dự định 'không hút/bỏ thuốc'. '吸わない' -> '吸わないつもり'.",
+      "points": 5,
+      "options": [
+        { "optionText": "吸う", "isCorrect": false },
+        { "optionText": "吸わない", "isCorrect": true },
+        { "optionText": "吸って", "isCorrect": false },
+        { "optionText": "吸わなかった", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "明日、母に電話を ___ つもりです。",
+      "explanation": "Dự định 'gọi điện'. 'かける' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "かけ", "isCorrect": false },
+        { "optionText": "かける", "isCorrect": true },
+        { "optionText": "かけた", "isCorrect": false },
+        { "optionText": "かけよう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日曜日は買い物をしないで、家で掃除を ___ つもりです。",
+      "explanation": "Dự định 'dọn dẹp'. 'する' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "し", "isCorrect": false },
+        { "optionText": "する", "isCorrect": true },
+        { "optionText": "した", "isCorrect": false },
+        { "optionText": "しよう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あまり面白くないので、この映画は ___ つもりです。",
+      "explanation": "Dự định 'không xem'. '見ない' (V-nai).",
+      "points": 5,
+      "options": [
+        { "optionText": "見る", "isCorrect": false },
+        { "optionText": "見ない", "isCorrect": true },
+        { "optionText": "見て", "isCorrect": false },
+        { "optionText": "見よう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "新しいスマホは ___ つもりです。今のがまだ使えますから。",
+      "explanation": "Dự định 'không mua'. '買わない' (V-nai).",
+      "points": 5,
+      "options": [
+        { "optionText": "買う", "isCorrect": false },
+        { "optionText": "買わない", "isCorrect": true },
+        { "optionText": "買って", "isCorrect": false },
+        { "optionText": "買おう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "一生懸命練習して、今度の試合は ___ つもりです。",
+      "explanation": "Dự định 'thắng' (katsu). '勝つ' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "勝ち", "isCorrect": false },
+        { "optionText": "勝つ", "isCorrect": true },
+        { "optionText": "勝とう", "isCorrect": false },
+        { "optionText": "勝った", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "危ないですから、あそこには ___ つもりです。",
+      "explanation": "Dự định 'không vào'. '入らない' (V-nai).",
+      "points": 5,
+      "options": [
+        { "optionText": "入る", "isCorrect": false },
+        { "optionText": "入らない", "isCorrect": true },
+        { "optionText": "入って", "isCorrect": false },
+        { "optionText": "入ろう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "お金が足りないので、旅行には ___ つもりです。",
+      "explanation": "Dự định 'không đi'. '行かない' (V-nai).",
+      "points": 5,
+      "options": [
+        { "optionText": "行く", "isCorrect": false },
+        { "optionText": "行かない", "isCorrect": true },
+        { "optionText": "行こう", "isCorrect": false },
+        { "optionText": "行って", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "大切な話がありますから、明日 ___ つもりです。",
+      "explanation": "Dự định 'gặp' (au). '会う' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "会い", "isCorrect": false },
+        { "optionText": "会う", "isCorrect": true },
+        { "optionText": "会おう", "isCorrect": false },
+        { "optionText": "会った", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "気分が悪いので、今日は何も ___ つもりです。",
+      "explanation": "Dự định 'không ăn gì'. '食べない' (V-nai).",
+      "points": 5,
+      "options": [
+        { "optionText": "食べ", "isCorrect": false },
+        { "optionText": "食べる", "isCorrect": false },
+        { "optionText": "食べよう", "isCorrect": false },
+        { "optionText": "食べない", "isCorrect": true }
+      ]
+    },
+    {
+      "questionText": "将来、日本語の先生に ___ つもりです。",
+      "explanation": "Dự định 'trở thành'. 'なる' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "なる", "isCorrect": true },
+        { "optionText": "なり", "isCorrect": false },
+        { "optionText": "なって", "isCorrect": false },
+        { "optionText": "なろう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "雨が降っていますから、テニスは ___ つもりです。",
+      "explanation": "Dự định 'không chơi'. 'しない' (V-nai).",
+      "points": 5,
+      "options": [
+        { "optionText": "し", "isCorrect": false },
+        { "optionText": "する", "isCorrect": false },
+        { "optionText": "しない", "isCorrect": true },
+        { "optionText": "した", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "忙しくても、毎日運動を ___ つもりです。",
+      "explanation": "Dự định 'thực hiện' (suru). 'する' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "し", "isCorrect": false },
+        { "optionText": "する", "isCorrect": true },
+        { "optionText": "しよう", "isCorrect": false },
+        { "optionText": "した", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: 誰に話すんですか？\nB: 誰にも ___ つもりです。内緒（ないしょ）ですから。",
+      "explanation": "Dự định 'không nói' cho bất cứ ai. '話さない' (V-nai).",
+      "points": 5,
+      "options": [
+        { "optionText": "話す", "isCorrect": false },
+        { "optionText": "話そう", "isCorrect": false },
+        { "optionText": "話さない", "isCorrect": true },
+        { "optionText": "話して", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N4 - Bộ 33: Đưa ra lời khuyên (V-た/V-nai ほうがいいです)",
+  "level": "N4",
+  "description": "Dùng để khuyên bảo hoặc gợi ý đối phương nên hoặc không nên thực hiện một hành động nào đó vì lợi ích của họ.",
+  "isPremium": false,
+  "examples": [
+    "毎日、早く寝たほうがいいですよ。(Hàng ngày bạn nên ngủ sớm thì tốt hơn.)",
+    "疲れているときは、無理をしないほうがいいです。(Khi đang mệt thì không nên làm việc quá sức.)",
+    "具合が悪いなら、早く病院へ行ったほうがいいです。(Nếu thấy không khỏe thì nên đi bệnh viện sớm.)"
+  ],
+  "questions": [
+    {
+      "questionText": "体に悪いですから、たばこは ___ ほうがいいですよ。",
+      "explanation": "Lời khuyên 'không nên làm gì'. Dùng Thể Nai. '吸う' -> '吸わない'.",
+      "points": 5,
+      "options": [
+        { "optionText": "吸う", "isCorrect": false },
+        { "optionText": "吸った", "isCorrect": false },
+        { "optionText": "吸わない", "isCorrect": true },
+        { "optionText": "吸わなかった", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "雨が降りそうですから、傘を ___ ほうがいいです。",
+      "explanation": "Lời khuyên 'nên làm gì'. Dùng Thể Ta. '持っていく' -> '持っていった'.",
+      "points": 5,
+      "options": [
+        { "optionText": "持っていく", "isCorrect": false },
+        { "optionText": "持っていった", "isCorrect": true },
+        { "optionText": "持っていかない", "isCorrect": false },
+        { "optionText": "持っていき", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "大切な話ですから、メモを ___ ほうがいいですよ。",
+      "explanation": "Lời khuyên nên ghi chú lại. '取る' -> '取った'.",
+      "points": 5,
+      "options": [
+        { "optionText": "取った", "isCorrect": true },
+        { "optionText": "取る", "isCorrect": false },
+        { "optionText": "取らない", "isCorrect": false },
+        { "optionText": "取って", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "夜遅いですから、一人で ___ ほうがいいです。",
+      "explanation": "Khuyên không nên ra ngoài một mình lúc muộn. '出かける' -> '出かけない'.",
+      "points": 5,
+      "options": [
+        { "optionText": "出かけた", "isCorrect": false },
+        { "optionText": "出かける", "isCorrect": false },
+        { "optionText": "出かけない", "isCorrect": true },
+        { "optionText": "出かけなくて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "漢字が難しいなら、毎日 ___ ほうがいいですよ。",
+      "explanation": "Khuyên nên luyện tập hàng ngày. '練習する' -> '練習した'.",
+      "points": 5,
+      "options": [
+        { "optionText": "練習する", "isCorrect": false },
+        { "optionText": "練習した", "isCorrect": true },
+        { "optionText": "練習しない", "isCorrect": false },
+        { "optionText": "練習したの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "危ないですから、あそこには ___ ほうがいいです。",
+      "explanation": "Khuyên không nên đi vào chỗ nguy hiểm. '入る' -> '入らない'.",
+      "points": 5,
+      "options": [
+        { "optionText": "入った", "isCorrect": false },
+        { "optionText": "入る", "isCorrect": false },
+        { "optionText": "入らない", "isCorrect": true },
+        { "optionText": "入らなくて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: 頭が痛いんです。\nB: 今日は早く ___ ほうがいいですよ。",
+      "explanation": "Khuyên nên ngủ sớm khi bị đau đầu. '寝る' -> '寝た'.",
+      "points": 5,
+      "options": [
+        { "optionText": "寝る", "isCorrect": false },
+        { "optionText": "寝ない", "isCorrect": false },
+        { "optionText": "寝た", "isCorrect": true },
+        { "optionText": "寝て", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "太りたくないなら、夜遅くに甘い物を ___ ほうがいいです。",
+      "explanation": "Khuyên không nên ăn đồ ngọt đêm khuya. '食べる' -> '食べない'.",
+      "points": 5,
+      "options": [
+        { "optionText": "食べた", "isCorrect": false },
+        { "optionText": "食べない", "isCorrect": true },
+        { "optionText": "食べる", "isCorrect": false },
+        { "optionText": "食べなかった", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この道はいつも込んでいますから、あっちの道を ___ ほうがいいです。",
+      "explanation": "Khuyên nên đi đường kia. '行く' -> 'いった'.",
+      "points": 5,
+      "options": [
+        { "optionText": "いった", "isCorrect": true },
+        { "optionText": "いく", "isCorrect": false },
+        { "optionText": "いかない", "isCorrect": false },
+        { "optionText": "いって", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "風邪（かぜ）のときは、お風呂に ___ ほうがいいですよ。",
+      "explanation": "Khuyên không nên tắm khi bị cảm. '入る' -> '入らない'.",
+      "points": 5,
+      "options": [
+        { "optionText": "入った", "isCorrect": false },
+        { "optionText": "入らない", "isCorrect": true },
+        { "optionText": "入る", "isCorrect": false },
+        { "optionText": "入らなくて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "明日は大切な試験がありますから、今日はよく ___ ほうがいいです。",
+      "explanation": "Khuyên nên học bài kỹ. '勉強する' -> '勉強した'.",
+      "points": 5,
+      "options": [
+        { "optionText": "勉強する", "isCorrect": false },
+        { "optionText": "勉強した", "isCorrect": true },
+        { "optionText": "勉強しない", "isCorrect": false },
+        { "optionText": "勉強しなくて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "そんなに怒らない ___ ほうがいいですよ。体に悪いですから。",
+      "explanation": "Khuyên không nên giận dữ như thế. '怒る' -> '怒らない'.",
+      "points": 5,
+      "options": [
+        { "optionText": "怒った", "isCorrect": false },
+        { "optionText": "怒らない", "isCorrect": true },
+        { "optionText": "怒る", "isCorrect": false },
+        { "optionText": "怒らなかった", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本へ行く前に、少し日本語を ___ ほうがいいです。",
+      "explanation": "Khuyên nên học tiếng Nhật trước khi đi. '覚える' -> '覚えた'.",
+      "points": 5,
+      "options": [
+        { "optionText": "覚える", "isCorrect": false },
+        { "optionText": "覚えた", "isCorrect": true },
+        { "optionText": "覚えなくて", "isCorrect": false },
+        { "optionText": "覚えよう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "大切な話は、電話じゃなくて直接（ちょくせつ） ___ ほうがいいです。",
+      "explanation": "Khuyên nên nói chuyện trực tiếp. '話す' -> '話した'.",
+      "points": 5,
+      "options": [
+        { "optionText": "話した", "isCorrect": true },
+        { "optionText": "話す", "isCorrect": false },
+        { "optionText": "話さない", "isCorrect": false },
+        { "optionText": "話して", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "暑いですから、無理を ___ ほうがいいですよ。",
+      "explanation": "Khuyên không nên làm quá sức. 'する' -> 'しない'.",
+      "points": 5,
+      "options": [
+        { "optionText": "した", "isCorrect": false },
+        { "optionText": "しない", "isCorrect": true },
+        { "optionText": "する", "isCorrect": false },
+        { "optionText": "しなかった", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "道が分からないときは、すぐ誰かに ___ ほうがいいです。",
+      "explanation": "Khuyên nên hỏi ai đó ngay. '聞く' -> '聞いた'.",
+      "points": 5,
+      "options": [
+        { "optionText": "聞いた", "isCorrect": true },
+        { "optionText": "聞く", "isCorrect": false },
+        { "optionText": "聞かない", "isCorrect": false },
+        { "optionText": "聞いて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "忘れ物（わすれもの）をしないように、もう一度 ___ ほうがいいですよ。",
+      "explanation": "Khuyên nên kiểm tra lại. '確認する' -> '確認した'.",
+      "points": 5,
+      "options": [
+        { "optionText": "確認する", "isCorrect": false },
+        { "optionText": "確認した", "isCorrect": true },
+        { "optionText": "確認しない", "isCorrect": false },
+        { "optionText": "確認しなくて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "借りたお金は、早く ___ ほうがいいです。",
+      "explanation": "Khuyên nên trả lại tiền đã mượn sớm. '返す' -> '返した'.",
+      "points": 5,
+      "options": [
+        { "optionText": "返す", "isCorrect": false },
+        { "optionText": "返さない", "isCorrect": false },
+        { "optionText": "返した", "isCorrect": true },
+        { "optionText": "返して", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "夜遅くですから、大きい声で ___ ほうがいいです。",
+      "explanation": "Khuyên không nên nói to lúc đêm muộn. '話す' -> '話さない'.",
+      "points": 5,
+      "options": [
+        { "optionText": "話した", "isCorrect": false },
+        { "optionText": "話さない", "isCorrect": true },
+        { "optionText": "話す", "isCorrect": false },
+        { "optionText": "話さなかった", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "せっかく日本に来たんですから、いろいろな所へ ___ ほうがいいですよ。",
+      "explanation": "Khuyên nên đi nhiều nơi. '行く' -> 'いった'.",
+      "points": 5,
+      "options": [
+        { "optionText": "いった", "isCorrect": true },
+        { "optionText": "いく", "isCorrect": false },
+        { "optionText": "いかない", "isCorrect": false },
+        { "optionText": "いって", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N4 - Bộ 34: Suy đoán chắc chắn (～でしょう)",
+  "level": "N4",
+  "description": "Diễn tả sự phán đoán của người nói dựa trên các thông tin có được hoặc dùng để hỏi sự đồng ý của đối phương. Độ chắc chắn cao hơn 'かもしれません'.",
+  "isPremium": false,
+  "examples": [
+    "日本の冬は雪がたくさん降るでしょう。(Mùa đông ở Nhật có lẽ tuyết sẽ rơi nhiều.)",
+    "明日はいい天気になるでしょう。(Ngày mai chắc là thời tiết sẽ trở nên đẹp.)",
+    "北海道はとても寒いでしょう。(Hokkaido chắc là lạnh lắm nhỉ.)"
+  ],
+  "questions": [
+    {
+      "questionText": "空が暗いですから、午後から雨が ___ でしょう。",
+      "explanation": "Dựa trên quan sát bầu trời tối để đưa ra suy đoán. Động từ '降る' để ở thể thông thường.",
+      "points": 5,
+      "options": [
+        { "optionText": "降る", "isCorrect": true },
+        { "optionText": "降り", "isCorrect": false },
+        { "optionText": "降った", "isCorrect": false },
+        { "optionText": "降ります", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "北海道の冬はとても ___ でしょう。",
+      "explanation": "Tính từ đuôi i '寒い' kết hợp trực tiếp với 'でしょう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "寒い", "isCorrect": true },
+        { "optionText": "寒かった", "isCorrect": false },
+        { "optionText": "寒いだ", "isCorrect": false },
+        { "optionText": "寒く", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "田中さんは旅行が好きですから、このお土産は ___ でしょう。",
+      "explanation": "Tính từ đuôi na '嬉しい' (hạnh phúc/vui) hoặc '好き'. Với '嬉しい' (Adj-i) thì dùng trực tiếp.",
+      "points": 5,
+      "options": [
+        { "optionText": "嬉しい", "isCorrect": true },
+        { "optionText": "嬉しいだ", "isCorrect": false },
+        { "optionText": "嬉しかった", "isCorrect": false },
+        { "optionText": "嬉しいな", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "明日は日曜日ですから、町は ___ でしょう。",
+      "explanation": "Danh từ hoặc tính từ đuôi na '賑やか' (nhộn nhịp). Không dùng 'だ' trước 'でしょう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "賑やかだ", "isCorrect": false },
+        { "optionText": "賑やかな", "isCorrect": false },
+        { "optionText": "賑やか", "isCorrect": true },
+        { "optionText": "賑やかで", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "彼は毎日練習していますから、今度の試合は ___ でしょう。",
+      "explanation": "Dựa trên nỗ lực để suy đoán kết quả: 'Chắc chắn sẽ thắng'. '勝つ' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "勝つ", "isCorrect": true },
+        { "optionText": "勝ち", "isCorrect": false },
+        { "optionText": "勝って", "isCorrect": false },
+        { "optionText": "勝った", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あんなにたくさん食べたら、お腹が ___ でしょう。",
+      "explanation": "Suy đoán kết quả: 'Chắc là sẽ đau bụng'. '痛くなる' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "痛い", "isCorrect": false },
+        { "optionText": "痛くなる", "isCorrect": true },
+        { "optionText": "痛かった", "isCorrect": false },
+        { "optionText": "痛く", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "明日は試験ですから、みんな ___ でしょう。",
+      "explanation": "Suy đoán trạng thái: 'Chắc là mọi người sẽ bận/lo lắng'. Dùng tính từ đuôi na '大変' hoặc '心配'.",
+      "points": 5,
+      "options": [
+        { "optionText": "大変だ", "isCorrect": false },
+        { "optionText": "大変", "isCorrect": true },
+        { "optionText": "大変な", "isCorrect": false },
+        { "optionText": "大変で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この仕事は明日までに ___ でしょうか。",
+      "explanation": "Câu hỏi suy đoán: 'Liệu có xong không nhỉ?'. '終わる' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "終わる", "isCorrect": true },
+        { "optionText": "終わり", "isCorrect": false },
+        { "optionText": "終わって", "isCorrect": false },
+        { "optionText": "終わった", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あの人はいつも親切ですから、みんなに ___ でしょう。",
+      "explanation": "Suy đoán về sự yêu mến. '好かれる' (được yêu thích).",
+      "points": 5,
+      "options": [
+        { "optionText": "好かれる", "isCorrect": true },
+        { "optionText": "好かれ", "isCorrect": false },
+        { "optionText": "好かれるだ", "isCorrect": false },
+        { "optionText": "好かれた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "今日はもう遅いですから、彼はもう ___ でしょう。",
+      "explanation": "Suy đoán hành động đã thực hiện: 'Chắc là đã ngủ rồi'. Dùng thể quá khứ thông thường '寝た'.",
+      "points": 5,
+      "options": [
+        { "optionText": "寝る", "isCorrect": false },
+        { "optionText": "寝た", "isCorrect": true },
+        { "optionText": "寝ている", "isCorrect": false },
+        { "optionText": "寝ただ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "これ、田中さんのカバン ___ でしょう？ あそこに置いてありますよ。",
+      "explanation": "Dùng để xác nhận với danh từ. Không dùng 'だ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "だ", "isCorrect": false },
+        { "optionText": "な", "isCorrect": false },
+        { "optionText": "", "isCorrect": true },
+        { "optionText": "の", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "一生懸命勉強しましたから、今度の試験は ___ でしょう。",
+      "explanation": "Suy đoán về độ khó: 'Chắc là sẽ ổn/dễ'. Dùng tính từ đuôi na '大丈夫'.",
+      "points": 5,
+      "options": [
+        { "optionText": "大丈夫だ", "isCorrect": false },
+        { "optionText": "大丈夫", "isCorrect": true },
+        { "optionText": "大丈夫な", "isCorrect": false },
+        { "optionText": "大丈夫で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "夜は冷えますから、明日の朝はもっと ___ でしょう。",
+      "explanation": "Suy đoán về mức độ: 'Chắc là sẽ lạnh hơn'. '寒い' (Adj-i).",
+      "points": 5,
+      "options": [
+        { "optionText": "寒い", "isCorrect": true },
+        { "optionText": "寒いだ", "isCorrect": false },
+        { "optionText": "寒かった", "isCorrect": false },
+        { "optionText": "寒く", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あの雲を見てください。これから強い風が ___ でしょう。",
+      "explanation": "Suy đoán hiện tượng tự nhiên: 'Gió sẽ thổi'. '吹く' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "吹く", "isCorrect": true },
+        { "optionText": "吹き", "isCorrect": false },
+        { "optionText": "吹いて", "isCorrect": false },
+        { "optionText": "吹いた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本の物価はベトナムよりずっと ___ でしょう。",
+      "explanation": "Suy đoán so sánh: 'Chắc chắn là đắt hơn'. '高い' (Adj-i).",
+      "points": 5,
+      "options": [
+        { "optionText": "高い", "isCorrect": true },
+        { "optionText": "高いだ", "isCorrect": false },
+        { "optionText": "高かった", "isCorrect": false },
+        { "optionText": "高く", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "彼女は忙しいですから、明日のパーティーには ___ でしょう。",
+      "explanation": "Suy đoán phủ định: 'Có lẽ là sẽ không đến'. '来ない' (V-nai).",
+      "points": 5,
+      "options": [
+        { "optionText": "来ない", "isCorrect": true },
+        { "optionText": "来る", "isCorrect": false },
+        { "optionText": "来なかった", "isCorrect": false },
+        { "optionText": "来ないだ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: 明日の天気はどうでしょうか。\nB: 多分、いい ___ でしょう。",
+      "explanation": "Dùng trạng từ '多分' để hỗ trợ suy đoán. 'いい' (Adj-i).",
+      "points": 5,
+      "options": [
+        { "optionText": "天気", "isCorrect": true },
+        { "optionText": "天気だ", "isCorrect": false },
+        { "optionText": "天気な", "isCorrect": false },
+        { "optionText": "天気の", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この問題は、彼ならすぐに ___ でしょう。",
+      "explanation": "Suy đoán về khả năng: 'Chắc là anh ấy sẽ hiểu/giải được'. '分かる' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "分かる", "isCorrect": true },
+        { "optionText": "分かり", "isCorrect": false },
+        { "optionText": "分かった", "isCorrect": false },
+        { "optionText": "分かって", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "こんなに遅くまで働いたら、体が ___ でしょう。",
+      "explanation": "Suy đoán hậu quả: 'Chắc là cơ thể sẽ mệt mỏi'. '疲れる' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "疲れる", "isCorrect": true },
+        { "optionText": "疲れ", "isCorrect": false },
+        { "optionText": "疲れた", "isCorrect": false },
+        { "optionText": "疲れだ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: 来週、一緒に旅行に行きませんか。\nB: いいですね。きっと ___ でしょう。",
+      "explanation": "Dùng trạng từ 'きっと' (nhất định/chắc chắn) để nhấn mạnh sự mong đợi. '楽しい' (Adj-i).",
+      "points": 5,
+      "options": [
+        { "optionText": "楽しい", "isCorrect": true },
+        { "optionText": "楽しいだ", "isCorrect": false },
+        { "optionText": "楽しかった", "isCorrect": false },
+        { "optionText": "楽しくて", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N4 - Bộ 35: Suy đoán khả năng thấp (～かもしれません)",
+  "level": "N4",
+  "description": "Diễn tả một suy đoán hoặc khả năng có thể xảy ra nhưng không chắc chắn. Thường dùng khi người nói muốn để ngỏ các khả năng khác.",
+  "isPremium": false,
+  "examples": [
+    "8時の電車に間に合わないかもしれません。(Có lẽ tôi sẽ không kịp chuyến tàu 8 giờ.)",
+    "課長は早く帰るかもしれません。(Biết đâu trưởng phòng sẽ về sớm.)",
+    "風邪をひくかもしれませんから、暖かくしてください。(Có lẽ bạn sẽ bị cảm đấy, nên hãy mặc ấm vào.)"
+  ],
+  "questions": [
+    {
+      "questionText": "約束の時間に ___ かもしれません。先に始めてください。",
+      "explanation": "Diễn tả khả năng 'không kịp/muộn'. Động từ '遅れる' để ở thể thông thường.",
+      "points": 5,
+      "options": [
+        { "optionText": "遅れる", "isCorrect": true },
+        { "optionText": "遅れ", "isCorrect": false },
+        { "optionText": "遅れた", "isCorrect": false },
+        { "optionText": "遅れます", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "もしかしたら、明日は ___ かもしれません。",
+      "explanation": "Danh từ '雨' kết hợp trực tiếp với 'かもしれません' (bỏ 'だ').",
+      "points": 5,
+      "options": [
+        { "optionText": "雨だ", "isCorrect": false },
+        { "optionText": "雨", "isCorrect": true },
+        { "optionText": "雨の", "isCorrect": false },
+        { "optionText": "雨な", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あの店はいつも込んでいますから、今日は ___ かもしれません。",
+      "explanation": "Tính từ đuôi na '休み' (nghỉ) hoặc '大変'. Ở đây dùng danh từ '休み'.",
+      "points": 5,
+      "options": [
+        { "optionText": "休みだ", "isCorrect": false },
+        { "optionText": "休み", "isCorrect": true },
+        { "optionText": "休みで", "isCorrect": false },
+        { "optionText": "休みの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "道が込んでいますから、30分以上 ___ かもしれません。",
+      "explanation": "Suy đoán về thời gian tiêu tốn. 'かかる' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "かかる", "isCorrect": true },
+        { "optionText": "かかり", "isCorrect": false },
+        { "optionText": "かかって", "isCorrect": false },
+        { "optionText": "かかった", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "無理をしたら、病気が ___ かもしれませんよ。",
+      "explanation": "Cảnh báo khả năng xấu: 'Bệnh trở nên nặng hơn'. '悪くなる' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "悪い", "isCorrect": false },
+        { "optionText": "悪くなる", "isCorrect": true },
+        { "optionText": "悪かった", "isCorrect": false },
+        { "optionText": "悪くに", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "田中さんは今日、とても ___ かもしれません。顔色がよくないです。",
+      "explanation": "Tính từ đuôi na '暇' hoặc '大変'. Ở đây dùng '大変' (vất vả/mệt mỏi). Không dùng 'だ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "大変だ", "isCorrect": false },
+        { "optionText": "大変", "isCorrect": true },
+        { "optionText": "大変な", "isCorrect": false },
+        { "optionText": "大変で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "荷物が重いですから、一人では ___ かもしれません。",
+      "explanation": "Suy đoán về khả năng: 'Có lẽ là không thể mang nổi'. '持てない' (V-nai khả năng).",
+      "points": 5,
+      "options": [
+        { "optionText": "持てる", "isCorrect": false },
+        { "optionText": "持てない", "isCorrect": true },
+        { "optionText": "持たない", "isCorrect": false },
+        { "optionText": "持てなかった", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "一生懸命勉強しましたが、試験に ___ かもしれません。",
+      "explanation": "Lo lắng về kết quả: 'Có lẽ sẽ trượt'. '落ちる' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "落ちる", "isCorrect": true },
+        { "optionText": "落ち", "isCorrect": false },
+        { "optionText": "落ちて", "isCorrect": false },
+        { "optionText": "落ちた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "このパソコンは古いから、すぐ ___ かもしれません。",
+      "explanation": "Khả năng máy 'bị hỏng'. '壊れる' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "壊れる", "isCorrect": true },
+        { "optionText": "壊れ", "isCorrect": false },
+        { "optionText": "壊して", "isCorrect": false },
+        { "optionText": "壊れるだ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あの人はいつも嘘をつきますから、話は ___ かもしれません。",
+      "explanation": "Danh từ '嘘' (lời nói dối). Không dùng 'だ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "嘘だ", "isCorrect": false },
+        { "optionText": "嘘", "isCorrect": true },
+        { "optionText": "嘘な", "isCorrect": false },
+        { "optionText": "嘘の", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "物価が上がっていますから、生活が ___ かもしれません。",
+      "explanation": "Tính từ đuôi i '苦しい' (khó khăn/cực khổ).",
+      "points": 5,
+      "options": [
+        { "optionText": "苦しい", "isCorrect": true },
+        { "optionText": "苦しいだ", "isCorrect": false },
+        { "optionText": "苦しく", "isCorrect": false },
+        { "optionText": "苦しな", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: 田中さんはどこですか。\nB: 図書館で ___ かもしれません。",
+      "explanation": "Suy đoán trạng thái đang tiếp diễn: 'Có lẽ đang học'. '勉強している' (V-te iru).",
+      "points": 5,
+      "options": [
+        { "optionText": "勉強する", "isCorrect": false },
+        { "optionText": "勉強して", "isCorrect": false },
+        { "optionText": "勉強している", "isCorrect": true },
+        { "optionText": "勉強した", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "部長は今、とても ___ かもしれませんから、後で行きましょう。",
+      "explanation": "Tính từ đuôi i '忙しい' kết hợp trực tiếp.",
+      "points": 5,
+      "options": [
+        { "optionText": "忙しい", "isCorrect": true },
+        { "optionText": "忙しいだ", "isCorrect": false },
+        { "optionText": "忙しく", "isCorrect": false },
+        { "optionText": "忙しいな", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "鍵をどこかに ___ かもしれません。見つかりません。",
+      "explanation": "Suy đoán sự việc đã xảy ra: 'Có lẽ đã làm rơi'. '落とした' (V-ta).",
+      "points": 5,
+      "options": [
+        { "optionText": "落とす", "isCorrect": false },
+        { "optionText": "落とした", "isCorrect": true },
+        { "optionText": "落として", "isCorrect": false },
+        { "optionText": "落ちた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "夜は一人で歩かないほうがいいですよ。 ___ かもしれませんから。",
+      "explanation": "Cảnh báo nguy hiểm. '危ない' (Adj-i).",
+      "points": 5,
+      "options": [
+        { "optionText": "危ない", "isCorrect": true },
+        { "optionText": "危ないだ", "isCorrect": false },
+        { "optionText": "危な", "isCorrect": false },
+        { "optionText": "危なく", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この料理は辛いですから、子供には ___ かもしれません。",
+      "explanation": "Tính từ đuôi na '無理' (quá sức/không thể). Không dùng 'だ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "無理だ", "isCorrect": false },
+        { "optionText": "無理", "isCorrect": true },
+        { "optionText": "無理な", "isCorrect": false },
+        { "optionText": "無理で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "明日は用事がありますから、パーティーには ___ かもしれません。",
+      "explanation": "Suy đoán phủ định: 'Có lẽ sẽ không đi'. '行かない' (V-nai).",
+      "points": 5,
+      "options": [
+        { "optionText": "行く", "isCorrect": false },
+        { "optionText": "行かない", "isCorrect": true },
+        { "optionText": "行こう", "isCorrect": false },
+        { "optionText": "行かないだ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "財布を忘れたので、切符が ___ かもしれません。",
+      "explanation": "Khả năng 'không thể mua'. '買えない' (V-nai khả năng).",
+      "points": 5,
+      "options": [
+        { "optionText": "買えない", "isCorrect": true },
+        { "optionText": "買わない", "isCorrect": false },
+        { "optionText": "買える", "isCorrect": false },
+        { "optionText": "買えなかった", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "もしかしたら、彼は私の名前を ___ かもしれません。",
+      "explanation": "Suy đoán quá khứ: 'Có lẽ đã quên'. '忘れた' (V-ta).",
+      "points": 5,
+      "options": [
+        { "optionText": "忘れる", "isCorrect": false },
+        { "optionText": "忘れた", "isCorrect": true },
+        { "optionText": "忘れ", "isCorrect": false },
+        { "optionText": "忘れて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この映画はあまり ___ かもしれませんが、見に行きませんか。",
+      "explanation": "Tính từ đuôi na '有名' (nổi tiếng). Không dùng 'だ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "有名だ", "isCorrect": false },
+        { "optionText": "有名", "isCorrect": true },
+        { "optionText": "有名な", "isCorrect": false },
+        { "optionText": "有名で", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N4 - Bộ 36: Đại từ bất định (Nghi vấn từ + か)",
+  "level": "N4",
+  "description": "Sử dụng đại từ nghi vấn kết hợp với trợ từ 'か' để thay thế cho một danh từ không xác định cụ thể (ai đó, cái gì đó, lúc nào đó...).",
+  "isPremium": false,
+  "examples": [
+    "今何かほしいものがありますか。(Bây giờ bạn có muốn cái gì đó không?)",
+    "誰かいい人を紹介してくれませんか。(Bạn có thể giới thiệu cho tôi ai đó tốt tốt không?)",
+    "いつか、ぜひアメリカへ行きたいです。(Một lúc nào đó, tôi nhất định muốn đi Mỹ.)",
+    "冬休みにどこかへ行きましたか。(Kỳ nghỉ đông bạn có đi đâu đó không?)"
+  ],
+  "questions": [
+    {
+      "questionText": "おなかがすきましたね。 ___ 食べに行きませんか。",
+      "explanation": "Dùng '何か' để chỉ 'cái gì đó' (không xác định cụ thể món gì).",
+      "points": 5,
+      "options": [
+        { "optionText": "何か", "isCorrect": true },
+        { "optionText": "何が", "isCorrect": false },
+        { "optionText": "何でも", "isCorrect": false },
+        { "optionText": "何", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: 週末、 ___ へ行きましたか。\nB: いいえ、どこへも行きませんでした。",
+      "explanation": "Câu hỏi 'Có đi đâu đó không?'. 'どこか' chỉ một nơi nào đó.",
+      "points": 5,
+      "options": [
+        { "optionText": "どこ", "isCorrect": false },
+        { "optionText": "どこも", "isCorrect": false },
+        { "optionText": "どこか", "isCorrect": true },
+        { "optionText": "どこに", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "教室に ___ いますか。電気がついていますよ。",
+      "explanation": "Hỏi xem có 'ai đó' ở trong phòng không. 'だれか' chỉ người không xác định.",
+      "points": 5,
+      "options": [
+        { "optionText": "だれが", "isCorrect": false },
+        { "optionText": "だれか", "isCorrect": true },
+        { "optionText": "だれも", "isCorrect": false },
+        { "optionText": "だれ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "喉が渇きましたね。 ___ 飲み物がほしいです。",
+      "explanation": "Cần 'cái gì đó' để uống. '何か' đóng vai trò bổ ngữ.",
+      "points": 5,
+      "options": [
+        { "optionText": "何か", "isCorrect": true },
+        { "optionText": "何が", "isCorrect": false },
+        { "optionText": "何は", "isCorrect": false },
+        { "optionText": "いつか", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 日本で自分の店を持ちたいと思っています。",
+      "explanation": "Diễn tả dự định vào 'một lúc nào đó' trong tương lai. 'いつか'.",
+      "points": 5,
+      "options": [
+        { "optionText": "いつも", "isCorrect": false },
+        { "optionText": "いつが", "isCorrect": false },
+        { "optionText": "いつか", "isCorrect": true },
+        { "optionText": "いつまで", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "カバンの中に ___ ありますか。重そうですね。",
+      "explanation": "Hỏi xem có 'cái gì đó' trong cặp không.",
+      "points": 5,
+      "options": [
+        { "optionText": "何", "isCorrect": false },
+        { "optionText": "何か", "isCorrect": true },
+        { "optionText": "何が", "isCorrect": false },
+        { "optionText": "何でも", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あ、あそこに ___ 落ちていますよ。財布でしょうか。",
+      "explanation": "Vừa nhìn thấy 'cái gì đó' rơi (không rõ là gì). '何か'.",
+      "points": 5,
+      "options": [
+        { "optionText": "何か", "isCorrect": true },
+        { "optionText": "何が", "isCorrect": false },
+        { "optionText": "何", "isCorrect": false },
+        { "optionText": "どこか", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "休みの日に ___ 遊びに行きましょう。",
+      "explanation": "Lời mời đi chơi vào 'lúc nào đó' hoặc 'đâu đó'. Ở đây dùng 'どこか' (đâu đó).",
+      "points": 5,
+      "options": [
+        { "optionText": "どこ", "isCorrect": false },
+        { "optionText": "どこか", "isCorrect": true },
+        { "optionText": "どこも", "isCorrect": false },
+        { "optionText": "どこへも", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "窓の外に ___ 見えますか。",
+      "explanation": "Hỏi xem có nhìn thấy 'cái gì đó' không. '何か'.",
+      "points": 5,
+      "options": [
+        { "optionText": "何が", "isCorrect": false },
+        { "optionText": "何か", "isCorrect": true },
+        { "optionText": "何も", "isCorrect": false },
+        { "optionText": "何", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "すみません、 ___ 英語ができる人はいませんか。",
+      "explanation": "Tìm kiếm 'ai đó' có khả năng nói tiếng Anh. 'だれか'.",
+      "points": 5,
+      "options": [
+        { "optionText": "だれ", "isCorrect": false },
+        { "optionText": "だれか", "isCorrect": true },
+        { "optionText": "だれも", "isCorrect": false },
+        { "optionText": "だれが", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この問題について ___ 質問はありませんか。",
+      "explanation": "Hỏi xem có câu hỏi 'nào đó' (bất kỳ câu hỏi nào) không. '何か'.",
+      "points": 5,
+      "options": [
+        { "optionText": "何か", "isCorrect": true },
+        { "optionText": "何が", "isCorrect": false },
+        { "optionText": "何も", "isCorrect": false },
+        { "optionText": "何は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 宝くじ（たからくじ）が当たったらいいなと思います。",
+      "explanation": "Ước ao 'một lúc nào đó' trúng số. 'いつか'.",
+      "points": 5,
+      "options": [
+        { "optionText": "いつ", "isCorrect": false },
+        { "optionText": "いつか", "isCorrect": true },
+        { "optionText": "いつも", "isCorrect": false },
+        { "optionText": "いつの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "道に迷ってしまいました。 ___ に聞きましょう。",
+      "explanation": "Cần hỏi đường 'ai đó'. 'だれか' + 'に'.",
+      "points": 5,
+      "options": [
+        { "optionText": "だれか", "isCorrect": true },
+        { "optionText": "だれも", "isCorrect": false },
+        { "optionText": "だれ", "isCorrect": false },
+        { "optionText": "だれに", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "静かな ___ でゆっくり休みたいです。",
+      "explanation": "Muốn nghỉ ở 'nơi nào đó' yên tĩnh. 'どこか'.",
+      "points": 5,
+      "options": [
+        { "optionText": "どこ", "isCorrect": false },
+        { "optionText": "どこか", "isCorrect": true },
+        { "optionText": "どこも", "isCorrect": false },
+        { "optionText": "どこへ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ お手伝いできることはありますか。",
+      "explanation": "Hỏi xem có việc 'gì đó' có thể giúp không. '何か'.",
+      "points": 5,
+      "options": [
+        { "optionText": "何", "isCorrect": false },
+        { "optionText": "何か", "isCorrect": true },
+        { "optionText": "何が", "isCorrect": false },
+        { "optionText": "何でも", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "隣の部屋で ___ 声が聞こえます。",
+      "explanation": "Nghe thấy tiếng của 'ai đó'. 'だれか' + 'の'.",
+      "points": 5,
+      "options": [
+        { "optionText": "だれか", "isCorrect": false },
+        { "optionText": "だれかの", "isCorrect": true },
+        { "optionText": "だれも", "isCorrect": false },
+        { "optionText": "だれの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "冬休みに ___ へスキーに行きませんか。",
+      "explanation": "Mời đi trượt tuyết ở 'đâu đó'. 'どこか'.",
+      "points": 5,
+      "options": [
+        { "optionText": "どこ", "isCorrect": false },
+        { "optionText": "どこも", "isCorrect": false },
+        { "optionText": "どこか", "isCorrect": true },
+        { "optionText": "どこへも", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "消しゴムを忘れたんですが、 ___ 貸してくれませんか。",
+      "explanation": "Hỏi mượn 'ai đó'. 'だれか'.",
+      "points": 5,
+      "options": [
+        { "optionText": "だれ", "isCorrect": false },
+        { "optionText": "だれか", "isCorrect": true },
+        { "optionText": "だれも", "isCorrect": false },
+        { "optionText": "だれが", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "今忙しいですから、 ___ 後で来てください。",
+      "explanation": "Yêu cầu quay lại vào 'lúc nào đó' sau. 'またいつか' hoặc 'いつか'.",
+      "points": 5,
+      "options": [
+        { "optionText": "いつ", "isCorrect": false },
+        { "optionText": "いつか", "isCorrect": true },
+        { "optionText": "いつも", "isCorrect": false },
+        { "optionText": "いつの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "眼鏡（めがね）を ___ に忘れました。困りました。",
+      "explanation": "Quên kính ở 'đâu đó'. 'どこか' + 'に'.",
+      "points": 5,
+      "options": [
+        { "optionText": "どこ", "isCorrect": false },
+        { "optionText": "どこか", "isCorrect": true },
+        { "optionText": "どこも", "isCorrect": false },
+        { "optionText": "どこへ", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N4 - Bộ 37: Thể Mệnh lệnh (命令形)",
+  "level": "N4",
+  "description": "Luyện tập cách chia và sử dụng thể mệnh lệnh để đưa ra chỉ thị, mệnh lệnh mạnh mẽ hoặc cổ vũ trong các tình huống đặc biệt.",
+  "isPremium": false,
+  "examples": [
+    "もっと、頑張れ！ (Cố gắng lên nữa đi!)",
+    "早くしろ！ (Làm nhanh lên!)",
+    "諦めるな！ (Không được bỏ cuộc!)",
+    "こっちへ来い！ (Lại đây mau!)"
+  ],
+  "questions": [
+    {
+      "questionText": "A: 試合中、監督が選手に大きな声で言いました。\nB: 「もっと速く ___ ！」",
+      "explanation": "Động từ nhóm 1 '走ります' chuyển sang thể mệnh lệnh: cột i -> cột e thành '走れ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "走れ", "isCorrect": true },
+        { "optionText": "走ろ", "isCorrect": false },
+        { "optionText": "走りろ", "isCorrect": false },
+        { "optionText": "走ろう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "時間がないぞ。早く ___ ！",
+      "explanation": "Động từ nhóm 3 'します' chuyển sang thể mệnh lệnh đặc biệt là 'しろ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "しれ", "isCorrect": false },
+        { "optionText": "しろ", "isCorrect": true },
+        { "optionText": "せよ", "isCorrect": false },
+        { "optionText": "しな", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "危ない！そこから ___ ！",
+      "explanation": "Động từ nhóm 2 '離れます' (rời khỏi) chia thể mệnh lệnh: bỏ ます thêm ろ thành '離れろ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "離れれ", "isCorrect": false },
+        { "optionText": "離れろ", "isCorrect": true },
+        { "optionText": "離れ", "isCorrect": false },
+        { "optionText": "離れな", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "遅れるぞ。急げ（いそげ）！こっちへ ___ ！",
+      "explanation": "Động từ nhóm 3 '来ます' chuyển sang thể mệnh lệnh đặc biệt là '来い' (こい).",
+      "points": 5,
+      "options": [
+        { "optionText": "きれ", "isCorrect": false },
+        { "optionText": "こい", "isCorrect": true },
+        { "optionText": "くろ", "isCorrect": false },
+        { "optionText": "きな", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "自分の力（ちから）を信じて、最後まで ___ ！",
+      "explanation": "Động từ nhóm 1 '戦います' (chiến đấu) chuyển sang cột e thành '戦え'.",
+      "points": 5,
+      "options": [
+        { "optionText": "戦え", "isCorrect": true },
+        { "optionText": "戦お", "isCorrect": false },
+        { "optionText": "戦いろう", "isCorrect": false },
+        { "optionText": "戦えろ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "うるさい！静かに ___ ！",
+      "explanation": "Động từ nhóm 3 'します' chia thể mệnh lệnh thành 'しろ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "しれ", "isCorrect": false },
+        { "optionText": "しろ", "isCorrect": true },
+        { "optionText": "せよ", "isCorrect": false },
+        { "optionText": "しな", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "火事だ！早く外へ ___ ！",
+      "explanation": "Động từ nhóm 2 '逃げます' (chạy trốn) bỏ ます thêm ろ thành '逃げろ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "逃げれ", "isCorrect": false },
+        { "optionText": "逃げろ", "isCorrect": true },
+        { "optionText": "逃げな", "isCorrect": false },
+        { "optionText": "逃げよう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "電気代が高いぞ。使わないときは電気を ___ ！",
+      "explanation": "Động từ nhóm 1 '消します' chuyển sang cột e thành '消せ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "消せ", "isCorrect": true },
+        { "optionText": "消しろ", "isCorrect": false },
+        { "optionText": "消そう", "isCorrect": false },
+        { "optionText": "消しな", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "試験は明日だ。しっかり ___ ！",
+      "explanation": "Động từ nhóm 3 '勉強します' chia thể mệnh lệnh thành '勉強しろ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "勉強しな", "isCorrect": false },
+        { "optionText": "勉強しろ", "isCorrect": true },
+        { "optionText": "勉強せよ", "isCorrect": false },
+        { "optionText": "勉強しれ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "交通規則（こうつうきそく）を ___ ！",
+      "explanation": "Động từ nhóm 1 '守ります' (tuân thủ) chuyển sang cột e thành '守れ'. Thường dùng trong biển báo.",
+      "points": 5,
+      "options": [
+        { "optionText": "守ろ", "isCorrect": false },
+        { "optionText": "守れ", "isCorrect": true },
+        { "optionText": "守りろ", "isCorrect": false },
+        { "optionText": "守れろ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "泥棒（どろぼう）だ！ ___ ！",
+      "explanation": "Động từ nhóm 1 '捕まえます' (bắt giữ - Nhóm 2) bỏ ます thêm ろ thành '捕まえろ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "捕まえれ", "isCorrect": false },
+        { "optionText": "捕まえろ", "isCorrect": true },
+        { "optionText": "捕まえな", "isCorrect": false },
+        { "optionText": "捕まえ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "返事は？「はい」と ___ ！",
+      "explanation": "Động từ nhóm 1 '言います' chuyển sang cột e thành '言え'.",
+      "points": 5,
+      "options": [
+        { "optionText": "言え", "isCorrect": true },
+        { "optionText": "言お", "isCorrect": false },
+        { "optionText": "言いな", "isCorrect": false },
+        { "optionText": "言えろ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ぐずぐずするな。早く服を ___ ！",
+      "explanation": "Động từ nhóm 2 '着ます' chia thể mệnh lệnh: bỏ ます thêm ろ thành '着ろ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "着れ", "isCorrect": false },
+        { "optionText": "着ろ", "isCorrect": true },
+        { "optionText": "着な", "isCorrect": false },
+        { "optionText": "着よう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "もっと大きな声で ___ ！",
+      "explanation": "Động từ nhóm 1 '話します' chuyển sang cột e thành '話せ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "話せ", "isCorrect": true },
+        { "optionText": "話しな", "isCorrect": false },
+        { "optionText": "話しろ", "isCorrect": false },
+        { "optionText": "話そう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "止まれ！動く（うごく） ___ ！",
+      "explanation": "Sử dụng thể Cấm đoán (V-ru + na) để ra lệnh không được cử động.",
+      "points": 5,
+      "options": [
+        { "optionText": "な", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "ね", "isCorrect": false },
+        { "optionText": "の", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "野菜もちゃんと ___ ！",
+      "explanation": "Động từ nhóm 2 '食べます' chia thể mệnh lệnh: bỏ ます thêm ろ thành '食べろ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "食べれ", "isCorrect": false },
+        { "optionText": "食べろ", "isCorrect": true },
+        { "optionText": "食べな", "isCorrect": false },
+        { "optionText": "食べよう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "前をしっかり ___ ！危ないぞ！",
+      "explanation": "Động từ nhóm 1 '見ます' (Nhóm 2) chia thể mệnh lệnh thành '見ろ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "見れ", "isCorrect": false },
+        { "optionText": "見ろ", "isCorrect": true },
+        { "optionText": "見な", "isCorrect": false },
+        { "optionText": "見よ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ここにある荷物をあっちへ ___ ！",
+      "explanation": "Động từ nhóm 1 '運びます' (vận chuyển) chuyển sang cột e thành '運べ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "運べ", "isCorrect": true },
+        { "optionText": "運ぼ", "isCorrect": false },
+        { "optionText": "運びろ", "isCorrect": false },
+        { "optionText": "運べろ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "嘘（うそ）を ___ ！正直に言え！",
+      "explanation": "Động từ nhóm 1 'つきます' (nói dối) chuyển sang cột e thành 'つけ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "つけ", "isCorrect": true },
+        { "optionText": "つきろ", "isCorrect": false },
+        { "optionText": "つこう", "isCorrect": false },
+        { "optionText": "つきな", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "明日も早いぞ。早く ___ ！",
+      "explanation": "Động từ nhóm 1 '寝ます' (Nhóm 2) chia thể mệnh lệnh thành '寝ろ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "寝れ", "isCorrect": false },
+        { "optionText": "寝ろ", "isCorrect": true },
+        { "optionText": "寝な", "isCorrect": false },
+        { "optionText": "寝よう", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N4 - Bộ 38: Thể Cấm chỉ (V-ru + な)",
+  "level": "N4",
+  "description": "Luyện tập cách sử dụng thể cấm chỉ để ra lệnh cho ai đó tuyệt đối không được thực hiện một hành động nào đó. Thường dùng trong biển báo hoặc tình huống khẩn cấp.",
+  "isPremium": false,
+  "examples": [
+    "触るな！ (Cấm chạm vào!)",
+    "タバコを吸うな！ (Cấm hút thuốc!)",
+    "芝生（しばふ）に入るな！ (Cấm đi vào bãi cỏ!)",
+    "諦めるな！ (Cấm bỏ cuộc / Đừng bỏ cuộc!)"
+  ],
+  "questions": [
+    {
+      "questionText": "危ない！そこへ ___ な！",
+      "explanation": "Để tạo thể cấm chỉ, ta dùng động từ thể từ điển. '入る' + 'な'.",
+      "points": 5,
+      "options": [
+        { "optionText": "入り", "isCorrect": false },
+        { "optionText": "入る", "isCorrect": true },
+        { "optionText": "入って", "isCorrect": false },
+        { "optionText": "入ら", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "仕事中に携帯電話を ___ な！",
+      "explanation": "Cấm sử dụng điện thoại. '使う' (thể từ điển) + 'な'.",
+      "points": 5,
+      "options": [
+        { "optionText": "使う", "isCorrect": true },
+        { "optionText": "使い", "isCorrect": false },
+        { "optionText": "使って", "isCorrect": false },
+        { "optionText": "使わ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "図書館（としょかん）では ___ な！",
+      "explanation": "Cấm nói chuyện/làm ồn. '騒ぐ' (làm ồn) + 'な'.",
+      "points": 5,
+      "options": [
+        { "optionText": "騒ぎ", "isCorrect": false },
+        { "optionText": "騒いで", "isCorrect": true },
+        { "optionText": "騒ぐ", "isCorrect": true },
+        { "optionText": "騒が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ここで写真を ___ な！",
+      "explanation": "Cấm chụp ảnh. '撮る' + 'な'.",
+      "points": 5,
+      "options": [
+        { "optionText": "撮る", "isCorrect": true },
+        { "optionText": "撮り", "isCorrect": false },
+        { "optionText": "撮って", "isCorrect": false },
+        { "optionText": "撮ら", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "そんなに ___ な！大丈夫だよ。",
+      "explanation": "Đừng/Cấm lo lắng quá mức. '心配する' (thể từ điển) + 'な'.",
+      "points": 5,
+      "options": [
+        { "optionText": "心配し", "isCorrect": false },
+        { "optionText": "心配する", "isCorrect": true },
+        { "optionText": "心配して", "isCorrect": false },
+        { "optionText": "心配した", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "工事中（こうじちゅう）だから、中へ ___ な！",
+      "explanation": "Cấm đi vào bên trong. '入る' + 'な'.",
+      "points": 5,
+      "options": [
+        { "optionText": "入る", "isCorrect": true },
+        { "optionText": "入り", "isCorrect": false },
+        { "optionText": "入って", "isCorrect": false },
+        { "optionText": "入ら", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "嘘（うそ）を ___ な！正直に話せ。",
+      "explanation": "Cấm nói dối. 'つく' (thể từ điển) + 'な'.",
+      "points": 5,
+      "options": [
+        { "optionText": "つき", "isCorrect": false },
+        { "optionText": "つく", "isCorrect": true },
+        { "optionText": "ついて", "isCorrect": false },
+        { "optionText": "つか", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "これに ___ な！壊れやすいんだ。",
+      "explanation": "Cấm chạm vào cái này. '触る' + 'な'.",
+      "points": 5,
+      "options": [
+        { "optionText": "触り", "isCorrect": false },
+        { "optionText": "触る", "isCorrect": true },
+        { "optionText": "触って", "isCorrect": false },
+        { "optionText": "触ら", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "お酒を飲んだら、運転を ___ な！",
+      "explanation": "Cấm lái xe sau khi uống rượu. 'する' + 'な'.",
+      "points": 5,
+      "options": [
+        { "optionText": "する", "isCorrect": true },
+        { "optionText": "し", "isCorrect": false },
+        { "optionText": "して", "isCorrect": false },
+        { "optionText": "しな", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "最後まで ___ な！頑張れ！",
+      "explanation": "Cấm từ bỏ (Đừng từ bỏ). '諦める' + 'な'.",
+      "points": 5,
+      "options": [
+        { "optionText": "諦め", "isCorrect": false },
+        { "optionText": "諦める", "isCorrect": true },
+        { "optionText": "諦めて", "isCorrect": false },
+        { "optionText": "諦めな", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "夜遅くに一人で ___ な！危ないぞ。",
+      "explanation": "Cấm ra ngoài một mình lúc muộn. '出かける' + 'な'.",
+      "points": 5,
+      "options": [
+        { "optionText": "出かけ", "isCorrect": false },
+        { "optionText": "出かける", "isCorrect": true },
+        { "optionText": "出かけて", "isCorrect": false },
+        { "optionText": "出かけな", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "エレベーターが故障中だ。 ___ な！",
+      "explanation": "Cấm sử dụng thang máy đang hỏng. '使う' + 'な'.",
+      "points": 5,
+      "options": [
+        { "optionText": "使い", "isCorrect": false },
+        { "optionText": "使う", "isCorrect": true },
+        { "optionText": "使って", "isCorrect": false },
+        { "optionText": "使わ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "犬にエサを ___ な！",
+      "explanation": "Cấm cho chó ăn. 'やる' (thể từ điển) + 'な'.",
+      "points": 5,
+      "options": [
+        { "optionText": "やる", "isCorrect": true },
+        { "optionText": "やり", "isCorrect": false },
+        { "optionText": "やって", "isCorrect": false },
+        { "optionText": "やら", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "そんなに ___ な！すぐ終わるから。",
+      "explanation": "Đừng/Cấm khóc. '泣く' + 'な'.",
+      "points": 5,
+      "options": [
+        { "optionText": "泣き", "isCorrect": false },
+        { "optionText": "泣く", "isCorrect": true },
+        { "optionText": "泣いて", "isCorrect": false },
+        { "optionText": "泣か", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "道にゴミを ___ な！",
+      "explanation": "Cấm vứt rác ra đường. '捨てる' + 'な'.",
+      "points": 5,
+      "options": [
+        { "optionText": "捨て", "isCorrect": false },
+        { "optionText": "捨てる", "isCorrect": true },
+        { "optionText": "捨てて", "isCorrect": false },
+        { "optionText": "捨てな", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "約束を ___ な！",
+      "explanation": "Cấm thất hứa (quên lời hứa). '忘れる' + 'な'.",
+      "points": 5,
+      "options": [
+        { "optionText": "忘れ", "isCorrect": false },
+        { "optionText": "忘れる", "isCorrect": true },
+        { "optionText": "忘れて", "isCorrect": false },
+        { "optionText": "忘れな", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "授業中に ___ な！",
+      "explanation": "Cấm ngủ trong giờ học. '寝る' + 'な'.",
+      "points": 5,
+      "options": [
+        { "optionText": "寝", "isCorrect": false },
+        { "optionText": "寝る", "isCorrect": true },
+        { "optionText": "寝て", "isCorrect": false },
+        { "optionText": "寝な", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "大切な書類を ___ な！",
+      "explanation": "Cấm đánh mất tài liệu quan trọng. 'なくす' + 'な'.",
+      "points": 5,
+      "options": [
+        { "optionText": "なくし", "isCorrect": false },
+        { "optionText": "なくす", "isCorrect": true },
+        { "optionText": "なくして", "isCorrect": false },
+        { "optionText": "なくさ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ここで ___ な！危ないぞ。",
+      "explanation": "Cấm chơi ở đây. '遊ぶ' + 'な'.",
+      "points": 5,
+      "options": [
+        { "optionText": "遊び", "isCorrect": false },
+        { "optionText": "遊ぶ", "isCorrect": true },
+        { "optionText": "遊んで", "isCorrect": false },
+        { "optionText": "遊ば", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "食べ物を ___ な！",
+      "explanation": "Cấm lãng phí thức ăn. '残す' (để thừa) + 'な'.",
+      "points": 5,
+      "options": [
+        { "optionText": "残し", "isCorrect": false },
+        { "optionText": "残す", "isCorrect": true },
+        { "optionText": "残して", "isCorrect": false },
+        { "optionText": "残さ", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N4 - Bộ 39: Trích dẫn nội dung (～と読みます/書いてあります)",
+  "level": "N4",
+  "description": "Dùng để diễn tả cách đọc của một từ/chữ Hán hoặc trích dẫn nội dung được viết ở đâu đó.",
+  "isPremium": false,
+  "examples": [
+    "これは「ひじょうぐち」と読みます。(Cái này đọc là 'lối thoát hiểm'.)",
+    "あそこに「止まれ」と書いてあります。(Ở chỗ kia có viết là 'Dừng lại'.)",
+    "この漢字は何と読みますか。(Chữ Hán này đọc là gì vậy?)",
+    "手紙に何と書いてありましたか。(Trong thư đã viết gì vậy?)"
+  ],
+  "questions": [
+    {
+      "questionText": "この漢字は「さかな」 ___ 読みます。",
+      "explanation": "Dùng trợ từ 'と' để trích dẫn cách đọc.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あそこの看板（かんばん）に何 ___ 書いてありますか。",
+      "explanation": "Câu hỏi về nội dung viết trên biển báo: 'Nani to kaite arimasu ka'.",
+      "points": 5,
+      "options": [
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "教科書に「明日休み」と ___ あります。",
+      "explanation": "Trích dẫn trạng thái nội dung đang được viết: 'kaite arimasu'.",
+      "points": 5,
+      "options": [
+        { "optionText": "書く", "isCorrect": false },
+        { "optionText": "書いて", "isCorrect": true },
+        { "optionText": "書き", "isCorrect": false },
+        { "optionText": "書かて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: あの漢字は何 ___ 読みますか。\nB: 「じしん」と読みます。",
+      "explanation": "Hỏi cách đọc của chữ Hán: 'Nan to yomimasu ka'.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "壁に「禁煙（きんえん）」と書いて ___。",
+      "explanation": "Cấu trúc diễn tả trạng thái đang được viết sẵn: 'kaite arimasu'.",
+      "points": 5,
+      "options": [
+        { "optionText": "います", "isCorrect": false },
+        { "optionText": "あります", "isCorrect": true },
+        { "optionText": "おきます", "isCorrect": false },
+        { "optionText": "みます", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "自分の名前はここ ___ 書いてください。",
+      "explanation": "Phân biệt với câu mệnh lệnh: 'Viết vào đâu đó' dùng trợ từ 'に'.",
+      "points": 5,
+      "options": [
+        { "optionText": "と", "isCorrect": false },
+        { "optionText": "に", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "へ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "このマークは「触るな」 ___ 意味です。",
+      "explanation": "Dùng 'と' để giải thích ý nghĩa (to iu imi desu).",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "の", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "駅の掲示板（けいじばん）に「電車が遅れる」と ___ ありました。",
+      "explanation": "Đã thấy nội dung được viết trong quá khứ: 'kaite arimashita'.",
+      "points": 5,
+      "options": [
+        { "optionText": "書いて", "isCorrect": true },
+        { "optionText": "書く", "isCorrect": false },
+        { "optionText": "書き", "isCorrect": false },
+        { "optionText": "書いた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "先生は「明日テストがある」 ___ 言いました。",
+      "explanation": "Trích dẫn lời nói cũng dùng trợ từ 'と'.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「出口」は英語で ___ 読みますか。",
+      "explanation": "Hỏi cách đọc/gọi bằng ngôn ngữ khác.",
+      "points": 5,
+      "options": [
+        { "optionText": "どう", "isCorrect": false },
+        { "optionText": "何と", "isCorrect": true },
+        { "optionText": "何が", "isCorrect": false },
+        { "optionText": "何に", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "袋（ふくろ）に「温めてください」 ___ 書いてあります。",
+      "explanation": "Trích dẫn chỉ dẫn trên bao bì sản phẩm.",
+      "points": 5,
+      "options": [
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この名前は ___ 読みますか。\n--- 「たなか」と読みます。",
+      "explanation": "Dùng '何と' hoặc 'どう' nhưng '何と' phổ biến hơn với yomimasu.",
+      "points": 5,
+      "options": [
+        { "optionText": "何に", "isCorrect": false },
+        { "optionText": "何と", "isCorrect": true },
+        { "optionText": "何", "isCorrect": false },
+        { "optionText": "何で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "入り口に「関係者以外（かんけいしゃいがい）立ち入り禁止」と ___ あります。",
+      "explanation": "Trích dẫn nội dung biển báo cấm vào.",
+      "points": 5,
+      "options": [
+        { "optionText": "書いて", "isCorrect": true },
+        { "optionText": "書く", "isCorrect": false },
+        { "optionText": "書き", "isCorrect": false },
+        { "optionText": "書いた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "箱に「壊れもの」と書いて ___ から、注意してください。",
+      "explanation": "Vì có viết là 'đồ dễ vỡ' nên hãy chú ý.",
+      "points": 5,
+      "options": [
+        { "optionText": "あります", "isCorrect": true },
+        { "optionText": "います", "isCorrect": false },
+        { "optionText": "おきます", "isCorrect": false },
+        { "optionText": "みます", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この漢字は ___ と読みますか。\n--- 「きけん」と読みます。",
+      "explanation": "Dùng nghi vấn từ '何'.",
+      "points": 5,
+      "options": [
+        { "optionText": "何", "isCorrect": true },
+        { "optionText": "どれ", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false },
+        { "optionText": "だれ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "地図に「現在地（げんざいち）」 ___ 書いてあります。",
+      "explanation": "Trích dẫn chữ 'Vị trí hiện tại' trên bản đồ.",
+      "points": 5,
+      "options": [
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "これは「あぶない」 ___ 意味の漢字です。",
+      "explanation": "Giải thích ý nghĩa của chữ Hán.",
+      "points": 5,
+      "options": [
+        { "optionText": "という", "isCorrect": true },
+        { "optionText": "のが", "isCorrect": false },
+        { "optionText": "ので", "isCorrect": false },
+        { "optionText": "のを", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "お寺の門（もん）に「撮影禁止（さつえいきんし）」 ___ 書いてありました。",
+      "explanation": "Trích dẫn nội dung biển cấm chụp ảnh đã thấy.",
+      "points": 5,
+      "options": [
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この言葉はカタカナ ___ 書きます。",
+      "explanation": "Phân biệt: 'Viết BẰNG cái gì' dùng trợ từ 'で'.",
+      "points": 5,
+      "options": [
+        { "optionText": "と", "isCorrect": false },
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "薬の瓶（びん）に「1日3回」 ___ 書いてあります。",
+      "explanation": "Trích dẫn liều lượng ghi trên lọ thuốc.",
+      "points": 5,
+      "options": [
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N4 - Bộ 40: Giải thích ý nghĩa (～という意味です)",
+  "level": "N4",
+  "description": "Dùng để giải thích ý nghĩa của một từ, một cụm từ hoặc một ký hiệu, biển báo nào đó.",
+  "isPremium": false,
+  "examples": [
+    "「禁煙」はここでたばこを吸うなという意味です。(“Cấm hút thuốc” nghĩa là cấm hút thuốc ở đây.)",
+    "「立入禁止」は入ってはいけないという意味です。(“Cấm vào” nghĩa là không được đi vào.)",
+    "「故障中」は機械が使えないという意味です。(“Đang hỏng” nghĩa là máy móc không sử dụng được.)"
+  ],
+  "questions": [
+    {
+      "questionText": "「使用禁止」は使うな ___ 意味です。",
+      "explanation": "Sử dụng trợ từ 'という' để nối mệnh đề giải thích với từ '意味'.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "という", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "の", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「無料」はお金を ___ という意味です。",
+      "explanation": "Giải thích nghĩa của 'Miễn phí': Không cần trả tiền. '払わなくてもいい' (VTTT).",
+      "points": 5,
+      "options": [
+        { "optionText": "払います", "isCorrect": false },
+        { "optionText": "払わなくてもいい", "isCorrect": true },
+        { "optionText": "払う", "isCorrect": false },
+        { "optionText": "払った", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "このマークはどういう ___ ですか。",
+      "explanation": "Câu hỏi phổ biến khi muốn biết ý nghĩa: 'Dō iu imi desu ka?'.",
+      "points": 5,
+      "options": [
+        { "optionText": "わけ", "isCorrect": false },
+        { "optionText": "意味", "isCorrect": true },
+        { "optionText": "こと", "isCorrect": false },
+        { "optionText": "もの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「入口」はここから ___ という意味です。",
+      "explanation": "Giải thích nghĩa 'Lối vào': Đi vào từ đây. '入る' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "入る", "isCorrect": true },
+        { "optionText": "入って", "isCorrect": false },
+        { "optionText": "入り", "isCorrect": false },
+        { "optionText": "入った", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「出口」はここから ___ という意味です。",
+      "explanation": "Giải thích nghĩa 'Lối ra': Đi ra từ đây. '出る' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "出た", "isCorrect": false },
+        { "optionText": "出て", "isCorrect": false },
+        { "optionText": "出る", "isCorrect": true },
+        { "optionText": "出", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「駐車禁止」はここに車を ___ という意味です。",
+      "explanation": "Giải thích nghĩa 'Cấm đỗ xe': Không được đỗ xe. '止めるな' (V-mệnh lệnh cấm chỉ).",
+      "points": 5,
+      "options": [
+        { "optionText": "止めるな", "isCorrect": true },
+        { "optionText": "止める", "isCorrect": false },
+        { "optionText": "止めて", "isCorrect": false },
+        { "optionText": "止めないで", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「準備中」は今店が ___ という意味です。",
+      "explanation": "Giải thích 'Đang chuẩn bị': Quán hiện chưa mở. '開いていない'.",
+      "points": 5,
+      "options": [
+        { "optionText": "開いている", "isCorrect": false },
+        { "optionText": "開いていない", "isCorrect": true },
+        { "optionText": "開く", "isCorrect": false },
+        { "optionText": "開かない", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「割引」は値段が安く ___ という意味です。",
+      "explanation": "Giải thích 'Giảm giá': Giá trở nên rẻ hơn. 'なる' (VTTT).",
+      "points": 5,
+      "options": [
+        { "optionText": "なる", "isCorrect": true },
+        { "optionText": "なり", "isCorrect": false },
+        { "optionText": "なった", "isCorrect": false },
+        { "optionText": "なっている", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「消火厳禁」は火を ___ という意味です。",
+      "explanation": "Giải thích 'Nghiêm cấm lửa': Không được sử dụng lửa. '使うな'.",
+      "points": 5,
+      "options": [
+        { "optionText": "使え", "isCorrect": false },
+        { "optionText": "使うな", "isCorrect": true },
+        { "optionText": "使って", "isCorrect": false },
+        { "optionText": "使わない", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「本日休業」は ___ 休みだという意味です。",
+      "explanation": "Giải thích 'Hôm nay nghỉ': Hôm nay (Kyou) là ngày nghỉ.",
+      "points": 5,
+      "options": [
+        { "optionText": "毎日", "isCorrect": false },
+        { "optionText": "明日", "isCorrect": false },
+        { "optionText": "今日", "isCorrect": true },
+        { "optionText": "昨日", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「非常口」は ___ のときに使う出口という意味です。",
+      "explanation": "Giải thích 'Lối thoát hiểm': Dùng khi khẩn cấp (Abunai/Kijitsu). '火事や地震' (Danh từ).",
+      "points": 5,
+      "options": [
+        { "optionText": "元気", "isCorrect": false },
+        { "optionText": "火事や地震", "isCorrect": true },
+        { "optionText": "お祝い", "isCorrect": false },
+        { "optionText": "食事", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「土足厳禁」は靴を ___ という意味です。",
+      "explanation": "Giải thích 'Nghiêm cấm mang giày': Hãy cởi giày. '脱いでください' -> '脱げ' (hoặc giải thích bằng 'hãy cởi'). Dùng '脱がなければならない'.",
+      "points": 5,
+      "options": [
+        { "optionText": "履け", "isCorrect": false },
+        { "optionText": "脱げ", "isCorrect": true },
+        { "optionText": "洗え", "isCorrect": false },
+        { "optionText": "磨け", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この漢字はどういう ___ か、教えてください。",
+      "explanation": "Cấu trúc: Nghi vấn từ 'Dō iu' + 'imi' + 'ka'.",
+      "points": 5,
+      "options": [
+        { "optionText": "意味です", "isCorrect": false },
+        { "optionText": "意味だ", "isCorrect": false },
+        { "optionText": "意味", "isCorrect": true },
+        { "optionText": "意味の", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「飲み放題」はいくら ___ 料金が同じだという意味です。",
+      "explanation": "Giải thích 'Uống thỏa thích': Uống bao nhiêu giá cũng vậy. '飲んでも' (V-te mo).",
+      "points": 5,
+      "options": [
+        { "optionText": "飲む", "isCorrect": false },
+        { "optionText": "飲んで", "isCorrect": false },
+        { "optionText": "飲んでも", "isCorrect": true },
+        { "optionText": "飲んだら", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「撮影禁止」は写真を ___ という意味です。",
+      "explanation": "Giải thích 'Cấm chụp ảnh': '撮るな' (Cấm chụp).",
+      "points": 5,
+      "options": [
+        { "optionText": "撮れ", "isCorrect": false },
+        { "optionText": "撮るな", "isCorrect": true },
+        { "optionText": "撮って", "isCorrect": false },
+        { "optionText": "撮る", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「修理中」は今機械を ___ という意味です。",
+      "explanation": "Giải thích 'Đang sửa': Đang làm cho thẳng/sửa lại. '直している' (V-te iru).",
+      "points": 5,
+      "options": [
+        { "optionText": "直している", "isCorrect": true },
+        { "optionText": "壊している", "isCorrect": false },
+        { "optionText": "使っている", "isCorrect": false },
+        { "optionText": "売っている", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「満席」は座る席が ___ という意味です。",
+      "explanation": "Giải thích 'Hết chỗ': Không có chỗ ngồi. 'ない' (VTTT).",
+      "points": 5,
+      "options": [
+        { "optionText": "ある", "isCorrect": false },
+        { "optionText": "ない", "isCorrect": true },
+        { "optionText": "多い", "isCorrect": false },
+        { "optionText": "広い", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「受付」は案内を ___ 所だという意味です。",
+      "explanation": "Giải thích 'Quầy lễ tân': Nơi thực hiện hướng dẫn. 'する' (V-ru).",
+      "points": 5,
+      "options": [
+        { "optionText": "した", "isCorrect": false },
+        { "optionText": "している", "isCorrect": false },
+        { "optionText": "する", "isCorrect": true },
+        { "optionText": "しな", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「賞味期限」はこの日までに ___ ほうがおいしいという意味です。",
+      "explanation": "Giải thích 'Hạn sử dụng': Nên ăn trước ngày này. '食べた' (V-ta hou ga ii).",
+      "points": 5,
+      "options": [
+        { "optionText": "食べる", "isCorrect": false },
+        { "optionText": "食べない", "isCorrect": false },
+        { "optionText": "食べた", "isCorrect": true },
+        { "optionText": "食べ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「立ち入り禁止」はどういう意味ですか。\n--- ここに ___ という意味です。",
+      "explanation": "Giải thích 'Cấm vào': Đừng vào. '入るな' (Kinshi-kei).",
+      "points": 5,
+      "options": [
+        { "optionText": "入るな", "isCorrect": true },
+        { "optionText": "入れ", "isCorrect": false },
+        { "optionText": "入る", "isCorrect": false },
+        { "optionText": "入らない", "isCorrect": false }
+      ]
+    }
+  ]
+}
+]

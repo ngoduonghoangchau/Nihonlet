@@ -1,0 +1,4682 @@
+[
+    {
+  "title": "N5 - Bộ 21: Tặng/Gửi/Gọi (Nに Nを Vます)",
+  "level": "N5",
+  "description": "Trợ từ 'に' dùng để chỉ đối tượng tiếp nhận hành động (người nhận quà, nhận thư, nhận cuộc gọi). Đi kèm với các động từ như あげます, おくります, かけます, かきます.",
+  "isPremium": false,
+  "examples": [
+    "ともだちにてがみをかきます。(Tôi viết thư cho bạn.)",
+    "ミラーさんにおかねをおくります。(Tôi gửi tiền cho ông Miller.)",
+    "きょねん、かぞくにでんわをかけました。(Năm ngoái, tôi đã gọi điện cho gia đình.)"
+  ],
+  "questions": [
+    {
+      "questionText": "友達 ___ プレゼントを あげます。",
+      "explanation": "Dùng trợ từ 'に' để chỉ người tiếp nhận hành động tặng quà.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false },
+        { "optionText": "へ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "母に 電話 ___ かけました。",
+      "explanation": "Cụm từ 'gọi điện thoại' là '電話をかけます'.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": true },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "先生 ___ 手紙を 書きます。",
+      "explanation": "Viết thư 'cho ai đó', người nhận đi với trợ từ 'に'.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "家族に 荷物 ___ 送ります。",
+      "explanation": "Gửi bưu kiện (đối tượng trực tiếp), dùng trợ từ 'を'.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": true },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "へ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "だれ ___ お金を 送りますか。…銀行に 送ります。",
+      "explanation": "Hỏi gửi tiền cho ai/địa điểm nào, dùng từ để hỏi 'だれ' hoặc 'どこ' kết hợp với 'に'.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ミラーさんに メール ___ 送りました。",
+      "explanation": "Gửi email (tân ngữ), dùng trợ từ 'を'.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "父 ___ ネクタイを あげました。",
+      "explanation": "Người nhận quà (cha) đi với trợ từ 'に'.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "会社に 電話を ___。",
+      "explanation": "Động từ phù hợp với 'gọi điện' là 'かけます'.",
+      "points": 5,
+      "options": [
+        { "optionText": "書きます", "isCorrect": false },
+        { "optionText": "送ります", "isCorrect": false },
+        { "optionText": "かけます", "isCorrect": true },
+        { "optionText": "あげます", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "彼女 ___ 花を あげます。",
+      "explanation": "Tặng hoa cho bạn gái, dùng trợ từ 'に' chỉ người nhận.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false },
+        { "optionText": "へ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "山田さんに 何 ___ 書きましたか。…レポートを 書きました。",
+      "explanation": "Hỏi viết 'cái gì' (tân ngữ), dùng '何 を'.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "子供に お菓子 ___ あげました。",
+      "explanation": "Tặng kẹo cho trẻ con, dùng trợ từ 'を' cho 'kẹo'.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": true },
+        { "optionText": "で", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "木村さん ___ レポートを 送りました。",
+      "explanation": "Gửi báo cáo cho anh Kimura, dùng trợ từ 'に'.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "友達に 英語で 手紙 ___ 書きます。",
+      "explanation": "Viết thư (tân ngữ trực tiếp), dùng trợ từ 'を'.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "だれに プレゼント ___ あげますか。",
+      "explanation": "Tân ngữ trực tiếp của hành động tặng là món quà, dùng trợ từ 'を'.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "病院 ___ 電話を かけました。",
+      "explanation": "Địa điểm nhận cuộc gọi (bệnh viện), dùng trợ từ 'に'.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "佐藤さんに 写真 ___ 送ります。",
+      "explanation": "Gửi ảnh (tân ngữ), dùng trợ từ 'を'.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "奥さんに 指輪 ___ あげました。",
+      "explanation": "Tặng nhẫn (tân ngữ), dùng trợ từ 'を'.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "だれに 電話を かけましたか。… 家族 ___ かけました。",
+      "explanation": "Trả lời cho câu hỏi 'だれに', danh từ chỉ người nhận cuộc gọi phải đi với 'に'.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "イーさんに 本 ___ 貸しました。",
+      "explanation": "Cho anh Lee mượn sách, sách là tân ngữ nên dùng 'を'.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "友達に 誕生日カードを ___。",
+      "explanation": "Dựa trên các động từ liệt kê, 'viết' (書きます) thẻ chúc mừng sinh nhật cho bạn là hợp lý nhất.",
+      "points": 5,
+      "options": [
+        { "optionText": "書きます", "isCorrect": true },
+        { "optionText": "飲みます", "isCorrect": false },
+        { "optionText": "食べます", "isCorrect": false },
+        { "optionText": "寝ます", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N5 - Bộ 22: Phương tiện và Công cụ (Nで Vます)",
+  "level": "N5",
+  "description": "Trợ từ 'で' dùng để chỉ phương tiện di chuyển, công cụ hoặc ngôn ngữ để thực hiện một hành động nào đó.",
+  "isPremium": false,
+  "examples": [
+    "じてんしゃでかいしゃへいきます。(Tôi đi đến công ty bằng xe đạp.)",
+    "はしでごはんをたべます。(Tôi ăn cơm bằng đũa.)",
+    "にほんごでレポートをかきます。(Tôi viết báo cáo bằng tiếng Nhật.)"
+  ],
+  "questions": [
+    {
+      "questionText": "バス ___ 会社へ 行きます。",
+      "explanation": "Dùng trợ từ 'で' để chỉ phương tiện giao thông (xe buýt).",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "へ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "はし ___ ごはんを 食べます。",
+      "explanation": "Dùng trợ từ 'で' để chỉ công cụ dùng trong hành động ăn (đũa).",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本語 ___ レポートを 書きます。",
+      "explanation": "Dùng trợ từ 'で' để chỉ ngôn ngữ (phương tiện truyền đạt) được sử dụng.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "何 ___ 日本へ 来ましたか。…飛行機で 来ました。",
+      "explanation": "Hỏi về phương tiện di chuyển, dùng '何 (なに/なん)' kết hợp với trợ từ 'で'.",
+      "points": 5,
+      "options": [
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "スプーン ___ カレーを 食べます。",
+      "explanation": "Ăn bằng thìa (công cụ), dùng trợ từ 'で'.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "と", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "英語 ___ 手紙を 書きました。",
+      "explanation": "Viết thư bằng tiếng Anh, dùng trợ từ 'で' chỉ ngôn ngữ.",
+      "points": 5,
+      "options": [
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "タクシー ___ うちへ 帰りました。",
+      "explanation": "Về nhà bằng taxi (phương tiện), dùng trợ từ 'で'.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "へ", "isCorrect": false },
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "手 ___ ごはんを 食べます。",
+      "explanation": "Ăn bằng tay (công cụ/phương thức), dùng trợ từ 'で'.",
+      "points": 5,
+      "options": [
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "何 ___ りんごを 切りますか。…ナイフで 切ります。",
+      "explanation": "Hỏi về công cụ thực hiện hành động, dùng '何で'.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ベトナム語 ___ 話します。",
+      "explanation": "Nói chuyện bằng tiếng Việt, dùng trợ từ 'で'.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "はさみ ___ 紙を 切ります。",
+      "explanation": "Cắt giấy bằng kéo (công cụ), dùng trợ từ 'で'.",
+      "points": 5,
+      "options": [
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ペン ___ 名前を 書いて ください。",
+      "explanation": "Viết bằng bút (công cụ), dùng trợ từ 'で'.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "地下鉄 ___ 行きましょう。",
+      "explanation": "Đi bằng tàu điện ngầm (phương tiện), dùng trợ từ 'で'.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "へ", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "パソコン ___ レポートを 作ります。",
+      "explanation": "Làm báo cáo bằng máy tính (công cụ), dùng trợ từ 'で'.",
+      "points": 5,
+      "options": [
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "歩いて 病院 ___ 行きます。",
+      "explanation": "Khi đi bộ (歩いて), không dùng trợ từ 'で'. Ở đây cần trợ từ chỉ hướng đến bệnh viện là 'へ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "で", "isCorrect": false },
+        { "optionText": "へ", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "スマホ ___ 写真を 撮ります。",
+      "explanation": "Chụp ảnh bằng điện thoại thông minh (công cụ), dùng trợ từ 'で'.",
+      "points": 5,
+      "options": [
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "新幹線 ___ 大阪へ 行きました。",
+      "explanation": "Đi Osaka bằng tàu Shinkansen (phương tiện), dùng trợ từ 'で'.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "へ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "何 ___ 食べますか。…フォークで 食べます。",
+      "explanation": "Hỏi về công cụ ăn uống, dùng '何で'.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ラジオ ___ 日本語を 勉強しました。",
+      "explanation": "Học bằng radio (phương tiện), dùng trợ từ 'で'.",
+      "points": 5,
+      "options": [
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "自転車 ___ 学校へ 行きます。",
+      "explanation": "Đi đến trường bằng xe đạp (phương tiện), dùng trợ từ 'で'.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "へ", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N5 - Bộ 23: Làm gì đó cùng ai (Nと Vます)",
+  "level": "N5",
+  "description": "Sử dụng trợ từ 'と' để chỉ người hoặc động vật cùng thực hiện một hành động nào đó. Lưu ý trường hợp 'một mình' dùng '一人で', không dùng 'と'.",
+  "isPremium": false,
+  "examples": [
+    "ともだちとテニスをします。(Tôi chơi tennis với bạn.)",
+    "ひとりできょうとへいきます。(Tôi đi Kyoto một mình.)",
+    "かぞくとにほんへいきます。(Tôi đi Nhật cùng gia đình.)"
+  ],
+  "questions": [
+    {
+      "questionText": "友達 ___ 映画を 見ます。",
+      "explanation": "Dùng trợ từ 'と' để chỉ người cùng thực hiện hành động (Xem phim VỚI bạn).",
+      "points": 5,
+      "options": [
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "だれ ___ 日本へ 来ましたか。…家族と 来ました。",
+      "explanation": "Câu hỏi 'Với ai' dùng từ để hỏi 'だれ' kết hợp với trợ từ 'と'.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "私は 一人 ___ 日本へ 行きます。",
+      "explanation": "Khi thực hiện hành động 'một mình', ta dùng cụm '一人で', không sử dụng trợ từ 'と'.",
+      "points": 5,
+      "options": [
+        { "optionText": "と", "isCorrect": false },
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "昨日、彼女 ___ デパートへ 行きました。",
+      "explanation": "Đi trung tâm thương mại CÙNG VỚI bạn gái, dùng trợ từ 'と'.",
+      "points": 5,
+      "options": [
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "犬 ___ 散歩します。",
+      "explanation": "Hành động thực hiện cùng với động vật (đi dạo với chó) cũng sử dụng trợ từ 'と'.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "先生 ___ 日本語を 話します。",
+      "explanation": "Nói chuyện VỚI giáo viên, dùng trợ từ 'と' chỉ đối tượng cùng tham gia hội thoại.",
+      "points": 5,
+      "options": [
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ミラーさんは 一人 ___ ごはんを 食べます。",
+      "explanation": "Ăn cơm một mình, dùng '一人で'.",
+      "points": 5,
+      "options": [
+        { "optionText": "と", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "だれと テニスを しますか。…山田さん ___ します。",
+      "explanation": "Trả lời cho câu hỏi 'だれと' (với ai) cần dùng danh từ chỉ người kết hợp với trợ từ 'と'.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "毎晩、奥さん ___ テレビを 見ます。",
+      "explanation": "Xem tivi CÙNG VỚI vợ, dùng trợ từ 'と'.",
+      "points": 5,
+      "options": [
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "弟 ___ スーパーへ 行きました。",
+      "explanation": "Đi siêu thị cùng em trai, dùng trợ từ 'と'.",
+      "points": 5,
+      "options": [
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "だれ ___ 勉強しますか。…一人で 勉強します。",
+      "explanation": "Hỏi 'Học với ai' dùng 'だれと'. Lưu ý dù câu trả lời là 'một mình' thì câu hỏi vẫn dùng 'と'.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "友達 ___ いっしょに 旅行しました。",
+      "explanation": "Cấu trúc 'いっしょに' (cùng nhau) thường đi kèm với trợ từ 'と' trước đó (N と いっしょに).",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "木村さんは だれ ___ 帰りますか。",
+      "explanation": "Hỏi 'Về cùng ai', dùng trợ từ 'と'.",
+      "points": 5,
+      "options": [
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "母 ___ 買い物に 行きます。",
+      "explanation": "Đi mua sắm cùng mẹ, dùng trợ từ 'と'.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "私は いつも 一人 ___ 寝ます。",
+      "explanation": "Ngủ một mình, dùng cụm '一人で'.",
+      "points": 5,
+      "options": [
+        { "optionText": "と", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "佐藤さんは 田中さん ___ 会議を します。",
+      "explanation": "Họp cùng với anh Tanaka, dùng trợ từ 'と'.",
+      "points": 5,
+      "options": [
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "だれ ___ 晩ごはんを 食べましたか。…先生と 食べました。",
+      "explanation": "Từ để hỏi đi kèm trợ từ 'と' để hỏi đối tượng cùng thực hiện hành động.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "猫 ___ 遊びます。",
+      "explanation": "Chơi cùng với mèo, dùng trợ từ 'と'.",
+      "points": 5,
+      "options": [
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "一人 ___ 京都へ 行きましたか。…いいえ、友達と 行きました。",
+      "explanation": "Hỏi 'Bạn có đi Kyoto một mình không?', dùng cụm '一人で'.",
+      "points": 5,
+      "options": [
+        { "optionText": "と", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "兄 ___ 銀行へ 行きます。",
+      "explanation": "Đi đến ngân hàng cùng anh trai, dùng trợ từ 'と'.",
+      "points": 5,
+      "options": [
+        { "optionText": "と", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N5 - Bộ 24: Đại từ nghi vấn và Ngôn ngữ (Nで なんですか)",
+  "level": "N5",
+  "description": "Cấu trúc dùng để hỏi một từ hoặc một câu trong ngôn ngữ khác được gọi là gì, hoặc dùng để giải thích ý nghĩa của từ vựng.",
+  "isPremium": false,
+  "examples": [
+    "「ありがとう」は えいごで なんですか。(「ありがとう」 trong tiếng Anh là gì?)",
+    "「さようなら」は ベトナムごで なんですか。(「さようなら」 trong tiếng Việt là gì?)",
+    "「すし」は にほんごで たべものの いみです。(「Sushi」 trong tiếng Nhật có nghĩa là đồ ăn.)"
+  ],
+  "questions": [
+    {
+      "questionText": "「Thank you」は 日本語 ___ なんですか。",
+      "explanation": "Dùng trợ từ 'で' để chỉ ngôn ngữ được sử dụng làm phương tiện diễn đạt (Trong tiếng Nhật là...).",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「ありがとう」は 英語で ___ ですか。",
+      "explanation": "Để hỏi 'là cái gì', ta dùng từ để hỏi 'なん'.",
+      "points": 5,
+      "options": [
+        { "optionText": "なん", "isCorrect": true },
+        { "optionText": "だれ", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false },
+        { "optionText": "いつ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「Goodbye」___ 日本語で「さようなら」です。",
+      "explanation": "Từ hoặc cụm từ được đem ra hỏi/giải thích đóng vai trò là chủ đề của câu, nên dùng trợ từ 'は'.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "は", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「Teacher」は 日本語 ___「先生」です。",
+      "explanation": "Chỉ ngôn ngữ phương tiện, dùng trợ từ 'で'.",
+      "points": 5,
+      "options": [
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "の", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この言葉は 日本語で どういう ___ ですか。",
+      "explanation": "Cấu trúc 'どういう いみ' dùng để hỏi 'có ý nghĩa gì'.",
+      "points": 5,
+      "options": [
+        { "optionText": "ことば", "isCorrect": false },
+        { "optionText": "いみ", "isCorrect": true },
+        { "optionText": "なまえ", "isCorrect": false },
+        { "optionText": "ひと", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「おやすみなさい」は 英語 ___ 「Good night」です。",
+      "explanation": "Dùng trợ từ 'で' sau danh từ chỉ ngôn ngữ (英語).",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「おいしい」は ベトナム語で「ngon」の ___ です。",
+      "explanation": "Để giải thích nghĩa của một từ, ta dùng danh từ 'いみ' (nghĩa/ý nghĩa).",
+      "points": 5,
+      "options": [
+        { "optionText": "いみ", "isCorrect": true },
+        { "optionText": "ことば", "isCorrect": false },
+        { "optionText": "なまえ", "isCorrect": false },
+        { "optionText": "本", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "これは ベトナム語 ___ 何ですか。",
+      "explanation": "Hỏi vật này trong tiếng Việt là gì, dùng 'で'.",
+      "points": 5,
+      "options": [
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「たべもの」は 英語で「Food」___ いみです。",
+      "explanation": "Sử dụng trợ từ 'の' để nối giữa danh từ chỉ ý nghĩa và từ 'いみ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "は", "isCorrect": false },
+        { "optionText": "の", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「花」は 英語で ___ ですか。…「Flower」です。",
+      "explanation": "Câu hỏi về từ vựng, dùng 'なん'.",
+      "points": 5,
+      "options": [
+        { "optionText": "なん", "isCorrect": true },
+        { "optionText": "どこ", "isCorrect": false },
+        { "optionText": "だれ", "isCorrect": false },
+        { "optionText": "いくら", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「Computer」は 日本語で ___ ですか。…「パソコン」です。",
+      "explanation": "Hỏi từ tương ứng trong ngôn ngữ khác.",
+      "points": 5,
+      "options": [
+        { "optionText": "なん", "isCorrect": true },
+        { "optionText": "だれ", "isCorrect": false },
+        { "optionText": "いつ", "isCorrect": false },
+        { "optionText": "どう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "その言葉 ___ 英語で 何ですか。",
+      "explanation": "Trợ từ 'は' đứng sau chủ đề cần hỏi.",
+      "points": 5,
+      "options": [
+        { "optionText": "は", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「りんご」は 英語 ___ 「Apple」です。",
+      "explanation": "Sử dụng trợ từ 'で' chỉ ngôn ngữ.",
+      "points": 5,
+      "options": [
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "の", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「Dog」は 日本語で「いぬ」の ___ です。",
+      "explanation": "Giải thích ý nghĩa từ vựng bằng 'いみ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "ことば", "isCorrect": false },
+        { "optionText": "いみ", "isCorrect": true },
+        { "optionText": "うち", "isCorrect": false },
+        { "optionText": "なまえ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "これは 日本語 ___ 何と言いますか。",
+      "explanation": "Hỏi cách gọi/nói trong một ngôn ngữ, dùng trợ từ 'で'.",
+      "points": 5,
+      "options": [
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「本」は 英語で ___ ですか。",
+      "explanation": "Từ để hỏi ý nghĩa/cách gọi.",
+      "points": 5,
+      "options": [
+        { "optionText": "なん", "isCorrect": true },
+        { "optionText": "どれ", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false },
+        { "optionText": "だれ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「Xin chào」は 日本語 ___ 「こんにちは」です。",
+      "explanation": "Sử dụng trợ từ 'で' sau tên ngôn ngữ.",
+      "points": 5,
+      "options": [
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「くるま」は 英語で「Car」の ___ です。",
+      "explanation": "Dùng 'いみ' để kết thúc câu giải thích nghĩa.",
+      "points": 5,
+      "options": [
+        { "optionText": "いみ", "isCorrect": true },
+        { "optionText": "なまえ", "isCorrect": false },
+        { "optionText": "ことば", "isCorrect": false },
+        { "optionText": "ほん", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "「Map」は 日本語で ___ ですか。…「ちず」です。",
+      "explanation": "Từ để hỏi 'là cái gì'.",
+      "points": 5,
+      "options": [
+        { "optionText": "なん", "isCorrect": true },
+        { "optionText": "なにが", "isCorrect": false },
+        { "optionText": "どれ", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "その言葉は 日本語で ___ いみですか。…「Cảm ơn」の いみです。",
+      "explanation": "Cấu trúc 'なんの いみ' (nghĩa gì) dùng để hỏi ý nghĩa cụ thể.",
+      "points": 5,
+      "options": [
+        { "optionText": "なんの", "isCorrect": true },
+        { "optionText": "だれの", "isCorrect": false },
+        { "optionText": "どこの", "isCorrect": false },
+        { "optionText": "どの", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N5 - Bộ 25: Tính từ đuôi い (Aいです)",
+  "level": "N5",
+  "description": "Cách sử dụng tính từ đuôi い để diễn tả tính chất, trạng thái của sự vật, sự việc hoặc thời tiết ở thời điểm hiện tại.",
+  "isPremium": false,
+  "examples": [
+    "このかばんはやすいです。(Cái cặp này rẻ.)",
+    "きょうはあついです。(Hôm nay trời nóng.)",
+    "この本はむずかしいです。(Quyển sách này khó.)"
+  ],
+  "questions": [
+    {
+      "questionText": "この りんごは ___ です。",
+      "explanation": "Tính từ đuôi い đứng trước 'です' để bổ nghĩa cho chủ ngữ (Quả táo này ngọt).",
+      "points": 5,
+      "options": [
+        { "optionText": "あまい", "isCorrect": true },
+        { "optionText": "あま", "isCorrect": false },
+        { "optionText": "あまいで", "isCorrect": false },
+        { "optionText": "あまく", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "今日は とても ___ ですね。",
+      "explanation": "Diễn tả trạng thái thời tiết (Hôm nay trời rất nóng nhỉ).",
+      "points": 5,
+      "options": [
+        { "optionText": "あつい", "isCorrect": true },
+        { "optionText": "あつ", "isCorrect": false },
+        { "optionText": "あついです", "isCorrect": false },
+        { "optionText": "あつく", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本料理は ___ ですか。…はい、おいしいです。",
+      "explanation": "Từ để hỏi về tính chất, trạng thái là 'どう' (thế nào).",
+      "points": 5,
+      "options": [
+        { "optionText": "なん", "isCorrect": false },
+        { "optionText": "どう", "isCorrect": true },
+        { "optionText": "どこ", "isCorrect": false },
+        { "optionText": "だれ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この 本は ___ です。",
+      "explanation": "Tính từ 'むずかしい' (khó) giữ nguyên đuôi 'い' khi kết hợp với 'です'.",
+      "points": 5,
+      "options": [
+        { "optionText": "むずかしい", "isCorrect": true },
+        { "optionText": "むずかし", "isCorrect": false },
+        { "optionText": "むずかしく", "isCorrect": false },
+        { "optionText": "むずかしいの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あの 山は ___ です。",
+      "explanation": "Diễn tả tính chất của ngọn núi (Ngọn núi kia cao).",
+      "points": 5,
+      "options": [
+        { "optionText": "たかい", "isCorrect": true },
+        { "optionText": "たか", "isCorrect": false },
+        { "optionText": "たかく", "isCorrect": false },
+        { "optionText": "たかいな", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本語の 勉強は ___ です。",
+      "explanation": "Diễn tả cảm nhận về việc học (Việc học tiếng Nhật thú vị).",
+      "points": 5,
+      "options": [
+        { "optionText": "おもしろい", "isCorrect": true },
+        { "optionText": "おもしろ", "isCorrect": false },
+        { "optionText": "おもしろく", "isCorrect": false },
+        { "optionText": "おもしろです", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この コーヒーは とても ___ です。",
+      "explanation": "Tính chất của đồ uống (Cà phê này rất nóng).",
+      "points": 5,
+      "options": [
+        { "optionText": "あつい", "isCorrect": true },
+        { "optionText": "さむい", "isCorrect": false },
+        { "optionText": "ひろい", "isCorrect": false },
+        { "optionText": "おもい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "わたしの 部屋は ___ です。",
+      "explanation": "Tính chất của căn phòng (Phòng của tôi rộng).",
+      "points": 5,
+      "options": [
+        { "optionText": "ひろい", "isCorrect": true },
+        { "optionText": "ひろ", "isCorrect": false },
+        { "optionText": "ひろく", "isCorrect": false },
+        { "optionText": "ひろいです", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "その 辞書は ___ ですか。",
+      "explanation": "Hỏi về tính chất của đồ vật (Cuốn từ điển đó có tốt không?).",
+      "points": 5,
+      "options": [
+        { "optionText": "いい", "isCorrect": true },
+        { "optionText": "よく", "isCorrect": false },
+        { "optionText": "いいの", "isCorrect": false },
+        { "optionText": "よ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この カメラは ___ です。",
+      "explanation": "Tính chất của thiết bị (Cái máy ảnh này mới).",
+      "points": 5,
+      "options": [
+        { "optionText": "あたらしい", "isCorrect": true },
+        { "optionText": "あたらし", "isCorrect": false },
+        { "optionText": "あたらしく", "isCorrect": false },
+        { "optionText": "あたらしいな", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "北海道は 今 ___ ですか。",
+      "explanation": "Hỏi về thời tiết (Hokkaido bây giờ có lạnh không?).",
+      "points": 5,
+      "options": [
+        { "optionText": "さむい", "isCorrect": true },
+        { "optionText": "さむ", "isCorrect": false },
+        { "optionText": "さむく", "isCorrect": false },
+        { "optionText": "さむいです", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あの 車は とても ___ ですね。",
+      "explanation": "Tính chất của phương tiện (Chiếc xe kia nhanh thật nhỉ).",
+      "points": 5,
+      "options": [
+        { "optionText": "はやい", "isCorrect": true },
+        { "optionText": "はや", "isCorrect": false },
+        { "optionText": "はやいな", "isCorrect": false },
+        { "optionText": "はやく", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この 靴は ___ です。…いくらですか。…1,000円です。",
+      "explanation": "Dựa vào giá tiền 1000 yên (khá rẻ), chọn tính từ 'やすい'.",
+      "points": 5,
+      "options": [
+        { "optionText": "やすい", "isCorrect": true },
+        { "optionText": "たかい", "isCorrect": false },
+        { "optionText": "おいしい", "isCorrect": false },
+        { "optionText": "わるい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ミラーさんは ___ です。",
+      "explanation": "Tính chất của con người (Anh Miller bận rộn).",
+      "points": 5,
+      "options": [
+        { "optionText": "いそがしい", "isCorrect": true },
+        { "optionText": "いそがし", "isCorrect": false },
+        { "optionText": "いそがしく", "isCorrect": false },
+        { "optionText": "いそがしいの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "仕事は ___ ですか。…はい、大変ですが、おもしろいです。",
+      "explanation": "Hỏi về tính chất công việc (Công việc thế nào?).",
+      "points": 5,
+      "options": [
+        { "optionText": "どう", "isCorrect": true },
+        { "optionText": "なん", "isCorrect": false },
+        { "optionText": "どれ", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この 鞄は ___ です。",
+      "explanation": "Trạng thái của đồ vật (Cái cặp này nặng).",
+      "points": 5,
+      "options": [
+        { "optionText": "おもい", "isCorrect": true },
+        { "optionText": "おも", "isCorrect": false },
+        { "optionText": "おもく", "isCorrect": false },
+        { "optionText": "おもいです", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "昨日の テストは ___ です。",
+      "explanation": "Diễn tả tính chất của bài kiểm tra (Bài kiểm tra hôm qua dễ).",
+      "points": 5,
+      "options": [
+        { "optionText": "やさしい", "isCorrect": true },
+        { "optionText": "やさし", "isCorrect": false },
+        { "optionText": "やさしく", "isCorrect": false },
+        { "optionText": "やさしいの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "寮の 生活は ___ です。",
+      "explanation": "Trạng thái cuộc sống (Cuộc sống ở ký túc xá vui vẻ).",
+      "points": 5,
+      "options": [
+        { "optionText": "たのしい", "isCorrect": true },
+        { "optionText": "たのし", "isCorrect": false },
+        { "optionText": "たのしく", "isCorrect": false },
+        { "optionText": "たのしいです", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "空は とても ___ です。",
+      "explanation": "Trạng thái của bầu trời (Bầu trời rất xanh/đẹp).",
+      "points": 5,
+      "options": [
+        { "optionText": "あおい", "isCorrect": true },
+        { "optionText": "あお", "isCorrect": false },
+        { "optionText": "あおく", "isCorrect": false },
+        { "optionText": "あおいな", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この 部屋は ___ です。",
+      "explanation": "Trạng thái căn phòng (Phòng này hẹp).",
+      "points": 5,
+      "options": [
+        { "optionText": "せまい", "isCorrect": true },
+        { "optionText": "せま", "isCorrect": false },
+        { "optionText": "せまく", "isCorrect": false },
+        { "optionText": "せまいの", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N5 - Bộ 26: Tính từ đuôi な (Aなです)",
+  "level": "N5",
+  "description": "Cách sử dụng tính từ đuôi な để diễn tả tính chất, trạng thái của người, vật hoặc địa điểm. Khi đứng trước 'です', ta bỏ 'な'.",
+  "isPremium": false,
+  "examples": [
+    "にほんのせいかつは べんりです。(Cuộc sống ở Nhật tiện lợi.)",
+    "ハノイは にぎやかです。(Hà Nội nhộn nhịp.)",
+    "マリアさんは しんせつです。(Chị Maria tốt bụng.)"
+  ],
+  "questions": [
+    {
+      "questionText": "この町は とても ___ です。",
+      "explanation": "Diễn tả tính chất của thành phố (Thành phố này rất yên tĩnh). Tính từ 'しずか(な)' khi kết hợp với 'です' sẽ bỏ 'な'.",
+      "points": 5,
+      "options": [
+        { "optionText": "しずかな", "isCorrect": false },
+        { "optionText": "しずか", "isCorrect": true },
+        { "optionText": "しずかに", "isCorrect": false },
+        { "optionText": "しずかだ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本の 地下鉄は ___ です。",
+      "explanation": "Tiện lợi là 'べんり(な)'. Trước 'です' không dùng 'な'.",
+      "points": 5,
+      "options": [
+        { "optionText": "べんり", "isCorrect": true },
+        { "optionText": "べんりな", "isCorrect": false },
+        { "optionText": "べんりだ", "isCorrect": false },
+        { "optionText": "べんりに", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ワット先生は とても ___ です。",
+      "explanation": "Khen ngợi tính cách con người (Thầy Watt rất tốt bụng). Dùng 'しんせつ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "しんせつな", "isCorrect": false },
+        { "optionText": "しんせつ", "isCorrect": true },
+        { "optionText": "しんせつだ", "isCorrect": false },
+        { "optionText": "しんせつに", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日曜日の デパートは ___ です。",
+      "explanation": "Trạng thái của địa điểm (Trung tâm thương mại vào chủ nhật thì nhộn nhịp). Dùng 'にぎやか'.",
+      "points": 5,
+      "options": [
+        { "optionText": "にぎやか", "isCorrect": true },
+        { "optionText": "にぎやかな", "isCorrect": false },
+        { "optionText": "にぎやかだ", "isCorrect": false },
+        { "optionText": "にぎやかに", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あの 人は ___ ですね。",
+      "explanation": "Khen ngợi ngoại hình (Người kia đẹp trai nhỉ). Dùng 'ハンサム'.",
+      "points": 5,
+      "options": [
+        { "optionText": "ハンサムな", "isCorrect": false },
+        { "optionText": "ハンサム", "isCorrect": true },
+        { "optionText": "ハンサムだ", "isCorrect": false },
+        { "optionText": "ハンサムに", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "さくら大学は あまり ___ です。",
+      "explanation": "Câu này có 'あまり' (không... lắm) nhưng cấu trúc bài này là khẳng định, tính từ phù hợp là 'ゆうめい' (nổi tiếng).",
+      "points": 5,
+      "options": [
+        { "optionText": "ゆうめい", "isCorrect": true },
+        { "optionText": "ゆうめいな", "isCorrect": false },
+        { "optionText": "ゆうめいだ", "isCorrect": false },
+        { "optionText": "ゆうめいに", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この 部屋は ___ です。",
+      "explanation": "Trạng thái sạch sẽ là 'きれい(な)'. Lưu ý 'きれい' kết thúc bằng 'い' nhưng là tính từ đuôi な.",
+      "points": 5,
+      "options": [
+        { "optionText": "きれいな", "isCorrect": false },
+        { "optionText": "きれい", "isCorrect": true },
+        { "optionText": "きれいだ", "isCorrect": false },
+        { "optionText": "きれいに", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "昨日は ___ でした。",
+      "explanation": "Trạng thái rảnh rỗi là 'ひま(な)'.",
+      "points": 5,
+      "options": [
+        { "optionText": "ひま", "isCorrect": true },
+        { "optionText": "ひまな", "isCorrect": false },
+        { "optionText": "ひまだ", "isCorrect": false },
+        { "optionText": "ひまに", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "今日は ___ ですか。…はい、元気です。",
+      "explanation": "Hỏi thăm sức khỏe: 'お元気ですか'.",
+      "points": 5,
+      "options": [
+        { "optionText": "げんきな", "isCorrect": false },
+        { "optionText": "げんき", "isCorrect": true },
+        { "optionText": "げんきだ", "isCorrect": false },
+        { "optionText": "げんきに", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "仕事は ___ ですか。…はい、大変です。",
+      "explanation": "Hỏi về tính chất công việc: 'どう' (thế nào).",
+      "points": 5,
+      "options": [
+        { "optionText": "なん", "isCorrect": false },
+        { "optionText": "どう", "isCorrect": true },
+        { "optionText": "どこ", "isCorrect": false },
+        { "optionText": "どれ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "富士山は とても ___ です。",
+      "explanation": "Khen ngợi vẻ đẹp của núi Phú Sĩ: 'きれい'.",
+      "points": 5,
+      "options": [
+        { "optionText": "きれい", "isCorrect": true },
+        { "optionText": "きれいな", "isCorrect": false },
+        { "optionText": "きれいで", "isCorrect": false },
+        { "optionText": "きれいの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この 公園は ___ です。",
+      "explanation": "Trạng thái của công viên (Công viên này đẹp/sạch): 'きれい'.",
+      "points": 5,
+      "options": [
+        { "optionText": "きれな", "isCorrect": false },
+        { "optionText": "きれい", "isCorrect": true },
+        { "optionText": "きれいだ", "isCorrect": false },
+        { "optionText": "きれいに", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "パソコンは とても ___ です。",
+      "explanation": "Tính chất của máy tính (Rất tiện lợi): 'べんり'.",
+      "points": 5,
+      "options": [
+        { "optionText": "べんり", "isCorrect": true },
+        { "optionText": "べんりな", "isCorrect": false },
+        { "optionText": "べんりだ", "isCorrect": false },
+        { "optionText": "べんりの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あの 先生は ___ です。",
+      "explanation": "Tính cách giáo viên (Tốt bụng): 'しんせつ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "しんせつ", "isCorrect": true },
+        { "optionText": "しんせつな", "isCorrect": false },
+        { "optionText": "しんせつの", "isCorrect": false },
+        { "optionText": "しんせつだ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "京都は ___ 町です。",
+      "explanation": "Ở đây tính từ đứng trước danh từ '町' nên phải giữ 'な'. 'ゆうめいな まち' (Thành phố nổi tiếng).",
+      "points": 5,
+      "options": [
+        { "optionText": "ゆうめいな", "isCorrect": true },
+        { "optionText": "ゆうめい", "isCorrect": false },
+        { "optionText": "ゆうめいだ", "isCorrect": false },
+        { "optionText": "ゆうめいに", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "試験は ___ ですか。…いいえ、簡単です。",
+      "explanation": "Hỏi về kỳ thi: 'どう' (thế nào).",
+      "points": 5,
+      "options": [
+        { "optionText": "どう", "isCorrect": true },
+        { "optionText": "なん", "isCorrect": false },
+        { "optionText": "どれ", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "明日は ___ ですか。…はい、暇です。",
+      "explanation": "Hỏi về sự rảnh rỗi: 'ひま'.",
+      "points": 5,
+      "options": [
+        { "optionText": "ひま", "isCorrect": true },
+        { "optionText": "ひまな", "isCorrect": false },
+        { "optionText": "ひまだ", "isCorrect": false },
+        { "optionText": "ひまの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "大学の 生活は ___ です。",
+      "explanation": "Tính chất cuộc sống đại học (Vất vả/Bận rộn): 'たいへん'.",
+      "points": 5,
+      "options": [
+        { "optionText": "たいへん", "isCorrect": true },
+        { "optionText": "たいへんな", "isCorrect": false },
+        { "optionText": "たいへんだ", "isCorrect": false },
+        { "optionText": "たいへんに", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この 料理は ___ です。",
+      "explanation": "Đặc điểm món ăn (Đơn giản): 'かんたん'.",
+      "points": 5,
+      "options": [
+        { "optionText": "かんたん", "isCorrect": true },
+        { "optionText": "かんたんな", "isCorrect": false },
+        { "optionText": "かんたんだ", "isCorrect": false },
+        { "optionText": "かんたんに", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ベトナムは ___ ですね。…はい、そうです。",
+      "explanation": "Tính chất của đất nước (Nhộn nhịp): 'にぎやか'.",
+      "points": 5,
+      "options": [
+        { "optionText": "にぎやか", "isCorrect": true },
+        { "optionText": "にぎやかな", "isCorrect": false },
+        { "optionText": "にぎやかだ", "isCorrect": false },
+        { "optionText": "にぎやかに", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N5 - Bộ 27: Tính từ bổ nghĩa cho danh từ (Aい N / Aな N)",
+  "level": "N5",
+  "description": "Cách dùng tính từ đứng trước danh từ để bổ nghĩa. Tính từ đuôi い giữ nguyên đuôi 'い', tính từ đuôi な phải thêm 'な' trước khi nối với danh từ.",
+  "isPremium": false,
+  "examples": [
+    "おおきい にもつです。(Hành lý lớn.)",
+    "きれいな はなです。(Bông hoa đẹp.)",
+    "ゆうめいな せんせいです。(Giáo viên nổi tiếng.)"
+  ],
+  "questions": [
+    {
+      "questionText": "これは ___ 辞書です。",
+      "explanation": "Tính từ đuôi い (あつい - dày) giữ nguyên đuôi khi bổ nghĩa cho danh từ (辞書).",
+      "points": 5,
+      "options": [
+        { "optionText": "あつい", "isCorrect": true },
+        { "optionText": "あつな", "isCorrect": false },
+        { "optionText": "あつ", "isCorrect": false },
+        { "optionText": "あつく", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あそこは ___ 町です。",
+      "explanation": "Tính từ đuôi な (しずか - yên tĩnh) phải thêm 'な' khi đứng trước danh từ (町).",
+      "points": 5,
+      "options": [
+        { "optionText": "しずか", "isCorrect": false },
+        { "optionText": "しずかな", "isCorrect": true },
+        { "optionText": "しずかだ", "isCorrect": false },
+        { "optionText": "しずかい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 荷物ですね。持ちましょうか。",
+      "explanation": "Tính từ đuôi い (おおきい - lớn) bổ nghĩa trực tiếp cho danh từ (荷物).",
+      "points": 5,
+      "options": [
+        { "optionText": "おおきい", "isCorrect": true },
+        { "optionText": "おおきな", "isCorrect": false },
+        { "optionText": "おおき", "isCorrect": false },
+        { "optionText": "おおきだ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "マリアさんは ___ 人です。",
+      "explanation": "Tính từ đuôi な (しんせつ - tốt bụng) phải có 'な' khi bổ nghĩa cho người (人).",
+      "points": 5,
+      "options": [
+        { "optionText": "しんせつ", "isCorrect": false },
+        { "optionText": "しんせつな", "isCorrect": true },
+        { "optionText": "しんせつだ", "isCorrect": false },
+        { "optionText": "しんせつい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "昨日は ___ 天気でした。",
+      "explanation": "Tính từ đuôi い (いい - tốt) bổ nghĩa cho danh từ (天気).",
+      "points": 5,
+      "options": [
+        { "optionText": "いい", "isCorrect": true },
+        { "optionText": "いいな", "isCorrect": false },
+        { "optionText": "よく", "isCorrect": false },
+        { "optionText": "いいだ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "富士山は ___ 山です。",
+      "explanation": "Tính từ đuôi な (きれい - đẹp) phải có 'な' đứng trước danh từ (山).",
+      "points": 5,
+      "options": [
+        { "optionText": "きれい", "isCorrect": false },
+        { "optionText": "きれいな", "isCorrect": true },
+        { "optionText": "きれいだ", "isCorrect": false },
+        { "optionText": "きれいい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "これは ___ コンピューターですね。",
+      "explanation": "Tính từ đuôi い (あたらしい - mới) bổ nghĩa cho máy tính.",
+      "points": 5,
+      "options": [
+        { "optionText": "あたらしい", "isCorrect": true },
+        { "optionText": "あたらしな", "isCorrect": false },
+        { "optionText": "あたらし", "isCorrect": false },
+        { "optionText": "あたらしだ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ハノイは ___ 町です。",
+      "explanation": "Tính từ đuôi な (にぎやか - nhộn nhịp) đi với danh từ thành phố.",
+      "points": 5,
+      "options": [
+        { "optionText": "にぎやか", "isCorrect": false },
+        { "optionText": "にぎやかな", "isCorrect": true },
+        { "optionText": "にぎやかだ", "isCorrect": false },
+        { "optionText": "にぎやかい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 料理を食べました。",
+      "explanation": "Tính từ đuôi い (おいしい - ngon) đứng trước danh từ món ăn.",
+      "points": 5,
+      "options": [
+        { "optionText": "おいしい", "isCorrect": true },
+        { "optionText": "おいしな", "isCorrect": false },
+        { "optionText": "おいし", "isCorrect": false },
+        { "optionText": "おいしく", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ワットさんは ___ 先生です。",
+      "explanation": "Tính từ đuôi な (ゆうめい - nổi tiếng) bổ nghĩa cho danh từ giáo viên.",
+      "points": 5,
+      "options": [
+        { "optionText": "ゆうめい", "isCorrect": false },
+        { "optionText": "ゆうめいな", "isCorrect": true },
+        { "optionText": "ゆうめいだ", "isCorrect": false },
+        { "optionText": "ゆうめいい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "これは ___ カメラですか。",
+      "explanation": "Tính từ đuôi い (たかい - đắt) bổ nghĩa cho máy ảnh.",
+      "points": 5,
+      "options": [
+        { "optionText": "たかい", "isCorrect": true },
+        { "optionText": "たかな", "isCorrect": false },
+        { "optionText": "たかく", "isCorrect": false },
+        { "optionText": "たかだ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ テストでしたね。",
+      "explanation": "Tính từ đuôi な (かんたん - đơn giản) bổ nghĩa cho bài kiểm tra.",
+      "points": 5,
+      "options": [
+        { "optionText": "かんたん", "isCorrect": false },
+        { "optionText": "かんたんな", "isCorrect": true },
+        { "optionText": "かんたんだ", "isCorrect": false },
+        { "optionText": "かんたんい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 傘は 誰のですか。",
+      "explanation": "Tính từ đuôi い (あかい - đỏ) bổ nghĩa cho cái ô.",
+      "points": 5,
+      "options": [
+        { "optionText": "あかい", "isCorrect": true },
+        { "optionText": "あかな", "isCorrect": false },
+        { "optionText": "あか", "isCorrect": false },
+        { "optionText": "あかだ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 部屋ですね。",
+      "explanation": "Lưu ý: きれい (đẹp/sạch) là tính từ đuôi な, nên phải là 'きれいな'.",
+      "points": 5,
+      "options": [
+        { "optionText": "きれい", "isCorrect": false },
+        { "optionText": "きれいな", "isCorrect": true },
+        { "optionText": "きれいい", "isCorrect": false },
+        { "optionText": "きれいだ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 飲み物が 好きです。",
+      "explanation": "Tính từ đuôi い (つめたい - lạnh) bổ nghĩa cho đồ uống.",
+      "points": 5,
+      "options": [
+        { "optionText": "つめたい", "isCorrect": true },
+        { "optionText": "つめたな", "isCorrect": false },
+        { "optionText": "つめた", "isCorrect": false },
+        { "optionText": "つめたく", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 仕事ですね。頑張ってください。",
+      "explanation": "Tính từ đuôi な (たいへん - vất vả) bổ nghĩa cho công việc.",
+      "points": 5,
+      "options": [
+        { "optionText": "たいへん", "isCorrect": false },
+        { "optionText": "たいへんな", "isCorrect": true },
+        { "optionText": "たいへんだ", "isCorrect": false },
+        { "optionText": "たいへんい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 辞書を 買いました。",
+      "explanation": "Tính từ đuôi い (ちいさい - nhỏ) bổ nghĩa cho cuốn từ điển.",
+      "points": 5,
+      "options": [
+        { "optionText": "ちいさい", "isCorrect": true },
+        { "optionText": "ちいさな", "isCorrect": false },
+        { "optionText": "ちいさ", "isCorrect": false },
+        { "optionText": "ちいさだ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ミラーさんは ___ 人ですね。",
+      "explanation": "Tính từ đuôi な (ひま - rảnh rỗi) bổ nghĩa cho người.",
+      "points": 5,
+      "options": [
+        { "optionText": "ひま", "isCorrect": false },
+        { "optionText": "ひまな", "isCorrect": true },
+        { "optionText": "ひまに", "isCorrect": false },
+        { "optionText": "ひまだ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "昨日 ___ 映画を 見ました。",
+      "explanation": "Tính từ đuôi い (おもしろい - thú vị) bổ nghĩa cho phim.",
+      "points": 5,
+      "options": [
+        { "optionText": "おもしろい", "isCorrect": true },
+        { "optionText": "おもしろな", "isCorrect": false },
+        { "optionText": "おもしろ", "isCorrect": false },
+        { "optionText": "おもしろだ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 日本語で 話しましょう。",
+      "explanation": "Tính từ đuôi い (やさしい - dễ) bổ nghĩa cho tiếng Nhật.",
+      "points": 5,
+      "options": [
+        { "optionText": "やさしい", "isCorrect": true },
+        { "optionText": "やさしな", "isCorrect": false },
+        { "optionText": "やさし", "isCorrect": false },
+        { "optionText": "やさしく", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N5 - Bộ 28: Từ để hỏi tính chất (どんな N)",
+  "level": "N5",
+  "description": "Sử dụng 'どんな' đứng trước danh từ để hỏi về tính chất, trạng thái hoặc đặc điểm của người, vật, địa điểm (Như thế nào/Loại nào).",
+  "isPremium": false,
+  "examples": [
+    "マリアさんはどんなひとですか。(Chị Maria là người như thế nào?)",
+    "にほんはどんなくにですか。(Nhật Bản là đất nước như thế nào?)",
+    "どんなたべものがすきですか。(Bạn thích loại đồ ăn nào?)"
+  ],
+  "questions": [
+    {
+      "questionText": "ハノイは ___ 町ですか。…にぎやかな町です。",
+      "explanation": "Để hỏi về tính chất của một địa điểm (Thành phố như thế nào?), ta dùng 'どんな' đứng trước danh từ '町'.",
+      "points": 5,
+      "options": [
+        { "optionText": "なんの", "isCorrect": false },
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "どう", "isCorrect": false },
+        { "optionText": "どの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 食べ物が 好きですか。…辛い料理が 好きです。",
+      "explanation": "Hỏi về chủng loại/tính chất đồ ăn yêu thích, dùng 'どんな'.",
+      "points": 5,
+      "options": [
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "なに", "isCorrect": false },
+        { "optionText": "どれ", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ミラーさんは ___ 人ですか。…親切な人です。",
+      "explanation": "Hỏi về tính cách/đặc điểm của một người, dùng 'どんな' + '人'.",
+      "points": 5,
+      "options": [
+        { "optionText": "だれ", "isCorrect": false },
+        { "optionText": "どの", "isCorrect": false },
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "なんの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ スポーツが 好きですか。…テニスが 好きです。",
+      "explanation": "Hỏi về loại hình thể thao, dùng 'どんな'.",
+      "points": 5,
+      "options": [
+        { "optionText": "なに", "isCorrect": false },
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "どう", "isCorrect": false },
+        { "optionText": "どの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本は ___ 国ですか。…きれいな国です。",
+      "explanation": "Hỏi về đặc điểm của một quốc gia.",
+      "points": 5,
+      "options": [
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "なんの", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false },
+        { "optionText": "どちら", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 飲み物が ありますか。…お茶や コーヒーなどが あります。",
+      "explanation": "Hỏi về các loại đồ uống đang có.",
+      "points": 5,
+      "options": [
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "なに", "isCorrect": false },
+        { "optionText": "どの", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 音楽が 好きですか。…クラシックが 好きです。",
+      "explanation": "Hỏi về thể loại âm nhạc yêu thích.",
+      "points": 5,
+      "options": [
+        { "optionText": "なんの", "isCorrect": false },
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "どれ", "isCorrect": false },
+        { "optionText": "なに", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "サントスさんは ___ 人ですか。…背が高い人です。",
+      "explanation": "Hỏi về ngoại hình/đặc điểm của người.",
+      "points": 5,
+      "options": [
+        { "optionText": "だれ", "isCorrect": false },
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "どの", "isCorrect": false },
+        { "optionText": "なにか", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あなたの 会社は ___ 会社ですか。…コンピューターの会社です。",
+      "explanation": "Hỏi về lĩnh vực/tính chất của công ty.",
+      "points": 5,
+      "options": [
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "どこ", "isCorrect": false },
+        { "optionText": "どちら", "isCorrect": false },
+        { "optionText": "なん", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 映画を 見ましたか。…おもしろい映画を 見ました。",
+      "explanation": "Hỏi về tính chất của bộ phim đã xem.",
+      "points": 5,
+      "options": [
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "なんの", "isCorrect": false },
+        { "optionText": "いつ", "isCorrect": false },
+        { "optionText": "だれ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "お寺は ___ ですか。…古いですが、きれいです。",
+      "explanation": "LƯU Ý: Nếu câu trả lời không có danh từ đi kèm (chỉ có tính từ), ta dùng 'どう'. Nhưng nếu hỏi về tính chất sự vật cụ thể có danh từ, dùng 'どんな'. Ở đây hỏi về đặc điểm chung của ngôi đền.",
+      "points": 5,
+      "options": [
+        { "optionText": "どう", "isCorrect": true },
+        { "optionText": "どんな", "isCorrect": false },
+        { "optionText": "なん", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "寮は ___ 建物ですか。…古い建物です。",
+      "explanation": "Có danh từ '建物' (tòa nhà) phía sau, bắt buộc dùng 'どんな'.",
+      "points": 5,
+      "options": [
+        { "optionText": "どう", "isCorrect": false },
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "なんの", "isCorrect": false },
+        { "optionText": "どちら", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 雑誌を 読みましたか。…カメラの雑誌を 読みました。",
+      "explanation": "Hỏi về loại tạp chí.",
+      "points": 5,
+      "options": [
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "なん", "isCorrect": false },
+        { "optionText": "どれ", "isCorrect": false },
+        { "optionText": "だれ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 果物が 好きですか。…りんごが 好きです。",
+      "explanation": "Hỏi về loại trái cây yêu thích.",
+      "points": 5,
+      "options": [
+        { "optionText": "なに", "isCorrect": false },
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "どれ", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "昨日の テストは ___ でしたか。…難しかったです。",
+      "explanation": "Hỏi cảm nhận về sự việc đã qua (không có danh từ đi kèm), dùng 'どう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "どんな", "isCorrect": false },
+        { "optionText": "どう", "isCorrect": true },
+        { "optionText": "なん", "isCorrect": false },
+        { "optionText": "だれ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "大学の 先生は ___ 人ですか。…厳しいですが、いい人です。",
+      "explanation": "Hỏi về con người, dùng 'どんな人'.",
+      "points": 5,
+      "options": [
+        { "optionText": "だれ", "isCorrect": false },
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "どの", "isCorrect": false },
+        { "optionText": "なんの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 仕事が したいですか。…おもしろい仕事が したいです。",
+      "explanation": "Hỏi về loại công việc muốn làm.",
+      "points": 5,
+      "options": [
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "なに", "isCorrect": false },
+        { "optionText": "どう", "isCorrect": false },
+        { "optionText": "どの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あなたの 部屋は ___ 部屋ですか。…広くて、明るい部屋です。",
+      "explanation": "Hỏi về đặc điểm căn phòng.",
+      "points": 5,
+      "options": [
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "どう", "isCorrect": false },
+        { "optionText": "なんの", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 車を 買いましたか。…日本の車を 買いました。",
+      "explanation": "Hỏi về loại xe đã mua.",
+      "points": 5,
+      "options": [
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "なんの", "isCorrect": false },
+        { "optionText": "どれ", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "その カメラは ___ ですか。…新しくて、いいですよ。",
+      "explanation": "Hỏi cảm nhận (không đi kèm danh từ), dùng 'どう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "どんな", "isCorrect": false },
+        { "optionText": "どう", "isCorrect": true },
+        { "optionText": "なん", "isCorrect": false },
+        { "optionText": "どれ", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N5 - Bộ 29: Thích, Ghét, Giỏi, Kém (N が すき/きらい/じょうず/へた)",
+  "level": "N5",
+  "description": "Sử dụng trợ từ 'が' để chỉ đối tượng của sở thích (thích/ghét) hoặc năng lực (giỏi/kém). Đứng trước 'が' là danh từ chỉ sự vật, sự việc hoặc khả năng.",
+  "isPremium": false,
+  "examples": [
+    "わたしはえいごがすきです。(Tôi thích tiếng Anh.)",
+    "あなたはうたがじょうずです。(Bạn hát giỏi.)",
+    "わたしはテニスがへたです。(Tôi chơi tennis kém.)"
+  ],
+  "questions": [
+    {
+      "questionText": "私は 日本料理 ___ 好きです。",
+      "explanation": "Trợ từ 'が' dùng để chỉ đối tượng của sở thích (thích món ăn Nhật).",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ミラーさんは 歌 ___ 上手です。",
+      "explanation": "Chỉ năng lực (giỏi hát), đối tượng đi với trợ từ 'が'.",
+      "points": 5,
+      "options": [
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "は", "isCorrect": false },
+        { "optionText": "の", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "私は 納豆（なっとう）が ___ です。",
+      "explanation": "Diễn tả sự ghét bỏ một loại đồ ăn (Tôi ghét Natto).",
+      "points": 5,
+      "options": [
+        { "optionText": "じょうず", "isCorrect": false },
+        { "optionText": "きらい", "isCorrect": true },
+        { "optionText": "きれい", "isCorrect": false },
+        { "optionText": "しんせつ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "サントスさんは テニスが とても ___ です。",
+      "explanation": "Khen ngợi năng lực của người khác (Anh Santos chơi tennis rất giỏi).",
+      "points": 5,
+      "options": [
+        { "optionText": "へた", "isCorrect": false },
+        { "optionText": "じょうず", "isCorrect": true },
+        { "optionText": "すき", "isCorrect": false },
+        { "optionText": "ほしい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "私は スポーツが ___ です。",
+      "explanation": "Tự khiêm nhường hoặc diễn tả sự kém cỏi về một môn nào đó (Tôi chơi thể thao kém).",
+      "points": 5,
+      "options": [
+        { "optionText": "へた", "isCorrect": true },
+        { "optionText": "じょうず", "isCorrect": false },
+        { "optionText": "きれい", "isCorrect": false },
+        { "optionText": "ゆうめい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "どんな 食べ物 ___ 好きですか。",
+      "explanation": "Trong câu hỏi 'Thích loại đồ ăn nào', trợ từ 'が' vẫn được dùng sau danh từ chỉ đối tượng.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "私は お酒が あまり ___ です。",
+      "explanation": "Cấu trúc 'あまり...じゃありません' (Không... lắm). Tôi không thích rượu lắm.",
+      "points": 5,
+      "options": [
+        { "optionText": "好きです", "isCorrect": false },
+        { "optionText": "好きじゃありません", "isCorrect": true },
+        { "optionText": "嫌いです", "isCorrect": false },
+        { "optionText": "上手です", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "木村さんは 料理 ___ 上手ですね。",
+      "explanation": "Khen ngợi kỹ năng nấu nướng của anh Kimura.",
+      "points": 5,
+      "options": [
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ひらがなは 好きですが、漢字（かんじ）は ___ です。",
+      "explanation": "Dùng từ trái nghĩa với '好き' (Thích Hiragana nhưng ghét Kanji).",
+      "points": 5,
+      "options": [
+        { "optionText": "じょうず", "isCorrect": false },
+        { "optionText": "へた", "isCorrect": false },
+        { "optionText": "きらい", "isCorrect": true },
+        { "optionText": "げんき", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "私は ダンスが 全然（ぜんぜん） ___ 。",
+      "explanation": "Cấu trúc '全然...じゃありません' (Hoàn toàn không...). Tôi hoàn toàn không giỏi khiêu vũ.",
+      "points": 5,
+      "options": [
+        { "optionText": "上手です", "isCorrect": false },
+        { "optionText": "上手じゃありません", "isCorrect": true },
+        { "optionText": "下手です", "isCorrect": false },
+        { "optionText": "上手でした", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ワンさんは 英語 ___ 上手ですか。…はい、とても上手です。",
+      "explanation": "Hỏi về năng lực ngôn ngữ của người khác.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "私は 魚（さかな）が 大好き（だいすき） ___ 。",
+      "explanation": "Kết thúc câu khẳng định về sở thích cực kỳ thích (Rất thích cá).",
+      "points": 5,
+      "options": [
+        { "optionText": "ます", "isCorrect": false },
+        { "optionText": "です", "isCorrect": true },
+        { "optionText": "だ", "isCorrect": false },
+        { "optionText": "な", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ミラーさんは 絵（え）が ___ ですか。…いいえ、あまり上手じゃありません。",
+      "explanation": "Dựa vào câu trả lời, câu hỏi phải hỏi về khả năng vẽ tranh.",
+      "points": 5,
+      "options": [
+        { "optionText": "へた", "isCorrect": false },
+        { "optionText": "じょうず", "isCorrect": true },
+        { "optionText": "きれい", "isCorrect": false },
+        { "optionText": "ひま", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あなたは 字（じ）が とても ___ ですね。",
+      "explanation": "Khen ngợi chữ viết của đối phương (Bạn viết chữ rất đẹp/giỏi).",
+      "points": 5,
+      "options": [
+        { "optionText": "上手", "isCorrect": true },
+        { "optionText": "下手", "isCorrect": false },
+        { "optionText": "嫌い", "isCorrect": false },
+        { "optionText": "元気", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "私は クラシック音楽 ___ 好きです。",
+      "explanation": "Chỉ đối tượng của sở thích âm nhạc.",
+      "points": 5,
+      "options": [
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "どんな スポーツ ___ 上手ですか。",
+      "explanation": "Hỏi xem đối phương giỏi môn thể thao nào.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "私は 辛い（からい）料理が ___ です。",
+      "explanation": "Diễn tả sự ghét bỏ (Tôi ghét món ăn cay).",
+      "points": 5,
+      "options": [
+        { "optionText": "嫌い", "isCorrect": true },
+        { "optionText": "上手", "isCorrect": false },
+        { "optionText": "元気", "isCorrect": false },
+        { "optionText": "静か", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "昨日、私は テニスをしました。でも、とても ___ でした。",
+      "explanation": "Diễn tả kết quả hoặc cảm nhận sau khi thực hiện (Hôm qua tôi đã chơi tennis nhưng đã chơi rất tệ).",
+      "points": 5,
+      "options": [
+        { "optionText": "じょうず", "isCorrect": false },
+        { "optionText": "へた", "isCorrect": true },
+        { "optionText": "すき", "isCorrect": false },
+        { "optionText": "きれい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "お父さんは 料理が ___ ですか。…いいえ、全然上手じゃありません。",
+      "explanation": "Hỏi về kỹ năng của bố.",
+      "points": 5,
+      "options": [
+        { "optionText": "上手", "isCorrect": true },
+        { "optionText": "下手", "isCorrect": false },
+        { "optionText": "嫌い", "isCorrect": false },
+        { "optionText": "きれい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "犬が 好きですか。…いいえ、あまり ___ 。",
+      "explanation": "Phủ định nhẹ nhàng về sở thích.",
+      "points": 5,
+      "options": [
+        { "optionText": "嫌いです", "isCorrect": false },
+        { "optionText": "好きじゃありません", "isCorrect": true },
+        { "optionText": "好きです", "isCorrect": false },
+        { "optionText": "上手じゃありません", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N5 - Bộ 30: Loại N nào (どんな N)",
+  "level": "N5",
+  "description": "Sử dụng 'どんな' đứng trước danh từ để hỏi về chủng loại, tính chất hoặc đặc điểm của sự vật, sự việc (Loại... nào? / ... như thế nào?).",
+  "isPremium": false,
+  "examples": [
+    "どんなスポーツがすきですか。(Bạn thích môn thể thao nào?)",
+    "どんなえいががすきですか。(Bạn thích loại phim nào?)",
+    "どんなたべものがすきですか。(Bạn thích loại đồ ăn nào?)"
+  ],
+  "questions": [
+    {
+      "questionText": "___ スポーツが 好きですか。…サッカーが 好きです。",
+      "explanation": "Dùng 'どんな' để hỏi về chủng loại thể thao mà đối phương yêu thích.",
+      "points": 5,
+      "options": [
+        { "optionText": "なに", "isCorrect": false },
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "どの", "isCorrect": false },
+        { "optionText": "どう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "どんな ___ が 好きですか。…お茶が 好きです。",
+      "explanation": "Dựa vào câu trả lời 'お茶' (Trà), ta chọn danh từ '飲み物' (Đồ uống) phù hợp với câu hỏi.",
+      "points": 5,
+      "options": [
+        { "optionText": "たべもの", "isCorrect": false },
+        { "optionText": "のみもの", "isCorrect": true },
+        { "optionText": "ところ", "isCorrect": false },
+        { "optionText": "ひと", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 映画が 好きですか。…ホラー映画が 好きです。",
+      "explanation": "Hỏi về thể loại phim, dùng 'どんな'.",
+      "points": 5,
+      "options": [
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "なに", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false },
+        { "optionText": "いつ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "どんな ___ が 嫌いですか。…辛い（からい）料理が 嫌いです。",
+      "explanation": "Dựa vào câu trả lời '辛い料理', danh từ phù hợp để hỏi là '食べ物'.",
+      "points": 5,
+      "options": [
+        { "optionText": "たべもの", "isCorrect": true },
+        { "optionText": "のみもの", "isCorrect": false },
+        { "optionText": "くだもの", "isCorrect": false },
+        { "optionText": "ことば", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 人が 好きですか。…親切な（しんせつな）人が 好きです。",
+      "explanation": "Hỏi về mẫu người yêu thích/tính cách con người, dùng 'どんな'.",
+      "points": 5,
+      "options": [
+        { "optionText": "だれ", "isCorrect": false },
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "なに", "isCorrect": false },
+        { "optionText": "どう", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本は どんな ___ ですか。…きれいな国です。",
+      "explanation": "Dựa vào câu trả lời 'きれいな国', danh từ hỏi phải là '国' (Đất nước).",
+      "points": 5,
+      "options": [
+        { "optionText": "まち", "isCorrect": false },
+        { "optionText": "くに", "isCorrect": true },
+        { "optionText": "ところ", "isCorrect": false },
+        { "optionText": "やま", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 料理を 作りましたか。…日本の料理を 作りました。",
+      "explanation": "Hỏi về loại món ăn đã làm.",
+      "points": 5,
+      "options": [
+        { "optionText": "なんの", "isCorrect": false },
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "どれ", "isCorrect": false },
+        { "optionText": "いつ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "どんな ___ を 買いましたか。…赤い（あかい）傘を 買いました。",
+      "explanation": "Câu trả lời nhắc đến '赤い傘', nên danh từ cần điền là 'かさ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "かばん", "isCorrect": false },
+        { "optionText": "くつ", "isCorrect": false },
+        { "optionText": "かさ", "isCorrect": true },
+        { "optionText": "とけい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あなたの 会社は どんな ___ ですか。…コンピューターの会社です。",
+      "explanation": "Hỏi về tính chất/lĩnh vực của công ty.",
+      "points": 5,
+      "options": [
+        { "optionText": "かいしゃ", "isCorrect": true },
+        { "optionText": "がっこう", "isCorrect": false },
+        { "optionText": "みせ", "isCorrect": false },
+        { "optionText": "ところ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 音楽が 好きですか。…ジャズが 好きです。",
+      "explanation": "Hỏi về thể loại âm nhạc, dùng 'どんな'.",
+      "points": 5,
+      "options": [
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "なに", "isCorrect": false },
+        { "optionText": "だれ", "isCorrect": false },
+        { "optionText": "いつ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ハノイは どんな ___ ですか。…にぎやかな町です。",
+      "explanation": "Hà Nội là thành phố như thế nào? Dùng danh từ 'まち'.",
+      "points": 5,
+      "options": [
+        { "optionText": "くに", "isCorrect": false },
+        { "optionText": "まち", "isCorrect": true },
+        { "optionText": "みせ", "isCorrect": false },
+        { "optionText": "やま", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 雑誌を 読みましたか。…車の雑誌を 読みました。",
+      "explanation": "Hỏi về loại tạp chí đã đọc.",
+      "points": 5,
+      "options": [
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "なんじ", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false },
+        { "optionText": "だれ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "どんな ___ が ありますか。…古い お寺が あります。",
+      "explanation": "Dựa vào câu trả lời '古いお寺' (ngôi chùa cổ), dùng danh từ 'ところ' (nơi/địa điểm) để hỏi là bao quát nhất.",
+      "points": 5,
+      "options": [
+        { "optionText": "もの", "isCorrect": false },
+        { "optionText": "ところ", "isCorrect": true },
+        { "optionText": "くに", "isCorrect": false },
+        { "optionText": "まち", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 果物が 好きですか。…みかんが 好きです。",
+      "explanation": "Hỏi về loại trái cây yêu thích.",
+      "points": 5,
+      "options": [
+        { "optionText": "なに", "isCorrect": false },
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "どれ", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "どんな ___ を 勉強しますか。…日本語を 勉強します。",
+      "explanation": "Hỏi về ngôn ngữ/môn học, dùng 'ことば' hoặc ám chỉ loại kiến thức.",
+      "points": 5,
+      "options": [
+        { "optionText": "ことば", "isCorrect": true },
+        { "optionText": "ひと", "isCorrect": false },
+        { "optionText": "もの", "isCorrect": false },
+        { "optionText": "くに", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ミラーさんは どんな ___ ですか。…背が 高い人です。",
+      "explanation": "Hỏi về đặc điểm ngoại hình của người, dùng danh từ 'ひと'.",
+      "points": 5,
+      "options": [
+        { "optionText": "ひと", "isCorrect": true },
+        { "optionText": "ともだち", "isCorrect": false },
+        { "optionText": "せんせい", "isCorrect": false },
+        { "optionText": "かぞく", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ お酒が ありますか。…ビールや ワインが あります。",
+      "explanation": "Hỏi về các loại rượu đang có.",
+      "points": 5,
+      "options": [
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "だれの", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false },
+        { "optionText": "いくら", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あなたの 部屋は どんな ___ ですか。…広くて、明るい部屋です。",
+      "explanation": "Căn phòng của bạn là căn phòng như thế nào? Dùng danh từ 'へや'.",
+      "points": 5,
+      "options": [
+        { "optionText": "いえ", "isCorrect": false },
+        { "optionText": "へや", "isCorrect": true },
+        { "optionText": "ところ", "isCorrect": false },
+        { "optionText": "まち", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 仕事が したいですか。…おもしろい仕事が したいです。",
+      "explanation": "Hỏi về loại công việc muốn làm trong tương lai.",
+      "points": 5,
+      "options": [
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "なにを", "isCorrect": false },
+        { "optionText": "だれと", "isCorrect": false },
+        { "optionText": "どこで", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "どんな ___ が ほしいですか。…新しい パソコンが ほしいです。",
+      "explanation": "Hỏi về loại đồ vật muốn có, dùng danh từ 'もの'.",
+      "points": 5,
+      "options": [
+        { "optionText": "もの", "isCorrect": true },
+        { "optionText": "ひと", "isCorrect": false },
+        { "optionText": "くに", "isCorrect": false },
+        { "optionText": "こと", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N5 - Bộ 31: Phó từ chỉ mức độ (よく/だいたい/すこし/あまり/ぜんぜん)",
+  "level": "N5",
+  "description": "Sử dụng các phó từ để bổ nghĩa về mức độ cho động từ hoặc tính từ. Cần đặc biệt chú ý sự tương thích giữa phó từ và đuôi câu (khẳng định hay phủ định).",
+  "isPremium": false,
+  "examples": [
+    "わたしは にほんごが すこし わかります。(Tôi hiểu tiếng Nhật một chút.)",
+    "わたしは えいがが あまり すきではありません。(Tôi không thích phim lắm.)",
+    "わたしは テニスが ぜんぜん できません。(Tôi hoàn toàn không chơi được tennis.)"
+  ],
+  "questions": [
+    {
+      "questionText": "私は 日本語が ___ わかります。(Hiểu đại khái)",
+      "explanation": "Để diễn tả mức độ hiểu khoảng 80% (đại khái), ta dùng phó từ 'だいたい'.",
+      "points": 5,
+      "options": [
+        { "optionText": "だいたい", "isCorrect": true },
+        { "optionText": "あまり", "isCorrect": false },
+        { "optionText": "ぜんぜん", "isCorrect": false },
+        { "optionText": "とても", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "英語が ___ わかりません。(Hoàn toàn không hiểu)",
+      "explanation": "Phó từ 'ぜんぜん' luôn đi kèm với thể phủ định để diễn tả ý 'hoàn toàn không'.",
+      "points": 5,
+      "options": [
+        { "optionText": "よく", "isCorrect": false },
+        { "optionText": "だいたい", "isCorrect": false },
+        { "optionText": "すこし", "isCorrect": false },
+        { "optionText": "ぜんぜん", "isCorrect": true }
+      ]
+    },
+    {
+      "questionText": "この 料理は ___ 辛くないです。(Không cay lắm)",
+      "explanation": "Để diễn tả mức độ phủ định nhẹ (không... lắm), ta dùng 'あまり' đi kèm với đuôi phủ định.",
+      "points": 5,
+      "options": [
+        { "optionText": "すこし", "isCorrect": false },
+        { "optionText": "あまり", "isCorrect": true },
+        { "optionText": "よく", "isCorrect": false },
+        { "optionText": "とても", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "お酒が ___ 好きですか。…はい、大好きです。",
+      "explanation": "Hỏi về mức độ yêu thích thường xuyên hoặc rõ rệt, dùng 'よく'.",
+      "points": 5,
+      "options": [
+        { "optionText": "よく", "isCorrect": true },
+        { "optionText": "あまり", "isCorrect": false },
+        { "optionText": "ぜんぜん", "isCorrect": false },
+        { "optionText": "だいたい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "お金が ___ あります。(Có một chút)",
+      "explanation": "Diễn tả số lượng hoặc mức độ ít ở dạng khẳng định, dùng 'すこし'.",
+      "points": 5,
+      "options": [
+        { "optionText": "あまり", "isCorrect": false },
+        { "optionText": "ぜんぜん", "isCorrect": false },
+        { "optionText": "すこし", "isCorrect": true },
+        { "optionText": "だいたい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "昨日の テストは ___ 難しくなかったです。(Không khó lắm)",
+      "explanation": "'あまり' bổ nghĩa cho tính từ ở dạng phủ định (không khó lắm).",
+      "points": 5,
+      "options": [
+        { "optionText": "とても", "isCorrect": false },
+        { "optionText": "あまり", "isCorrect": true },
+        { "optionText": "すこし", "isCorrect": false },
+        { "optionText": "だいたい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "漢字が ___ わかりません。(Hoàn toàn không biết chữ Hán nào)",
+      "explanation": "Đi với phủ định 'わかりません' để nhấn mạnh mức độ 0%, dùng 'ぜんぜん'.",
+      "points": 5,
+      "options": [
+        { "optionText": "だいたい", "isCorrect": false },
+        { "optionText": "すこし", "isCorrect": false },
+        { "optionText": "ぜんぜん", "isCorrect": true },
+        { "optionText": "よく", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "タイ料理が ___ 好きじゃありません。(Không thích món Thái lắm)",
+      "explanation": "Dùng 'あまり' đi với phủ định '好きじゃありません'.",
+      "points": 5,
+      "options": [
+        { "optionText": "すこし", "isCorrect": false },
+        { "optionText": "あまり", "isCorrect": true },
+        { "optionText": "だいたい", "isCorrect": false },
+        { "optionText": "よく", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "時間が ___ あります。(Có đủ/đại khái có thời gian)",
+      "explanation": "Trong các đáp án, 'だいたい' phù hợp để chỉ mức độ ở câu khẳng định.",
+      "points": 5,
+      "options": [
+        { "optionText": "だいたい", "isCorrect": true },
+        { "optionText": "あまり", "isCorrect": false },
+        { "optionText": "ぜんぜん", "isCorrect": false },
+        { "optionText": "ない", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "田中さんは 英語が ___ 上手です。(Rất/Rõ ràng là giỏi)",
+      "explanation": "'よく' có thể dùng để chỉ mức độ thành thạo rõ rệt.",
+      "points": 5,
+      "options": [
+        { "optionText": "あまり", "isCorrect": false },
+        { "optionText": "ぜんぜん", "isCorrect": false },
+        { "optionText": "よく", "isCorrect": true },
+        { "optionText": "どこ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "今日は 暇ですから、テレビを ___ 見ます。(Xem nhiều/thường xuyên)",
+      "explanation": "'よく' dùng để chỉ tần suất hoặc mức độ thực hiện hành động nhiều.",
+      "points": 5,
+      "options": [
+        { "optionText": "よく", "isCorrect": true },
+        { "optionText": "あまり", "isCorrect": false },
+        { "optionText": "ぜんぜん", "isCorrect": false },
+        { "optionText": "すこし", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ひらがなが ___ 書けますか。…はい、だいたい書けます。",
+      "explanation": "Hỏi về mức độ thành thạo, có thể dùng 'よく' hoặc dựa vào câu trả lời để chọn phó từ khẳng định phù hợp.",
+      "points": 5,
+      "options": [
+        { "optionText": "よく", "isCorrect": true },
+        { "optionText": "あまり", "isCorrect": false },
+        { "optionText": "ぜんぜん", "isCorrect": false },
+        { "optionText": "何", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "バスが ___ 来ません。(Xe buýt mãi mà không đến/hoàn toàn không đến)",
+      "explanation": "Nhấn mạnh việc chờ đợi mà đối tượng không xuất hiện, dùng 'ぜんぜん'.",
+      "points": 5,
+      "options": [
+        { "optionText": "だいたい", "isCorrect": false },
+        { "optionText": "すこし", "isCorrect": false },
+        { "optionText": "ぜんぜん", "isCorrect": true },
+        { "optionText": "よく", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "料理が ___ できますか。…いいえ、あまりできません。",
+      "explanation": "Câu hỏi mức độ 'Bạn có giỏi nấu ăn không?', dùng 'よく'.",
+      "points": 5,
+      "options": [
+        { "optionText": "よく", "isCorrect": true },
+        { "optionText": "あまり", "isCorrect": false },
+        { "optionText": "ぜんぜん", "isCorrect": false },
+        { "optionText": "すこし", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "仕事が ___ あります。(Có một ít công việc)",
+      "explanation": "Diễn tả số lượng ít ở khẳng định.",
+      "points": 5,
+      "options": [
+        { "optionText": "すこし", "isCorrect": true },
+        { "optionText": "あまり", "isCorrect": false },
+        { "optionText": "ぜんぜん", "isCorrect": false },
+        { "optionText": "だいたい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この 町は ___ にぎやかじゃありません。(Không nhộn nhịp lắm)",
+      "explanation": "Đi với phủ định tính từ đuôi な (にぎやかじゃありません).",
+      "points": 5,
+      "options": [
+        { "optionText": "すこし", "isCorrect": false },
+        { "optionText": "あまり", "isCorrect": true },
+        { "optionText": "よく", "isCorrect": false },
+        { "optionText": "とても", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "宿題が ___ 終わりました。(Đã xong đại khái/hầu hết)",
+      "explanation": "Diễn tả mức độ hoàn thành gần hết, dùng 'だいたい'.",
+      "points": 5,
+      "options": [
+        { "optionText": "だいたい", "isCorrect": true },
+        { "optionText": "あまり", "isCorrect": false },
+        { "optionText": "ぜんぜん", "isCorrect": false },
+        { "optionText": "よく", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "スポーツが ___ 好きですか。…いいえ、全然好きじゃありません。",
+      "explanation": "Dùng 'よく' để hỏi về mức độ yêu thích.",
+      "points": 5,
+      "options": [
+        { "optionText": "よく", "isCorrect": true },
+        { "optionText": "あまり", "isCorrect": false },
+        { "optionText": "だいたい", "isCorrect": false },
+        { "optionText": "すこし", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "部屋に 誰 ___ いません。(Hoàn toàn không có ai)",
+      "explanation": "Mặc dù 'ぜんぜん' có thể dùng, nhưng trong cấu trúc này '誰' kết hợp với 'も' tạo thành phủ định hoàn toàn (Không có bất kỳ ai). Lưu ý để tránh nhầm lẫn phó từ.",
+      "points": 5,
+      "options": [
+        { "optionText": "も", "isCorrect": true },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "は", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "おなかが ___ すきました。(Đói một chút)",
+      "explanation": "Mức độ nhẹ ở câu khẳng định.",
+      "points": 5,
+      "options": [
+        { "optionText": "すこし", "isCorrect": true },
+        { "optionText": "あまり", "isCorrect": false },
+        { "optionText": "ぜんぜん", "isCorrect": false },
+        { "optionText": "だいたい", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N5 - Bộ 32: Hỏi về tính chất và trạng thái (どうですか / どんな N)",
+  "level": "N5",
+  "description": "Cấu trúc dùng để hỏi về cảm tưởng, ấn tượng hoặc tình trạng của người và vật. 'どう' dùng để hỏi cảm nhận chung, 'どんな' dùng khi muốn hỏi tính chất cụ thể của một danh từ.",
+  "isPremium": false,
+  "examples": [
+    "おげんきですか。(Bạn có khỏe không?)",
+    "きょうとは どうですか。(Kyoto thì như thế nào?)",
+    "にほんごのべんきょうは どうですか。(Việc học tiếng Nhật của bạn thế nào?)"
+  ],
+  "questions": [
+    {
+      "questionText": "お元気 ___ か。…はい、元気です。",
+      "explanation": "Câu hỏi thăm sức khỏe thông dụng 'お元気ですか'.",
+      "points": 5,
+      "options": [
+        { "optionText": "です", "isCorrect": true },
+        { "optionText": "ます", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false },
+        { "optionText": "の", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本の 食べ物は ___ ですか。…おいしいです。",
+      "explanation": "Dùng 'どう' để hỏi về cảm tưởng, ấn tượng về một sự vật (Món ăn Nhật thế nào?).",
+      "points": 5,
+      "options": [
+        { "optionText": "どんな", "isCorrect": false },
+        { "optionText": "どう", "isCorrect": true },
+        { "optionText": "なん", "isCorrect": false },
+        { "optionText": "どれ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "仕事は ___ ですか。…忙しいですが、おもしろいです。",
+      "explanation": "Hỏi về trạng thái/tính chất của công việc hiện tại.",
+      "points": 5,
+      "options": [
+        { "optionText": "どう", "isCorrect": true },
+        { "optionText": "どんな", "isCorrect": false },
+        { "optionText": "だれ", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ハノイは ___ 町ですか。…にぎやかな町です。",
+      "explanation": "Vì có danh từ '町' (thành phố) phía sau, ta phải dùng 'どんな' để hỏi tính chất.",
+      "points": 5,
+      "options": [
+        { "optionText": "どう", "isCorrect": false },
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "なんの", "isCorrect": false },
+        { "optionText": "どの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "昨日の テストは ___ でしたか。…難しかったです。",
+      "explanation": "Hỏi về cảm nhận sau một sự việc đã xảy ra trong quá khứ (Bài kiểm tra hôm qua thế nào?).",
+      "points": 5,
+      "options": [
+        { "optionText": "どう", "isCorrect": true },
+        { "optionText": "どんな", "isCorrect": false },
+        { "optionText": "なん", "isCorrect": false },
+        { "optionText": "だれ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "マリアさんは ___ 人ですか。…とても 親切な人です。",
+      "explanation": "Hỏi về tính cách/đặc điểm của người (đứng trước danh từ '人'), dùng 'どんな'.",
+      "points": 5,
+      "options": [
+        { "optionText": "どう", "isCorrect": false },
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "だれ", "isCorrect": false },
+        { "optionText": "どの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本の 生活は ___ ですか。…楽しいです。",
+      "explanation": "Hỏi về cảm tưởng về cuộc sống ở Nhật.",
+      "points": 5,
+      "options": [
+        { "optionText": "どう", "isCorrect": true },
+        { "optionText": "どんな", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false },
+        { "optionText": "いつ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本語の 勉強は ___ ですか。…難しいですが、おもしろいです。",
+      "explanation": "Hỏi về trạng thái của việc học tập.",
+      "points": 5,
+      "options": [
+        { "optionText": "どう", "isCorrect": true },
+        { "optionText": "どんな", "isCorrect": false },
+        { "optionText": "なん", "isCorrect": false },
+        { "optionText": "だれ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "今日の 天気は ___ ですか。…いい天気です。",
+      "explanation": "Hỏi về tình trạng thời tiết hôm nay.",
+      "points": 5,
+      "options": [
+        { "optionText": "どう", "isCorrect": true },
+        { "optionText": "どんな", "isCorrect": false },
+        { "optionText": "どれ", "isCorrect": false },
+        { "optionText": "なん", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "大学の 寮は ___ ですか。…古いですが、きれいです。",
+      "explanation": "Hỏi cảm nhận về cơ sở vật chất (Ký túc xá).",
+      "points": 5,
+      "options": [
+        { "optionText": "どう", "isCorrect": true },
+        { "optionText": "どんな", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false },
+        { "optionText": "どの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 音楽が 好きですか。…クラシックが 好きです。",
+      "explanation": "Hỏi về chủng loại âm nhạc (đứng trước danh từ '音楽'), dùng 'どんな'.",
+      "points": 5,
+      "options": [
+        { "optionText": "どう", "isCorrect": false },
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "なんの", "isCorrect": false },
+        { "optionText": "どの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本は ___ 国ですか。…山が 多い国です。",
+      "explanation": "Hỏi tính chất của đất nước (đứng trước danh từ '国'), dùng 'どんな'.",
+      "points": 5,
+      "options": [
+        { "optionText": "どう", "isCorrect": false },
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "どちら", "isCorrect": false },
+        { "optionText": "なんの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "新しい カメラは ___ ですか。…とても いいですよ。",
+      "explanation": "Hỏi về ấn tượng đối với đồ vật mới mua.",
+      "points": 5,
+      "options": [
+        { "optionText": "どう", "isCorrect": true },
+        { "optionText": "どんな", "isCorrect": false },
+        { "optionText": "なん", "isCorrect": false },
+        { "optionText": "だれ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ミラーさんは ___ ですか。…とても 親切です。",
+      "explanation": "Hỏi nhận xét về một người (không có danh từ '人' đi kèm phía sau), dùng 'どう'.",
+      "points": 5,
+      "options": [
+        { "optionText": "どんな", "isCorrect": false },
+        { "optionText": "どう", "isCorrect": true },
+        { "optionText": "だれ", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 果物が 好きですか。…みかんが 好きです。",
+      "explanation": "Hỏi về loại trái cây yêu thích, dùng 'どんな'.",
+      "points": 5,
+      "options": [
+        { "optionText": "どう", "isCorrect": false },
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "なに", "isCorrect": false },
+        { "optionText": "どの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "昨日 見た 映画は ___ でしたか。…おもしろかったです。",
+      "explanation": "Hỏi cảm nhận về bộ phim đã xem trong quá khứ.",
+      "points": 5,
+      "options": [
+        { "optionText": "どう", "isCorrect": true },
+        { "optionText": "どんな", "isCorrect": false },
+        { "optionText": "なん", "isCorrect": false },
+        { "optionText": "だれ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "旅行は ___ でしたか。…とても 疲れました。",
+      "explanation": "Hỏi về chuyến du lịch đã kết thúc.",
+      "points": 5,
+      "options": [
+        { "optionText": "どう", "isCorrect": true },
+        { "optionText": "どんな", "isCorrect": false },
+        { "optionText": "いつ", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 仕事が したいですか。…おもしろい 仕事が したいです。",
+      "explanation": "Hỏi về chủng loại công việc muốn làm.",
+      "points": 5,
+      "options": [
+        { "optionText": "どう", "isCorrect": false },
+        { "optionText": "どんな", "isCorrect": true },
+        { "optionText": "なんの", "isCorrect": false },
+        { "optionText": "どちら", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "体の 調子（ちょうし）は ___ ですか。…あまり よくありません。",
+      "explanation": "Hỏi về tình trạng sức khỏe/cơ thể (Tình trạng cơ thể thế nào?).",
+      "points": 5,
+      "options": [
+        { "optionText": "どう", "isCorrect": true },
+        { "optionText": "どんな", "isCorrect": false },
+        { "optionText": "なん", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "新しい 靴は ___ ですか。…ちょっと 重いです。",
+      "explanation": "Hỏi cảm nhận về đôi giày mới.",
+      "points": 5,
+      "options": [
+        { "optionText": "どう", "isCorrect": true },
+        { "optionText": "どんな", "isCorrect": false },
+        { "optionText": "なん", "isCorrect": false },
+        { "optionText": "だれ", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N5 - Bộ 33: Vì... nên... (V/A/N から)",
+  "level": "N5",
+  "description": "Sử dụng 'から' đặt sau một mệnh đề để chỉ nguyên nhân, lý do cho hành động hoặc trạng thái ở mệnh đề sau. Có thể kết hợp với động từ (ます), tính từ (い/な) hoặc danh từ (です).",
+  "isPremium": false,
+  "examples": [
+    "あめですから、いきません。(Vì trời mưa nên tôi không đi.)",
+    "たいへんですから、てつだいましょうか。(Vì vất vả nên tôi giúp bạn nhé?)",
+    "やくそくがありますから、かえります。(Vì có hẹn nên tôi về.)"
+  ],
+  "questions": [
+    {
+      "questionText": "時間が ありません ___、タクシーで 行きます。",
+      "explanation": "Trợ từ 'から' đặt sau mệnh đề chỉ lý do (Không có thời gian).",
+      "points": 5,
+      "options": [
+        { "optionText": "から", "isCorrect": true },
+        { "optionText": "まで", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "今日は 雨です ___、どこへも 行きません。",
+      "explanation": "N + です + から chỉ lý do (Vì trời mưa).",
+      "points": 5,
+      "options": [
+        { "optionText": "ので", "isCorrect": false },
+        { "optionText": "から", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この 料理は おいしいです ___、たくさん 食べました。",
+      "explanation": "Aい + です + から chỉ lý do (Vì ngon).",
+      "points": 5,
+      "options": [
+        { "optionText": "から", "isCorrect": true },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "まで", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "仕事が 大変です ___、手伝って ください。",
+      "explanation": "Aな + です + から chỉ lý do (Vì công việc vất vả).",
+      "points": 5,
+      "options": [
+        { "optionText": "から", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: どうして 食べませんか。 B: おなかが いっぱいです ___。",
+      "explanation": "Trả lời cho câu hỏi 'Tại sao' (どうして) bằng mệnh đề kết thúc bằng 'から'.",
+      "points": 5,
+      "options": [
+        { "optionText": "から", "isCorrect": true },
+        { "optionText": "まで", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "お金が ありませんから、何も ___ 。",
+      "explanation": "Vì không có tiền nên vế sau phải là hành động tương ứng (không mua gì cả).",
+      "points": 5,
+      "options": [
+        { "optionText": "買います", "isCorrect": false },
+        { "optionText": "買いました", "isCorrect": false },
+        { "optionText": "買いません", "isCorrect": true },
+        { "optionText": "買った", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "暑いです ___、窓（まど）を 開けて ください。",
+      "explanation": "Vì nóng nên hãy mở cửa sổ. Dùng 'から'.",
+      "points": 5,
+      "options": [
+        { "optionText": "から", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "明日は 日曜日です ___、働きません。",
+      "explanation": "Vì mai là chủ nhật nên không làm việc.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "から", "isCorrect": true },
+        { "optionText": "まで", "isCorrect": false },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "忙しい ___、遊びに 行きません。",
+      "explanation": "Dùng 'ですから' hoặc tính từ đi kèm 'です' trước 'から' để đảm bảo tính lịch sự.",
+      "points": 5,
+      "options": [
+        { "optionText": "ですから", "isCorrect": true },
+        { "optionText": "だから", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "からに", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 帰りませんか。…用事（ようじ）が ありますから。",
+      "explanation": "Để hỏi lý do 'Tại sao', dùng 'どうして'.",
+      "points": 5,
+      "options": [
+        { "optionText": "なんの", "isCorrect": false },
+        { "optionText": "どうして", "isCorrect": true },
+        { "optionText": "だれ", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本語が わかりませんから、英語 ___ 話して ください。",
+      "explanation": "Vì không biết tiếng Nhật nên hãy nói 'bằng' tiếng Anh (dùng trợ từ 'で').",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "危ない（あぶない）です ___、触らないで（さわらないで） ください。",
+      "explanation": "Vì nguy hiểm nên đừng chạm vào.",
+      "points": 5,
+      "options": [
+        { "optionText": "から", "isCorrect": true },
+        { "optionText": "まで", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "漢字は 難しいです ___、勉強しません。",
+      "explanation": "Vì chữ Hán khó nên không học.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "から", "isCorrect": true },
+        { "optionText": "まで", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "おもしろいですから、この本を ___ ください。",
+      "explanation": "Vì thú vị nên vế sau thường là lời khuyên (hãy đọc đi).",
+      "points": 5,
+      "options": [
+        { "optionText": "読んで", "isCorrect": true },
+        { "optionText": "読みます", "isCorrect": false },
+        { "optionText": "読まない", "isCorrect": false },
+        { "optionText": "読む", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "暇（ひま）ですから、映画を ___ か。",
+      "explanation": "Vì rảnh nên đưa ra lời mời (Xem phim không?).",
+      "points": 5,
+      "options": [
+        { "optionText": "見ます", "isCorrect": false },
+        { "optionText": "見ましょう", "isCorrect": true },
+        { "optionText": "見ない", "isCorrect": false },
+        { "optionText": "見た", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "喉（のど）が 渇きました（かわきました）から、水 ___ 飲みます。",
+      "explanation": "Vì khát nước nên uống nước (tân ngữ dùng 'を').",
+      "points": 5,
+      "options": [
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "を", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 来ませんでしたか。…病気（びょうき）でしたから。",
+      "explanation": "Hỏi lý do vắng mặt.",
+      "points": 5,
+      "options": [
+        { "optionText": "いつ", "isCorrect": false },
+        { "optionText": "どこ", "isCorrect": false },
+        { "optionText": "どうして", "isCorrect": true },
+        { "optionText": "だれ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "頭（あたま）が 痛いです ___、早く 寝ます。",
+      "explanation": "Vì đau đầu nên đi ngủ sớm.",
+      "points": 5,
+      "options": [
+        { "optionText": "から", "isCorrect": true },
+        { "optionText": "まで", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "寒い（さむい）ですから、コートを ___ 。",
+      "explanation": "Vì lạnh nên thực hiện hành động mặc áo khoác.",
+      "points": 5,
+      "options": [
+        { "optionText": "脱ぎます", "isCorrect": false },
+        { "optionText": "着ます", "isCorrect": true },
+        { "optionText": "貸します", "isCorrect": false },
+        { "optionText": "売ります", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "明日 休み ___ 、一緒に 遊びましょう。",
+      "explanation": "Vì mai nghỉ (N + です + から).",
+      "points": 5,
+      "options": [
+        { "optionText": "ですから", "isCorrect": true },
+        { "optionText": "だから", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N5 - Bộ 34: Tại sao (どうして)",
+  "level": "N5",
+  "description": "Sử dụng 'どうして' để hỏi lý do thực hiện hành động hoặc trạng thái. Câu trả lời cho 'どうして' thường kết thúc bằng 'から' hoặc 'からです' để chỉ nguyên nhân.",
+  "isPremium": false,
+  "examples": [
+    "どうして うちへ かえりますか。(Tại sao bạn về nhà?)",
+    "どうして あたまが いたいですか。(Tại sao bạn bị đau đầu?)",
+    "どうして くるまが ありませんか。(Tại sao bạn không có ô tô?)"
+  ],
+  "questions": [
+    {
+      "questionText": "___ 日本語を 勉強しますか。…日本へ 行きたいですから。",
+      "explanation": "Dựa vào câu trả lời có đuôi 'から' (vì...), ta dùng từ để hỏi lý do 'どうして'.",
+      "points": 5,
+      "options": [
+        { "optionText": "なんの", "isCorrect": false },
+        { "optionText": "どうして", "isCorrect": true },
+        { "optionText": "どこで", "isCorrect": false },
+        { "optionText": "だれと", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "どうして 昨日 休みましたか。… ___ ですから。",
+      "explanation": "Lý do phổ biến nhất cho việc nghỉ (học/làm) là bị ốm (病気 - びょうき).",
+      "points": 5,
+      "options": [
+        { "optionText": "びょうき", "isCorrect": true },
+        { "optionText": "げんき", "isCorrect": false },
+        { "optionText": "ひま", "isCorrect": false },
+        { "optionText": "しんせつ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: どうして 食べませんか。 B: おなかが いっぱいです ___。",
+      "explanation": "Câu trả lời cho 'tại sao' phải có đuôi chỉ lý do là 'から'.",
+      "points": 5,
+      "options": [
+        { "optionText": "から", "isCorrect": true },
+        { "optionText": "まで", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "どうして 傘を 買いましたか。… ___ ですから。",
+      "explanation": "Mua ô vì lý do trời mưa (雨).",
+      "points": 5,
+      "options": [
+        { "optionText": "あめ", "isCorrect": true },
+        { "optionText": "ゆき", "isCorrect": false },
+        { "optionText": "はれ", "isCorrect": false },
+        { "optionText": "あつい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ テレビを 見ませんか。…時間が ありませんから。",
+      "explanation": "Hỏi lý do tại sao không xem tivi.",
+      "points": 5,
+      "options": [
+        { "optionText": "いつ", "isCorrect": false },
+        { "optionText": "だれが", "isCorrect": false },
+        { "optionText": "どうして", "isCorrect": true },
+        { "optionText": "なにを", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "どうして パーティーに 行きませんか。… ___ ですから。",
+      "explanation": "Lý do không đi tiệc là vì bận (忙しい - いそがしい).",
+      "points": 5,
+      "options": [
+        { "optionText": "いそがしい", "isCorrect": true },
+        { "optionText": "ひまな", "isCorrect": false },
+        { "optionText": "きれいな", "isCorrect": false },
+        { "optionText": "しずかな", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "どうして この カメラを 買いませんか。… ___ ですから。",
+      "explanation": "Không mua máy ảnh vì nó đắt (高い - たかい).",
+      "points": 5,
+      "options": [
+        { "optionText": "たかい", "isCorrect": true },
+        { "optionText": "やすい", "isCorrect": false },
+        { "optionText": "いい", "isCorrect": false },
+        { "optionText": "あたらしい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ テニスを しませんか。…足が 痛いですから。",
+      "explanation": "Hỏi lý do vì sao không chơi tennis.",
+      "points": 5,
+      "options": [
+        { "optionText": "どうして", "isCorrect": true },
+        { "optionText": "どこで", "isCorrect": false },
+        { "optionText": "なんじに", "isCorrect": false },
+        { "optionText": "だれと", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "どうして 早く 寝ますか。…明日 ___ ですから。",
+      "explanation": "Ngủ sớm vì ngày mai bận (忙しい).",
+      "points": 5,
+      "options": [
+        { "optionText": "いそがしい", "isCorrect": true },
+        { "optionText": "ひま", "isCorrect": false },
+        { "optionText": "たのしい", "isCorrect": false },
+        { "optionText": "いい天気", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: どうして ___ ですか。 B: お金が ありませんから。",
+      "explanation": "Dựa vào câu trả lời 'không có tiền', chọn hành động phù hợp là 'không mua xe ô tô'.",
+      "points": 5,
+      "options": [
+        { "optionText": "くるまが ありません", "isCorrect": true },
+        { "optionText": "くるまが あります", "isCorrect": false },
+        { "optionText": "くるまを かいます", "isCorrect": false },
+        { "optionText": "くるまに のります", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 英語を 話しますか。…日本語が わかりませんから。",
+      "explanation": "Hỏi lý do tại sao lại dùng tiếng Anh.",
+      "points": 5,
+      "options": [
+        { "optionText": "どうして", "isCorrect": true },
+        { "optionText": "だれが", "isCorrect": false },
+        { "optionText": "どこで", "isCorrect": false },
+        { "optionText": "なんの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "どうして 毎日 散歩を しますか。… ___ ですから。",
+      "explanation": "Đi bộ hàng ngày vì nó tốt cho sức khỏe (体にいい - からだにいい).",
+      "points": 5,
+      "options": [
+        { "optionText": "からだにいい", "isCorrect": true },
+        { "optionText": "からだにわるい", "isCorrect": false },
+        { "optionText": "あぶない", "isCorrect": false },
+        { "optionText": "むずかしい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "どうして ___ ですか。…昨日 寝ませんでしたから。",
+      "explanation": "Hỏi trạng thái vì đêm qua không ngủ -> Buồn ngủ (眠い - ねむい).",
+      "points": 5,
+      "options": [
+        { "optionText": "ねむい", "isCorrect": true },
+        { "optionText": "さむい", "isCorrect": false },
+        { "optionText": "あつい", "isCorrect": false },
+        { "optionText": "おもしろい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 漢字を 勉強しませんか。…難しいですから。",
+      "explanation": "Hỏi lý do tại sao không học chữ Hán.",
+      "points": 5,
+      "options": [
+        { "optionText": "どうして", "isCorrect": true },
+        { "optionText": "なんの", "isCorrect": false },
+        { "optionText": "だれと", "isCorrect": false },
+        { "optionText": "どこで", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "どうして 窓を 閉めましたか。… ___ ですから。",
+      "explanation": "Đóng cửa sổ vì trời lạnh (寒い - さむい).",
+      "points": 5,
+      "options": [
+        { "optionText": "さむい", "isCorrect": true },
+        { "optionText": "あつい", "isCorrect": false },
+        { "optionText": "あかるい", "isCorrect": false },
+        { "optionText": "きれい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "どうして 帰りましたか。… ___ が ありますから。",
+      "explanation": "Về nhà vì có việc bận/việc riêng (用事 - ようじ).",
+      "points": 5,
+      "options": [
+        { "optionText": "ようじ", "isCorrect": true },
+        { "optionText": "しゅくだい", "isCorrect": false },
+        { "optionText": "てがみ", "isCorrect": false },
+        { "optionText": "しんぶん", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 新聞を 読みませんか。…ニュースを 見ましたから。",
+      "explanation": "Hỏi lý do tại sao không đọc báo.",
+      "points": 5,
+      "options": [
+        { "optionText": "どうして", "isCorrect": true },
+        { "optionText": "だれが", "isCorrect": false },
+        { "optionText": "いつ", "isCorrect": false },
+        { "optionText": "どこで", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "どうして 病院へ 行きましたか。… ___ が 痛いですから。",
+      "explanation": "Đi bệnh viện vì đau một bộ phận nào đó (ví dụ: đầu - あたま).",
+      "points": 5,
+      "options": [
+        { "optionText": "あたま", "isCorrect": true },
+        { "optionText": "かばん", "isCorrect": false },
+        { "optionText": "じてんしゃ", "isCorrect": false },
+        { "optionText": "でんわ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ 旅行に 行きませんか。…時間が ありませんから。",
+      "explanation": "Hỏi lý do tại sao không đi du lịch.",
+      "points": 5,
+      "options": [
+        { "optionText": "どうして", "isCorrect": true },
+        { "optionText": "だれと", "isCorrect": false },
+        { "optionText": "なにで", "isCorrect": false },
+        { "optionText": "どこへ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "どうして ビールを 飲みませんか。…お酒が ___ ですから。",
+      "explanation": "Không uống bia vì ghét/không thích rượu (嫌い - きらい).",
+      "points": 5,
+      "options": [
+        { "optionText": "きらい", "isCorrect": true },
+        { "optionText": "すき", "isCorrect": false },
+        { "optionText": "じょうず", "isCorrect": false },
+        { "optionText": "へた", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N5 - Bộ 35: Có và Hiểu (Nがあります/わかります)",
+  "level": "N5",
+  "description": "Sử dụng trợ từ 'が' để chỉ đối tượng của sự sở hữu (có cái gì) hoặc đối tượng của sự hiểu biết (hiểu cái gì). Đi kèm với các động từ あります và わかります.",
+  "isPremium": false,
+  "examples": [
+    "おかねが あります。(Tôi có tiền.)",
+    "にほんごが わかります。(Tôi hiểu tiếng Nhật.)",
+    "じかんが ありません。(Tôi không có thời gian.)"
+  ],
+  "questions": [
+    {
+      "questionText": "私は お金 ___ あります。",
+      "explanation": "Trợ từ 'が' dùng để chỉ đối tượng của sự sở hữu (có tiền).",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本語 ___ わかりますか。",
+      "explanation": "Trợ từ 'が' dùng để chỉ đối tượng của sự hiểu biết (hiểu tiếng Nhật).",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "時間が ___ から、急いで（いそいで）ください。",
+      "explanation": "Dùng 'ありません' (không có) để chỉ lý do (Vì không có thời gian).",
+      "points": 5,
+      "options": [
+        { "optionText": "あります", "isCorrect": false },
+        { "optionText": "ありますか", "isCorrect": false },
+        { "optionText": "ありません", "isCorrect": true },
+        { "optionText": "わかります", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "英語が 少し ___ 。",
+      "explanation": "Hiểu một chút tiếng Anh, dùng 'わかります'.",
+      "points": 5,
+      "options": [
+        { "optionText": "わかります", "isCorrect": true },
+        { "optionText": "あります", "isCorrect": false },
+        { "optionText": "しっています", "isCorrect": false },
+        { "optionText": "みます", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "車 ___ ありますか。…いいえ、ありません。",
+      "explanation": "Hỏi về sự sở hữu (Bạn có ô tô không?), dùng trợ từ 'が'.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "漢字（かんじ）が 全然（ぜんぜん） ___ 。",
+      "explanation": "'ぜんぜん' luôn đi kèm với phủ định (Hoàn toàn không hiểu chữ Hán).",
+      "points": 5,
+      "options": [
+        { "optionText": "わかります", "isCorrect": false },
+        { "optionText": "わかりません", "isCorrect": true },
+        { "optionText": "あります", "isCorrect": false },
+        { "optionText": "ありません", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "辞書（じしょ） ___ ありますか。…はい、あります。",
+      "explanation": "Chỉ đối tượng sở hữu đồ vật.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "へ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "約束（やくそく）が ___ から、早く帰ります。",
+      "explanation": "Vì có cuộc hẹn (sở hữu thời gian/sự việc), dùng 'あります'.",
+      "points": 5,
+      "options": [
+        { "optionText": "あります", "isCorrect": true },
+        { "optionText": "わかります", "isCorrect": false },
+        { "optionText": "しっています", "isCorrect": false },
+        { "optionText": "ありますか", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "タイ語が ___ か。…いいえ、わかりません。",
+      "explanation": "Hỏi về khả năng hiểu ngôn ngữ.",
+      "points": 5,
+      "options": [
+        { "optionText": "あります", "isCorrect": false },
+        { "optionText": "わかります", "isCorrect": true },
+        { "optionText": "ありますか", "isCorrect": false },
+        { "optionText": "わかりますか", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "何か 用事（ようじ） ___ ありますか。",
+      "explanation": "Có việc bận gì không? Dùng trợ từ 'が' sau danh từ chỉ sự việc.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ニュースが ___ か。…はい、だいたいわかります。",
+      "explanation": "Hỏi về việc có hiểu bản tin không.",
+      "points": 5,
+      "options": [
+        { "optionText": "わかります", "isCorrect": true },
+        { "optionText": "あります", "isCorrect": false },
+        { "optionText": "よみます", "isCorrect": false },
+        { "optionText": "ききます", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "細かい（こまかい） お金 ___ ありますか。",
+      "explanation": "Hỏi về việc có tiền lẻ không.",
+      "points": 5,
+      "options": [
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "チケットが ２枚（にまい） ___ 。一緒に 行きませんか。",
+      "explanation": "Có 2 tấm vé (sở hữu), dùng 'あります'.",
+      "points": 5,
+      "options": [
+        { "optionText": "あります", "isCorrect": true },
+        { "optionText": "わかります", "isCorrect": false },
+        { "optionText": "ありますか", "isCorrect": false },
+        { "optionText": "わかりました", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ひらがな ___ わかりますが、漢字は わかりません。",
+      "explanation": "Chỉ đối tượng hiểu biết (hiểu Hiragana).",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "テレビが ありますか。…いいえ、 ___ 。",
+      "explanation": "Phủ định của 'あります' là 'ありません'.",
+      "points": 5,
+      "options": [
+        { "optionText": "ありません", "isCorrect": true },
+        { "optionText": "わかりません", "isCorrect": false },
+        { "optionText": "ないです", "isCorrect": false },
+        { "optionText": "あります", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "意味（いみ） ___ わかりますか。…はい、わかります。",
+      "explanation": "Hỏi có hiểu ý nghĩa không.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "何 ___ ありますか。…カメラが あります。",
+      "explanation": "Hỏi có 'cái gì' (sở hữu/tồn tại), dùng 'なにが'.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ラジオが ありますから、ニュース ___ わかります。",
+      "explanation": "Vì có radio nên hiểu được tin tức.",
+      "points": 5,
+      "options": [
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "仕事（しごと）が ありますから、 ___ 。",
+      "explanation": "Vì có công việc (nên bận/không đi được).",
+      "points": 5,
+      "options": [
+        { "optionText": "いそがしいです", "isCorrect": true },
+        { "optionText": "ひまです", "isCorrect": false },
+        { "optionText": "しずかです", "isCorrect": false },
+        { "optionText": "きれいです", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "道（みち）が ___ か。…はい、だいたいわかります。",
+      "explanation": "Hỏi có biết/hiểu đường đi không.",
+      "points": 5,
+      "options": [
+        { "optionText": "わかります", "isCorrect": true },
+        { "optionText": "あります", "isCorrect": false },
+        { "optionText": "ありますか", "isCorrect": false },
+        { "optionText": "みえます", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N5 - Bộ 36: Liên từ nhưng (~が)",
+  "level": "N5",
+  "description": "Sử dụng trợ từ 'が' đặt giữa hai mệnh đề để thể hiện sự tương phản hoặc đối lập về ý nghĩa (nhưng). Cấu trúc: [Mệnh đề 1] + が + [Mệnh đề 2].",
+  "isPremium": false,
+  "examples": [
+    "このくつは やすいですが、おおきいです。(Đôi giày này rẻ nhưng to.)",
+    "わたしは にほんごが わかりますが、えいごが わかりません。(Tôi hiểu tiếng Nhật nhưng không hiểu tiếng Anh.)",
+    "けさ、あめが ふりましたが、さむくありませんでした。(Sáng nay trời mưa nhưng không lạnh.)"
+  ],
+  "questions": [
+    {
+      "questionText": "日本語は 難しいです ___、おもしろいです。",
+      "explanation": "Dùng 'が' để nối hai tính chất đối lập: khó (khó khăn) nhưng thú vị.",
+      "points": 5,
+      "options": [
+        { "optionText": "から", "isCorrect": false },
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "勉強しました ___、わかりませんでした。",
+      "explanation": "Nối hai hành động có kết quả trái ngược: Đã học nhưng không hiểu.",
+      "points": 5,
+      "options": [
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "から", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この 料理は 辛いです ___、おいしいです。",
+      "explanation": "Món ăn cay nhưng ngon (hai ý nghĩa tương phản).",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "も", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "私の 部屋は 狭い（せまい）です ___、きれいです。",
+      "explanation": "Phòng hẹp nhưng sạch/đẹp.",
+      "points": 5,
+      "options": [
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "から", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "薬（くすり）を 飲みました ___、まだ 熱（ねつ）が あります。",
+      "explanation": "Đã uống thuốc nhưng vẫn còn sốt (kết quả không như mong đợi).",
+      "points": 5,
+      "options": [
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "から", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false },
+        { "optionText": "も", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "東京は にぎやかですが、___ です。",
+      "explanation": "Sau 'が' cần một tính chất tương phản hoặc bổ sung mang ý nghĩa khác. Trong các đáp án, '忙しい' hoặc '便利' là phù hợp, nhưng thường người ta nói 'Nhộn nhịp nhưng tiện lợi' hoặc 'Nhộn nhịp nhưng mệt mỏi'. Ở đây '便利' là tính từ phổ biến trong giáo trình.",
+      "points": 5,
+      "options": [
+        { "optionText": "便利", "isCorrect": true },
+        { "optionText": "ひま", "isCorrect": false },
+        { "optionText": "しずか", "isCorrect": false },
+        { "optionText": "きれいじゃありません", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "お金が ありますが、___ ありません。",
+      "explanation": "Có tiền nhưng 'không có thời gian' (時間).",
+      "points": 5,
+      "options": [
+        { "optionText": "じかんが", "isCorrect": true },
+        { "optionText": "しごとが", "isCorrect": false },
+        { "optionText": "ともだちが", "isCorrect": false },
+        { "optionText": "カメラが", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "雨が 降っています ___、出かけます。",
+      "explanation": "Trời đang mưa nhưng vẫn đi ra ngoài.",
+      "points": 5,
+      "options": [
+        { "optionText": "から", "isCorrect": false },
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本の 生活は 忙しいですが、___ です。",
+      "explanation": "Cuộc sống bận rộn nhưng 'vui' (楽しい).",
+      "points": 5,
+      "options": [
+        { "optionText": "たのしい", "isCorrect": true },
+        { "optionText": "さむい", "isCorrect": false },
+        { "optionText": "まずい", "isCorrect": false },
+        { "optionText": "へた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "タイ料理は 好きですが、納豆（なっとう）は ___ です。",
+      "explanation": "Thích món Thái nhưng 'ghét' (嫌い) Natto.",
+      "points": 5,
+      "options": [
+        { "optionText": "じょうず", "isCorrect": false },
+        { "optionText": "きらい", "isCorrect": true },
+        { "optionText": "きれい", "isCorrect": false },
+        { "optionText": "しんせつ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "昨日の テストは ___ ですが、時間は 足りませんでした。",
+      "explanation": "Bài kiểm tra hôm qua 'dễ' (簡単) nhưng không đủ thời gian.",
+      "points": 5,
+      "options": [
+        { "optionText": "むずかしい", "isCorrect": false },
+        { "optionText": "かんたん", "isCorrect": true },
+        { "optionText": "にぎやか", "isCorrect": false },
+        { "optionText": "ひま", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あの 店の 料理は おいしいですが、___ です。",
+      "explanation": "Món ăn ngon nhưng 'đắt' (高い).",
+      "points": 5,
+      "options": [
+        { "optionText": "やすい", "isCorrect": false },
+        { "optionText": "たかい", "isCorrect": true },
+        { "optionText": "はやい", "isCorrect": false },
+        { "optionText": "ひろい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "マリアさんは 親切（しんせつ）ですが、___ です。",
+      "explanation": "Maria tốt bụng nhưng 'bận rộn' (忙しい).",
+      "points": 5,
+      "options": [
+        { "optionText": "いそがしい", "isCorrect": true },
+        { "optionText": "げんき", "isCorrect": false },
+        { "optionText": "きれい", "isCorrect": false },
+        { "optionText": "しずか", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "デパートへ 行きましたが、何も ___ 。",
+      "explanation": "Đã đi bách hóa nhưng 'đã không mua gì cả' (買いませんでした).",
+      "points": 5,
+      "options": [
+        { "optionText": "かいました", "isCorrect": false },
+        { "optionText": "かいません", "isCorrect": false },
+        { "optionText": "かいませんでした", "isCorrect": true },
+        { "optionText": "かいます", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あの ホテルは 古い（ふるい）ですが、とても ___ です。",
+      "explanation": "Khách sạn cũ nhưng rất 'sạch/đẹp' (きれい).",
+      "points": 5,
+      "options": [
+        { "optionText": "きたない", "isCorrect": false },
+        { "optionText": "きれい", "isCorrect": true },
+        { "optionText": "せまい", "isCorrect": false },
+        { "optionText": "あぶない", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この かばんは デザインが いいですが、少し ___ です。",
+      "explanation": "Thiết kế đẹp nhưng hơi 'nặng' (重い).",
+      "points": 5,
+      "options": [
+        { "optionText": "おもい", "isCorrect": true },
+        { "optionText": "かるい", "isCorrect": false },
+        { "optionText": "いい", "isCorrect": false },
+        { "optionText": "あたらしい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "春ですが、今日は とても ___ ですね。",
+      "explanation": "Đã là mùa xuân nhưng hôm nay vẫn rất 'lạnh' (寒い).",
+      "points": 5,
+      "options": [
+        { "optionText": "あつい", "isCorrect": false },
+        { "optionText": "さむい", "isCorrect": true },
+        { "optionText": "あたたかい", "isCorrect": false },
+        { "optionText": "すずしい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この コンピューターは ___ ですが、便利です。",
+      "explanation": "Máy tính này 'cũ' (古い) nhưng tiện lợi.",
+      "points": 5,
+      "options": [
+        { "optionText": "あたらしい", "isCorrect": false },
+        { "optionText": "ふるい", "isCorrect": true },
+        { "optionText": "いい", "isCorrect": false },
+        { "optionText": "はやい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本語を 勉強しましたが、全然 ___ 。",
+      "explanation": "Đã học tiếng Nhật nhưng 'hoàn toàn không hiểu' (わかりませんでした).",
+      "points": 5,
+      "options": [
+        { "optionText": "わかります", "isCorrect": false },
+        { "optionText": "わかりました", "isCorrect": false },
+        { "optionText": "わかりませんでした", "isCorrect": true },
+        { "optionText": "わかりますか", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "仕事は 大変（たいへん）ですが、___ です。",
+      "explanation": "Công việc vất vả nhưng 'thú vị' (おもしろい).",
+      "points": 5,
+      "options": [
+        { "optionText": "おもしろい", "isCorrect": true },
+        { "optionText": "つまらない", "isCorrect": false },
+        { "optionText": "わるい", "isCorrect": false },
+        { "optionText": "むずかしい", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N5 - Bộ 37: Muốn có N (N が ほしいです)",
+  "level": "N5",
+  "description": "Cấu trúc dùng để bày tỏ nguyện vọng muốn sở hữu một đồ vật hoặc một đối tượng nào đó. Đối tượng mong muốn đi kèm với trợ từ 'が'. Lưu ý cách chia phủ định là 'ほしくないです'.",
+  "isPremium": false,
+  "examples": [
+    "わたしは くるまが ほしいです。(Tôi muốn có ô tô.)",
+    "今、なにも ほしくないです。(Bây giờ tôi không muốn có gì cả.)",
+    "なにが ほしいですか。(Bạn muốn có gì?)"
+  ],
+  "questions": [
+    {
+      "questionText": "私は 新しい パソコン ___ ほしいです。",
+      "explanation": "Trợ từ '가' được dùng để chỉ đối tượng mà người nói muốn có (sở hữu).",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "誕生日（たんじょうび）に ___ が ほしいですか。…時計が ほしいです。",
+      "explanation": "Để hỏi 'Muốn cái gì', ta dùng từ để hỏi 'なに' kết hợp với trợ từ 'が'.",
+      "points": 5,
+      "options": [
+        { "optionText": "どこ", "isCorrect": false },
+        { "optionText": "だれ", "isCorrect": false },
+        { "optionText": "なに", "isCorrect": true },
+        { "optionText": "いつ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "今、何も ___ 。",
+      "explanation": "Cấu trúc 'なにも' (không cái gì cả) đi kèm với động từ/tính từ ở dạng phủ định. Phủ định của 'ほしい' là 'ほしくないです'.",
+      "points": 5,
+      "options": [
+        { "optionText": "ほしいです", "isCorrect": false },
+        { "optionText": "ほしくないです", "isCorrect": true },
+        { "optionText": "ほしいじゃありません", "isCorrect": false },
+        { "optionText": "ほしくありませんでした", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "暑いですから、冷たい 水 ___ ほしいです。",
+      "explanation": "Chỉ đối tượng mong muốn là 'nước lạnh'.",
+      "points": 5,
+      "options": [
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "子供（こども）は おもちゃが ___ 。",
+      "explanation": "Bày tỏ mong muốn của người khác (trong trường hợp nói chung hoặc quan sát được). Dùng 'ほしいです'.",
+      "points": 5,
+      "options": [
+        { "optionText": "ほしいです", "isCorrect": true },
+        { "optionText": "ほしくない", "isCorrect": false },
+        { "optionText": "あります", "isCorrect": false },
+        { "optionText": "わかります", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "広い 部屋 ___ ほしいですね。",
+      "explanation": "Trợ từ 'が' đứng sau danh từ chỉ vật mong muốn.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ が ほしいですか。…友達が ほしいです。",
+      "explanation": "Hỏi về đối tượng mong muốn có được (người bạn).",
+      "points": 5,
+      "options": [
+        { "optionText": "なに", "isCorrect": true },
+        { "optionText": "どこ", "isCorrect": false },
+        { "optionText": "だれ", "isCorrect": false },
+        { "optionText": "どの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "今は お金が あまり ___ 。",
+      "explanation": "'あまり' đi với phủ định. 'Không muốn lắm' dùng 'ほしくないです'.",
+      "points": 5,
+      "options": [
+        { "optionText": "ほしいです", "isCorrect": false },
+        { "optionText": "ほしくないです", "isCorrect": true },
+        { "optionText": "ほしくありませんでした", "isCorrect": false },
+        { "optionText": "ほしいじゃありません", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "いい 辞書 ___ ほしいです。",
+      "explanation": "Muốn có một cuốn từ điển tốt.",
+      "points": 5,
+      "options": [
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "A: カメラが ほしいですか。 B: いいえ、___ 。",
+      "explanation": "Cách trả lời phủ định ngắn gọn cho câu hỏi về mong muốn.",
+      "points": 5,
+      "options": [
+        { "optionText": "ほしくないです", "isCorrect": true },
+        { "optionText": "ほしくありませんでした", "isCorrect": false },
+        { "optionText": "ほしいじゃありません", "isCorrect": false },
+        { "optionText": "ありません", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "休み ___ ほしいです。どこかへ 行きたいです。",
+      "explanation": "Muốn có ngày nghỉ (sở hữu thời gian), dùng trợ từ 'が'.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "何 ___ ほしくないですか。…いいえ、パソコンが ほしいです。",
+      "explanation": "Trong câu hỏi phủ định 'Bạn không muốn gì cả à?', dùng 'も' sau '何'.",
+      "points": 5,
+      "options": [
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "も", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "きれいな 花 ___ ほしいです。",
+      "explanation": "Muốn có hoa đẹp.",
+      "points": 5,
+      "options": [
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本の 友達 ___ ほしいですか。…はい、ほしいです。",
+      "explanation": "Muốn có bạn người Nhật.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "と", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この 車は ___ ほしくないです。高（たか）いですから。",
+      "explanation": "Vì đắt nên 'không muốn lắm' hoặc 'hoàn toàn không muốn'. Trong các đáp án phó từ, 'あまり' (không... lắm) là phù hợp nhất.",
+      "points": 5,
+      "options": [
+        { "optionText": "とても", "isCorrect": false },
+        { "optionText": "あまり", "isCorrect": true },
+        { "optionText": "少し", "isCorrect": false },
+        { "optionText": "よく", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "時間が ___ ほしいです。",
+      "explanation": "Bày tỏ mong muốn có thời gian.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "どんな 車 ___ ほしいですか。…日本の 車が ほしいです。",
+      "explanation": "Hỏi về loại xe muốn có.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "冬（ふゆ）は 暖かい（あたたかい） コート ___ ほしいです。",
+      "explanation": "Mùa đông thì muốn có áo khoác ấm.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "何も ___ です。疲れましたから。",
+      "explanation": "Vì mệt nên không muốn (làm) gì cả/không muốn có gì cả. Phủ định của ほしい là ほしくない.",
+      "points": 5,
+      "options": [
+        { "optionText": "ほしい", "isCorrect": false },
+        { "optionText": "ほしくない", "isCorrect": true },
+        { "optionText": "ほしくありませんでした", "isCorrect": false },
+        { "optionText": "ほしいです", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "新しい 靴（くつ）が ___ 。…じゃ、買いに行きましょう。",
+      "explanation": "Dựa trên câu trả lời rủ đi mua, vế trước phải là 'Tôi muốn có giày mới'.",
+      "points": 5,
+      "options": [
+        { "optionText": "ほしいです", "isCorrect": true },
+        { "optionText": "ほしくないです", "isCorrect": false },
+        { "optionText": "あります", "isCorrect": false },
+        { "optionText": "わかります", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N5 - Bộ 38: Đi để làm gì (Nへ Vにいきます)",
+  "level": "N5",
+  "description": "Cấu trúc dùng để diễn tả mục đích của hành động di chuyển. Động từ chỉ mục đích được chia ở dạng ます (bỏ ます) kết hợp với trợ từ 'に'.",
+  "isPremium": false,
+  "examples": [
+    "わたしは にほんへ べんきょうしに いきます。(Tôi đi Nhật để học.)",
+    "ともだちは えきへ むかえに きました。(Bạn đến nhà ga để đón tôi.)",
+    "デパートへ かばんを かいに いきます。(Tôi đi đến cửa hàng bách hóa để mua cặp.)"
+  ],
+  "questions": [
+    {
+      "questionText": "スーパーへ 卵（たまご）を ___ 行きます。",
+      "explanation": "Mục đích đi đến siêu thị là để mua trứng. Động từ '買い（ます）' kết hợp với 'に' chỉ mục đích.",
+      "points": 5,
+      "options": [
+        { "optionText": "買いに", "isCorrect": true },
+        { "optionText": "買って", "isCorrect": false },
+        { "optionText": "買うに", "isCorrect": false },
+        { "optionText": "買いますに", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "郵便局（ゆうびんきょく）へ 切手（きって）を ___ 行きました。",
+      "explanation": "Đi bưu điện để mua tem. Dùng thể ます (bỏ ます) + に.",
+      "points": 5,
+      "options": [
+        { "optionText": "買い", "isCorrect": false },
+        { "optionText": "買いに", "isCorrect": true },
+        { "optionText": "買う", "isCorrect": false },
+        { "optionText": "買いますに", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本 ___ 料理を 習い（ならい）に 来ました。",
+      "explanation": "Trợ từ 'へ' hoặc 'に' dùng để chỉ hướng di chuyển đến Nhật Bản.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "へ", "isCorrect": true },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "暑いですから、海（うみ）へ 泳ぎ（およぎ） ___ 行きましょう。",
+      "explanation": "Cấu trúc V-stem + に + 行きます. Mục đích là đi bơi.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "へ", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "図書館（としょかん）へ 本を ___ に 行きます。",
+      "explanation": "Đi thư viện để mượn sách. Thể ます của '借りる' là '借ります', bỏ ます còn '借り'.",
+      "points": 5,
+      "options": [
+        { "optionText": "借る", "isCorrect": false },
+        { "optionText": "借り", "isCorrect": true },
+        { "optionText": "借りる", "isCorrect": false },
+        { "optionText": "貸し", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "喫茶店（きっさてん）へ コーヒーを ___ に 行きませんか。",
+      "explanation": "Rủ đi uống cà phê. Động từ '飲み（ます）' bỏ ます.",
+      "points": 5,
+      "options": [
+        { "optionText": "飲む", "isCorrect": false },
+        { "optionText": "飲み", "isCorrect": true },
+        { "optionText": "飲んで", "isCorrect": false },
+        { "optionText": "飲みます", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "週末（しゅうまつ） どこへ ___ 行きましたか。…京都へ 行きました。",
+      "explanation": "Dùng '遊びに' (đi chơi) để hỏi về mục đích di chuyển trong thời gian rảnh.",
+      "points": 5,
+      "options": [
+        { "optionText": "遊びに", "isCorrect": true },
+        { "optionText": "遊ぶに", "isCorrect": false },
+        { "optionText": "遊んで", "isCorrect": false },
+        { "optionText": "遊びます", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "おなかが すきましたから、レストランへ 食べ ___ 行きます。",
+      "explanation": "Đi đến nhà hàng để ăn. V-stem là '食べ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false },
+        { "optionText": "へ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "デパートへ 買い物（かいもの） ___ 行きます。",
+      "explanation": "Với các danh từ chỉ hành động như '買い物', ta có thể dùng trực tiếp N + に 行きます.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false },
+        { "optionText": "へ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "駅（えき）へ 友達を ___ に 行きました。",
+      "explanation": "Đi đến nhà ga để đón bạn. Động từ '迎え（ます）' bỏ ます.",
+      "points": 5,
+      "options": [
+        { "optionText": "迎え", "isCorrect": true },
+        { "optionText": "迎える", "isCorrect": false },
+        { "optionText": "迎えて", "isCorrect": false },
+        { "optionText": "迎います", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "何を ___ に 行きますか。…靴を 買いに 行きます。",
+      "explanation": "Hỏi đi làm gì, dùng '何を' kết hợp với V-stem + に.",
+      "points": 5,
+      "options": [
+        { "optionText": "買い", "isCorrect": true },
+        { "optionText": "買います", "isCorrect": false },
+        { "optionText": "買う", "isCorrect": false },
+        { "optionText": "買って", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "うちに 昼ごはんを ___ に 帰ります。",
+      "explanation": "Về nhà để ăn cơm trưa. Dùng '食べ（ます）'.",
+      "points": 5,
+      "options": [
+        { "optionText": "食べ", "isCorrect": true },
+        { "optionText": "食べて", "isCorrect": false },
+        { "optionText": "食べる", "isCorrect": false },
+        { "optionText": "食べます", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "市役所（しやくしょ）へ 資料（しりょう）を ___ に 行きます。",
+      "explanation": "Đi đến ủy ban thành phố để lấy/nhận tài liệu. '取り（ます）' bỏ ます.",
+      "points": 5,
+      "options": [
+        { "optionText": "取る", "isCorrect": false },
+        { "optionText": "取り", "isCorrect": true },
+        { "optionText": "取って", "isCorrect": false },
+        { "optionText": "取ります", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "公園（こうえん）へ ___ に 行きましょう。",
+      "explanation": "Rủ đi dạo ở công viên. '散歩し（ます）' bỏ ます.",
+      "points": 5,
+      "options": [
+        { "optionText": "散歩", "isCorrect": false },
+        { "optionText": "散歩し", "isCorrect": true },
+        { "optionText": "散歩する", "isCorrect": false },
+        { "optionText": "散歩して", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "友達の うちへ ___ に 行きます。",
+      "explanation": "Đi đến nhà bạn để chơi. '遊び（ます）' bỏ ます.",
+      "points": 5,
+      "options": [
+        { "optionText": "遊び", "isCorrect": true },
+        { "optionText": "遊ぶ", "isCorrect": false },
+        { "optionText": "遊んで", "isCorrect": false },
+        { "optionText": "遊びます", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あした 映画を ___ に 行きませんか。",
+      "explanation": "Rủ đi xem phim. '見（ます）' bỏ ます.",
+      "points": 5,
+      "options": [
+        { "optionText": "見る", "isCorrect": false },
+        { "optionText": "見て", "isCorrect": false },
+        { "optionText": "見", "isCorrect": true },
+        { "optionText": "見ます", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "花屋（はなや）へ 花を ___ に 行きました。",
+      "explanation": "Đi đến tiệm hoa để mua hoa. '買い（ます）' bỏ ます.",
+      "points": 5,
+      "options": [
+        { "optionText": "買い", "isCorrect": true },
+        { "optionText": "買う", "isCorrect": false },
+        { "optionText": "買います", "isCorrect": false },
+        { "optionText": "買って", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "実習（じっしゅう） ___ 行きます。",
+      "explanation": "Đi thực tập (danh từ chỉ hành động), dùng trực tiếp trợ từ 'に'.",
+      "points": 5,
+      "options": [
+        { "optionText": "に", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false },
+        { "optionText": "へ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本へ 日本語を ___ に 行きます。",
+      "explanation": "Đi Nhật để học tiếng Nhật. '勉強し（ます）' bỏ ます.",
+      "points": 5,
+      "options": [
+        { "optionText": "勉強", "isCorrect": false },
+        { "optionText": "勉強し", "isCorrect": true },
+        { "optionText": "勉強する", "isCorrect": false },
+        { "optionText": "勉強します", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "どこへ 写真を ___ に 行きますか。…山へ 行きます。",
+      "explanation": "Hỏi đi đâu để chụp ảnh. '撮り（ます）' bỏ ます.",
+      "points": 5,
+      "options": [
+        { "optionText": "撮る", "isCorrect": false },
+        { "optionText": "撮り", "isCorrect": true },
+        { "optionText": "撮って", "isCorrect": false },
+        { "optionText": "撮ります", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N5 - Bộ 39: Muốn làm gì (Vたいです)",
+  "level": "N5",
+  "description": "Cấu trúc dùng để bày tỏ ý muốn thực hiện một hành động của người nói. Động từ chia ở thể ます (bỏ ます) kết hợp với 'たいです'. Lưu ý trợ từ 'を' có thể chuyển thành 'が'.",
+  "isPremium": false,
+  "examples": [
+    "わたしは にほんごを べんきょうしたいです。(Tôi muốn học tiếng Nhật.)",
+    "なにか たべたいですか。(Bạn muốn ăn cái gì không?)",
+    "きょうは どこも いきたくないです。(Hôm nay tôi không muốn đi đâu cả.)"
+  ],
+  "questions": [
+    {
+      "questionText": "のどが 渇きました（かわきました）から、水が ___ です。",
+      "explanation": "Để diễn tả ý muốn 'uống', ta lấy động từ '飲みます' bỏ 'ます' thêm 'たい'. Vì là câu mong muốn nên dùng trợ từ 'が' cho đối tượng.",
+      "points": 5,
+      "options": [
+        { "optionText": "飲みたい", "isCorrect": true },
+        { "optionText": "飲んで", "isCorrect": false },
+        { "optionText": "飲む", "isCorrect": false },
+        { "optionText": "飲みます", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "私は 日本へ 料理を ___ に 行きたいです。",
+      "explanation": "Cấu trúc kết hợp: Đi để làm gì (Vにいきます) và Muốn (たい). '習い（ます）' bỏ 'ます' + 'に' + '行き（ます）' bỏ 'ます' + 'たい'.",
+      "points": 5,
+      "options": [
+        { "optionText": "習い", "isCorrect": true },
+        { "optionText": "習う", "isCorrect": false },
+        { "optionText": "習って", "isCorrect": false },
+        { "optionText": "習います", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "おなかが いっぱいですから、何も ___ です。",
+      "explanation": "Khi đã no, ta 'không muốn ăn gì cả'. Phủ định của 'たい' là 'たくない'.",
+      "points": 5,
+      "options": [
+        { "optionText": "食べたい", "isCorrect": false },
+        { "optionText": "食べたくない", "isCorrect": true },
+        { "optionText": "食べたいじゃありません", "isCorrect": false },
+        { "optionText": "食べない", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "将来（しょうらい）、自分の 店を ___ です。",
+      "explanation": "Bày tỏ nguyện vọng làm chủ/mở cửa hàng. '持ち（ます）' bỏ 'ます' + 'たい'.",
+      "points": 5,
+      "options": [
+        { "optionText": "持ちたい", "isCorrect": true },
+        { "optionText": "持つたい", "isCorrect": false },
+        { "optionText": "持って", "isCorrect": false },
+        { "optionText": "持つ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "どこ ___ 行きたいですか。…北海道へ 行きたいです。",
+      "explanation": "Hỏi về hướng di chuyển mong muốn, dùng trợ từ 'へ'.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "へ", "isCorrect": true },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "疲れましたから、早く ___ です。",
+      "explanation": "Vì mệt nên 'muốn về'. '帰り（ます）' bỏ 'ます' + 'たい'.",
+      "points": 5,
+      "options": [
+        { "optionText": "帰る", "isCorrect": false },
+        { "optionText": "帰り", "isCorrect": false },
+        { "optionText": "帰りたい", "isCorrect": true },
+        { "optionText": "帰りたくない", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "何 ___ したいですか。…テニスを したいです。",
+      "explanation": "Hỏi 'Muốn làm cái gì', dùng 'なにを' hoặc 'なにが'. Ở đây 'を' là phổ biến nhất với 'します'.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false },
+        { "optionText": "へ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "今日は 休みですから、どこへも ___ です。",
+      "explanation": "Diễn tả ý 'không muốn đi đâu cả' trong ngày nghỉ. Dùng 'いきたくない'.",
+      "points": 5,
+      "options": [
+        { "optionText": "行きたい", "isCorrect": false },
+        { "optionText": "行きたくない", "isCorrect": true },
+        { "optionText": "行きません", "isCorrect": false },
+        { "optionText": "行った", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "新しい 車 ___ 買いたい（かいたい）です。",
+      "explanation": "Đối tượng của nguyện vọng 'muốn mua' có thể dùng 'が' để nhấn mạnh đối tượng.",
+      "points": 5,
+      "options": [
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "へ", "isCorrect": false },
+        { "optionText": "まで", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日本で 何を ___ ですか。…富士山を 見たいです。",
+      "explanation": "Hỏi xem 'muốn làm gì' ở Nhật. Động từ 'します' bỏ 'ます' + 'たい'.",
+      "points": 5,
+      "options": [
+        { "optionText": "した", "isCorrect": false },
+        { "optionText": "したい", "isCorrect": true },
+        { "optionText": "し", "isCorrect": false },
+        { "optionText": "する", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "暑いですから、冷たい ビール ___ 飲みたいです。",
+      "explanation": "Muốn uống bia lạnh, dùng trợ từ 'が' sau đối tượng mong muốn.",
+      "points": 5,
+      "options": [
+        { "optionText": "が", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "日曜日、友達に ___ です。",
+      "explanation": "Muốn gặp bạn vào chủ nhật. '会い（ます）' bỏ 'ます' + 'たい'.",
+      "points": 5,
+      "options": [
+        { "optionText": "会うたい", "isCorrect": false },
+        { "optionText": "会いたい", "isCorrect": true },
+        { "optionText": "会って", "isCorrect": false },
+        { "optionText": "会います", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "ひらがなは 書けますが、漢字は ___ です。",
+      "explanation": "Diễn tả ý tương phản: Viết được Hiragana nhưng 'không muốn viết' Kanji.",
+      "points": 5,
+      "options": [
+        { "optionText": "書きたい", "isCorrect": false },
+        { "optionText": "書きたくない", "isCorrect": true },
+        { "optionText": "書きません", "isCorrect": false },
+        { "optionText": "書く", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "靴（くつ）を ___ です。どこか いい店が ありますか。",
+      "explanation": "Muốn mua giày. '買い（ます）' bỏ 'ます' + 'たい'.",
+      "points": 5,
+      "options": [
+        { "optionText": "買う", "isCorrect": false },
+        { "optionText": "買い", "isCorrect": false },
+        { "optionText": "買いたい", "isCorrect": true },
+        { "optionText": "買いに", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "家族に ___ です。とても 寂しい（さびしい）ですから。",
+      "explanation": "Vì buồn/cô đơn nên 'muốn gặp' gia đình.",
+      "points": 5,
+      "options": [
+        { "optionText": "会いたい", "isCorrect": true },
+        { "optionText": "会いたくない", "isCorrect": false },
+        { "optionText": "会います", "isCorrect": false },
+        { "optionText": "会った", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "この 映画は あまり ___ です。怖（こわ）いですから。",
+      "explanation": "'あまり' đi với phủ định. Vì sợ nên 'không muốn xem lắm'.",
+      "points": 5,
+      "options": [
+        { "optionText": "見たい", "isCorrect": false },
+        { "optionText": "見たくない", "isCorrect": true },
+        { "optionText": "見ません", "isCorrect": false },
+        { "optionText": "見た", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "明日、一緒に テニスを ___ か。…すみません、したくないです。",
+      "explanation": "Lời rủ rê 'Cùng làm không?'. Đáp lại bằng ý không muốn.",
+      "points": 5,
+      "options": [
+        { "optionText": "します", "isCorrect": false },
+        { "optionText": "しません", "isCorrect": true },
+        { "optionText": "した", "isCorrect": false },
+        { "optionText": "したい", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "何か ___ ですか。…いいえ、おなかが いっぱいです。",
+      "explanation": "Hỏi xem đối phương có 'muốn ăn cái gì' không.",
+      "points": 5,
+      "options": [
+        { "optionText": "食べ", "isCorrect": false },
+        { "optionText": "食べたい", "isCorrect": true },
+        { "optionText": "食べる", "isCorrect": false },
+        { "optionText": "食べて", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "もっと 日本語で ___ です。",
+      "explanation": "Muốn 'nói chuyện' nhiều hơn bằng tiếng Nhật. '話し（ます）' bỏ 'ます' + 'たい'.",
+      "points": 5,
+      "options": [
+        { "optionText": "話す", "isCorrect": false },
+        { "optionText": "話し", "isCorrect": false },
+        { "optionText": "話したい", "isCorrect": true },
+        { "optionText": "話したくない", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "あそこで 写真を ___ です。",
+      "explanation": "Muốn chụp ảnh ở đằng kia. '撮り（ます）' bỏ 'ます' + 'たい'.",
+      "points": 5,
+      "options": [
+        { "optionText": "撮る", "isCorrect": false },
+        { "optionText": "撮り", "isCorrect": false },
+        { "optionText": "撮りたい", "isCorrect": true },
+        { "optionText": "撮って", "isCorrect": false }
+      ]
+    }
+  ]
+},
+
+{
+  "title": "N5 - Bộ 40: Danh từ hóa (Vる のが すき/きらい/じょうず/へた)",
+  "level": "N5",
+  "description": "Cách sử dụng 'の' để biến một động từ thành cụm danh từ, giúp diễn tả sở thích, sự ghét bỏ hoặc năng lực đối với một hành động cụ thể.",
+  "isPremium": false,
+  "examples": [
+    "わたしは ゲームを するのが すきです。(Tôi thích chơi game.)",
+    "あなたは うたうのが じょうずです。(Bạn hát giỏi.)",
+    "わたしは テニスを するのが へたです。(Tôi chơi tennis kém.)"
+  ],
+  "questions": [
+    {
+      "questionText": "私は 本を 読む ___ 好きです。",
+      "explanation": "Để biến hành động 'đọc sách' thành danh từ làm đối tượng cho sở thích, ta dùng 'の が'.",
+      "points": 5,
+      "options": [
+        { "optionText": "の が", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "の を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "マリアさんは 料理を ___ のが 上手です。",
+      "explanation": "Cấu trúc danh từ hóa yêu cầu động từ chia ở thể từ điển (Vる). 'Tạo ra/Nấu' là 作る (つくる).",
+      "points": 5,
+      "options": [
+        { "optionText": "作ります", "isCorrect": false },
+        { "optionText": "作る", "isCorrect": true },
+        { "optionText": "作って", "isCorrect": false },
+        { "optionText": "作った", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "私は 部屋を 掃除（そうじ）する ___ 嫌いです。",
+      "explanation": "Sử dụng 'の が' để chỉ việc ghét một hành động (ghét dọn dẹp).",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "の が", "isCorrect": true },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "田中さんは 走る ___ 速い（はやい）ですね。",
+      "explanation": "Mặc dù bài học là giỏi/kém, 'の が' cũng dùng để chỉ tính chất của hành động (Chạy nhanh).",
+      "points": 5,
+      "options": [
+        { "optionText": "の が", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "私は 泳ぐ（およぐ） ___ 下手です。",
+      "explanation": "Diễn tả việc bơi kém, dùng 'の が' sau động từ thể từ điển.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "の が", "isCorrect": true },
+        { "optionText": "の を", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "母は 花を ___ のが 好きです。",
+      "explanation": "Thích việc 'trồng/nuôi dưỡng' hoa. Động từ thể từ điển là 育てる (そだてる).",
+      "points": 5,
+      "options": [
+        { "optionText": "育てます", "isCorrect": false },
+        { "optionText": "育てて", "isCorrect": false },
+        { "optionText": "育てる", "isCorrect": true },
+        { "optionText": "育てるの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "___ のが 好きですか。…写真を 撮るのが 好きです。",
+      "explanation": "Hỏi về sở thích hành động: 'Bạn thích làm cái gì?'.",
+      "points": 5,
+      "options": [
+        { "optionText": "なにを する", "isCorrect": true },
+        { "optionText": "なにを して", "isCorrect": false },
+        { "optionText": "なんの", "isCorrect": false },
+        { "optionText": "どれ", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "佐藤さんは 歌を ___ のが とても 上手です。",
+      "explanation": "Hát giỏi, dùng động từ 歌う (うたう).",
+      "points": 5,
+      "options": [
+        { "optionText": "歌う", "isCorrect": true },
+        { "optionText": "歌います", "isCorrect": false },
+        { "optionText": "歌って", "isCorrect": false },
+        { "optionText": "歌うの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "私は 漢字を 覚える（おぼえる） ___ 下手です。",
+      "explanation": "Việc nhớ chữ Hán kém, dùng 'の が'.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "の が", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "音楽を 聞く ___ 好きですか。",
+      "explanation": "Hỏi sở thích nghe nhạc.",
+      "points": 5,
+      "options": [
+        { "optionText": "の が", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "弟は 絵を ___ のが 下手です。",
+      "explanation": "Vẽ kém, dùng động từ かく (vẽ).",
+      "points": 5,
+      "options": [
+        { "optionText": "かきます", "isCorrect": false },
+        { "optionText": "かく", "isCorrect": true },
+        { "optionText": "かいて", "isCorrect": false },
+        { "optionText": "かいた", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "車を 運転（うんてん）する ___ 上手ですか。",
+      "explanation": "Hỏi về khả năng lái xe giỏi.",
+      "points": 5,
+      "options": [
+        { "optionText": "の が", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "私は お酒を 飲む ___ 嫌いです。",
+      "explanation": "Ghét việc uống rượu.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "が", "isCorrect": false },
+        { "optionText": "の が", "isCorrect": true },
+        { "optionText": "の を", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "テニスを ___ のが 下手ですから、練習します。",
+      "explanation": "Chơi tennis kém, dùng động từ する (làm/chơi).",
+      "points": 5,
+      "options": [
+        { "optionText": "します", "isCorrect": false },
+        { "optionText": "して", "isCorrect": false },
+        { "optionText": "する", "isCorrect": true },
+        { "optionText": "するの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "自転車に ___ のが 好きです。",
+      "explanation": "Thích việc đi (cưỡi) xe đạp. Động từ 乗る (のる).",
+      "points": 5,
+      "options": [
+        { "optionText": "乗る", "isCorrect": true },
+        { "optionText": "乗ります", "isCorrect": false },
+        { "optionText": "乗って", "isCorrect": false },
+        { "optionText": "乗るの", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "外国語を 話す ___ 難しいですが、好きです。",
+      "explanation": "Việc nói tiếng nước ngoài thì khó nhưng tôi thích. Dùng 'の は' hoặc 'の が' tùy ngữ cảnh nhấn mạnh, nhưng ở N5 cấu trúc danh từ hóa chủ đề thường dùng 'の は' hoặc 'の が'. Đáp án đúng nhất ở đây là 'の は' (việc đó thì...). Tuy nhiên để đúng bộ đề này ta dùng 'の が' nếu coi khó là một trạng thái.",
+      "points": 5,
+      "options": [
+        { "optionText": "の が", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "写真を 撮る ___ 下手ですから、教えて ください。",
+      "explanation": "Việc chụp ảnh kém, hãy dạy tôi.",
+      "points": 5,
+      "options": [
+        { "optionText": "の が", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "私は 早く 起きる ___ 苦手（にがて）です。",
+      "explanation": "Dậy sớm kém/không giỏi (tương tự へた), dùng 'の が'.",
+      "points": 5,
+      "options": [
+        { "optionText": "の が", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "友達に 会う ___ 大好き（だいすき）です。",
+      "explanation": "Rất thích việc gặp gỡ bạn bè.",
+      "points": 5,
+      "options": [
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "の が", "isCorrect": true },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "で", "isCorrect": false }
+      ]
+    },
+    {
+      "questionText": "歩く（あるく） ___ 嫌いです。いつも タクシーです。",
+      "explanation": "Ghét việc đi bộ.",
+      "points": 5,
+      "options": [
+        { "optionText": "の が", "isCorrect": true },
+        { "optionText": "を", "isCorrect": false },
+        { "optionText": "に", "isCorrect": false },
+        { "optionText": "は", "isCorrect": false }
+      ]
+    }
+  ]
+}
+
+]

@@ -1,0 +1,1930 @@
+[
+    {
+        "NameVi": "Thời tiết và Trang phục",
+        "NameJp": "天気と服",
+        "Description": "Học về các loại hình thời tiết và cách chọn quần áo phù hợp.",
+        "IconUrl": "/icons/weather.png",
+        "Articles": [
+            {
+                "Level": "N5",
+                "TitleJp": "暑い日の服",
+                "TitleVi": "Trang phục ngày nóng",
+                "ContentJp": "今日はとても暑いです。私はTシャツを着ます。そして帽子を被ります。",
+                "ContentFurigana": "[{\"k\":\"今日\",\"f\":\"きょう\"}, \"はとても\", {\"k\":\"暑\",\"f\":\"あつ\"}, \"いです。\", {\"k\":\"私\",\"f\":\"わたし\"}, \"はTシャツを\", {\"k\":\"着\",\"f\":\"き\"}, \"ます。そして\", {\"k\":\"帽子\",\"f\":\"ぼうし\"}, \"を\", {\"k\":\"被\",\"f\":\"かぶ\"}, \"ります。\"]",
+                "ContentVi": "Hôm nay trời rất nóng. Tôi sẽ mặc áo thun. Và đội mũ nữa.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "今日の天気はどうですか。",
+                        "Explanation": "Dựa vào câu: 今日はとても暑いです (Trời rất nóng).",
+                        "Options": [
+                            {
+                                "Text": "寒い",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "暑い",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "涼しい",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "何を被りますか。",
+                        "Explanation": "Động từ '被ります' dùng cho đội mũ: 帽子を被ります。",
+                        "Options": [
+                            {
+                                "Text": "靴",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "眼鏡",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "帽子",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "冬のコート",
+                "TitleVi": "Áo khoác mùa đông",
+                "ContentJp": "冬は寒いですから、厚いコートを着ます。そして赤いマフラーをします。",
+                "ContentFurigana": "[{\"k\":\"冬\",\"f\":\"ふゆ\"}, \"は\", {\"k\":\"寒\",\"f\":\"さむ\"}, \"いですから、\", {\"k\":\"厚\",\"f\":\"あつ\"}, \"いコートを\", {\"k\":\"着\",\"f\":\"き\"}, \"ます。そして\", {\"k\":\"赤\",\"f\":\"あか\"}, \"いマフラーをします。\"]",
+                "ContentVi": "Vì mùa đông lạnh nên tôi mặc áo khoác dày. Và quàng một chiếc khăn màu đỏ.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どんなコートを着ますか。",
+                        "Explanation": "Dựa vào câu: 厚いコートを着ます (Áo khoác dày).",
+                        "Options": [
+                            {
+                                "Text": "薄いコート",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "厚いコート",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "短いコート",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "マフラーは何色ですか。",
+                        "Explanation": "Dựa vào câu: 赤いマフラー (Khăn quàng đỏ).",
+                        "Options": [
+                            {
+                                "Text": "赤い",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "青い",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "白い",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "雨の日の散歩",
+                "TitleVi": "Đi dạo ngày mưa",
+                "ContentJp": "雨が降っています。私は長靴を履いて、外へ行きます。少し寒いです。",
+                "ContentFurigana": "[{\"k\":\"雨\",\"f\":\"あめ\"}, \"が\", {\"k\":\"降\",\"f\":\"ふ\"}, \"っています。\", {\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"長靴\",\"f\":\"ながぐつ\"}, \"を\", {\"k\":\"履\",\"f\":\"は\"}, \"いて、\", {\"k\":\"外\",\"f\":\"そと\"}, \"へ\", {\"k\":\"行\",\"f\":\"い\"}, \"きます。\", {\"k\":\"少\",\"f\":\"すこ\"}, \"し\", {\"k\":\"寒\",\"f\":\"さむ\"}, \"いです。\"]",
+                "ContentVi": "Trời đang mưa. Tôi đi ủng vào rồi đi ra ngoài. Trời hơi lạnh một chút.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "何を履きますか。",
+                        "Explanation": "Dựa vào câu: 長靴を履いて (Đi ủng).",
+                        "Options": [
+                            {
+                                "Text": "ズボン",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "長靴",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "シャツ",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "天気はどうですか。",
+                        "Explanation": "Dựa vào câu: 雨が降っています (Trời đang mưa).",
+                        "Options": [
+                            {
+                                "Text": "晴れ",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "雪",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "雨",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "新しい靴",
+                "TitleVi": "Đôi giày mới",
+                "ContentJp": "この靴は白くて、きれいです。明日、この靴を履いて学校へ行きます。",
+                "ContentFurigana": "[\"この\", {\"k\":\"靴\",\"f\":\"くつ\"}, \"は\", {\"k\":\"白\",\"f\":\"しろ\"}, \"くて、きれいです。\", {\"k\":\"明日\",\"f\":\"あした\"}, \"、この\", {\"k\":\"靴\",\"f\":\"くつ\"}, \"を\", {\"k\":\"履\",\"f\":\"は\"}, \"いて\", {\"k\":\"学校\",\"f\":\"がっこう\"}, \"へ\", {\"k\":\"行\",\"f\":\"い\"}, \"きます。\"]",
+                "ContentVi": "Đôi giày này trắng và đẹp. Ngày mai tôi sẽ đi đôi giày này đến trường.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "靴は何色ですか。",
+                        "Explanation": "Dựa vào câu: この靴は白くて (Đôi giày này trắng).",
+                        "Options": [
+                            {
+                                "Text": "黒い",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "白い",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "黄色い",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "いつ履きますか。",
+                        "Explanation": "Dựa vào câu: 明日...履いて学校へ行きます (Ngày mai).",
+                        "Options": [
+                            {
+                                "Text": "今日",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "明日",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "来週",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "眼鏡をかけます",
+                "TitleVi": "Đeo kính",
+                "ContentJp": "私は本を読むとき、眼鏡をかけます。この眼鏡は去年買いました。",
+                "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"本\",\"f\":\"ほん\"}, \"を\", {\"k\":\"読\",\"f\":\"よ\"}, \"むとき、\", {\"k\":\"眼鏡\",\"f\":\"めがね\"}, \"をかけます。この\", {\"k\":\"眼鏡\",\"f\":\"めがね\"}, \"は\", {\"k\":\"去年\",\"f\":\"きょねん\"}, {\"k\":\"買\",\"f\":\"か\"}, \"いました。\"]",
+                "ContentVi": "Khi đọc sách, tôi đeo kính. Chiếc kính này tôi đã mua vào năm ngoái.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "いつ眼鏡をかけますか。",
+                        "Explanation": "Dựa vào câu: 本を読むとき (Khi đọc sách).",
+                        "Options": [
+                            {
+                                "Text": "ご飯を食べるとき",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "本を読むとき",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "寝るとき",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "眼鏡はいつ買いましたか。",
+                        "Explanation": "Dựa vào câu: 去年買いました (Năm ngoái).",
+                        "Options": [
+                            {
+                                "Text": "去年",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "今年",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "先月",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "お出かけの準備",
+                "TitleVi": "Chuẩn bị đi ra ngoài",
+                "ContentJp": "外は風が強くて涼しいです。上着を着て、鞄を持って出かけます。",
+                "ContentFurigana": "[{\"k\":\"外\",\"f\":\"そと\"}, \"は\", {\"k\":\"風\",\"f\":\"かぜ\"}, \"が\", {\"k\":\"強\",\"f\":\"つよ\"}, \"くて\", {\"k\":\"涼\",\"f\":\"すず\"}, \"しいです。\", {\"k\":\"上着\",\"f\":\"うわぎ\"}, \"を\", {\"k\":\"着\",\"f\":\"き\"}, \"て、\", {\"k\":\"鞄\",\"f\":\"かばん\"}, \"を\", {\"k\":\"持\",\"f\":\"も\"}, \"って\", {\"k\":\"出\",\"f\":\"で\"}, \"かけます。\"]",
+                "ContentVi": "Bên ngoài gió mạnh và mát mẻ. Tôi mặc áo khoác ngoài, mang theo cặp rồi đi ra ngoài.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "外の天気はどうですか。",
+                        "Explanation": "Dựa vào câu: 風が強くて涼しい (Gió mạnh và mát mẻ).",
+                        "Options": [
+                            {
+                                "Text": "暑い",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "風が強い",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "雨",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "何を着て行きますか。",
+                        "Explanation": "Dựa vào câu: 上着を着て (Mặc áo khoác ngoài).",
+                        "Options": [
+                            {
+                                "Text": "上着",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "スカート",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "水着",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "靴を洗います",
+                "TitleVi": "Giặt giày",
+                "ContentJp": "日曜日は天気がいいです。私は黒い靴を洗います。そして、庭に置きます。",
+                "ContentFurigana": "[{\"k\":\"日曜日\",\"f\":\"にちようび\"}, \"は\", {\"k\":\"天気\",\"f\":\"てんき\"}, \"がいいです。\", {\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"黒\",\"f\":\"くろ\"}, \"い\", {\"k\":\"靴\",\"f\":\"くつ\"}, \"を\", {\"k\":\"洗\",\"f\":\"あら\"}, \"います。そして、\", {\"k\":\"庭\",\"f\":\"にわ\"}, \"に\", {\"k\":\"置\",\"f\":\"お\"}, \"きます。\"]",
+                "ContentVi": "Chủ nhật thời tiết đẹp. Tôi giặt đôi giày đen. Và đặt nó ở ngoài vườn.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "いつ靴を洗いますか。",
+                        "Explanation": "Dựa vào câu: 日曜日は...靴を洗います。",
+                        "Options": [
+                            {
+                                "Text": "月曜日",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "水曜日",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "日曜日",
+                                "IsCorrect": true
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "どこに靴を置きますか。",
+                        "Explanation": "Dựa vào câu: 庭に置きます。",
+                        "Options": [
+                            {
+                                "Text": "部屋",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "庭",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "玄関",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "春の服",
+                "TitleVi": "Quần áo mùa xuân",
+                "ContentJp": "春は暖かいです。私はピンクのシャツが好きです。よくスカートも穿きます。",
+                "ContentFurigana": "[{\"k\":\"春\",\"f\":\"はる\"}, \"は\", {\"k\":\"暖\",\"f\":\"あたた\"}, \"かいです。\", {\"k\":\"私\",\"f\":\"わたし\"}, \"はピンクのシャツが\", {\"k\":\"好\",\"f\":\"す\"}, \"きです。よくスカートも\", {\"k\":\"穿\",\"f\":\"は\"}, \"きます。\"]",
+                "ContentVi": "Mùa xuân rất ấm áp. Tôi thích chiếc áo sơ mi màu hồng. Tôi cũng thường mặc váy.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "春の天気はどうですか。",
+                        "Explanation": "Dựa vào câu: 春は暖かいです。",
+                        "Options": [
+                            {
+                                "Text": "寒い",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "暖かい",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "暑い",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "何色のシャツが好きですか。",
+                        "Explanation": "Dựa vào câu: ピンクのシャツが好きです。",
+                        "Options": [
+                            {
+                                "Text": "ピンク",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "白",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "赤",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "寒い夜",
+                "TitleVi": "Đêm lạnh",
+                "ContentJp": "今夜はとても寒いです。私は厚い靴下を履いて寝ます。",
+                "ContentFurigana": "[{\"k\":\"今夜\",\"f\":\"こんや\"}, \"はとても\", {\"k\":\"寒\",\"f\":\"さむ\"}, \"いです。\", {\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"厚\",\"f\":\"あつ\"}, \"い\", {\"k\":\"靴下\",\"f\":\"くつした\"}, \"を\", {\"k\":\"履\",\"f\":\"は\"}, \"いて\", {\"k\":\"寝\",\"f\":\"ね\"}, \"ます。\"]",
+                "ContentVi": "Đêm nay rất lạnh. Tôi đi tất dày rồi đi ngủ.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "今夜はどうですか。",
+                        "Explanation": "Dựa vào câu đầu: 今夜はとても寒いです。",
+                        "Options": [
+                            {
+                                "Text": "暑い",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "涼しい",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "寒い",
+                                "IsCorrect": true
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "何を履いて寝ますか。",
+                        "Explanation": "Dựa vào câu sau: 厚い靴下を履いて寝ます。",
+                        "Options": [
+                            {
+                                "Text": "靴下",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "靴",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "スリッパ",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "着替え",
+                "TitleVi": "Thay quần áo",
+                "ContentJp": "走った後で、たくさん汗をかきました。きれいな服に着替えます。",
+                "ContentFurigana": "[{\"k\":\"走\",\"f\":\"はし\"}, \"った\", {\"k\":\"後\",\"f\":\"あと\"}, \"で、たくさん\", {\"k\":\"汗\",\"f\":\"あせ\"}, \"をかきました。きれいな\", {\"k\":\"服\",\"f\":\"ふく\"}, \"に\", {\"k\":\"着替\",\"f\":\"きが\"}, \"えます。\"]",
+                "ContentVi": "Sau khi chạy xong, tôi đã đổ rất nhiều mồ hôi. Tôi sẽ thay một bộ quần áo sạch.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "走った後で、どうなりましたか。",
+                        "Explanation": "Dựa vào: たくさん汗をかきました。",
+                        "Options": [
+                            {
+                                "Text": "疲れた",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "汗をかいた",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "眠くなった",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "この後で、何をしますか。",
+                        "Explanation": "Dựa vào: きれいな服に着替えます。",
+                        "Options": [
+                            {
+                                "Text": "服を洗う",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "服を捨てる",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "服を着替える",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "天気予報と服の選択",
+                "TitleVi": "Dự báo thời tiết và lựa chọn trang phục",
+                "ContentJp": "天気予報によると、明日は午後から雨が降るそうです。気温も下がるし、風も強くなるので、薄い上着を持って出かけたほうがいいでしょう。",
+                "ContentFurigana": "[{\"k\":\"天気予報\",\"f\":\"てんきよほう\"}, \"によると、\", {\"k\":\"明日\",\"f\":\"あした\"}, \"は\", {\"k\":\"午後\",\"f\":\"ごご\"}, \"から\", {\"k\":\"雨\",\"f\":\"あめ\"}, \"が\", {\"k\":\"降\",\"f\":\"ふ\"}, \"るそうです。\", {\"k\":\"気温\",\"f\":\"きおん\"}, \"も\", {\"k\":\"下\",\"f\":\"さ\"}, \"がるし、\", {\"k\":\"風\",\"f\":\"かぜ\"}, \"も\", {\"k\":\"強\",\"f\":\"つよ\"}, \"くなるので、\", {\"k\":\"薄\",\"f\":\"うす\"}, \"い\", {\"k\":\"上着\",\"f\":\"うわぎ\"}, \"を\", {\"k\":\"持\",\"f\":\"も\"}, \"って\", {\"k\":\"出\",\"f\":\"で\"}, \"かけたほうがいいでしょう。\"]",
+                "ContentVi": "Theo dự báo thời tiết, nghe nói chiều mai trời sẽ mưa. Vì nhiệt độ sẽ giảm và gió cũng mạnh lên, nên có lẽ bạn nên mang theo một chiếc áo khoác mỏng khi đi ra ngoài.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "明日の午後の天気はどうなりそうですか。",
+                        "Explanation": "Dựa vào cấu trúc truyền đạt: 雨が降るそうです (Nghe nói sẽ mưa).",
+                        "Options": [
+                            {
+                                "Text": "晴れて暑くなります",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "雨が降って風が強くなります",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "雪が降って寒くなります",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "何を持って出かけますか。",
+                        "Explanation": "Lời khuyên: 薄い上着を持って出かけたほうがいい (Nên mang theo áo khoác mỏng).",
+                        "Options": [
+                            {
+                                "Text": "厚いコート",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "傘と半袖のシャツ",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "薄い上着",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "サイズの合わない服",
+                "TitleVi": "Quần áo không vừa kích cỡ",
+                "ContentJp": "インターネットでコートを買いましたが、私には大きすぎました。デザインはいいのに、サイズが合わなくて残念です。もっと小さいのに交換してもらいたいです。",
+                "ContentFurigana": "[\"インターネットでコートを\", {\"k\":\"買\",\"f\":\"か\"}, \"いましたが、\", {\"k\":\"私\",\"f\":\"わたし\"}, \"には\", {\"k\":\"大\",\"f\":\"おお\"}, \"きすぎました。デザインはいいのに、サイズが\", {\"k\":\"合\",\"f\":\"あ\"}, \"わなくて\", {\"k\":\"残念\",\"f\":\"ざんねん\"}, \"です。もっと\", {\"k\":\"小\",\"f\":\"ちい\"}, \"さいのに\", {\"k\":\"交換\",\"f\":\"こうかん\"}, \"してもらいたいです。\"]",
+                "ContentVi": "Tôi đã mua một chiếc áo khoác trên mạng, nhưng nó lại quá lớn đối với tôi. Dù thiết kế đẹp nhưng kích cỡ không vừa thật là đáng tiếc. Tôi muốn được đổi sang cái nhỏ hơn.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "買ったコートはどうでしたか。",
+                        "Explanation": "Sử dụng cấu trúc quá mức: 大きすぎました (Quá lớn).",
+                        "Options": [
+                            {
+                                "Text": "ちょうどよかったです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "大きすぎました",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "安すぎました",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "これからどうしたいですか。",
+                        "Explanation": "Mong muốn cho nhận: 交換してもらいたい (Muốn được đổi).",
+                        "Options": [
+                            {
+                                "Text": "友達にあげたいです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "捨てたいです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "小さいサイズに変えたいです",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "梅雨の時期の洗濯",
+                "TitleVi": "Giặt giũ vào mùa mưa (Tsuyu)",
+                "ContentJp": "日本では六月から七月にかけて雨が多いです。この時期は洗濯物が乾きにくいので困ります。天気がいい日は外に干すようにしています。",
+                "ContentFurigana": "[{\"k\":\"日本\",\"f\":\"にほん\"}, \"では\", {\"k\":\"六月\",\"f\":\"ろくがつ\"}, \"から\", {\"k\":\"七月\",\"f\":\"しちがつ\"}, \"にかけて\", {\"k\":\"雨\",\"f\":\"あめ\"}, \"が\", {\"k\":\"多\",\"f\":\"おお\"}, \"いです。この\", {\"k\":\"時期\",\"f\":\"じき\"}, \"は\", {\"k\":\"洗濯物\",\"f\":\"せんたくもの\"}, \"が\", {\"k\":\"乾\",\"f\":\"かわ\"}, \"きにくいので\", {\"k\":\"困\",\"f\":\"こま\"}, \"ります。\", {\"k\":\"天気\",\"f\":\"てんき\"}, \"がいい\", {\"k\":\"日\",\"f\":\"ひ\"}, \"は\", {\"k\":\"外\",\"f\":\"そと\"}, \"に\", {\"k\":\"干\",\"f\":\"ほ\"}, \"すようにしています。\"]",
+                "ContentVi": "Ở Nhật Bản, từ tháng 6 đến tháng 7 thường có nhiều mưa. Giai đoạn này đồ giặt rất khó khô nên thật phiền phức. Những ngày trời đẹp, tôi luôn cố gắng phơi đồ ở ngoài trời.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どうしてこの時期は困りますか。",
+                        "Explanation": "Sử dụng cấu trúc khó làm gì: 乾きにくい (Khó khô).",
+                        "Options": [
+                            {
+                                "Text": "洗濯物がすぐ乾くからです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "洗濯物がなかなか乾かないからです",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "服が汚れるからです",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "天気がいい日はどうしますか。",
+                        "Explanation": "Hành động phơi đồ: 外に干すようにしています。",
+                        "Options": [
+                            {
+                                "Text": "家の中に置きます",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "外に干します",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "新しい服を買います",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "結婚式の服装",
+                "TitleVi": "Trang phục dự tiệc cưới",
+                "ContentJp": "来週、友達の結婚式があります。何を着て行けばいいか迷っています。日本なら、男性はスーツを着るのが一般的だと言われています。",
+                "ContentFurigana": "[{\"k\":\"来週\",\"f\":\"らいしゅう\"}, \"、\", {\"k\":\"友達\",\"f\":\"ともだち\"}, \"の\", {\"k\":\"結婚式\",\"f\":\"けっこんしき\"}, \"があります。\", {\"k\":\"何\",\"f\":\"なに\"}, \"を\", {\"k\":\"着\",\"f\":\"き\"}, \"て\", {\"k\":\"行\",\"f\":\"い\"}, \"けばいいか\", {\"k\":\"迷\",\"f\":\"まよ\"}, \"っています。\", {\"k\":\"日本\",\"f\":\"にほん\"}, \"なら、\", {\"k\":\"男性\",\"f\":\"だんせい\"}, \"はスーツを\", {\"k\":\"着\",\"f\":\"き\"}, \"るのが\", {\"k\":\"一般的\",\"f\":\"いっぱんてき\"}, \"だと\", {\"k\":\"言\",\"f\":\"い\"}, \"われています。\"]",
+                "ContentVi": "Tuần tới có đám cưới của bạn tôi. Tôi đang phân vân không biết nên mặc gì đi. Nghe nói rằng nếu ở Nhật, việc nam giới mặc vest là điều phổ biến.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "この人は今、どうしていますか。",
+                        "Explanation": "Trạng thái phân vân: 迷っています (Đang lúng túng/phân vân).",
+                        "Options": [
+                            {
+                                "Text": "もう服を決めました",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "何を着るか考えています",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "結婚式に行かないことにしました",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "日本の結婚式で、男性は普通何を着ますか。",
+                        "Explanation": "Dựa vào thông tin: スーツを着るのが一般的 (Mặc vest là phổ biến).",
+                        "Options": [
+                            {
+                                "Text": "Tシャツ",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "パジャマ",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "スーツ",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "雪の日の準備",
+                "TitleVi": "Chuẩn bị cho ngày tuyết rơi",
+                "ContentJp": "明日は大雪になるようです。道が滑りやすくなるので、スニーカーではなく、滑りにくい靴を履くようにしてください。",
+                "ContentFurigana": "[{\"k\":\"明日\",\"f\":\"あした\"}, \"は\", {\"k\":\"大雪\",\"f\":\"おおゆき\"}, \"になるようです。\", {\"k\":\"道\",\"f\":\"みち\"}, \"が\", {\"k\":\"滑\",\"f\":\"すべ\"}, \"りやすくなるので、スニーカーではなく、\", {\"k\":\"滑\",\"f\":\"すべ\"}, \"りにくい\", {\"k\":\"靴\",\"f\":\"くつ\"}, \"を\", {\"k\":\"履\",\"f\":\"は\"}, \"くようにしてください。\"]",
+                "ContentVi": "Có vẻ như ngày mai tuyết sẽ rơi lớn. Vì đường sẽ trở nên dễ trơn trượt, nên xin hãy chú ý đi loại giày khó trơn trượt thay vì giày thể thao thường.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "明日の天気はどうですか。",
+                        "Explanation": "Dự đoán dựa trên quan sát: 大雪になるようです (Có vẻ sẽ có tuyết lớn).",
+                        "Options": [
+                            {
+                                "Text": "晴れます",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "大雨になります",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "たくさん雪が降ります",
+                                "IsCorrect": true
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "どんな靴がいいですか。",
+                        "Explanation": "Lời khuyên: 滑りにくい靴 (Giày khó trơn trượt).",
+                        "Options": [
+                            {
+                                "Text": "滑りやすい靴",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "滑りにくい靴",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "サンダル",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "クールビズについて",
+                "TitleVi": "Về phong cách Cool Biz",
+                "ContentJp": "夏の日本の会社では「クールビズ」という習慣があります。ネクタイをしないで仕事をしてもいいというルールです。涼しく過ごせるので、体にもいいです。",
+                "ContentFurigana": "[{\"k\":\"夏\",\"f\":\"なつ\"}, \"の\", {\"k\":\"日本\",\"f\":\"にほん\"}, \"の\", {\"k\":\"会社\",\"f\":\"かいしゃ\"}, \"では「クールビズ」という\", {\"k\":\"習慣\",\"f\":\"しゅうかん\"}, \"があります。ネクタイをしないで\", {\"k\":\"仕事\",\"f\":\"しごと\"}, \"をしてもいいというルールです。\", {\"k\":\"涼\",\"f\":\"すず\"}, \"しく\", {\"k\":\"過\",\"f\":\"す\"}, \"ごせるので、\", {\"k\":\"体\",\"f\":\"からだ\"}, \"にもいいです。\"]",
+                "ContentVi": "Tại các công ty Nhật Bản vào mùa hè có một tập quán gọi là \"Cool Biz\". Đó là quy định cho phép làm việc mà không cần thắt cà vạt. Vì có thể trải qua thời gian mát mẻ nên điều này cũng tốt cho cơ thể.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "「クールビズ」はどんなルールですか。",
+                        "Explanation": "Dựa vào giải thích: ネクタイをしないで仕事をしてもいい (Không cần thắt cà vạt vẫn được).",
+                        "Options": [
+                            {
+                                "Text": "ネクタイを必ずしなければならない",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "ネクタイをしなくてもいい",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "会社を休んでもいい",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "どうしてこのルールはいいですか。",
+                        "Explanation": "Lợi ích: 涼しく過ごせて、体にいいから (Mát mẻ và tốt cho cơ thể).",
+                        "Options": [
+                            {
+                                "Text": "涼しく過ごせるから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "服が安くなるから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "仕事が早く終わるから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "デパートで試着",
+                "TitleVi": "Thử đồ ở trung tâm thương mại",
+                "ContentJp": "デパートで青いワンピースを見つけました。試着室で着てみたら、ぴったりだったので、買うことにしました。",
+                "ContentFurigana": "[\"デパートで\", {\"k\":\"青\",\"f\":\"あお\"}, \"いワンピースを\", {\"k\":\"見\",\"f\":\"み\"}, \"つけました。\", {\"k\":\"試着室\",\"f\":\"しちゃくしつ\"}, \"で\", {\"k\":\"着\",\"f\":\"き\"}, \"てみたら、ぴったりだったので、\", {\"k\":\"買\",\"f\":\"か\"}, \"うことにしました。\"]",
+                "ContentVi": "Tôi đã tìm thấy một chiếc váy liền màu xanh ở trung tâm thương mại. Khi mặc thử trong phòng thử đồ, vì nó vừa vặn nên tôi đã quyết định mua.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どこで服を着てみましたか。",
+                        "Explanation": "Dựa vào câu: 試着室で着てみたら (Khi thử đồ ở phòng thử đồ).",
+                        "Options": [
+                            {
+                                "Text": "家で",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "試着室で",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "デパートの外で",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "ワンピースを買いましたか。",
+                        "Explanation": "Dựa vào kết quả: 買うことにしました (Đã quyết định mua).",
+                        "Options": [
+                            {
+                                "Text": "はい、買った",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "いいえ、買わなかった",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "大きすぎたから買わなかった",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "洗濯のマーク",
+                "TitleVi": "Ký hiệu giặt giũ",
+                "ContentJp": "セーターを洗う前に、服のマークを確認したほうがいいです。このセーターは洗濯機で洗うと小さくなってしまうので、手で洗わなければなりません。",
+                "ContentFurigana": "[\"セーターを\", {\"k\":\"洗\",\"f\":\"あら\"}, \"う\", {\"k\":\"前\",\"f\":\"まえ\"}, \"に、\", {\"k\":\"服\",\"f\":\"ふく\"}, \"のマークを\", {\"k\":\"確認\",\"f\":\"かくにん\"}, \"したほうがいいです。このセーターは\", {\"k\":\"洗濯機\",\"f\":\"せんたくき\"}, \"で\", {\"k\":\"洗\",\"f\":\"あら\"}, \"うと\", {\"k\":\"小\",\"f\":\"ちい\"}, \"さくなってしまうので、\", {\"k\":\"手\",\"f\":\"て\"}, \"で\", {\"k\":\"洗\",\"f\":\"あら\"}, \"わなければなりません。\"]",
+                "ContentVi": "Trước khi giặt áo len, bạn nên kiểm tra ký hiệu trên quần áo. Vì chiếc áo len này nếu giặt bằng máy sẽ bị co nhỏ lại, nên phải giặt bằng tay.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "セーターを洗う前に、何をしますか。",
+                        "Explanation": "Dựa vào: 服のマークを確認したほうがいいです。",
+                        "Options": [
+                            {
+                                "Text": "マークを確認する",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "洗濯機を買う",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "手を洗う",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "このセーターはどうやって洗いますか。",
+                        "Explanation": "Dựa vào câu chốt: 手で洗わなければなりません。",
+                        "Options": [
+                            {
+                                "Text": "洗濯機で洗う",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "洗わない",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "手で洗う",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "衣替え",
+                "TitleVi": "Đổi quần áo theo mùa",
+                "ContentJp": "もう秋になったので、夏服をしまって、冬服を出しました。でも、今日はまた少し暑くなったので、半袖を着ています。",
+                "ContentFurigana": "[\"もう\", {\"k\":\"秋\",\"f\":\"あき\"}, \"になったので、\", {\"k\":\"夏服\",\"f\":\"なつふく\"}, \"をしまって、\", {\"k\":\"冬服\",\"f\":\"ふゆふく\"}, \"を\", {\"k\":\"出\",\"f\":\"だ\"}, \"しました。でも、\", {\"k\":\"今日\",\"f\":\"きょう\"}, \"はまた\", {\"k\":\"少\",\"f\":\"すこ\"}, \"し\", {\"k\":\"暑\",\"f\":\"あつ\"}, \"くなったので、\", {\"k\":\"半袖\",\"f\":\"はんそで\"}, \"を\", {\"k\":\"着\",\"f\":\"き\"}, \"ています。\"]",
+                "ContentVi": "Vì đã sang thu nên tôi đã cất quần áo mùa hè đi và lấy quần áo mùa đông ra. Nhưng hôm nay trời lại hơi nóng lên nên tôi đang mặc áo cộc tay.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "なぜ冬服を出しましたか。",
+                        "Explanation": "Lý do ở vế đầu: もう秋になったので (Vì đã sang thu).",
+                        "Options": [
+                            {
+                                "Text": "冬になったから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "秋になったから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "春になったから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "今日に何を着ていますか。",
+                        "Explanation": "Hành động hiện tại: 今日は...半袖を着ています。",
+                        "Options": [
+                            {
+                                "Text": "冬服",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "コート",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "半袖",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "海とサングラス",
+                "TitleVi": "Biển và kính râm",
+                "ContentJp": "明日、友達と海へ遊びに行きます。日差しが強いと思うので、新しいサングラスを持っていくつもりです。日焼け止めも忘れないようにします。",
+                "ContentFurigana": "[{\"k\":\"明日\",\"f\":\"あした\"}, \"、\", {\"k\":\"友達\",\"f\":\"ともだち\"}, \"と\", {\"k\":\"海\",\"f\":\"うみ\"}, \"へ\", {\"k\":\"遊\",\"f\":\"あそ\"}, \"びに\", {\"k\":\"行\",\"f\":\"い\"}, \"きます。\", {\"k\":\"日差\",\"f\":\"ひざ\"}, \"しが\", {\"k\":\"強\",\"f\":\"つよ\"}, \"いと\", {\"k\":\"思\",\"f\":\"おも\"}, \"うので、\", {\"k\":\"新\",\"f\":\"あたら\"}, \"しいサングラスを\", {\"k\":\"持\",\"f\":\"も\"}, \"っていくつもりです。\", {\"k\":\"日焼\",\"f\":\"ひや\"}, \"け\", {\"k\":\"止\",\"f\":\"ど\"}, \"めも\", {\"k\":\"忘\",\"f\":\"わす\"}, \"れないようにします。\"]",
+                "ContentVi": "Ngày mai, tôi sẽ đi chơi biển cùng bạn. Vì tôi nghĩ nắng sẽ gắt nên tôi định mang theo cặp kính râm mới. Tôi cũng sẽ chú ý không quên kem chống nắng.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "海へ何を持っていきますか。",
+                        "Explanation": "Dựa vào: サングラスを持っていくつもりです + 日焼け止めも...",
+                        "Options": [
+                            {
+                                "Text": "サングラスと日焼け止め",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "傘と日焼け止め",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "水着だけ",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "どうしてサングラスを持っていきますか。",
+                        "Explanation": "Dựa vào: 日差しが強いと思うので (Vì nghĩ nắng sẽ gắt).",
+                        "Options": [
+                            {
+                                "Text": "海が好きだから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "友達のサングラスだから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "日差しが強いと思うから",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "春の風",
+                "TitleVi": "Gió mùa xuân",
+                "ContentJp": "春になりました。今日の風は少し冷たいです。私は薄いセーターを着て、学校へ行きます。",
+                "ContentFurigana": "[{\"k\":\"春\",\"f\":\"はる\"}, \"になりました。\", {\"k\":\"今日\",\"f\":\"きょう\"}, \"の\", {\"k\":\"風\",\"f\":\"かぜ\"}, \"は\", {\"k\":\"少\",\"f\":\"すこ\"}, \"し\", {\"k\":\"冷\",\"f\":\"つめ\"}, \"たいです。\", {\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"薄\",\"f\":\"うす\"}, \"いセーターを\", {\"k\":\"着\",\"f\":\"き\"}, \"て、\", {\"k\":\"学校\",\"f\":\"がっこう\"}, \"へ\", {\"k\":\"行\",\"f\":\"い\"}, \"きます。\"]",
+                "ContentVi": "Mùa xuân đến rồi. Gió hôm nay hơi lạnh một chút. Tôi mặc một chiếc áo len mỏng và đi đến trường.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "今日の風はどうですか。",
+                        "Explanation": "Dựa vào câu: 今日の風は少し冷たいです (Gió hôm nay hơi lạnh).",
+                        "Options": [
+                            {
+                                "Text": "少し冷たい",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "とても暑い",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "強い",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "何を着て学校へ行きますか。",
+                        "Explanation": "Dựa vào câu: 薄いセーターを着て (Mặc áo len mỏng).",
+                        "Options": [
+                            {
+                                "Text": "厚いコート",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "薄いセーター",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "半袖のシャツ",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "新しい帽子",
+                "TitleVi": "Chiếc mũ mới",
+                "ContentJp": "夏はとても暑いですから、昨日デパートで新しい帽子を買いました。明日、海へ行くとき、この帽子を被ります。",
+                "ContentFurigana": "[{\"k\":\"夏\",\"f\":\"なつ\"}, \"はとても\", {\"k\":\"暑\",\"f\":\"あつ\"}, \"いですから、\", {\"k\":\"昨日\",\"f\":\"きのう\"}, \"デパートで\", {\"k\":\"新\",\"f\":\"あたら\"}, \"しい\", {\"k\":\"帽子\",\"f\":\"ぼうし\"}, \"を\", {\"k\":\"買\",\"f\":\"か\"}, \"いました。\", {\"k\":\"明日\",\"f\":\"あした\"}, \"、\", {\"k\":\"海\",\"f\":\"うみ\"}, \"へ\", {\"k\":\"行\",\"f\":\"い\"}, \"くとき、この\", {\"k\":\"帽子\",\"f\":\"ぼうし\"}, \"を\", {\"k\":\"被\",\"f\":\"かぶ\"}, \"ります。\"]",
+                "ContentVi": "Vì mùa hè rất nóng nên hôm qua tôi đã mua một chiếc mũ mới ở trung tâm thương mại. Ngày mai, khi đi biển, tôi sẽ đội chiếc mũ này.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "いつ帽子を買いましたか。",
+                        "Explanation": "Dựa vào câu: 昨日デパートで新しい帽子を買いました (Hôm qua mua mũ mới).",
+                        "Options": [
+                            {
+                                "Text": "今日",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "昨日",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "明日",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "いつ帽子を被りますか。",
+                        "Explanation": "Dựa vào câu: 明日、海へ行くとき (Ngày mai, khi đi biển).",
+                        "Options": [
+                            {
+                                "Text": "明日",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "昨日",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "今日",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "秋の散歩",
+                "TitleVi": "Đi dạo mùa thu",
+                "ContentJp": "秋は涼しいです。夕方、公園を散歩します。少し寒いですから、上着を着ます。",
+                "ContentFurigana": "[{\"k\":\"秋\",\"f\":\"あき\"}, \"は\", {\"k\":\"涼\",\"f\":\"すず\"}, \"しいです。\", {\"k\":\"夕方\",\"f\":\"ゆうがた\"}, \"、\", {\"k\":\"公園\",\"f\":\"こうえん\"}, \"を\", {\"k\":\"散歩\",\"f\":\"さんぽ\"}, \"します。\", {\"k\":\"少\",\"f\":\"すこ\"}, \"し\", {\"k\":\"寒\",\"f\":\"さむ\"}, \"いですから、\", {\"k\":\"上着\",\"f\":\"うわぎ\"}, \"を\", {\"k\":\"着\",\"f\":\"き\"}, \"ます。\"]",
+                "ContentVi": "Mùa thu mát mẻ. Buổi chiều tối, tôi đi dạo ở công viên. Vì hơi lạnh nên tôi mặc áo khoác ngoài.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "いつ散歩しますか。",
+                        "Explanation": "Dựa vào câu: 夕方、公園を散歩します (Chiều tối đi dạo).",
+                        "Options": [
+                            {
+                                "Text": "朝",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "昼",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "夕方",
+                                "IsCorrect": true
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "どうして上着を着ますか。",
+                        "Explanation": "Dựa vào câu: 少し寒いですから、上着を着ます (Vì hơi lạnh nên mặc áo).",
+                        "Options": [
+                            {
+                                "Text": "少し寒いから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "暑いから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "雨が降るから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "雪と手袋",
+                "TitleVi": "Tuyết và găng tay",
+                "ContentJp": "外は雪が降っています。私は暖かい手袋をして、庭で雪だるまを作ります。",
+                "ContentFurigana": "[{\"k\":\"外\",\"f\":\"そと\"}, \"は\", {\"k\":\"雪\",\"f\":\"ゆき\"}, \"が\", {\"k\":\"降\",\"f\":\"ふ\"}, \"っています。\", {\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"暖\",\"f\":\"あたた\"}, \"かい\", {\"k\":\"手袋\",\"f\":\"てぶくろ\"}, \"をして、\", {\"k\":\"庭\",\"f\":\"にわ\"}, \"で雪だるまを\", {\"k\":\"作\",\"f\":\"つく\"}, \"ります。\"]",
+                "ContentVi": "Bên ngoài tuyết đang rơi. Tôi đeo găng tay ấm và làm người tuyết ngoài sân.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "外の天気はどうですか。",
+                        "Explanation": "Dựa vào câu: 外は雪が降っています (Ngoài trời đang rơi tuyết).",
+                        "Options": [
+                            {
+                                "Text": "雨が降っています",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "雪が降っています",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "晴れています",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "庭で何をしますか。",
+                        "Explanation": "Dựa vào câu: 庭で雪だるまを作ります (Làm người tuyết ở sân).",
+                        "Options": [
+                            {
+                                "Text": "雪だるまを作ります",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "散歩します",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "手袋を買います",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "晴れの日の洗濯",
+                "TitleVi": "Giặt giũ ngày nắng",
+                "ContentJp": "今日はいい天気です。空が青いです。私は白いシャツをたくさん洗います。",
+                "ContentFurigana": "[{\"k\":\"今日\",\"f\":\"きょう\"}, \"はいい\", {\"k\":\"天気\",\"f\":\"てんき\"}, \"です。\", {\"k\":\"空\",\"f\":\"そら\"}, \"が\", {\"k\":\"青\",\"f\":\"あお\"}, \"いです。\", {\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"白\",\"f\":\"しろ\"}, \"いシャツをたくさん\", {\"k\":\"洗\",\"f\":\"あら\"}, \"います。\"]",
+                "ContentVi": "Hôm nay thời tiết đẹp. Bầu trời xanh rờn. Tôi sẽ giặt rất nhiều áo sơ mi trắng.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "今日の天気はどうですか。",
+                        "Explanation": "Dựa vào câu: 今日はいい天気です (Thời tiết đẹp/nắng).",
+                        "Options": [
+                            {
+                                "Text": "雪です",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "いい天気です",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "雨です",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "何を洗いますか。",
+                        "Explanation": "Dựa vào câu: 白いシャツをたくさん洗います (Giặt áo sơ mi trắng).",
+                        "Options": [
+                            {
+                                "Text": "黒い靴",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "白いシャツ",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "赤いコート",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "雨の日の靴",
+                "TitleVi": "Giày cho ngày mưa",
+                "ContentJp": "明日は雨が降りますから、靴屋へ行きました。そして、黄色い長靴を買いました。",
+                "ContentFurigana": "[{\"k\":\"明日\",\"f\":\"あした\"}, \"は\", {\"k\":\"雨\",\"f\":\"あめ\"}, \"が\", {\"k\":\"降\",\"f\":\"ふ\"}, \"りますから、\", {\"k\":\"靴屋\",\"f\":\"くつや\"}, \"へ\", {\"k\":\"行\",\"f\":\"い\"}, \"きました。そして、\", {\"k\":\"黄色\",\"f\":\"きいろ\"}, \"い\", {\"k\":\"長靴\",\"f\":\"ながぐつ\"}, \"を\", {\"k\":\"買\",\"f\":\"か\"}, \"いました。\"]",
+                "ContentVi": "Vì ngày mai trời sẽ mưa nên tôi đã đi đến cửa hàng giày. Và tôi đã mua một đôi ủng màu vàng.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "なぜ靴屋へ行きましたか。",
+                        "Explanation": "Dựa vào câu: 明日は雨が降りますから (Vì ngày mai trời mưa).",
+                        "Options": [
+                            {
+                                "Text": "靴が古いから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "明日は雨が降るから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "天気がいいから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "どんな靴を買いましたか。",
+                        "Explanation": "Dựa vào câu: 黄色い長靴を買いました (Mua đôi ủng vàng).",
+                        "Options": [
+                            {
+                                "Text": "白い靴",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "黒い靴",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "黄色い長靴",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "傘を忘れました",
+                "TitleVi": "Quên ô",
+                "ContentJp": "午後、急に雨が降りました。私は傘がありませんでした。服が濡れたので、家で着替えます。",
+                "ContentFurigana": "[{\"k\":\"午後\",\"f\":\"ごご\"}, \"、\", {\"k\":\"急\",\"f\":\"きゅう\"}, \"に\", {\"k\":\"雨\",\"f\":\"あめ\"}, \"が\", {\"k\":\"降\",\"f\":\"ふ\"}, \"りました。\", {\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"傘\",\"f\":\"かさ\"}, \"がありませんでした。\", {\"k\":\"服\",\"f\":\"ふく\"}, \"が\", {\"k\":\"濡\",\"f\":\"ぬ\"}, \"れたので、\", {\"k\":\"家\",\"f\":\"いえ\"}, \"で\", {\"k\":\"着替\",\"f\":\"きが\"}, \"えます。\"]",
+                "ContentVi": "Buổi chiều, trời bỗng nhiên đổ mưa. Tôi không có ô. Vì quần áo bị ướt nên tôi sẽ thay đồ ở nhà.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "午後、天気がどうなりましたか。",
+                        "Explanation": "Dựa vào câu: 急に雨が降りました (Trời đột nhiên đổ mưa).",
+                        "Options": [
+                            {
+                                "Text": "急に雨が降りました",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "晴れました",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "雪が降りました",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "この人はどうして服を着替えますか。",
+                        "Explanation": "Dựa vào câu: 服が濡れたので (Vì quần áo bị ướt).",
+                        "Options": [
+                            {
+                                "Text": "服が汚いから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "服が濡れたから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "暑いから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "青いマフラー",
+                "TitleVi": "Chiếc khăn quàng xanh",
+                "ContentJp": "冬の風はとても冷たいです。私はいつも青いマフラーをします。このマフラーは友達にもらいました。",
+                "ContentFurigana": "[{\"k\":\"冬\",\"f\":\"ふゆ\"}, \"の\", {\"k\":\"風\",\"f\":\"かぜ\"}, \"はとても\", {\"k\":\"冷\",\"f\":\"つめ\"}, \"たいです。\", {\"k\":\"私\",\"f\":\"わたし\"}, \"はいつも\", {\"k\":\"青\",\"f\":\"あお\"}, \"いマフラーをします。このマフラーは\", {\"k\":\"友達\",\"f\":\"ともだち\"}, \"にもらいました。\"]",
+                "ContentVi": "Gió mùa đông rất lạnh. Tôi luôn quàng một chiếc khăn màu xanh. Chiếc khăn này tôi nhận từ một người bạn.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "冬の風はどうですか。",
+                        "Explanation": "Dựa vào câu: 冬の風はとても冷たいです (Gió mùa đông rất lạnh).",
+                        "Options": [
+                            {
+                                "Text": "暖かいです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "とても冷たいです",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "涼しいです",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "誰がマフラーをくれましたか。",
+                        "Explanation": "Dựa vào câu: このマフラーは友達にもらいました (Nhận từ bạn).",
+                        "Options": [
+                            {
+                                "Text": "母",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "先生",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "友達",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "暑い日",
+                "TitleVi": "Ngày nóng bức",
+                "ContentJp": "今日は３５度です。とても暑いですから、短いズボンを穿いて出かけます。",
+                "ContentFurigana": "[{\"k\":\"今日\",\"f\":\"きょう\"}, \"は３５\", {\"k\":\"度\",\"f\":\"ど\"}, \"です。とても\", {\"k\":\"暑\",\"f\":\"あつ\"}, \"いですから、\", {\"k\":\"短\",\"f\":\"みじか\"}, \"いズボンを\", {\"k\":\"穿\",\"f\":\"は\"}, \"いて\", {\"k\":\"出\",\"f\":\"で\"}, \"かけます。\"]",
+                "ContentVi": "Hôm nay trời 35 độ. Vì rất nóng nên tôi mặc quần đùi (ngắn) rồi đi ra ngoài.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "今日は何度ですか。",
+                        "Explanation": "Dựa vào câu: 今日は３５度です (Hôm nay 35 độ).",
+                        "Options": [
+                            {
+                                "Text": "２５度",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "３５度",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "１５度",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "何を穿いて出かけますか。",
+                        "Explanation": "Dựa vào câu: 短いズボンを穿いて (Mặc quần ngắn).",
+                        "Options": [
+                            {
+                                "Text": "長いズボン",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "スカート",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "短いズボン",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "曇りの空",
+                "TitleVi": "Bầu trời đầy mây",
+                "ContentJp": "空が暗いです。曇りですね。たぶん雨が降りますから、カバンに傘を入れます。",
+                "ContentFurigana": "[{\"k\":\"空\",\"f\":\"そら\"}, \"が\", {\"k\":\"暗\",\"f\":\"くら\"}, \"いです。\", {\"k\":\"曇\",\"f\":\"くも\"}, \"りですね。たぶん\", {\"k\":\"雨\",\"f\":\"あめ\"}, \"が\", {\"k\":\"降\",\"f\":\"ふ\"}, \"りますから、カバンに\", {\"k\":\"傘\",\"f\":\"かさ\"}, \"を\", {\"k\":\"入\",\"f\":\"い\"}, \"れます。\"]",
+                "ContentVi": "Trời tối sầm. Nhiều mây nhỉ. Chắc là trời sẽ mưa nên tôi cất ô vào trong cặp.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "今の空はどうですか。",
+                        "Explanation": "Dựa vào câu: 空が暗いです。曇りですね (Trời tối, nhiều mây).",
+                        "Options": [
+                            {
+                                "Text": "明るいです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "暗いです",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "青いです",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "カバンに何を入れますか。",
+                        "Explanation": "Dựa vào câu: カバンに傘を入れます (Bỏ ô vào cặp).",
+                        "Options": [
+                            {
+                                "Text": "傘",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "本",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "靴",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "台風の準備",
+                "TitleVi": "Chuẩn bị cho bão",
+                "ContentJp": "天気予報によると、今夜大きい台風が来るそうです。外に出るのは危険なので、今日は一日中パジャマで家で過ごすつもりです。",
+                "ContentFurigana": "[{\"k\":\"天気予報\",\"f\":\"てんきよほう\"}, \"によると、\", {\"k\":\"今夜\",\"f\":\"こんや\"}, {\"k\":\"大\",\"f\":\"おお\"}, \"きい\", {\"k\":\"台風\",\"f\":\"たいふう\"}, \"が\", {\"k\":\"来\",\"f\":\"く\"}, \"るそうです。\", {\"k\":\"外\",\"f\":\"そと\"}, \"に\", {\"k\":\"出\",\"f\":\"で\"}, \"るのは\", {\"k\":\"危険\",\"f\":\"きけん\"}, \"なので、\", {\"k\":\"今日\",\"f\":\"きょう\"}, \"は\", {\"k\":\"一日中\",\"f\":\"いちにちじゅう\"}, \"パジャマで\", {\"k\":\"家\",\"f\":\"いえ\"}, \"で\", {\"k\":\"過\",\"f\":\"す\"}, \"ごすつもりです。\"]",
+                "ContentVi": "Theo dự báo thời tiết, nghe nói đêm nay sẽ có một cơn bão lớn ập đến. Vì ra ngoài rất nguy hiểm nên hôm nay tôi định mặc nguyên đồ ngủ (pajama) và ở trong nhà suốt cả ngày.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "今夜の天気はどうなりますか。",
+                        "Explanation": "Dựa vào thông tin: 大きい台風が来るそうです (Sẽ có bão lớn).",
+                        "Options": [
+                            {
+                                "Text": "大きい台風が来ます",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "雪が降ります",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "とても晴れます",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "今日はどう過ごすつもりですか。",
+                        "Explanation": "Dựa vào câu: 一日中パジャマで家で過ごすつもりです (Định ở nhà cả ngày mặc đồ ngủ).",
+                        "Options": [
+                            {
+                                "Text": "厚い服を着て外に出ます",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "パジャマで家で過ごします",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "友達の家で過ごします",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "急に寒くなる日",
+                "TitleVi": "Ngày trời trở lạnh đột ngột",
+                "ContentJp": "朝は暖かかったのに、夕方になって急に寒くなりました。風邪をひかないように、厚いコートを持ってくればよかったです。",
+                "ContentFurigana": "[{\"k\":\"朝\",\"f\":\"あさ\"}, \"は\", {\"k\":\"暖\",\"f\":\"あたた\"}, \"かかったのに、\", {\"k\":\"夕方\",\"f\":\"ゆうがた\"}, \"になって\", {\"k\":\"急\",\"f\":\"きゅう\"}, \"に\", {\"k\":\"寒\",\"f\":\"さむ\"}, \"くなりました。\", {\"k\":\"風邪\",\"f\":\"かぜ\"}, \"をひかないように、\", {\"k\":\"厚\",\"f\":\"あつ\"}, \"いコートを\", {\"k\":\"持\",\"f\":\"も\"}, \"ってくればよかったです。\"]",
+                "ContentVi": "Dù buổi sáng trời ấm nhưng đến chiều tối lại đột nhiên trở lạnh. Để không bị cảm, giá mà tôi mang theo một chiếc áo khoác dày thì tốt biết mấy.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "いつ急に寒くなりましたか。",
+                        "Explanation": "Dựa vào câu: 夕方になって急に寒くなりました (Đến chiều tối thì đột nhiên lạnh).",
+                        "Options": [
+                            {
+                                "Text": "朝",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "昼",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "夕方",
+                                "IsCorrect": true
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "この人はどう思っていますか。",
+                        "Explanation": "Mẫu câu hối tiếc: 厚いコートを持ってくればよかったです (Giá mà mang theo áo khoác dày).",
+                        "Options": [
+                            {
+                                "Text": "厚いコートを着たくないです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "厚いコートを持ってくればよかったと思っています",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "風邪をひいてよかったです",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "冬の乾燥",
+                "TitleVi": "Không khí khô hanh mùa đông",
+                "ContentJp": "日本の冬は空気がとても乾燥します。喉が痛くならないように、出かけるときは必ずマスクをして、マフラーを巻くようにしています。",
+                "ContentFurigana": "[{\"k\":\"日本\",\"f\":\"にほん\"}, \"の\", {\"k\":\"冬\",\"f\":\"ふゆ\"}, \"は\", {\"k\":\"空気\",\"f\":\"くうき\"}, \"がとても\", {\"k\":\"乾燥\",\"f\":\"かんそう\"}, \"します。\", {\"k\":\"喉\",\"f\":\"のど\"}, \"が\", {\"k\":\"痛\",\"f\":\"いた\"}, \"くならないように、\", {\"k\":\"出\",\"f\":\"で\"}, \"かけるときは\", {\"k\":\"必\",\"f\":\"かなら\"}, \"ずマスクをして、マフラーを\", {\"k\":\"巻\",\"f\":\"ま\"}, \"くようにしています。\"]",
+                "ContentVi": "Mùa đông ở Nhật Bản không khí rất khô hanh. Để không bị đau họng, khi ra ngoài tôi luôn cố gắng đeo khẩu trang và quàng khăn.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "日本の冬はどうですか。",
+                        "Explanation": "Dựa vào câu: 冬は空気がとても乾燥します (Không khí rất khô).",
+                        "Options": [
+                            {
+                                "Text": "空気がとても乾燥します",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "いつも雨が降ります",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "空気がきれいです",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "どうしてマスクをしますか。",
+                        "Explanation": "Mục đích: 喉が痛くならないように (Để không bị đau họng).",
+                        "Options": [
+                            {
+                                "Text": "喉が痛くならないようにするため",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "顔を隠すため",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "マフラーが買えないため",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "日本の夏",
+                "TitleVi": "Mùa hè Nhật Bản",
+                "ContentJp": "日本の夏は気温が高いだけでなく、湿度も高くて蒸し暑いです。ですから、風通しが良くて、涼しい服を着る人が多いです。",
+                "ContentFurigana": "[{\"k\":\"日本\",\"f\":\"にほん\"}, \"の\", {\"k\":\"夏\",\"f\":\"なつ\"}, \"は\", {\"k\":\"気温\",\"f\":\"きおん\"}, \"が\", {\"k\":\"高\",\"f\":\"たか\"}, \"いだけでなく、\", {\"k\":\"湿度\",\"f\":\"しつど\"}, \"も\", {\"k\":\"高\",\"f\":\"たか\"}, \"くて\", {\"k\":\"蒸\",\"f\":\"む\"}, \"し\", {\"k\":\"暑\",\"f\":\"あつ\"}, \"いです。ですから、\", {\"k\":\"風通\",\"f\":\"かぜとお\"}, \"しが\", {\"k\":\"良\",\"f\":\"よ\"}, \"くて、\", {\"k\":\"涼\",\"f\":\"すず\"}, \"しい\", {\"k\":\"服\",\"f\":\"ふく\"}, \"を\", {\"k\":\"着\",\"f\":\"き\"}, \"る\", {\"k\":\"人\",\"f\":\"ひと\"}, \"が\", {\"k\":\"多\",\"f\":\"おお\"}, \"いです。\"]",
+                "ContentVi": "Mùa hè ở Nhật không chỉ nhiệt độ cao mà độ ẩm cũng cao nên rất oi bức. Do đó, có rất nhiều người mặc những bộ quần áo thoáng gió và mát mẻ.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "日本の夏はどうして蒸し暑いですか。",
+                        "Explanation": "Lý do: 気温が高いだけでなく、湿度も高くて (Không chỉ nhiệt độ cao mà độ ẩm cũng cao).",
+                        "Options": [
+                            {
+                                "Text": "気温が高くて、湿度も高いからです",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "雨があまり降らないからです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "涼しい服を着る人が多いからです",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "夏はどんな服を着る人が多いですか。",
+                        "Explanation": "Dựa vào câu: 風通しが良くて、涼しい服を着る人が多い (Người mặc đồ thoáng gió mát mẻ rất nhiều).",
+                        "Options": [
+                            {
+                                "Text": "黒くて厚い服",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "風通しが良くて涼しい服",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "高くてきれいな服",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "服の色",
+                "TitleVi": "Màu sắc của quần áo",
+                "ContentJp": "部屋の中で見ると黒いシャツだと思いましたが、外に出て太陽の光の下で見ると、濃い青色でした。少し驚きました。",
+                "ContentFurigana": "[{\"k\":\"部屋\",\"f\":\"へや\"}, \"の\", {\"k\":\"中\",\"f\":\"なか\"}, \"で\", {\"k\":\"見\",\"f\":\"み\"}, \"ると\", {\"k\":\"黒\",\"f\":\"くろ\"}, \"いシャツだと\", {\"k\":\"思\",\"f\":\"おも\"}, \"いましたが、\", {\"k\":\"外\",\"f\":\"そと\"}, \"に\", {\"k\":\"出\",\"f\":\"で\"}, \"て\", {\"k\":\"太陽\",\"f\":\"たいよう\"}, \"の\", {\"k\":\"光\",\"f\":\"ひかり\"}, \"の\", {\"k\":\"下\",\"f\":\"した\"}, \"で\", {\"k\":\"見\",\"f\":\"み\"}, \"ると、\", {\"k\":\"濃\",\"f\":\"こ\"}, \"い\", {\"k\":\"青色\",\"f\":\"あおいろ\"}, \"でした。\", {\"k\":\"少\",\"f\":\"すこ\"}, \"し\", {\"k\":\"驚\",\"f\":\"おどろ\"}, \"きました。\"]",
+                "ContentVi": "Khi nhìn trong phòng, tôi nghĩ đó là chiếc áo màu đen, nhưng khi ra ngoài nhìn dưới ánh sáng mặt trời thì nó lại là màu xanh đậm. Tôi đã hơi ngạc nhiên.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "外で見ると服は何色でしたか。",
+                        "Explanation": "Dựa vào câu: 太陽の光の下で見ると、濃い青色でした (Nhìn dưới nắng là xanh đậm).",
+                        "Options": [
+                            {
+                                "Text": "黒色",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "濃い青色",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "白色",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "部屋の中では何色だと思いましたか。",
+                        "Explanation": "Dựa vào câu: 部屋の中で見ると黒いシャツだと思いましたが (Trong phòng thì nghĩ là màu đen).",
+                        "Options": [
+                            {
+                                "Text": "青色",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "黄色",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "黒色",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "山登りの服装",
+                "TitleVi": "Trang phục leo núi",
+                "ContentJp": "山の天気は変わりやすいと言われています。晴れていても急に雨が降ることがあるので、雨具を持っていったほうがいいですよ。",
+                "ContentFurigana": "[{\"k\":\"山\",\"f\":\"やま\"}, \"の\", {\"k\":\"天気\",\"f\":\"てんき\"}, \"は\", {\"k\":\"変\",\"f\":\"か\"}, \"わりやすいと\", {\"k\":\"言\",\"f\":\"い\"}, \"われています。\", {\"k\":\"晴\",\"f\":\"は\"}, \"れていても\", {\"k\":\"急\",\"f\":\"きゅう\"}, \"に\", {\"k\":\"雨\",\"f\":\"あめ\"}, \"が\", {\"k\":\"降\",\"f\":\"ふ\"}, \"ることがあるので、\", {\"k\":\"雨具\",\"f\":\"あまぐ\"}, \"を\", {\"k\":\"持\",\"f\":\"も\"}, \"っていったほうがいいですよ。\"]",
+                "ContentVi": "Thời tiết trên núi được cho là rất dễ thay đổi. Dù trời đang nắng cũng có lúc đột nhiên đổ mưa nên bạn nên mang theo áo mưa/dụng cụ đi mưa thì tốt hơn.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "山の天気について何と言われていますか。",
+                        "Explanation": "Dựa vào câu: 山の天気は変わりやすいと言われています (Thời tiết dễ thay đổi).",
+                        "Options": [
+                            {
+                                "Text": "いつも雨が降る",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "変わりやすい",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "とても暑い",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "何を持っていったほうがいいですか。",
+                        "Explanation": "Lời khuyên: 雨具を持っていったほうがいいですよ (Nên mang theo đồ đi mưa).",
+                        "Options": [
+                            {
+                                "Text": "厚いコート",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "大きいカバン",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "雨具",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "週末の洗濯",
+                "TitleVi": "Giặt giũ cuối tuần",
+                "ContentJp": "今週はずっと雨が降っていましたが、週末はやっと晴れるそうです。厚い毛布や冬のコートをまとめて洗濯しようと思います。",
+                "ContentFurigana": "[{\"k\":\"今週\",\"f\":\"こんしゅう\"}, \"はずっと\", {\"k\":\"雨\",\"f\":\"あめ\"}, \"が\", {\"k\":\"降\",\"f\":\"ふ\"}, \"っていましたが、\", {\"k\":\"週末\",\"f\":\"しゅうまつ\"}, \"はやっと\", {\"k\":\"晴\",\"f\":\"は\"}, \"れるそうです。\", {\"k\":\"厚\",\"f\":\"あつ\"}, \"い\", {\"k\":\"毛布\",\"f\":\"もうふ\"}, \"や\", {\"k\":\"冬\",\"f\":\"ふゆ\"}, \"のコートをまとめて\", {\"k\":\"洗濯\",\"f\":\"せんたく\"}, \"しようと\", {\"k\":\"思\",\"f\":\"おも\"}, \"います。\"]",
+                "ContentVi": "Tuần này trời cứ mưa rả rích suốt, nhưng nghe nói cuối tuần thì cuối cùng cũng sẽ nắng. Tôi định gom chăn dày và áo khoác mùa đông lại để giặt luôn một thể.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "今週の天気はずっとどうでしたか。",
+                        "Explanation": "Dựa vào câu: 今週はずっと雨が降っていました (Tuần này trời mưa suốt).",
+                        "Options": [
+                            {
+                                "Text": "雨でした",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "晴れでした",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "雪でした",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "週末に何をしようと思っていますか。",
+                        "Explanation": "Dự định: 厚い毛布や冬のコートをまとめて洗濯しようと思います (Định gom chăn, áo khoác giặt).",
+                        "Options": [
+                            {
+                                "Text": "毛布やコートを買いに行こうと思っている",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "毛布やコートを洗濯しようと思っている",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "一日中寝ようと思っている",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "上着を借りる",
+                "TitleVi": "Mượn áo khoác",
+                "ContentJp": "エアコンが強すぎて、部屋の中が寒かったです。友達に「寒そうだから、これを着たら？」と言われて、上着を貸してもらいました。",
+                "ContentFurigana": "[{\"k\":\"部屋\",\"f\":\"へや\"}, \"の\", {\"k\":\"中\",\"f\":\"なか\"}, \"が\", {\"k\":\"寒\",\"f\":\"さむ\"}, \"かったです。\", {\"k\":\"友達\",\"f\":\"ともだち\"}, \"に「\", {\"k\":\"寒\",\"f\":\"さむ\"}, \"そうだから、これを\", {\"k\":\"着\",\"f\":\"き\"}, \"たら？」と\", {\"k\":\"言\",\"f\":\"い\"}, \"われて、\", {\"k\":\"上着\",\"f\":\"うわぎ\"}, \"を\", {\"k\":\"貸\",\"f\":\"か\"}, \"してもらいました。\"]",
+                "ContentVi": "Điều hoà quá mạnh nên trong phòng rất lạnh. Bạn tôi nói 'Trông cậu có vẻ lạnh, thử mặc cái này đi?' và đã cho tôi mượn áo khoác.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "部屋の中はどうして寒かったですか。",
+                        "Explanation": "Nguyên nhân: エアコンが強すぎて (Điều hoà quá mạnh).",
+                        "Options": [
+                            {
+                                "Text": "冬だから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "エアコンが強すぎたから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "窓が開いていたから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "この人はどうしましたか。",
+                        "Explanation": "Kết quả nhận được: 友達に上着を貸してもらいました (Được bạn cho mượn áo khoác).",
+                        "Options": [
+                            {
+                                "Text": "友達に上着を貸してもらった",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "友達に上着を貸してあげた",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "上着を買った",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "お花見の服",
+                "TitleVi": "Trang phục ngắm hoa anh đào",
+                "ContentJp": "春はお花見の季節ですが、夜はまだ冷え込みます。お酒を飲みながら桜を見るなら、暖かい服を着ていくことをおすすめします。",
+                "ContentFurigana": "[{\"k\":\"春\",\"f\":\"はる\"}, \"はお\", {\"k\":\"花見\",\"f\":\"はなみ\"}, \"の\", {\"k\":\"季節\",\"f\":\"きせつ\"}, \"ですが、\", {\"k\":\"夜\",\"f\":\"よる\"}, \"はまだ\", {\"k\":\"冷\",\"f\":\"ひ\"}, \"え\", {\"k\":\"込\",\"f\":\"こ\"}, \"みます。お\", {\"k\":\"酒\",\"f\":\"さけ\"}, \"を\", {\"k\":\"飲\",\"f\":\"の\"}, \"みながら\", {\"k\":\"桜\",\"f\":\"さくら\"}, \"を\", {\"k\":\"見\",\"f\":\"み\"}, \"るなら、\", {\"k\":\"暖\",\"f\":\"あたた\"}, \"かい\", {\"k\":\"服\",\"f\":\"ふく\"}, \"を\", {\"k\":\"着\",\"f\":\"き\"}, \"ていくことをおすすめします。\"]",
+                "ContentVi": "Mùa xuân là mùa ngắm hoa, nhưng ban đêm trời vẫn còn khá lạnh. Nếu bạn vừa uống rượu vừa ngắm hoa thì tôi khuyên bạn nên mặc quần áo ấm.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "春の夜の天気はどうですか。",
+                        "Explanation": "Dựa vào câu: 夜はまだ冷え込みます (Ban đêm trời vẫn còn lạnh/giảm nhiệt sâu).",
+                        "Options": [
+                            {
+                                "Text": "とても暑いです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "まだ冷え込みます",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "いつも雨が降ります",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "お花見に行くとき、どんな服がいいですか。",
+                        "Explanation": "Dựa vào lời khuyên: 暖かい服を着ていくことをおすすめします (Nên mặc áo ấm).",
+                        "Options": [
+                            {
+                                "Text": "暖かい服",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "涼しい服",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "半袖のシャツ",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "紫外線対策",
+                "TitleVi": "Chống tia cực tím",
+                "ContentJp": "夏が近づくと、日差しが強くなります。肌が焼けないように、外出するときは長袖を着たり、日傘をさしたりする女性が多いです。",
+                "ContentFurigana": "[{\"k\":\"夏\",\"f\":\"なつ\"}, \"が\", {\"k\":\"近\",\"f\":\"ちか\"}, \"づくと、\", {\"k\":\"日差\",\"f\":\"ひざ\"}, \"しが\", {\"k\":\"強\",\"f\":\"つよ\"}, \"くなります。\", {\"k\":\"肌\",\"f\":\"はだ\"}, \"が\", {\"k\":\"焼\",\"f\":\"や\"}, \"けないように、\", {\"k\":\"外出\",\"f\":\"がいしゅつ\"}, \"するときは\", {\"k\":\"長袖\",\"f\":\"ながそで\"}, \"を\", {\"k\":\"着\",\"f\":\"き\"}, \"たり、\", {\"k\":\"日傘\",\"f\":\"ひがさ\"}, \"をさしたりする\", {\"k\":\"女性\",\"f\":\"じょせい\"}, \"が\", {\"k\":\"多\",\"f\":\"おお\"}, \"いです。\"]",
+                "ContentVi": "Khi mùa hè đến gần, ánh nắng mặt trời trở nên gay gắt hơn. Để da không bị cháy nắng, có rất nhiều phụ nữ khi ra ngoài sẽ mặc áo dài tay hoặc che ô đi nắng.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "夏が近づくとどうなりますか。",
+                        "Explanation": "Dựa vào câu: 日差しが強くなります (Ánh nắng trở nên gay gắt).",
+                        "Options": [
+                            {
+                                "Text": "涼しくなります",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "日差しが強くなります",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "雨がたくさん降ります",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "肌が焼けないように、外出するとき何をしますか。",
+                        "Explanation": "Dựa vào hành động: 長袖を着たり、日傘をさしたりする (Mặc áo dài tay, che ô).",
+                        "Options": [
+                            {
+                                "Text": "長袖を着たり、日傘をさしたりします",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "半袖を着て走ります",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "厚いコートを着ます",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

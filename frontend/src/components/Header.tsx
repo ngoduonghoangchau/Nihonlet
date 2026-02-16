@@ -77,8 +77,8 @@ const Header: React.FC = () => {
                 type="text"
               />
             </div>
-            {isAuthenticated && (
-              user?.isPremium ? (
+            {isAuthenticated &&
+              (user?.isPremium ? (
                 <Link
                   to="/subscription"
                   className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gradient-to-r from-amber-400 to-yellow-500 text-white text-xs font-bold shadow-sm hover:shadow-md transition-all hover:scale-[1.02]"
@@ -94,8 +94,7 @@ const Header: React.FC = () => {
                   <Sparkles size={14} />
                   Upgrade
                 </Link>
-              )
-            )}
+              ))}
             <div className="h-6 w-[1px] bg-[#f3e7ed] mx-1"></div>
             <div className="flex items-center gap-3">
               {user?.avatarUrl ? (

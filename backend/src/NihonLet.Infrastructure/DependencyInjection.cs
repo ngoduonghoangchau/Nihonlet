@@ -106,6 +106,7 @@ public static class DependencyInjection
         services.AddScoped<ISystemLogQueryService, SystemLogQueryService>();
 
         services.AddScoped<GrammarSeedService>();
+        services.AddScoped<ReadingSeedService>();
 
         // Payment Services - toggle real PayOS vs mock
         var payOsClientId = Environment.GetEnvironmentVariable("NIHONLET_PAYOS_CLIENT_ID");

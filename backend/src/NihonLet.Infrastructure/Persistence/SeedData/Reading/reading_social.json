@@ -1,0 +1,1410 @@
+[
+  {
+    "NameVi": "Đời sống",
+    "NameJp": "生活",
+    "Description": "Các chủ đề xoay quanh cuộc sống hàng ngày, gia đình và các mối quan hệ xã hội.",
+    "IconUrl": "/icons/life.png",
+    "Articles": [
+      {
+        "Level": "N5",
+        "TitleJp": "私の家族",
+        "TitleVi": "Gia đình của tôi",
+        "ContentJp": "私の家族は四人です。父と母と姉と私です。",
+        "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"の\", {\"k\":\"家族\",\"f\":\"かぞく\"}, \"は\", {\"k\":\"四人\",\"f\":\"よにん\"}, \"です。\"]",
+        "ContentVi": "Gia đình tôi có 4 người. Bố, mẹ, chị gái và tôi.",
+        "Questions": [
+          {
+            "QuestionText": "家族は何人ですか。",
+            "Explanation": "Dựa vào câu: 家族は四人です。",
+            "Options": [
+              {
+                "Text": "三人",
+                "IsCorrect": false
+              },
+              {
+                "Text": "四人",
+                "IsCorrect": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "私の一日",
+        "TitleVi": "Một ngày của tôi",
+        "ContentJp": "私は毎朝六時に起きます。朝ご飯を食べて、八時に学校へ行きます。",
+        "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"毎朝\",\"f\":\"まいあさ\"}, {\"k\":\"六時\",\"f\":\"ろくじ\"}, \"に\", {\"k\":\"起\",\"f\":\"お\"}, \"きます。\"]",
+        "ContentVi": "Tôi thức dậy lúc 6 giờ mỗi sáng. Tôi ăn sáng rồi đi học lúc 8 giờ.",
+        "Questions": [
+          {
+            "QuestionText": "何時に起きますか。",
+            "Explanation": "Dựa vào câu: 六時に起きます。",
+            "Options": [
+              {
+                "Text": "六時",
+                "IsCorrect": true
+              },
+              {
+                "Text": "七時",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "私の部屋",
+        "TitleVi": "Căn phòng của tôi",
+        "ContentJp": "私の部屋は狭いですが、きれいです。机の上に本があります。",
+        "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"の\", {\"k\":\"部屋\",\"f\":\"へや\"}, \"は\", {\"k\":\"狭\",\"f\":\"せま\"}, \"いですが、きれいです。\"]",
+        "ContentVi": "Phòng tôi hẹp nhưng sạch đẹp. Trên bàn có cuốn sách.",
+        "Questions": [
+          {
+            "QuestionText": "部屋はどうですか。",
+            "Explanation": "Câu: 狭いですが、きれいです。",
+            "Options": [
+              {
+                "Text": "広いです",
+                "IsCorrect": false
+              },
+              {
+                "Text": "狭くてきれいです",
+                "IsCorrect": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "週末の映画",
+        "TitleVi": "Xem phim cuối tuần",
+        "ContentJp": "土曜日に友達と映画を見ました。とてもおもしろかったです。",
+        "ContentFurigana": "[{\"k\":\"土曜日\",\"f\":\"どようび\"}, \"に\", {\"k\":\"友達\",\"f\":\"ともだち\"}, \"と\", {\"k\":\"映画\",\"f\":\"えいが\"}, \"を\", {\"k\":\"見\",\"f\":\"み\"}, \"ました。\"]",
+        "ContentVi": "Thứ Bảy tôi đã đi xem phim với bạn. Nó đã rất thú vị.",
+        "Questions": [
+          {
+            "QuestionText": "誰と映画を見ましたか。",
+            "Explanation": "Dựa vào câu: 友達と映画を見ました。",
+            "Options": [
+              {
+                "Text": "友達",
+                "IsCorrect": true
+              },
+              {
+                "Text": "家族",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "買い物",
+        "TitleVi": "Mua sắm",
+        "ContentJp": "昨日スーパーへ行きました。パンと牛乳を買いました。",
+        "ContentFurigana": "[{\"k\":\"昨日\",\"f\":\"きのう\"}, \"スーパーへ\", {\"k\":\"行\",\"f\":\"い\"}, \"きました。\"]",
+        "ContentVi": "Hôm qua tôi đã đi siêu thị. Tôi mua bánh mì và sữa.",
+        "Questions": [
+          {
+            "QuestionText": "何を買いましたか。",
+            "Explanation": "Trong bài viết: パンと牛乳を買いました。",
+            "Options": [
+              {
+                "Text": "パンと牛乳",
+                "IsCorrect": true
+              },
+              {
+                "Text": "肉と魚",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "日本語の勉強",
+        "TitleVi": "Học tiếng Nhật",
+        "ContentJp": "毎日一時間勉強します。漢字は難しいですが、好きです。",
+        "ContentFurigana": "[{\"k\":\"毎日一時間\",\"f\":\"まいにちいちじかん\"}, {\"k\":\"勉強\",\"f\":\"べんきょう\"}, \"します。\"]",
+        "ContentVi": "Mỗi ngày tôi học 1 tiếng. Kanji khó nhưng tôi thích.",
+        "Questions": [
+          {
+            "QuestionText": "漢字はどうですか。",
+            "Explanation": "Bài viết nói: 漢字は難しいですが、好きです。",
+            "Options": [
+              {
+                "Text": "難しくて好き",
+                "IsCorrect": true
+              },
+              {
+                "Text": "簡単で嫌い",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "今日の天気",
+        "TitleVi": "Thời tiết hôm nay",
+        "ContentJp": "今日はいい天気です。公園へ散歩に行きます。",
+        "ContentFurigana": "[{\"k\":\"今日\",\"f\":\"きょう\"}, \"はいい\", {\"k\":\"天気\",\"f\":\"てんき\"}, \"です。\"]",
+        "ContentVi": "Hôm nay thời tiết đẹp. Tôi đi dạo ở công viên.",
+        "Questions": [
+          {
+            "QuestionText": "どこへ行きますか。",
+            "Explanation": "Dựa vào câu: 公園へ散歩に行きます。",
+            "Options": [
+              {
+                "Text": "公園",
+                "IsCorrect": true
+              },
+              {
+                "Text": "会社",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "私の趣味",
+        "TitleVi": "Sở thích của tôi",
+        "ContentJp": "私の趣味は料理です。日曜日に卵料理を作ります。",
+        "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"の\", {\"k\":\"趣味\",\"f\":\"しゅみ\"}, \"は\", {\"k\":\"料理\",\"f\":\"りょうり\"}, \"です。\"]",
+        "ContentVi": "Sở thích của tôi là nấu ăn. Tôi nấu món trứng vào Chủ nhật.",
+        "Questions": [
+          {
+            "QuestionText": "趣味は何ですか。",
+            "Explanation": "Câu đầu tiên: 趣味は料理です。",
+            "Options": [
+              {
+                "Text": "スポーツ",
+                "IsCorrect": false
+              },
+              {
+                "Text": "料理",
+                "IsCorrect": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "犬のポチ",
+        "TitleVi": "Chú chó Pochi",
+        "ContentJp": "うちに白い犬がいます。名前はポチです。とても可愛いです。",
+        "ContentFurigana": "[{\"k\":\"白\",\"f\":\"しろ\"}, \"い\", {\"k\":\"犬\",\"f\":\"いぬ\"}, \"がいます。\", {\"k\":\"名前\",\"f\":\"なまえ\"}, \"はポチです。\"]",
+        "ContentVi": "Nhà tôi có một chú chó trắng. Tên là Pochi. Nó rất đáng yêu.",
+        "Questions": [
+          {
+            "QuestionText": "犬は何色ですか。",
+            "Explanation": "Dựa vào từ: 白い犬 (chó trắng).",
+            "Options": [
+              {
+                "Text": "白い",
+                "IsCorrect": true
+              },
+              {
+                "Text": "黒い",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "誕生日",
+        "TitleVi": "Sinh nhật",
+        "ContentJp": "明日は私の誕生日です。友達から花をもらいました。",
+        "ContentFurigana": "[{\"k\":\"明日\",\"f\":\"あした\"}, \"は\", {\"k\":\"私\",\"f\":\"わたし\"}, \"の\", {\"k\":\"誕生日\",\"f\":\"たんじょうび\"}, \"です。\"]",
+        "ContentVi": "Mai là sinh nhật tôi. Tôi đã nhận hoa từ bạn bè.",
+        "Questions": [
+          {
+            "QuestionText": "何をもらいましたか。",
+            "Explanation": "Câu cuối: 花をもらいました。",
+            "Options": [
+              {
+                "Text": "時計",
+                "IsCorrect": false
+              },
+              {
+                "Text": "花",
+                "IsCorrect": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "日本のゴミの出し方",
+        "TitleVi": "Cách đổ rác ở Nhật Bản",
+        "ContentJp": "日本の生活で一番大変なのはゴミの出し方です。種類によって捨てる日が決まっているからです。",
+        "ContentFurigana": "[{\"k\":\"種類\",\"f\":\"しゅるい\"}, \"によって\", {\"k\":\"捨\",\"f\":\"す\"}, \"てる\", {\"k\":\"日\",\"f\":\"ひ\"}, \"が\", {\"k\":\"決\",\"f\":\"き\"}, \"まっています。\"]",
+        "ContentVi": "Điều vất vả nhất khi sống ở Nhật là cách đổ rác. Đó là vì ngày đổ rác được quy định tùy theo loại rác.",
+        "Questions": [
+          {
+            "QuestionText": "どうしてゴミ出しは大変ですか。",
+            "Explanation": "Vì ngày đổ rác đã được quy định sẵn (決まっている).",
+            "Options": [
+              {
+                "Text": "日が決まっているから",
+                "IsCorrect": true
+              },
+              {
+                "Text": "場所が遠いから",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "最近の健康習慣",
+        "TitleVi": "Thói quen sức khỏe gần đây",
+        "ContentJp": "毎日野菜を食べるようにしています。前は肉ばかりでしたが、今はバランスを考えています。",
+        "ContentFurigana": "[{\"k\":\"健康\",\"f\":\"けんこう\"}, \"のために、バランスを\", {\"k\":\"考\",\"f\":\"かんが\"}, \"えています。\"]",
+        "ContentVi": "Tôi cố gắng ăn rau mỗi ngày. Trước đây toàn ăn thịt nhưng giờ tôi chú ý đến sự cân bằng.",
+        "Questions": [
+          {
+            "QuestionText": "今は何に気をつけていますか。",
+            "Explanation": "Câu cuối: バランスを考えています (Suy nghĩ về sự cân bằng).",
+            "Options": [
+              {
+                "Text": "食事のバランス",
+                "IsCorrect": true
+              },
+              {
+                "Text": "肉の量",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "近所の人との付き合い",
+        "TitleVi": "Mối quan hệ hàng xóm",
+        "ContentJp": "隣の人に会ったら挨拶をします。困った時に助け合えるように、いい関係を作ります。",
+        "ContentFurigana": "[{\"k\":\"挨拶\",\"f\":\"あいさつ\"}, \"するようにしています。\", {\"k\":\"助\",\"f\":\"たす\"}, \"け\", {\"k\":\"合\",\"f\":\"あ\"}, \"えるように。\"]",
+        "ContentVi": "Khi gặp hàng xóm tôi luôn chào hỏi. Tôi tạo mối quan hệ tốt để có thể giúp đỡ nhau khi khó khăn.",
+        "Questions": [
+          {
+            "QuestionText": "なぜ挨拶が大切ですか。",
+            "Explanation": "Để giúp đỡ nhau khi cần (助け合えるように).",
+            "Options": [
+              {
+                "Text": "助け合えるから",
+                "IsCorrect": true
+              },
+              {
+                "Text": "お金がもらえるから",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "家事の分担",
+        "TitleVi": "Phân chia việc nhà",
+        "ContentJp": "妻が料理を作り、私が皿を洗います。二人でやるほうが早く終わります。",
+        "ContentFurigana": "[{\"k\":\"妻\",\"f\":\"つま\"}, \"が\", {\"k\":\"料理\",\"f\":\"りょうり\"}, \"を\", {\"k\":\"作\",\"f\":\"つく\"}, \"ります。\"]",
+        "ContentVi": "Vợ tôi nấu ăn, còn tôi rửa bát. Làm hai người sẽ xong nhanh hơn.",
+        "Questions": [
+          {
+            "QuestionText": "私は何をしますか。",
+            "Explanation": "Dựa vào câu: 私が皿を洗います。",
+            "Options": [
+              {
+                "Text": "料理",
+                "IsCorrect": false
+              },
+              {
+                "Text": "皿洗い",
+                "IsCorrect": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "日本の冬",
+        "TitleVi": "Mùa đông Nhật Bản",
+        "ContentJp": "日本の冬は乾燥しています。火事に気をつけなければなりません。寝る前に確認します。",
+        "ContentFurigana": "[{\"k\":\"乾燥\",\"f\":\"かんそう\"}, \"しています。\", {\"k\":\"火事\",\"f\":\"かじ\"}, \"に\", {\"k\":\"気\",\"f\":\"き\"}, \"をつけます。\"]",
+        "ContentVi": "Mùa đông Nhật Bản khô hanh. Phải cẩn thận hỏa hoạn và kiểm tra trước khi ngủ.",
+        "Questions": [
+          {
+            "QuestionText": "冬は何が危ないですか。",
+            "Explanation": "Vì khô hanh nên dễ hỏa hoạn (火事).",
+            "Options": [
+              {
+                "Text": "火事",
+                "IsCorrect": true
+              },
+              {
+                "Text": "大雨",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "スーパーの時間",
+        "TitleVi": "Giờ siêu thị",
+        "ContentJp": "夜八時を過ぎるとお弁当が安くなります。安くて美味しいので助かります。",
+        "ContentFurigana": "[{\"k\":\"夜八時\",\"f\":\"よるはちじ\"}, \"を\", {\"k\":\"過\",\"f\":\"す\"}, \"ぎると\", {\"k\":\"安\",\"f\":\"やす\"}, \"くなります。\"]",
+        "ContentVi": "Sau 8 giờ tối cơm hộp sẽ rẻ hơn. Vì nó rẻ mà ngon nên rất giúp ích cho tôi.",
+        "Questions": [
+          {
+            "QuestionText": "いつ安くなりますか。",
+            "Explanation": "Mốc thời gian: 八時すぎ (Sau 8 giờ).",
+            "Options": [
+              {
+                "Text": "朝",
+                "IsCorrect": false
+              },
+              {
+                "Text": "八時すぎ",
+                "IsCorrect": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "電車のマナー",
+        "TitleVi": "Phép lịch sự trên tàu",
+        "ContentJp": "電車の中で電話で話してはいけません。大きな声で話すと周りの人に迷惑です。",
+        "ContentFurigana": "[{\"k\":\"電車\",\"f\":\"でんしゃ\"}, \"の\", {\"k\":\"中\",\"f\":\"なか\"}, \"で\", {\"k\":\"電話\",\"f\":\"でんわ\"}, \"はだめです。\"]",
+        "ContentVi": "Không được nói chuyện điện thoại trên tàu. Nói to sẽ gây phiền hà cho người xung quanh.",
+        "Questions": [
+          {
+            "QuestionText": "電車で何をしてはいけませんか。",
+            "Explanation": "Câu đầu: 電話で話してはいけません。",
+            "Options": [
+              {
+                "Text": "本を読む",
+                "IsCorrect": false
+              },
+              {
+                "Text": "電話で話す",
+                "IsCorrect": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "お土産の習慣",
+        "TitleVi": "Văn hóa quà lưu niệm",
+        "ContentJp": "旅行へ行ったら、会社の人にお土産を買います。これは日本の有名な文化です。",
+        "ContentFurigana": "[{\"k\":\"旅行\",\"f\":\"りょこう\"}, \"へ\", {\"k\":\"行\",\"f\":\"い\"}, \"ったら、お\", {\"k\":\"土産\",\"f\":\"みやげ\"}, \"を\", {\"k\":\"買\",\"f\":\"か\"}, \"います。\"]",
+        "ContentVi": "Khi đi du lịch, tôi thường mua quà cho người trong công ty. Đây là văn hóa nổi tiếng của Nhật.",
+        "Questions": [
+          {
+            "QuestionText": "誰にお土産を買いますか。",
+            "Explanation": "Câu đầu: 会社の人にお土産を買います。",
+            "Options": [
+              {
+                "Text": "会社の人",
+                "IsCorrect": true
+              },
+              {
+                "Text": "知らない人",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "地震への準備",
+        "TitleVi": "Chuẩn bị cho động đất",
+        "ContentJp": "日本は地震が多いですから、水や食べ物を準備しておきます。逃げる場所も確認します。",
+        "ContentFurigana": "[{\"k\":\"地震\",\"f\":\"じしん\"}, \"が\", {\"k\":\"多\",\"f\":\"おお\"}, \"いですから、\", {\"k\":\"準備\",\"f\":\"じゅんび\"}, \"します。\"]",
+        "ContentVi": "Vì Nhật Bản nhiều động đất nên tôi chuẩn bị sẵn nước và đồ ăn. Tôi cũng xác nhận nơi lánh nạn.",
+        "Questions": [
+          {
+            "QuestionText": "何を準備しますか。",
+            "Explanation": "Dựa vào cụm: 水や食べ物 (Nước và thức ăn).",
+            "Options": [
+              {
+                "Text": "水と食べ物",
+                "IsCorrect": true
+              },
+              {
+                "Text": "おもちゃ",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "自転車のルール",
+        "TitleVi": "Luật đi xe đạp",
+        "ContentJp": "夜はライトをつけなければなりません。二人で乗ることは禁止されています。",
+        "ContentFurigana": "[{\"k\":\"自転車\",\"f\":\"じてんしゃ\"}, \"のライトをつけます。\", {\"k\":\"二人\",\"f\":\"ふたり\"}, \"で\", {\"k\":\"乗\",\"f\":\"の\"}, \"るのはだめです。\"]",
+        "ContentVi": "Buổi tối phải bật đèn xe đạp. Việc chở hai người bị nghiêm cấm.",
+        "Questions": [
+          {
+            "QuestionText": "二人で乗ってもいいですか。",
+            "Explanation": "Câu cuối: 二人で乗ることは禁止 (Cấm chở 2).",
+            "Options": [
+              {
+                "Text": "はい",
+                "IsCorrect": false
+              },
+              {
+                "Text": "いいえ",
+                "IsCorrect": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "朝のコーヒー",
+        "TitleVi": "Cà phê buổi sáng",
+        "ContentJp": "毎朝、コーヒーを飲みます。熱いコーヒーが好きです。",
+        "ContentFurigana": "[{\"k\":\"毎朝\",\"f\":\"まいあさ\"}, \"、コーヒーを\", {\"k\":\"飲\",\"f\":\"の\"}, \"みます。\", {\"k\":\"熱\",\"f\":\"あつ\"}, \"いコーヒーが\", {\"k\":\"好\",\"f\":\"す\"}, \"きです。\"]",
+        "ContentVi": "Mỗi sáng, tôi uống cà phê. Tôi thích cà phê nóng.",
+        "Questions": [
+          {
+            "QuestionText": "毎朝、何を飲みますか。",
+            "Explanation": "Dựa vào câu đầu tiên: 毎朝、コーヒーを飲みます。",
+            "Options": [
+              {
+                "Text": "お茶",
+                "IsCorrect": false
+              },
+              {
+                "Text": "ジュース",
+                "IsCorrect": false
+              },
+              {
+                "Text": "コーヒー",
+                "IsCorrect": true
+              }
+            ]
+          },
+          {
+            "QuestionText": "どんなコーヒーが好きですか。",
+            "Explanation": "Dựa vào câu: 熱いコーヒーが好きです。",
+            "Options": [
+              {
+                "Text": "熱いコーヒー",
+                "IsCorrect": true
+              },
+              {
+                "Text": "冷たいコーヒー",
+                "IsCorrect": false
+              },
+              {
+                "Text": "甘いコーヒー",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "公園の散歩",
+        "TitleVi": "Đi dạo công viên",
+        "ContentJp": "夕方、公園を散歩します。犬がたくさんいます。",
+        "ContentFurigana": "[{\"k\":\"夕方\",\"f\":\"ゆうがた\"}, \"、\", {\"k\":\"公園\",\"f\":\"こうえん\"}, \"を\", {\"k\":\"散歩\",\"f\":\"さんぽ\"}, \"します。\", {\"k\":\"犬\",\"f\":\"いぬ\"}, \"がたくさんいます。\"]",
+        "ContentVi": "Buổi chiều tối, tôi đi dạo ở công viên. Có rất nhiều chó.",
+        "Questions": [
+          {
+            "QuestionText": "いつ散歩しますか。",
+            "Explanation": "Dựa vào từ đầu tiên của bài: 夕方 (Chiều tối).",
+            "Options": [
+              {
+                "Text": "朝",
+                "IsCorrect": false
+              },
+              {
+                "Text": "夜",
+                "IsCorrect": false
+              },
+              {
+                "Text": "夕方",
+                "IsCorrect": true
+              }
+            ]
+          },
+          {
+            "QuestionText": "公園に何がたくさんいますか。",
+            "Explanation": "Dựa vào câu: 犬がたくさんいます。",
+            "Options": [
+              {
+                "Text": "犬",
+                "IsCorrect": true
+              },
+              {
+                "Text": "猫",
+                "IsCorrect": false
+              },
+              {
+                "Text": "鳥",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "部屋の掃除",
+        "TitleVi": "Dọn dẹp phòng",
+        "ContentJp": "日曜日に部屋を掃除します。窓も拭きます。",
+        "ContentFurigana": "[{\"k\":\"日曜日\",\"f\":\"にちようび\"}, \"に\", {\"k\":\"部屋\",\"f\":\"へや\"}, \"を\", {\"k\":\"掃除\",\"f\":\"そうじ\"}, \"します。\", {\"k\":\"窓\",\"f\":\"まど\"}, \"もふきます。\"]",
+        "ContentVi": "Tôi dọn phòng vào Chủ nhật. Tôi lau cả cửa sổ nữa.",
+        "Questions": [
+          {
+            "QuestionText": "何曜日に掃除しますか。",
+            "Explanation": "Dựa vào câu: 日曜日に部屋を掃除します。",
+            "Options": [
+              {
+                "Text": "土曜日",
+                "IsCorrect": false
+              },
+              {
+                "Text": "月曜日",
+                "IsCorrect": false
+              },
+              {
+                "Text": "日曜日",
+                "IsCorrect": true
+              }
+            ]
+          },
+          {
+            "QuestionText": "部屋のほかに、どこをきれいにしますか。",
+            "Explanation": "Dựa vào câu: 窓も拭きます (Lau cả cửa sổ).",
+            "Options": [
+              {
+                "Text": "窓",
+                "IsCorrect": true
+              },
+              {
+                "Text": "ドア",
+                "IsCorrect": false
+              },
+              {
+                "Text": "机",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "食堂の昼ご飯",
+        "TitleVi": "Bữa trưa ở nhà ăn",
+        "ContentJp": "毎日、会社の食堂で昼ご飯を食べます。安くて美味しいです。",
+        "ContentFurigana": "[{\"k\":\"毎日\",\"f\":\"まいにち\"}, \"、\", {\"k\":\"会社\",\"f\":\"かいしゃ\"}, \"の\", {\"k\":\"食堂\",\"f\":\"しょくどう\"}, \"で\", {\"k\":\"昼\",\"f\":\"ひる\"}, \"ご\", {\"k\":\"飯\",\"f\":\"はん\"}, \"を\", {\"k\":\"食\",\"f\":\"た\"}, \"べます。\", {\"k\":\"安\",\"f\":\"やす\"}, \"くて\", {\"k\":\"美味\",\"f\":\"おい\"}, \"しいです。\"]",
+        "ContentVi": "Mỗi ngày, tôi ăn trưa ở nhà ăn của công ty. Vừa rẻ vừa ngon.",
+        "Questions": [
+          {
+            "QuestionText": "どこで昼ご飯を食べますか。",
+            "Explanation": "Dựa vào câu: 会社の食堂で昼ご飯を食べます。",
+            "Options": [
+              {
+                "Text": "会社の食堂",
+                "IsCorrect": true
+              },
+              {
+                "Text": "レストラン",
+                "IsCorrect": false
+              },
+              {
+                "Text": "コンビニ",
+                "IsCorrect": false
+              }
+            ]
+          },
+          {
+            "QuestionText": "食堂のご飯はどうですか。",
+            "Explanation": "Dựa vào câu cuối: 安くて美味しいです。",
+            "Options": [
+              {
+                "Text": "高くて美味しい",
+                "IsCorrect": false
+              },
+              {
+                "Text": "高くてまずい",
+                "IsCorrect": false
+              },
+              {
+                "Text": "安くて美味しい",
+                "IsCorrect": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "母への電話",
+        "TitleVi": "Gọi điện cho mẹ",
+        "ContentJp": "週末に母に電話をかけます。母は元気です。",
+        "ContentFurigana": "[{\"k\":\"週末\",\"f\":\"しゅうまつ\"}, \"に\", {\"k\":\"母\",\"f\":\"はは\"}, \"に\", {\"k\":\"電話\",\"f\":\"でんわ\"}, \"をかけます。\", {\"k\":\"母\",\"f\":\"はは\"}, \"は\", {\"k\":\"元気\",\"f\":\"げんき\"}, \"です。\"]",
+        "ContentVi": "Cuối tuần tôi gọi điện cho mẹ. Mẹ tôi vẫn khỏe.",
+        "Questions": [
+          {
+            "QuestionText": "誰に電話をかけますか。",
+            "Explanation": "Dựa vào câu: 母に電話をかけます。",
+            "Options": [
+              {
+                "Text": "友達",
+                "IsCorrect": false
+              },
+              {
+                "Text": "父",
+                "IsCorrect": false
+              },
+              {
+                "Text": "母",
+                "IsCorrect": true
+              }
+            ]
+          },
+          {
+            "QuestionText": "母はどうですか。",
+            "Explanation": "Dựa vào câu: 母は元気です。",
+            "Options": [
+              {
+                "Text": "元気です",
+                "IsCorrect": true
+              },
+              {
+                "Text": "病気です",
+                "IsCorrect": false
+              },
+              {
+                "Text": "忙しいです",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "バスで会社へ",
+        "TitleVi": "Đến công ty bằng xe buýt",
+        "ContentJp": "毎日バスで会社へ行きます。３０分かかります。",
+        "ContentFurigana": "[{\"k\":\"毎日\",\"f\":\"まいにち\"}, \"バスで\", {\"k\":\"会社\",\"f\":\"かいしゃ\"}, \"へ\", {\"k\":\"行\",\"f\":\"い\"}, \"きます。３０\", {\"k\":\"分\",\"f\":\"ぷん\"}, \"かかります。\"]",
+        "ContentVi": "Mỗi ngày tôi đến công ty bằng xe buýt. Mất 30 phút.",
+        "Questions": [
+          {
+            "QuestionText": "何で会社へ行きますか。",
+            "Explanation": "Dựa vào câu: バスで会社へ行きます。",
+            "Options": [
+              {
+                "Text": "バス",
+                "IsCorrect": true
+              },
+              {
+                "Text": "電車",
+                "IsCorrect": false
+              },
+              {
+                "Text": "自転車",
+                "IsCorrect": false
+              }
+            ]
+          },
+          {
+            "QuestionText": "会社までどのぐらいかかりますか。",
+            "Explanation": "Dựa vào câu: ３０分かかります。",
+            "Options": [
+              {
+                "Text": "２０分",
+                "IsCorrect": false
+              },
+              {
+                "Text": "３０分",
+                "IsCorrect": true
+              },
+              {
+                "Text": "１時間",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "寝る前の読書",
+        "TitleVi": "Đọc sách trước khi ngủ",
+        "ContentJp": "寝る前に本を読みます。十一時に寝ます。",
+        "ContentFurigana": "[{\"k\":\"寝\",\"f\":\"ね\"}, \"る\", {\"k\":\"前\",\"f\":\"まえ\"}, \"に\", {\"k\":\"本\",\"f\":\"ほん\"}, \"を\", {\"k\":\"読\",\"f\":\"よ\"}, \"みます。\", {\"k\":\"十一時\",\"f\":\"じゅういちじ\"}, \"に\", {\"k\":\"寝\",\"f\":\"ね\"}, \"ます。\"]",
+        "ContentVi": "Tôi đọc sách trước khi ngủ. Tôi ngủ lúc 11 giờ.",
+        "Questions": [
+          {
+            "QuestionText": "寝る前に何をしますか。",
+            "Explanation": "Dựa vào câu: 寝る前に本を読みます。",
+            "Options": [
+              {
+                "Text": "テレビを見る",
+                "IsCorrect": false
+              },
+              {
+                "Text": "音楽を聞く",
+                "IsCorrect": false
+              },
+              {
+                "Text": "本を読む",
+                "IsCorrect": true
+              }
+            ]
+          },
+          {
+            "QuestionText": "何時に寝ますか。",
+            "Explanation": "Dựa vào câu: 十一時に寝ます。",
+            "Options": [
+              {
+                "Text": "十時",
+                "IsCorrect": false
+              },
+              {
+                "Text": "十一時",
+                "IsCorrect": true
+              },
+              {
+                "Text": "十二時",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "週末の洗濯",
+        "TitleVi": "Giặt giũ cuối tuần",
+        "ContentJp": "土曜日の朝、服を洗濯します。すぐ乾きます。",
+        "ContentFurigana": "[{\"k\":\"土曜日\",\"f\":\"どようび\"}, \"の\", {\"k\":\"朝\",\"f\":\"あさ\"}, \"、\", {\"k\":\"服\",\"f\":\"ふく\"}, \"を\", {\"k\":\"洗濯\",\"f\":\"せんたく\"}, \"します。すぐ\", {\"k\":\"乾\",\"f\":\"かわ\"}, \"きます。\"]",
+        "ContentVi": "Sáng thứ Bảy, tôi giặt quần áo. Nó khô rất nhanh.",
+        "Questions": [
+          {
+            "QuestionText": "いつ洗濯しますか。",
+            "Explanation": "Dựa vào câu: 土曜日の朝、服を洗濯します。",
+            "Options": [
+              {
+                "Text": "日曜日の夜",
+                "IsCorrect": false
+              },
+              {
+                "Text": "土曜日の夜",
+                "IsCorrect": false
+              },
+              {
+                "Text": "土曜日の朝",
+                "IsCorrect": true
+              }
+            ]
+          },
+          {
+            "QuestionText": "服はどうなりますか。",
+            "Explanation": "Dựa vào câu: すぐ乾きます (khô ngay).",
+            "Options": [
+              {
+                "Text": "すぐ乾く",
+                "IsCorrect": true
+              },
+              {
+                "Text": "濡れている",
+                "IsCorrect": false
+              },
+              {
+                "Text": "汚くなる",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "スーパーの安い日",
+        "TitleVi": "Ngày siêu thị giảm giá",
+        "ContentJp": "水曜日はスーパーが安いです。りんごを買いました。",
+        "ContentFurigana": "[{\"k\":\"水曜日\",\"f\":\"すいようび\"}, \"はスーパーが\", {\"k\":\"安\",\"f\":\"やす\"}, \"いです。りんごを\", {\"k\":\"買\",\"f\":\"か\"}, \"いました。\"]",
+        "ContentVi": "Thứ Tư siêu thị bán rẻ. Tôi đã mua táo.",
+        "Questions": [
+          {
+            "QuestionText": "スーパーはいつ安いですか。",
+            "Explanation": "Dựa vào câu: 水曜日はスーパーが安いです。",
+            "Options": [
+              {
+                "Text": "火曜日",
+                "IsCorrect": false
+              },
+              {
+                "Text": "水曜日",
+                "IsCorrect": true
+              },
+              {
+                "Text": "金曜日",
+                "IsCorrect": false
+              }
+            ]
+          },
+          {
+            "QuestionText": "スーパーで何を買いましたか。",
+            "Explanation": "Dựa vào câu: りんごを買いました。",
+            "Options": [
+              {
+                "Text": "みかん",
+                "IsCorrect": false
+              },
+              {
+                "Text": "バナナ",
+                "IsCorrect": false
+              },
+              {
+                "Text": "りんご",
+                "IsCorrect": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "お風呂の時間",
+        "TitleVi": "Thời gian tắm",
+        "ContentJp": "夜、温かいお風呂に入ります。疲れが取れます。",
+        "ContentFurigana": "[{\"k\":\"夜\",\"f\":\"よる\"}, \"、\", {\"k\":\"温\",\"f\":\"あたた\"}, \"かいお\", {\"k\":\"風呂\",\"f\":\"ふろ\"}, \"に\", {\"k\":\"入\",\"f\":\"はい\"}, \"ります。\", {\"k\":\"疲\",\"f\":\"つか\"}, \"れが\", {\"k\":\"取\",\"f\":\"と\"}, \"れます。\"]",
+        "ContentVi": "Buổi tối, tôi tắm bồn nước ấm. Cảm giác mệt mỏi tan biến.",
+        "Questions": [
+          {
+            "QuestionText": "どんなお風呂に入りますか。",
+            "Explanation": "Dựa vào câu: 温かいお風呂に入ります。",
+            "Options": [
+              {
+                "Text": "温かいお風呂",
+                "IsCorrect": true
+              },
+              {
+                "Text": "冷たいお風呂",
+                "IsCorrect": false
+              },
+              {
+                "Text": "熱いお風呂",
+                "IsCorrect": false
+              }
+            ]
+          },
+          {
+            "QuestionText": "お風呂に入った後、どうなりますか。",
+            "Explanation": "Dựa vào câu: 疲れが取れます (Hết mệt mỏi).",
+            "Options": [
+              {
+                "Text": "疲れる",
+                "IsCorrect": false
+              },
+              {
+                "Text": "眠くなる",
+                "IsCorrect": false
+              },
+              {
+                "Text": "疲れが取れる",
+                "IsCorrect": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "ネットショッピング",
+        "TitleVi": "Mua sắm trên mạng",
+        "ContentJp": "最近、インターネットで服を買うことが増えました。便利です。",
+        "ContentFurigana": "[{\"k\":\"最近\",\"f\":\"さいきん\"}, \"、インターネットで\", {\"k\":\"服\",\"f\":\"ふく\"}, \"を\", {\"k\":\"買\",\"f\":\"か\"}, \"うことが\", {\"k\":\"増\",\"f\":\"ふ\"}, \"えました。\", {\"k\":\"便利\",\"f\":\"べんり\"}, \"です。\"]",
+        "ContentVi": "Gần đây, việc mua quần áo trên mạng của tôi đã tăng lên. Rất tiện lợi.",
+        "Questions": [
+          {
+            "QuestionText": "最近、インターネットで何をよく買いますか。",
+            "Explanation": "Dựa vào câu: インターネットで服を買うことが増えました。",
+            "Options": [
+              {
+                "Text": "服",
+                "IsCorrect": true
+              },
+              {
+                "Text": "食べ物",
+                "IsCorrect": false
+              },
+              {
+                "Text": "本",
+                "IsCorrect": false
+              }
+            ]
+          },
+          {
+            "QuestionText": "インターネットでの買い物はどうですか。",
+            "Explanation": "Dựa vào câu: 便利です。",
+            "Options": [
+              {
+                "Text": "不便です",
+                "IsCorrect": false
+              },
+              {
+                "Text": "高いです",
+                "IsCorrect": false
+              },
+              {
+                "Text": "便利です",
+                "IsCorrect": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "粗大ゴミの捨て方",
+        "TitleVi": "Cách vứt rác cỡ lớn",
+        "ContentJp": "古い自転車を捨てる時、お金を払わなければなりません。",
+        "ContentFurigana": "[{\"k\":\"古\",\"f\":\"ふる\"}, \"い\", {\"k\":\"自転車\",\"f\":\"じてんしゃ\"}, \"を\", {\"k\":\"捨\",\"f\":\"す\"}, \"てる\", {\"k\":\"時\",\"f\":\"とき\"}, \"、お\", {\"k\":\"金\",\"f\":\"かね\"}, \"を\", {\"k\":\"払\",\"f\":\"はら\"}, \"わなければなりません。\"]",
+        "ContentVi": "Khi vứt xe đạp cũ, bạn phải trả tiền.",
+        "Questions": [
+          {
+            "QuestionText": "古い自転車を捨てる時、どうしなければなりませんか。",
+            "Explanation": "Dựa vào câu: お金を払わなければなりません (Phải trả tiền).",
+            "Options": [
+              {
+                "Text": "お金を払う",
+                "IsCorrect": true
+              },
+              {
+                "Text": "洗わなければならない",
+                "IsCorrect": false
+              },
+              {
+                "Text": "店に持っていく",
+                "IsCorrect": false
+              }
+            ]
+          },
+          {
+            "QuestionText": "自転車は無料で捨てられますか。",
+            "Explanation": "Vì phải trả tiền nên không thể vứt miễn phí (無料).",
+            "Options": [
+              {
+                "Text": "はい",
+                "IsCorrect": false
+              },
+              {
+                "Text": "わからない",
+                "IsCorrect": false
+              },
+              {
+                "Text": "いいえ",
+                "IsCorrect": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "病院へ行く",
+        "TitleVi": "Đi bệnh viện",
+        "ContentJp": "熱があるので、今日は会社を休んで病院へ行きます。",
+        "ContentFurigana": "[{\"k\":\"熱\",\"f\":\"ねつ\"}, \"があるので、\", {\"k\":\"今日\",\"f\":\"きょう\"}, \"は\", {\"k\":\"会社\",\"f\":\"かいしゃ\"}, \"を\", {\"k\":\"休\",\"f\":\"やす\"}, \"んで\", {\"k\":\"病院\",\"f\":\"びょういん\"}, \"へ\", {\"k\":\"行\",\"f\":\"い\"}, \"きます。\"]",
+        "ContentVi": "Vì bị sốt nên hôm nay tôi xin nghỉ làm để đi bệnh viện.",
+        "Questions": [
+          {
+            "QuestionText": "今日はどうして会社を休みますか。",
+            "Explanation": "Dựa vào lý do: 熱があるので (Vì bị sốt).",
+            "Options": [
+              {
+                "Text": "熱があるから",
+                "IsCorrect": true
+              },
+              {
+                "Text": "用事があるから",
+                "IsCorrect": false
+              },
+              {
+                "Text": "疲れているから",
+                "IsCorrect": false
+              }
+            ]
+          },
+          {
+            "QuestionText": "会社を休んで、どこへ行きますか。",
+            "Explanation": "Dựa vào vế sau: 病院へ行きます。",
+            "Options": [
+              {
+                "Text": "薬局",
+                "IsCorrect": false
+              },
+              {
+                "Text": "スーパー",
+                "IsCorrect": false
+              },
+              {
+                "Text": "病院",
+                "IsCorrect": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "引越しの準備",
+        "TitleVi": "Chuẩn bị chuyển nhà",
+        "ContentJp": "来月、新しいアパートに引っ越します。荷物を箱に入れます。",
+        "ContentFurigana": "[{\"k\":\"来月\",\"f\":\"らいげつ\"}, \"、\", {\"k\":\"新\",\"f\":\"あたら\"}, \"しいアパートに\", {\"k\":\"引\",\"f\":\"ひ\"}, \"っ\", {\"k\":\"越\",\"f\":\"こ\"}, \"します。\", {\"k\":\"荷物\",\"f\":\"にもつ\"}, \"を\", {\"k\":\"箱\",\"f\":\"はこ\"}, \"に\", {\"k\":\"入\",\"f\":\"い\"}, \"れます。\"]",
+        "ContentVi": "Tháng sau, tôi sẽ chuyển đến căn hộ mới. Tôi đang xếp hành lý vào thùng.",
+        "Questions": [
+          {
+            "QuestionText": "いつ引っ越しますか。",
+            "Explanation": "Dựa vào từ đầu tiên: 来月 (Tháng sau).",
+            "Options": [
+              {
+                "Text": "来週",
+                "IsCorrect": false
+              },
+              {
+                "Text": "明日",
+                "IsCorrect": false
+              },
+              {
+                "Text": "来月",
+                "IsCorrect": true
+              }
+            ]
+          },
+          {
+            "QuestionText": "今、何をしていますか。",
+            "Explanation": "Dựa vào câu: 荷物を箱に入れます。",
+            "Options": [
+              {
+                "Text": "荷物を箱に入れる",
+                "IsCorrect": true
+              },
+              {
+                "Text": "掃除をする",
+                "IsCorrect": false
+              },
+              {
+                "Text": "アパートを探す",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "アルバイトのシフト",
+        "TitleVi": "Ca làm thêm",
+        "ContentJp": "テストがあるので、アルバイトを休ませてもらいたいです。",
+        "ContentFurigana": "[\"テストがあるので、アルバイトを\", {\"k\":\"休\",\"f\":\"やす\"}, \"ませてもらいたいです。\"]",
+        "ContentVi": "Vì có bài kiểm tra nên tôi muốn xin phép nghỉ làm thêm.",
+        "Questions": [
+          {
+            "QuestionText": "どうしてアルバイトを休みたいですか。",
+            "Explanation": "Lý do được nêu: テストがあるので (Vì có kiểm tra).",
+            "Options": [
+              {
+                "Text": "旅行に行くから",
+                "IsCorrect": false
+              },
+              {
+                "Text": "病気だから",
+                "IsCorrect": false
+              },
+              {
+                "Text": "テストがあるから",
+                "IsCorrect": true
+              }
+            ]
+          },
+          {
+            "QuestionText": "筆者は何を希望していますか。",
+            "Explanation": "Dựa vào: 休ませてもらいたい (Muốn xin phép được nghỉ).",
+            "Options": [
+              {
+                "Text": "早く帰りたい",
+                "IsCorrect": false
+              },
+              {
+                "Text": "休みたい",
+                "IsCorrect": true
+              },
+              {
+                "Text": "たくさん働きたい",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "レシピを見て料理する",
+        "TitleVi": "Nấu ăn theo công thức",
+        "ContentJp": "インターネットのレシピの通りに作ったので、美味しくできました。",
+        "ContentFurigana": "[\"インターネットのレシピの\", {\"k\":\"通\",\"f\":\"とお\"}, \"りに\", {\"k\":\"作\",\"f\":\"つく\"}, \"ったので、\", {\"k\":\"美味\",\"f\":\"おい\"}, \"しくできました。\"]",
+        "ContentVi": "Vì tôi nấu đúng theo công thức trên mạng nên đã thành công rất ngon.",
+        "Questions": [
+          {
+            "QuestionText": "どうやって料理を作りましたか。",
+            "Explanation": "Dựa vào: レシピの通りに (Đúng theo công thức).",
+            "Options": [
+              {
+                "Text": "母に聞いて",
+                "IsCorrect": false
+              },
+              {
+                "Text": "レシピの通りに",
+                "IsCorrect": true
+              },
+              {
+                "Text": "自分で考えて",
+                "IsCorrect": false
+              }
+            ]
+          },
+          {
+            "QuestionText": "味はどうでしたか。",
+            "Explanation": "Dựa vào: 美味しくできました (Đã nấu ngon).",
+            "Options": [
+              {
+                "Text": "美味しかった",
+                "IsCorrect": true
+              },
+              {
+                "Text": "普通だった",
+                "IsCorrect": false
+              },
+              {
+                "Text": "まずかった",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "傘を忘れた",
+        "TitleVi": "Quên ô",
+        "ContentJp": "電車の中に傘を忘れてしまいました。新しいのを買います。",
+        "ContentFurigana": "[{\"k\":\"電車\",\"f\":\"でんしゃ\"}, \"の\", {\"k\":\"中\",\"f\":\"なか\"}, \"に\", {\"k\":\"傘\",\"f\":\"かさ\"}, \"を\", {\"k\":\"忘\",\"f\":\"わす\"}, \"れてしまいました。\", {\"k\":\"新\",\"f\":\"あたら\"}, \"しいのを\", {\"k\":\"買\",\"f\":\"か\"}, \"います。\"]",
+        "ContentVi": "Tôi lỡ để quên ô trên tàu mất rồi. Tôi sẽ mua cái mới.",
+        "Questions": [
+          {
+            "QuestionText": "どこに傘を忘れましたか。",
+            "Explanation": "Dựa vào câu đầu: 電車の中に...",
+            "Options": [
+              {
+                "Text": "会社",
+                "IsCorrect": false
+              },
+              {
+                "Text": "バスの中",
+                "IsCorrect": false
+              },
+              {
+                "Text": "電車の中",
+                "IsCorrect": true
+              }
+            ]
+          },
+          {
+            "QuestionText": "これからどうしますか。",
+            "Explanation": "Dựa vào câu: 新しいのを買います。",
+            "Options": [
+              {
+                "Text": "駅員に聞く",
+                "IsCorrect": false
+              },
+              {
+                "Text": "新しいのを買う",
+                "IsCorrect": true
+              },
+              {
+                "Text": "駅を探す",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "ペットを飼う",
+        "TitleVi": "Nuôi thú cưng",
+        "ContentJp": "アパートのルールが変わって、犬を飼ってもよくなりました。",
+        "ContentFurigana": "[\"アパートのルールが\", {\"k\":\"変\",\"f\":\"か\"}, \"わって、\", {\"k\":\"犬\",\"f\":\"いぬ\"}, \"を\", {\"k\":\"飼\",\"f\":\"か\"}, \"ってもよくなりました。\"]",
+        "ContentVi": "Quy định của căn hộ đã thay đổi, giờ đã có thể nuôi chó rồi.",
+        "Questions": [
+          {
+            "QuestionText": "何が変わりましたか。",
+            "Explanation": "Dựa vào: アパートのルールが変わって (Luật của căn hộ thay đổi).",
+            "Options": [
+              {
+                "Text": "アパートのルール",
+                "IsCorrect": true
+              },
+              {
+                "Text": "犬の種類",
+                "IsCorrect": false
+              },
+              {
+                "Text": "家賃",
+                "IsCorrect": false
+              }
+            ]
+          },
+          {
+            "QuestionText": "今、このアパートで犬を飼うことができますか。",
+            "Explanation": "Dựa vào: 犬を飼ってもよくなりました (Trở nên có thể/được phép nuôi).",
+            "Options": [
+              {
+                "Text": "はい",
+                "IsCorrect": true
+              },
+              {
+                "Text": "猫だけ飼える",
+                "IsCorrect": false
+              },
+              {
+                "Text": "いいえ",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "貯金",
+        "TitleVi": "Tiết kiệm tiền",
+        "ContentJp": "車を買うために、毎月少しずつお金を貯めています。",
+        "ContentFurigana": "[{\"k\":\"車\",\"f\":\"くるま\"}, \"を\", {\"k\":\"買\",\"f\":\"か\"}, \"うために、\", {\"k\":\"毎月少\",\"f\":\"まいつきすこ\"}, \"しずつお\", {\"k\":\"金\",\"f\":\"かね\"}, \"を\", {\"k\":\"貯\",\"f\":\"た\"}, \"めています。\"]",
+        "ContentVi": "Để mua ô tô, mỗi tháng tôi đều đang tiết kiệm từng chút tiền một.",
+        "Questions": [
+          {
+            "QuestionText": "何のためにお金を貯めていますか。",
+            "Explanation": "Dựa vào mục đích nêu ở đầu câu: 車を買うために.",
+            "Options": [
+              {
+                "Text": "家を買うため",
+                "IsCorrect": false
+              },
+              {
+                "Text": "パソコンを買うため",
+                "IsCorrect": false
+              },
+              {
+                "Text": "車を買うため",
+                "IsCorrect": true
+              }
+            ]
+          },
+          {
+            "QuestionText": "どのようにお金を貯めていますか。",
+            "Explanation": "Dựa vào: 毎月少しずつ (Mỗi tháng từng chút một).",
+            "Options": [
+              {
+                "Text": "毎月少しずつ",
+                "IsCorrect": true
+              },
+              {
+                "Text": "一年に一回",
+                "IsCorrect": false
+              },
+              {
+                "Text": "一回でたくさん",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "日本語教室",
+        "TitleVi": "Lớp học tiếng Nhật",
+        "ContentJp": "市民センターで日本語を習っています。先生が親切です。",
+        "ContentFurigana": "[{\"k\":\"市民\",\"f\":\"しみん\"}, \"センターで\", {\"k\":\"日本語\",\"f\":\"にほんご\"}, \"を\", {\"k\":\"習\",\"f\":\"なら\"}, \"っています。\", {\"k\":\"先生\",\"f\":\"せんせい\"}, \"が\", {\"k\":\"親切\",\"f\":\"しんせつ\"}, \"です。\"]",
+        "ContentVi": "Tôi đang học tiếng Nhật ở trung tâm cộng đồng. Giáo viên rất tốt bụng.",
+        "Questions": [
+          {
+            "QuestionText": "どこで日本語を習っていますか。",
+            "Explanation": "Dựa vào: 市民センターで (Ở trung tâm cộng đồng).",
+            "Options": [
+              {
+                "Text": "学校",
+                "IsCorrect": false
+              },
+              {
+                "Text": "大学",
+                "IsCorrect": false
+              },
+              {
+                "Text": "市民センター",
+                "IsCorrect": true
+              }
+            ]
+          },
+          {
+            "QuestionText": "先生はどんな人ですか。",
+            "Explanation": "Dựa vào câu: 先生が親切です。",
+            "Options": [
+              {
+                "Text": "おもしろい人",
+                "IsCorrect": false
+              },
+              {
+                "Text": "親切な人",
+                "IsCorrect": true
+              },
+              {
+                "Text": "厳しい人",
+                "IsCorrect": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

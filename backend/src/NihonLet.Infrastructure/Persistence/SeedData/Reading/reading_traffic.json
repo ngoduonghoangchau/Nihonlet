@@ -1,0 +1,1930 @@
+[
+    {
+        "NameVi": "Giao thông và Thời gian",
+        "NameJp": "交通と時間",
+        "Description": "Cách hỏi đường, thời gian tàu chạy và phương tiện đi lại.",
+        "IconUrl": "/icons/transport.png",
+        "Articles": [
+            {
+                "Level": "N5",
+                "TitleJp": "学校への行き方",
+                "TitleVi": "Cách đi đến trường",
+                "ContentJp": "私は毎日バスで学校へ行きます。家から学校まで三十分かかります。歩いて行くこともあります。",
+                "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"毎日\",\"f\":\"まいにち\"}, \"バスで\", {\"k\":\"学校\",\"f\":\"がっこう\"}, \"へ\", {\"k\":\"行\",\"f\":\"い\"}, \"きます。\", {\"k\":\"家\",\"f\":\"いえ\"}, \"から\", {\"k\":\"学校\",\"f\":\"がっこう\"}, \"まで\", {\"k\":\"三十分\",\"f\":\"さんじゅっぷん\"}, \"かかります。\", {\"k\":\"歩\",\"f\":\"ある\"}, \"いて\", {\"k\":\"行\",\"f\":\"い\"}, \"くこともあります。\"]",
+                "ContentVi": "Hằng ngày tôi đi học bằng xe buýt. Từ nhà đến trường mất 30 phút. Cũng có lúc tôi đi bộ.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "何で学校へ行きますか。",
+                        "Explanation": "Dựa vào câu: 毎日バスで学校へ行きます (Đi học bằng xe buýt).",
+                        "Options": [
+                            {
+                                "Text": "電車",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "バス",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "タクシー",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "家から学校までどのくらいかかりますか。",
+                        "Explanation": "Dựa vào câu: 三十分かかります (Mất 30 phút).",
+                        "Options": [
+                            {
+                                "Text": "二十分",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "三十分",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "一時間",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "電車の時間",
+                "TitleVi": "Giờ tàu chạy",
+                "ContentJp": "次の電車は九時十五分です。今は九時十分ですから、あと五分待ってください。",
+                "ContentFurigana": "[{\"k\":\"次\",\"f\":\"つぎ\"}, \"の\", {\"k\":\"電車\",\"f\":\"でんしゃ\"}, \"は\", {\"k\":\"九時十五分\",\"f\":\"くじじゅうごふん\"}, \"です。\", {\"k\":\"今\",\"f\":\"いま\"}, \"は\", {\"k\":\"九時十分\",\"f\":\"くじじゅうぷん\"}, \"ですから、あと\", {\"k\":\"五分\",\"f\":\"ごふん\"}, {\"k\":\"待\",\"f\":\"ま\"}, \"ってください。\"]",
+                "ContentVi": "Chuyến tàu tiếp theo là lúc 9 giờ 15 phút. Vì bây giờ là 9 giờ 10 phút nên hãy đợi thêm 5 phút nữa.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "電車は何時ですか。",
+                        "Explanation": "Dựa vào câu: 次の電車は九時十五分です。",
+                        "Options": [
+                            {
+                                "Text": "九時十分",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "九時十五分",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "九時五分",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "あと何分待ちますか。",
+                        "Explanation": "9h15 trừ 9h10 còn 5 phút (あと五分待ってください).",
+                        "Options": [
+                            {
+                                "Text": "五分",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "十分",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "十五分",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "タクシーの乗り場",
+                "TitleVi": "Bến đỗ taxi",
+                "ContentJp": "すみません、タクシー乗り場はどこですか。駅を出て、右へ行ってください。銀行の前にあります。",
+                "ContentFurigana": "[\"すみません、タクシー\", {\"k\":\"乗\",\"f\":\"の\"}, \"り\", {\"k\":\"場\",\"f\":\"ば\"}, \"はどこですか。\", {\"k\":\"駅\",\"f\":\"えき\"}, \"を\", {\"k\":\"出\",\"f\":\"で\"}, \"て、\", {\"k\":\"右\",\"f\":\"みぎ\"}, \"へ\", {\"k\":\"行\",\"f\":\"い\"}, \"ってください。\", {\"k\":\"銀行\",\"f\":\"ぎんこう\"}, \"の\", {\"k\":\"前\",\"f\":\"まえ\"}, \"にあります。\"]",
+                "ContentVi": "Xin lỗi, bến đỗ taxi ở đâu vậy? Hãy ra khỏi nhà ga rồi đi về bên phải. Nó nằm ở trước ngân hàng.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "タクシー乗り場はどこにありますか。",
+                        "Explanation": "Dựa vào câu: 銀行の前にあります (Trước ngân hàng).",
+                        "Options": [
+                            {
+                                "Text": "駅の中",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "銀行の前",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "郵便局の隣",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "駅を出てどちらへ行きますか。",
+                        "Explanation": "Dựa vào câu: 右へ行ってください (Hãy đi về bên phải).",
+                        "Options": [
+                            {
+                                "Text": "左",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "右",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "まっすぐ",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "新幹線で旅行",
+                "TitleVi": "Du lịch bằng Shinkansen",
+                "ContentJp": "先週、新幹線で大阪へ行きました。とても速かったです。東京から二時間半でした。",
+                "ContentFurigana": "[{\"k\":\"先週\",\"f\":\"せんしゅう\"}, \"、\", {\"k\":\"新幹線\",\"f\":\"しんかんせん\"}, \"で\", {\"k\":\"大阪\",\"f\":\"おおさか\"}, \"へ\", {\"k\":\"行\",\"f\":\"い\"}, \"きました。とても\", {\"k\":\"速\",\"f\":\"はや\"}, \"かったです。\", {\"k\":\"東京\",\"f\":\"とうきょう\"}, \"から\", {\"k\":\"二時間半\",\"f\":\"にじかんはん\"}, \"でした。\"]",
+                "ContentVi": "Tuần trước, tôi đã đi Osaka bằng tàu Shinkansen. Tàu rất nhanh. Từ Tokyo mất 2 tiếng rưỡi.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "何で行きましたか。",
+                        "Explanation": "Dựa vào câu: 新幹線で行きました (Đi bằng Shinkansen).",
+                        "Options": [
+                            {
+                                "Text": "飛行機",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "新幹線",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "自転車",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "東京から大阪までどのくらいでしたか。",
+                        "Explanation": "Dựa vào câu: 二時間半でした (2 tiếng rưỡi).",
+                        "Options": [
+                            {
+                                "Text": "一時間",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "二時間",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "二時間半",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "飛行機のチケット",
+                "TitleVi": "Vé máy bay",
+                "ContentJp": "インターネットで飛行機のチケットを買いました。来月の十日に日本へ帰ります。",
+                "ContentFurigana": "[\"インターネットで\", {\"k\":\"飛行機\",\"f\":\"ひこうき\"}, \"のチケットを\", {\"k\":\"買\",\"f\":\"か\"}, \"いました。\", {\"k\":\"来月\",\"f\":\"らいげつ\"}, \"の\", {\"k\":\"十日\",\"f\":\"とおか\"}, \"に\", {\"k\":\"日本\",\"f\":\"にほん\"}, \"へ\", {\"k\":\"帰\",\"f\":\"かえ\"}, \"ります。\"]",
+                "ContentVi": "Tôi đã mua vé máy bay trên mạng. Ngày 10 tháng sau tôi sẽ về Nhật Bản.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どこでチケットを買いましたか。",
+                        "Explanation": "Dựa vào câu: インターネットで...買いました (Mua qua mạng).",
+                        "Options": [
+                            {
+                                "Text": "お店",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "空港",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "インターネット",
+                                "IsCorrect": true
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "いつ日本へ帰りますか。",
+                        "Explanation": "Dựa vào câu: 来月の十日 (Ngày 10 tháng sau).",
+                        "Options": [
+                            {
+                                "Text": "来月の十日",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "今月の十日",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "来月の二十日",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "デパートの営業時間",
+                "TitleVi": "Giờ mở cửa trung tâm thương mại",
+                "ContentJp": "このデパートは十時から八時までです。休みの日も開いています。とても便利です。",
+                "ContentFurigana": "[\"このデパートは\", {\"k\":\"十時\",\"f\":\"じゅうじ\"}, \"から\", {\"k\":\"八時\",\"f\":\"はちじ\"}, \"までです。\", {\"k\":\"休\",\"f\":\"やす\"}, \"みの\", {\"k\":\"日\",\"f\":\"ひ\"}, \"も\", {\"k\":\"開\",\"f\":\"あ\"}, \"いています。とても\", {\"k\":\"便利\",\"f\":\"べんり\"}, \"です。\"]",
+                "ContentVi": "Trung tâm thương mại này mở cửa từ 10 giờ đến 8 giờ. Những ngày nghỉ cũng vẫn mở cửa. Rất là tiện lợi.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "何時に終わりますか。",
+                        "Explanation": "Dựa vào câu: 八時までです (Đến 8 giờ - thời điểm kết thúc).",
+                        "Options": [
+                            {
+                                "Text": "八時",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "十時",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "九時",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "休みの日はどうですか。",
+                        "Explanation": "Dựa vào câu: 休みの日も開いています (Ngày nghỉ cũng mở cửa).",
+                        "Options": [
+                            {
+                                "Text": "休みです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "開いています",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "わかりません",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "自転車で駅へ",
+                "TitleVi": "Đi xe đạp đến nhà ga",
+                "ContentJp": "毎日、自転車で駅へ行きます。駅から会社まで電車に乗ります。全部で四十分かかります。",
+                "ContentFurigana": "[{\"k\":\"毎日\",\"f\":\"まいにち\"}, \"、\", {\"k\":\"自転車\",\"f\":\"じてんしゃ\"}, \"で\", {\"k\":\"駅\",\"f\":\"えき\"}, \"へ\", {\"k\":\"行\",\"f\":\"い\"}, \"きます。\", {\"k\":\"駅\",\"f\":\"えき\"}, \"から\", {\"k\":\"会社\",\"f\":\"かいしゃ\"}, \"まで\", {\"k\":\"電車\",\"f\":\"でんしゃ\"}, \"に\", {\"k\":\"乗\",\"f\":\"の\"}, \"ります。\", {\"k\":\"全部\",\"f\":\"ぜんぶ\"}, \"で\", {\"k\":\"四十分\",\"f\":\"よんじゅっぷん\"}, \"かかります。\"]",
+                "ContentVi": "Mỗi ngày, tôi đi xe đạp đến nhà ga. Từ nhà ga đến công ty tôi đi bằng tàu điện. Tổng cộng mất 40 phút.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どうやって駅へ行きますか。",
+                        "Explanation": "Dựa vào câu: 自転車で駅へ行きます。",
+                        "Options": [
+                            {
+                                "Text": "歩いて",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "自転車で",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "バスで",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "家から会社までどのくらいかかりますか。",
+                        "Explanation": "Dựa vào câu: 全部で四十分かかります (Tổng cộng mất 40 phút).",
+                        "Options": [
+                            {
+                                "Text": "四十分",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "十分",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "一時間",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "友達を待つ",
+                "TitleVi": "Đợi bạn",
+                "ContentJp": "駅の前で友達を待っています。約束の時間は十時半です。今は十時二十分です。",
+                "ContentFurigana": "[{\"k\":\"駅\",\"f\":\"えき\"}, \"の\", {\"k\":\"前\",\"f\":\"まえ\"}, \"で\", {\"k\":\"友達\",\"f\":\"ともだち\"}, \"を\", {\"k\":\"待\",\"f\":\"ま\"}, \"っています。\", {\"k\":\"約束\",\"f\":\"やくそく\"}, \"の\", {\"k\":\"時間\",\"f\":\"じかん\"}, \"は\", {\"k\":\"十時半\",\"f\":\"じゅうじはん\"}, \"です。\", {\"k\":\"今\",\"f\":\"いま\"}, \"は\", {\"k\":\"十時二十分\",\"f\":\"じゅうじにじゅっぷん\"}, \"です。\"]",
+                "ContentVi": "Tôi đang đợi bạn ở trước nhà ga. Giờ hẹn là 10 rưỡi. Bây giờ là 10 giờ 20 phút.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どこで待っていますか。",
+                        "Explanation": "Địa điểm: 駅の前 (Trước nhà ga).",
+                        "Options": [
+                            {
+                                "Text": "駅の中",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "駅の前",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "公園の中",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "約束の時間は何時ですか。",
+                        "Explanation": "Giờ hẹn: 十時半 (10 rưỡi).",
+                        "Options": [
+                            {
+                                "Text": "十時半",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "十時二十分",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "十時",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "朝の散歩",
+                "TitleVi": "Đi dạo buổi sáng",
+                "ContentJp": "私は毎朝、公園を歩きます。一時間歩きます。そして、八時に朝ご飯を食べます。",
+                "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"毎朝\",\"f\":\"まいあさ\"}, \"、\", {\"k\":\"公園\",\"f\":\"こうえん\"}, \"を\", {\"k\":\"歩\",\"f\":\"ある\"}, \"きます。\", {\"k\":\"一時間歩\",\"f\":\"いちじかんある\"}, \"きます。そして、\", {\"k\":\"八時\",\"f\":\"はちじ\"}, \"に\", {\"k\":\"朝\",\"f\":\"あさ\"}, \"ご\", {\"k\":\"飯\",\"f\":\"はん\"}, \"を\", {\"k\":\"食\",\"f\":\"た\"}, \"べます。\"]",
+                "ContentVi": "Mỗi sáng, tôi đi bộ ở công viên. Tôi đi bộ 1 tiếng đồng hồ. Sau đó, tôi ăn sáng lúc 8 giờ.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "毎朝、どのくらい歩きますか。",
+                        "Explanation": "Thời gian đi bộ: 一時間 (1 tiếng).",
+                        "Options": [
+                            {
+                                "Text": "三十分",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "一時間",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "二時間",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "八時に何をしますか。",
+                        "Explanation": "Hành động lúc 8 giờ: 朝ご飯を食べます (Ăn sáng).",
+                        "Options": [
+                            {
+                                "Text": "公園を歩きます",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "学校へ行きます",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "朝ご飯を食べます",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "バスの乗り場",
+                "TitleVi": "Bến xe buýt",
+                "ContentJp": "すみません、バス乗り場はどこですか。あの信号を右へ曲がってください。左にあります。",
+                "ContentFurigana": "[\"すみません、バス\", {\"k\":\"乗\",\"f\":\"の\"}, \"り\", {\"k\":\"場\",\"f\":\"ば\"}, \"はどこですか。あの\", {\"k\":\"信号\",\"f\":\"しんごう\"}, \"を\", {\"k\":\"右\",\"f\":\"みぎ\"}, \"へ\", {\"k\":\"曲\",\"f\":\"ま\"}, \"がってください。\", {\"k\":\"左\",\"f\":\"ひだり\"}, \"にあります。\"]",
+                "ContentVi": "Xin lỗi, bến xe buýt ở đâu vậy? Hãy rẽ phải ở cột đèn giao thông kia. Nó nằm ở bên trái.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "信号をどちらへ曲がりますか。",
+                        "Explanation": "Chỉ dẫn rẽ: 右へ曲がってください (Rẽ phải).",
+                        "Options": [
+                            {
+                                "Text": "右",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "左",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "まっすぐ",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "バスの乗り場はどちらにありますか。",
+                        "Explanation": "Vị trí bến xe buýt: 左にあります (Nằm ở bên trái).",
+                        "Options": [
+                            {
+                                "Text": "右",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "左",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "後ろ",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "渋滞と遅刻",
+                "TitleVi": "Kẹt xe và muộn giờ",
+                "ContentJp": "今日は道がとても混んでいたので、バスが三十分も遅れてしまいました。約束の時間に間に合わなくて、友達を待たせてしまいました。",
+                "ContentFurigana": "[{\"k\":\"今日\",\"f\":\"きょう\"}, \"は\", {\"k\":\"道\",\"f\":\"みち\"}, \"がとても\", {\"k\":\"混\",\"f\":\"こ\"}, \"んでいたので、バスが\", {\"k\":\"三十分\",\"f\":\"さんじゅっぷん\"}, \"も\", {\"k\":\"遅\",\"f\":\"おく\"}, \"れてしまいました。\", {\"k\":\"約束\",\"f\":\"やくそく\"}, \"の\", {\"k\":\"時間\",\"f\":\"じかん\"}, \"に\", {\"k\":\"間\",\"f\":\"ま\"}, \"に\", {\"k\":\"合\",\"f\":\"あ\"}, \"わなくて、\", {\"k\":\"友達\",\"f\":\"ともだち\"}, \"を\", {\"k\":\"待\",\"f\":\"ま\"}, \"たせてしまいました。\"]",
+                "ContentVi": "Vì hôm nay đường rất đông nên xe buýt đã bị trễ tận 30 phút. Tôi đã không kịp giờ hẹn và khiến bạn mình phải chờ đợi.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どうして遅刻しましたか。",
+                        "Explanation": "Dựa vào nguyên nhân: 道がとても混んでいたので (Vì đường rất đông/kẹt xe).",
+                        "Options": [
+                            {
+                                "Text": "道を間違えたから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "道が混んでいたから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "寝坊したから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "友達はどうしましたか。",
+                        "Explanation": "Sử dụng thể sai khiến: 待たせてしまいました (Tôi đã khiến bạn phải đợi).",
+                        "Options": [
+                            {
+                                "Text": "先に帰りました",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "私を待ちました",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "怒って電話しました",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "終電に間に合うために",
+                "TitleVi": "Để kịp chuyến tàu cuối",
+                "ContentJp": "日本の電車は時間が正確ですが、終電を逃すとタクシー代がとても高くなります。早く帰れるように、仕事の時間を調整しています。",
+                "ContentFurigana": "[{\"k\":\"日本\",\"f\":\"にほん\"}, \"の\", {\"k\":\"電車\",\"f\":\"でんしゃ\"}, \"は\", {\"k\":\"時間\",\"f\":\"じかん\"}, \"が\", {\"k\":\"正確\",\"f\":\"せいかく\"}, \"ですが、\", {\"k\":\"終電\",\"f\":\"しゅうでん\"}, \"を\", {\"k\":\"逃\",\"f\":\"のが\"}, \"すとタクシー\", {\"k\":\"代\",\"f\":\"だい\"}, \"がとても\", {\"k\":\"高\",\"f\":\"たか\"}, \"くなります。\", {\"k\":\"早\",\"f\":\"はや\"}, \"く\", {\"k\":\"帰\",\"f\":\"かえ\"}, \"れるように、\", {\"k\":\"仕事\",\"f\":\"しごと\"}, \"の\", {\"k\":\"時間\",\"f\":\"じかん\"}, \"を\", {\"k\":\"調整\",\"f\":\"ちょうせい\"}, \"しています。\"]",
+                "ContentVi": "Tàu điện ở Nhật thời gian rất chính xác, nhưng nếu lỡ chuyến tàu cuối thì tiền taxi sẽ trở nên rất đắt. Tôi đang điều chỉnh thời gian làm việc để có thể về sớm.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "終電を逃すとどうなりますか。",
+                        "Explanation": "Dựa vào câu: タクシー代がとても高くなります (Tiền taxi sẽ rất đắt).",
+                        "Options": [
+                            {
+                                "Text": "歩いて帰れません",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "タクシー代が高くかかります",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "会社に泊まります",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "今、何をしていますか。",
+                        "Explanation": "Hành động hiện tại: 仕事の時間を調整しています (Điều chỉnh giờ làm việc).",
+                        "Options": [
+                            {
+                                "Text": "仕事の時間を変えています",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "新しい電車を作っています",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "友達と遊んでいます",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "ICカードの便利さ",
+                "TitleVi": "Sự tiện lợi của thẻ IC",
+                "ContentJp": "切符を買わなくても、ICカードがあれば簡単に電車に乗れます。チャージしておけば、コンビニで買い物をすることもできて便利です。",
+                "ContentFurigana": "[{\"k\":\"切符\",\"f\":\"きっぷ\"}, \"を\", {\"k\":\"買\",\"f\":\"か\"}, \"わなくても、ICカードがあれば\", {\"k\":\"簡単\",\"f\":\"かんたん\"}, \"に\", {\"k\":\"電車\",\"f\":\"でんしゃ\"}, \"に\", {\"k\":\"乗\",\"f\":\"の\"}, \"れます。チャージしておけば、コンビニで\", {\"k\":\"買\",\"f\":\"か\"}, \"い\", {\"k\":\"物\",\"f\":\"もの\"}, \"をすることもできて\", {\"k\":\"便利\",\"f\":\"べんり\"}, \"です。\"]",
+                "ContentVi": "Dù không mua vé, nếu có thẻ IC bạn vẫn có thể lên tàu một cách dễ dàng. Nếu nạp tiền sẵn, bạn còn có thể mua sắm ở cửa hàng tiện lợi, rất tiện lợi.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "ICカードがあると何ができますか。",
+                        "Explanation": "Dựa vào câu: 簡単に電車に乗れます (Có thể lên tàu dễ dàng).",
+                        "Options": [
+                            {
+                                "Text": "無料で電車に乗れます",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "切符なしで電車に乗れます",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "タクシーを呼べます",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "電車に乗る以外に何ができますか。",
+                        "Explanation": "Công dụng khác: コンビニで買い物をすることもできて (Có thể mua sắm ở cửa hàng tiện lợi).",
+                        "Options": [
+                            {
+                                "Text": "映画が見られます",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "コンビニで買い物できます",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "勉強ができます",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "空港までの道のり",
+                "TitleVi": "Đường đến sân bay",
+                "ContentJp": "空港へ行くリムジンバスは、一時間に三本走っているはずです。でも、道が混んでいるかもしれないので、早めに出発したほうがいいです。",
+                "ContentFurigana": "[{\"k\":\"空港\",\"f\":\"くうこう\"}, \"へ\", {\"k\":\"行\",\"f\":\"い\"}, \"くリムジンバスは、\", {\"k\":\"一時間\",\"f\":\"いちじかん\"}, \"に\", {\"k\":\"三本走\",\"f\":\"さんぼんはし\"}, \"っているはずです。でも、\", {\"k\":\"道\",\"f\":\"みち\"}, \"が\", {\"k\":\"混\",\"f\":\"こ\"}, \"んでいるかもしれないので、\", {\"k\":\"早\",\"f\":\"はや\"}, \"めに出発したほうがいいです。\"]",
+                "ContentVi": "Xe buýt Limousine đi sân bay chắc chắn sẽ chạy 3 chuyến mỗi giờ. Thế nhưng, vì đường có lẽ sẽ đông nên tốt hơn là nên xuất phát sớm.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "バスは一時間に何回ありますか。",
+                        "Explanation": "Dựa vào số lượng: 一時間に三本 (3 chuyến/giờ).",
+                        "Options": [
+                            {
+                                "Text": "三回",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "一回",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "五回",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "どうして早く出発したほうがいいですか。",
+                        "Explanation": "Dựa vào dự đoán: 道が混んでいるかもしれない (Đường có lẽ sẽ đông).",
+                        "Options": [
+                            {
+                                "Text": "バスが故障するからです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "道が混んでいるかもしれないからです",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "空港が遠いからです",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "新幹線という乗り物",
+                "TitleVi": "Phương tiện gọi là Shinkansen",
+                "ContentJp": "新幹線は、日本の速くて有名な乗り物です。飛行機よりは遅いですが、駅が町の中心にあるので、移動するのにとても便利です。",
+                "ContentFurigana": "[{\"k\":\"新幹線\",\"f\":\"しんかんせん\"}, \"は、\", {\"k\":\"日本\",\"f\":\"にほん\"}, \"の\", {\"k\":\"速\",\"f\":\"はや\"}, \"くて\", {\"k\":\"有名\",\"f\":\"ゆうめい\"}, \"な\", {\"k\":\"乗\",\"f\":\"の\"}, \"り\", {\"k\":\"物\",\"f\":\"もの\"}, \"です。\", {\"k\":\"飛行機\",\"f\":\"ひこうき\"}, \"よりは\", {\"k\":\"遅\",\"f\":\"おそ\"}, \"いですが、\", {\"k\":\"駅\",\"f\":\"えき\"}, \"が\", {\"k\":\"町\",\"f\":\"まち\"}, \"の\", {\"k\":\"中心\",\"f\":\"ちゅうしん\"}, \"にあるので、\", {\"k\":\"移動\",\"f\":\"いどう\"}, \"するのにとても\", {\"k\":\"便利\",\"f\":\"べんり\"}, \"です。\"]",
+                "ContentVi": "Shinkansen là phương tiện nhanh và nổi tiếng của Nhật Bản. Tuy chậm hơn máy bay nhưng vì nhà ga nằm ở trung tâm thị trấn nên rất tiện lợi cho việc di chuyển.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "新幹線と飛行機はどちらが速いですか。",
+                        "Explanation": "Dựa vào so sánh: 飛行機よりは遅い (Chậm hơn máy bay) -> Máy bay nhanh hơn.",
+                        "Options": [
+                            {
+                                "Text": "新幹線",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "飛行機",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "同じです",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "新幹線の便利な点はどこですか。",
+                        "Explanation": "Ưu điểm: 駅が町の中心にある (Nhà ga nằm ở trung tâm).",
+                        "Options": [
+                            {
+                                "Text": "駅が町の真ん中にあります",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "チケットが無料です",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "食べ物が美味しいです",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "忘れ物センター",
+                "TitleVi": "Trung tâm tìm đồ thất lạc",
+                "ContentJp": "電車の中に鞄を忘れてしまいました。駅の人に聞いたら、忘れ物センターに届けられていると言われました。見つかってよかったです。",
+                "ContentFurigana": "[{\"k\":\"電車\",\"f\":\"でんしゃ\"}, \"の\", {\"k\":\"中\",\"f\":\"なか\"}, \"に\", {\"k\":\"鞄\",\"f\":\"かばん\"}, \"を\", {\"k\":\"忘\",\"f\":\"わす\"}, \"れてしまいました。\", {\"k\":\"駅\",\"f\":\"えき\"}, \"の\", {\"k\":\"人\",\"f\":\"ひと\"}, \"に\", {\"k\":\"聞\",\"f\":\"き\"}, \"いたら、\", {\"k\":\"忘\",\"f\":\"わす\"}, \"れ\", {\"k\":\"物\",\"f\":\"もの\"}, \"センターに\", {\"k\":\"届\",\"f\":\"とど\"}, \"けられていると\", {\"k\":\"言\",\"f\":\"い\"}, \"われました。\", {\"k\":\"見\",\"f\":\"み\"}, \"つかってよかったです。\"]",
+                "ContentVi": "Tôi đã để quên cặp sách trên tàu điện. Khi hỏi nhân viên nhà ga, tôi được cho biết rằng nó đã được gửi đến trung tâm tìm đồ thất lạc. Thật may là đã tìm thấy.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "私は何をしましたか。",
+                        "Explanation": "Dựa vào câu đầu: 鞄を忘れてしまいました (Tôi đã quên cặp).",
+                        "Options": [
+                            {
+                                "Text": "鞄を盗まれました",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "鞄を忘れてしまいました",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "鞄を買いました",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "鞄は今どこにありますか。",
+                        "Explanation": "Dựa vào câu: 忘れ物センターに届けられている (Được gửi đến trung tâm đồ thất lạc).",
+                        "Options": [
+                            {
+                                "Text": "警察署",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "ゴミ箱の中",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "忘れ物センター",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "通勤ラッシュ",
+                "TitleVi": "Giờ cao điểm đi làm",
+                "ContentJp": "朝の電車はとても込んでいます。座ることができないので、いつも本を読んで立っています。時々、疲れてしまいます。",
+                "ContentFurigana": "[{\"k\":\"朝\",\"f\":\"あさ\"}, \"の\", {\"k\":\"電車\",\"f\":\"でんしゃ\"}, \"はとても\", {\"k\":\"込\",\"f\":\"こ\"}, \"んでいます。\", {\"k\":\"座\",\"f\":\"すわ\"}, \"ることができないので、いつも\", {\"k\":\"本\",\"f\":\"ほん\"}, \"を\", {\"k\":\"読\",\"f\":\"よ\"}, \"んで\", {\"k\":\"立\",\"f\":\"た\"}, \"っています。\", {\"k\":\"時々\",\"f\":\"ときどき\"}, \"、\", {\"k\":\"疲\",\"f\":\"つか\"}, \"れてしまいます。\"]",
+                "ContentVi": "Chuyến tàu buổi sáng rất đông đúc. Vì không thể ngồi nên tôi luôn đứng đọc sách. Thỉnh thoảng, tôi cảm thấy rất mệt mỏi.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "朝の電車はどうですか。",
+                        "Explanation": "Dựa vào câu: 朝の電車はとても込んでいます (Tàu buổi sáng rất đông đúc).",
+                        "Options": [
+                            {
+                                "Text": "とても空いています",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "とても込んでいます",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "座ることができます",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "電車の中で何をしますか。",
+                        "Explanation": "Dựa vào câu: いつも本を読んで立っています (Tôi luôn đứng đọc sách).",
+                        "Options": [
+                            {
+                                "Text": "音楽を聴いて寝ます",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "本を読んで立っています",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "座って本を読みます",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "夜行バスの旅行",
+                "TitleVi": "Du lịch bằng xe buýt đêm",
+                "ContentJp": "新幹線は速くて便利ですが、高いです。夜行バスは時間がかかりますが、安いので学生に人気があります。私はよく夜行バスで旅行します。",
+                "ContentFurigana": "[{\"k\":\"新幹線\",\"f\":\"しんかんせん\"}, \"は\", {\"k\":\"速\",\"f\":\"はや\"}, \"くて\", {\"k\":\"便利\",\"f\":\"べんり\"}, \"ですが、\", {\"k\":\"高\",\"f\":\"たか\"}, \"いです。\", {\"k\":\"夜行\",\"f\":\"やこう\"}, \"バスは\", {\"k\":\"時間\",\"f\":\"じかん\"}, \"がかかりますが、\", {\"k\":\"安\",\"f\":\"やす\"}, \"いので\", {\"k\":\"学生\",\"f\":\"がくせい\"}, \"に\", {\"k\":\"人気\",\"f\":\"にんき\"}, \"があります。\", {\"k\":\"私\",\"f\":\"わたし\"}, \"はよく\", {\"k\":\"夜行\",\"f\":\"やこう\"}, \"バスで\", {\"k\":\"旅行\",\"f\":\"りょこう\"}, \"します。\"]",
+                "ContentVi": "Shinkansen nhanh và tiện lợi nhưng đắt. Xe buýt đêm mất thời gian nhưng rẻ nên được sinh viên ưa chuộng. Tôi thường đi du lịch bằng xe buýt đêm.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "夜行バスのいいところは何ですか。",
+                        "Explanation": "Dựa vào câu: 安いので (Vì rẻ).",
+                        "Options": [
+                            {
+                                "Text": "速いところ",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "安いところ",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "時間がかからないところ",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "夜行バスはどんな人に人気がありますか。",
+                        "Explanation": "Dựa vào câu: 学生に人気があります (Phổ biến với sinh viên).",
+                        "Options": [
+                            {
+                                "Text": "お年寄り",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "お金持ち",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "学生",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "乗り換えアプリ",
+                "TitleVi": "Ứng dụng chuyển tàu",
+                "ContentJp": "初めて行く場所は道が分からないので、いつもスマートフォンのアプリで電車の時間を調べます。乗り換える駅も分かるので、とても便利です。",
+                "ContentFurigana": "[{\"k\":\"初\",\"f\":\"はじ\"}, \"めて\", {\"k\":\"行\",\"f\":\"い\"}, \"く\", {\"k\":\"場所\",\"f\":\"ばしょ\"}, \"は\", {\"k\":\"道\",\"f\":\"みち\"}, \"が\", {\"k\":\"分\",\"f\":\"わ\"}, \"からないので、いつもスマートフォンのアプリで\", {\"k\":\"電車\",\"f\":\"でんしゃ\"}, \"の\", {\"k\":\"時間\",\"f\":\"じかん\"}, \"を\", {\"k\":\"調\",\"f\":\"しら\"}, \"べます。\", {\"k\":\"乗\",\"f\":\"の\"}, \"り\", {\"k\":\"換\",\"f\":\"か\"}, \"える\", {\"k\":\"駅\",\"f\":\"えき\"}, \"も\", {\"k\":\"分\",\"f\":\"わ\"}, \"かるので、とても\", {\"k\":\"便利\",\"f\":\"べんり\"}, \"です。\"]",
+                "ContentVi": "Khi đến một nơi lần đầu tiên, vì không biết đường nên tôi luôn dùng ứng dụng điện thoại để tra giờ tàu. Vì biết được cả ga phải chuyển tàu nên rất tiện lợi.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "何で電車の時間を調べますか。",
+                        "Explanation": "Dựa vào câu: スマートフォンのアプリで電車の時間を調べます (Dùng ứng dụng điện thoại để tra cứu).",
+                        "Options": [
+                            {
+                                "Text": "スマートフォンのアプリ",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "駅のポスター",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "友達に聞く",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "アプリを使うと何が分かりますか。",
+                        "Explanation": "Dựa vào câu: 乗り換える駅も分かるので (Cũng biết được cả ga chuyển tàu).",
+                        "Options": [
+                            {
+                                "Text": "タクシーの値段",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "駅のレストラン",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "乗り換える駅",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "道に迷った時",
+                "TitleVi": "Khi bị lạc đường",
+                "ContentJp": "道に迷ってしまったので、交番で警察官に道を聞きました。地図を書いて丁寧に教えてくれたおかげで、無事にホテルに着くことができました。",
+                "ContentFurigana": "[{\"k\":\"道\",\"f\":\"みち\"}, \"に\", {\"k\":\"迷\",\"f\":\"まよ\"}, \"ってしまったので、\", {\"k\":\"交番\",\"f\":\"こうばん\"}, \"で\", {\"k\":\"警察官\",\"f\":\"けいさつかん\"}, \"に\", {\"k\":\"道\",\"f\":\"みち\"}, \"を\", {\"k\":\"聞\",\"f\":\"き\"}, \"きました。\", {\"k\":\"地図\",\"f\":\"ちず\"}, \"を\", {\"k\":\"書\",\"f\":\"か\"}, \"いて\", {\"k\":\"丁寧\",\"f\":\"ていねい\"}, \"に\", {\"k\":\"教\",\"f\":\"おし\"}, \"えてくれたおかげで、\", {\"k\":\"無事\",\"f\":\"ぶじ\"}, \"にホテルに\", {\"k\":\"着\",\"f\":\"つ\"}, \"くことができました。\"]",
+                "ContentVi": "Vì bị lạc đường nên tôi đã hỏi đường cảnh sát ở bốt cảnh sát. Nhờ họ vẽ bản đồ và chỉ dẫn tận tình nên tôi đã đến được khách sạn an toàn.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どこで道を聞きましたか。",
+                        "Explanation": "Dựa vào câu: 交番で警察官に道を聞きました (Hỏi đường cảnh sát ở bốt cảnh sát).",
+                        "Options": [
+                            {
+                                "Text": "駅で",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "交番で警察官に聞いた",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "道の人に聞いた",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "どうやって道を教えてくれましたか。",
+                        "Explanation": "Dựa vào câu: 地図を書いて丁寧に教えてくれた (Vẽ bản đồ và chỉ dẫn tận tình).",
+                        "Options": [
+                            {
+                                "Text": "地図を書いてくれた",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "一緒に行ってくれた",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "スマートフォンで調べてくれた",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "病院へ行く時間",
+                "TitleVi": "Thời gian đi bệnh viện",
+                "ContentJp": "私は明日、バスで病院へ行きます。家から病院まで二十分かかります。午前九時に着きます。",
+                "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"明日\",\"f\":\"あした\"}, \"、バスで\", {\"k\":\"病院\",\"f\":\"びょういん\"}, \"へ\", {\"k\":\"行\",\"f\":\"い\"}, \"きます。\", {\"k\":\"家\",\"f\":\"いえ\"}, \"から\", {\"k\":\"病院\",\"f\":\"びょういん\"}, \"まで\", {\"k\":\"二十分\",\"f\":\"にじゅっぷん\"}, \"かかります。\", {\"k\":\"午前九時\",\"f\":\"ごぜんくじ\"}, \"に\", {\"k\":\"着\",\"f\":\"つ\"}, \"きます。\"]",
+                "ContentVi": "Ngày mai tôi sẽ đi đến bệnh viện bằng xe buýt. Từ nhà đến bệnh viện mất 20 phút. Tôi sẽ đến nơi lúc 9 giờ sáng.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "何で病院へ行きますか。",
+                        "Explanation": "Dựa vào câu: バスで病院へ行きます (Đi bệnh viện bằng xe buýt).",
+                        "Options": [
+                            {
+                                "Text": "タクシー",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "電車",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "バス",
+                                "IsCorrect": true
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "何時に着きますか。",
+                        "Explanation": "Dựa vào câu: 午前九時に着きます (Đến lúc 9 giờ sáng).",
+                        "Options": [
+                            {
+                                "Text": "午前九時",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "午前十時",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "午後九時",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "切符の買い方",
+                "TitleVi": "Cách mua vé",
+                "ContentJp": "駅の機械で切符を買います。東京まで五百円です。お金を入れて、ボタンを押します。",
+                "ContentFurigana": "[{\"k\":\"駅\",\"f\":\"えき\"}, \"の\", {\"k\":\"機械\",\"f\":\"きかい\"}, \"で\", {\"k\":\"切符\",\"f\":\"きっぷ\"}, \"を\", {\"k\":\"買\",\"f\":\"か\"}, \"います。\", {\"k\":\"東京\",\"f\":\"とうきょう\"}, \"まで\", {\"k\":\"五百円\",\"f\":\"ごひゃくえん\"}, \"です。お\", {\"k\":\"金\",\"f\":\"かね\"}, \"を\", {\"k\":\"入\",\"f\":\"い\"}, \"れて、ボタンを\", {\"k\":\"押\",\"f\":\"お\"}, \"します。\"]",
+                "ContentVi": "Tôi mua vé ở máy bán vé của nhà ga. Đến Tokyo là 500 yên. Cho tiền vào rồi nhấn nút.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どこで切符を買いますか。",
+                        "Explanation": "Dựa vào câu: 駅の機械で (Ở máy của nhà ga).",
+                        "Options": [
+                            {
+                                "Text": "駅の機械で",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "お店の中で",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "バスの中で",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "東京までいくらですか。",
+                        "Explanation": "Dựa vào câu: 東京まで五百円です (Đến Tokyo là 500 yên).",
+                        "Options": [
+                            {
+                                "Text": "三百円",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "五百円",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "千円",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "駅まで歩く",
+                "TitleVi": "Đi bộ đến ga",
+                "ContentJp": "私の家から駅まで歩いて十分です。毎日、七時半に家を出ます。朝は気持ちがいいです。",
+                "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"の\", {\"k\":\"家\",\"f\":\"いえ\"}, \"から\", {\"k\":\"駅\",\"f\":\"えき\"}, \"まで\", {\"k\":\"歩\",\"f\":\"ある\"}, \"いて\", {\"k\":\"十分\",\"f\":\"じゅっぷん\"}, \"です。\", {\"k\":\"毎日\",\"f\":\"まいにち\"}, \"、\", {\"k\":\"七時半\",\"f\":\"しちじはん\"}, \"に\", {\"k\":\"家\",\"f\":\"いえ\"}, \"を\", {\"k\":\"出\",\"f\":\"で\"}, \"ます。\", {\"k\":\"朝\",\"f\":\"あさ\"}, \"は\", {\"k\":\"気持\",\"f\":\"きも\"}, \"ちがいいです。\"]",
+                "ContentVi": "Từ nhà tôi đi bộ đến ga mất 10 phút. Mỗi ngày tôi ra khỏi nhà lúc 7 rưỡi. Buổi sáng cảm giác rất dễ chịu.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "駅までどうやって行きますか。",
+                        "Explanation": "Dựa vào câu: 歩いて十分です (Đi bộ 10 phút).",
+                        "Options": [
+                            {
+                                "Text": "歩いて行きます",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "自転車で行きます",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "バスで行きます",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "何時に家を出ますか。",
+                        "Explanation": "Dựa vào câu: 七時半に家を出ます (Ra khỏi nhà lúc 7 rưỡi).",
+                        "Options": [
+                            {
+                                "Text": "七時に",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "七時半に",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "八時に",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "地下鉄は便利",
+                "TitleVi": "Tàu điện ngầm tiện lợi",
+                "ContentJp": "地下鉄はとても便利です。車が多くても、地下鉄は遅れません。私はよく乗ります。",
+                "ContentFurigana": "[{\"k\":\"地下鉄\",\"f\":\"ちかてつ\"}, \"はとても\", {\"k\":\"便利\",\"f\":\"べんり\"}, \"です。\", {\"k\":\"車\",\"f\":\"くるま\"}, \"が\", {\"k\":\"多\",\"f\":\"おお\"}, \"くても、\", {\"k\":\"地下鉄\",\"f\":\"ちかてつ\"}, \"は\", {\"k\":\"遅\",\"f\":\"おく\"}, \"れません。\", {\"k\":\"私\",\"f\":\"わたし\"}, \"はよく\", {\"k\":\"乗\",\"f\":\"の\"}, \"ります。\"]",
+                "ContentVi": "Tàu điện ngầm rất tiện lợi. Dù có nhiều ô tô đi chăng nữa, tàu điện ngầm cũng không bị trễ. Tôi thường xuyên đi tàu điện ngầm.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "地下鉄はどうですか。",
+                        "Explanation": "Dựa vào câu đầu: 地下鉄はとても便利です (Tàu điện ngầm rất tiện lợi).",
+                        "Options": [
+                            {
+                                "Text": "便利です",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "不便です",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "高いです",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "どうして便利ですか。",
+                        "Explanation": "Dựa vào câu: 車が多くても、地下鉄は遅れません (Dù nhiều xe cũng không bị trễ).",
+                        "Options": [
+                            {
+                                "Text": "駅から近いからです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "遅れないからです",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "安いからです",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "バス停で待つ",
+                "TitleVi": "Đợi ở trạm xe buýt",
+                "ContentJp": "バス停で十分待ちました。でも、バスは来ません。道が混んでいると思います。",
+                "ContentFurigana": "[{\"k\":\"バス停\",\"f\":\"バスてい\"}, \"で\", {\"k\":\"十分待\",\"f\":\"じゅっぷんま\"}, \"ちました。でも、バスは\", {\"k\":\"来\",\"f\":\"き\"}, \"ません。\", {\"k\":\"道\",\"f\":\"みち\"}, \"が\", {\"k\":\"混\",\"f\":\"こ\"}, \"んでいると\", {\"k\":\"思\",\"f\":\"おも\"}, \"います。\"]",
+                "ContentVi": "Tôi đã đợi 10 phút ở trạm xe buýt. Thế nhưng xe buýt vẫn không đến. Tôi nghĩ là đường đang bị tắc.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どのくらい待ちましたか。",
+                        "Explanation": "Dựa vào câu: 十分待ちました (Đã đợi 10 phút).",
+                        "Options": [
+                            {
+                                "Text": "五分",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "十分",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "一時間",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "バスはどうして来ませんか。",
+                        "Explanation": "Dựa vào câu: 道が混んでいると思います (Nghĩ là đường đang bị tắc).",
+                        "Options": [
+                            {
+                                "Text": "道が混んでいるからです",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "バスが壊れたからです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "雨が降っているからです",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "飛行機で帰る",
+                "TitleVi": "Về bằng máy bay",
+                "ContentJp": "来週、飛行機で国へ帰ります。飛行機の中では寝たり、映画を見たりします。",
+                "ContentFurigana": "[{\"k\":\"来週\",\"f\":\"らいしゅう\"}, \"、\", {\"k\":\"飛行機\",\"f\":\"ひこうき\"}, \"で\", {\"k\":\"国\",\"f\":\"くに\"}, \"へ\", {\"k\":\"帰\",\"f\":\"かえ\"}, \"ります。\", {\"k\":\"飛行機\",\"f\":\"ひこうき\"}, \"の\", {\"k\":\"中\",\"f\":\"なか\"}, \"では\", {\"k\":\"寝\",\"f\":\"ね\"}, \"たり、\", {\"k\":\"映画\",\"f\":\"えいが\"}, \"を\", {\"k\":\"見\",\"f\":\"み\"}, \"たりします。\"]",
+                "ContentVi": "Tuần sau, tôi sẽ về nước bằng máy bay. Trong máy bay, tôi sẽ ngủ hoặc xem phim.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "いつ国へ帰りますか。",
+                        "Explanation": "Thời điểm: 来週 (Tuần sau).",
+                        "Options": [
+                            {
+                                "Text": "今週",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "来週",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "来月",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "飛行機の中で何をしますか。",
+                        "Explanation": "Hành động: 寝たり、映画を見たりします (Ngủ hoặc xem phim).",
+                        "Options": [
+                            {
+                                "Text": "本を読みます",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "寝たり映画を見たりします",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "仕事をします",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "待ち合わせの時間",
+                "TitleVi": "Thời gian hẹn gặp",
+                "ContentJp": "明日の待ち合わせは一時半です。場所は駅の北口です。遅れないでくださいね。",
+                "ContentFurigana": "[{\"k\":\"明日\",\"f\":\"あした\"}, \"の\", {\"k\":\"待\",\"f\":\"ま\"}, \"ち\", {\"k\":\"合\",\"f\":\"あ\"}, \"わせは\", {\"k\":\"一時半\",\"f\":\"いちじはん\"}, \"です。\", {\"k\":\"場所\",\"f\":\"ばしょ\"}, \"は\", {\"k\":\"駅\",\"f\":\"えき\"}, \"の\", {\"k\":\"北口\",\"f\":\"きたぐち\"}, \"です。\", {\"k\":\"遅\",\"f\":\"おく\"}, \"れないでくださいね。\"]",
+                "ContentVi": "Giờ hẹn gặp ngày mai là 1 rưỡi. Địa điểm là cửa Bắc của nhà ga. Đừng đến muộn nhé.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "待ち合わせは何時ですか。",
+                        "Explanation": "Thời gian: 一時半 (1 rưỡi).",
+                        "Options": [
+                            {
+                                "Text": "一時",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "一時半",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "二時半",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "場所はどこですか。",
+                        "Explanation": "Địa điểm: 駅の北口 (Cửa Bắc nhà ga).",
+                        "Options": [
+                            {
+                                "Text": "駅の南口",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "駅の東口",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "駅の北口",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "タクシーを呼ぶ",
+                "TitleVi": "Gọi taxi",
+                "ContentJp": "荷物がたくさんありますから、タクシーを呼びました。五分で来ました。運転手さんは親切でした。",
+                "ContentFurigana": "[{\"k\":\"荷物\",\"f\":\"にもつ\"}, \"がたくさんありますから、タクシーを\", {\"k\":\"呼\",\"f\":\"よ\"}, \"びました。\", {\"k\":\"五分\",\"f\":\"ごふん\"}, \"で\", {\"k\":\"来\",\"f\":\"き\"}, \"ました。\", {\"k\":\"運転手\",\"f\":\"うんてんしゅ\"}, \"さんは\", {\"k\":\"親切\",\"f\":\"しんせつ\"}, \"でした。\"]",
+                "ContentVi": "Vì có nhiều hành lý nên tôi đã gọi taxi. 5 phút là taxi đến. Người tài xế rất tốt bụng.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どうしてタクシーを呼びましたか。",
+                        "Explanation": "Lý do: 荷物がたくさんありますから (Vì có nhiều hành lý).",
+                        "Options": [
+                            {
+                                "Text": "雨が降っているから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "荷物がたくさんあるから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "道が分からないから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "運転手さんはどうでしたか。",
+                        "Explanation": "Dựa vào câu: 運転手さんは親切でした (Tài xế tốt bụng).",
+                        "Options": [
+                            {
+                                "Text": "親切でした",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "怖かったです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "面白かったです",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "時計を見る",
+                "TitleVi": "Nhìn đồng hồ",
+                "ContentJp": "今、時計を見ました。十二時です。お昼ご飯の時間です。食堂へ行きます。",
+                "ContentFurigana": "[{\"k\":\"今\",\"f\":\"いま\"}, \"、\", {\"k\":\"時計\",\"f\":\"とけい\"}, \"を\", {\"k\":\"見\",\"f\":\"み\"}, \"ました。\", {\"k\":\"十二時\",\"f\":\"じゅうにじ\"}, \"です。お\", {\"k\":\"昼\",\"f\":\"ひる\"}, \"ご\", {\"k\":\"飯\",\"f\":\"はん\"}, \"の\", {\"k\":\"時間\",\"f\":\"じかん\"}, \"です。\", {\"k\":\"食堂\",\"f\":\"しょくどう\"}, \"へ\", {\"k\":\"行\",\"f\":\"い\"}, \"きます。\"]",
+                "ContentVi": "Tôi vừa nhìn đồng hồ. Đã 12 giờ. Đến giờ ăn trưa rồi. Tôi sẽ đi đến nhà ăn.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "今は何時ですか。",
+                        "Explanation": "Thời gian: 十二時 (12 giờ).",
+                        "Options": [
+                            {
+                                "Text": "十時",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "十二時",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "一時",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "これからどこへ行きますか。",
+                        "Explanation": "Hành động tiếp theo: 食堂へ行きます (Đi đến nhà ăn).",
+                        "Options": [
+                            {
+                                "Text": "食堂",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "教室",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "図書館",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "新幹線と駅弁",
+                "TitleVi": "Shinkansen và cơm hộp nhà ga",
+                "ContentJp": "新幹線の中で駅弁を食べました。美味しいお弁当です。景色を見ながら食べるのは最高です。",
+                "ContentFurigana": "[{\"k\":\"新幹線\",\"f\":\"しんかんせん\"}, \"の\", {\"k\":\"中\",\"f\":\"なか\"}, \"で\", {\"k\":\"駅弁\",\"f\":\"えきべん\"}, \"を\", {\"k\":\"食\",\"f\":\"た\"}, \"べました。\", {\"k\":\"美味\",\"f\":\"おい\"}, \"しいお\", {\"k\":\"弁当\",\"f\":\"べんとう\"}, \"です。\", {\"k\":\"景色\",\"f\":\"けしき\"}, \"を\", {\"k\":\"見\",\"f\":\"み\"}, \"ながら\", {\"k\":\"食\",\"f\":\"た\"}, \"べるのは\", {\"k\":\"最高\",\"f\":\"さいこう\"}, \"です。\"]",
+                "ContentVi": "Tôi đã ăn cơm hộp nhà ga (Ekiben) ở trong tàu Shinkansen. Đó là một hộp cơm ngon. Vừa ngắm cảnh vừa ăn thì thật tuyệt vời.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どこでお弁当を食べましたか。",
+                        "Explanation": "Địa điểm: 新幹線の中で (Trong tàu Shinkansen).",
+                        "Options": [
+                            {
+                                "Text": "駅の中で",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "新幹線の中で",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "家で",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "お弁当を食べながら何をしますか。",
+                        "Explanation": "Dựa vào câu: 景色を見ながら食べる (Vừa ăn vừa ngắm cảnh).",
+                        "Options": [
+                            {
+                                "Text": "音楽を聴きます",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "景色を見ます",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "本を読みます",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "定期券を買う",
+                "TitleVi": "Mua vé tháng",
+                "ContentJp": "四月から大学に通うので、一ヶ月の定期券を買いました。毎日切符を買うより安いですし、改札を通るのも早いです。",
+                "ContentFurigana": "[{\"k\":\"四月\",\"f\":\"しがつ\"}, \"から\", {\"k\":\"大学\",\"f\":\"だいがく\"}, \"に\", {\"k\":\"通\",\"f\":\"かよ\"}, \"うので、\", {\"k\":\"一ヶ月\",\"f\":\"いっかげつ\"}, \"の\", {\"k\":\"定期券\",\"f\":\"ていきけん\"}, \"を\", {\"k\":\"買\",\"f\":\"か\"}, \"いました。\", {\"k\":\"毎日切符\",\"f\":\"まいにちきっぷ\"}, \"を\", {\"k\":\"買\",\"f\":\"か\"}, \"うより\", {\"k\":\"安\",\"f\":\"やす\"}, \"いですし、\", {\"k\":\"改札\",\"f\":\"かいさつ\"}, \"を\", {\"k\":\"通\",\"f\":\"とお\"}, \"るのも\", {\"k\":\"早\",\"f\":\"はや\"}, \"いです。\"]",
+                "ContentVi": "Vì từ tháng 4 tôi sẽ đi học đại học nên tôi đã mua vé tháng cho 1 tháng. Nó rẻ hơn so với việc mua vé mỗi ngày, và đi qua cổng soát vé cũng nhanh hơn.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どうして定期券を買いましたか。",
+                        "Explanation": "Lý do: 四月から大学に通うので (Vì tháng 4 bắt đầu đi học đại học).",
+                        "Options": [
+                            {
+                                "Text": "旅行に行くから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "大学に通うから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "切符をなくしたから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "定期券のいいところは何ですか。",
+                        "Explanation": "Ưu điểm: 毎日切符を買うより安いですし、改札を通るのも早い (Rẻ hơn mua vé hằng ngày và qua cổng soát vé nhanh hơn).",
+                        "Options": [
+                            {
+                                "Text": "安くて早いところ",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "切符より美しいところ",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "誰でも使えるところ",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "交通事故で遅れる",
+                "TitleVi": "Muộn do tai nạn giao thông",
+                "ContentJp": "今朝、交差点で交通事故があったため、バスがなかなか来ませんでした。先生に連絡して、授業に遅れると伝えました。",
+                "ContentFurigana": "[{\"k\":\"今朝\",\"f\":\"けさ\"}, \"、\", {\"k\":\"交差点\",\"f\":\"こうさてん\"}, \"で\", {\"k\":\"交通事故\",\"f\":\"こうつうじこ\"}, \"があったため、バスがなかなか\", {\"k\":\"来\",\"f\":\"き\"}, \"ませんでした。\", {\"k\":\"先生\",\"f\":\"せんせい\"}, \"に\", {\"k\":\"連絡\",\"f\":\"れんらく\"}, \"して、\", {\"k\":\"授業\",\"f\":\"じゅぎょう\"}, \"に\", {\"k\":\"遅\",\"f\":\"おく\"}, \"れると\", {\"k\":\"伝\",\"f\":\"つた\"}, \"えました。\"]",
+                "ContentVi": "Sáng nay, vì có tai nạn giao thông ở ngã tư nên xe buýt mãi không đến. Tôi đã liên lạc với giáo viên và báo rằng mình sẽ đến lớp muộn.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どうしてバスが来ませんでしたか。",
+                        "Explanation": "Nguyên nhân: 交通事故があったため (Vì có tai nạn giao thông).",
+                        "Options": [
+                            {
+                                "Text": "道が工事中だったから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "交通事故があったから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "雪が降ったから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "この後、何をしましたか。",
+                        "Explanation": "Hành động tiếp theo: 先生に連絡して、授業に遅れると伝えた (Liên lạc báo giáo viên sẽ đến muộn).",
+                        "Options": [
+                            {
+                                "Text": "先生に遅れると連絡した",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "家に帰った",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "タクシーに乗った",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "レンタサイクル",
+                "TitleVi": "Thuê xe đạp",
+                "ContentJp": "京都を旅行した時、レンタサイクルを利用しました。バスを待つ必要がなく、好きな神社やお寺を自由に回れたので、とても便利でした。",
+                "ContentFurigana": "[{\"k\":\"京都\",\"f\":\"きょうと\"}, \"を\", {\"k\":\"旅行\",\"f\":\"りょこう\"}, \"した\", {\"k\":\"時\",\"f\":\"とき\"}, \"、レンタサイクルを\", {\"k\":\"利用\",\"f\":\"りよう\"}, \"しました。バスを\", {\"k\":\"待\",\"f\":\"ま\"}, \"つ\", {\"k\":\"必要\",\"f\":\"ひつよう\"}, \"がなく、\", {\"k\":\"好\",\"f\":\"す\"}, \"きな\", {\"k\":\"神社\",\"f\":\"じんじゃ\"}, \"やお\", {\"k\":\"寺\",\"f\":\"てら\"}, \"を\", {\"k\":\"自由\",\"f\":\"じゆう\"}, \"に\", {\"k\":\"回\",\"f\":\"まわ\"}, \"れたので、とても\", {\"k\":\"便利\",\"f\":\"べんり\"}, \"でした。\"]",
+                "ContentVi": "Khi du lịch ở Kyoto, tôi đã sử dụng xe đạp cho thuê. Không cần phải chờ xe buýt và có thể tự do đi vòng quanh các đền chùa mình thích nên rất tiện lợi.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "旅行中、何を利用しましたか。",
+                        "Explanation": "Phương tiện: レンタサイクル (Xe đạp cho thuê).",
+                        "Options": [
+                            {
+                                "Text": "レンタカー",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "レンタサイクル",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "タクシー",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "どうして便利でしたか。",
+                        "Explanation": "Lý do: バスを待つ必要がなく、自由に回れたので (Không cần đợi xe buýt, có thể tự do đi lại).",
+                        "Options": [
+                            {
+                                "Text": "値段が安かったから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "自由に好きな場所を回れたから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "速かったから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "複雑な乗り換え",
+                "TitleVi": "Chuyển tàu phức tạp",
+                "ContentJp": "東京の駅は広くて、電車の乗り換えがとても複雑です。間違えないように、駅員さんに「新宿へ行くには何番線ですか」と尋ねました。",
+                "ContentFurigana": "[{\"k\":\"東京\",\"f\":\"とうきょう\"}, \"の\", {\"k\":\"駅\",\"f\":\"えき\"}, \"は\", {\"k\":\"広\",\"f\":\"ひろ\"}, \"くて、\", {\"k\":\"電車\",\"f\":\"でんしゃ\"}, \"の\", {\"k\":\"乗\",\"f\":\"の\"}, \"り\", {\"k\":\"換\",\"f\":\"か\"}, \"えがとても\", {\"k\":\"複雑\",\"f\":\"ふくざつ\"}, \"です。\", {\"k\":\"間違\",\"f\":\"まちが\"}, \"えないように、\", {\"k\":\"駅員\",\"f\":\"えきいん\"}, \"さんに「\", {\"k\":\"新宿\",\"f\":\"しんじゅく\"}, \"へ\", {\"k\":\"行\",\"f\":\"い\"}, \"くには\", {\"k\":\"何番線\",\"f\":\"なんばんせん\"}, \"ですか」と\", {\"k\":\"尋\",\"f\":\"たず\"}, \"ねました。\"]",
+                "ContentVi": "Nhà ga ở Tokyo rất rộng và việc chuyển tàu rất phức tạp. Để không bị nhầm, tôi đã hỏi nhân viên nhà ga rằng 'Để đi đến Shinjuku thì đi tuyến số mấy vậy?'.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "東京の駅はどうですか。",
+                        "Explanation": "Mô tả: 広くて、乗り換えが複雑 (Rộng và việc chuyển tàu phức tạp).",
+                        "Options": [
+                            {
+                                "Text": "狭くて簡単です",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "広くて乗り換えが複雑です",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "暗くて人が少ないです",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "間違えないように何をしましたか。",
+                        "Explanation": "Hành động: 駅員さんに尋ねた (Đã hỏi nhân viên nhà ga).",
+                        "Options": [
+                            {
+                                "Text": "駅員さんに聞いた",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "スマートフォンを見た",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "友達に電話した",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "道を尋ねる",
+                "TitleVi": "Hỏi đường",
+                "ContentJp": "美術館を探していましたが、道に迷ってしまいました。通りを歩いている人に道を聞いたら、「二つ目の角を右に曲がってください」と親切に教えてくれました。",
+                "ContentFurigana": "[{\"k\":\"美術館\",\"f\":\"びじゅつかん\"}, \"を\", {\"k\":\"探\",\"f\":\"さが\"}, \"していましたが、\", {\"k\":\"道\",\"f\":\"みち\"}, \"に\", {\"k\":\"迷\",\"f\":\"まよ\"}, \"ってしまいました。\", {\"k\":\"通\",\"f\":\"とお\"}, \"りを\", {\"k\":\"歩\",\"f\":\"ある\"}, \"いている\", {\"k\":\"人\",\"f\":\"ひと\"}, \"に\", {\"k\":\"道\",\"f\":\"みち\"}, \"を\", {\"k\":\"聞\",\"f\":\"き\"}, \"いたら、「\", {\"k\":\"二\",\"f\":\"ふた\"}, \"つ\", {\"k\":\"目\",\"f\":\"め\"}, \"の\", {\"k\":\"角\",\"f\":\"かど\"}, \"を\", {\"k\":\"右\",\"f\":\"みぎ\"}, \"に\", {\"k\":\"曲\",\"f\":\"ま\"}, \"がってください」と\", {\"k\":\"親切\",\"f\":\"しんせつ\"}, \"に\", {\"k\":\"教\",\"f\":\"おし\"}, \"えてくれました。\"]",
+                "ContentVi": "Tôi đang tìm bảo tàng mỹ thuật nhưng lại bị lạc đường. Khi hỏi đường một người đang đi bộ trên phố, họ đã tốt bụng chỉ cho tôi 'Hãy rẽ phải ở góc cua thứ 2 nhé'.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "誰に道を聞きましたか。",
+                        "Explanation": "Người được hỏi: 通りを歩いている人 (Người đang đi bộ trên đường).",
+                        "Options": [
+                            {
+                                "Text": "警察官",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "通りを歩いている人",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "駅員さん",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "人は何と言いましたか。",
+                        "Explanation": "Lời chỉ đường: 二つ目の角を右に曲がってください (Rẽ phải ở góc cua thứ hai).",
+                        "Options": [
+                            {
+                                "Text": "一つ目の角を左に曲がる",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "二つ目の角を右に曲がる",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "まっすぐ行く",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "高速道路の運転",
+                "TitleVi": "Lái xe trên đường cao tốc",
+                "ContentJp": "お盆休みに、自分の車を運転して田舎へ帰りました。高速道路はとても混んでいて、普通なら二時間のところが四時間もかかりました。本当に疲れました。",
+                "ContentFurigana": "[{\"k\":\"盆休\",\"f\":\"ぼんやす\"}, \"みに、\", {\"k\":\"自分\",\"f\":\"じぶん\"}, \"の\", {\"k\":\"車\",\"f\":\"くるま\"}, \"を\", {\"k\":\"運転\",\"f\":\"うんてん\"}, \"して\", {\"k\":\"田舎\",\"f\":\"いなか\"}, \"へ\", {\"k\":\"帰\",\"f\":\"かえ\"}, \"りました。\", {\"k\":\"高速道路\",\"f\":\"こうそくどうろ\"}, \"はとても\", {\"k\":\"混\",\"f\":\"こ\"}, \"んでいて、\", {\"k\":\"普通\",\"f\":\"ふつう\"}, \"なら\", {\"k\":\"二時間\",\"f\":\"にじかん\"}, \"のところが\", {\"k\":\"四時間\",\"f\":\"よんじかん\"}, \"もかかりました。\", {\"k\":\"本当\",\"f\":\"ほんとう\"}, \"に\", {\"k\":\"疲\",\"f\":\"つか\"}, \"れました。\"]",
+                "ContentVi": "Vào kỳ nghỉ Obon, tôi tự lái xe về quê. Đường cao tốc rất tắc, bình thường mất 2 tiếng mà lần này tốn đến 4 tiếng. Thực sự rất mệt mỏi.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どうして疲れましたか。",
+                        "Explanation": "Nguyên nhân: 高速道路がとても混んでいて、四時間もかかったから (Vì đường cao tốc tắc nên mất tận 4 tiếng).",
+                        "Options": [
+                            {
+                                "Text": "道に迷ったから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "渋滞で四時間もかかったから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "事故があったから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "普通ならどのくらいかかりますか。",
+                        "Explanation": "Thời gian bình thường: 普通なら二時間 (Bình thường thì 2 tiếng).",
+                        "Options": [
+                            {
+                                "Text": "二時間",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "四時間",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "一時間",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "時刻表の変更",
+                "TitleVi": "Thay đổi lịch trình",
+                "ContentJp": "春からバスの時刻表が変わりました。朝の便が一本増えたので、学校に遅れなくなりました。とても助かっています。",
+                "ContentFurigana": "[{\"k\":\"春\",\"f\":\"はる\"}, \"からバスの\", {\"k\":\"時刻表\",\"f\":\"じこくひょう\"}, \"が\", {\"k\":\"変\",\"f\":\"か\"}, \"わりました。\", {\"k\":\"朝\",\"f\":\"あさ\"}, \"の\", {\"k\":\"便\",\"f\":\"びん\"}, \"が\", {\"k\":\"一本増\",\"f\":\"いっぽんふ\"}, \"えたので、\", {\"k\":\"学校\",\"f\":\"がっこう\"}, \"に\", {\"k\":\"遅\",\"f\":\"おく\"}, \"れなくなりました。とても\", {\"k\":\"助\",\"f\":\"たす\"}, \"かっています。\"]",
+                "ContentVi": "Từ mùa xuân, lịch trình xe buýt đã thay đổi. Vì tăng thêm một chuyến vào buổi sáng nên tôi không còn bị trễ học nữa. Việc này giúp ích rất nhiều.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "時刻表はどう変わりましたか。",
+                        "Explanation": "Sự thay đổi: 朝の便が一本増えた (Tăng thêm 1 chuyến sáng).",
+                        "Options": [
+                            {
+                                "Text": "朝の便が一本減った",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "朝の便が一本増えた",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "夜の便が増えた",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "その結果、どうなりましたか。",
+                        "Explanation": "Kết quả: 学校に遅れなくなった (Không còn trễ học nữa).",
+                        "Options": [
+                            {
+                                "Text": "学校に遅れなくなった",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "学校に早く着きすぎた",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "バスに乗れなくなった",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "船での旅",
+                "TitleVi": "Chuyến du lịch bằng tàu thủy",
+                "ContentJp": "沖縄へ行く時、飛行機ではなく船を使いました。時間はかかりましたが、海からの景色が素晴らしくて、船の中の生活も楽しめました。",
+                "ContentFurigana": "[{\"k\":\"沖縄\",\"f\":\"おきなわ\"}, \"へ\", {\"k\":\"行\",\"f\":\"い\"}, \"く\", {\"k\":\"時\",\"f\":\"とき\"}, \"、\", {\"k\":\"飛行機\",\"f\":\"ひこうき\"}, \"ではなく\", {\"k\":\"船\",\"f\":\"ふね\"}, \"を\", {\"k\":\"使\",\"f\":\"つか\"}, \"いました。\", {\"k\":\"時間\",\"f\":\"じかん\"}, \"はかかりましたが、\", {\"k\":\"海\",\"f\":\"うみ\"}, \"からの\", {\"k\":\"景色\",\"f\":\"けしき\"}, \"が\", {\"k\":\"素晴\",\"f\":\"すば\"}, \"らしくて、\", {\"k\":\"船\",\"f\":\"ふね\"}, \"の\", {\"k\":\"中\",\"f\":\"なか\"}, \"の\", {\"k\":\"生活\",\"f\":\"せいかつ\"}, \"も\", {\"k\":\"楽\",\"f\":\"たの\"}, \"しめました。\"]",
+                "ContentVi": "Khi đi Okinawa, tôi đã dùng tàu thủy thay vì máy bay. Dù mất nhiều thời gian nhưng phong cảnh từ ngoài biển rất tuyệt vời, và tôi cũng tận hưởng được cuộc sống trên tàu.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どうやって沖縄へ行きましたか。",
+                        "Explanation": "Phương tiện: 船 (Tàu thủy).",
+                        "Options": [
+                            {
+                                "Text": "飛行機",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "新幹線",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "船",
+                                "IsCorrect": true
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "船の旅はどうでしたか。",
+                        "Explanation": "Cảm nhận: 時間はかかったが、景色が素晴らしくて楽しめた (Mất thời gian nhưng cảnh đẹp và rất tận hưởng).",
+                        "Options": [
+                            {
+                                "Text": "時間はかかったが楽しかった",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "速かったが景色が悪かった",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "気分が悪くなった",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "終電を逃した夜",
+                "TitleVi": "Đêm lỡ chuyến tàu cuối",
+                "ContentJp": "友達とお酒を飲んでいて、うっかり終電を逃してしまいました。タクシー代を持っていなかったので、朝までインターネットカフェで過ごしました。これからは気をつけます。",
+                "ContentFurigana": "[{\"k\":\"友達\",\"f\":\"ともだち\"}, \"とお\", {\"k\":\"酒\",\"f\":\"さけ\"}, \"を\", {\"k\":\"飲\",\"f\":\"の\"}, \"んでいて、うっかり\", {\"k\":\"終電\",\"f\":\"しゅうでん\"}, \"を\", {\"k\":\"逃\",\"f\":\"のが\"}, \"してしまいました。タクシー\", {\"k\":\"代\",\"f\":\"だい\"}, \"を\", {\"k\":\"持\",\"f\":\"も\"}, \"っていなかったので、\", {\"k\":\"朝\",\"f\":\"あさ\"}, \"までインターネットカフェで\", {\"k\":\"過\",\"f\":\"す\"}, \"ごしました。これからは\", {\"k\":\"気\",\"f\":\"き\"}, \"をつけます。\"]",
+                "ContentVi": "Vì uống rượu với bạn bè nên tôi đã lỡ mất chuyến tàu cuối. Do không mang theo tiền taxi nên tôi đã ở quán cà phê internet cho đến sáng. Từ nay tôi sẽ cẩn thận hơn.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どうしてタクシーに乗れませんでしたか。",
+                        "Explanation": "Lý do: タクシー代を持っていなかったから (Vì không mang tiền taxi).",
+                        "Options": [
+                            {
+                                "Text": "道が混んでいたから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "タクシー代を持っていなかったから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "タクシーがいなかったから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "朝までどこにいましたか。",
+                        "Explanation": "Địa điểm: インターネットカフェで過ごしました (Ở quán cà phê internet).",
+                        "Options": [
+                            {
+                                "Text": "駅の中",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "友達の家",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "インターネットカフェ",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "ラッシュアワーを避ける",
+                "TitleVi": "Tránh giờ cao điểm",
+                "ContentJp": "朝八時の電車は人が多すぎて息ができないほどです。そのため、私は毎朝七時の空いている電車に乗るようにしています。早く会社に着いて、ゆっくりコーヒーを飲みます。",
+                "ContentFurigana": "[{\"k\":\"朝八時\",\"f\":\"あさはちじ\"}, \"の\", {\"k\":\"電車\",\"f\":\"でんしゃ\"}, \"は\", {\"k\":\"人\",\"f\":\"ひと\"}, \"が\", {\"k\":\"多\",\"f\":\"おお\"}, \"すぎて\", {\"k\":\"息\",\"f\":\"いき\"}, \"ができないほどです。そのため、\", {\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"毎朝七時\",\"f\":\"まいあさしちじ\"}, \"の\", {\"k\":\"空\",\"f\":\"す\"}, \"いている\", {\"k\":\"電車\",\"f\":\"でんしゃ\"}, \"に\", {\"k\":\"乗\",\"f\":\"の\"}, \"るようにしています。\", {\"k\":\"早\",\"f\":\"はや\"}, \"く\", {\"k\":\"会社\",\"f\":\"かいしゃ\"}, \"に\", {\"k\":\"着\",\"f\":\"つ\"}, \"いて、ゆっくりコーヒーを\", {\"k\":\"飲\",\"f\":\"の\"}, \"みます。\"]",
+                "ContentVi": "Chuyến tàu lúc 8 giờ sáng đông đến mức nghẹt thở. Vì vậy, mỗi sáng tôi cố gắng đi chuyến tàu lúc 7 giờ còn trống. Tôi đến công ty sớm và thong thả uống cà phê.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どうして七時の電車に乗りますか。",
+                        "Explanation": "Lý do: 八時の電車は人が多すぎるため、空いている七時の電車に乗る (Vì tàu lúc 8h quá đông nên đi tàu vắng lúc 7h).",
+                        "Options": [
+                            {
+                                "Text": "八時の電車は人が多すぎるから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "七時の電車が速いから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "会社が七時からだから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "早く会社に着いて、何をしますか。",
+                        "Explanation": "Hành động: ゆっくりコーヒーを飲みます (Thong thả uống cà phê).",
+                        "Options": [
+                            {
+                                "Text": "すぐに仕事を始める",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "ゆっくりコーヒーを飲む",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "新聞を読む",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

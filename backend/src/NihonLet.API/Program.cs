@@ -37,6 +37,7 @@ public partial class Program
         // 2. Add layers
         builder.Services.AddApplication();
         builder.Services.AddInfrastructure(builder.Configuration);
+        builder.Services.AddScoped<IReadingRepository, NihonLet.Infrastructure.Persistence.Repositories.ReadingRepository>();
 
         builder.Services.AddControllers()
             .AddJsonOptions(options =>
@@ -122,6 +123,19 @@ public partial class Program
                 {
                     // Nếu lỗi ở đây, chỉ log lại chứ không làm dừng cả App
                     logger.LogError(ex, "!!! NihonLet: Lỗi nạp Grammar JSON nhưng server vẫn sẽ khởi động.");
+                }
+
+                try
+                {
+                    logger.LogInformation("--- NihonLet: Đang kiểm tra và nạp Reading JSON ---");
+                    var readingSeeder = services.GetRequiredService<ReadingSeedService>();
+                    await readingSeeder.SeedAsync();
+                    logger.LogInformation("--- NihonLet: Hoàn tất Seeding Reading ---");
+                }
+                catch (Exception ex)
+                {
+                    // Nếu lỗi ở đây, chỉ log lại chứ không làm dừng cả App
+                    logger.LogError(ex, "!!! NihonLet: Lỗi nạp Reading JSON nhưng server vẫn sẽ khởi động.");
                 }
             }
             catch (Exception ex)

@@ -1,0 +1,1028 @@
+[
+  {
+    "NameVi": "Tin tức",
+    "NameJp": "ニュース",
+    "Description": "Cập nhật tin tức thời sự, dự báo thời tiết và các sự kiện tại Nhật Bản.",
+    "IconUrl": "/icons/news.png",
+    "Articles": [
+      {
+        "Level": "N5",
+        "TitleJp": "今日の天気",
+        "TitleVi": "Thời tiết hôm nay",
+        "ContentJp": "今日の天気は晴れです。午後は少し雨が降ります。傘を持って行ってください。",
+        "ContentFurigana": "[{\"k\":\"今日\",\"f\":\"きょう\"}, \"の\", {\"k\":\"天気\",\"f\":\"てんき\"}, \"は\", {\"k\":\"晴\",\"f\":\"は\"}, \"れです。\", {\"k\":\"午後\",\"f\":\"ごご\"}, \"は\", {\"k\":\"少\",\"f\":\"すこ\"}, \"し\", {\"k\":\"雨\",\"f\":\"あめ\"}, \"が\", {\"k\":\"降\",\"f\":\"ふ\"}, \"ります。\", {\"k\":\"傘\",\"f\":\"かさ\"}, \"を\", {\"k\":\"持\",\"f\":\"も\"}, \"って\", {\"k\":\"行\",\"f\":\"い\"}, \"ってください。\"]",
+        "ContentVi": "Thời tiết hôm nay trời nắng. Buổi chiều sẽ có mưa một chút. Hãy mang theo ô nhé.",
+        "Questions": [
+          {
+            "QuestionText": "午後の天気はどうですか。",
+            "Explanation": "Dựa vào câu: 午後は少し雨が降ります。",
+            "Options": [
+              { "Text": "ずっと晴れです", "IsCorrect": false },
+              { "Text": "雨が降ります", "IsCorrect": true },
+              { "Text": "雪が降ります", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "何を持っていきますか。",
+            "Explanation": "Bài viết nhắc: 傘を持って行ってください (Hãy mang theo ô).",
+            "Options": [
+              { "Text": "帽子", "IsCorrect": false },
+              { "Text": "傘", "IsCorrect": true }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "新しいデパート",
+        "TitleVi": "Trung tâm thương mại mới",
+        "ContentJp": "駅の前に新しいデパートができました。とても大きいです。明日からセールが始まります。",
+        "ContentFurigana": "[{\"k\":\"駅\",\"f\":\"えき\"}, \"の\", {\"k\":\"前\",\"f\":\"まえ\"}, \"に\", {\"k\":\"新\",\"f\":\"あたら\"}, \"しいデパートができました。とても\", {\"k\":\"大\",\"f\":\"おお\"}, \"きいです。\", {\"k\":\"明日\",\"f\":\"あした\"}, \"からセールが\", {\"k\":\"始\",\"f\":\"はじ\"}, \"まります。\"]",
+        "ContentVi": "Một trung tâm thương mại mới đã được xây dựng trước nhà ga. Nó rất lớn. Chương trình giảm giá sẽ bắt đầu từ ngày mai.",
+        "Questions": [
+          {
+            "QuestionText": "デパートはどこにありますか。",
+            "Explanation": "Câu đầu tiên: 駅の前に... (Ở trước nhà ga).",
+            "Options": [
+              { "Text": "駅の前", "IsCorrect": true },
+              { "Text": "病院の隣", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "セールはいつからですか。",
+            "Explanation": "明日からセールが始まります (Bắt đầu từ ngày mai).",
+            "Options": [
+              { "Text": "今日から", "IsCorrect": false },
+              { "Text": "明日から", "IsCorrect": true }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "電車のニュース",
+        "TitleVi": "Tin tức tàu điện",
+        "ContentJp": "今朝、強い風で電車が止まりました。今は動いています。少し遅れています。",
+        "ContentFurigana": "[{\"k\":\"今朝\",\"f\":\"けさ\"}, \"、\", {\"k\":\"強\",\"f\":\"つよ\"}, \"い\", {\"k\":\"風\",\"f\":\"かぜ\"}, \"で\", {\"k\":\"電車\",\"f\":\"電しゃ\"}, \"が\", {\"k\":\"止\",\"f\":\"と\"}, \"まりました。\"]",
+        "ContentVi": "Sáng nay, do gió mạnh nên tàu điện đã bị dừng. Bây giờ tàu đã chạy lại nhưng hơi trễ một chút.",
+        "Questions": [
+          {
+            "QuestionText": "どうして電車が止まりましたか。",
+            "Explanation": "Do gió mạnh (強い風).",
+            "Options": [
+              { "Text": "事故で", "IsCorrect": false },
+              { "Text": "強い風で", "IsCorrect": true }
+            ]
+          },
+          {
+            "QuestionText": "電車は今どうですか。",
+            "Explanation": "Tàu đang chạy nhưng bị trễ (少し遅れています).",
+            "Options": [
+              { "Text": "遅れています", "IsCorrect": true },
+              { "Text": "止まっています", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "お祭りの知らせ",
+        "TitleVi": "Thông báo về lễ hội",
+        "ContentJp": "来週の日曜日に公園でお祭りがあります。いろいろな食べ物があります。夜に花火も見ることができます。",
+        "ContentFurigana": "[{\"k\":\"来週\",\"f\":\"らいしゅう\"}, \"の\", {\"k\":\"日曜日\",\"f\":\"にちようび\"}, \"に\", {\"k\":\"公園\",\"f\":\"こうえん\"}, \"でお\", {\"k\":\"祭\",\"f\":\"まつ\"}, \"りがあります。\"]",
+        "ContentVi": "Chủ nhật tuần tới sẽ có lễ hội ở công viên. Có rất nhiều đồ ăn. Buổi tối bạn cũng có thể xem pháo hoa nữa.",
+        "Questions": [
+          {
+            "QuestionText": "お祭りはどこでありますか。",
+            "Options": [
+              { "Text": "公園", "IsCorrect": true },
+              { "Text": "駅", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "夜に何が見られますか。",
+            "Options": [
+              { "Text": "花火", "IsCorrect": true },
+              { "Text": "ダンス", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "パンダの赤ちゃん",
+        "TitleVi": "Gấu trúc con",
+        "ContentJp": "動物園でパンダの赤ちゃんが生まれました。名前はまだありません。来月から見ることができます。",
+        "ContentFurigana": "[{\"k\":\"動物園\",\"f\":\"どうぶつえん\"}, \"でパンダの\", {\"k\":\"赤\",\"f\":\"あか\"}, \"ちゃんが\", {\"k\":\"生\",\"f\":\"う\"}, \"まれました。\"]",
+        "ContentVi": "Một chú gấu trúc con đã chào đời ở vườn bách thú. Hiện chưa có tên. Từ tháng sau mọi người có thể đến xem.",
+        "Questions": [
+          {
+            "QuestionText": "パンダの名前はありますか。",
+            "Explanation": "Bài nói: 名前はまだありません (Chưa có tên).",
+            "Options": [
+              { "Text": "はい", "IsCorrect": false },
+              { "Text": "いいえ", "IsCorrect": true }
+            ]
+          },
+          {
+            "QuestionText": "いつから見ることができますか。",
+            "Options": [
+              { "Text": "来月から", "IsCorrect": true },
+              { "Text": "昨日から", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "冬のニュース",
+        "TitleVi": "Tin tức mùa đông",
+        "ContentJp": "北海道はとても寒いです。昨日、たくさん雪が降りました。山は真っ白です。",
+        "ContentFurigana": "[{\"k\":\"北海道\",\"f\":\"ほっかいどう\"}, \"はとても\", {\"k\":\"寒\",\"f\":\"さむ\"}, \"いです。\"]",
+        "ContentVi": "Hokkaido đang rất lạnh. Hôm qua tuyết đã rơi rất nhiều. Núi đã trở nên trắng xóa.",
+        "Questions": [
+          {
+            "QuestionText": "山の色は何色ですか。",
+            "Options": [
+              { "Text": "白", "IsCorrect": true },
+              { "Text": "青", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "昨日の天気はどうでしたか。",
+            "Options": [
+              { "Text": "雪", "IsCorrect": true },
+              { "Text": "晴れ", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "新しい図書館",
+        "TitleVi": "Thư viện mới",
+        "ContentJp": "町の北に新しい図書館ができました。月曜日から金曜日まで開いています。本がたくさんあります。",
+        "ContentFurigana": "[{\"k\":\"町\",\"f\":\"まち\"}, \"の\", {\"k\":\"北\",\"f\":\"きた\"}, \"に\", {\"k\":\"新\",\"f\":\"あたら\"}, \"しい\", {\"k\":\"図書館\",\"f\":\"としょかん\"}, \"ができました。\"]",
+        "ContentVi": "Một thư viện mới đã mở ở phía bắc thị trấn. Mở cửa từ thứ Hai đến thứ Sáu. Có rất nhiều sách.",
+        "Questions": [
+          {
+            "QuestionText": "図書館はどこにありますか。",
+            "Options": [
+              { "Text": "北", "IsCorrect": true },
+              { "Text": "南", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "土曜日に開いていますか。",
+            "Explanation": "Thư viện chỉ mở đến thứ Sáu (金曜日まで).",
+            "Options": [
+              { "Text": "はい", "IsCorrect": false },
+              { "Text": "いいえ", "IsCorrect": true }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "バスのニュース",
+        "TitleVi": "Tin tức xe buýt",
+        "ContentJp": "来月からバスの時間が変わります。朝のバスが早くなります。気をつけてください。",
+        "ContentFurigana": "[{\"k\":\"来月\",\"f\":\"らいげつ\"}, \"からバスの\", {\"k\":\"時間\",\"f\":\"じかん\"}, \"が\", {\"k\":\"変\",\"f\":\"か\"}, \"わります。\"]",
+        "ContentVi": "Từ tháng sau giờ xe buýt sẽ thay đổi. Xe buýt buổi sáng sẽ sớm hơn. Hãy lưu ý.",
+        "Questions": [
+          {
+            "QuestionText": "いつから変わりますか。",
+            "Options": [
+              { "Text": "来月から", "IsCorrect": true },
+              { "Text": "昨日から", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "朝のバスはどうなりますか。",
+            "Options": [
+              { "Text": "早くなる", "IsCorrect": true },
+              { "Text": "遅くなる", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "桜の公園",
+        "TitleVi": "Công viên hoa anh đào",
+        "ContentJp": "公園の桜がとてもきれいです。たくさんの人が写真を撮っています。お酒は飲まないでください。",
+        "ContentFurigana": "[{\"k\":\"公園\",\"f\":\"こうえん\"}, \"の\", {\"k\":\"桜\",\"f\":\"さくら\"}, \"がとてもきれいです。\"]",
+        "ContentVi": "Hoa anh đào trong công viên rất đẹp. Nhiều người đang chụp ảnh. Vui lòng không uống rượu.",
+        "Questions": [
+          {
+            "QuestionText": "人々は何をしていますか。",
+            "Options": [
+              { "Text": "写真を撮っています", "IsCorrect": true },
+              { "Text": "お酒を飲んでいます", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "公園でお酒を飲んでもいいですか。",
+            "Options": [
+              { "Text": "いいえ", "IsCorrect": true },
+              { "Text": "はい", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "スポーツの日",
+        "TitleVi": "Ngày hội thể thao",
+        "ContentJp": "明日はスポーツの日です。学校は休みです。先生と学生は公園へ行きます。",
+        "ContentFurigana": "[{\"k\":\"明日\",\"f\":\"あした\"}, \"はスポーツの\", {\"k\":\"日\",\"f\":\"ひ\"}, \"です。\"]",
+        "ContentVi": "Ngày mai là ngày thể thao. Trường học nghỉ. Giáo viên và học sinh sẽ đi công viên.",
+        "Questions": [
+          {
+            "QuestionText": "明日は学校がありますか。",
+            "Options": [
+              { "Text": "いいえ、休みです", "IsCorrect": true },
+              { "Text": "はい、あります", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "誰が公園へ行きますか。",
+            "Options": [
+              { "Text": "先生と学生", "IsCorrect": true },
+              { "Text": "家族", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "新しい美術館の完成",
+        "TitleVi": "Hoàn thành bảo tàng mỹ thuật mới",
+        "ContentJp": "町の真ん中に新しい美術館が建てられました。来月の初めから一般の人も入れるようになります。世界的に有名な絵が見られるそうです。",
+        "ContentFurigana": "[{\"k\":\"町\",\"f\":\"まち\"}, \"の\", {\"k\":\"真\",\"f\":\"ま\"}, \"ん\", {\"k\":\"中\",\"f\":\"なか\"}, \"に\", {\"k\":\"新\",\"f\":\"あたら\"}, \"しい\", {\"k\":\"美術館\",\"f\":\"びじゅつかん\"}, \"が\", {\"k\":\"建\",\"f\":\"た\"}, \"てられました。\"]",
+        "ContentVi": "Một bảo tàng mỹ thuật mới đã được xây dựng ở trung tâm thị trấn. Từ đầu tháng sau, mọi người có thể vào xem những bức tranh nổi tiếng thế giới.",
+        "Questions": [
+          {
+            "QuestionText": "美術館はどこにありますか。",
+            "Options": [
+              { "Text": "町の真ん中", "IsCorrect": true },
+              { "Text": "駅の隣", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "いつから中に入れますか。",
+            "Options": [
+              { "Text": "来月の初めから", "IsCorrect": true },
+              { "Text": "今すぐ", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "台風の注意点",
+        "TitleVi": "Lưu ý về bão",
+        "ContentJp": "強い台風が近づいています。夜からは激しい雨が降るでしょう。不要な外出は控えるようにと言われています。",
+        "ContentFurigana": "[{\"k\":\"台風\",\"f\":\"たいふう\"}, \"が\", {\"k\":\"近\",\"f\":\"ちか\"}, \"づいています。\"]",
+        "ContentVi": "Một cơn bão mạnh đang đến gần. Từ đêm nay mưa sẽ rất dữ dội. Mọi người được khuyên hạn chế ra ngoài nếu không cần thiết.",
+        "Questions": [
+          {
+            "QuestionText": "夜の天気はどうなりそうですか。",
+            "Options": [
+              { "Text": "激しい雨が降る", "IsCorrect": true },
+              { "Text": "晴れる", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "何をしなければなりませんか。",
+            "Options": [
+              { "Text": "外出を控える", "IsCorrect": true },
+              { "Text": "傘を買う", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "桜の開花予想",
+        "TitleVi": "Dự báo hoa anh đào nở",
+        "ContentJp": "今年の桜は、例年より早く咲き始めるそうです。東京では来週の末に満開になると予想されています。",
+        "ContentFurigana": "[{\"k\":\"今年\",\"f\":\"ことし\"}, \"の\", {\"k\":\"桜\",\"f\":\"さくら\"}, \"は、\", {\"k\":\"例年\",\"f\":\"れいねん\"}, \"より\", {\"k\":\"早\",\"f\":\"はや\"}, \"く\"]",
+        "ContentVi": "Hoa anh đào năm nay sẽ nở sớm hơn mọi năm. Tại Tokyo, dự kiến hoa sẽ nở rộ vào cuối tuần tới.",
+        "Questions": [
+          {
+            "QuestionText": "今年の桜はどうですか。",
+            "Options": [
+              { "Text": "例年より早い", "IsCorrect": true },
+              { "Text": "例年より遅い", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "東京はいつ満開になりますか。",
+            "Options": [
+              { "Text": "来週末", "IsCorrect": true },
+              { "Text": "明日", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "新しい電気自動車",
+        "TitleVi": "Xe điện mới",
+        "ContentJp": "有名な自動車メーカーが、安くて長い距離を走れる電気自動車を発表しました。排気ガスを出さないので、環境に優しいと言われています。",
+        "ContentFurigana": "[{\"k\":\"電気自動車\",\"f\":\"でんきじどうしゃ\"}, \"を\", {\"k\":\"発表\",\"f\":\"はっぴょう\"}, \"しました。\"]",
+        "ContentVi": "Một hãng xe nổi tiếng vừa công bố xe điện rẻ và chạy được quãng đường dài. Xe thân thiện với môi trường vì không có khí thải.",
+        "Questions": [
+          {
+            "QuestionText": "この車の特徴は何ですか。",
+            "Options": [
+              { "Text": "安くて長く走れる", "IsCorrect": true },
+              { "Text": "高くて速い", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "なぜ環境に優しいのですか。",
+            "Options": [
+              { "Text": "排気ガスを出さないから", "IsCorrect": true },
+              { "Text": "色が緑だから", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "お米の値段が上がる",
+        "TitleVi": "Giá gạo tăng",
+        "ContentJp": "去年、天気が悪かったため、お米の収穫が少なくなりました。そのため、スーパーでのお米の値段が上がっています。",
+        "ContentFurigana": "[{\"k\":\"収穫\",\"f\":\"しゅうかく\"}, \"が\", {\"k\":\"少\",\"f\":\"すく\"}, \"なくなりました。\"]",
+        "ContentVi": "Năm ngoái thời tiết xấu khiến sản lượng gạo giảm. Do đó, giá gạo tại các siêu thị đang tăng lên.",
+        "Questions": [
+          {
+            "QuestionText": "どうしてお米が少なくなりましたか。",
+            "Options": [
+              { "Text": "天気が悪かったから", "IsCorrect": true },
+              { "Text": "みんなが食べたから", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "今、お米の値段はどうですか。",
+            "Options": [
+              { "Text": "上がっている", "IsCorrect": true },
+              { "Text": "下がっている", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "スポーツのニュース",
+        "TitleVi": "Tin tức thể thao",
+        "ContentJp": "日本の若いテニス選手が、国際大会で優勝しました。彼女は「応援のおかげで勝てた」と話していました。",
+        "ContentFurigana": "[{\"k\":\"優勝\",\"f\":\"ゆうしょう\"}, \"しました。\"]",
+        "ContentVi": "Một tay vợt trẻ người Nhật đã vô địch giải quốc tế. Cô ấy nói thắng nhờ sự cổ vũ của mọi người.",
+        "Questions": [
+          {
+            "QuestionText": "テニス選手はどうなりましたか。",
+            "Options": [
+              { "Text": "優勝した", "IsCorrect": true },
+              { "Text": "負けた", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "勝てた理由は何ですか。",
+            "Options": [
+              { "Text": "みんなの応援", "IsCorrect": true },
+              { "Text": "天気がいい", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "外国人観光客の増加",
+        "TitleVi": "Khách du lịch nước ngoài tăng",
+        "ContentJp": "最近、日本を訪れる外国人が増えています。日本の古い文化や食べ物が人気だからだそうです。",
+        "ContentFurigana": "[{\"k\":\"訪\",\"f\":\"おとず\"}, \"れる\", {\"k\":\"外国人\",\"f\":\"がいこくじん\"}, \"が\", {\"k\":\"増\",\"f\":\"ふ\"}, \"えています。\"]",
+        "ContentVi": "Gần đây khách nước ngoài đến Nhật tăng lên nhờ văn hóa cổ và ẩm thực được yêu thích.",
+        "Questions": [
+          {
+            "QuestionText": "外国人はどうなっていますか。",
+            "Options": [
+              { "Text": "増えている", "IsCorrect": true },
+              { "Text": "減っている", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "人気の理由は何ですか。",
+            "Options": [
+              { "Text": "文化や食べ物", "IsCorrect": true },
+              { "Text": "飛行機が安い", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "ロボットが働くレストラン",
+        "TitleVi": "Nhà hàng robot",
+        "ContentJp": "東京にロボットが料理を運ぶレストランがオープンしました。人手不足を解決するために作られたそうです。",
+        "ContentFurigana": "[{\"k\":\"人手不足\",\"f\":\"ひとでぶそく\"}, \"を\", {\"k\":\"解決\",\"f\":\"かいけつ\"}, \"するために\"]",
+        "ContentVi": "Nhà hàng có robot phục vụ vừa mở tại Tokyo để giải quyết vấn đề thiếu nhân lực.",
+        "Questions": [
+          {
+            "QuestionText": "ロボットは何をしますか。",
+            "Options": [
+              { "Text": "料理を運ぶ", "IsCorrect": true },
+              { "Text": "料理を食べる", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "なぜこの店が作られましたか。",
+            "Options": [
+              { "Text": "人手不足の解決", "IsCorrect": true },
+              { "Text": "ロボットが面白い", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "新しい薬の開発",
+        "TitleVi": "Thuốc mới",
+        "ContentJp": "大学の研究グループが新しい風邪の薬を開発しました。これまでより早く治るのが特徴です。",
+        "ContentFurigana": "[{\"k\":\"風邪\",\"f\":\"かぜ\"}, \"の\", {\"k\":\"薬\",\"f\":\"くすり\"}, \"を\", {\"k\":\"開発\",\"f\":\"かいはつ\"}, \"しました。\"]",
+        "ContentVi": "Nhóm nghiên cứu đại học đã phát triển thuốc cảm mới, giúp khỏi bệnh nhanh hơn trước.",
+        "Questions": [
+          {
+            "QuestionText": "何のための薬ですか。",
+            "Options": [
+              { "Text": "風邪", "IsCorrect": true },
+              { "Text": "お腹の痛み", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "この薬の特徴は何ですか。",
+            "Options": [
+              { "Text": "早く治る", "IsCorrect": true },
+              { "Text": "とても安い", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "富士山のルール",
+        "TitleVi": "Quy định núi Phú Sĩ",
+        "ContentJp": "富士山の登山ルールが厳しくなりました。環境を守るために、入山料を払う必要があります。",
+        "ContentFurigana": "[{\"k\":\"登山\",\"f\":\"とざん\"}, \"ルールが\", {\"k\":\"厳\",\"f\":\"きび\"}, \"しくなりました。\"]",
+        "ContentVi": "Quy định leo núi Phú Sĩ khắt khe hơn. Cần trả phí leo núi để bảo vệ môi trường.",
+        "Questions": [
+          {
+            "QuestionText": "ルールはどうなりましたか。",
+            "Options": [
+              { "Text": "厳しくなった", "IsCorrect": true },
+              { "Text": "優しくなった", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "なぜお金を払いますか。",
+            "Options": [
+              { "Text": "環境を守るため", "IsCorrect": true },
+              { "Text": "道を作るため", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "動物園の新しいペンギン",
+        "TitleVi": "Chim cánh cụt mới ở vườn thú",
+        "ContentJp": "動物園に新しいペンギンが来ました。全部で五羽います。とても可愛いです。来週から見ることができます。",
+        "ContentFurigana": "[{\"k\":\"動物園\",\"f\":\"どうぶつえん\"}, \"に\", {\"k\":\"新\",\"f\":\"あたら\"}, \"しいペンギンが来ました。\", {\"k\":\"全部\",\"f\":\"ぜんぶ\"}, \"で\", {\"k\":\"五羽\",\"f\":\"ごわ\"}, \"います。とても可愛いです。\", {\"k\":\"来週\",\"f\":\"らいしゅう\"}, \"から見ることができます。\"]",
+        "ContentVi": "Vườn thú vừa có những chú chim cánh cụt mới đến. Có tất cả 5 con. Chúng rất đáng yêu. Từ tuần sau mọi người có thể đến xem.",
+        "Questions": [
+          {
+            "QuestionText": "ペンギンは何羽いますか。",
+            "Explanation": "Dựa vào câu: 全部で五羽います (Có tất cả 5 con).",
+            "Options": [
+              { "Text": "三羽", "IsCorrect": false },
+              { "Text": "五羽", "IsCorrect": true },
+              { "Text": "十羽", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "いつから見ることができますか。",
+            "Explanation": "Dựa vào câu cuối: 来週から見ることができます。",
+            "Options": [
+              { "Text": "今日から", "IsCorrect": false },
+              { "Text": "明日から", "IsCorrect": false },
+              { "Text": "来週から", "IsCorrect": true }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "夏の花火",
+        "TitleVi": "Pháo hoa mùa hè",
+        "ContentJp": "今日の夜、川の近くで花火があります。七時に始まります。たくさんの人が行きます。",
+        "ContentFurigana": "[{\"k\":\"今日\",\"f\":\"きょう\"}, \"の\", {\"k\":\"夜\",\"f\":\"よる\"}, \"、\", {\"k\":\"川\",\"f\":\"かわ\"}, \"の\", {\"k\":\"近\",\"f\":\"ちか\"}, \"くで\", {\"k\":\"花火\",\"f\":\"はなび\"}, \"があります。\", {\"k\":\"七時\",\"f\":\"しちじ\"}, \"に始まります。たくさんの\", {\"k\":\"人\",\"f\":\"ひと\"}, \"が行きます。\"]",
+        "ContentVi": "Tối nay, sẽ có pháo hoa ở gần bờ sông. Bắt đầu lúc 7 giờ. Sẽ có rất nhiều người đến xem.",
+        "Questions": [
+          {
+            "QuestionText": "どこで花火がありますか。",
+            "Explanation": "Địa điểm: 川の近く (Gần sông).",
+            "Options": [
+              { "Text": "山の近く", "IsCorrect": false },
+              { "Text": "川の近く", "IsCorrect": true }
+            ]
+          },
+          {
+            "QuestionText": "花火は何時に始まりますか。",
+            "Explanation": "Thời gian: 七時に始まります (Bắt đầu lúc 7 giờ).",
+            "Options": [
+              { "Text": "七時", "IsCorrect": true },
+              { "Text": "八時", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "大雨の注意",
+        "TitleVi": "Chú ý mưa lớn",
+        "ContentJp": "今晩、大雨が降ります。危ないですから、外に出ないでください。川に行ってはいけません。",
+        "ContentFurigana": "[{\"k\":\"今晩\",\"f\":\"こんばん\"}, \"、\", {\"k\":\"大雨\",\"f\":\"おおあめ\"}, \"が降ります。\", {\"k\":\"危\",\"f\":\"あぶ\"}, \"ないですから、\", {\"k\":\"外\",\"f\":\"そと\"}, \"に\", {\"k\":\"出\",\"f\":\"で\"}, \"ないでください。\", {\"k\":\"川\",\"f\":\"かわ\"}, \"に行ってはいけません。\"]",
+        "ContentVi": "Tối nay sẽ có mưa lớn. Vì nguy hiểm nên xin đừng ra ngoài. Không được đi ra sông.",
+        "Questions": [
+          {
+            "QuestionText": "今晩の天気はどうですか。",
+            "Explanation": "Thời tiết tối nay: 大雨 (Mưa lớn).",
+            "Options": [
+              { "Text": "雪", "IsCorrect": false },
+              { "Text": "大雨", "IsCorrect": true }
+            ]
+          },
+          {
+            "QuestionText": "どこに行ってはいけませんか。",
+            "Explanation": "Cảnh báo: 川に行ってはいけません (Không được đi ra sông).",
+            "Options": [
+              { "Text": "学校", "IsCorrect": false },
+              { "Text": "川", "IsCorrect": true }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "新しい病院",
+        "TitleVi": "Bệnh viện mới",
+        "ContentJp": "町に新しい病院ができました。とても大きくて、きれいです。土曜日も開いています。",
+        "ContentFurigana": "[{\"k\":\"町\",\"f\":\"まち\"}, \"に\", {\"k\":\"新\",\"f\":\"あたら\"}, \"しい\", {\"k\":\"病院\",\"f\":\"びょういん\"}, \"ができました。とても大きくて、きれいです。\", {\"k\":\"土曜日\",\"f\":\"どようび\"}, \"も\", {\"k\":\"開\",\"f\":\"あ\"}, \"いています。\"]",
+        "ContentVi": "Một bệnh viện mới đã được xây trong thị trấn. Nó rất lớn và sạch đẹp. Thứ Bảy cũng mở cửa.",
+        "Questions": [
+          {
+            "QuestionText": "どんな病院ですか。",
+            "Explanation": "Mô tả: 大きくて、きれいです (Lớn và sạch đẹp).",
+            "Options": [
+              { "Text": "小さくて、古い", "IsCorrect": false },
+              { "Text": "大きくて、きれい", "IsCorrect": true }
+            ]
+          },
+          {
+            "QuestionText": "土曜日は休みですか。",
+            "Explanation": "Dựa vào câu: 土曜日も開いています (Thứ Bảy cũng mở cửa).",
+            "Options": [
+              { "Text": "はい、休みです", "IsCorrect": false },
+              { "Text": "いいえ、開いています", "IsCorrect": true }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "スポーツの試合",
+        "TitleVi": "Trận đấu thể thao",
+        "ContentJp": "昨日、東京でサッカーの試合がありました。日本のチームが勝ちました。みんな喜びました。",
+        "ContentFurigana": "[{\"k\":\"昨日\",\"f\":\"きのう\"}, \"、\", {\"k\":\"東京\",\"f\":\"とうきょう\"}, \"でサッカーの\", {\"k\":\"試合\",\"f\":\"しあい\"}, \"がありました。\", {\"k\":\"日本\",\"f\":\"にほん\"}, \"のチームが\", {\"k\":\"勝\",\"f\":\"か\"}, \"ちました。みんな\", {\"k\":\"喜\",\"f\":\"よろこ\"}, \"びました。\"]",
+        "ContentVi": "Hôm qua đã có một trận đấu bóng đá ở Tokyo. Đội tuyển Nhật Bản đã giành chiến thắng. Mọi người đều rất vui mừng.",
+        "Questions": [
+          {
+            "QuestionText": "何の試合がありましたか。",
+            "Explanation": "Môn thể thao: サッカー (Bóng đá).",
+            "Options": [
+              { "Text": "野球", "IsCorrect": false },
+              { "Text": "サッカー", "IsCorrect": true }
+            ]
+          },
+          {
+            "QuestionText": "日本のチームはどうなりましたか。",
+            "Explanation": "Kết quả: 勝ちました (Đã thắng).",
+            "Options": [
+              { "Text": "勝ちました", "IsCorrect": true },
+              { "Text": "負けました", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "暑い夏",
+        "TitleVi": "Mùa hè nóng bức",
+        "ContentJp": "今年の夏はとても暑いです。毎日三十五度になります。水をたくさん飲んでください。",
+        "ContentFurigana": "[{\"k\":\"今年\",\"f\":\"ことし\"}, \"の\", {\"k\":\"夏\",\"f\":\"なつ\"}, \"はとても\", {\"k\":\"暑\",\"f\":\"あつ\"}, \"いです。\", {\"k\":\"毎日\",\"f\":\"まいにち\"}, \"三十五\", {\"k\":\"度\",\"f\":\"ど\"}, \"になります。\", {\"k\":\"水\",\"f\":\"みず\"}, \"をたくさん\", {\"k\":\"飲\",\"f\":\"の\"}, \"んでください。\"]",
+        "ContentVi": "Mùa hè năm nay rất nóng. Mỗi ngày nhiệt độ đều lên tới 35 độ. Mọi người hãy uống nhiều nước nhé.",
+        "Questions": [
+          {
+            "QuestionText": "気温は何度ですか。",
+            "Explanation": "Nhiệt độ: 三十五度 (35 độ).",
+            "Options": [
+              { "Text": "二十五度", "IsCorrect": false },
+              { "Text": "三十五度", "IsCorrect": true },
+              { "Text": "四十度", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "何をしなければなりませんか。",
+            "Explanation": "Lời khuyên: 水をたくさん飲んでください (Hãy uống nhiều nước).",
+            "Options": [
+              { "Text": "水をたくさん飲む", "IsCorrect": true },
+              { "Text": "服をたくさん着る", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "新しい映画",
+        "TitleVi": "Bộ phim mới",
+        "ContentJp": "有名なアニメの新しい映画が始まりました。子供たちに人気があります。映画館は人が多いです。",
+        "ContentFurigana": "[{\"k\":\"有名\",\"f\":\"ゆうめい\"}, \"なアニメの\", {\"k\":\"新\",\"f\":\"あたら\"}, \"しい\", {\"k\":\"映画\",\"f\":\"えいが\"}, \"が始まりました。\", {\"k\":\"子供\",\"f\":\"こども\"}, \"たちに\", {\"k\":\"人気\",\"f\":\"にんき\"}, \"があります。\", {\"k\":\"映画館\",\"f\":\"えいがかん\"}, \"は\", {\"k\":\"人\",\"f\":\"ひと\"}, \"が\", {\"k\":\"多\",\"f\":\"おお\"}, \"いです。\"]",
+        "ContentVi": "Bộ phim điện ảnh mới của một bộ anime nổi tiếng đã bắt đầu công chiếu. Nó rất được trẻ em yêu thích. Rạp chiếu phim đang có rất đông người.",
+        "Questions": [
+          {
+            "QuestionText": "誰に人気がありますか。",
+            "Explanation": "Đối tượng: 子供たち (Trẻ em).",
+            "Options": [
+              { "Text": "お年寄り", "IsCorrect": false },
+              { "Text": "子供たち", "IsCorrect": true }
+            ]
+          },
+          {
+            "QuestionText": "映画館はどうですか。",
+            "Explanation": "Tình trạng: 人が多いです (Nhiều người).",
+            "Options": [
+              { "Text": "人が多いです", "IsCorrect": true },
+              { "Text": "人が少ないです", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "マラソン大会",
+        "TitleVi": "Giải chạy Marathon",
+        "ContentJp": "日曜日に町でマラソン大会があります。道を通ることができません。車に乗る人は気をつけてください。",
+        "ContentFurigana": "[{\"k\":\"日曜日\",\"f\":\"にちようび\"}, \"に\", {\"k\":\"町\",\"f\":\"まち\"}, \"でマラソン\", {\"k\":\"大会\",\"f\":\"たいかい\"}, \"があります。\", {\"k\":\"道\",\"f\":\"みち\"}, \"を\", {\"k\":\"通\",\"f\":\"とお\"}, \"ることができません。\", {\"k\":\"車\",\"f\":\"くるま\"}, \"に\", {\"k\":\"乗\",\"f\":\"の\"}, \"る人は\", {\"k\":\"気\",\"f\":\"き\"}, \"をつけてください。\"]",
+        "ContentVi": "Vào Chủ nhật sẽ có giải chạy marathon ở thị trấn. Sẽ không thể đi qua các con đường. Những người lái xe ô tô xin hãy chú ý.",
+        "Questions": [
+          {
+            "QuestionText": "マラソン大会はいつですか。",
+            "Explanation": "Thời gian: 日曜日 (Chủ nhật).",
+            "Options": [
+              { "Text": "土曜日", "IsCorrect": false },
+              { "Text": "日曜日", "IsCorrect": true }
+            ]
+          },
+          {
+            "QuestionText": "何に気をつけますか。",
+            "Explanation": "Cảnh báo: 道を通ることができません (Không thể đi qua đường).",
+            "Options": [
+              { "Text": "道を通ることができないこと", "IsCorrect": true },
+              { "Text": "雨が降ること", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "秋の紅葉",
+        "TitleVi": "Lá đỏ mùa thu",
+        "ContentJp": "山の木が赤や黄色になりました。とてもきれいです。週末はたくさんの人が写真を撮りに来ます。",
+        "ContentFurigana": "[{\"k\":\"山\",\"f\":\"やま\"}, \"の\", {\"k\":\"木\",\"f\":\"き\"}, \"が\", {\"k\":\"赤\",\"f\":\"あか\"}, \"や\", {\"k\":\"黄色\",\"f\":\"きいろ\"}, \"になりました。とてもきれいです。\", {\"k\":\"週末\",\"f\":\"しゅうまつ\"}, \"はたくさんの人が\", {\"k\":\"写真\",\"f\":\"しゃしん\"}, \"を\", {\"k\":\"撮\",\"f\":\"と\"}, \"りに来ます。\"]",
+        "ContentVi": "Cây cối trên núi đã chuyển sang màu đỏ và vàng. Rất là đẹp. Cuối tuần có rất nhiều người đến để chụp ảnh.",
+        "Questions": [
+          {
+            "QuestionText": "山の木の色はどうなりましたか。",
+            "Explanation": "Màu sắc: 赤や黄色 (Đỏ và vàng).",
+            "Options": [
+              { "Text": "赤や黄色", "IsCorrect": true },
+              { "Text": "青や白", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "人は何をしに来ますか。",
+            "Explanation": "Mục đích: 写真を撮りに来ます (Đến để chụp ảnh).",
+            "Options": [
+              { "Text": "写真を撮るため", "IsCorrect": true },
+              { "Text": "お弁当を食べるため", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N5",
+        "TitleJp": "迷子の犬",
+        "TitleVi": "Chú chó đi lạc",
+        "ContentJp": "白い犬が見つかりました。首に赤いリボンがあります。交番にいますから、飼い主は来てください。",
+        "ContentFurigana": "[{\"k\":\"白\",\"f\":\"しろ\"}, \"い\", {\"k\":\"犬\",\"f\":\"いぬ\"}, \"が\", {\"k\":\"見\",\"f\":\"み\"}, \"つかりました。\", {\"k\":\"首\",\"f\":\"くび\"}, \"に\", {\"k\":\"赤\",\"f\":\"あか\"}, \"いリボンがあります。\", {\"k\":\"交番\",\"f\":\"こうばん\"}, \"にいますから、\", {\"k\":\"飼\",\"f\":\"か\"}, \"い\", {\"k\":\"主\",\"f\":\"ぬし\"}, \"は来てください。\"]",
+        "ContentVi": "Một chú chó màu trắng đã được tìm thấy. Cổ có đeo một chiếc nơ màu đỏ. Chó đang ở bốt cảnh sát, người chủ xin hãy đến nhận.",
+        "Questions": [
+          {
+            "QuestionText": "どんな犬が見つかりましたか。",
+            "Explanation": "Mô tả: 白い犬で、首に赤いリボンがあります (Chó trắng có nơ đỏ).",
+            "Options": [
+              { "Text": "黒くて大きい犬", "IsCorrect": false },
+              { "Text": "白くて赤いリボンがある犬", "IsCorrect": true }
+            ]
+          },
+          {
+            "QuestionText": "犬は今どこにいますか。",
+            "Explanation": "Địa điểm: 交番にいます (Đang ở bốt cảnh sát).",
+            "Options": [
+              { "Text": "公園", "IsCorrect": false },
+              { "Text": "交番", "IsCorrect": true }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "新しい新幹線",
+        "TitleVi": "Tàu Shinkansen mới",
+        "ContentJp": "新しい新幹線が走り始めました。今までより三十分早く着きます。旅行がもっと便利になります。",
+        "ContentFurigana": "[{\"k\":\"新\",\"f\":\"あたら\"}, \"しい\", {\"k\":\"新幹線\",\"f\":\"しんかんせん\"}, \"が\", {\"k\":\"走\",\"f\":\"はし\"}, \"り\", {\"k\":\"始\",\"f\":\"はじ\"}, \"めました。\", {\"k\":\"今\",\"f\":\"いま\"}, \"までより\", {\"k\":\"三十分早\",\"f\":\"さんじゅっぷんはや\"}, \"く\", {\"k\":\"着\",\"f\":\"つ\"}, \"きます。\", {\"k\":\"旅行\",\"f\":\"りょこう\"}, \"がもっと\", {\"k\":\"便利\",\"f\":\"べんり\"}, \"になります。\"]",
+        "ContentVi": "Tuyến tàu Shinkansen mới đã bắt đầu đi vào hoạt động. Tàu sẽ đến sớm hơn 30 phút so với trước đây. Việc đi du lịch sẽ trở nên tiện lợi hơn.",
+        "Questions": [
+          {
+            "QuestionText": "新しい新幹線の特徴は何ですか。",
+            "Explanation": "Đặc trưng: 今までより三十分早く着く (Đến sớm hơn 30 phút).",
+            "Options": [
+              { "Text": "値段がとても安い", "IsCorrect": false },
+              { "Text": "今までより早く着く", "IsCorrect": true },
+              { "Text": "ゆっくり走る", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "旅行はどうなりますか。",
+            "Explanation": "Kết quả: もっと便利になります (Trở nên tiện lợi hơn).",
+            "Options": [
+              { "Text": "便利になる", "IsCorrect": true },
+              { "Text": "大変になる", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "レジ袋の有料化",
+        "TitleVi": "Thu phí túi ni lông",
+        "ContentJp": "環境を守るために、スーパーやコンビニのレジ袋が有料になりました。買い物に行く時は、自分のバッグを持って行く人が増えています。",
+        "ContentFurigana": "[{\"k\":\"環境\",\"f\":\"かんきょう\"}, \"を\", {\"k\":\"守\",\"f\":\"まも\"}, \"るために、スーパーやコンビニのレジ\", {\"k\":\"袋\",\"f\":\"ぶくろ\"}, \"が\", {\"k\":\"有料\",\"f\":\"ゆうりょう\"}, \"になりました。\", {\"k\":\"買\",\"f\":\"か\"}, \"い\", {\"k\":\"物\",\"f\":\"もの\"}, \"に行く時は、\", {\"k\":\"自分\",\"f\":\"じぶん\"}, \"のバッグを持って行く人が増えています。\"]",
+        "ContentVi": "Để bảo vệ môi trường, túi ni lông tại siêu thị và cửa hàng tiện lợi đã bắt đầu thu phí. Khi đi mua sắm, ngày càng có nhiều người mang theo túi riêng của mình.",
+        "Questions": [
+          {
+            "QuestionText": "なぜレジ袋が有料になりましたか。",
+            "Explanation": "Mục đích: 環境を守るため (Để bảo vệ môi trường).",
+            "Options": [
+              { "Text": "店がもうかるため", "IsCorrect": false },
+              { "Text": "環境を守るため", "IsCorrect": true },
+              { "Text": "ゴミを増やすため", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "買い物に行く時、人々はどうしていますか。",
+            "Explanation": "Hành động: 自分のバッグを持って行く (Mang túi của mình đi).",
+            "Options": [
+              { "Text": "自分のバッグを持って行く", "IsCorrect": true },
+              { "Text": "何も買わない", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "キャッシュレス決済",
+        "TitleVi": "Thanh toán không tiền mặt",
+        "ContentJp": "最近、現金を使わずにスマートフォンで払う人が増えています。財布を持たなくてもいいので、とても便利だと言われています。",
+        "ContentFurigana": "[{\"k\":\"最近\",\"f\":\"さいきん\"}, \"、\", {\"k\":\"現金\",\"f\":\"げんきん\"}, \"を使わずにスマートフォンで\", {\"k\":\"払\",\"f\":\"はら\"}, \"う人が増えています。\", {\"k\":\"財布\",\"f\":\"さいふ\"}, \"を\", {\"k\":\"持\",\"f\":\"も\"}, \"たなくてもいいので、とても便利だと言われています。\"]",
+        "ContentVi": "Gần đây, những người sử dụng điện thoại thông minh để thanh toán thay vì dùng tiền mặt đang tăng lên. Vì không cần phải mang theo ví nên nó được cho là rất tiện lợi.",
+        "Questions": [
+          {
+            "QuestionText": "最近、何を使って払う人が増えていますか。",
+            "Explanation": "Phương thức thanh toán: スマートフォン (Điện thoại thông minh).",
+            "Options": [
+              { "Text": "スマートフォン", "IsCorrect": true },
+              { "Text": "現金", "IsCorrect": false },
+              { "Text": "切手", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "どうして便利だと言われていますか。",
+            "Explanation": "Lý do: 財布を持たなくてもいいので (Vì không cần mang theo ví).",
+            "Options": [
+              { "Text": "お釣りが出るから", "IsCorrect": false },
+              { "Text": "財布を持たなくてもいいから", "IsCorrect": true }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "地震の準備",
+        "TitleVi": "Chuẩn bị cho động đất",
+        "ContentJp": "大きな地震が来るかもしれません。水や食べ物を三日分準備しておくことが大切です。家族と逃げる場所も相談しておきましょう。",
+        "ContentFurigana": "[{\"k\":\"大\",\"f\":\"おお\"}, \"きな\", {\"k\":\"地震\",\"f\":\"じしん\"}, \"が来るかもしれません。水や食べ物を\", {\"k\":\"三日分準備\",\"f\":\"みっかぶんじゅんび\"}, \"しておくことが\", {\"k\":\"大切\",\"f\":\"たいせつ\"}, \"です。家族と\", {\"k\":\"逃\",\"f\":\"に\"}, \"げる\", {\"k\":\"場所\",\"f\":\"ばしょ\"}, \"も\", {\"k\":\"相談\",\"f\":\"そうだん\"}, \"しておきましょう。\"]",
+        "ContentVi": "Một trận động đất lớn có thể sẽ xảy ra. Việc chuẩn bị sẵn nước và thức ăn cho 3 ngày là rất quan trọng. Hãy cùng gia đình thảo luận trước về nơi sẽ sơ tán nhé.",
+        "Questions": [
+          {
+            "QuestionText": "何日分の食べ物を準備しますか。",
+            "Explanation": "Số lượng: 三日分 (Cho 3 ngày).",
+            "Options": [
+              { "Text": "一日分", "IsCorrect": false },
+              { "Text": "三日分", "IsCorrect": true },
+              { "Text": "一週間分", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "家族と何を相談しますか。",
+            "Explanation": "Nội dung thảo luận: 逃げる場所 (Nơi sẽ sơ tán).",
+            "Options": [
+              { "Text": "旅行の予定", "IsCorrect": false },
+              { "Text": "逃げる場所", "IsCorrect": true }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "ドローンの配達",
+        "TitleVi": "Giao hàng bằng Drone",
+        "ContentJp": "山の近くの町で、ドローンを使って荷物を運ぶテストが始まりました。お年寄りが買い物に行くのが大変なため、役に立つと期待されています。",
+        "ContentFurigana": "[{\"k\":\"山\",\"f\":\"やま\"}, \"の近くの町で、ドローンを使って\", {\"k\":\"荷物\",\"f\":\"にもつ\"}, \"を\", {\"k\":\"運\",\"f\":\"はこ\"}, \"ぶテストが始まりました。お\", {\"k\":\"年寄\",\"f\":\"としよ\"}, \"りが買い物に行くのが大変なため、\", {\"k\":\"役\",\"f\":\"やく\"}, \"に\", {\"k\":\"立\",\"f\":\"た\"}, \"つと\", {\"k\":\"期待\",\"f\":\"きたい\"}, \"されています。\"]",
+        "ContentVi": "Tại một thị trấn gần núi, người ta đã bắt đầu thử nghiệm dùng drone để vận chuyển hàng hóa. Vì người già đi mua sắm rất khó khăn nên nó được kỳ vọng sẽ trở nên hữu ích.",
+        "Questions": [
+          {
+            "QuestionText": "何を使って荷物を運びますか。",
+            "Explanation": "Phương tiện: ドローン (Drone).",
+            "Options": [
+              { "Text": "飛行機", "IsCorrect": false },
+              { "Text": "ドローン", "IsCorrect": true }
+            ]
+          },
+          {
+            "QuestionText": "誰の役に立つと期待されていますか。",
+            "Explanation": "Đối tượng: お年寄り (Người già).",
+            "Options": [
+              { "Text": "若い人", "IsCorrect": false },
+              { "Text": "お年寄り", "IsCorrect": true }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "食品ロスの問題",
+        "TitleVi": "Vấn đề lãng phí thực phẩm",
+        "ContentJp": "まだ食べられるのに捨てられる「食品ロス」が問題になっています。レストランでは、ご飯の量を少なくするメニューができました。",
+        "ContentFurigana": "[\"まだ食べられるのに\", {\"k\":\"捨\",\"f\":\"す\"}, \"てられる「\", {\"k\":\"食品\",\"f\":\"しょくひん\"}, \"ロス」が\", {\"k\":\"問題\",\"f\":\"もんだい\"}, \"になっています。レストランでは、ご飯の\", {\"k\":\"量\",\"f\":\"りょう\"}, \"を\", {\"k\":\"少\",\"f\":\"すく\"}, \"なくするメニューができました。\"]",
+        "ContentVi": "Tình trạng 'Lãng phí thực phẩm' (những đồ còn ăn được nhưng bị vứt đi) đang trở thành một vấn đề lớn. Tại các nhà hàng, những thực đơn giảm lượng cơm đã được tạo ra.",
+        "Questions": [
+          {
+            "QuestionText": "食品ロスとは何ですか。",
+            "Explanation": "Định nghĩa: まだ食べられるのに捨てられること (Bị vứt đi dù vẫn còn ăn được).",
+            "Options": [
+              { "Text": "まだ食べられるのに捨てられること", "IsCorrect": true },
+              { "Text": "食べ物をたくさん食べること", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "レストランではどんなメニューができましたか。",
+            "Explanation": "Giải pháp: ご飯の量を少なくするメニュー (Thực đơn giảm lượng cơm).",
+            "Options": [
+              { "Text": "値段が高いメニュー", "IsCorrect": false },
+              { "Text": "ご飯の量を少なくするメニュー", "IsCorrect": true }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "ゴールデンウィークの渋滞",
+        "TitleVi": "Tắc đường tuần lễ vàng",
+        "ContentJp": "ゴールデンウィークが始まり、高速道路はどこもひどい渋滞です。実家に帰る人や旅行に行く人で、夕方まで混むと予想されています。",
+        "ContentFurigana": "[\"ゴールデンウィークが始まり、\", {\"k\":\"高速道路\",\"f\":\"こうそくどうろ\"}, \"はどこもひどい\", {\"k\":\"渋滞\",\"f\":\"じゅうたい\"}, \"です。\", {\"k\":\"実家\",\"f\":\"じっか\"}, \"に\", {\"k\":\"帰\",\"f\":\"かえ\"}, \"る人や旅行に行く人で、\", {\"k\":\"夕方\",\"f\":\"ゆうがた\"}, \"まで\", {\"k\":\"混\",\"f\":\"こ\"}, \"むと\", {\"k\":\"予想\",\"f\":\"よそう\"}, \"されています。\"]",
+        "ContentVi": "Tuần lễ vàng đã bắt đầu, các tuyến đường cao tốc ở khắp nơi đều bị tắc nghẽn nghiêm trọng. Do có nhiều người về quê hoặc đi du lịch nên dự báo đường sẽ đông đúc cho đến tận chiều tối.",
+        "Questions": [
+          {
+            "QuestionText": "高速道路はどうなっていますか。",
+            "Explanation": "Tình trạng: ひどい渋滞です (Tắc nghẽn nghiêm trọng).",
+            "Options": [
+              { "Text": "車が全然いない", "IsCorrect": false },
+              { "Text": "ひどい渋滞になっている", "IsCorrect": true }
+            ]
+          },
+          {
+            "QuestionText": "いつまで混むと予想されていますか。",
+            "Explanation": "Thời gian dự báo: 夕方まで (Đến chiều tối).",
+            "Options": [
+              { "Text": "朝だけ", "IsCorrect": false },
+              { "Text": "夕方まで", "IsCorrect": true }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "宇宙ステーション",
+        "TitleVi": "Trạm vũ trụ",
+        "ContentJp": "日本の宇宙飛行士が、国際宇宙ステーションに出発しました。約半年間、宇宙で新しい薬の実験などを行う予定です。",
+        "ContentFurigana": "[{\"k\":\"日本\",\"f\":\"にほん\"}, \"の\", {\"k\":\"宇宙飛行士\",\"f\":\"うちゅうひこうし\"}, \"が、\", {\"k\":\"国際宇宙\",\"f\":\"こくさいうちゅう\"}, \"ステーションに\", {\"k\":\"出発\",\"f\":\"しゅっぱつ\"}, \"しました。\", {\"k\":\"約半年間\",\"f\":\"やくはんとしかん\"}, \"、\", {\"k\":\"宇宙\",\"f\":\"うちゅう\"}, \"で新しい薬の\", {\"k\":\"実験\",\"f\":\"じっけん\"}, \"などを\", {\"k\":\"行\",\"f\":\"おこな\"}, \"う\", {\"k\":\"予定\",\"f\":\"よてい\"}, \"です。\"]",
+        "ContentVi": "Một phi hành gia người Nhật Bản đã khởi hành lên Trạm Vũ trụ Quốc tế. Dự kiến anh ấy sẽ thực hiện các thí nghiệm về thuốc mới trong khoảng nửa năm tại vũ trụ.",
+        "Questions": [
+          {
+            "QuestionText": "誰が出発しましたか。",
+            "Explanation": "Đối tượng: 日本の宇宙飛行士 (Phi hành gia người Nhật).",
+            "Options": [
+              { "Text": "日本の宇宙飛行士", "IsCorrect": true },
+              { "Text": "医者", "IsCorrect": false },
+              { "Text": "警察", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "宇宙で何をしますか。",
+            "Explanation": "Hoạt động: 新しい薬の実験などを行う (Thực hiện thí nghiệm thuốc mới...).",
+            "Options": [
+              { "Text": "新しい薬の実験", "IsCorrect": true },
+              { "Text": "宇宙の掃除", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "オンライン授業",
+        "TitleVi": "Lớp học trực tuyến",
+        "ContentJp": "病気を防ぐために、パソコンを使ったオンライン授業をする大学が増えました。学生からは「通学しなくていいから楽だ」という意見があります。",
+        "ContentFurigana": "[{\"k\":\"病気\",\"f\":\"びょうき\"}, \"を\", {\"k\":\"防\",\"f\":\"ふせ\"}, \"ぐために、パソコンを使ったオンライン\", {\"k\":\"授業\",\"f\":\"じゅぎょう\"}, \"をする大学が増えました。\", {\"k\":\"学生\",\"f\":\"がくせい\"}, \"からは「\", {\"k\":\"通学\",\"f\":\"つうがく\"}, \"しなくていいから\", {\"k\":\"楽\",\"f\":\"らく\"}, \"だ」という\", {\"k\":\"意見\",\"f\":\"いけん\"}, \"があります。\"]",
+        "ContentVi": "Để phòng ngừa bệnh tật, số trường đại học tổ chức lớp học trực tuyến qua máy tính đã tăng lên. Nhiều sinh viên cho ý kiến rằng 'Thật nhàn nhã vì không cần phải tới trường'.",
+        "Questions": [
+          {
+            "QuestionText": "なぜオンライン授業をしますか。",
+            "Explanation": "Mục đích: 病気を防ぐため (Để phòng ngừa bệnh tật).",
+            "Options": [
+              { "Text": "病気を防ぐため", "IsCorrect": true },
+              { "Text": "パソコンを売るため", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "学生はどう思っていますか。",
+            "Explanation": "Ý kiến: 通学しなくていいから楽だ (Nhàn vì không phải tới trường).",
+            "Options": [
+              { "Text": "通学しなくていいから楽だ", "IsCorrect": true },
+              { "Text": "パソコンが難しいから嫌だ", "IsCorrect": false }
+            ]
+          }
+        ]
+      },
+      {
+        "Level": "N4",
+        "TitleJp": "農業とロボット",
+        "TitleVi": "Nông nghiệp và Robot",
+        "ContentJp": "日本の農業では、働く人が足りないことが大きな問題です。そのため、自動で野菜を収穫するロボットの研究が進んでいます。",
+        "ContentFurigana": "[{\"k\":\"日本\",\"f\":\"にほん\"}, \"の\", {\"k\":\"農業\",\"f\":\"のうぎょう\"}, \"では、働く人が\", {\"k\":\"足\",\"f\":\"た\"}, \"りないことが大きな問題です。そのため、\", {\"k\":\"自動\",\"f\":\"じどう\"}, \"で野菜を\", {\"k\":\"収穫\",\"f\":\"しゅうかく\"}, \"するロボットの\", {\"k\":\"研究\",\"f\":\"けんきゅう\"}, \"が\", {\"k\":\"進\",\"f\":\"すす\"}, \"んでいます。\"]",
+        "ContentVi": "Trong ngành nông nghiệp ở Nhật Bản, việc thiếu hụt người lao động đang là một vấn đề lớn. Do đó, các nghiên cứu về robot thu hoạch rau tự động đang được tiến hành.",
+        "Questions": [
+          {
+            "QuestionText": "農業の大きな問題は何ですか。",
+            "Explanation": "Vấn đề: 働く人が足りないこと (Thiếu người làm).",
+            "Options": [
+              { "Text": "働く人が足りないこと", "IsCorrect": true },
+              { "Text": "土地が高すぎること", "IsCorrect": false },
+              { "Text": "野菜が高すぎること", "IsCorrect": false }
+            ]
+          },
+          {
+            "QuestionText": "今、どんな研究が進んでいますか。",
+            "Explanation": "Nghiên cứu: 自動で野菜を収穫するロボットの研究 (Nghiên cứu robot thu hoạch rau tự động).",
+            "Options": [
+              { "Text": "雨を降らせるロボット", "IsCorrect": false },
+              { "Text": "自動で野菜を収穫するロボット", "IsCorrect": true }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
