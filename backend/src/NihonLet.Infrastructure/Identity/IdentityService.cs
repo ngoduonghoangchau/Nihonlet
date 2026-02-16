@@ -455,6 +455,25 @@ public class IdentityService : IIdentityService
         if (user == null) return false;
 
         var result = await _userManager.AddToRoleAsync(user, role);
+        if (result.Succeeded && role == Roles.Premium)
+        {
+            user.IsPremium = true;
+            await _userManager.UpdateAsync(user);
+        }
+        return result.Succeeded;
+    }
+
+    public async Task<bool> RemoveFromRoleAsync(string userId, string role)
+    {
+        var user = await _userManager.FindByIdAsync(userId);
+        if (user == null) return false;
+
+        var result = await _userManager.RemoveFromRoleAsync(user, role);
+        if (result.Succeeded && role == Roles.Premium)
+        {
+            user.IsPremium = false;
+            await _userManager.UpdateAsync(user);
+        }
         return result.Succeeded;
     }
 

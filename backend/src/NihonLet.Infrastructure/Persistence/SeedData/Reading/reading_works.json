@@ -1,0 +1,1930 @@
+[
+    {
+        "NameVi": "Công việc và Kỹ năng",
+        "NameJp": "仕事とスキル",
+        "Description": "Các bài đọc về công việc, môi trường công sở và kỹ năng nghề nghiệp.",
+        "IconUrl": "/icons/work.png",
+        "Articles": [
+            {
+                "Level": "N5",
+                "TitleJp": "私の仕事",
+                "TitleVi": "Công việc của tôi",
+                "ContentJp": "私は銀行で働いています。毎日、朝九時から午後五時まで仕事をします。とても忙しいですが、楽しいです。",
+                "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"銀行\",\"f\":\"ぎんこう\"}, \"で\", {\"k\":\"働\",\"f\":\"はたら\"}, \"いています。\", {\"k\":\"毎日\",\"f\":\"まいにち\"}, \"、\", {\"k\":\"朝九時\",\"f\":\"あさくじ\"}, \"から\", {\"k\":\"午後五時\",\"f\":\"ごごごじ\"}, \"まで\", {\"k\":\"仕事\",\"f\":\"しごと\"}, \"をします。とても\", {\"k\":\"忙\",\"f\":\"いそが\"}, \"しいですが、\", {\"k\":\"楽\",\"f\":\"たの\"}, \"しいです。\"]",
+                "ContentVi": "Tôi đang làm việc ở ngân hàng. Mỗi ngày, tôi làm việc từ 9 giờ sáng đến 5 giờ chiều. Rất bận rộn nhưng cũng rất vui.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どこで働いていますか。",
+                        "Explanation": "Địa điểm làm việc: 銀行 (Ngân hàng).",
+                        "Options": [
+                            {
+                                "Text": "学校",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "銀行",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "病院",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "仕事はどうですか。",
+                        "Explanation": "Đánh giá công việc: とても忙しいですが、楽しいです (Rất bận nhưng vui).",
+                        "Options": [
+                            {
+                                "Text": "暇でつまらないです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "忙しいですが楽しいです",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "忙しくて嫌です",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "アルバイト",
+                "TitleVi": "Làm thêm",
+                "ContentJp": "大学生の時、コンビニでアルバイトをしました。一週間に三日働きました。時給は千円でした。",
+                "ContentFurigana": "[{\"k\":\"大学生\",\"f\":\"だいがくせい\"}, \"の\", {\"k\":\"時\",\"f\":\"とき\"}, \"、コンビニでアルバイトをしました。\", {\"k\":\"一週間\",\"f\":\"いっしゅうかん\"}, \"に\", {\"k\":\"三日働\",\"f\":\"みっかはたら\"}, \"きました。\", {\"k\":\"時給\",\"f\":\"じきゅう\"}, \"は\", {\"k\":\"千円\",\"f\":\"せんえん\"}, \"でした。\"]",
+                "ContentVi": "Khi còn là sinh viên đại học, tôi đã làm thêm ở cửa hàng tiện lợi. Tôi làm 3 ngày 1 tuần. Lương làm theo giờ là 1000 yên.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "一週間に何日働きましたか。",
+                        "Explanation": "Số ngày làm việc trong tuần: 三日 (3 ngày).",
+                        "Options": [
+                            {
+                                "Text": "二日",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "三日",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "五日",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "時給はいくらでしたか。",
+                        "Explanation": "Lương theo giờ: 千円 (1000 yên).",
+                        "Options": [
+                            {
+                                "Text": "八百円",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "千円",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "二千円",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "優しい先輩",
+                "TitleVi": "Tiền bối tốt bụng",
+                "ContentJp": "会社に優しい先輩がいます。分からないことをいつも丁寧に教えてくれます。私も先輩のようになりたいです。",
+                "ContentFurigana": "[{\"k\":\"会社\",\"f\":\"かいしゃ\"}, \"に\", {\"k\":\"優\",\"f\":\"やさ\"}, \"しい\", {\"k\":\"先輩\",\"f\":\"せんぱい\"}, \"がいます。\", {\"k\":\"分\",\"f\":\"わ\"}, \"からないことをいつも\", {\"k\":\"丁寧\",\"f\":\"ていねい\"}, \"に\", {\"k\":\"教\",\"f\":\"おし\"}, \"えてくれます。\", {\"k\":\"私\",\"f\":\"わたし\"}, \"も\", {\"k\":\"先輩\",\"f\":\"せんぱい\"}, \"のようになりたいです。\"]",
+                "ContentVi": "Ở công ty tôi có một người tiền bối rất tốt bụng. Những điều tôi không hiểu, anh ấy luôn chỉ bảo rất tận tình. Tôi cũng muốn trở thành người như tiền bối.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "先輩はどうですか。",
+                        "Explanation": "Mô tả tiền bối: 優しい (Tốt bụng/Hiền lành).",
+                        "Options": [
+                            {
+                                "Text": "厳しくて怖いです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "優しくて丁寧に教えてくれます",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "仕事をしません",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "この人は将来どうなりたいですか。",
+                        "Explanation": "Mong muốn: 先輩のようになりたい (Muốn trở nên giống tiền bối).",
+                        "Options": [
+                            {
+                                "Text": "先輩のようになりたい",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "会社を辞めたい",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "社長になりたい",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "パソコンを使う",
+                "TitleVi": "Sử dụng máy tính",
+                "ContentJp": "私は仕事で毎日パソコンを使います。メールを書いたり、データを作ったりします。タイピングが速くなりました。",
+                "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"仕事\",\"f\":\"しごと\"}, \"で\", {\"k\":\"毎日\",\"f\":\"まいにち\"}, \"パソコンを\", {\"k\":\"使\",\"f\":\"つか\"}, \"います。メールを\", {\"k\":\"書\",\"f\":\"か\"}, \"いたり、データを作ったりします。タイピングが\", {\"k\":\"速\",\"f\":\"はや\"}, \"くなりました。\"]",
+                "ContentVi": "Tôi dùng máy tính mỗi ngày trong công việc. Tôi viết email và tạo dữ liệu. Việc đánh máy của tôi đã trở nên nhanh hơn.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "毎日何を使いますか。",
+                        "Explanation": "Công cụ sử dụng: パソコン (Máy tính cá nhân).",
+                        "Options": [
+                            {
+                                "Text": "パソコン",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "電話",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "辞書",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "何が速くなりましたか。",
+                        "Explanation": "Kết quả: タイピングが速くなりました (Đánh máy nhanh hơn).",
+                        "Options": [
+                            {
+                                "Text": "歩くのが速くなりました",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "タイピングが速くなりました",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "メールを読むのが速くなりました",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "昼休み",
+                "TitleVi": "Giờ nghỉ trưa",
+                "ContentJp": "会社の昼休みは十二時から一時までです。いつも食堂で同僚と一緒にご飯を食べます。コーヒーも飲みます。",
+                "ContentFurigana": "[{\"k\":\"会社\",\"f\":\"かいしゃ\"}, \"の\", {\"k\":\"昼休\",\"f\":\"ひるやす\"}, \"みは\", {\"k\":\"十二時\",\"f\":\"じゅうにじ\"}, \"から\", {\"k\":\"一時\",\"f\":\"いちじ\"}, \"までです。いつも\", {\"k\":\"食堂\",\"f\":\"しょくどう\"}, \"で\", {\"k\":\"同僚\",\"f\":\"どうりょう\"}, \"と\", {\"k\":\"一緒\",\"f\":\"いっしょ\"}, \"にご\", {\"k\":\"飯\",\"f\":\"はん\"}, \"を\", {\"k\":\"食\",\"f\":\"た\"}, \"べます。コーヒーも\", {\"k\":\"飲\",\"f\":\"の\"}, \"みます。\"]",
+                "ContentVi": "Giờ nghỉ trưa của công ty là từ 12 giờ đến 1 giờ. Tôi luôn ăn cơm cùng đồng nghiệp ở nhà ăn. Tôi cũng uống cả cà phê nữa.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "昼休みは何時間ですか。",
+                        "Explanation": "Từ 12 giờ đến 1 giờ là 1 tiếng (一時間).",
+                        "Options": [
+                            {
+                                "Text": "一時間",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "二時間",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "三十分",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "誰とご飯を食べますか。",
+                        "Explanation": "Ăn cùng: 同僚と (Với đồng nghiệp).",
+                        "Options": [
+                            {
+                                "Text": "一人で",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "家族と",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "同僚と",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "会議の時間",
+                "TitleVi": "Thời gian họp",
+                "ContentJp": "今日の午後二時から会議があります。会議室にノートとペンを持って行ってください。遅れないでください。",
+                "ContentFurigana": "[{\"k\":\"今日\",\"f\":\"きょう\"}, \"の\", {\"k\":\"午後二時\",\"f\":\"ごごにじ\"}, \"から\", {\"k\":\"会議\",\"f\":\"かいぎ\"}, \"があります。\", {\"k\":\"会議室\",\"f\":\"かいぎしつ\"}, \"にノートとペンを\", {\"k\":\"持\",\"f\":\"も\"}, \"って\", {\"k\":\"行\",\"f\":\"い\"}, \"ってください。\", {\"k\":\"遅\",\"f\":\"おく\"}, \"れないでください。\"]",
+                "ContentVi": "Hôm nay từ 2 giờ chiều sẽ có một cuộc họp. Xin hãy mang vở và bút đến phòng họp. Vui lòng đừng đến muộn.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "会議は何時からですか。",
+                        "Explanation": "Thời gian họp: 午後二時 (2 giờ chiều).",
+                        "Options": [
+                            {
+                                "Text": "午前十時",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "午後二時",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "午後五時",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "何を持って行きますか。",
+                        "Explanation": "Đồ cần mang: ノートとペン (Vở và bút).",
+                        "Options": [
+                            {
+                                "Text": "ノートとペン",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "パソコンだけ",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "お弁当",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "挨拶が大切",
+                "TitleVi": "Sự quan trọng của việc chào hỏi",
+                "ContentJp": "会社では挨拶が大切です。朝は「おはようございます」と言います。帰る時は「お疲れ様でした」と言います。",
+                "ContentFurigana": "[{\"k\":\"会社\",\"f\":\"かいしゃ\"}, \"では\", {\"k\":\"挨拶\",\"f\":\"あいさつ\"}, \"が\", {\"k\":\"大切\",\"f\":\"たいせつ\"}, \"です。\", {\"k\":\"朝\",\"f\":\"あさ\"}, \"は「おはようございます」と\", {\"k\":\"言\",\"f\":\"い\"}, \"います。\", {\"k\":\"帰\",\"f\":\"かえ\"}, \"る\", {\"k\":\"時\",\"f\":\"とき\"}, \"は「お\", {\"k\":\"疲\",\"f\":\"つか\"}, \"れ\", {\"k\":\"様\",\"f\":\"さま\"}, \"でした」と\", {\"k\":\"言\",\"f\":\"い\"}, \"います。\"]",
+                "ContentVi": "Ở công ty, việc chào hỏi rất quan trọng. Buổi sáng nói 'Ohayou gozaimasu' (Chào buổi sáng). Khi ra về thì nói 'Otsukaresama deshita' (Bạn đã vất vả rồi).",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "会社で何が大切ですか。",
+                        "Explanation": "Điều quan trọng: 挨拶 (Chào hỏi).",
+                        "Options": [
+                            {
+                                "Text": "お金",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "挨拶",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "休むこと",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "帰る時、何と言いますか。",
+                        "Explanation": "Lời chào khi về: お疲れ様でした (Bạn đã vất vả rồi).",
+                        "Options": [
+                            {
+                                "Text": "おはようございます",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "さようなら",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "お疲れ様でした",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "電話をかける",
+                "TitleVi": "Gọi điện thoại",
+                "ContentJp": "私は会社で電話をかけます。日本語で話すのは少し難しいですが、毎日練習しています。",
+                "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"は\", {\"k\":\"会社\",\"f\":\"かいしゃ\"}, \"で\", {\"k\":\"電話\",\"f\":\"でんわ\"}, \"をかけます。\", {\"k\":\"日本語\",\"f\":\"にほんご\"}, \"で\", {\"k\":\"話\",\"f\":\"はな\"}, \"すのは\", {\"k\":\"少\",\"f\":\"すこ\"}, \"し\", {\"k\":\"難\",\"f\":\"むずか\"}, \"しいですが、\", {\"k\":\"毎日練習\",\"f\":\"まいにちれんしゅう\"}, \"しています。\"]",
+                "ContentVi": "Tôi gọi điện thoại ở công ty. Việc nói chuyện bằng tiếng Nhật hơi khó một chút, nhưng tôi đang luyện tập mỗi ngày.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "何語で話しますか。",
+                        "Explanation": "Ngôn ngữ sử dụng: 日本語 (Tiếng Nhật).",
+                        "Options": [
+                            {
+                                "Text": "英語",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "日本語",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "ベトナム語",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "電話で話すのはどうですか。",
+                        "Explanation": "Cảm nhận: 少し難しい (Hơi khó).",
+                        "Options": [
+                            {
+                                "Text": "とても簡単です",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "少し難しいです",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "全然分かりません",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "休みの日",
+                "TitleVi": "Ngày nghỉ",
+                "ContentJp": "私の会社は土曜日と日曜日が休みです。休みの日は仕事をしません。家でゆっくり休みます。",
+                "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"の\", {\"k\":\"会社\",\"f\":\"かいしゃ\"}, \"は\", {\"k\":\"土曜日\",\"f\":\"どようび\"}, \"と\", {\"k\":\"日曜日\",\"f\":\"にちようび\"}, \"が\", {\"k\":\"休\",\"f\":\"やす\"}, \"みです。\", {\"k\":\"休\",\"f\":\"やす\"}, \"みの\", {\"k\":\"日\",\"f\":\"ひ\"}, \"は\", {\"k\":\"仕事\",\"f\":\"しごと\"}, \"をしません。\", {\"k\":\"家\",\"f\":\"いえ\"}, \"でゆっくり\", {\"k\":\"休\",\"f\":\"やす\"}, \"みます。\"]",
+                "ContentVi": "Công ty của tôi nghỉ vào thứ Bảy và Chủ nhật. Ngày nghỉ tôi không làm việc. Tôi thong thả nghỉ ngơi ở nhà.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "休みは何曜日ですか。",
+                        "Explanation": "Ngày nghỉ: 土曜日と日曜日 (Thứ Bảy và Chủ nhật).",
+                        "Options": [
+                            {
+                                "Text": "土曜日と日曜日",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "日曜日と月曜日",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "日曜日だけ",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "休みの日に何をしますか。",
+                        "Explanation": "Hành động ngày nghỉ: 家でゆっくり休みます (Thong thả nghỉ ngơi ở nhà).",
+                        "Options": [
+                            {
+                                "Text": "たくさん仕事をします",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "家でゆっくり休みます",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "会社へ行きます",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "困った時",
+                "TitleVi": "Khi gặp khó khăn",
+                "ContentJp": "仕事で困った時は、すぐに上司に聞きます。一人で考えないで、助けてもらうことが大切です。",
+                "ContentFurigana": "[{\"k\":\"仕事\",\"f\":\"しごと\"}, \"で\", {\"k\":\"困\",\"f\":\"こま\"}, \"った\", {\"k\":\"時\",\"f\":\"とき\"}, \"は、すぐに\", {\"k\":\"上司\",\"f\":\"じょうし\"}, \"に\", {\"k\":\"聞\",\"f\":\"き\"}, \"きます。\", {\"k\":\"一人\",\"f\":\"ひとり\"}, \"で\", {\"k\":\"考\",\"f\":\"かんが\"}, \"えないで、\", {\"k\":\"助\",\"f\":\"たす\"}, \"けてもらうことが\", {\"k\":\"大切\",\"f\":\"たいせつ\"}, \"です。\"]",
+                "ContentVi": "Khi gặp khó khăn trong công việc, tôi hỏi cấp trên ngay lập tức. Đừng chỉ suy nghĩ một mình, việc nhận được sự giúp đỡ là rất quan trọng.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "困った時、誰に聞きますか。",
+                        "Explanation": "Người được hỏi: 上司 (Cấp trên).",
+                        "Options": [
+                            {
+                                "Text": "友達",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "上司",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "家族",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "何が大切ですか。",
+                        "Explanation": "Điều quan trọng: 一人で考えないで、助けてもらうこと (Không nghĩ một mình mà nhờ giúp đỡ).",
+                        "Options": [
+                            {
+                                "Text": "一人で考えること",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "助けてもらうこと",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "すぐに帰ること",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "面接の準備",
+                "TitleVi": "Chuẩn bị phỏng vấn",
+                "ContentJp": "明日、新しい会社の面接があります。鏡の前で自己紹介の練習をしました。少し緊張していますが、頑張ります。",
+                "ContentFurigana": "[{\"k\":\"明日\",\"f\":\"あした\"}, \"、\", {\"k\":\"新\",\"f\":\"あたら\"}, \"しい\", {\"k\":\"会社\",\"f\":\"かいしゃ\"}, \"の\", {\"k\":\"面接\",\"f\":\"めんせつ\"}, \"があります。\", {\"k\":\"鏡\",\"f\":\"かがみ\"}, \"の\", {\"k\":\"前\",\"f\":\"まえ\"}, \"で\", {\"k\":\"自己紹介\",\"f\":\"じこしょうかい\"}, \"の\", {\"k\":\"練習\",\"f\":\"れんしゅう\"}, \"をしました。\", {\"k\":\"少\",\"f\":\"すこ\"}, \"し\", {\"k\":\"緊張\",\"f\":\"きんちょう\"}, \"していますが、\", {\"k\":\"頑張\",\"f\":\"がんば\"}, \"ります。\"]",
+                "ContentVi": "Ngày mai, tôi có buổi phỏng vấn ở công ty mới. Tôi đã luyện tập giới thiệu bản thân trước gương. Tuy có hơi hồi hộp một chút nhưng tôi sẽ cố gắng.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "明日何がありますか。",
+                        "Explanation": "Sự kiện ngày mai: 会社の面接 (Phỏng vấn công ty).",
+                        "Options": [
+                            {
+                                "Text": "会社の面接",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "大事な会議",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "会社の試験",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "どんな準備をしましたか。",
+                        "Explanation": "Sự chuẩn bị: 鏡の前で自己紹介の練習をした (Luyện giới thiệu bản thân trước gương).",
+                        "Options": [
+                            {
+                                "Text": "新しいスーツを買った",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "自己紹介の練習をした",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "会社の歴史を調べた",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "ビジネスメール",
+                "TitleVi": "Email công việc",
+                "ContentJp": "取引先にメールを送る時は、正しい敬語を使わなければなりません。失礼がないように、送る前に何度も確認します。",
+                "ContentFurigana": "[{\"k\":\"取引先\",\"f\":\"とりひきさき\"}, \"にメールを\", {\"k\":\"送\",\"f\":\"おく\"}, \"る\", {\"k\":\"時\",\"f\":\"とき\"}, \"は、\", {\"k\":\"正\",\"f\":\"ただ\"}, \"しい\", {\"k\":\"敬語\",\"f\":\"けいご\"}, \"を\", {\"k\":\"使\",\"f\":\"つか\"}, \"わなければなりません。\", {\"k\":\"失礼\",\"f\":\"しつれい\"}, \"がないように、\", {\"k\":\"送\",\"f\":\"おく\"}, \"る\", {\"k\":\"前\",\"f\":\"まえ\"}, \"に\", {\"k\":\"何度\",\"f\":\"なんど\"}, \"も\", {\"k\":\"確認\",\"f\":\"かくにん\"}, \"します。\"]",
+                "ContentVi": "Khi gửi email cho đối tác, bắt buộc phải sử dụng kính ngữ chính xác. Để không thất lễ, tôi kiểm tra lại nhiều lần trước khi gửi.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "取引先にメールを送る時、何に気をつけますか。",
+                        "Explanation": "Lưu ý khi gửi email: 正しい敬語を使うこと (Sử dụng đúng kính ngữ).",
+                        "Options": [
+                            {
+                                "Text": "絵文字をたくさん使うこと",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "正しい敬語を使うこと",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "短い言葉で書くこと",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "送る前に何をしますか。",
+                        "Explanation": "Hành động trước khi gửi: 何度も確認します (Kiểm tra lại nhiều lần).",
+                        "Options": [
+                            {
+                                "Text": "何度も確認する",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "上司に読んでもらう",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "すぐに送る",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "プログラミングを学ぶ",
+                "TitleVi": "Học lập trình",
+                "ContentJp": "将来のために、プログラミングの勉強を始めました。週末にオンラインのスクールに通って、新しいスキルを身につけています。",
+                "ContentFurigana": "[{\"k\":\"将来\",\"f\":\"しょうらい\"}, \"のために、プログラミングの\", {\"k\":\"勉強\",\"f\":\"べんきょう\"}, \"を\", {\"k\":\"始\",\"f\":\"はじ\"}, \"めました。\", {\"k\":\"週末\",\"f\":\"しゅうまつ\"}, \"にオンラインのスクールに\", {\"k\":\"通\",\"f\":\"かよ\"}, \"って、\", {\"k\":\"新\",\"f\":\"あたら\"}, \"しいスキルを\", {\"k\":\"身\",\"f\":\"み\"}, \"につけています。\"]",
+                "ContentVi": "Vì tương lai, tôi đã bắt đầu học lập trình. Cuối tuần tôi tham gia một trường học trực tuyến để trang bị cho mình kỹ năng mới.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "何のためにプログラミングを勉強していますか。",
+                        "Explanation": "Mục đích: 将来のため (Vì tương lai).",
+                        "Options": [
+                            {
+                                "Text": "ゲームをするため",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "将来のため",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "友達を作るため",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "どこで勉強していますか。",
+                        "Explanation": "Nơi học: オンラインのスクール (Trường học trực tuyến).",
+                        "Options": [
+                            {
+                                "Text": "会社の研修",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "大学の授業",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "オンラインのスクール",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "残業とスケジュール",
+                "TitleVi": "Làm thêm giờ và Lịch trình",
+                "ContentJp": "今週は仕事が多くて、毎日残業をしています。金曜日の締め切りに間に合うように、チームで協力して進めています。",
+                "ContentFurigana": "[{\"k\":\"今週\",\"f\":\"こんしゅう\"}, \"は\", {\"k\":\"仕事\",\"f\":\"しごと\"}, \"が\", {\"k\":\"多\",\"f\":\"おお\"}, \"くて、\", {\"k\":\"毎日残業\",\"f\":\"まいにちざんぎょう\"}, \"をしています。\", {\"k\":\"金曜日\",\"f\":\"きんようび\"}, \"の\", {\"k\":\"締\",\"f\":\"し\"}, \"め\", {\"k\":\"切\",\"f\":\"き\"}, \"りに\", {\"k\":\"間\",\"f\":\"ま\"}, \"に\", {\"k\":\"合\",\"f\":\"あ\"}, \"うように、チームで\", {\"k\":\"協力\",\"f\":\"きょうりょく\"}, \"して\", {\"k\":\"進\",\"f\":\"すす\"}, \"めています。\"]",
+                "ContentVi": "Tuần này công việc nhiều nên ngày nào tôi cũng phải làm thêm giờ. Để kịp thời hạn vào thứ Sáu, cả nhóm đang hợp tác cùng nhau tiến hành.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "今週はどうして残業していますか。",
+                        "Explanation": "Nguyên nhân: 仕事が多くて (Vì công việc nhiều).",
+                        "Options": [
+                            {
+                                "Text": "仕事が多いから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "残業代が欲しいから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "家に帰りたくないから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "締め切りはいつですか。",
+                        "Explanation": "Thời hạn (Deadline): 金曜日 (Thứ Sáu).",
+                        "Options": [
+                            {
+                                "Text": "今日",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "金曜日",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "来週",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "大阪への出張",
+                "TitleVi": "Đi công tác ở Osaka",
+                "ContentJp": "来週、出張で大阪へ行くことになりました。新幹線のチケットとホテルを予約しました。夜はおいしいものを食べたいです。",
+                "ContentFurigana": "[{\"k\":\"来週\",\"f\":\"らいしゅう\"}, \"、\", {\"k\":\"出張\",\"f\":\"しゅっちょう\"}, \"で\", {\"k\":\"大阪\",\"f\":\"おおさか\"}, \"へ\", {\"k\":\"行\",\"f\":\"い\"}, \"くことになりました。\", {\"k\":\"新幹線\",\"f\":\"しんかんせん\"}, \"のチケットとホテルを\", {\"k\":\"予約\",\"f\":\"よやく\"}, \"しました。\", {\"k\":\"夜\",\"f\":\"よる\"}, \"はおいしいものを\", {\"k\":\"食\",\"f\":\"た\"}, \"べたいです。\"]",
+                "ContentVi": "Tuần sau, tôi đã được quyết định sẽ đi công tác ở Osaka. Tôi đã đặt vé Shinkansen và khách sạn. Buổi tối tôi muốn ăn những món ngon.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "来週どこへ行きますか。",
+                        "Explanation": "Điểm đến: 大阪 (Osaka).",
+                        "Options": [
+                            {
+                                "Text": "東京",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "大阪",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "京都",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "何のために行きますか。",
+                        "Explanation": "Mục đích: 出張で (Đi công tác).",
+                        "Options": [
+                            {
+                                "Text": "旅行で",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "出張で",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "引っ越しで",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "メモを取る習慣",
+                "TitleVi": "Thói quen ghi chú",
+                "ContentJp": "上司から指示を受けた時は、必ずメモを取るようにしています。忘れたり間違えたりしないために、とても重要な習慣です。",
+                "ContentFurigana": "[{\"k\":\"上司\",\"f\":\"じょうし\"}, \"から\", {\"k\":\"指示\",\"f\":\"しじ\"}, \"を\", {\"k\":\"受\",\"f\":\"う\"}, \"けた\", {\"k\":\"時\",\"f\":\"とき\"}, \"は、\", {\"k\":\"必\",\"f\":\"かなら\"}, \"ずメモを\", {\"k\":\"取\",\"f\":\"と\"}, \"るようにしています。\", {\"k\":\"忘\",\"f\":\"わす\"}, \"れたり\", {\"k\":\"間違\",\"f\":\"まちが\"}, \"えたりしないために、とても\", {\"k\":\"重要\",\"f\":\"じゅうよう\"}, \"な\", {\"k\":\"習慣\",\"f\":\"しゅうかん\"}, \"です。\"]",
+                "ContentVi": "Khi nhận chỉ thị từ cấp trên, tôi luôn cố gắng ghi chú lại. Để không bị quên hay làm sai, đây là một thói quen rất quan trọng.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "上司の話を聞く時、何をしますか。",
+                        "Explanation": "Hành động: 必ずメモを取る (Chắc chắn sẽ ghi chú).",
+                        "Options": [
+                            {
+                                "Text": "すぐに仕事をする",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "必ずメモを取る",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "パソコンを開く",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "どうしてメモを取りますか。",
+                        "Explanation": "Lý do: 忘れたり間違えたりしないために (Để không quên hay làm sai).",
+                        "Options": [
+                            {
+                                "Text": "忘れたり間違えたりしないため",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "上司に見せるため",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "漢字の練習をするため",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "リモートワークのメリット",
+                "TitleVi": "Lợi ích của làm việc từ xa",
+                "ContentJp": "週に二回、家でリモートワークをしています。通勤時間がなくなったので、その時間を読書や運動に使えるようになりました。",
+                "ContentFurigana": "[{\"k\":\"週\",\"f\":\"しゅう\"}, \"に\", {\"k\":\"二回\",\"f\":\"にかい\"}, \"、\", {\"k\":\"家\",\"f\":\"いえ\"}, \"でリモートワークをしています。\", {\"k\":\"通勤時間\",\"f\":\"つうきんじかん\"}, \"がなくなったので、その\", {\"k\":\"時間\",\"f\":\"じかん\"}, \"を\", {\"k\":\"読書\",\"f\":\"どくしょ\"}, \"や\", {\"k\":\"運動\",\"f\":\"うんどう\"}, \"に\", {\"k\":\"使\",\"f\":\"つか\"}, \"えるようになりました。\"]",
+                "ContentVi": "Một tuần hai lần, tôi làm việc từ xa tại nhà. Vì thời gian đi lại không còn nữa nên tôi đã có thể dùng thời gian đó cho việc đọc sách và vận động.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "週に何回リモートワークをしますか。",
+                        "Explanation": "Tần suất: 週に二回 (2 lần/tuần).",
+                        "Options": [
+                            {
+                                "Text": "毎日",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "週に二回",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "週に五回",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "通勤時間がなくなって、何をしていますか。",
+                        "Explanation": "Hoạt động: 読書や運動 (Đọc sách và vận động).",
+                        "Options": [
+                            {
+                                "Text": "たくさん寝ている",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "読書や運動をしている",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "もっと仕事をしている",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "資格の試験",
+                "TitleVi": "Kỳ thi lấy chứng chỉ",
+                "ContentJp": "キャリアアップのために、英語の資格試験を受けます。仕事が終わった後、図書館で二時間勉強してから帰ります。",
+                "ContentFurigana": "[{\"k\":\"資格試験\",\"f\":\"しかくしけん\"}, \"を\", {\"k\":\"受\",\"f\":\"う\"}, \"けます。\", {\"k\":\"仕事\",\"f\":\"しごと\"}, \"が\", {\"k\":\"終\",\"f\":\"お\"}, \"わった\", {\"k\":\"後\",\"f\":\"あと\"}, \"、\", {\"k\":\"図書館\",\"f\":\"としょかん\"}, \"で\", {\"k\":\"二時間勉強\",\"f\":\"にじかんべんきょう\"}, \"してから\", {\"k\":\"帰\",\"f\":\"かえ\"}, \"ります。\"]",
+                "ContentVi": "Để thăng tiến trong sự nghiệp, tôi sẽ tham gia kỳ thi lấy chứng chỉ tiếng Anh. Sau khi tan làm, tôi học 2 tiếng ở thư viện rồi mới về nhà.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "何のために試験を受けますか。",
+                        "Explanation": "Mục đích: キャリアアップのため (Để thăng tiến trong sự nghiệp).",
+                        "Options": [
+                            {
+                                "Text": "海外旅行のため",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "キャリアアップのため",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "大学に入るため",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "どこで勉強しますか。",
+                        "Explanation": "Địa điểm học: 図書館で (Ở thư viện).",
+                        "Options": [
+                            {
+                                "Text": "会社で",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "家で",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "図書館で",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "接客のスキル",
+                "TitleVi": "Kỹ năng tiếp khách",
+                "ContentJp": "レストランでアルバイトをしています。お客様が気持ちよく食事できるように、いつも笑顔で接客することを心がけています。",
+                "ContentFurigana": "[{\"k\":\"お客様\",\"f\":\"おきゃくさま\"}, \"が\", {\"k\":\"気持\",\"f\":\"きも\"}, \"ちよく\", {\"k\":\"食事\",\"f\":\"しょくじ\"}, \"できるように、いつも\", {\"k\":\"笑顔\",\"f\":\"えがお\"}, \"で\", {\"k\":\"接客\",\"f\":\"せっきゃく\"}, \"することを\", {\"k\":\"心\",\"f\":\"こころ\"}, \"がけています。\"]",
+                "ContentVi": "Tôi đang làm thêm tại một nhà hàng. Để khách hàng có thể dùng bữa một cách thoải mái, tôi luôn chú tâm đến việc tiếp khách bằng nụ cười.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "この人はどこで働いていますか。",
+                        "Explanation": "Nơi làm việc: レストラン (Nhà hàng).",
+                        "Options": [
+                            {
+                                "Text": "コンビニ",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "レストラン",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "ホテル",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "何を心がけていますか。",
+                        "Explanation": "Sự chú tâm: いつも笑顔で接客すること (Luôn tiếp khách bằng nụ cười).",
+                        "Options": [
+                            {
+                                "Text": "早く料理を運ぶこと",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "いつも笑顔で接客すること",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "大きな声で話すこと",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "転職の理由",
+                "TitleVi": "Lý do chuyển việc",
+                "ContentJp": "もっと自分のスキルを活かせる仕事がしたくて、転職を考えています。履歴書を新しく書き直して、面接の準備をしています。",
+                "ContentFurigana": "[\"もっと\", {\"k\":\"自分\",\"f\":\"じぶん\"}, \"のスキルを\", {\"k\":\"活\",\"f\":\"い\"}, \"かせる\", {\"k\":\"仕事\",\"f\":\"しごと\"}, \"がしたくて、\", {\"k\":\"転職\",\"f\":\"てんしょく\"}, \"を\", {\"k\":\"考\",\"f\":\"かんが\"}, \"えています。\", {\"k\":\"履歴書\",\"f\":\"りれきしょ\"}, \"を\", {\"k\":\"新\",\"f\":\"あたら\"}, \"しく\", {\"k\":\"書\",\"f\":\"か\"}, \"き\", {\"k\":\"直\",\"f\":\"なお\"}, \"して、\", {\"k\":\"面接\",\"f\":\"めんせつ\"}, \"の\", {\"k\":\"準備\",\"f\":\"じゅんび\"}, \"をしています。\"]",
+                "ContentVi": "Tôi muốn làm một công việc có thể phát huy được nhiều kỹ năng của mình hơn nên đang cân nhắc việc chuyển việc. Tôi đang viết lại sơ yếu lý lịch mới và chuẩn bị cho phỏng vấn.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どうして転職を考えていますか。",
+                        "Explanation": "Lý do: 自分のスキルを活かせる仕事がしたいから (Muốn công việc phát huy được kỹ năng).",
+                        "Options": [
+                            {
+                                "Text": "今の会社が遠いから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "自分のスキルを活かせる仕事がしたいから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "給料が安いから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "今、何を準備していますか。",
+                        "Explanation": "Đang chuẩn bị: 履歴書を書き直して、面接の準備をしている (Viết sơ yếu lý lịch và chuẩn bị phỏng vấn).",
+                        "Options": [
+                            {
+                                "Text": "履歴書と面接の準備",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "新しいスーツ",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "英語の試験の準備",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "お休みの連絡",
+                "TitleVi": "Liên lạc xin nghỉ phép",
+                "ContentJp": "今朝、頭が痛かったので、会社に電話をしました。今日は仕事を休みます。明日からまた行きます。",
+                "ContentFurigana": "[{\"k\":\"今朝\",\"f\":\"けさ\"}, \"、\", {\"k\":\"頭\",\"f\":\"あたま\"}, \"が\", {\"k\":\"痛\",\"f\":\"いた\"}, \"かったので、\", {\"k\":\"会社\",\"f\":\"かいしゃ\"}, \"に\", {\"k\":\"電話\",\"f\":\"でんわ\"}, \"をしました。\", {\"k\":\"今日\",\"f\":\"きょう\"}, \"は\", {\"k\":\"仕事\",\"f\":\"しごと\"}, \"を\", {\"k\":\"休\",\"f\":\"やす\"}, \"みます。\", {\"k\":\"明日\",\"f\":\"あした\"}, \"からまた\", {\"k\":\"行\",\"f\":\"い\"}, \"きます。\"]",
+                "ContentVi": "Sáng nay, vì đau đầu nên tôi đã gọi điện thoại cho công ty. Hôm nay tôi xin nghỉ làm. Từ ngày mai tôi sẽ đi lại.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どうして会社に電話をしましたか。",
+                        "Explanation": "Lý do: 頭が痛かったので (Vì bị đau đầu).",
+                        "Options": [
+                            {
+                                "Text": "遅刻するから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "頭が痛いから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "明日休むから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "この人はいつから会社へ行きますか。",
+                        "Explanation": "Thời gian đi làm lại: 明日から (Từ ngày mai).",
+                        "Options": [
+                            {
+                                "Text": "今日",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "明日",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "来週",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "名刺の交換",
+                "TitleVi": "Trao đổi danh thiếp",
+                "ContentJp": "日本の会社では、初めて会った時に名刺を渡します。名刺をもらった時は「ありがとうございます」と言います。",
+                "ContentFurigana": "[{\"k\":\"日本\",\"f\":\"にほん\"}, \"の\", {\"k\":\"会社\",\"f\":\"かいしゃ\"}, \"では、\", {\"k\":\"初\",\"f\":\"はじ\"}, \"めて\", {\"k\":\"会\",\"f\":\"あ\"}, \"った\", {\"k\":\"時\",\"f\":\"とき\"}, \"に\", {\"k\":\"名刺\",\"f\":\"めいし\"}, \"を\", {\"k\":\"渡\",\"f\":\"わた\"}, \"します。\", {\"k\":\"名刺\",\"f\":\"めいし\"}, \"をもらった\", {\"k\":\"時\",\"f\":\"とき\"}, \"は「ありがとうございます」と\", {\"k\":\"言\",\"f\":\"い\"}, \"います。\"]",
+                "ContentVi": "Ở công ty Nhật Bản, khi gặp mặt lần đầu tiên sẽ trao danh thiếp. Khi nhận được danh thiếp sẽ nói 'Xin cảm ơn'.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "いつ名刺を渡しますか。",
+                        "Explanation": "Thời điểm: 初めて会った時に (Khi gặp lần đầu tiên).",
+                        "Options": [
+                            {
+                                "Text": "帰る時に",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "初めて会った時に",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "毎日",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "名刺をもらった時、何と言いますか。",
+                        "Explanation": "Câu nói khi nhận: ありがとうございます (Xin cảm ơn).",
+                        "Options": [
+                            {
+                                "Text": "おはようございます",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "さようなら",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "ありがとうございます",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "毎日の会議",
+                "TitleVi": "Cuộc họp mỗi ngày",
+                "ContentJp": "毎朝、九時から十分間ぐらい会議をします。今日することと、昨日の問題を話します。短くていいです。",
+                "ContentFurigana": "[{\"k\":\"毎朝\",\"f\":\"まいあさ\"}, \"、\", {\"k\":\"九時\",\"f\":\"くじ\"}, \"から\", {\"k\":\"十分間\",\"f\":\"じゅっぷんかん\"}, \"ぐらい\", {\"k\":\"会議\",\"f\":\"かいぎ\"}, \"をします。\", {\"k\":\"今日\",\"f\":\"きょう\"}, \"することと、\", {\"k\":\"昨日\",\"f\":\"きのう\"}, \"の\", {\"k\":\"問題\",\"f\":\"もんだい\"}, \"を\", {\"k\":\"話\",\"f\":\"はな\"}, \"します。\", {\"k\":\"短\",\"f\":\"みじか\"}, \"くていいです。\"]",
+                "ContentVi": "Mỗi sáng, từ 9 giờ chúng tôi họp khoảng 10 phút. Chúng tôi nói về những việc sẽ làm hôm nay và vấn đề của ngày hôm qua. Họp ngắn gọn nên rất tốt.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "会議はどのくらいですか。",
+                        "Explanation": "Thời lượng họp: 十分間ぐらい (Khoảng 10 phút).",
+                        "Options": [
+                            {
+                                "Text": "九時間",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "十分間ぐらい",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "一時間",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "会議で何を話しますか。",
+                        "Explanation": "Nội dung họp: 今日することと昨日の問題 (Việc làm hôm nay và vấn đề hôm qua).",
+                        "Options": [
+                            {
+                                "Text": "今日することと昨日の問題",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "明日の天気",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "昼ご飯のこと",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "会社の制服",
+                "TitleVi": "Đồng phục công ty",
+                "ContentJp": "私の会社には制服があります。青いシャツと黒いズボンです。毎朝服を選ばなくてもいいので、楽です。",
+                "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"の\", {\"k\":\"会社\",\"f\":\"かいしゃ\"}, \"には\", {\"k\":\"制服\",\"f\":\"せいふく\"}, \"があります。\", {\"k\":\"青\",\"f\":\"あお\"}, \"いシャツと\", {\"k\":\"黒\",\"f\":\"くろ\"}, \"いズボンです。\", {\"k\":\"毎朝服\",\"f\":\"まいあさふく\"}, \"を\", {\"k\":\"選\",\"f\":\"えら\"}, \"ばなくてもいいので、\", {\"k\":\"楽\",\"f\":\"らく\"}, \"です。\"]",
+                "ContentVi": "Công ty tôi có đồng phục. Đó là áo sơ mi xanh và quần âu đen. Vì mỗi sáng không cần phải chọn quần áo nên rất nhàn.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "制服はどんな服ですか。",
+                        "Explanation": "Mô tả: 青いシャツと黒いズボン (Áo xanh và quần đen).",
+                        "Options": [
+                            {
+                                "Text": "白いシャツと黒いズボン",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "青いシャツと黒いズボン",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "青いシャツと青いズボン",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "どうして楽ですか。",
+                        "Explanation": "Lý do: 毎朝服を選ばなくてもいいので (Vì mỗi sáng không cần chọn đồ).",
+                        "Options": [
+                            {
+                                "Text": "服を買わなくてもいいから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "服を選ばなくてもいいから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "安くて軽いから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "コピー機を使う",
+                "TitleVi": "Sử dụng máy photocopy",
+                "ContentJp": "資料のコピーをお願いされました。会社のコピー機は少し古いです。五十枚コピーするのに、五分かかりました。",
+                "ContentFurigana": "[{\"k\":\"資料\",\"f\":\"しりょう\"}, \"のコピーをお\", {\"k\":\"願\",\"f\":\"ねが\"}, \"いされました。\", {\"k\":\"会社\",\"f\":\"かいしゃ\"}, \"のコピー\", {\"k\":\"機\",\"f\":\"き\"}, \"は\", {\"k\":\"少\",\"f\":\"すこ\"}, \"し\", {\"k\":\"古\",\"f\":\"ふる\"}, \"いです。\", {\"k\":\"五十枚\",\"f\":\"ごじゅうまい\"}, \"コピーするのに、\", {\"k\":\"五分\",\"f\":\"ごふん\"}, \"かかりました。\"]",
+                "ContentVi": "Tôi đã được nhờ photo tài liệu. Máy photocopy của công ty hơi cũ. Để photo 50 tờ, tôi mất 5 phút.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "何をしましたか。",
+                        "Explanation": "Hành động: 資料のコピーをした (Photo tài liệu).",
+                        "Options": [
+                            {
+                                "Text": "新しいコピー機を買った",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "資料のコピーをした",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "時計を見た",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "五十枚コピーするのにどのくらいかかりましたか。",
+                        "Explanation": "Thời gian: 五分かかりました (Mất 5 phút).",
+                        "Options": [
+                            {
+                                "Text": "五分",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "十分",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "五十分",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "残業の夜",
+                "TitleVi": "Đêm làm thêm giờ",
+                "ContentJp": "今日は仕事がたくさんありました。夜八時まで残業しました。お腹が空いたので、会社の近くでラーメンを食べました。",
+                "ContentFurigana": "[{\"k\":\"今日\",\"f\":\"きょう\"}, \"は\", {\"k\":\"仕事\",\"f\":\"しごと\"}, \"がたくさんありました。\", {\"k\":\"夜八時\",\"f\":\"よるはちじ\"}, \"まで\", {\"k\":\"残業\",\"f\":\"ざんぎょう\"}, \"しました。お\", {\"k\":\"腹\",\"f\":\"なか\"}, \"が\", {\"k\":\"空\",\"f\":\"す\"}, \"いたので、\", {\"k\":\"会社\",\"f\":\"かいしゃ\"}, \"の\", {\"k\":\"近\",\"f\":\"ちか\"}, \"くでラーメンを\", {\"k\":\"食\",\"f\":\"た\"}, \"べました。\"]",
+                "ContentVi": "Hôm nay có rất nhiều việc. Tôi đã làm thêm giờ đến 8 giờ tối. Vì đói bụng nên tôi đã ăn ramen ở gần công ty.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "何時まで仕事をしましたか。",
+                        "Explanation": "Thời gian: 夜八時まで (Đến 8 giờ tối).",
+                        "Options": [
+                            {
+                                "Text": "五時まで",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "八時まで",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "九時まで",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "どうしてラーメンを食べましたか。",
+                        "Explanation": "Lý do: お腹が空いたので (Vì đói bụng).",
+                        "Options": [
+                            {
+                                "Text": "お腹が空いたから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "ラーメンが好きだから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "寒かったから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "仕事の辞書",
+                "TitleVi": "Từ điển công việc",
+                "ContentJp": "新しい仕事の言葉は難しいです。毎日、辞書で意味を調べます。そして、ノートに書いて覚えます。",
+                "ContentFurigana": "[{\"k\":\"新\",\"f\":\"あたら\"}, \"しい\", {\"k\":\"仕事\",\"f\":\"しごと\"}, \"の\", {\"k\":\"言葉\",\"f\":\"ことば\"}, \"は\", {\"k\":\"難\",\"f\":\"むずか\"}, \"しいです。\", {\"k\":\"毎日\",\"f\":\"まいにち\"}, \"、\", {\"k\":\"辞書\",\"f\":\"じしょ\"}, \"で\", {\"k\":\"意味\",\"f\":\"いみ\"}, \"を\", {\"k\":\"調\",\"f\":\"しら\"}, \"べます。そして、ノートに\", {\"k\":\"書\",\"f\":\"か\"}, \"いて\", {\"k\":\"覚\",\"f\":\"おぼ\"}, \"えます。\"]",
+                "ContentVi": "Từ vựng của công việc mới rất khó. Mỗi ngày, tôi dùng từ điển để tra ý nghĩa. Sau đó, tôi viết vào vở để ghi nhớ.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "何を使って意味を調べますか。",
+                        "Explanation": "Công cụ tra cứu: 辞書で (Bằng từ điển).",
+                        "Options": [
+                            {
+                                "Text": "パソコン",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "辞書",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "ノート",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "どうやって言葉を覚えますか。",
+                        "Explanation": "Cách ghi nhớ: ノートに書いて (Viết vào vở).",
+                        "Options": [
+                            {
+                                "Text": "ノートに書いて覚えます",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "たくさん話して覚えます",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "聞きながら覚えます",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "会社の食堂",
+                "TitleVi": "Nhà ăn của công ty",
+                "ContentJp": "私の会社の食堂はとても広いです。カレーは三百円で、一番人気があります。安くておいしいです。",
+                "ContentFurigana": "[{\"k\":\"私\",\"f\":\"わたし\"}, \"の\", {\"k\":\"会社\",\"f\":\"かいしゃ\"}, \"の\", {\"k\":\"食堂\",\"f\":\"しょくどう\"}, \"はとても\", {\"k\":\"広\",\"f\":\"ひろ\"}, \"いです。カレーは\", {\"k\":\"三百円\",\"f\":\"さんびゃくえん\"}, \"で、\", {\"k\":\"一番人気\",\"f\":\"いちばんにんき\"}, \"があります。\", {\"k\":\"安\",\"f\":\"やす\"}, \"くておいしいです。\"]",
+                "ContentVi": "Nhà ăn công ty tôi rất rộng. Món cà ri có giá 300 yên và được yêu thích nhất. Vừa rẻ vừa ngon.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "食堂で一番人気があるものは何ですか。",
+                        "Explanation": "Món được yêu thích nhất: カレー (Cà ri).",
+                        "Options": [
+                            {
+                                "Text": "うどん",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "カレー",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "ラーメン",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "カレーはどうですか。",
+                        "Explanation": "Đánh giá: 安くておいしいです (Rẻ và ngon).",
+                        "Options": [
+                            {
+                                "Text": "高くておいしいです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "安くておいしいです",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "安くてまずいです",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "出張の準備",
+                "TitleVi": "Chuẩn bị đi công tác",
+                "ContentJp": "来週の月曜日から大阪へ出張に行きます。カバンの中にスーツやパソコンを入れました。準備が終わって安心しました。",
+                "ContentFurigana": "[{\"k\":\"来週\",\"f\":\"らいしゅう\"}, \"の\", {\"k\":\"月曜日\",\"f\":\"げつようび\"}, \"から\", {\"k\":\"大阪\",\"f\":\"おおさか\"}, \"へ\", {\"k\":\"出張\",\"f\":\"しゅっちょう\"}, \"に\", {\"k\":\"行\",\"f\":\"い\"}, \"きます。カバンの\", {\"k\":\"中\",\"f\":\"なか\"}, \"にスーツやパソコンを\", {\"k\":\"入\",\"f\":\"い\"}, \"れました。\", {\"k\":\"準備\",\"f\":\"じゅんび\"}, \"が\", {\"k\":\"終\",\"f\":\"お\"}, \"わって\", {\"k\":\"安心\",\"f\":\"あんしん\"}, \"しました。\"]",
+                "ContentVi": "Từ thứ Hai tuần sau tôi sẽ đi công tác ở Osaka. Tôi đã cho vest và máy tính vào trong túi xách. Việc chuẩn bị đã xong nên tôi thấy an tâm rồi.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どこへ出張に行きますか。",
+                        "Explanation": "Nơi đi công tác: 大阪へ (Đến Osaka).",
+                        "Options": [
+                            {
+                                "Text": "東京",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "大阪",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "京都",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "カバンの中に何を入れましたか。",
+                        "Explanation": "Đồ đã cho vào túi: スーツやパソコン (Áo vest và máy tính).",
+                        "Options": [
+                            {
+                                "Text": "お土産と本",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "スーツとパソコン",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "辞書とノート",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N5",
+                "TitleJp": "アルバイトのお金",
+                "TitleVi": "Tiền làm thêm",
+                "ContentJp": "今日、アルバイトのお金をもらいました。たくさん働いたので、お金が多かったです。家族にプレゼントを買いたいです。",
+                "ContentFurigana": "[{\"k\":\"今日\",\"f\":\"きょう\"}, \"、アルバイトのお\", {\"k\":\"金\",\"f\":\"かね\"}, \"をもらいました。たくさん\", {\"k\":\"働\",\"f\":\"はたら\"}, \"いたので、お\", {\"k\":\"金\",\"f\":\"かね\"}, \"が\", {\"k\":\"多\",\"f\":\"おお\"}, \"かったです。\", {\"k\":\"家族\",\"f\":\"かぞく\"}, \"にプレゼントを\", {\"k\":\"買\",\"f\":\"か\"}, \"いたいです。\"]",
+                "ContentVi": "Hôm nay, tôi đã nhận được tiền làm thêm. Vì làm nhiều nên tiền cũng nhiều. Tôi muốn mua quà cho gia đình.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どうしてお金が多かったですか。",
+                        "Explanation": "Lý do: たくさん働いたので (Vì đã làm việc nhiều).",
+                        "Options": [
+                            {
+                                "Text": "時給が高いから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "たくさん働いたから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "プレゼントをもらったから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "もらったお金で何をしたいですか。",
+                        "Explanation": "Dự định: 家族にプレゼントを買いたい (Muốn mua quà cho gia đình).",
+                        "Options": [
+                            {
+                                "Text": "家族にプレゼントを買いたい",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "新しい服を買いたい",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "貯金したい",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "就職活動の経験",
+                "TitleVi": "Kinh nghiệm tìm kiếm việc làm",
+                "ContentJp": "大学四年生の時、就職活動をしました。何度も履歴書を書いて、いろいろな会社の面接を受けました。大変でしたが、無事に仕事が決まりました。",
+                "ContentFurigana": "[{\"k\":\"大学四年生\",\"f\":\"だいがくよねんせい\"}, \"の\", {\"k\":\"時\",\"f\":\"とき\"}, \"、\", {\"k\":\"就職活動\",\"f\":\"しゅうしょくかつどう\"}, \"をしました。\", {\"k\":\"何度\",\"f\":\"なんど\"}, \"も\", {\"k\":\"履歴書\",\"f\":\"りれきしょ\"}, \"を\", {\"k\":\"書\",\"f\":\"か\"}, \"いて、いろいろな\", {\"k\":\"会社\",\"f\":\"かいしゃ\"}, \"の\", {\"k\":\"面接\",\"f\":\"めんせつ\"}, \"を\", {\"k\":\"受\",\"f\":\"う\"}, \"けました。\", {\"k\":\"大変\",\"f\":\"たいへん\"}, \"でしたが、\", {\"k\":\"無事\",\"f\":\"ぶじ\"}, \"に\", {\"k\":\"仕事\",\"f\":\"しごと\"}, \"が\", {\"k\":\"決\",\"f\":\"き\"}, \"まりました。\"]",
+                "ContentVi": "Khi là sinh viên năm tư, tôi đã tham gia tìm kiếm việc làm. Tôi viết sơ yếu lý lịch nhiều lần và tham gia phỏng vấn ở nhiều công ty. Tuy vất vả nhưng tôi đã thuận lợi xin được việc.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "就職活動で何をしましたか。",
+                        "Explanation": "Hành động: 履歴書を書いて、面接を受けた (Viết sơ yếu lý lịch và tham gia phỏng vấn).",
+                        "Options": [
+                            {
+                                "Text": "アルバイトをした",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "履歴書を書いて面接を受けた",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "大学のテストを受けた",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "結果はどうなりましたか。",
+                        "Explanation": "Kết quả: 無事に仕事が決まりました (Thuận lợi xin được việc).",
+                        "Options": [
+                            {
+                                "Text": "仕事が決まった",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "まだ決まっていない",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "就職活動をやめた",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "初めてのプレゼンテーション",
+                "TitleVi": "Buổi thuyết trình đầu tiên",
+                "ContentJp": "明日は会議で初めてのプレゼンをします。皆の前で話すのは緊張しますが、資料はしっかり準備しました。大きな声で話そうと思います。",
+                "ContentFurigana": "[{\"k\":\"明日\",\"f\":\"あした\"}, \"は\", {\"k\":\"会議\",\"f\":\"かいぎ\"}, \"で\", {\"k\":\"初\",\"f\":\"はじ\"}, \"めてのプレゼンをします。\", {\"k\":\"皆\",\"f\":\"みんな\"}, \"の\", {\"k\":\"前\",\"f\":\"まえ\"}, \"で\", {\"k\":\"話\",\"f\":\"はな\"}, \"すのは\", {\"k\":\"緊張\",\"f\":\"きんちょう\"}, \"しますが、\", {\"k\":\"資料\",\"f\":\"しりょう\"}, \"はしっかり\", {\"k\":\"準備\",\"f\":\"じゅんび\"}, \"しました。\", {\"k\":\"大\",\"f\":\"おお\"}, \"きな\", {\"k\":\"声\",\"f\":\"こえ\"}, \"で\", {\"k\":\"話\",\"f\":\"はな\"}, \"そうと\", {\"k\":\"思\",\"f\":\"おも\"}, \"います。\"]",
+                "ContentVi": "Ngày mai tôi sẽ có buổi thuyết trình đầu tiên trong cuộc họp. Dù việc nói trước mặt mọi người khá hồi hộp, nhưng tôi đã chuẩn bị tài liệu rất kỹ. Tôi định sẽ nói với giọng thật to.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "今の気持ちはどうですか。",
+                        "Explanation": "Cảm xúc hiện tại: 皆の前で話すのは緊張します (Hồi hộp khi nói trước mọi người).",
+                        "Options": [
+                            {
+                                "Text": "とても安心しています",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "少し緊張しています",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "怒っています",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "明日はどうやって話そうと思っていますか。",
+                        "Explanation": "Dự định: 大きな声で話そうと思います (Định nói với giọng to).",
+                        "Options": [
+                            {
+                                "Text": "大きな声で話そうと思う",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "速く話そうと思う",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "静かに話そうと思う",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "敬語の難しさ",
+                "TitleVi": "Sự khó khăn của kính ngữ",
+                "ContentJp": "日本の会社に入ったばかりの頃、正しい敬語が使えなくて失敗ばかりしていました。でも、先輩の話し方を聞いて真似するうちに、少しずつ慣れてきました。",
+                "ContentFurigana": "[{\"k\":\"日本\",\"f\":\"にほん\"}, \"の\", {\"k\":\"会社\",\"f\":\"かいしゃ\"}, \"に\", {\"k\":\"入\",\"f\":\"はい\"}, \"ったばかりの\", {\"k\":\"頃\",\"f\":\"ころ\"}, \"、\", {\"k\":\"正\",\"f\":\"ただ\"}, \"しい\", {\"k\":\"敬語\",\"f\":\"けいご\"}, \"が\", {\"k\":\"使\",\"f\":\"つか\"}, \"えなくて\", {\"k\":\"失敗\",\"f\":\"しっぱい\"}, \"ばかりしていました。でも、\", {\"k\":\"先輩\",\"f\":\"せんぱい\"}, \"の\", {\"k\":\"話\",\"f\":\"はな\"}, \"し\", {\"k\":\"方\",\"f\":\"かた\"}, \"を\", {\"k\":\"聞\",\"f\":\"き\"}, \"いて\", {\"k\":\"真似\",\"f\":\"まね\"}, \"するうちに、\", {\"k\":\"少\",\"f\":\"すこ\"}, \"しずつ\", {\"k\":\"慣\",\"f\":\"な\"}, \"れてきました。\"]",
+                "ContentVi": "Hồi mới vào công ty Nhật, tôi không thể dùng đúng kính ngữ nên toàn thất bại. Nhưng trong lúc lắng nghe và bắt chước cách nói của tiền bối, tôi đã dần quen hơn.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "入ったばかりの頃、何ができませんでしたか。",
+                        "Explanation": "Khó khăn ban đầu: 正しい敬語が使えなくて (Không dùng được đúng kính ngữ).",
+                        "Options": [
+                            {
+                                "Text": "英語が話せませんでした",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "正しい敬語が使えませんでした",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "仕事の時間が分かりませんでした",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "どうやって慣れてきましたか。",
+                        "Explanation": "Cách khắc phục: 先輩の話し方を聞いて真似するうちに (Trong lúc nghe và bắt chước tiền bối).",
+                        "Options": [
+                            {
+                                "Text": "本をたくさん読みました",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "先輩の話し方を真似しました",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "毎日辞書を引きました",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "有給休暇を取る",
+                "TitleVi": "Nghỉ phép có lương",
+                "ContentJp": "来月、有給休暇を取って家族と温泉に行くことにしました。早めに上司に相談して、休む間の仕事は同僚にお願いしておきました。",
+                "ContentFurigana": "[{\"k\":\"来月\",\"f\":\"らいげつ\"}, \"、\", {\"k\":\"有給休暇\",\"f\":\"ゆうきゅうきゅうか\"}, \"を\", {\"k\":\"取\",\"f\":\"と\"}, \"って\", {\"k\":\"家族\",\"f\":\"かぞく\"}, \"と\", {\"k\":\"温泉\",\"f\":\"おんせん\"}, \"に\", {\"k\":\"行\",\"f\":\"い\"}, \"くことにしました。\", {\"k\":\"早\",\"f\":\"はや\"}, \"めに\", {\"k\":\"上司\",\"f\":\"じょうし\"}, \"に\", {\"k\":\"相談\",\"f\":\"そうだん\"}, \"して、\", {\"k\":\"休\",\"f\":\"やす\"}, \"む\", {\"k\":\"間\",\"f\":\"あいだ\"}, \"の\", {\"k\":\"仕事\",\"f\":\"しごと\"}, \"は\", {\"k\":\"同僚\",\"f\":\"どうりょう\"}, \"にお\", {\"k\":\"願\",\"f\":\"ねが\"}, \"いしておきました。\"]",
+                "ContentVi": "Tháng sau, tôi quyết định xin nghỉ phép có lương để cùng gia đình đi suối nước nóng. Tôi đã bàn bạc sớm với cấp trên và nhờ đồng nghiệp lo giúp công việc trong thời gian nghỉ.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "来月、どうして有給休暇を取りますか。",
+                        "Explanation": "Mục đích: 家族と温泉に行くことにした (Quyết định đi suối nước nóng với gia đình).",
+                        "Options": [
+                            {
+                                "Text": "病気になったからです",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "温泉に行くからです",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "出張に行くからです",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "休む間、仕事はどうしますか。",
+                        "Explanation": "Giải pháp: 仕事は同僚にお願いしておきました (Nhờ đồng nghiệp làm giúp).",
+                        "Options": [
+                            {
+                                "Text": "同僚にお願いしました",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "上司にお願いしました",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "家に持って帰ります",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "パソコンのトラブル",
+                "TitleVi": "Sự cố máy tính",
+                "ContentJp": "仕事中に突然パソコンの画面が真っ暗になって動かなくなりました。焦りましたが、すぐにIT部門の人を呼んで直してもらいました。データが消えなくてよかったです。",
+                "ContentFurigana": "[{\"k\":\"仕事中\",\"f\":\"しごとちゅう\"}, \"に\", {\"k\":\"突然\",\"f\":\"とつぜん\"}, \"パソコンの\", {\"k\":\"画面\",\"f\":\"がめん\"}, \"が\", {\"k\":\"真\",\"f\":\"ま\"}, \"っ\", {\"k\":\"暗\",\"f\":\"くら\"}, \"になって\", {\"k\":\"動\",\"f\":\"うご\"}, \"かなくなりました。\", {\"k\":\"焦\",\"f\":\"あせ\"}, \"りましたが、すぐにIT\", {\"k\":\"部門\",\"f\":\"ぶもん\"}, \"の\", {\"k\":\"人\",\"f\":\"ひと\"}, \"を\", {\"k\":\"呼\",\"f\":\"よ\"}, \"んで\", {\"k\":\"直\",\"f\":\"なお\"}, \"してもらいました。データが\", {\"k\":\"消\",\"f\":\"き\"}, \"えなくてよかったです。\"]",
+                "ContentVi": "Trong lúc làm việc, đột nhiên màn hình máy tính đen thui và không hoạt động nữa. Tôi đã rất luống cuống, nhưng ngay lập tức gọi người bên bộ phận IT đến sửa giúp. Thật may là dữ liệu không bị mất.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "パソコンはどうなりましたか。",
+                        "Explanation": "Sự cố: 画面が真っ暗になって動かなくなりました (Màn hình đen thui và không hoạt động).",
+                        "Options": [
+                            {
+                                "Text": "音が出なくなりました",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "画面が真っ暗になって動かなくなりました",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "データが全部消えました",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "誰にパソコンを直してもらいましたか。",
+                        "Explanation": "Người sửa: IT部門の人 (Người bộ phận IT).",
+                        "Options": [
+                            {
+                                "Text": "IT部門の人",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "上司",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "同僚",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "異動の挨拶",
+                "TitleVi": "Chào hỏi khi chuyển bộ phận",
+                "ContentJp": "来月から営業部に異動することになりました。お世話になった部署の人たちに、感謝の気持ちを込めてお菓子を配りながら挨拶をしました。",
+                "ContentFurigana": "[{\"k\":\"来月\",\"f\":\"らいげつ\"}, \"から\", {\"k\":\"営業部\",\"f\":\"えいぎょうぶ\"}, \"に\", {\"k\":\"異動\",\"f\":\"いどう\"}, \"することになりました。お\", {\"k\":\"世話\",\"f\":\"せわ\"}, \"になった\", {\"k\":\"部署\",\"f\":\"ぶしょ\"}, \"の\", {\"k\":\"人\",\"f\":\"ひと\"}, \"たちに、\", {\"k\":\"感謝\",\"f\":\"かんしゃ\"}, \"の\", {\"k\":\"気持\",\"f\":\"きも\"}, \"ちを\", {\"k\":\"込\",\"f\":\"こ\"}, \"めてお\", {\"k\":\"菓子\",\"f\":\"かし\"}, \"を\", {\"k\":\"配\",\"f\":\"くば\"}, \"りながら\", {\"k\":\"挨拶\",\"f\":\"あいさつ\"}, \"をしました。\"]",
+                "ContentVi": "Từ tháng sau, tôi được quyết định sẽ chuyển sang phòng kinh doanh. Để bày tỏ lòng biết ơn, tôi vừa đi phát bánh kẹo vừa gửi lời chào đến những người trong bộ phận đã giúp đỡ mình bấy lâu.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "来月からどこで働きますか。",
+                        "Explanation": "Nơi làm việc mới: 営業部 (Phòng kinh doanh).",
+                        "Options": [
+                            {
+                                "Text": "今の部署",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "営業部",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "新しい会社",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "挨拶をする時、何をしましたか。",
+                        "Explanation": "Hành động: 感謝の気持ちを込めてお菓子を配りながら (Vừa phát bánh kẹo với lòng biết ơn).",
+                        "Options": [
+                            {
+                                "Text": "お菓子を配った",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "花をあげた",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "お酒を飲んだ",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "スキルアップの勉強",
+                "TitleVi": "Học tập nâng cao kỹ năng",
+                "ContentJp": "仕事にもっと役立てるために、簿記の勉強を始めました。数字を扱うのは難しいですが、資格を取ればできる仕事が増えるので頑張っています。",
+                "ContentFurigana": "[{\"k\":\"仕事\",\"f\":\"しごと\"}, \"にもっと\", {\"k\":\"役立\",\"f\":\"やくだ\"}, \"てるために、\", {\"k\":\"簿記\",\"f\":\"ぼき\"}, \"の\", {\"k\":\"勉強\",\"f\":\"べんきょう\"}, \"を\", {\"k\":\"始\",\"f\":\"はじ\"}, \"めました。\", {\"k\":\"数字\",\"f\":\"すうじ\"}, \"を\", {\"k\":\"扱\",\"f\":\"あつか\"}, \"うのは\", {\"k\":\"難\",\"f\":\"むずか\"}, \"しいですが、\", {\"k\":\"資格\",\"f\":\"しかく\"}, \"を\", {\"k\":\"取\",\"f\":\"と\"}, \"ればできる\", {\"k\":\"仕事\",\"f\":\"しごと\"}, \"が\", {\"k\":\"増\",\"f\":\"ふ\"}, \"えるので\", {\"k\":\"頑張\",\"f\":\"がんば\"}, \"っています。\"]",
+                "ContentVi": "Để có ích hơn cho công việc, tôi đã bắt đầu học Kế toán (Boki). Việc xử lý các con số tuy khó, nhưng nếu lấy được chứng chỉ thì công việc tôi có thể làm sẽ tăng lên nên tôi đang cố gắng.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "何の勉強を始めましたか。",
+                        "Explanation": "Môn học: 簿記 (Kế toán).",
+                        "Options": [
+                            {
+                                "Text": "英語",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "簿記",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "パソコン",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "資格を取るとどうなりますか。",
+                        "Explanation": "Lợi ích: できる仕事が増える (Công việc có thể làm sẽ tăng lên).",
+                        "Options": [
+                            {
+                                "Text": "給料がすぐに上がる",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "できる仕事が増える",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "仕事が楽になる",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "クレームの対応",
+                "TitleVi": "Xử lý khiếu nại",
+                "ContentJp": "今日、お客様から商品のことでクレームがありました。まずはしっかりとお詫びをして、お客様の話を最後まで聞くようにしました。",
+                "ContentFurigana": "[{\"k\":\"今日\",\"f\":\"きょう\"}, \"、お\", {\"k\":\"客様\",\"f\":\"きゃくさま\"}, \"から\", {\"k\":\"商品\",\"f\":\"しょうひん\"}, \"のことでクレームがありました。まずはしっかりとお\", {\"k\":\"詫\",\"f\":\"わ\"}, \"びをして、お\", {\"k\":\"客様\",\"f\":\"きゃくさま\"}, \"の\", {\"k\":\"話\",\"f\":\"はな\"}, \"を\", {\"k\":\"最後\",\"f\":\"さいご\"}, \"まで\", {\"k\":\"聞\",\"f\":\"き\"}, \"くようにしました。\"]",
+                "ContentVi": "Hôm nay, có một lời phàn nàn từ khách hàng về sản phẩm. Trước tiên tôi đã xin lỗi một cách nghiêm túc, và cố gắng lắng nghe câu chuyện của khách cho đến cuối.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "お客様から何がありましたか。",
+                        "Explanation": "Sự việc: 商品のことでクレームがあった (Có phàn nàn về sản phẩm).",
+                        "Options": [
+                            {
+                                "Text": "クレームがあった",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "プレゼントをもらった",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "道を聞かれた",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "クレームがあった時、どうしましたか。",
+                        "Explanation": "Cách xử lý: お詫びをして、話を最後まで聞いた (Xin lỗi và nghe đến cuối).",
+                        "Options": [
+                            {
+                                "Text": "すぐにお金を返した",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "上司に代わってもらった",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "お詫びをして話を最後まで聞いた",
+                                "IsCorrect": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "会議の議事録",
+                "TitleVi": "Biên bản cuộc họp",
+                "ContentJp": "今日は会議の議事録を書く係でした。みんなの意見をまとめるのは大変でしたが、終わった後で上司に「よく書けているね」と褒められました。",
+                "ContentFurigana": "[{\"k\":\"今日\",\"f\":\"きょう\"}, \"は\", {\"k\":\"会議\",\"f\":\"かいぎ\"}, \"の\", {\"k\":\"議事録\",\"f\":\"ぎじろく\"}, \"を\", {\"k\":\"書\",\"f\":\"か\"}, \"く\", {\"k\":\"係\",\"f\":\"かかり\"}, \"でした。みんなの\", {\"k\":\"意見\",\"f\":\"いけん\"}, \"をまとめるのは\", {\"k\":\"大変\",\"f\":\"たいへん\"}, \"でしたが、\", {\"k\":\"終\",\"f\":\"お\"}, \"わった\", {\"k\":\"後\",\"f\":\"あと\"}, \"で\", {\"k\":\"上司\",\"f\":\"じょうし\"}, \"に「よく\", {\"k\":\"書\",\"f\":\"か\"}, \"けているね」と\", {\"k\":\"褒\",\"f\":\"ほ\"}, \"められました。\"]",
+                "ContentVi": "Hôm nay tôi là người phụ trách viết biên bản cuộc họp. Việc tổng hợp ý kiến của mọi người khá vất vả, nhưng sau khi xong tôi đã được cấp trên khen là 'Cậu viết tốt lắm'.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "今日の会議でどんな仕事をしましたか。",
+                        "Explanation": "Công việc: 議事録を書く係 (Người phụ trách viết biên bản).",
+                        "Options": [
+                            {
+                                "Text": "司会をした",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "議事録を書いた",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "プレゼンをした",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "終わった後、上司はどうしましたか。",
+                        "Explanation": "Kết quả: 上司に褒められました (Được cấp trên khen ngợi).",
+                        "Options": [
+                            {
+                                "Text": "怒りました",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "褒めてくれました",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "書き直すように言いました",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Level": "N4",
+                "TitleJp": "同僚の送別会",
+                "TitleVi": "Tiệc chia tay đồng nghiệp",
+                "ContentJp": "五年間一緒に働いた同僚が会社を辞めるので、送別会を開きました。みんなで花束とプレゼントを渡して、これからの活躍を祈りました。",
+                "ContentFurigana": "[{\"k\":\"五年間一緒\",\"f\":\"ごねんかんいっしょ\"}, \"に\", {\"k\":\"働\",\"f\":\"はたら\"}, \"いた\", {\"k\":\"同僚\",\"f\":\"どうりょう\"}, \"が\", {\"k\":\"会社\",\"f\":\"かいしゃ\"}, \"を\", {\"k\":\"辞\",\"f\":\"や\"}, \"めるので、\", {\"k\":\"送別会\",\"f\":\"そうべつかい\"}, \"を\", {\"k\":\"開\",\"f\":\"ひら\"}, \"きました。みんなで\", {\"k\":\"花束\",\"f\":\"はなたば\"}, \"とプレゼントを\", {\"k\":\"渡\",\"f\":\"わた\"}, \"して、これからの\", {\"k\":\"活躍\",\"f\":\"かつやく\"}, \"を\", {\"k\":\"祈\",\"f\":\"いの\"}, \"りました。\"]",
+                "ContentVi": "Người đồng nghiệp làm cùng tôi suốt 5 năm chuẩn bị nghỉ việc nên chúng tôi đã tổ chức tiệc chia tay. Mọi người cùng nhau trao hoa, quà tặng và cầu chúc cho anh ấy sẽ thành công trong tương lai.",
+                "AudioUrl": "",
+                "IsPremium": false,
+                "Questions": [
+                    {
+                        "QuestionText": "どうして送別会を開きましたか。",
+                        "Explanation": "Lý do: 一緒に働いた同僚が会社を辞めるので (Vì đồng nghiệp nghỉ việc).",
+                        "Options": [
+                            {
+                                "Text": "同僚が結婚するから",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "同僚が会社を辞めるから",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "新しい同僚が入るから",
+                                "IsCorrect": false
+                            }
+                        ]
+                    },
+                    {
+                        "QuestionText": "みんなで何を渡しましたか。",
+                        "Explanation": "Quà tặng: 花束とプレゼント (Bó hoa và quà).",
+                        "Options": [
+                            {
+                                "Text": "花束とプレゼント",
+                                "IsCorrect": true
+                            },
+                            {
+                                "Text": "お金",
+                                "IsCorrect": false
+                            },
+                            {
+                                "Text": "手紙だけ",
+                                "IsCorrect": false
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,12 +1,12 @@
 import React from "react";
-import { Search, LogOut } from "lucide-react";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Search, LogOut, Crown, Sparkles } from "lucide-react";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
 import logo from "../assets/logo.jpg";
 
 const Header: React.FC = () => {
   const navigate = useNavigate();
-  const { logout, isAuthenticated } = useAuth();
+  const { logout, isAuthenticated, user } = useAuth();
 
   // Nếu isActive là true, sẽ hiện chữ đậm và thanh hồng ở dưới
   const navLinkClass = ({ isActive }: { isActive: boolean }) =>
@@ -31,23 +31,44 @@ const Header: React.FC = () => {
             </Link>
 
             <nav className="hidden md:flex items-center gap-6">
-              {/* Lưu ý: Nếu Home và Flashcards dùng chung 1 link /dashboard, 
-                  bạn nên cân nhắc đổi một trong hai sang link khác hoặc dùng logic so sánh pathname thủ công.
-                  Ở đây tôi giả định bạn sẽ có các route riêng biệt cho mỗi tab. */}
-              
-              <NavLink to="/home" className={navLinkClass}>
+              <NavLink
+                to="/dashboard"
+                className={({ isActive }) =>
+                  `px-1 py-4 text-sm font-medium transition-colors ${
+                    isActive ? "text-primary border-b-2" : "text-[#9a4c73] hover:text-primary hover:border-b-2"
+                  }`
+                }
+              >
                 Home
               </NavLink>
-
-              <NavLink to="/dashboard" className={navLinkClass}>
+              <NavLink
+                to="/create-flashcard"
+                className={({ isActive }) =>
+                  `px-1 py-4 text-sm font-medium transition-colors ${
+                    isActive ? "text-primary border-b-2" : "text-[#9a4c73] hover:text-primary hover:border-b-2"
+                  }`
+                }
+              >
                 Flashcards
               </NavLink>
-
-              <NavLink to="/grammar-library" className={navLinkClass}>
+              <NavLink
+                to="/grammar-library"
+                className={({ isActive }) =>
+                  `px-1 py-4 text-sm font-medium transition-colors ${
+                    isActive ? "text-primary border-b-2" : "text-[#9a4c73] hover:text-primary hover:border-b-2"
+                  }`
+                }
+              >
                 Grammar
               </NavLink>
-
-              <NavLink to="/minigamehub" className={navLinkClass}>
+              <NavLink
+                to="/minigamehub"
+                className={({ isActive }) =>
+                  `px-1 py-4 text-sm font-medium transition-colors ${
+                    isActive ? "text-primary border-b-2" : "text-[#9a4c73] hover:text-primary hover:border-b-2"
+                  }`
+                }
+              >
                 Games
               </NavLink>
             </nav>
@@ -62,16 +83,42 @@ const Header: React.FC = () => {
                 type="text"
               />
             </div>
+            {isAuthenticated &&
+              (user?.isPremium ? (
+                <Link
+                  to="/subscription"
+                  className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gradient-to-r from-amber-400 to-yellow-500 text-white text-xs font-bold shadow-sm hover:shadow-md transition-all hover:scale-[1.02]"
+                >
+                  <Crown size={14} />
+                  Premium
+                </Link>
+              ) : (
+                <Link
+                  to="/pricing"
+                  className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold hover:bg-primary hover:text-white transition-all"
+                >
+                  <Sparkles size={14} />
+                  Upgrade
+                </Link>
+              ))}
             <div className="h-6 w-[1px] bg-[#f3e7ed] mx-1"></div>
             <div className="flex items-center gap-3">
-              <div className="size-8 rounded-full border border-primary/20 bg-[#f3e7ed]"></div>
+              {user?.avatarUrl ? (
+                <img
+                  src={user.avatarUrl}
+                  alt="User Avatar"
+                  className="size-8 rounded-full border border-primary/20 bg-[#f3e7ed] object-cover"
+                />
+              ) : (
+                <div className="size-8 rounded-full border border-primary/20 bg-[#f3e7ed]"></div>
+              )}
               {isAuthenticated && (
                 <button
                   onClick={async () => {
                     await logout();
                     navigate("/login");
                   }}
-                  className="flex items-center gap-1 text-[#9a4c73] hover:text-red-500 transition-colors text-sm font-bold"
+                  className="flex items-center gap-1 text-[#9a4c73] hover:text-red-500 transition-colors text-sm font-bold cursor-pointer"
                 >
                   <LogOut size={18} />
                   <span>Logout</span>

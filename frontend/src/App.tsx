@@ -35,6 +35,7 @@ import ReadingResults from './pages/ReadingResults';
 // 6. NHÓM THANH TOÁN (PREMIUM)
 import Pricing from './pages/Pricing';
 import PremiumCheckout from './pages/PremiumCheckout';
+import SubscriptionManagement from './pages/SubscriptionManagement';
 
 // 7. NHÓM ADMIN
 import AdminSystemStatus from './pages/AdminSystemStatus';
@@ -74,15 +75,16 @@ const App: React.FC = () => {
           <Route path="/rewriting-results" element={<ProtectedRoute><RewritingResults /></ProtectedRoute>} />
 
           {/* === READING PRACTICE === */}
-          <Route path="/reading-topic" element={<ProtectedRoute><ReadingTopic /></ProtectedRoute>} />
+          <Route path="/reading-topics" element={<ProtectedRoute><ReadingTopic /></ProtectedRoute>} />
           <Route path="/reading-level" element={<ProtectedRoute><ReadingLevel /></ProtectedRoute>} />
           <Route path="/reading-list" element={<ProtectedRoute><ReadingList /></ProtectedRoute>} />
-          <Route path="/reading-exercise" element={<ProtectedRoute><ReadingExercise /></ProtectedRoute>} />
+          <Route path="/reading-exercise/:id" element={<ProtectedRoute><ReadingExercise /></ProtectedRoute>} />
           <Route path="/reading-result" element={<ProtectedRoute><ReadingResults /></ProtectedRoute>} />
 
           {/* === PREMIUM & PAYMENT === */}
           <Route path="/pricing" element={<ProtectedRoute><Pricing /></ProtectedRoute>} />
           <Route path="/premium-checkout" element={<ProtectedRoute><PremiumCheckout /></ProtectedRoute>} />
+          <Route path="/subscription" element={<ProtectedRoute><SubscriptionManagement /></ProtectedRoute>} />
 
           {/* === ADMIN === */}
           <Route path="/admin/system-status" element={<ProtectedRoute><AdminSystemStatus /></ProtectedRoute>} />

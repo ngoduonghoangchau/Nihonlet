@@ -1,15 +1,15 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
-import { api } from '../api/axios'; 
-import Header from '../components/Header';
-import { 
-  ArrowLeft, 
-  Settings2, 
-  Layers, 
-  Search, 
-  PlayCircle, 
-  Loader2, 
-  AlertCircle, 
+import React, { useState, useEffect, useMemo } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+import { api } from "../api/axios";
+import Header from "../components/Header";
+import {
+  ArrowLeft,
+  Settings2,
+  Layers,
+  Search,
+  PlayCircle,
+  Loader2,
+  AlertCircle,
   ChevronDown,
   CheckCircle2,
   X,
@@ -69,9 +69,9 @@ const MinigameSelect: React.FC = () => {
 
   const handleToggleSet = (id: number) => {
     if (selectedSets.includes(id)) {
-      setSelectedSets(prev => prev.filter(s => s !== id));
+      setSelectedSets((prev) => prev.filter((s) => s !== id));
     } else if (!isMaxReached) {
-      setSelectedSets(prev => [...prev, id]);
+      setSelectedSets((prev) => [...prev, id]);
     }
   };
 
@@ -109,19 +109,19 @@ const MinigameSelect: React.FC = () => {
   return (
     <div className="bg-[#fcf8fa] min-h-screen flex flex-col font-display text-[#1b0d14] relative">
       <Header />
-      
+
       <main className="flex-grow flex flex-col items-center py-12 px-6">
         <div className="max-w-[900px] w-full animate-fadeIn">
           
           <div className="flex flex-col gap-6 mb-8">
-            <button 
-              onClick={() => navigate('/minigameHub')} 
+            <button
+              onClick={() => navigate("/minigameHub")}
               className="flex items-center gap-2 text-[#9a4c73] hover:text-primary transition-colors w-fit group font-bold"
             >
               <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
               <span>Back to Minigame Hub</span>
             </button>
-            
+
             <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
               <div>
                 <h1 className="text-3xl md:text-4xl font-black tracking-tight flex items-center gap-3">
@@ -164,7 +164,7 @@ const MinigameSelect: React.FC = () => {
             
             <div className="relative mb-8">
               <Search size={20} className="absolute left-4 top-1/2 -translate-y-1/2 text-[#9a4c73]/30" />
-              <input 
+              <input
                 type="text"
                 placeholder="Tìm kiếm bộ thẻ của bạn..."
                 value={searchQuery}
@@ -241,8 +241,8 @@ const MinigameSelect: React.FC = () => {
                 <AlertCircle size={18} />
                 <span>Tổng cộng {totalCardsSelected} thẻ sẽ được sử dụng</span>
               </div>
-              
-              <button 
+
+              <button
                 onClick={handleStartGame}
                 disabled={selectedSets.length === 0}
                 className="w-full md:w-auto px-16 py-4 bg-primary text-white rounded-2xl font-black text-xl shadow-xl shadow-primary/20 hover:brightness-110 active:scale-95 disabled:grayscale disabled:opacity-50 transition-all flex items-center justify-center gap-3 group"
@@ -300,7 +300,9 @@ const MinigameSelect: React.FC = () => {
         .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
         .custom-scrollbar::-webkit-scrollbar-thumb { background-color: #f3e7ed; border-radius: 20px; }
         .custom-scrollbar::-webkit-scrollbar-thumb:hover { background-color: #e0d0d8; }
-      `}} />
+      `,
+        }}
+      />
     </div>
   );
 };

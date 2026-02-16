@@ -73,4 +73,9 @@ public interface IIdentityService
     /// Thêm role cho user
     /// </summary>
     Task<bool> AddToRoleAsync(string userId, string role);
+
+    /// <summary>
+    /// Xoá role khỏi user
+    /// </summary>
+    Task<bool> RemoveFromRoleAsync(string userId, string role);
 }

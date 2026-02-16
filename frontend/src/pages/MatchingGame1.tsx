@@ -1,19 +1,19 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
-import Header from '../components/Header';
-import { api } from '../api/axios'; 
+import React, { useState, useEffect, useCallback } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import Header from "../components/Header";
+import { api } from "../api/axios";
 
-import { 
-  Sparkles, 
-  CheckCircle2, 
-  Lightbulb, 
-  Shuffle, 
+import {
+  Sparkles,
+  CheckCircle2,
+  Lightbulb,
+  Shuffle,
   Trophy,
   RefreshCcw,
   ArrowLeft,
   Loader2,
-  XCircle 
-} from 'lucide-react';
+  XCircle,
+} from "lucide-react";
 
 interface CardTile {
   id: string;
@@ -26,7 +26,7 @@ interface CardTile {
 const MatchingGame1: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const gameConfig = location.state as { selectedDeckIds: number[], wordCount: number };
+  const gameConfig = location.state as { selectedDeckIds: number[]; wordCount: number };
 
   const [tiles, setTiles] = useState<CardTile[]>([]);
   const [firstSelection, setFirstSelection] = useState<CardTile | null>(null);
@@ -36,14 +36,14 @@ const MatchingGame1: React.FC = () => {
 
   const initGame = useCallback(async () => {
     if (!gameConfig) {
-      navigate('/minigameSelect');
+      navigate("/minigameSelect");
       return;
     }
     try {
       setLoading(true);
-      const res = await api.post('/Gamification/get-cards', {
+      const res = await api.post("/Gamification/get-cards", {
         deckIds: gameConfig.selectedDeckIds,
-        limit: gameConfig.wordCount
+        limit: gameConfig.wordCount,
       });
 
       const rawData = res.data.data || res.data;
@@ -62,14 +62,14 @@ const MatchingGame1: React.FC = () => {
           cardId: card.cardId,
           text: card.kanji,
           lang: "JAPANESE",
-          status: "default"
+          status: "default",
         });
         newTiles.push({
           id: `vn-${card.cardId}`,
           cardId: card.cardId,
           text: card.meaning,
           lang: "VIETNAMESE",
-          status: "default"
+          status: "default",
         });
       });
       // --------------------
@@ -83,13 +83,15 @@ const MatchingGame1: React.FC = () => {
     }
   }, [gameConfig, navigate]);
 
-  useEffect(() => { initGame(); }, [initGame]);
+  useEffect(() => {
+    initGame();
+  }, [initGame]);
 
   const handleCardClick = (tile: CardTile) => {
     // Không cho phép click nếu đang xử lý cặp thứ 2 hoặc thẻ đã matched/correct
     if (tile.status === "matched" || tile.status === "selected" || tile.status === "correct" || secondSelection) return;
 
-    setTiles(prev => prev.map(t => t.id === tile.id ? { ...t, status: "selected" } : t));
+    setTiles((prev) => prev.map((t) => (t.id === tile.id ? { ...t, status: "selected" } : t)));
 
     if (!firstSelection) {
       setFirstSelection(tile);
@@ -104,20 +106,20 @@ const MatchingGame1: React.FC = () => {
 
     if (card1.cardId === card2.cardId) {
       // --- ĐÚNG: TÔ XANH ---
-      setTiles(prev => prev.map(t => ids.includes(t.id) ? { ...t, status: "correct" } : t));
-      
+      setTiles((prev) => prev.map((t) => (ids.includes(t.id) ? { ...t, status: "correct" } : t)));
+
       setTimeout(() => {
-        setTiles(prev => prev.map(t => t.cardId === card1.cardId ? { ...t, status: "matched" } : t));
-        setScore(s => s + 100);
+        setTiles((prev) => prev.map((t) => (t.cardId === card1.cardId ? { ...t, status: "matched" } : t)));
+        setScore((s) => s + 100);
         setFirstSelection(null);
         setSecondSelection(null);
       }, 600); // Đợi 0.6s để người dùng thấy màu xanh
     } else {
       // --- SAI: TÔ ĐỎ ---
-      setTiles(prev => prev.map(t => ids.includes(t.id) ? { ...t, status: "wrong" } : t));
+      setTiles((prev) => prev.map((t) => (ids.includes(t.id) ? { ...t, status: "wrong" } : t)));
 
       setTimeout(() => {
-        setTiles(prev => prev.map(t => ids.includes(t.id) ? { ...t, status: "default" } : t));
+        setTiles((prev) => prev.map((t) => (ids.includes(t.id) ? { ...t, status: "default" } : t)));
         setFirstSelection(null);
         setSecondSelection(null);
       }, 1000); // Đợi 1s để người dùng thấy màu đỏ và ghi nhớ
@@ -125,7 +127,7 @@ const MatchingGame1: React.FC = () => {
   };
 
   useEffect(() => {
-    if (tiles.length > 0 && tiles.every(t => t.status === "matched")) {
+    if (tiles.length > 0 && tiles.every((t) => t.status === "matched")) {
       handleGameWin();
     }
   }, [tiles]);
@@ -135,42 +137,52 @@ const MatchingGame1: React.FC = () => {
     const totalPairs = tiles.length / 2;
     const uniqueCards = tiles.reduce((acc: any[], current) => {
       if (current.lang === "JAPANESE") {
-        const pair = tiles.find(t => t.cardId === current.cardId && t.lang === "VIETNAMESE");
+        const pair = tiles.find((t) => t.cardId === current.cardId && t.lang === "VIETNAMESE");
         acc.push({ ja: current.text, vi: pair?.text || "" });
       }
       return acc;
     }, []);
 
     try {
-      await api.post('/Gamification/save-session', {
+      await api.post("/Gamification/save-session", {
         wordCount: gameConfig.wordCount,
         selectedDecksJson: JSON.stringify(gameConfig.selectedDeckIds),
         totalScore: finalScore,
-        accuracy: 100 
+        accuracy: 100,
       });
     } catch (e) {
       console.error("Lưu kết quả thất bại", e);
     }
 
-    navigate('/matching-results', { 
-      state: { score: finalScore, pairsMatched: totalPairs, totalPairs: totalPairs, reviewData: uniqueCards, gameConfig: gameConfig } 
+    navigate("/matching-results", {
+      state: {
+        score: finalScore,
+        pairsMatched: totalPairs,
+        totalPairs: totalPairs,
+        reviewData: uniqueCards,
+        gameConfig: gameConfig,
+      },
     });
   };
 
-  const matchedCount = tiles.filter(t => t.status === "matched").length;
+  const matchedCount = tiles.filter((t) => t.status === "matched").length;
   const progress = tiles.length > 0 ? (matchedCount / tiles.length) * 100 : 0;
 
-  if (loading) return (
-    <div className="min-h-screen flex items-center justify-center bg-[#fcf8fa]">
-      <Loader2 className="animate-spin text-primary" size={48} />
-    </div>
-  );
+  if (loading)
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-[#fcf8fa]">
+        <Loader2 className="animate-spin text-primary" size={48} />
+      </div>
+    );
 
   return (
     <div className="bg-[#fcf8fa] min-h-screen text-[#1b0d14] font-display">
       <Header />
       <main className="max-w-[1000px] mx-auto px-4 py-8 animate-fadeIn">
-        <button onClick={() => navigate(-1)} className="mb-6 flex items-center gap-2 text-[#9a4c73] font-bold hover:text-primary transition-colors">
+        <button
+          onClick={() => navigate(-1)}
+          className="mb-6 flex items-center gap-2 text-[#9a4c73] font-bold hover:text-primary transition-colors"
+        >
           <ArrowLeft size={20} /> Quit Game
         </button>
 
@@ -187,7 +199,9 @@ const MatchingGame1: React.FC = () => {
               <CheckCircle2 size={16} className="text-primary" />
               <p className="text-xs font-bold uppercase tracking-wider">Matched</p>
             </div>
-            <p className="text-4xl font-black">{matchedCount / 2} / {tiles.length / 2}</p>
+            <p className="text-4xl font-black">
+              {matchedCount / 2} / {tiles.length / 2}
+            </p>
           </div>
         </div>
 
@@ -209,38 +223,44 @@ const MatchingGame1: React.FC = () => {
             const isWrong = tile.status === "wrong";
 
             return (
-              <div 
+              <div
                 key={tile.id}
                 onClick={() => handleCardClick(tile)}
                 className={`
                   relative aspect-square rounded-[2rem] flex flex-col items-center justify-center p-4 text-center transition-all duration-300 cursor-pointer shadow-sm
-                  ${isMatched ? 'bg-gray-100 opacity-0 pointer-events-none scale-90' : 'bg-white border-2 border-[#f3e7ed]'}
-                  ${isSelected ? 'bg-[#fef1f7] border-primary scale-105 shadow-xl z-10' : 'hover:border-primary/40 hover:-translate-y-1'}
-                  ${isCorrect ? 'bg-green-50 border-green-500 scale-105 z-10 border-[3px]' : ''}
-                  ${isWrong ? 'bg-red-50 border-red-500 scale-105 z-10 border-[3px]' : ''}
+                  ${isMatched ? "bg-gray-100 opacity-0 pointer-events-none scale-90" : "bg-white border-2 border-[#f3e7ed]"}
+                  ${isSelected ? "bg-[#fef1f7] border-primary scale-105 shadow-xl z-10" : "hover:border-primary/40 hover:-translate-y-1"}
+                  ${isCorrect ? "bg-green-50 border-green-500 scale-105 z-10 border-[3px]" : ""}
+                  ${isWrong ? "bg-red-50 border-red-500 scale-105 z-10 border-[3px]" : ""}
                 `}
               >
-                <h3 className={`
+                <h3
+                  className={`
                   font-black mb-1 transition-colors duration-300
-                  ${tile.text.length > 6 ? 'text-xl' : 'text-3xl'} 
-                  ${isSelected ? 'text-primary' : ''}
-                  ${isCorrect ? 'text-green-600' : ''}
-                  ${isWrong ? 'text-red-600' : ''}
-                `}>
+                  ${tile.text.length > 6 ? "text-xl" : "text-3xl"} 
+                  ${isSelected ? "text-primary" : ""}
+                  ${isCorrect ? "text-green-600" : ""}
+                  ${isWrong ? "text-red-600" : ""}
+                `}
+                >
                   {tile.text}
                 </h3>
-                
-                <span className={`
+
+                <span
+                  className={`
                   text-[10px] font-black uppercase tracking-widest transition-colors duration-300
-                  ${isSelected ? 'text-primary' : 'text-[#9a4c73]/40'}
-                  ${isCorrect ? 'text-green-500' : ''}
-                  ${isWrong ? 'text-red-500' : ''}
-                `}>
+                  ${isSelected ? "text-primary" : "text-[#9a4c73]/40"}
+                  ${isCorrect ? "text-green-500" : ""}
+                  ${isWrong ? "text-red-500" : ""}
+                `}
+                >
                   {isCorrect ? "CORRECT" : isWrong ? "WRONG" : tile.lang}
                 </span>
 
                 {/* Thêm Icon phản hồi nhỏ */}
-                {isCorrect && <CheckCircle2 className="absolute top-4 right-4 text-green-500 animate-bounce" size={20} />}
+                {isCorrect && (
+                  <CheckCircle2 className="absolute top-4 right-4 text-green-500 animate-bounce" size={20} />
+                )}
                 {isWrong && <XCircle className="absolute top-4 right-4 text-red-500 animate-shake" size={20} />}
               </div>
             );

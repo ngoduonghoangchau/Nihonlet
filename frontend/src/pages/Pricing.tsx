@@ -1,16 +1,14 @@
-import React from 'react';
-import Header from '../components/Header';
-import { 
-  Rocket, 
-  ArrowRight, 
-  CheckCircle2, 
-  Layers, 
-  FileText, 
-  UploadCloud, 
-  Minus 
-} from 'lucide-react';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import Header from "../components/Header";
+import { useAppSelector } from "../hooks/useRedux";
+import { Rocket, ArrowRight, CheckCircle2, Layers, FileText, UploadCloud, Minus, Crown, Settings } from "lucide-react";
 
 const Pricing: React.FC = () => {
+  const navigate = useNavigate();
+  const { user } = useAppSelector((state) => state.auth);
+  const isPremium = user?.isPremium ?? false;
+
   return (
     <div className="bg-[#fcf8fa] min-h-screen flex flex-col font-display text-[#1b0d14]">
       <Header />
@@ -22,25 +20,27 @@ const Pricing: React.FC = () => {
             <div className="absolute -top-[10%] -right-[5%] w-[40rem] h-[40rem] bg-primary/5 rounded-full blur-3xl"></div>
             <div className="absolute top-[20%] -left-[10%] w-[30rem] h-[30rem] bg-pink-300/10 rounded-full blur-3xl"></div>
           </div>
-          
+
           <div className="max-w-6xl mx-auto text-center space-y-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-2 border border-primary/20">
               <Rocket size={14} />
               Premium Access
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1]">
-              Supercharge your <br className="hidden sm:block"/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-600">Japanese Fluency</span>
+              Supercharge your <br className="hidden sm:block" />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-600">
+                Japanese Fluency
+              </span>
             </h1>
             <p className="text-[#9a4c73] text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-              Unlock unlimited flashcards, smart document processing, and advanced analytics to master the language faster.
+              Unlock unlimited flashcards, smart document processing, and advanced analytics to master the language
+              faster.
             </p>
           </div>
         </section>
 
         <div className="max-w-[1200px] mx-auto px-4 pb-20">
           <div className="grid lg:grid-cols-12 gap-8 items-start">
-            
             {/* Left Content: Features & Comparison */}
             <div className="lg:col-span-8 order-2 lg:order-1 space-y-12">
               <div>
@@ -49,13 +49,20 @@ const Pricing: React.FC = () => {
                   {/* Feature 1 */}
                   <div className="bg-white border border-[#f3e7ed] p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col gap-4">
                     <div className="w-full h-40 rounded-lg bg-pink-50 flex items-center justify-center overflow-hidden relative">
-                      <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(#f04299 1px, transparent 1px)', backgroundSize: '10px 10px' }}></div>
+                      <div
+                        className="absolute inset-0 opacity-20"
+                        style={{
+                          backgroundImage: "radial-gradient(#f04299 1px, transparent 1px)",
+                          backgroundSize: "10px 10px",
+                        }}
+                      ></div>
                       <Layers size={64} className="text-primary/40" />
                     </div>
                     <div>
                       <h4 className="font-bold text-lg mb-2">Unlimited Flashcards</h4>
                       <p className="text-sm text-[#9a4c73] leading-relaxed">
-                        Don't let limits stop your learning. Create as many decks as you need for Kanji, Vocabulary, and Grammar. The Free plan is strictly limited to 10 decks.
+                        Don't let limits stop your learning. Create as many decks as you need for Kanji, Vocabulary, and
+                        Grammar. The Free plan is strictly limited to 10 decks.
                       </p>
                     </div>
                   </div>
@@ -74,7 +81,8 @@ const Pricing: React.FC = () => {
                     <div>
                       <h4 className="font-bold text-lg mb-2">Bulk Card Creation</h4>
                       <p className="text-sm text-[#9a4c73] leading-relaxed">
-                        Instantly generate comprehensive decks by simply uploading files. We support PDF, DOCX, and CSV formats to extract key terms automatically.
+                        Instantly generate comprehensive decks by simply uploading files. We support PDF, DOCX, and CSV
+                        formats to extract key terms automatically.
                       </p>
                     </div>
                   </div>
@@ -134,20 +142,34 @@ const Pricing: React.FC = () => {
                     <span className="text-4xl font-black tracking-tight">29k</span>
                     <span className="text-[#9a4c73] font-medium">/ month</span>
                   </div>
-                  <button className="w-full bg-primary hover:bg-pink-600 text-white font-bold py-3.5 px-6 rounded-xl transition-all shadow-lg shadow-primary/20 flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98]">
-                    <span>Upgrade Now</span>
-                    <ArrowRight size={20} />
-                  </button>
-                  <p className="text-center text-xs text-[#9a4c73]">
-                    30-day money-back guarantee. Cancel anytime.
-                  </p>
+
+                  {isPremium ? (
+                    <button
+                      onClick={() => navigate("/subscription")}
+                      className="w-full bg-gradient-to-r from-amber-400 to-yellow-500 text-white font-bold py-3.5 px-6 rounded-xl transition-all shadow-lg flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98]"
+                    >
+                      <Crown size={20} />
+                      <span>Manage Subscription</span>
+                      <Settings size={18} />
+                    </button>
+                  ) : (
+                    <button
+                      onClick={() => navigate("/premium-checkout")}
+                      className="w-full bg-primary hover:bg-pink-600 text-white font-bold py-3.5 px-6 rounded-xl transition-all shadow-lg shadow-primary/20 flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98]"
+                    >
+                      <span>Upgrade Now</span>
+                      <ArrowRight size={20} />
+                    </button>
+                  )}
+
+                  <p className="text-center text-xs text-[#9a4c73]">30-day money-back guarantee. Cancel anytime.</p>
                   <div className="w-full h-px bg-[#f3e7ed]"></div>
                   <ul className="space-y-4">
                     {[
                       "Unlimited Flashcard Sets",
                       "Bulk Upload (PDF, CSV)",
                       "Priority Support",
-                      "Ad-free Experience"
+                      "Ad-free Experience",
                     ].map((feature, idx) => (
                       <li key={idx} className="flex gap-3 items-start">
                         <CheckCircle2 size={18} className="text-primary shrink-0 mt-0.5" fill="#f04299" color="white" />
@@ -157,14 +179,14 @@ const Pricing: React.FC = () => {
                   </ul>
                 </div>
               </div>
-              
+
               {/* Trust Badge / Avatars */}
               <div className="mt-6 flex items-center justify-center gap-3 text-sm text-[#9a4c73]">
                 <div className="flex -space-x-2">
                   {[1, 2, 3].map((n) => (
-                    <div 
+                    <div
                       key={n}
-                      className="size-8 rounded-full border-2 border-white bg-gray-200 bg-center bg-cover" 
+                      className="size-8 rounded-full border-2 border-white bg-gray-200 bg-center bg-cover"
                       style={{ backgroundImage: `url(https://i.pravatar.cc/100?img=${n + 10})` }}
                     />
                   ))}
@@ -172,7 +194,6 @@ const Pricing: React.FC = () => {
                 <p>Trusted by 10k+ learners</p>
               </div>
             </div>
-
           </div>
         </div>
       </main>
