@@ -62,6 +62,19 @@ const Header: React.FC = () => {
                 Grammar
               </NavLink>
               <NavLink
+                to="/reading-level"
+                className={({ isActive }) =>
+                `px-1 py-4 text-sm font-medium transition-colors ${
+                 isActive
+                 ? "text-primary border-b-2"
+                 : "text-[#9a4c73] hover:text-primary hover:border-b-2"
+                  }`
+                }
+              >
+              Reading
+             </NavLink>
+
+              <NavLink
                 to="/minigamehub"
                 className={({ isActive }) =>
                   `px-1 py-4 text-sm font-medium transition-colors ${
