@@ -71,8 +71,7 @@ const Login: React.FC = () => {
                   <label className="text-[#1b0d14] text-sm font-semibold px-1">Email Address</label>
                   <input 
                     {...register('email')}
-                    className={`w-full rounded-lg border ${errors.email ? 'border-red-400' : 'border-[#e5d5dd]'} bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 placeholder:text-gray-400 transition-all`} 
-                    placeholder="example@sakura.ai" 
+                      className={`w-full rounded-lg border ${errors.email ? 'border-red-400' : 'border-[#e5d5dd]'} bg-white px-4 py-3 text-sm text-[#1b0d14] focus:outline-none focus:ring-2 focus:ring-primary/50 placeholder:text-gray-400 transition-all`}                    placeholder="example@sakura.ai" 
                     type="email"
                     disabled={isLoading}
                   />
@@ -87,8 +86,7 @@ const Login: React.FC = () => {
                   </div>
                   <input 
                     {...register('password')}
-                    className={`w-full rounded-lg border ${errors.password ? 'border-red-400' : 'border-[#e5d5dd]'} bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 placeholder:text-gray-400 transition-all`} 
-                    placeholder="••••••••" 
+                    className={`w-full rounded-lg border ${errors.password ? 'border-red-400' : 'border-[#e5d5dd]'} bg-white px-4 py-3 text-sm text-[#1b0d14] focus:outline-none focus:ring-2 focus:ring-primary/50 placeholder:text-gray-400 transition-all`}                    placeholder="••••••••" 
                     type="password"
                     disabled={isLoading}
                   />
