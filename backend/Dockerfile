@@ -2,16 +2,17 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
-# Copy các file .csproj và restore dependencies
-COPY *.slnx .
-COPY src/NihonLet.API/*.csproj src/NihonLet.API/
-COPY src/NihonLet.Application/*.csproj src/NihonLet.Application/
-COPY src/NihonLet.Domain/*.csproj src/NihonLet.Domain/
-COPY src/NihonLet.Infrastructure/*.csproj src/NihonLet.Infrastructure/
+# Copy file solution mới (.slnx)
+COPY *.slnx ./
+
+# Copy toàn bộ folder src vào để đảm bảo không thiếu project nào
+# Lưu ý: 'src' phải viết thường nếu folder của bạn là 'src'
+COPY src/ ./src/
+
+# Chạy lệnh restore cho toàn bộ solution
 RUN dotnet restore
 
-# Copy toàn bộ code và build
-COPY . .
+# Build dự án API
 WORKDIR /app/src/NihonLet.API
 RUN dotnet publish -c Release -o /out
 
@@ -20,8 +21,9 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 COPY --from=build /out .
 
-# Cấu hình cổng (Render dùng cổng 10000 mặc định)
+# Cấu hình cổng cho Render
 ENV ASPNETCORE_URLS=http://+:10000
 EXPOSE 10000
 
+# Đảm bảo file .dll này viết đúng HOA/thường như trong thư mục của bạn
 ENTRYPOINT ["dotnet", "NihonLet.API.dll"]
