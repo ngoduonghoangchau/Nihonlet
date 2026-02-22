@@ -89,10 +89,10 @@ public partial class Program
 
         var app = builder.Build();
 
-        // 5. Database Migration & Seeding (Chỉ chạy trong môi trường Development)
-        if (app.Environment.IsDevelopment())
+        // 5. Database Migration & Seeding
+        // Đưa ra ngoài dấu ngoặc IsDevelopment để chạy được trên Render (Production)
+        using (var scope = app.Services.CreateScope())
         {
-            using var scope = app.Services.CreateScope();
             var services = scope.ServiceProvider;
             var logger = services.GetRequiredService<ILogger<Program>>();
 
@@ -103,44 +103,41 @@ public partial class Program
                 var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
                 var configuration = services.GetRequiredService<IConfiguration>();
 
-                // A. Cập nhật Database
-                logger.LogInformation("--- NihonLet: Đang Migrate Database ---");
+                // A. Luôn chạy Migrate để tạo bảng trên SQL Server của MonsterASP
+                logger.LogInformation("--- NihonLet Cloud: Đang kiểm tra và cập nhật Database Schema ---");
                 await context.Database.MigrateAsync();
 
-                // B. Seed Identity (Dữ liệu mặc định hệ thống)
-                logger.LogInformation("--- NihonLet: Đang Seed Identity Data ---");
+                // B. Seed Identity (Admin, Roles, v.v.)
+                logger.LogInformation("--- NihonLet Cloud: Đang kiểm tra dữ liệu Identity mặc định ---");
                 await ApplicationDbContextSeed.SeedDefaultsAsync(context, userManager, roleManager, configuration, logger);
 
-                // C. SEED DỮ LIỆU NGỮ PHÁP (Cô lập hoàn toàn)
+                // C. SEED DỮ LIỆU NGỮ PHÁP (Grammar)
                 try
                 {
-                    logger.LogInformation("--- NihonLet: Đang kiểm tra và nạp Grammar JSON ---");
+                    logger.LogInformation("--- NihonLet Cloud: Đang nạp dữ liệu Grammar từ JSON ---");
                     var grammarSeeder = services.GetRequiredService<GrammarSeedService>();
                     await grammarSeeder.SeedAsync();
-                    logger.LogInformation("--- NihonLet: Hoàn tất Seeding Grammar ---");
                 }
                 catch (Exception ex)
                 {
-                    // Nếu lỗi ở đây, chỉ log lại chứ không làm dừng cả App
-                    logger.LogError(ex, "!!! NihonLet: Lỗi nạp Grammar JSON nhưng server vẫn sẽ khởi động.");
+                    logger.LogError(ex, "!!! NihonLet Cloud: Lỗi nạp Grammar JSON nhưng app vẫn sẽ tiếp tục.");
                 }
 
+                // D. SEED DỮ LIỆU BÀI ĐỌC (Reading)
                 try
                 {
-                    logger.LogInformation("--- NihonLet: Đang kiểm tra và nạp Reading JSON ---");
+                    logger.LogInformation("--- NihonLet Cloud: Đang nạp dữ liệu Reading từ JSON ---");
                     var readingSeeder = services.GetRequiredService<ReadingSeedService>();
                     await readingSeeder.SeedAsync();
-                    logger.LogInformation("--- NihonLet: Hoàn tất Seeding Reading ---");
                 }
                 catch (Exception ex)
                 {
-                    // Nếu lỗi ở đây, chỉ log lại chứ không làm dừng cả App
-                    logger.LogError(ex, "!!! NihonLet: Lỗi nạp Reading JSON nhưng server vẫn sẽ khởi động.");
+                    logger.LogError(ex, "!!! NihonLet Cloud: Lỗi nạp Reading JSON nhưng app vẫn sẽ tiếp tục.");
                 }
             }
             catch (Exception ex)
             {
-                logger.LogError(ex, "!!! NihonLet: Lỗi nghiêm trọng khi khởi tạo Database Migrations.");
+                logger.LogError(ex, "!!! NihonLet Cloud: Lỗi nghiêm trọng khi khởi tạo hệ thống dữ liệu.");
             }
         }
 
