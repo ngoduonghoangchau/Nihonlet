@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
 # Copy các file .csproj và restore dependencies
-COPY *.sln .
+COPY *.slnx .
 COPY src/NihonLet.API/*.csproj src/NihonLet.API/
 COPY src/NihonLet.Application/*.csproj src/NihonLet.Application/
 COPY src/NihonLet.Domain/*.csproj src/NihonLet.Domain/
