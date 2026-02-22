@@ -1,20 +1,26 @@
 # Stage 1: Build
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /app
+WORKDIR /src
 
-# Copy file solution mới (.slnx)
-COPY *.slnx ./
+# Copy file solution bằng tên chính xác (Tránh dùng dấu sao *)
+COPY NihonLet.slnx ./
 
-# Copy toàn bộ folder src vào để đảm bảo không thiếu project nào
-# Lưu ý: 'src' phải viết thường nếu folder của bạn là 'src'
-COPY src/ ./src/
+# Copy các file dự án (.csproj) để restore thư viện trước
+# Lưu ý: 'src' phải viết thường đúng như trong ảnh của bạn
+COPY src/NihonLet.API/NihonLet.API.csproj src/NihonLet.API/
+COPY src/NihonLet.Application/NihonLet.Application.csproj src/NihonLet.Application/
+COPY src/NihonLet.Domain/NihonLet.Domain.csproj src/NihonLet.Domain/
+COPY src/NihonLet.Infrastructure/NihonLet.Infrastructure.csproj src/NihonLet.Infrastructure/
 
-# Chạy lệnh restore cho toàn bộ solution
-RUN dotnet restore
+# Chạy restore cho file solution mới
+RUN dotnet restore "NihonLet.slnx"
 
-# Build dự án API
-WORKDIR /app/src/NihonLet.API
-RUN dotnet publish -c Release -o /out
+# Copy toàn bộ phần code còn lại
+COPY . .
+
+# Publish ứng dụng ra thư mục /out
+WORKDIR "/src/src/NihonLet.API"
+RUN dotnet publish "NihonLet.API.csproj" -c Release -o /out /p:UseAppHost=false
 
 # Stage 2: Run
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
@@ -25,5 +31,5 @@ COPY --from=build /out .
 ENV ASPNETCORE_URLS=http://+:10000
 EXPOSE 10000
 
-# Đảm bảo file .dll này viết đúng HOA/thường như trong thư mục của bạn
+# Chạy file dll chính xác (Lưu ý chữ HOA/thường)
 ENTRYPOINT ["dotnet", "NihonLet.API.dll"]
