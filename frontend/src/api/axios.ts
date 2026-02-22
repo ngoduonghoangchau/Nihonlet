@@ -37,7 +37,7 @@ const processQueue = (error: AxiosError | null, token: string | null = null) => 
 // ===== Request Interceptor: Attach Access Token =====
 api.interceptors.request.use(
   (config: InternalAxiosRequestConfig) => {
-    const token = store.getState().auth.accessToken;
+    const token = store.getState().auth?.accessToken;
 
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;

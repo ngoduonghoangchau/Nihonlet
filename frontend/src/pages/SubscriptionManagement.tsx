@@ -19,7 +19,7 @@ import {
 
 const SubscriptionManagement: React.FC = () => {
   const navigate = useNavigate();
-  const { user, refreshToken } = useAuth();
+  const { refreshToken } = useAuth();
   const [subStatus, setSubStatus] = useState<SubscriptionStatusDto | null>(null);
   const [transactions, setTransactions] = useState<TransactionDto[]>([]);
   const [loading, setLoading] = useState(true);

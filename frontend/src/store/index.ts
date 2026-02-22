@@ -2,6 +2,7 @@ import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import {
   persistStore,
   persistReducer,
+  createTransform,
   FLUSH,
   REHYDRATE,
   PAUSE,
@@ -9,57 +10,41 @@ import {
   PURGE,
   REGISTER,
 } from 'redux-persist';
-import storage from 'redux-persist/lib/storage'; // localStorage
+import storage from 'redux-persist/lib/storage';
 import authReducer from './slices/authSlice';
 
-// ===== Root Reducer =====
+// 1. Định nghĩa Root Reducer trước
 const rootReducer = combineReducers({
   auth: authReducer,
 });
 
-// ===== Persist Config =====
-// Only persist user info, NOT accessToken (security best practice)
+const authTransform = createTransform(
+  (inboundState: any) => ({
+    ...inboundState,
+    accessToken: null,
+    expiresAt: null,
+    isLoading: false,
+    error: null,
+  }),
+  (outboundState: any) => ({
+    ...outboundState,
+    isAuthenticated: false,
+    isLoading: !!outboundState.user,
+  }),
+  { whitelist: ['auth'] }
+);
+
 const persistConfig = {
   key: 'nihonlet',
   version: 1,
   storage,
-  whitelist: ['auth'], // Persist auth slice
-  // Transform to exclude sensitive data
-  transforms: [
-    {
-      // Before persisting to storage
-      in: (state: ReturnType<typeof authReducer>, key: string) => {
-        if (key === 'auth') {
-          // Only persist user, exclude tokens
-          return {
-            ...state,
-            accessToken: null,
-            expiresAt: null,
-            isLoading: false,
-            error: null,
-          };
-        }
-        return state;
-      },
-      // After retrieving from storage  
-      out: (state: ReturnType<typeof authReducer>, key: string) => {
-        if (key === 'auth') {
-          // Restore with isLoading true if user exists (need to refresh token)
-          return {
-            ...state,
-            isAuthenticated: false, // Will be set after token refresh
-            isLoading: !!state.user, // Loading if user exists
-          };
-        }
-        return state;
-      },
-    },
-  ],
+  whitelist: ['auth'],
+  transforms: [authTransform],
 };
 
-const persistedReducer = persistReducer(persistConfig, rootReducer);
+// 2. Ép kiểu cho persistedReducer để tránh lỗi Reducer type mismatch
+const persistedReducer = persistReducer<ReturnType<typeof rootReducer>>(persistConfig, rootReducer);
 
-// ===== Store =====
 export const store = configureStore({
   reducer: persistedReducer,
   middleware: (getDefaultMiddleware) =>
@@ -68,12 +53,10 @@ export const store = configureStore({
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
     }),
-  devTools: import.meta.env.DEV,
 });
 
-// ===== Persistor =====
 export const persistor = persistStore(store);
 
-// ===== Types =====
-export type RootState = ReturnType<typeof store.getState>;
+// 3. THAY ĐỔI DÒNG NÀY: Lấy type từ rootReducer thay vì store.getState
+export type RootState = ReturnType<typeof rootReducer>; 
 export type AppDispatch = typeof store.dispatch;

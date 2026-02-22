@@ -7,8 +7,8 @@ import {
   Loader2, 
   CheckCircle2, 
   XCircle, 
-  Trophy, 
-  RefreshCcw,
+  // Trophy, 
+  // RefreshCcw,
   ArrowLeft 
 } from 'lucide-react';
 
@@ -32,9 +32,9 @@ const RewritingGame: React.FC = () => {
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
   const [score, setScore] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
-  const [isFinished, setIsFinished] = useState(false);
+  // const [isFinished, setIsFinished] = useState(false);
   const [missedQuestions, setMissedQuestions] = useState<any[]>([]);
-  const [isSaving, setIsSaving] = useState(false);
+  // const [isSaving, setIsSaving] = useState(false);
 
   // 1. Khởi tạo Game và lấy dữ liệu từ Backend
 const initGame = useCallback(async () => {

@@ -9,12 +9,12 @@ const Header: React.FC = () => {
   const { logout, isAuthenticated, user } = useAuth();
 
   // Nếu isActive là true, sẽ hiện chữ đậm và thanh hồng ở dưới
-  const navLinkClass = ({ isActive }: { isActive: boolean }) =>
-    `px-1 py-4 text-sm transition-colors ${
-      isActive
-        ? "font-bold border-b-2 border-primary text-primary" // Class khi đang chọn
-        : "font-medium text-[#9a4c73] hover:text-primary"    // Class khi không chọn
-    }`;
+  // const navLinkClass = ({ isActive }: { isActive: boolean }) =>
+  //   `px-1 py-4 text-sm transition-colors ${
+  //     isActive
+  //       ? "font-bold border-b-2 border-primary text-primary" // Class khi đang chọn
+  //       : "font-medium text-[#9a4c73] hover:text-primary"    // Class khi không chọn
+  //   }`;
 
  return (
     <header className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[#f3e7ed]">

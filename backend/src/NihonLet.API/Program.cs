@@ -80,7 +80,7 @@ public partial class Program
         {
             options.AddPolicy("AllowFrontend", policy =>
             {
-                policy.WithOrigins("http://localhost:3000", "http://localhost:5173")
+                policy.WithOrigins("http://localhost:3000", "http://localhost:5173", "https://nihonlet-44432.web.app", "https://nihonlet-44432.firebaseapp.com")
                     .AllowAnyHeader()
                     .AllowAnyMethod()
                     .AllowCredentials();
@@ -144,16 +144,16 @@ public partial class Program
             }
         }
 
-        // 6. Cấu hình Middleware Pipeline
-        if (app.Environment.IsDevelopment())
-        {
-            app.UseSwagger();
-            app.UseSwaggerUI(options =>
+        app.UseSwagger();
+        app.UseSwaggerUI(options =>
             {
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "NihonLet API v1");
                 options.DocExpansion(Swashbuckle.AspNetCore.SwaggerUI.DocExpansion.None);
             });
-
+        // 6. Cấu hình Middleware Pipeline
+        if (app.Environment.IsDevelopment())
+        {
+            ///comment useswagger ở đây để tránh lỗi khi chạy môi trường production mà không có swagger
             // Tự động chuyển hướng từ trang chủ (/) sang Swagger UI
             app.MapGet("/", () => Results.Redirect("/swagger/index.html"));
         }
